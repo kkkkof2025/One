@@ -1,0 +1,33 @@
+name: Build and Deploy Knowledge Tree
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 每天 00:00 定时执行
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  build:
+    name: Build HTML File
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 检出代码
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. 设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    # 3. 生成 HTML 文件
+    - name: Generate HTML
+      run: python generate_html_from_txt.py
+
+    # 4. 推送到 gh-pages 分支
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output
