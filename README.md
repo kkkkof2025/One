@@ -7,3 +7,7 @@ This is the initial README file for the One repository. More content will be add
 - **Repository Owner:** kkkkof2025
 
 Thank you for visiting!
+
+https://kkkkof2025.github.io/One/knowledge_tree.html
+
+https://kkkkof2025.github.io/One/
