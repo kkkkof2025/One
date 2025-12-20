@@ -1,12 +1,9 @@
 {
   "id": "root",
   "title": "万物",
+  "children_status": "loaded", 
   "children": [
     { "id": "Q1", "title": "宇宙", "is_leaf": false },
-    { 
-      "id": "Q3", 
-      "title": "生命", 
-      "data_source": "data/nodes/Q3.json"  // <--- 指针，指向新文件
-    }
+    { "id": "Q3", "title": "生命", "is_leaf": false }
   ]
 }
