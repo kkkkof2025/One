@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>One - JSON Version</title>
+    <style>
+        body { font-family: monospace; padding: 20px; }
+        .node { margin-left: 20px; cursor: pointer; }
+        .title:hover { text-decoration: underline; color: blue; }
+        .children { display: none; border-left: 1px solid #ccc; }
+        .expanded > .children { display: block; }
+        .loading { color: #999; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        async function renderNode(container, data) {
+            const nodeDiv = document.createElement('div');
+            nodeDiv.className = 'node';
+            
+            const titleSpan = document.createElement('span');
+            titleSpan.className = 'title';
+            titleSpan.textContent = isPointer(data) ? `📁 ${data.title}` : `📄 ${data.title}`;
+            nodeDiv.appendChild(titleSpan);
+
+            const childrenDiv = document.createElement('div');
+            childrenDiv.className = 'children';
+            nodeDiv.appendChild(childrenDiv);
+
+            // 点击事件
+            titleSpan.onclick = async (e) => {
+                e.stopPropagation();
+                nodeDiv.classList.toggle('expanded');
+                
+                // 懒加载逻辑
+                if (nodeDiv.classList.contains('expanded')) {
+                    if (childrenDiv.innerHTML === '') {
+                        // 如果是指针，去加载远程文件
+                        if (isPointer(data)) {
+                            childrenDiv.innerHTML = '<div class="loading">加载数据中...</div>';
+                            try {
+                                const res = await fetch('data/' + data.data_source);
+                                const childData = await res.json();
+                                childrenDiv.innerHTML = ''; // 清空 loading
+                                // 渲染子文件的 children
+                                if (childData.children) {
+                                    childData.children.forEach(c => renderNode(childrenDiv, c));
+                                }
+                            } catch (err) {
+                                childrenDiv.innerHTML = '加载失败';
+                            }
+                        } 
+                        // 如果数据已经在本地 (且有 children)
+                        else if (data.children && data.children.length > 0) {
+                            data.children.forEach(c => renderNode(childrenDiv, c));
+                        } else {
+                            childrenDiv.innerHTML = '<div class="loading">暂无子类</div>';
+                        }
+                    }
+                }
+            };
+
+            container.appendChild(nodeDiv);
+        }
+
+        function isPointer(node) {
+            return !!node.data_source;
+        }
+
+        // 初始化
+        fetch('data/root.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('root');
+                renderNode(container, data);
+                // 默认展开根节点
+                container.firstElementChild.querySelector('.title').click();
+            });
+    </script>
+</body>
+</html>
