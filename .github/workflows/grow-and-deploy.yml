@@ -27,6 +27,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Sync latest branch state
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -51,7 +59,16 @@ jobs:
             echo "No data changes to commit."
           else
             git commit -m "Auto-grow knowledge tree"
-            git push
+            for attempt in 1 2 3; do
+              if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                exit 0
+              fi
+              echo "Push was rejected. Rebasing onto origin/${GITHUB_REF_NAME} and retrying (${attempt}/3)."
+              git fetch origin "${GITHUB_REF_NAME}"
+              git rebase "origin/${GITHUB_REF_NAME}"
+            done
+            echo "Failed to push generated data after 3 attempts."
+            exit 1
           fi
 
       - name: Prepare Pages artifact
