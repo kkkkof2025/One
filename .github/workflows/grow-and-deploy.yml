@@ -1,0 +1,82 @@
+name: Grow and Deploy Knowledge Tree
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: "Maximum Wikidata requests for this run"
+        required: false
+        default: "20"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: knowledge-tree
+  cancel-in-progress: false
+
+jobs:
+  grow:
+    name: Grow data and build static site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Grow JSON knowledge tree
+        env:
+          ONE_MAX_REQUESTS: ${{ inputs.max_requests || '20' }}
+        run: python scripts/grow_json.py
+
+      - name: Commit generated data
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Auto-grow knowledge tree"
+            git push
+          fi
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p public
+          cp index.html public/
+          cp -R data public/data
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: grow
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

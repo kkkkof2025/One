@@ -1,154 +1,376 @@
 import json
 import os
-import time
-import random
 import re
+import time
+from datetime import datetime, timezone
 from pathlib import Path
-from SPARQLWrapper import SPARQLWrapper, JSON
+from typing import Any, Dict, List, Optional, Tuple
 
-# --- 配置 ---
+from SPARQLWrapper import JSON, SPARQLWrapper
+
+
 DATA_DIR = Path("data")
 NODES_DIR = DATA_DIR / "nodes"
 ROOT_FILE = DATA_DIR / "root.json"
-THRESHOLD = 50           # 单个 JSON 文件包含的最大子节点数
-MAX_REQUESTS = 20        # 每次运行最多请求几次 Wikidata
 
-sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
-sparql.setReturnFormat(JSON)
+QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
+MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "20"))
+REQUEST_DELAY = float(os.environ.get("ONE_REQUEST_DELAY", "1.0"))
+WIKIDATA_ENDPOINT = os.environ.get(
+    "ONE_WIKIDATA_ENDPOINT", "https://query.wikidata.org/sparql"
+)
+USER_AGENT = os.environ.get(
+    "ONE_USER_AGENT", "OneKnowledgeTree/0.2 (scheduled GitHub Actions)"
+)
 
-def save_json(path, data):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+VALID_STATUSES = {"pending", "loaded", "error", "manual"}
+request_count = 0
 
-def load_json(path):
-    if not path.exists(): return None
-    with open(path, 'r', encoding='utf-8') as f:
+
+def now_utc() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace(
+        "+00:00", "Z"
+    )
+
+
+def load_json(path: Path) -> Optional[Dict[str, Any]]:
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
-def fetch_wikidata_children(entity_title):
-    """
-    为了演示，我们还是用名字搜索。
-    生产环境建议在 JSON 里存储 Wikidata QID (如 Q123)，那样更准。
-    """
-    print(f"📡 查询: {entity_title}")
-    query = f"""
-    SELECT DISTINCT ?itemLabel WHERE {{
-      ?parent rdfs:label "{entity_title}"@zh .
-      ?item wdt:P279 ?parent .
-      ?item rdfs:label ?itemLabel .
-      FILTER(LANG(?itemLabel) = "zh") .
-    }} LIMIT {THRESHOLD + 5}
-    """
-    try:
-        sparql.setQuery(query)
-        results = sparql.query().convert()
-        children = []
-        for res in results["results"]["bindings"]:
-            lbl = res["itemLabel"]["value"]
-            if lbl != entity_title:
-                children.append({"title": lbl, "is_leaf": True}) # 默认假设是叶子
-        return children
-    except:
-        return []
 
-def process_node_data(data, file_path):
-    """递归处理 JSON 数据"""
-    global request_count
+def save_json(path: Path, data: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def is_qid(value: Any) -> bool:
+    return bool(re.fullmatch(r"Q\d+", str(value or "")))
+
+
+def safe_slug(text: Any, fallback: str = "node") -> str:
+    slug = re.sub(r'[\\/*?:"<>|]', "", str(text or "")).strip()
+    slug = re.sub(r"\s+", "-", slug)
+    return (slug[:80] or fallback).strip(".")
+
+
+def node_file_for(node: Dict[str, Any]) -> Path:
+    node_id = str(node.get("id", "")).strip()
+    if is_qid(node_id):
+        return NODES_DIR / f"{node_id}.json"
+    return NODES_DIR / f"{safe_slug(node.get('title'))}.json"
+
+
+def data_relative_path(path: Path) -> str:
+    return path.relative_to(DATA_DIR).as_posix()
+
+
+def child_key(node: Dict[str, Any]) -> str:
+    node_id = str(node.get("id", "")).strip()
+    if node_id:
+        return f"id:{node_id}"
+    return f"title:{node.get('title', '')}"
+
+
+def normalize_node(node: Dict[str, Any]) -> bool:
     changed = False
 
-    # 1. 检查是否需要生长 (如果当前节点没有 children 且没被标记为 fetch_done)
-    if "children" not in data:
-        data["children"] = []
-    
-    # 简单的状态控制：如果没有获取过，且不是引用其他文件
-    if not data.get("fetch_done") and "data_source" not in data:
-        if request_count >= MAX_REQUESTS: return False
-        
-        new_children = fetch_wikidata_children(data["title"])
-        request_count += 1
-        time.sleep(1) # 礼貌延迟
-        
-        if new_children:
-            # 合并去重
-            existing_titles = {c["title"] for c in data["children"]}
-            for nc in new_children:
-                if nc["title"] not in existing_titles:
-                    data["children"].append(nc)
-            data["fetch_done"] = True
-            changed = True
-        else:
-            data["fetch_done"] = True # 标记为已完成，免得下次还查
-            changed = True
+    if "title" not in node:
+        node["title"] = "未命名"
+        changed = True
 
-    # 2. 检查是否需要分裂 (Sharding)
-    # 如果 children 数量超过阈值，我们将每个子节点的数据提取出去，变成独立文件
-    # 注意：这里我们只把数据量大的子节点独立出去
-    
-    # 这里为了简化，我们采用“当层级过大时，把所有子节点都指向新文件”的策略吗？
-    # 不，更好的策略是：如果 children 列表太长，我们不分裂文件，
-    # 而是当我们要深入某个 child 时，才为那个 child 创建独立文件。
-    
-    # 我们遍历 children，随机选一个去“深化” (Deepen)
-    # 只有当一个 child 也是对象结构且变得很庞大时才拆分。
-    
-    # 为了简化逻辑，我们只做“生长”：
-    # 随机挑一个还没有 data_source 的 child，去递归处理它
-    # 如果这个 child 还没有独立文件，我们就为它创建一个。
-    
-    for child in data["children"]:
-        if request_count >= MAX_REQUESTS: break
-        
-        # 如果这个子节点已经是指针了，递归加载那个文件去处理
-        if "data_source" in child:
-            child_path = DATA_DIR / child["data_source"]
-            child_data = load_json(child_path)
-            if child_data:
-                if process_node_data(child_data, child_path):
-                    save_json(child_path, child_data)
-        
-        # 如果这个子节点还在父文件里，且没有被处理过
-        else:
-            # 决定是否要为这个子节点创建独立档案 (比如抛硬币，或者基于深度)
-            # 这里我们强制：只要想获取子节点的子节点，就必须把子节点独立出去
-            # 这样父文件只存目录，不存深层数据
-            
-            # 创建新文件路径
-            safe_name = re.sub(r'[\\/*?:"<>|]', "", child["title"]).strip()
-            new_rel_path = f"nodes/{safe_name}.json"
-            new_full_path = DATA_DIR / new_rel_path
-            
-            if not new_full_path.exists():
-                # 迁移数据
-                new_node_data = {
-                    "title": child["title"],
-                    "children": [],
-                    "fetch_done": False # 新节点即使创建了，初始也是未获取状态
-                }
-                save_json(new_full_path, new_node_data)
-                
-                # 修改当前父节点里的这个 child，变成指针
-                child["data_source"] = new_rel_path
-                # 删除多余字段，只留 metadata
-                keys_to_keep = ["title", "data_source"]
-                for k in list(child.keys()):
-                    if k not in keys_to_keep: del child[k]
-                
-                changed = True
-                print(f"🔨 分裂: {child['title']} -> {new_rel_path}")
+    if "children" not in node or not isinstance(node["children"], list):
+        node["children"] = []
+        changed = True
+
+    if "fetch_done" in node:
+        node["children_status"] = "loaded" if node.pop("fetch_done") else "pending"
+        changed = True
+
+    if node.get("children_status") not in VALID_STATUSES:
+        node["children_status"] = "loaded" if node["children"] else "pending"
+        changed = True
+
+    if node["children_status"] == "loaded" and not node["children"]:
+        if node.get("is_leaf") is not True:
+            node["is_leaf"] = True
+            changed = True
+    elif node.get("is_leaf") is True:
+        node["is_leaf"] = False
+        changed = True
 
     return changed
 
-request_count = 0
 
-def main():
-    if not ROOT_FILE.exists():
-        save_json(ROOT_FILE, {"title": "万物", "children": []})
+def pointer_from_node(node: Dict[str, Any], path: Path) -> Dict[str, Any]:
+    pointer: Dict[str, Any] = {
+        "title": node.get("title", "未命名"),
+        "data_source": data_relative_path(path),
+        "children_status": node.get("children_status", "pending"),
+        "is_leaf": bool(node.get("is_leaf", False)),
+    }
+    if node.get("id"):
+        pointer["id"] = node["id"]
+    return pointer
 
+
+def sparql_literal(text: str) -> str:
+    return json.dumps(text, ensure_ascii=False)
+
+
+def build_wikidata_query(node: Dict[str, Any]) -> Optional[str]:
+    node_id = str(node.get("id", "")).strip()
+    title = str(node.get("title", "")).strip()
+
+    if is_qid(node_id):
+        return f"""
+SELECT DISTINCT ?item ?itemLabel WHERE {{
+  ?item wdt:P279 wd:{node_id} .
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "zh". }}
+}}
+ORDER BY ?itemLabel
+LIMIT {QUERY_LIMIT}
+"""
+
+    if title:
+        return f"""
+SELECT DISTINCT ?item ?itemLabel WHERE {{
+  ?parent rdfs:label {sparql_literal(title)}@zh .
+  ?item wdt:P279 ?parent .
+  ?item rdfs:label ?itemLabel .
+  FILTER(LANG(?itemLabel) = "zh") .
+}}
+ORDER BY ?itemLabel
+LIMIT {QUERY_LIMIT}
+"""
+
+    return None
+
+
+def fetch_wikidata_children(node: Dict[str, Any]) -> List[Dict[str, Any]]:
+    query = build_wikidata_query(node)
+    if not query:
+        return []
+
+    sparql = SPARQLWrapper(WIKIDATA_ENDPOINT)
+    sparql.setReturnFormat(JSON)
+    sparql.addCustomHttpHeader("User-Agent", USER_AGENT)
+    sparql.setQuery(query)
+
+    results = sparql.query().convert()
+    children: List[Dict[str, Any]] = []
+    seen = set()
+
+    for result in results.get("results", {}).get("bindings", []):
+        item = result.get("item", {}).get("value", "")
+        node_id = item.rsplit("/", 1)[-1] if item else ""
+        label = result.get("itemLabel", {}).get("value", "").strip()
+
+        if not label or label == node.get("title"):
+            continue
+        if label.startswith("Q") and label[1:].isdigit():
+            continue
+
+        key = node_id or label
+        if key in seen:
+            continue
+        seen.add(key)
+
+        child: Dict[str, Any] = {
+            "title": label,
+            "children_status": "pending",
+            "is_leaf": False,
+        }
+        if is_qid(node_id):
+            child["id"] = node_id
+        children.append(child)
+
+    return children
+
+
+def merge_children(
+    existing: List[Dict[str, Any]], fetched: List[Dict[str, Any]]
+) -> Tuple[List[Dict[str, Any]], bool]:
+    changed = False
+    merged: List[Dict[str, Any]] = []
+    positions: Dict[str, Dict[str, Any]] = {}
+
+    for child in existing:
+        if not isinstance(child, dict):
+            continue
+        normalize_node(child)
+        merged.append(child)
+        positions[child_key(child)] = child
+
+    for child in fetched:
+        key = child_key(child)
+        current = positions.get(key)
+        if current is None:
+            merged.append(child)
+            positions[key] = child
+            changed = True
+            continue
+
+        for field in ("id", "title"):
+            if child.get(field) and current.get(field) != child[field]:
+                current[field] = child[field]
+                changed = True
+
+    return merged, changed
+
+
+def materialize_child(child: Dict[str, Any]) -> Tuple[Dict[str, Any], Path, bool]:
+    changed = False
+
+    if child.get("data_source"):
+        path = DATA_DIR / str(child["data_source"])
+        child_data = load_json(path)
+        if child_data is None:
+            child_data = {
+                "id": child.get("id"),
+                "title": child.get("title", "未命名"),
+                "children_status": child.get("children_status", "pending"),
+                "children": child.get("children", []),
+            }
+            normalize_node(child_data)
+            save_json(path, child_data)
+            changed = True
+        return child_data, path, changed
+
+    path = node_file_for(child)
+    child_data = load_json(path)
+    if child_data is None:
+        child_data = {
+            "id": child.get("id"),
+            "title": child.get("title", "未命名"),
+            "children_status": child.get("children_status", "pending"),
+            "children": child.get("children", []),
+        }
+        normalize_node(child_data)
+        save_json(path, child_data)
+        changed = True
+
+    pointer = pointer_from_node(child_data, path)
+    if child != pointer:
+        child.clear()
+        child.update(pointer)
+        changed = True
+
+    return child_data, path, changed
+
+
+def should_fetch(node: Dict[str, Any]) -> bool:
+    return (
+        node.get("children_status") in {"pending", "error"}
+        and not node.get("is_leaf")
+        and build_wikidata_query(node) is not None
+    )
+
+
+def process_node_data(data: Dict[str, Any], file_path: Path) -> bool:
+    global request_count
+
+    changed = normalize_node(data)
+
+    if request_count < MAX_REQUESTS and should_fetch(data):
+        request_count += 1
+        print(f"[{request_count}/{MAX_REQUESTS}] 查询: {data.get('title')}")
+        try:
+            fetched_children = fetch_wikidata_children(data)
+            data["children"], _ = merge_children(data["children"], fetched_children)
+            data["children_status"] = "loaded"
+            data["updated_at"] = now_utc()
+            data.pop("last_error", None)
+            data["is_leaf"] = len(data["children"]) == 0
+            changed = True
+            print(f"  新增/保留子类: {len(data['children'])}")
+        except Exception as exc:
+            data["children_status"] = "error"
+            data["last_error"] = str(exc)
+            data["updated_at"] = now_utc()
+            changed = True
+            print(f"  查询失败: {exc}")
+
+        if REQUEST_DELAY > 0:
+            time.sleep(REQUEST_DELAY)
+
+    for child in list(data.get("children", [])):
+        if request_count >= MAX_REQUESTS:
+            break
+        if not isinstance(child, dict) or child.get("is_leaf") is True:
+            continue
+
+        child_data, child_path, pointer_changed = materialize_child(child)
+        changed = changed or pointer_changed
+
+        child_changed = process_node_data(child_data, child_path)
+        if child_changed:
+            save_json(child_path, child_data)
+            changed = True
+
+        pointer = pointer_from_node(child_data, child_path)
+        if child != pointer:
+            child.clear()
+            child.update(pointer)
+            changed = True
+
+    return changed
+
+
+def default_root() -> Dict[str, Any]:
+    return {
+        "id": "root",
+        "title": "万物",
+        "children_status": "loaded",
+        "children": [
+            {
+                "id": "Q1",
+                "title": "宇宙",
+                "data_source": "nodes/Q1.json",
+                "children_status": "pending",
+                "is_leaf": False,
+            },
+            {
+                "id": "Q3",
+                "title": "生命",
+                "data_source": "nodes/Q3.json",
+                "children_status": "pending",
+                "is_leaf": False,
+            },
+        ],
+    }
+
+
+def bootstrap_root_files(root: Dict[str, Any]) -> bool:
+    changed = False
+    for child in root.get("children", []):
+        if not isinstance(child, dict):
+            continue
+        _, _, pointer_changed = materialize_child(child)
+        changed = changed or pointer_changed
+    return changed
+
+
+def main() -> None:
     root_data = load_json(ROOT_FILE)
-    if process_node_data(root_data, ROOT_FILE):
+    if root_data is None:
+        root_data = default_root()
+
+    changed = normalize_node(root_data)
+    changed = bootstrap_root_files(root_data) or changed
+    changed = process_node_data(root_data, ROOT_FILE) or changed
+
+    if changed:
         save_json(ROOT_FILE, root_data)
-        print("✅ 根节点数据已更新")
+        print("根节点数据已更新。")
+    else:
+        print("没有发现需要保存的数据变化。")
+
+    print(f"本次 Wikidata 请求数: {request_count}/{MAX_REQUESTS}")
+
 
 if __name__ == "__main__":
     main()

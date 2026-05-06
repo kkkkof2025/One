@@ -1,83 +1,345 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>One - JSON Version</title>
-    <style>
-        body { font-family: monospace; padding: 20px; }
-        .node { margin-left: 20px; cursor: pointer; }
-        .title:hover { text-decoration: underline; color: blue; }
-        .children { display: none; border-left: 1px solid #ccc; }
-        .expanded > .children { display: block; }
-        .loading { color: #999; font-size: 0.8em; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One 万物知识树</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --line: #d8dee9;
+      --accent: #1d7a8c;
+      --accent-soft: #e3f5f7;
+      --warn: #8a5a00;
+      --warn-soft: #fff4d6;
+      --error: #b42318;
+      --error-soft: #ffe7e4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    .shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 40px;
+    }
+
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .meta {
+      min-height: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: right;
+    }
+
+    .tree {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      overflow-x: auto;
+    }
+
+    .node {
+      min-width: 280px;
+    }
+
+    .node-row {
+      display: grid;
+      grid-template-columns: 28px minmax(120px, 1fr) auto;
+      align-items: center;
+      gap: 8px;
+      min-height: 34px;
+      border-radius: 6px;
+      padding: 2px 8px 2px 2px;
+    }
+
+    .node-row:hover {
+      background: #f0f4f8;
+    }
+
+    .toggle {
+      width: 28px;
+      height: 28px;
+      border: 0;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    .toggle:disabled {
+      color: var(--muted);
+      cursor: default;
+    }
+
+    .title {
+      overflow-wrap: anywhere;
+      font-size: 15px;
+      line-height: 1.35;
+    }
+
+    .status {
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 12px;
+      line-height: 1;
+      white-space: nowrap;
+      background: #edf1f6;
+      color: var(--muted);
+    }
+
+    .status.loaded {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .status.pending {
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+
+    .status.error {
+      background: var(--error-soft);
+      color: var(--error);
+    }
+
+    .children {
+      display: none;
+      margin-left: 14px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+
+    .node.expanded > .children {
+      display: block;
+    }
+
+    .message {
+      margin: 8px 0 8px 38px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 20px, 1120px);
+        padding-top: 18px;
+      }
+
+      header {
+        display: block;
+      }
+
+      h1 {
+        font-size: 23px;
+        margin-bottom: 8px;
+      }
+
+      .meta {
+        text-align: left;
+      }
+
+      .tree {
+        padding: 10px;
+      }
+
+      .node-row {
+        grid-template-columns: 28px minmax(0, 1fr);
+      }
+
+      .status {
+        grid-column: 2;
+        width: max-content;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div id="root"></div>
+  <div class="shell">
+    <header>
+      <h1>One 万物知识树</h1>
+      <div id="meta" class="meta"></div>
+    </header>
+    <main id="tree" class="tree" aria-live="polite"></main>
+  </div>
 
-    <script>
-        async function renderNode(container, data) {
-            const nodeDiv = document.createElement('div');
-            nodeDiv.className = 'node';
-            
-            const titleSpan = document.createElement('span');
-            titleSpan.className = 'title';
-            titleSpan.textContent = isPointer(data) ? `📁 ${data.title}` : `📄 ${data.title}`;
-            nodeDiv.appendChild(titleSpan);
+  <script>
+    const treeEl = document.getElementById("tree");
+    const metaEl = document.getElementById("meta");
+    const cache = new Map();
 
-            const childrenDiv = document.createElement('div');
-            childrenDiv.className = 'children';
-            nodeDiv.appendChild(childrenDiv);
+    function statusLabel(status) {
+      if (status === "loaded") return "已加载";
+      if (status === "error") return "错误";
+      if (status === "manual") return "手动";
+      return "待扩展";
+    }
 
-            // 点击事件
-            titleSpan.onclick = async (e) => {
-                e.stopPropagation();
-                nodeDiv.classList.toggle('expanded');
-                
-                // 懒加载逻辑
-                if (nodeDiv.classList.contains('expanded')) {
-                    if (childrenDiv.innerHTML === '') {
-                        // 如果是指针，去加载远程文件
-                        if (isPointer(data)) {
-                            childrenDiv.innerHTML = '<div class="loading">加载数据中...</div>';
-                            try {
-                                const res = await fetch('data/' + data.data_source);
-                                const childData = await res.json();
-                                childrenDiv.innerHTML = ''; // 清空 loading
-                                // 渲染子文件的 children
-                                if (childData.children) {
-                                    childData.children.forEach(c => renderNode(childrenDiv, c));
-                                }
-                            } catch (err) {
-                                childrenDiv.innerHTML = '加载失败';
-                            }
-                        } 
-                        // 如果数据已经在本地 (且有 children)
-                        else if (data.children && data.children.length > 0) {
-                            data.children.forEach(c => renderNode(childrenDiv, c));
-                        } else {
-                            childrenDiv.innerHTML = '<div class="loading">暂无子类</div>';
-                        }
-                    }
-                }
-            };
+    function emptyLabel(node) {
+      if (node.children_status === "error") return node.last_error || "加载失败";
+      if (node.children_status === "pending") return "等待定时任务扩展";
+      return "暂无子类";
+    }
 
-            container.appendChild(nodeDiv);
+    function canExpand(node) {
+      return Boolean(
+        node.data_source ||
+        (Array.isArray(node.children) && node.children.length > 0) ||
+        node.children_status === "pending" ||
+        node.children_status === "error"
+      );
+    }
+
+    async function loadNode(node) {
+      if (!node.data_source) return node;
+
+      const path = `data/${node.data_source}`;
+      if (cache.has(path)) return cache.get(path);
+
+      const response = await fetch(path, { cache: "no-cache" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      cache.set(path, data);
+      return data;
+    }
+
+    function renderNode(node, openByDefault = false) {
+      const wrapper = document.createElement("section");
+      wrapper.className = "node";
+
+      const row = document.createElement("div");
+      row.className = "node-row";
+
+      const toggle = document.createElement("button");
+      toggle.className = "toggle";
+      toggle.type = "button";
+      toggle.textContent = "›";
+      toggle.disabled = !canExpand(node);
+      toggle.setAttribute("aria-label", `展开 ${node.title || "未命名"}`);
+
+      const title = document.createElement("span");
+      title.className = "title";
+      title.textContent = node.title || "未命名";
+
+      const status = document.createElement("span");
+      status.className = `status ${node.children_status || "pending"}`;
+      status.textContent = statusLabel(node.children_status);
+
+      const children = document.createElement("div");
+      children.className = "children";
+
+      row.append(toggle, title, status);
+      wrapper.append(row, children);
+
+      async function expand() {
+        wrapper.classList.add("expanded");
+        toggle.textContent = "⌄";
+        toggle.setAttribute("aria-label", `收起 ${node.title || "未命名"}`);
+
+        if (children.dataset.loaded === "true") return;
+        children.innerHTML = '<div class="message">加载中</div>';
+
+        try {
+          const loadedNode = await loadNode(node);
+          Object.assign(node, loadedNode);
+          status.className = `status ${node.children_status || "pending"}`;
+          status.textContent = statusLabel(node.children_status);
+
+          children.innerHTML = "";
+          const list = Array.isArray(node.children) ? node.children : [];
+          if (list.length === 0) {
+            const message = document.createElement("div");
+            message.className = "message";
+            message.textContent = emptyLabel(node);
+            children.append(message);
+          } else {
+            list.forEach((child) => children.append(renderNode(child)));
+          }
+          children.dataset.loaded = "true";
+        } catch (error) {
+          status.className = "status error";
+          status.textContent = "错误";
+          children.innerHTML = "";
+          const message = document.createElement("div");
+          message.className = "message";
+          message.textContent = "数据文件加载失败";
+          children.append(message);
         }
+      }
 
-        function isPointer(node) {
-            return !!node.data_source;
+      function collapse() {
+        wrapper.classList.remove("expanded");
+        toggle.textContent = "›";
+        toggle.setAttribute("aria-label", `展开 ${node.title || "未命名"}`);
+      }
+
+      toggle.addEventListener("click", () => {
+        if (wrapper.classList.contains("expanded")) {
+          collapse();
+        } else {
+          expand();
         }
+      });
 
-        // 初始化
-        fetch('data/root.json')
-            .then(res => res.json())
-            .then(data => {
-                const container = document.getElementById('root');
-                renderNode(container, data);
-                // 默认展开根节点
-                container.firstElementChild.querySelector('.title').click();
-            });
-    </script>
+      title.addEventListener("click", () => toggle.click());
+
+      if (openByDefault) {
+        requestAnimationFrame(() => expand());
+      }
+
+      return wrapper;
+    }
+
+    async function init() {
+      treeEl.innerHTML = '<div class="message">加载中</div>';
+      try {
+        const response = await fetch("data/root.json", { cache: "no-cache" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const root = await response.json();
+        treeEl.innerHTML = "";
+        treeEl.append(renderNode(root, true));
+        metaEl.textContent = root.updated_at ? `更新于 ${root.updated_at}` : "";
+      } catch (error) {
+        treeEl.innerHTML = '<div class="message">根数据加载失败</div>';
+        metaEl.textContent = "";
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>

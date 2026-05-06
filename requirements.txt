@@ -1,1 +1,2 @@
-wikipedia-api==0.5.0
+SPARQLWrapper>=2.0.0,<3
+wikipedia-api>=0.5.0,<1
