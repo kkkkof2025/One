@@ -47,8 +47,9 @@
     },
     {
       "title": "隐花植物",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q333458.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q333458"
     }
   ],

@@ -40,14 +40,16 @@
     },
     {
       "title": "尚比亞野生動物",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q8001447.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q8001447"
     },
     {
       "title": "巴林的野生动植物",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q22083579.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q22083579"
     }
   ],
