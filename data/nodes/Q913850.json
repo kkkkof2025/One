@@ -1,0 +1,16 @@
+{
+  "id": "Q913850",
+  "title": "火星人",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "白火星人",
+      "data_source": "nodes/Q1759661.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1759661"
+    }
+  ],
+  "updated_at": "2026-05-06T03:29:45Z",
+  "is_leaf": false
+}

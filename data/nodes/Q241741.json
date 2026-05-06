@@ -1,0 +1,56 @@
+{
+  "id": "Q241741",
+  "title": "野生生物",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "Wildlife of Japan",
+      "data_source": "nodes/Q8001388.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q8001388"
+    },
+    {
+      "title": "中国野生动物",
+      "data_source": "nodes/Q8001373.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q8001373"
+    },
+    {
+      "title": "也门野生生物",
+      "data_source": "nodes/Q22083589.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q22083589"
+    },
+    {
+      "title": "土耳其的野生動物",
+      "data_source": "nodes/Q6085434.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q6085434"
+    },
+    {
+      "title": "圣多美普林西比动植物",
+      "data_source": "nodes/Q8001438.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q8001438"
+    },
+    {
+      "title": "尚比亞野生動物",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q8001447"
+    },
+    {
+      "title": "巴林的野生动植物",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q22083579"
+    }
+  ],
+  "updated_at": "2026-05-06T03:29:53Z",
+  "is_leaf": false
+}

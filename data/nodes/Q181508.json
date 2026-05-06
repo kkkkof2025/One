@@ -1,0 +1,51 @@
+{
+  "id": "Q181508",
+  "title": "外星生命",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "土卫六生命",
+      "data_source": "nodes/Q2591050.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q2591050"
+    },
+    {
+      "title": "外星人",
+      "data_source": "nodes/Q15107669.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q15107669"
+    },
+    {
+      "title": "月球生命",
+      "data_source": "nodes/Q136546064.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q136546064"
+    },
+    {
+      "title": "火星人",
+      "data_source": "nodes/Q913850.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q913850"
+    },
+    {
+      "title": "火星生命",
+      "data_source": "nodes/Q601319.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q601319"
+    },
+    {
+      "title": "金星生命",
+      "data_source": "nodes/Q2582723.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q2582723"
+    }
+  ],
+  "updated_at": "2026-05-06T03:29:40Z",
+  "is_leaf": false
+}

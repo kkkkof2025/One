@@ -5,18 +5,18 @@
   "updated_at": "2026-05-06T00:00:00Z",
   "children": [
     {
-      "id": "Q1",
       "title": "宇宙",
       "data_source": "nodes/Q1.json",
-      "children_status": "pending",
-      "is_leaf": false
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1"
     },
     {
-      "id": "Q3",
       "title": "生命",
       "data_source": "nodes/Q3.json",
-      "children_status": "pending",
-      "is_leaf": false
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q3"
     }
   ]
 }
