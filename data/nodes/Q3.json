@@ -1,6 +1,57 @@
 {
   "id": "Q3",
   "title": "生命",
-  "children_status": "pending",
-  "children": []
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "地球人",
+      "data_source": "nodes/Q1349305.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1349305"
+    },
+    {
+      "title": "外星生命",
+      "data_source": "nodes/Q181508.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q181508"
+    },
+    {
+      "title": "擬蕨",
+      "data_source": "nodes/Q3824034.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q3824034"
+    },
+    {
+      "title": "池生动物",
+      "data_source": "nodes/Q105721447.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q105721447"
+    },
+    {
+      "title": "碳生命",
+      "data_source": "nodes/Q4215735.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q4215735"
+    },
+    {
+      "title": "野生生物",
+      "data_source": "nodes/Q241741.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q241741"
+    },
+    {
+      "title": "隐花植物",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q333458"
+    }
+  ],
+  "updated_at": "2026-05-06T03:29:38Z",
+  "is_leaf": false
 }
