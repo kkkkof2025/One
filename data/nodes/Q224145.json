@@ -5,24 +5,27 @@
   "children": [
     {
       "title": "R136",
-      "children_status": "pending",
+      "data_source": "nodes/Q5116.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q5116",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "VFTS 102",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q2479744.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q2479744",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "霍奇301",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q520496.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q520496",
-      "source_relation": "part_of"
+      "fetch_strategy_version": 2
     }
   ],
   "fetch_strategy_version": 2,

@@ -93,31 +93,35 @@
     },
     {
       "title": "波江座星系團",
-      "children_status": "pending",
+      "data_source": "nodes/Q942427.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q942427",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "獵犬II星系群",
-      "children_status": "pending",
+      "data_source": "nodes/Q2537436.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2537436",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "玉夫座星系群",
-      "children_status": "pending",
+      "data_source": "nodes/Q1521081.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1521081",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "馬菲星系群",
-      "children_status": "pending",
+      "data_source": "nodes/Q843331.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q843331",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     }
   ],
   "fetch_strategy_version": 2,
