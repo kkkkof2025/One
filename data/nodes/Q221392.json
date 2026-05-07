@@ -1,0 +1,96 @@
+{
+  "id": "Q221392",
+  "title": "可觀測宇宙",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "BOSS長城",
+      "data_source": "nodes/Q23054687.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q23054687",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "双鱼-鲸鱼座超星系团复合体",
+      "data_source": "nodes/Q24571.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q24571",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "史隆長城",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q497745",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "天體物理學中心2長城",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1139177",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "巨型超大类星体群",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3094136",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "武仙－北冕座長城",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q15241043",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "超大類星體群",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2945326",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "暗物质",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q79925",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "暗能量",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q18343",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "物質",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q35758",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "沙普利超星系团",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1513087",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "玉夫座长城",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7439451",
+      "source_relation": "part_of"
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:54:18Z",
+  "is_leaf": false
+}

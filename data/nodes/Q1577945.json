@@ -1,0 +1,42 @@
+{
+  "id": "Q1577945",
+  "title": "M96星系群",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "獅子座三胞胎",
+      "data_source": "nodes/Q1122442.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q1122442",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M105",
+      "data_source": "nodes/Q14377.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14377",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M95",
+      "data_source": "nodes/Q14351.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14351",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "梅西爾96",
+      "data_source": "nodes/Q14354.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14354",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:54:43Z",
+  "is_leaf": false
+}
