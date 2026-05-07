@@ -1,0 +1,34 @@
+{
+  "id": "Q1146392",
+  "title": "馬卡萊恩長鏈",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "M84",
+      "data_source": "nodes/Q92258118.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q92258118",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M86",
+      "data_source": "nodes/Q92258250.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q92258250",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "雙眼星系",
+      "data_source": "nodes/Q14702236.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14702236",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T02:07:20Z",
+  "is_leaf": false
+}

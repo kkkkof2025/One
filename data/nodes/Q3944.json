@@ -1,0 +1,211 @@
+{
+  "id": "Q3944",
+  "title": "本星系群",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "M32",
+      "data_source": "nodes/Q13720.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13720",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "Segue 1",
+      "data_source": "nodes/Q1813110.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1813110",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "Segue 2",
+      "data_source": "nodes/Q2266221.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q2266221",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "人馬座矮不規則星系",
+      "data_source": "nodes/Q1149676.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1149676",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "人馬座矮橢球星系",
+      "data_source": "nodes/Q32885.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q32885",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "仙女座I",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2727447",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座II",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q287905",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座III",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2704275",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座IV",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2025704",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座IX",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q779522",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座V",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2704510",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座VI",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1656479",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座VIII",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2259795",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座X",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4759486",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "仙女座星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2469",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "六分儀座A",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1282228",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "六分儀座B",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2746406",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "六分儀座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q32886",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "凤凰座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q782095",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "后髮座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2476549",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "大熊座II矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q33110",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "大熊座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q32888",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "大犬座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q35745",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "大麦哲伦星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q49957",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "天爐座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q35818",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "天龙座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q11566",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "威爾曼1",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q32882",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "寶瓶座矮星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1194660",
+      "source_relation": "has_part"
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T02:07:25Z",
+  "is_leaf": false
+}

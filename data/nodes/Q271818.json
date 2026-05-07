@@ -45,80 +45,91 @@
     },
     {
       "title": "M84",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q92258118.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q92258118",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M85",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14035.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14035",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M86",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q92258250.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q92258250",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M88",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14048.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14048",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M89",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14337.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14337",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M90",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14343.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14343",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M91",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14344.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14344",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "M98",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q14361.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q14361",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "VIRGOHI21",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q1210087.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q1210087",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "室女A星系",
-      "children_status": "pending",
+      "data_source": "nodes/Q14041.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q14041",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "馬卡萊恩長鏈",
-      "children_status": "pending",
+      "data_source": "nodes/Q1146392.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1146392",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     }
   ],
   "fetch_strategy_version": 2,
