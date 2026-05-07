@@ -1,0 +1,18 @@
+{
+  "id": "Q4818153",
+  "title": "M74星系群",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "M74",
+      "data_source": "nodes/Q14013.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14013",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:54:32Z",
+  "is_leaf": false
+}

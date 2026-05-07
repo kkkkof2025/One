@@ -1,8 +1,130 @@
 {
   "id": "Q1",
   "title": "宇宙",
-  "children_status": "pending",
-  "children": [],
-  "updated_at": "2026-05-06T03:29:37Z",
-  "is_leaf": false
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "可觀測宇宙",
+      "data_source": "nodes/Q221392.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q221392",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "外太空",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4169",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "大尺度纖維狀結構",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1133705",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "时空",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q133327",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "场",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q185674",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "天体",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q6999",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "星系際塵埃",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2504088",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "暗物质",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q79925",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "暗能量",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q18343",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "物理物质",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q28732711",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "重子物质",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q6005984",
+      "source_relation": "has_parts_of_class"
+    },
+    {
+      "title": "地球在宇宙中的位置",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q437877",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "物质系统",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1454986",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "空洞",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q845371",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "能量",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q11379",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "自然",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7860",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "邪惡軸心（宇宙學）",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q25304698",
+      "source_relation": "part_of"
+    }
+  ],
+  "updated_at": "2026-05-07T00:54:16Z",
+  "is_leaf": false,
+  "fetch_strategy_version": 2
 }

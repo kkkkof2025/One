@@ -1,0 +1,18 @@
+{
+  "id": "Q14026",
+  "title": "雪茄星系",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "M82 X-1",
+      "data_source": "nodes/Q2759979.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q2759979",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:54:38Z",
+  "is_leaf": false
+}
