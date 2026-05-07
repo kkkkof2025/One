@@ -1,0 +1,127 @@
+{
+  "id": "Q271818",
+  "title": "室女座星系團",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "M49",
+      "data_source": "nodes/Q13952.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13952",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M58",
+      "data_source": "nodes/Q13970.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13970",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M59",
+      "data_source": "nodes/Q13971.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13971",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M60",
+      "data_source": "nodes/Q13976.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13976",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M61",
+      "data_source": "nodes/Q13978.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q13978",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "M84",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q92258118",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M85",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14035",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M86",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q92258250",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M88",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14048",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M89",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14337",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M90",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14343",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M91",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14344",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "M98",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14361",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "VIRGOHI21",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1210087",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "室女A星系",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14041",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "馬卡萊恩長鏈",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1146392",
+      "source_relation": "has_part"
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:57:01Z",
+  "is_leaf": false
+}

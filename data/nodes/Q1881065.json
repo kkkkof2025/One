@@ -1,0 +1,26 @@
+{
+  "id": "Q1881065",
+  "title": "半人馬座 A/M83星系團",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "半人馬座A",
+      "data_source": "nodes/Q487255.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q487255",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "南風車星系",
+      "data_source": "nodes/Q14030.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q14030",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T00:56:54Z",
+  "is_leaf": false
+}
