@@ -406,6 +406,60 @@
       box-shadow: var(--shadow);
     }
 
+    .chart-panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .chart-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 52px;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfd;
+    }
+
+    .chart-button {
+      min-height: 32px;
+      border: 0;
+      border-radius: 6px;
+      padding: 0 11px;
+      color: #ffffff;
+      background: var(--accent);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .chart-button:disabled {
+      color: #7a8795;
+      background: #d7dee6;
+      cursor: default;
+    }
+
+    .chart-status {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+      text-align: right;
+    }
+
+    .chart-canvas {
+      width: 100%;
+      height: min(680px, calc(100vh - 242px));
+      min-height: 500px;
+      background:
+        linear-gradient(90deg, rgba(214, 221, 229, 0.32) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(214, 221, 229, 0.32) 1px, transparent 1px),
+        #fbfcfd;
+      background-size: 40px 40px;
+    }
+
     .tree-node {
       min-width: 280px;
     }
@@ -522,6 +576,22 @@
         min-height: 440px;
       }
 
+      .chart-toolbar {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .chart-status {
+        flex-basis: 100%;
+        margin-left: 0;
+        text-align: left;
+      }
+
+      .chart-canvas {
+        height: calc(100vh - 344px);
+        min-height: 440px;
+      }
+
       .vector-hud {
         display: none;
       }
@@ -557,6 +627,7 @@
       <div class="switcher" role="tablist" aria-label="视图切换">
         <button id="cloudTab" class="active" type="button" role="tab" aria-selected="true">云球</button>
         <button id="treeTab" type="button" role="tab" aria-selected="false">经典树</button>
+        <button id="chartTab" type="button" role="tab" aria-selected="false">树状图</button>
       </div>
       <div id="meta" class="meta"></div>
     </header>
@@ -598,6 +669,18 @@
     <section id="treeView" class="view" role="tabpanel" aria-labelledby="treeTab">
       <main id="tree" class="tree-panel" aria-live="polite"></main>
     </section>
+
+    <section id="chartView" class="view" role="tabpanel" aria-labelledby="chartTab">
+      <div class="chart-panel">
+        <div class="chart-toolbar">
+          <button id="chartBack" class="chart-button" type="button">返回上级</button>
+          <button id="chartHome" class="chart-button" type="button">回到根部</button>
+          <button id="chartCompact" class="chart-button" type="button">收起远层</button>
+          <span id="chartStatus" class="chart-status">未加载</span>
+        </div>
+        <div id="chartCanvas" class="chart-canvas" role="img" aria-label="树状图视图"></div>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -617,14 +700,30 @@
       unlockAngleDeg: 20,
       unlockDistance: 86,
       maxChildren: 18,
-      maxSiblings: 14
+      maxSiblings: 14,
+      echartsUrls: [
+        "https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js",
+        "https://unpkg.com/echarts@5/dist/echarts.min.js"
+      ],
+      echartsLoadTimeoutMs: 12000,
+      chartMaxChildren: 36,
+      chartCompactChildren: 24,
+      chartNodeBudget: 90,
+      chartCompactNodeBudget: 58,
+      chartSlowMs: 90,
+      chartRecoverMs: 45,
+      chartMinZoom: 0.55,
+      chartSlowMinZoom: 0.78,
+      chartMaxZoom: 2.2
     };
 
     const metaEl = document.getElementById("meta");
     const cloudTab = document.getElementById("cloudTab");
     const treeTab = document.getElementById("treeTab");
+    const chartTab = document.getElementById("chartTab");
     const cloudView = document.getElementById("cloudView");
     const treeView = document.getElementById("treeView");
+    const chartView = document.getElementById("chartView");
     const cloudStage = document.getElementById("cloudStage");
     const cloudLayer = document.getElementById("cloudLayer");
     const cloudPath = document.getElementById("cloudPath");
@@ -632,6 +731,11 @@
     const cloudHome = document.getElementById("cloudHome");
     const vectorHud = document.getElementById("vectorHud");
     const treeEl = document.getElementById("tree");
+    const chartCanvas = document.getElementById("chartCanvas");
+    const chartBack = document.getElementById("chartBack");
+    const chartHome = document.getElementById("chartHome");
+    const chartCompact = document.getElementById("chartCompact");
+    const chartStatus = document.getElementById("chartStatus");
     const totalNodeCountEl = document.getElementById("totalNodeCount");
     const lastAddedCountEl = document.getElementById("lastAddedCount");
     const lastRunAtEl = document.getElementById("lastRunAt");
@@ -656,6 +760,21 @@
     let driftCurrent = { x: 0, y: 0 };
     let driftTarget = { x: 0, y: 0 };
     let activeMode = "cloud";
+    let echartsLoader = null;
+    let treeChart = null;
+    let chartTrail = [];
+    let chartExpanded = new Map();
+    let chartNodeContext = new Map();
+    let chartRenderToken = 0;
+    let chartRenderCount = 0;
+    let chartHiddenCount = 0;
+    let chartRenderMs = 0;
+    let chartPerformanceMode = "normal";
+    let chartZoom = 1;
+    let chartCenter = ["50%", "20%"];
+    let chartIgnoreRoam = false;
+    let chartLastDepthLimit = 2;
+    let chartExpandTick = 0;
 
     function clamp(value, min, max) {
       return Math.max(min, Math.min(max, value));
@@ -871,6 +990,12 @@
       cache.set("data/root.json", rootNode);
       metaEl.textContent = rootNode.updated_at ? `更新于 ${rootNode.updated_at}` : "";
       cloudTrail = [{
+        node: rootNode,
+        parent: null,
+        siblings: [rootNode],
+        index: 0
+      }];
+      chartTrail = [{
         node: rootNode,
         parent: null,
         siblings: [rootNode],
@@ -1290,26 +1415,459 @@
       treeEl.append(renderTreeNode(rootNode, true));
     }
 
+    function chartLogicalKey(node, fallback = "") {
+      return nodeKey(node, fallback);
+    }
+
+    function currentChartEntry() {
+      return chartTrail[chartTrail.length - 1] || null;
+    }
+
+    function selectedChartKey() {
+      const entry = currentChartEntry();
+      return entry ? chartLogicalKey(entry.node, "root") : "";
+    }
+
+    function chartNodeBudget() {
+      return chartPerformanceMode === "slow"
+        ? CONFIG.chartCompactNodeBudget
+        : CONFIG.chartNodeBudget;
+    }
+
+    function chartChildLimit() {
+      const compact = chartPerformanceMode === "slow" || window.innerWidth <= 740;
+      return compact ? CONFIG.chartCompactChildren : CONFIG.chartMaxChildren;
+    }
+
+    function chartMinZoom() {
+      return chartPerformanceMode === "slow" ? CONFIG.chartSlowMinZoom : CONFIG.chartMinZoom;
+    }
+
+    function chartDepthLimit() {
+      let depth = 2;
+      if (chartZoom < 0.82) depth = 3;
+      if (chartZoom < 0.62) depth = 4;
+      if (chartPerformanceMode === "slow") depth = Math.min(depth, 3);
+      return depth;
+    }
+
+    function chartDisplayTrail() {
+      if (chartTrail.length > 1) return chartTrail.slice(0, -1);
+      return chartTrail.slice();
+    }
+
+    function chartVisibleChildren(node) {
+      const children = Array.isArray(node.children) ? node.children : [];
+      return {
+        all: children,
+        visible: children.slice(0, chartChildLimit())
+      };
+    }
+
+    function rememberChartExpansion(node) {
+      const key = chartLogicalKey(node);
+      if (!key) return;
+      chartExpanded.set(key, ++chartExpandTick);
+    }
+
+    function pruneChartExpanded(keepKeys) {
+      const removable = Array.from(chartExpanded.entries())
+        .filter(([key]) => !keepKeys.has(key))
+        .sort((a, b) => a[1] - b[1]);
+
+      if (removable.length === 0) return false;
+      const removeCount = Math.max(1, Math.ceil(removable.length / 3));
+      removable.slice(0, removeCount).forEach(([key]) => chartExpanded.delete(key));
+      return true;
+    }
+
+    function wrapChartLabel(value) {
+      const text = String(value || "未命名");
+      if (text.length <= 8) return text;
+      const lines = [];
+      for (let index = 0; index < text.length && lines.length < 3; index += 8) {
+        lines.push(text.slice(index, index + 8));
+      }
+      return lines.join("\n");
+    }
+
+    function chartStatusText(node) {
+      const count = chartRenderCount ? `${chartRenderCount} 节点` : "未渲染";
+      const depth = `${chartDepthLimit()} 层`;
+      const zoom = `${Math.round(chartZoom * 100)}%`;
+      const perf = chartPerformanceMode === "slow" ? "保守" : "自适应";
+      const hidden = chartHiddenCount > 0 ? ` · 已收起 ${chartHiddenCount}` : "";
+      return `${node?.title || "万物"} · ${count} · ${depth} · ${zoom} · ${perf}${hidden}`;
+    }
+
+    function updateChartStatus(message) {
+      chartStatus.textContent = message || chartStatusText(currentChartEntry()?.node);
+    }
+
+    function updateChartButtons() {
+      chartBack.disabled = chartTrail.length <= 1;
+      chartHome.disabled = chartTrail.length <= 1;
+      chartCompact.disabled = chartExpanded.size === 0;
+    }
+
+    function loadECharts() {
+      if (window.echarts) return Promise.resolve(window.echarts);
+      if (echartsLoader) return echartsLoader;
+
+      function loadScript(url, index) {
+        updateChartStatus(`加载树状图引擎 ${index + 1}/${CONFIG.echartsUrls.length}`);
+        return new Promise((resolve, reject) => {
+          const script = document.createElement("script");
+          const timer = window.setTimeout(() => {
+            script.remove();
+            reject(new Error("ECharts load timed out"));
+          }, CONFIG.echartsLoadTimeoutMs);
+
+          script.src = url;
+          script.async = true;
+          script.onload = () => {
+            window.clearTimeout(timer);
+            if (window.echarts) {
+              resolve(window.echarts);
+            } else {
+              script.remove();
+              reject(new Error("ECharts is unavailable"));
+            }
+          };
+          script.onerror = () => {
+            window.clearTimeout(timer);
+            script.remove();
+            reject(new Error("ECharts load failed"));
+          };
+          document.head.append(script);
+        });
+      }
+
+      echartsLoader = (async () => {
+        let lastError = null;
+        for (let index = 0; index < CONFIG.echartsUrls.length; index += 1) {
+          try {
+            return await loadScript(CONFIG.echartsUrls[index], index);
+          } catch (error) {
+            lastError = error;
+          }
+        }
+        throw lastError || new Error("ECharts load failed");
+      })().catch((error) => {
+        echartsLoader = null;
+        throw error;
+      });
+      return echartsLoader;
+    }
+
+    async function ensureTreeChart() {
+      const echarts = await loadECharts();
+      if (!treeChart) {
+        treeChart = echarts.init(chartCanvas, null, { renderer: "canvas" });
+        treeChart.on("click", (params) => {
+          if (params.seriesType === "tree" && params.data?.pathKey) {
+            selectChartNode(params.data.pathKey);
+          }
+        });
+        treeChart.on("treeroam", handleChartRoam);
+        treeChart.on("treeRoam", handleChartRoam);
+      }
+      return treeChart;
+    }
+
+    function syncChartViewport() {
+      if (!treeChart) return;
+      const option = treeChart.getOption();
+      const series = option?.series?.[0] || {};
+      if (typeof series.zoom === "number") {
+        chartZoom = series.zoom;
+      }
+      if (Array.isArray(series.center)) {
+        chartCenter = series.center;
+      }
+    }
+
+    function handleChartRoam() {
+      if (chartIgnoreRoam) return;
+      const previousDepth = chartLastDepthLimit;
+      syncChartViewport();
+
+      const minZoom = chartMinZoom();
+      if (chartZoom < minZoom || chartZoom > CONFIG.chartMaxZoom) {
+        chartZoom = clamp(chartZoom, minZoom, CONFIG.chartMaxZoom);
+        renderChart();
+        return;
+      }
+
+      const nextDepth = chartDepthLimit();
+      if (nextDepth !== previousDepth) {
+        renderChart();
+      } else {
+        updateChartStatus();
+      }
+    }
+
+    function chartShouldExpand(entry, logicalKey, depth, isDisplayRoot) {
+      if (depth >= chartDepthLimit()) return false;
+      if (isDisplayRoot) return true;
+      if (logicalKey === selectedChartKey()) return true;
+      return chartExpanded.has(logicalKey);
+    }
+
+    function buildChartNode(entry, trail, depth, pathKey) {
+      const node = entry.node;
+      const logicalKey = chartLogicalKey(node, pathKey);
+      const isSelected = logicalKey === selectedChartKey();
+      const data = {
+        name: node.title || "未命名",
+        pathKey,
+        logicalKey,
+        status: node.children_status || "pending",
+        itemStyle: {
+          color: isSelected ? CONFIG.chartSelectedColor || "#0f7a8a" : "#ffffff",
+          borderColor: isSelected ? "#0f7a8a" : "#9aa8b8",
+          borderWidth: isSelected ? 3 : 1.4
+        },
+        label: {
+          color: isSelected ? "#0f4f59" : "#18212f",
+          fontWeight: isSelected ? 700 : 500
+        }
+      };
+
+      chartRenderCount += 1;
+      chartNodeContext.set(pathKey, {
+        entry,
+        trail
+      });
+
+      const isDisplayRoot = depth === 0;
+      if (!chartShouldExpand(entry, logicalKey, depth, isDisplayRoot)) return data;
+
+      const { all, visible } = chartVisibleChildren(node);
+      const children = [];
+      const budget = chartNodeBudget();
+      for (let index = 0; index < visible.length; index += 1) {
+        const child = visible[index];
+        if (chartRenderCount >= budget) {
+          chartHiddenCount += visible.length - index;
+          break;
+        }
+
+        const childEntry = {
+          node: child,
+          parent: node,
+          siblings: all,
+          index
+        };
+        const childTrail = trail.concat(childEntry);
+        children.push(buildChartNode(childEntry, childTrail, depth + 1, `${pathKey}.${index}`));
+      }
+
+      if (all.length > visible.length) {
+        chartHiddenCount += all.length - visible.length;
+      }
+      if (children.length > 0) data.children = children;
+      return data;
+    }
+
+    function buildChartData() {
+      const keepKeys = new Set(chartTrail.map((entry) => chartLogicalKey(entry.node)));
+      let data = null;
+
+      for (let attempt = 0; attempt < 3; attempt += 1) {
+        chartNodeContext = new Map();
+        chartRenderCount = 0;
+        chartHiddenCount = 0;
+        const displayTrail = chartDisplayTrail();
+        const displayEntry = displayTrail[displayTrail.length - 1] || currentChartEntry();
+        data = buildChartNode(displayEntry, displayTrail, 0, "root");
+
+        if (chartHiddenCount === 0 || !pruneChartExpanded(keepKeys)) break;
+      }
+
+      return data;
+    }
+
+    function updateChartPerformance(duration) {
+      const budget = chartNodeBudget();
+      const enoughNodes = chartRenderCount > CONFIG.chartCompactChildren;
+      if (
+        chartRenderCount >= budget ||
+        (duration > CONFIG.chartSlowMs && enoughNodes) ||
+        duration > CONFIG.chartSlowMs * 2.5
+      ) {
+        chartPerformanceMode = "slow";
+        chartZoom = Math.max(chartZoom, CONFIG.chartSlowMinZoom);
+        return;
+      }
+
+      if (
+        chartPerformanceMode === "slow" &&
+        duration < CONFIG.chartRecoverMs &&
+        chartRenderCount < CONFIG.chartCompactNodeBudget * 0.7
+      ) {
+        chartPerformanceMode = "normal";
+      }
+    }
+
+    function chartTooltip(params) {
+      const ctx = chartNodeContext.get(params.data?.pathKey);
+      const node = ctx?.entry.node;
+      if (!node) return params.name;
+      const title = node.title || "未命名";
+      const children = Array.isArray(node.children) ? node.children.length : 0;
+      return `${title}<br/>${statusLabel(node.children_status)} · 子节点 ${children}`;
+    }
+
+    function chartOption(data) {
+      return {
+        tooltip: {
+          trigger: "item",
+          triggerOn: "mousemove",
+          formatter: chartTooltip
+        },
+        series: [{
+          type: "tree",
+          data: [data],
+          top: 38,
+          left: "7%",
+          right: "7%",
+          bottom: 44,
+          orient: "TB",
+          roam: true,
+          zoom: chartZoom,
+          center: chartCenter,
+          initialTreeDepth: -1,
+          expandAndCollapse: false,
+          symbol: "circle",
+          symbolSize: 13,
+          nodeScaleRatio: 0.35,
+          label: {
+            position: "bottom",
+            verticalAlign: "middle",
+            align: "center",
+            distance: 8,
+            fontSize: 12,
+            lineHeight: 15,
+            formatter: (params) => wrapChartLabel(params.name)
+          },
+          leaves: {
+            label: {
+              position: "bottom",
+              verticalAlign: "middle",
+              align: "center"
+            }
+          },
+          lineStyle: {
+            color: "#a8b4c2",
+            width: 1.3,
+            curveness: 0.48
+          },
+          emphasis: {
+            focus: "relative"
+          },
+          animationDuration: chartRenderCount > 70 ? 120 : 260,
+          animationDurationUpdate: chartRenderCount > 70 ? 120 : 260
+        }]
+      };
+    }
+
+    async function renderChart() {
+      if (!rootNode || activeMode !== "chart") return;
+      const token = ++chartRenderToken;
+      updateChartStatus("准备树状图");
+
+      try {
+        const chart = await ensureTreeChart();
+        if (token !== chartRenderToken) return;
+
+        chartZoom = clamp(chartZoom, chartMinZoom(), CONFIG.chartMaxZoom);
+        chartLastDepthLimit = chartDepthLimit();
+        const start = performance.now();
+        const data = buildChartData();
+        chartIgnoreRoam = true;
+        try {
+          chart.setOption(chartOption(data), { notMerge: true, lazyUpdate: false });
+        } finally {
+          chartIgnoreRoam = false;
+        }
+        chart.resize();
+        updateChartButtons();
+
+        requestAnimationFrame(() => {
+          chartRenderMs = performance.now() - start;
+          updateChartPerformance(chartRenderMs);
+          updateChartStatus();
+        });
+      } catch (error) {
+        chartStatus.textContent = "树状图加载失败";
+      }
+    }
+
+    async function selectChartNode(pathKey) {
+      const ctx = chartNodeContext.get(pathKey);
+      if (!ctx) return;
+
+      updateChartStatus(`加载 ${ctx.entry.node.title || "未命名"}`);
+      const hydrated = await safeHydrateNode(ctx.entry.node);
+      Object.assign(ctx.entry.node, hydrated);
+      const nextTrail = ctx.trail.slice();
+      nextTrail[nextTrail.length - 1] = Object.assign({}, ctx.entry, {
+        node: ctx.entry.node
+      });
+      chartTrail = nextTrail;
+      rememberChartExpansion(ctx.entry.node);
+      renderChart();
+    }
+
+    function initChartTrailFromCloud() {
+      if (chartTrail.length > 0) return;
+      chartTrail = cloudTrail.map((entry) => Object.assign({}, entry));
+    }
+
+    function resetChartToRoot() {
+      if (!rootNode) return;
+      chartTrail = [{
+        node: rootNode,
+        parent: null,
+        siblings: [rootNode],
+        index: 0
+      }];
+      chartExpanded = new Map();
+      chartZoom = 1;
+      chartCenter = ["50%", "20%"];
+      renderChart();
+    }
+
     function setMode(mode) {
       activeMode = mode;
       const isCloud = mode === "cloud";
+      const isTree = mode === "tree";
+      const isChart = mode === "chart";
       cloudView.classList.toggle("active", isCloud);
-      treeView.classList.toggle("active", !isCloud);
+      treeView.classList.toggle("active", isTree);
+      chartView.classList.toggle("active", isChart);
       cloudTab.classList.toggle("active", isCloud);
-      treeTab.classList.toggle("active", !isCloud);
+      treeTab.classList.toggle("active", isTree);
+      chartTab.classList.toggle("active", isChart);
       cloudTab.setAttribute("aria-selected", String(isCloud));
-      treeTab.setAttribute("aria-selected", String(!isCloud));
+      treeTab.setAttribute("aria-selected", String(isTree));
+      chartTab.setAttribute("aria-selected", String(isChart));
       if (isCloud) {
         renderCloud();
         resetCloudPointerState();
         cloudStage.focus({ preventScroll: true });
-      } else {
+      } else if (isTree) {
         renderTree();
+      } else {
+        initChartTrailFromCloud();
+        renderChart();
       }
     }
 
     cloudTab.addEventListener("click", () => setMode("cloud"));
     treeTab.addEventListener("click", () => setMode("tree"));
+    chartTab.addEventListener("click", () => setMode("chart"));
 
     cloudBack.addEventListener("click", () => {
       if (cloudTrail.length <= 1) return;
@@ -1325,10 +1883,31 @@
       resetCloudPointerState();
     });
 
+    chartBack.addEventListener("click", () => {
+      if (chartTrail.length <= 1) return;
+      chartTrail.pop();
+      rememberChartExpansion(currentChartEntry().node);
+      renderChart();
+    });
+
+    chartHome.addEventListener("click", resetChartToRoot);
+
+    chartCompact.addEventListener("click", () => {
+      const keepKeys = new Set(chartTrail.map((entry) => chartLogicalKey(entry.node)));
+      Array.from(chartExpanded.keys()).forEach((key) => {
+        if (!keepKeys.has(key)) chartExpanded.delete(key);
+      });
+      renderChart();
+    });
+
     cloudStage.addEventListener("pointermove", handleCloudPointer);
     cloudStage.addEventListener("pointerleave", resetCloudPointer);
     window.addEventListener("resize", () => {
       if (activeMode === "cloud" && rootNode) renderCloud();
+      if (activeMode === "chart" && treeChart) {
+        treeChart.resize();
+        renderChart();
+      }
     });
 
     async function init() {
@@ -1338,6 +1917,7 @@
       } catch (error) {
         cloudLayer.innerHTML = '<div class="message">根数据加载失败</div>';
         treeEl.innerHTML = '<div class="message">根数据加载失败</div>';
+        chartStatus.textContent = "根数据加载失败";
         metaEl.textContent = "";
       }
     }

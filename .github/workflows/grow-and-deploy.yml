@@ -26,6 +26,8 @@ jobs:
   grow:
     name: Grow data and build static site
     runs-on: ubuntu-latest
+    outputs:
+      pages_artifact_name: "${{ steps.pages_artifact.outputs.name }}"
 
     steps:
       - name: Checkout repository
@@ -83,9 +85,14 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
+      - name: Select Pages artifact name
+        id: pages_artifact
+        run: echo "name=github-pages-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" >> "$GITHUB_OUTPUT"
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
+          name: "${{ steps.pages_artifact.outputs.name }}"
           path: public
 
   deploy:
@@ -100,3 +107,5 @@ jobs:
       - name: Deploy artifact
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: "${{ needs.grow.outputs.pages_artifact_name }}"
