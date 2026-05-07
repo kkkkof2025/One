@@ -1,0 +1,31 @@
+{
+  "id": "Q224145",
+  "title": "蜘蛛星云",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "R136",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q5116",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "VFTS 102",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2479744",
+      "source_relation": "has_part"
+    },
+    {
+      "title": "霍奇301",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q520496",
+      "source_relation": "part_of"
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T02:18:54Z",
+  "is_leaf": false
+}
