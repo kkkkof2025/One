@@ -1,0 +1,34 @@
+{
+  "id": "Q61121",
+  "title": "長蛇-半人馬座超星系團",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "半人馬座星系團",
+      "data_source": "nodes/Q61075.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q61075",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "矩尺座星系团",
+      "data_source": "nodes/Q1068075.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q1068075",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "唧筒座星系團",
+      "data_source": "nodes/Q61187.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q61187",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T03:03:43Z",
+  "is_leaf": false
+}

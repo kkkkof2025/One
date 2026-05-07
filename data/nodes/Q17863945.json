@@ -21,38 +21,43 @@
     },
     {
       "title": "巨引源",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q656857.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q656857",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "長蛇-半人馬座超星系團",
-      "children_status": "pending",
+      "data_source": "nodes/Q61121.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q61121",
-      "source_relation": "has_part"
+      "fetch_strategy_version": 2
     },
     {
       "title": "本星系域",
-      "children_status": "pending",
+      "data_source": "nodes/Q24669475.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q24669475",
-      "source_relation": "part_of"
+      "fetch_strategy_version": 2
     },
     {
       "title": "矩尺座星系团",
-      "children_status": "pending",
+      "data_source": "nodes/Q1068075.json",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1068075",
-      "source_relation": "part_of"
+      "fetch_strategy_version": 2
     },
     {
       "title": "長蛇座星系團",
-      "children_status": "pending",
-      "is_leaf": false,
+      "data_source": "nodes/Q61095.json",
+      "children_status": "loaded",
+      "is_leaf": true,
       "id": "Q61095",
-      "source_relation": "part_of"
+      "fetch_strategy_version": 2
     }
   ],
   "fetch_strategy_version": 2,

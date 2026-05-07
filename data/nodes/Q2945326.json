@@ -1,0 +1,41 @@
+{
+  "id": "Q2945326",
+  "title": "超大類星體群",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "类星体",
+      "data_source": "nodes/Q83373.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q83373"
+    },
+    {
+      "title": "U1.11",
+      "data_source": "nodes/Q17039109.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q17039109",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "巨型超大类星体群",
+      "data_source": "nodes/Q3094136.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q3094136",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "柯羅威斯－坎普薩諾超大類星體群",
+      "data_source": "nodes/Q15739240.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q15739240",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-07T03:06:45Z",
+  "is_leaf": false
+}
