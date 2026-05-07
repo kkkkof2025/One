@@ -1,8 +1,8 @@
 {
   "id": "Q1",
   "title": "宇宙",
-  "children_status": "loaded",
+  "children_status": "pending",
   "children": [],
   "updated_at": "2026-05-06T03:29:37Z",
-  "is_leaf": true
+  "is_leaf": false
 }

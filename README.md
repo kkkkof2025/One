@@ -23,6 +23,8 @@
 
 也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求 Wikidata 的次数。
 
+增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点。旧策略误判为空叶子的节点会因为 `fetch_strategy_version` 低于当前版本而被重新抓取。
+
 ## 目录结构
 
 ```text
@@ -30,6 +32,8 @@
 ├── .github/workflows/grow-and-deploy.yml  # 定时增长并部署 GitHub Pages
 ├── data/
 │   ├── root.json                          # 页面和脚本的主数据入口
+│   ├── stats.json                         # 当前总节点数和最近一次增长统计
+│   ├── growth_history.json                # 历史生长记录
 │   └── nodes/                             # 懒加载子节点分片
 ├── scripts/grow_json.py                   # Wikidata 增量扩展脚本
 ├── index.html                             # 静态知识树页面
@@ -46,6 +50,8 @@
 
 `data/root.json` 是入口文件。较大的节点会被拆到 `data/nodes/*.json`，父节点使用 `data_source` 指向子文件。
 
+`data/stats.json` 保存当前总节点数、最近一次新增节点数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，只记录 `run_at`、`added_nodes` 和 `total_nodes`，不记录节点详情。
+
 常用字段：
 
 - `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`。
@@ -56,6 +62,8 @@
 - `is_leaf`: 已确认没有子节点时为 `true`。
 - `updated_at`: 自动扩展脚本更新时间。
 - `last_error`: 最近一次扩展失败原因。
+- `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
+- `source_relation`: 节点来自 Wikidata 的哪类关系，例如 `subclass`、`instance`、`part_of`、`has_part`。
 
 示例：
 
@@ -122,6 +130,7 @@ workflow 需要这些权限：
 - `ONE_MAX_REQUESTS`: 单次运行最多请求 Wikidata 次数，默认 `20`。
 - `ONE_QUERY_LIMIT`: 单个节点最多返回子类数量，默认 `50`。
 - `ONE_REQUEST_DELAY`: 请求间隔秒数，默认 `1.0`。
+- `ONE_GROWTH_HISTORY_LIMIT`: `data/growth_history.json` 最多保留多少条历史记录，默认 `365`。
 - `ONE_WIKIDATA_ENDPOINT`: Wikidata SPARQL Endpoint。
 - `ONE_USER_AGENT`: 请求 User-Agent。
 

@@ -7,17 +7,20 @@
   <style>
     :root {
       color-scheme: light;
-      --bg: #f5f7fb;
-      --panel: #ffffff;
-      --text: #1e293b;
-      --muted: #64748b;
-      --line: #d8dee9;
-      --accent: #1d7a8c;
-      --accent-soft: #e3f5f7;
-      --warn: #8a5a00;
-      --warn-soft: #fff4d6;
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --surface-2: #eef3f6;
+      --text: #18212f;
+      --muted: #687484;
+      --line: #d6dde5;
+      --accent: #0f7a8a;
+      --accent-soft: #ddf3f5;
+      --child: #1b8a5a;
+      --sibling: #b45f1c;
+      --focus: #29364a;
       --error: #b42318;
-      --error-soft: #ffe7e4;
+      --warn: #8a5a00;
+      --shadow: 0 18px 50px rgba(31, 45, 61, 0.12);
     }
 
     * {
@@ -32,49 +35,382 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
     }
 
-    .shell {
-      width: min(1120px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 28px 0 40px;
+    button {
+      font: inherit;
     }
 
-    header {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
+    .app {
+      width: min(1180px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 22px 0 36px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(180px, 1fr) auto minmax(160px, 1fr);
+      align-items: center;
       gap: 16px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 1.2;
       letter-spacing: 0;
     }
 
-    .meta {
-      min-height: 22px;
-      color: var(--muted);
-      font-size: 14px;
-      text-align: right;
+    .switcher {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
     }
 
-    .tree {
-      background: var(--panel);
+    .switcher button,
+    .cloud-action {
+      min-height: 34px;
+      border: 0;
+      border-radius: 6px;
+      padding: 0 12px;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .switcher button.active,
+    .cloud-action {
+      color: #ffffff;
+      background: var(--accent);
+    }
+
+    .meta {
+      min-height: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+      overflow-wrap: anywhere;
+    }
+
+    .growth-panel {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(130px, 1fr)) minmax(220px, 1.35fr);
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .stat-tile,
+    .history-tile {
+      min-height: 58px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 9px 12px;
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .stat-value {
+      display: block;
+      margin-top: 5px;
+      color: var(--text);
+      font-size: 20px;
+      font-weight: 720;
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    .history-tile {
+      padding-bottom: 6px;
+    }
+
+    .history-tile summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      min-height: 38px;
+      color: var(--muted);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .history-tile summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .history-title {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .history-count {
+      flex: 0 0 auto;
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    .history-list {
+      display: grid;
+      gap: 6px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .history-row {
+      display: grid;
+      grid-template-columns: minmax(118px, 1fr) auto auto;
+      gap: 8px;
+      align-items: center;
+      min-height: 22px;
+    }
+
+    .history-add {
+      color: var(--child);
+      font-weight: 650;
+    }
+
+    .history-total {
+      color: var(--text);
+    }
+
+    .view {
+      display: none;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    .cloud-stage {
+      position: relative;
+      height: min(680px, calc(100vh - 190px));
+      min-height: 500px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, rgba(214, 221, 229, 0.42) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(214, 221, 229, 0.42) 1px, transparent 1px),
+        #fbfcfd;
+      background-size: 44px 44px;
+      box-shadow: var(--shadow);
+      touch-action: none;
+    }
+
+    .cloud-layer {
+      position: absolute;
+      inset: 0;
+      transform: translate3d(var(--drift-x, 0), var(--drift-y, 0), 0);
+      will-change: transform;
+    }
+
+    .cloud-center-mark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 126px;
+      height: 126px;
+      border: 1px dashed rgba(15, 122, 138, 0.38);
+      border-radius: 999px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .bubble {
+      position: absolute;
+      left: calc(50% + var(--x));
+      top: calc(50% + var(--y));
+      display: grid;
+      place-items: center;
+      width: var(--size);
+      min-width: var(--size);
+      height: var(--size);
+      padding: 10px;
+      border: 1px solid rgba(24, 33, 47, 0.08);
+      border-radius: 999px;
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: 0 12px 34px rgba(27, 39, 54, 0.16);
+      transform:
+        translate(-50%, -50%)
+        scale(var(--scale, 1));
+      animation: bubbleIn 260ms ease both;
+      transition:
+        transform 220ms ease,
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background 160ms ease;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    @keyframes bubbleIn {
+      from {
+        opacity: 0;
+        transform:
+          translate(-50%, -50%)
+          scale(calc(var(--scale, 1) * 0.88));
+      }
+      to {
+        opacity: 1;
+        transform:
+          translate(-50%, -50%)
+          scale(var(--scale, 1));
+      }
+    }
+
+    .bubble.focus {
+      width: 150px;
+      min-width: 150px;
+      height: 150px;
+      color: #ffffff;
+      background: var(--focus);
+      box-shadow: 0 22px 54px rgba(41, 54, 74, 0.28);
+      cursor: default;
+      z-index: 4;
+    }
+
+    .bubble.child {
+      border-color: rgba(27, 138, 90, 0.25);
+      z-index: 3;
+    }
+
+    .bubble.sibling {
+      border-color: rgba(180, 95, 28, 0.28);
+      background: #fff9f4;
+      z-index: 2;
+    }
+
+    .bubble.target {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      box-shadow: 0 18px 46px rgba(15, 122, 138, 0.24);
+      transform:
+        translate(-50%, -50%)
+        scale(calc(var(--scale, 1) + 0.06));
+    }
+
+    .bubble.focus .bubble-status {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .bubble-title {
+      display: -webkit-box;
+      max-width: 100%;
+      overflow: hidden;
+      text-align: center;
+      overflow-wrap: anywhere;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-size: 14px;
+      line-height: 1.25;
+    }
+
+    .bubble.focus .bubble-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .bubble-status {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .cloud-actionbar {
+      position: absolute;
+      left: 18px;
+      top: 18px;
+      display: flex;
+      gap: 8px;
+      z-index: 8;
+    }
+
+    .cloud-action:disabled {
+      background: #d7dee6;
+      color: #7a8795;
+      cursor: default;
+    }
+
+    .cloud-path {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 36px;
+      padding: 8px 10px;
+      overflow-x: auto;
+      border: 1px solid rgba(214, 221, 229, 0.82);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--muted);
+      font-size: 13px;
+      z-index: 8;
+    }
+
+    .path-item {
+      flex: 0 0 auto;
+      border: 0;
+      padding: 3px 7px;
+      border-radius: 5px;
+      color: var(--text);
+      background: #edf2f7;
+      cursor: pointer;
+    }
+
+    .path-separator {
+      color: #9aa6b4;
+    }
+
+    .vector-hud {
+      position: absolute;
+      right: 18px;
+      top: 18px;
+      min-width: 178px;
+      border: 1px solid rgba(214, 221, 229, 0.9);
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      z-index: 8;
+    }
+
+    .vector-hud strong {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .tree-panel {
+      background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 14px;
       overflow-x: auto;
+      box-shadow: var(--shadow);
     }
 
-    .node {
+    .tree-node {
       min-width: 280px;
     }
 
-    .node-row {
+    .tree-row {
       display: grid;
       grid-template-columns: 28px minmax(120px, 1fr) auto;
       align-items: center;
@@ -84,11 +420,11 @@
       padding: 2px 8px 2px 2px;
     }
 
-    .node-row:hover {
+    .tree-row:hover {
       background: #f0f4f8;
     }
 
-    .toggle {
+    .tree-toggle {
       width: 28px;
       height: 28px;
       border: 0;
@@ -100,15 +436,16 @@
       line-height: 28px;
     }
 
-    .toggle:disabled {
+    .tree-toggle:disabled {
       color: var(--muted);
       cursor: default;
     }
 
-    .title {
+    .tree-title {
       overflow-wrap: anywhere;
       font-size: 15px;
       line-height: 1.35;
+      cursor: pointer;
     }
 
     .status {
@@ -122,28 +459,28 @@
     }
 
     .status.loaded {
-      background: var(--accent-soft);
       color: var(--accent);
+      background: var(--accent-soft);
     }
 
     .status.pending {
-      background: var(--warn-soft);
       color: var(--warn);
+      background: #fff4d6;
     }
 
     .status.error {
-      background: var(--error-soft);
       color: var(--error);
+      background: #ffe7e4;
     }
 
-    .children {
+    .tree-children {
       display: none;
       margin-left: 14px;
       padding-left: 14px;
       border-left: 1px solid var(--line);
     }
 
-    .node.expanded > .children {
+    .tree-node.expanded > .tree-children {
       display: block;
     }
 
@@ -153,30 +490,55 @@
       font-size: 14px;
     }
 
-    @media (max-width: 640px) {
-      .shell {
-        width: min(100% - 20px, 1120px);
-        padding-top: 18px;
+    @media (max-width: 740px) {
+      .app {
+        width: min(100% - 20px, 1180px);
+        padding-top: 14px;
       }
 
-      header {
-        display: block;
-      }
-
-      h1 {
-        font-size: 23px;
-        margin-bottom: 8px;
+      .topbar {
+        grid-template-columns: 1fr;
+        align-items: start;
       }
 
       .meta {
         text-align: left;
       }
 
-      .tree {
-        padding: 10px;
+      .growth-panel {
+        grid-template-columns: 1fr;
       }
 
-      .node-row {
+      .history-row {
+        grid-template-columns: 1fr auto;
+      }
+
+      .history-total {
+        grid-column: 2;
+      }
+
+      .cloud-stage {
+        height: calc(100vh - 292px);
+        min-height: 440px;
+      }
+
+      .vector-hud {
+        display: none;
+      }
+
+      .bubble:not(.focus) {
+        width: min(var(--size), 94px);
+        min-width: min(var(--size), 94px);
+        height: min(var(--size), 94px);
+      }
+
+      .bubble.focus {
+        width: 128px;
+        min-width: 128px;
+        height: 128px;
+      }
+
+      .tree-row {
         grid-template-columns: 28px minmax(0, 1fr);
       }
 
@@ -189,18 +551,204 @@
   </style>
 </head>
 <body>
-  <div class="shell">
-    <header>
+  <div class="app">
+    <header class="topbar">
       <h1>One 万物知识树</h1>
+      <div class="switcher" role="tablist" aria-label="视图切换">
+        <button id="cloudTab" class="active" type="button" role="tab" aria-selected="true">云球</button>
+        <button id="treeTab" type="button" role="tab" aria-selected="false">经典树</button>
+      </div>
       <div id="meta" class="meta"></div>
     </header>
-    <main id="tree" class="tree" aria-live="polite"></main>
+
+    <section class="growth-panel" aria-live="polite">
+      <div class="stat-tile">
+        <span class="stat-label">总节点</span>
+        <strong id="totalNodeCount" class="stat-value">--</strong>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">本次新增</span>
+        <strong id="lastAddedCount" class="stat-value">--</strong>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">最近运行</span>
+        <strong id="lastRunAt" class="stat-value">--</strong>
+      </div>
+      <details class="history-tile">
+        <summary>
+          <span class="history-title">生长记录</span>
+          <span id="historyCount" class="history-count">--</span>
+        </summary>
+        <div id="growthHistoryList" class="history-list">暂无记录</div>
+      </details>
+    </section>
+
+    <section id="cloudView" class="view active" role="tabpanel" aria-labelledby="cloudTab">
+      <div id="cloudStage" class="cloud-stage" tabindex="0">
+        <div class="cloud-actionbar">
+          <button id="cloudBack" class="cloud-action" type="button">返回上级</button>
+          <button id="cloudHome" class="cloud-action" type="button">回到根部</button>
+        </div>
+        <div id="vectorHud" class="vector-hud"></div>
+        <div id="cloudLayer" class="cloud-layer"></div>
+        <div id="cloudPath" class="cloud-path"></div>
+      </div>
+    </section>
+
+    <section id="treeView" class="view" role="tabpanel" aria-labelledby="treeTab">
+      <main id="tree" class="tree-panel" aria-live="polite"></main>
+    </section>
   </div>
 
   <script>
-    const treeEl = document.getElementById("tree");
+    const CONFIG = {
+      centerDeadRadius: 66,
+      aimRadius: 112,
+      triggerRadius: 152,
+      sectorCos: 0.84,
+      fastSectorCos: 0.78,
+      dwellMs: 520,
+      fastDwellMs: 170,
+      cooldownMs: 620,
+      driftScale: 0.18,
+      maxDrift: 104,
+      driftEase: 0.14,
+      speedTrigger: 680,
+      unlockAngleDeg: 20,
+      unlockDistance: 86,
+      maxChildren: 18,
+      maxSiblings: 14
+    };
+
     const metaEl = document.getElementById("meta");
+    const cloudTab = document.getElementById("cloudTab");
+    const treeTab = document.getElementById("treeTab");
+    const cloudView = document.getElementById("cloudView");
+    const treeView = document.getElementById("treeView");
+    const cloudStage = document.getElementById("cloudStage");
+    const cloudLayer = document.getElementById("cloudLayer");
+    const cloudPath = document.getElementById("cloudPath");
+    const cloudBack = document.getElementById("cloudBack");
+    const cloudHome = document.getElementById("cloudHome");
+    const vectorHud = document.getElementById("vectorHud");
+    const treeEl = document.getElementById("tree");
+    const totalNodeCountEl = document.getElementById("totalNodeCount");
+    const lastAddedCountEl = document.getElementById("lastAddedCount");
+    const lastRunAtEl = document.getElementById("lastRunAt");
+    const historyCountEl = document.getElementById("historyCount");
+    const growthHistoryListEl = document.getElementById("growthHistoryList");
+
     const cache = new Map();
+    let rootNode = null;
+    let statsData = null;
+    let growthHistory = [];
+    let cloudTrail = [];
+    let cloudTargets = [];
+    let activeTargetKey = "";
+    let activeTargetSince = 0;
+    let lastNavAt = 0;
+    let navInFlight = false;
+    let gestureLock = null;
+    let lastPointer = null;
+    let lastPointerAt = 0;
+    let lastIntent = null;
+    let pointerSpeed = 0;
+    let driftCurrent = { x: 0, y: 0 };
+    let driftTarget = { x: 0, y: 0 };
+    let activeMode = "cloud";
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function formatNumber(value) {
+      const number = Number(value);
+      if (!Number.isFinite(number)) return "--";
+      return new Intl.NumberFormat("zh-CN").format(number);
+    }
+
+    function formatAdded(value) {
+      const number = Number(value);
+      if (!Number.isFinite(number)) return "--";
+      return number > 0 ? `+${formatNumber(number)}` : formatNumber(number);
+    }
+
+    function formatDateTime(value) {
+      if (!value) return "--";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "--";
+      return new Intl.DateTimeFormat("zh-CN", {
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(date);
+    }
+
+    function setCloudDriftTarget(x, y) {
+      driftTarget = {
+        x: clamp(x, -CONFIG.maxDrift, CONFIG.maxDrift),
+        y: clamp(y, -CONFIG.maxDrift, CONFIG.maxDrift)
+      };
+    }
+
+    function applyCloudDrift() {
+      cloudLayer.style.setProperty("--drift-x", `${driftCurrent.x.toFixed(1)}px`);
+      cloudLayer.style.setProperty("--drift-y", `${driftCurrent.y.toFixed(1)}px`);
+    }
+
+    function animateCloudDrift() {
+      driftCurrent.x += (driftTarget.x - driftCurrent.x) * CONFIG.driftEase;
+      driftCurrent.y += (driftTarget.y - driftCurrent.y) * CONFIG.driftEase;
+
+      if (Math.abs(driftTarget.x - driftCurrent.x) < 0.05) {
+        driftCurrent.x = driftTarget.x;
+      }
+      if (Math.abs(driftTarget.y - driftCurrent.y) < 0.05) {
+        driftCurrent.y = driftTarget.y;
+      }
+
+      applyCloudDrift();
+      requestAnimationFrame(animateCloudDrift);
+    }
+
+    function intentAngle(intent) {
+      return Math.atan2(intent.dy, intent.dx);
+    }
+
+    function angleDelta(a, b) {
+      const diff = Math.abs(a - b) % (Math.PI * 2);
+      return diff > Math.PI ? Math.PI * 2 - diff : diff;
+    }
+
+    function lockGesture(intent) {
+      gestureLock = {
+        angle: intentAngle(intent),
+        distance: intent.distance
+      };
+      activeTargetKey = "";
+      activeTargetSince = 0;
+    }
+
+    function unlockGesture() {
+      gestureLock = null;
+    }
+
+    function gestureIsLocked(intent) {
+      if (!gestureLock) return false;
+
+      const angleChanged = angleDelta(intentAngle(intent), gestureLock.angle);
+      const distanceChanged = Math.abs(intent.distance - gestureLock.distance);
+      if (
+        angleChanged > CONFIG.unlockAngleDeg * Math.PI / 180 ||
+        distanceChanged > CONFIG.unlockDistance
+      ) {
+        unlockGesture();
+        return false;
+      }
+
+      return true;
+    }
 
     function statusLabel(status) {
       if (status === "loaded") return "已加载";
@@ -215,6 +763,10 @@
       return "暂无子类";
     }
 
+    function nodeKey(node, fallback = "") {
+      return node.id || node.data_source || node.title || fallback;
+    }
+
     function canExpand(node) {
       return Boolean(
         node.data_source ||
@@ -224,12 +776,8 @@
       );
     }
 
-    async function loadNode(node) {
-      if (!node.data_source) return node;
-
-      const path = `data/${node.data_source}`;
+    async function fetchJson(path) {
       if (cache.has(path)) return cache.get(path);
-
       const response = await fetch(path, { cache: "no-cache" });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
@@ -237,22 +785,442 @@
       return data;
     }
 
-    function renderNode(node, openByDefault = false) {
+    async function hydrateNode(node) {
+      if (!node || !node.data_source) return node;
+      const loaded = await fetchJson(`data/${node.data_source}`);
+      return Object.assign({}, node, loaded);
+    }
+
+    async function safeHydrateNode(node) {
+      try {
+        return await hydrateNode(node);
+      } catch (error) {
+        return Object.assign({}, node, {
+          children_status: "error",
+          last_error: "数据文件加载失败",
+          children: []
+        });
+      }
+    }
+
+    async function loadGrowthStats() {
+      try {
+        statsData = await fetchJson("data/stats.json");
+      } catch (error) {
+        statsData = null;
+        growthHistory = [];
+        renderGrowthStats();
+        return;
+      }
+
+      const historyFile = statsData.history_file || "growth_history.json";
+      try {
+        const history = await fetchJson(`data/${historyFile}`);
+        growthHistory = Array.isArray(history) ? history : [];
+      } catch (error) {
+        growthHistory = [];
+      }
+
+      renderGrowthStats();
+    }
+
+    function renderGrowthStats() {
+      if (!statsData) {
+        totalNodeCountEl.textContent = "--";
+        lastAddedCountEl.textContent = "--";
+        lastRunAtEl.textContent = "--";
+        historyCountEl.textContent = "等待统计";
+        growthHistoryListEl.textContent = "下一次 GitHub Actions 运行后会生成统计记录";
+        return;
+      }
+
+      totalNodeCountEl.textContent = formatNumber(statsData.total_nodes);
+      lastAddedCountEl.textContent = formatAdded(statsData.last_added_nodes);
+      lastRunAtEl.textContent = formatDateTime(statsData.generated_at);
+      historyCountEl.textContent = `${formatNumber(growthHistory.length)} 条`;
+
+      const recent = growthHistory.slice(-8).reverse();
+      growthHistoryListEl.innerHTML = "";
+      if (recent.length === 0) {
+        growthHistoryListEl.textContent = "暂无记录";
+        return;
+      }
+
+      recent.forEach((entry) => {
+        const row = document.createElement("div");
+        row.className = "history-row";
+
+        const time = document.createElement("span");
+        time.textContent = formatDateTime(entry.run_at);
+
+        const added = document.createElement("span");
+        added.className = "history-add";
+        added.textContent = formatAdded(entry.added_nodes);
+
+        const total = document.createElement("span");
+        total.className = "history-total";
+        total.textContent = `总 ${formatNumber(entry.total_nodes)}`;
+
+        row.append(time, added, total);
+        growthHistoryListEl.append(row);
+      });
+    }
+
+    async function loadRoot() {
+      rootNode = await fetchJson("data/root.json");
+      cache.set("data/root.json", rootNode);
+      metaEl.textContent = rootNode.updated_at ? `更新于 ${rootNode.updated_at}` : "";
+      cloudTrail = [{
+        node: rootNode,
+        parent: null,
+        siblings: [rootNode],
+        index: 0
+      }];
+    }
+
+    function visibleChildren(node) {
+      return (Array.isArray(node.children) ? node.children : []).slice(0, CONFIG.maxChildren);
+    }
+
+    function visibleSiblings() {
+      const top = cloudTrail[cloudTrail.length - 1];
+      return top.siblings
+        .map((node, index) => ({ node, index }))
+        .filter((item) => item.index !== top.index)
+        .slice(0, CONFIG.maxSiblings);
+    }
+
+    function currentCloudNode() {
+      return cloudTrail[cloudTrail.length - 1].node;
+    }
+
+    function createBubble(node, kind, x, y, size, scale, target) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `bubble ${kind}`;
+      button.style.setProperty("--x", `${Math.round(x)}px`);
+      button.style.setProperty("--y", `${Math.round(y)}px`);
+      button.style.setProperty("--size", `${size}px`);
+      button.style.setProperty("--scale", scale.toFixed(2));
+      button.dataset.targetKey = target ? target.key : "";
+
+      const title = document.createElement("span");
+      title.className = "bubble-title";
+      title.textContent = node.title || "未命名";
+      button.append(title);
+
+      if (kind !== "focus") {
+        const status = document.createElement("span");
+        status.className = "bubble-status";
+        status.textContent = kind === "child" ? statusLabel(node.children_status) : "同层";
+        button.append(status);
+      } else {
+        const status = document.createElement("span");
+        status.className = "bubble-status";
+        status.textContent = statusLabel(node.children_status);
+        button.append(status);
+      }
+
+      if (target) {
+        button.addEventListener("click", () => navigateTarget(target, "click"));
+      }
+
+      return button;
+    }
+
+    function childPosition(index, count, radius) {
+      const start = -Math.PI / 2;
+      const angle = start + (Math.PI * 2 * index) / Math.max(count, 1);
+      const depth = 0.92 + 0.16 * Math.sin(angle + Math.PI / 6);
+      return {
+        angle,
+        x: Math.cos(angle) * radius * depth,
+        y: Math.sin(angle) * radius * depth,
+        scale: 0.9 + 0.08 * Math.cos(angle - Math.PI / 5)
+      };
+    }
+
+    function siblingPosition(index, count, radius) {
+      const spread = Math.min(Math.PI * 1.35, Math.PI * 0.35 + count * 0.18);
+      const angle = Math.PI * 0.15 + (count === 1 ? 0 : (spread * index) / (count - 1));
+      return {
+        angle,
+        x: Math.cos(angle) * radius,
+        y: Math.sin(angle) * radius,
+        scale: 0.78
+      };
+    }
+
+    function renderPath() {
+      cloudPath.innerHTML = "";
+      cloudTrail.forEach((entry, index) => {
+        if (index > 0) {
+          const separator = document.createElement("span");
+          separator.className = "path-separator";
+          separator.textContent = "›";
+          cloudPath.append(separator);
+        }
+
+        const item = document.createElement("button");
+        item.type = "button";
+        item.className = "path-item";
+        item.textContent = entry.node.title || "未命名";
+        item.addEventListener("click", () => {
+          cloudTrail = cloudTrail.slice(0, index + 1);
+          renderCloud();
+          resetCloudPointerState();
+        });
+        cloudPath.append(item);
+      });
+    }
+
+    function renderVectorHud(target) {
+      if (!cloudTrail.length) {
+        vectorHud.innerHTML = "";
+        return;
+      }
+      const current = currentCloudNode();
+      const children = visibleChildren(current).length;
+      const siblings = visibleSiblings().length;
+      const targetText = target ? target.node.title || "未命名" : "中心";
+      vectorHud.innerHTML = `
+        <div><strong>${targetText}</strong></div>
+        <div>子节点 ${children} · 同层 ${siblings}</div>
+        <div>速度 ${Math.round(pointerSpeed)} px/s</div>
+      `;
+    }
+
+    function renderCloud() {
+      const node = currentCloudNode();
+      cloudTargets = [];
+      activeTargetKey = "";
+      activeTargetSince = 0;
+      cloudLayer.innerHTML = "";
+      cloudLayer.append(createBubble(node, "focus", 0, 0, 150, 1, null));
+
+      const mark = document.createElement("div");
+      mark.className = "cloud-center-mark";
+      cloudLayer.append(mark);
+
+      const rect = cloudStage.getBoundingClientRect();
+      const base = Math.min(rect.width, rect.height);
+      const childRadius = clamp(base * 0.32, 160, 250);
+      const siblingRadius = clamp(base * 0.43, 220, 330);
+
+      const children = visibleChildren(node);
+      children.forEach((child, index) => {
+        const pos = childPosition(index, children.length, childRadius);
+        const target = {
+          key: `child:${nodeKey(child, index)}`,
+          type: "child",
+          node: child,
+          index,
+          angle: pos.angle,
+          x: pos.x,
+          y: pos.y
+        };
+        cloudTargets.push(target);
+        cloudLayer.append(createBubble(child, "child", pos.x, pos.y, 104, pos.scale, target));
+      });
+
+      const siblings = visibleSiblings();
+      siblings.forEach((item, index) => {
+        const pos = siblingPosition(index, siblings.length, siblingRadius);
+        const target = {
+          key: `sibling:${nodeKey(item.node, item.index)}`,
+          type: "sibling",
+          node: item.node,
+          index: item.index,
+          angle: pos.angle,
+          x: pos.x,
+          y: pos.y
+        };
+        cloudTargets.push(target);
+        cloudLayer.append(createBubble(item.node, "sibling", pos.x, pos.y, 96, pos.scale, target));
+      });
+
+      cloudBack.disabled = cloudTrail.length <= 1;
+      cloudHome.disabled = cloudTrail.length <= 1;
+      renderPath();
+      renderVectorHud(null);
+    }
+
+    async function navigateTarget(target, source = "manual") {
+      if (navInFlight) return;
+      navInFlight = true;
+      const top = cloudTrail[cloudTrail.length - 1];
+
+      try {
+        if (target.type === "child") {
+          const hydrated = await safeHydrateNode(target.node);
+          cloudTrail.push({
+            node: hydrated,
+            parent: top.node,
+            siblings: Array.isArray(top.node.children) ? top.node.children : [],
+            index: target.index
+          });
+          renderCloud();
+          if (source === "auto" && lastIntent) {
+            lockGesture(lastIntent);
+          } else {
+            resetCloudPointerState();
+          }
+          return;
+        }
+
+        if (target.type === "sibling") {
+          const hydrated = await safeHydrateNode(target.node);
+          cloudTrail[cloudTrail.length - 1] = {
+            node: hydrated,
+            parent: top.parent,
+            siblings: top.siblings,
+            index: target.index
+          };
+          renderCloud();
+          if (source === "auto" && lastIntent) {
+            lockGesture(lastIntent);
+          } else {
+            resetCloudPointerState();
+          }
+        }
+      } finally {
+        navInFlight = false;
+      }
+    }
+
+    function nearestTarget(dx, dy, distance) {
+      if (distance < CONFIG.aimRadius || cloudTargets.length === 0) return null;
+      const ux = dx / distance;
+      const uy = dy / distance;
+      let best = null;
+      let bestDot = -1;
+
+      for (const target of cloudTargets) {
+        const targetDistance = Math.hypot(target.x, target.y);
+        if (!targetDistance) continue;
+        const dot = ux * (target.x / targetDistance) + uy * (target.y / targetDistance);
+        if (dot > bestDot) {
+          best = target;
+          bestDot = dot;
+        }
+      }
+
+      const needed = pointerSpeed >= CONFIG.speedTrigger ? CONFIG.fastSectorCos : CONFIG.sectorCos;
+      return bestDot >= needed ? best : null;
+    }
+
+    function highlightTarget(target) {
+      cloudLayer.querySelectorAll(".bubble.target").forEach((item) => {
+        item.classList.remove("target");
+      });
+      if (!target) return;
+      const bubble = Array.from(cloudLayer.querySelectorAll("[data-target-key]"))
+        .find((item) => item.dataset.targetKey === target.key);
+      if (bubble) bubble.classList.add("target");
+    }
+
+    function handleCloudPointer(event) {
+      if (activeMode !== "cloud") return;
+
+      const rect = cloudStage.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const dx = event.clientX - centerX;
+      const dy = event.clientY - centerY;
+      const distance = Math.hypot(dx, dy);
+      const now = performance.now();
+
+      if (lastPointer) {
+        const dt = Math.max(16, now - lastPointerAt);
+        const instantSpeed = Math.hypot(event.clientX - lastPointer.x, event.clientY - lastPointer.y) / dt * 1000;
+        pointerSpeed = pointerSpeed * 0.72 + instantSpeed * 0.28;
+      }
+      lastPointer = { x: event.clientX, y: event.clientY };
+      lastPointerAt = now;
+
+      if (distance < CONFIG.centerDeadRadius) {
+        resetCloudPointerState();
+        return;
+      }
+
+      setCloudDriftTarget(-dx * CONFIG.driftScale, -dy * CONFIG.driftScale);
+
+      lastIntent = { dx, dy, distance };
+      evaluateCloudIntent(lastIntent, now);
+    }
+
+    function evaluateCloudIntent(intent, now = performance.now()) {
+      if (now - lastPointerAt > 250) {
+        pointerSpeed = 0;
+      }
+      const target = nearestTarget(intent.dx, intent.dy, intent.distance);
+      highlightTarget(target);
+      renderVectorHud(target);
+
+      if (gestureIsLocked(intent)) {
+        activeTargetKey = "";
+        activeTargetSince = 0;
+        return;
+      }
+
+      if (!target || intent.distance < CONFIG.triggerRadius) {
+        activeTargetKey = target ? target.key : "";
+        activeTargetSince = target ? now : 0;
+        return;
+      }
+
+      if (activeTargetKey !== target.key) {
+        activeTargetKey = target.key;
+        activeTargetSince = now;
+        return;
+      }
+
+      const dwellMs = pointerSpeed >= CONFIG.speedTrigger ? CONFIG.fastDwellMs : CONFIG.dwellMs;
+      if (now - activeTargetSince >= dwellMs && now - lastNavAt >= CONFIG.cooldownMs) {
+        lastNavAt = now;
+        navigateTarget(target, "auto");
+      }
+    }
+
+    function tickCloudIntent(now) {
+      if (activeMode === "cloud" && lastIntent && rootNode) {
+        evaluateCloudIntent(lastIntent, now);
+      }
+      requestAnimationFrame(tickCloudIntent);
+    }
+
+    function resetCloudPointerState() {
+      setCloudDriftTarget(0, 0);
+      activeTargetKey = "";
+      activeTargetSince = 0;
+      pointerSpeed = 0;
+      lastPointer = null;
+      lastIntent = null;
+      unlockGesture();
+      highlightTarget(null);
+      renderVectorHud(null);
+    }
+
+    function resetCloudPointer() {
+      resetCloudPointerState();
+    }
+
+    function renderTreeNode(node, openByDefault = false) {
       const wrapper = document.createElement("section");
-      wrapper.className = "node";
+      wrapper.className = "tree-node";
 
       const row = document.createElement("div");
-      row.className = "node-row";
+      row.className = "tree-row";
 
       const toggle = document.createElement("button");
-      toggle.className = "toggle";
+      toggle.className = "tree-toggle";
       toggle.type = "button";
       toggle.textContent = "›";
       toggle.disabled = !canExpand(node);
       toggle.setAttribute("aria-label", `展开 ${node.title || "未命名"}`);
 
       const title = document.createElement("span");
-      title.className = "title";
+      title.className = "tree-title";
       title.textContent = node.title || "未命名";
 
       const status = document.createElement("span");
@@ -260,7 +1228,7 @@
       status.textContent = statusLabel(node.children_status);
 
       const children = document.createElement("div");
-      children.className = "children";
+      children.className = "tree-children";
 
       row.append(toggle, title, status);
       wrapper.append(row, children);
@@ -274,7 +1242,7 @@
         children.innerHTML = '<div class="message">加载中</div>';
 
         try {
-          const loadedNode = await loadNode(node);
+          const loadedNode = await hydrateNode(node);
           Object.assign(node, loadedNode);
           status.className = `status ${node.children_status || "pending"}`;
           status.textContent = statusLabel(node.children_status);
@@ -287,17 +1255,13 @@
             message.textContent = emptyLabel(node);
             children.append(message);
           } else {
-            list.forEach((child) => children.append(renderNode(child)));
+            list.forEach((child) => children.append(renderTreeNode(child)));
           }
           children.dataset.loaded = "true";
         } catch (error) {
           status.className = "status error";
           status.textContent = "错误";
-          children.innerHTML = "";
-          const message = document.createElement("div");
-          message.className = "message";
-          message.textContent = "数据文件加载失败";
-          children.append(message);
+          children.innerHTML = '<div class="message">数据文件加载失败</div>';
         }
       }
 
@@ -317,28 +1281,69 @@
 
       title.addEventListener("click", () => toggle.click());
 
-      if (openByDefault) {
-        requestAnimationFrame(() => expand());
-      }
-
+      if (openByDefault) requestAnimationFrame(() => expand());
       return wrapper;
     }
 
+    function renderTree() {
+      treeEl.innerHTML = "";
+      treeEl.append(renderTreeNode(rootNode, true));
+    }
+
+    function setMode(mode) {
+      activeMode = mode;
+      const isCloud = mode === "cloud";
+      cloudView.classList.toggle("active", isCloud);
+      treeView.classList.toggle("active", !isCloud);
+      cloudTab.classList.toggle("active", isCloud);
+      treeTab.classList.toggle("active", !isCloud);
+      cloudTab.setAttribute("aria-selected", String(isCloud));
+      treeTab.setAttribute("aria-selected", String(!isCloud));
+      if (isCloud) {
+        renderCloud();
+        resetCloudPointerState();
+        cloudStage.focus({ preventScroll: true });
+      } else {
+        renderTree();
+      }
+    }
+
+    cloudTab.addEventListener("click", () => setMode("cloud"));
+    treeTab.addEventListener("click", () => setMode("tree"));
+
+    cloudBack.addEventListener("click", () => {
+      if (cloudTrail.length <= 1) return;
+      cloudTrail.pop();
+      renderCloud();
+      resetCloudPointerState();
+    });
+
+    cloudHome.addEventListener("click", () => {
+      if (cloudTrail.length <= 1) return;
+      cloudTrail = cloudTrail.slice(0, 1);
+      renderCloud();
+      resetCloudPointerState();
+    });
+
+    cloudStage.addEventListener("pointermove", handleCloudPointer);
+    cloudStage.addEventListener("pointerleave", resetCloudPointer);
+    window.addEventListener("resize", () => {
+      if (activeMode === "cloud" && rootNode) renderCloud();
+    });
+
     async function init() {
-      treeEl.innerHTML = '<div class="message">加载中</div>';
       try {
-        const response = await fetch("data/root.json", { cache: "no-cache" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const root = await response.json();
-        treeEl.innerHTML = "";
-        treeEl.append(renderNode(root, true));
-        metaEl.textContent = root.updated_at ? `更新于 ${root.updated_at}` : "";
+        await Promise.all([loadRoot(), loadGrowthStats()]);
+        renderCloud();
       } catch (error) {
+        cloudLayer.innerHTML = '<div class="message">根数据加载失败</div>';
         treeEl.innerHTML = '<div class="message">根数据加载失败</div>';
         metaEl.textContent = "";
       }
     }
 
+    requestAnimationFrame(animateCloudDrift);
+    requestAnimationFrame(tickCloudIntent);
     init();
   </script>
 </body>
