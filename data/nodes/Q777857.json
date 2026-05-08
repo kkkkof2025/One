@@ -1,0 +1,90 @@
+{
+  "id": "Q777857",
+  "title": "武仙座星系团",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "NGC 6039",
+      "data_source": "nodes/Q1125187.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125187",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6043",
+      "data_source": "nodes/Q1125225.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125225",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6044",
+      "data_source": "nodes/Q1125240.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125240",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6045",
+      "data_source": "nodes/Q13088699.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q13088699",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6047",
+      "data_source": "nodes/Q1125256.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125256",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6053",
+      "data_source": "nodes/Q1125299.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125299",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6054",
+      "data_source": "nodes/Q1125311.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125311",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6055",
+      "data_source": "nodes/Q664460.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q664460",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "NGC 6056",
+      "data_source": "nodes/Q1125319.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q1125319",
+      "fetch_strategy_version": 2
+    },
+    {
+      "title": "阿普 272",
+      "data_source": "nodes/Q698560.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q698560",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-08T02:14:27Z",
+  "is_leaf": false
+}

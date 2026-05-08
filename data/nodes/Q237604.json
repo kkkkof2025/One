@@ -1,0 +1,18 @@
+{
+  "id": "Q237604",
+  "title": "吸积盘",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "星周盤",
+      "data_source": "nodes/Q3235978.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q3235978",
+      "fetch_strategy_version": 2
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-08T02:14:54Z",
+  "is_leaf": false
+}

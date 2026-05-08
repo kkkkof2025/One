@@ -1,0 +1,59 @@
+{
+  "id": "Q3235978",
+  "title": "星周盤",
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "主小行星帶",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2179",
+      "source_relation": "instance"
+    },
+    {
+      "title": "柯伊伯带",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q427",
+      "source_relation": "instance"
+    },
+    {
+      "title": "離散盤",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q180380",
+      "source_relation": "instance"
+    },
+    {
+      "title": "金牛T星",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q6232",
+      "source_relation": "part_of"
+    },
+    {
+      "title": "原行星盤",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q505781",
+      "source_relation": "subclass"
+    },
+    {
+      "title": "吸积盘",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q237604",
+      "source_relation": "subclass"
+    },
+    {
+      "title": "岩屑盤",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1326555",
+      "source_relation": "subclass"
+    }
+  ],
+  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-08T02:14:55Z",
+  "is_leaf": false
+}

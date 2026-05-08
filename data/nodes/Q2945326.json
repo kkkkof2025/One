@@ -6,9 +6,10 @@
     {
       "title": "类星体",
       "data_source": "nodes/Q83373.json",
-      "children_status": "error",
+      "children_status": "loaded",
       "is_leaf": false,
-      "id": "Q83373"
+      "id": "Q83373",
+      "fetch_strategy_version": 2
     },
     {
       "title": "U1.11",
