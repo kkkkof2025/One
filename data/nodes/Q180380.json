@@ -1,0 +1,8 @@
+{
+  "id": "Q180380",
+  "title": "離散盤",
+  "children_status": "error",
+  "children": [],
+  "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (d60aac9)",
+  "updated_at": "2026-05-10T02:10:30Z"
+}
