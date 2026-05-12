@@ -6,9 +6,10 @@
     {
       "title": "主小行星帶",
       "data_source": "nodes/Q2179.json",
-      "children_status": "error",
+      "children_status": "loaded",
       "is_leaf": false,
-      "id": "Q2179"
+      "id": "Q2179",
+      "fetch_strategy_version": 2
     },
     {
       "title": "柯伊伯带",

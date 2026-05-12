@@ -1,8 +1,8 @@
 {
-  "id": "Q180380",
-  "title": "離散盤",
+  "id": "Q4540906",
+  "title": "小行星11157",
   "children_status": "error",
   "children": [],
   "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-  "updated_at": "2026-05-12T02:13:18Z"
+  "updated_at": "2026-05-12T02:13:12Z"
 }

@@ -1,8 +1,52 @@
 {
   "id": "Q2179",
   "title": "主小行星帶",
-  "children_status": "error",
-  "children": [],
-  "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (d60aac9)",
-  "updated_at": "2026-05-11T02:28:04Z"
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "匈牙利族小行星",
+      "data_source": "nodes/Q223376.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q223376"
+    },
+    {
+      "title": "小行星11157",
+      "data_source": "nodes/Q4540906.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q4540906"
+    },
+    {
+      "title": "小行星211",
+      "data_source": "nodes/Q147632.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q147632"
+    },
+    {
+      "title": "小行星29361",
+      "data_source": "nodes/Q3598680.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q3598680"
+    },
+    {
+      "title": "小行星66685",
+      "data_source": "nodes/Q15182290.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q15182290"
+    },
+    {
+      "title": "长女星",
+      "data_source": "nodes/Q213466.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q213466"
+    }
+  ],
+  "updated_at": "2026-05-12T02:12:59Z",
+  "fetch_strategy_version": 2,
+  "is_leaf": false
 }
