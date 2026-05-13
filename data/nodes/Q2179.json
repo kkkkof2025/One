@@ -6,9 +6,10 @@
     {
       "title": "匈牙利族小行星",
       "data_source": "nodes/Q223376.json",
-      "children_status": "error",
-      "is_leaf": false,
-      "id": "Q223376"
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q223376",
+      "fetch_strategy_version": 2
     },
     {
       "title": "小行星11157",
