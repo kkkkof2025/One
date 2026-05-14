@@ -1,0 +1,428 @@
+import importlib.util
+import json
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+GROW_JSON_PATH = REPO_ROOT / "scripts" / "grow_json.py"
+spec = importlib.util.spec_from_file_location("grow_json", GROW_JSON_PATH)
+grow_json = importlib.util.module_from_spec(spec)
+sys.modules["grow_json"] = grow_json
+spec.loader.exec_module(grow_json)
+
+
+class GrowJsonTests(unittest.TestCase):
+    def setUp(self):
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.data_dir = Path(self.temp_dir.name) / "data"
+        self.nodes_dir = self.data_dir / "nodes"
+        self.nodes_dir.mkdir(parents=True)
+
+        self.original_paths = {
+            "DATA_DIR": grow_json.DATA_DIR,
+            "NODES_DIR": grow_json.NODES_DIR,
+            "ROOT_FILE": grow_json.ROOT_FILE,
+            "STATS_FILE": grow_json.STATS_FILE,
+            "GROWTH_HISTORY_FILE": grow_json.GROWTH_HISTORY_FILE,
+            "CURATION_FILE": grow_json.CURATION_FILE,
+            "VALIDATION_ALLOWLIST_FILE": grow_json.VALIDATION_ALLOWLIST_FILE,
+            "END_NODES_FILE": grow_json.END_NODES_FILE,
+            "SCAN_STATE_FILE": grow_json.SCAN_STATE_FILE,
+            "API_DIR": grow_json.API_DIR,
+            "CURATION_CACHE": grow_json.CURATION_CACHE,
+            "DUPLICATE_ID_COUNTS": grow_json.DUPLICATE_ID_COUNTS,
+            "ALLOWED_DUPLICATE_IDS": grow_json.ALLOWED_DUPLICATE_IDS,
+            "MAX_REQUESTS": grow_json.MAX_REQUESTS,
+            "REQUEST_DELAY": grow_json.REQUEST_DELAY,
+            "DEFAULT_FOCUS_PRIORITY_BONUS": grow_json.DEFAULT_FOCUS_PRIORITY_BONUS,
+        }
+
+        grow_json.DATA_DIR = self.data_dir
+        grow_json.NODES_DIR = self.nodes_dir
+        grow_json.ROOT_FILE = self.data_dir / "root.json"
+        grow_json.STATS_FILE = self.data_dir / "stats.json"
+        grow_json.GROWTH_HISTORY_FILE = self.data_dir / "growth_history.json"
+        grow_json.CURATION_FILE = self.data_dir / "curation.json"
+        grow_json.VALIDATION_ALLOWLIST_FILE = self.data_dir / "validation_allowlist.json"
+        grow_json.END_NODES_FILE = self.data_dir / "end_nodes.json"
+        grow_json.SCAN_STATE_FILE = self.data_dir / "scan_state.json"
+        grow_json.API_DIR = self.data_dir / "api"
+        grow_json.CURATION_CACHE = None
+        grow_json.DUPLICATE_ID_COUNTS = {}
+        grow_json.ALLOWED_DUPLICATE_IDS = set()
+        grow_json.MAX_REQUESTS = 0
+        grow_json.REQUEST_DELAY = 0
+        grow_json.DEFAULT_FOCUS_PRIORITY_BONUS = 18
+        grow_json.request_count = 0
+        grow_json.nodes_added_this_run = 0
+        grow_json.nodes_scanned_this_run = 0
+        grow_json.failed_requests_this_run = 0
+        grow_json.unchanged_requests_this_run = 0
+        grow_json.end_nodes_marked_this_run = 0
+        grow_json.scan_candidate_count = 0
+        grow_json.scan_exhausted = False
+        grow_json.last_scan_key_this_run = ""
+
+    def tearDown(self):
+        for name, value in self.original_paths.items():
+            setattr(grow_json, name, value)
+        self.temp_dir.cleanup()
+
+    def test_merge_children_deduplicates_without_overwriting_manual_fields(self):
+        existing = [
+            {
+                "id": "Q1",
+                "title": "人工标题",
+                "children_status": "manual",
+                "children": [{"title": "人工子节点"}],
+                "source_relation": "manual",
+                "manual_note": "保留",
+            }
+        ]
+        fetched = [
+            {"id": "Q1", "title": "自动标题", "source_relation": "subclass"},
+            {"id": "Q2", "title": "新增节点", "source_relation": "subclass"},
+            {"id": "Q2", "title": "重复节点", "source_relation": "instance"},
+        ]
+
+        merged, added = grow_json.merge_children(existing, fetched)
+
+        self.assertEqual(added, 1)
+        self.assertEqual(len(merged), 2)
+        self.assertEqual(merged[0]["title"], "人工标题")
+        self.assertEqual(merged[0]["source_relation"], "manual")
+        self.assertEqual(merged[0]["manual_note"], "保留")
+        self.assertEqual(merged[1]["id"], "Q2")
+        self.assertEqual(merged[1]["title"], "新增节点")
+
+    def test_materialize_child_creates_shard_and_updates_pointer(self):
+        child = {
+            "id": "Q42",
+            "title": "测试节点",
+            "children_status": "pending",
+            "children": [{"title": "内联子节点"}],
+            "source_relation": "subclass",
+        }
+
+        child_data, path, changed = grow_json.materialize_child(child)
+
+        self.assertTrue(changed)
+        self.assertEqual(path, self.nodes_dir / "Q42.json")
+        self.assertTrue(path.exists())
+        self.assertEqual(child["data_source"], "nodes/Q42.json")
+        self.assertEqual(child["id"], "Q42")
+        self.assertEqual(child["title"], "测试节点")
+        self.assertIn("quality_score", child)
+        self.assertEqual(child_data["children"][0]["title"], "内联子节点")
+
+    def test_materialize_child_preserves_existing_shard_manual_content(self):
+        shard = self.nodes_dir / "Q42.json"
+        grow_json.save_json(
+            shard,
+            {
+                "id": "Q42",
+                "title": "人工维护标题",
+                "children_status": "manual",
+                "children": [{"title": "人工子节点"}],
+                "manual_note": "不能覆盖",
+            },
+        )
+        child = {
+            "id": "Q42",
+            "title": "自动标题",
+            "data_source": "nodes/Q42.json",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        child_data, _, changed = grow_json.materialize_child(child)
+
+        self.assertTrue(changed)
+        self.assertEqual(child_data["title"], "人工维护标题")
+        self.assertEqual(child_data["manual_note"], "不能覆盖")
+        self.assertEqual(child["title"], "人工维护标题")
+        self.assertEqual(child["children_status"], "manual")
+        self.assertNotIn("children", child)
+
+        with shard.open("r", encoding="utf-8") as f:
+            saved = json.load(f)
+        self.assertEqual(saved["children"][0]["title"], "人工子节点")
+
+    def test_quality_metadata_sets_review_status(self):
+        approved = {
+            "id": "Q1",
+            "title": "宇宙",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        needs_review = {
+            "title": "x",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        grow_json.normalize_node(approved)
+        grow_json.normalize_node(needs_review)
+
+        self.assertEqual(approved["review_status"], "approved")
+        self.assertEqual(needs_review["review_status"], "needs_review")
+        self.assertFalse(grow_json.should_fetch(needs_review))
+
+    def test_prioritized_children_prefers_pending_high_quality_nodes(self):
+        low_quality = {
+            "title": "x",
+            "children_status": "pending",
+            "children": [],
+        }
+        stale_loaded = {
+            "id": "Q3",
+            "title": "生命",
+            "children_status": "loaded",
+            "fetch_strategy_version": 1,
+            "source_relation": "subclass",
+            "children": [{"title": "子节点"}],
+        }
+        pending = {
+            "id": "Q1",
+            "title": "宇宙",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        for node in (low_quality, stale_loaded, pending):
+            grow_json.normalize_node(node)
+
+        ordered = grow_json.prioritized_children(
+            [low_quality, stale_loaded, pending],
+            depth=1,
+        )
+
+        self.assertEqual(ordered[0]["id"], "Q1")
+        self.assertEqual(ordered[-1]["review_status"], "needs_review")
+
+    def test_curation_focus_increases_quality_and_priority(self):
+        grow_json.save_json(
+            grow_json.CURATION_FILE,
+            {
+                "focused_node_ids": {
+                    "Q9": {
+                        "reason": "人工关注测试节点",
+                        "priority_bonus": 40,
+                    }
+                }
+            },
+        )
+        grow_json.CURATION_CACHE = None
+        focused = {
+            "id": "Q9",
+            "title": "测试重点",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        plain = {
+            "id": "Q10",
+            "title": "普通节点",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+
+        grow_json.normalize_node(focused)
+        grow_json.normalize_node(plain)
+
+        self.assertIn("curated_focus", focused["quality_reasons"])
+        self.assertGreater(focused["quality_score"], plain["quality_score"])
+        self.assertGreater(
+            grow_json.expansion_priority(focused, depth=1),
+            grow_json.expansion_priority(plain, depth=1),
+        )
+
+    def test_quality_metadata_marks_broad_and_disambiguation_titles(self):
+        broad = {
+            "id": "Q10",
+            "title": "实体",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        disambiguation = {
+            "id": "Q11",
+            "title": "测试消歧义",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+
+        grow_json.normalize_node(broad)
+        grow_json.normalize_node(disambiguation)
+
+        self.assertIn("broad_title", broad["quality_reasons"])
+        self.assertIn("disambiguation", disambiguation["quality_reasons"])
+
+    def test_duplicate_id_lowers_quality_when_not_allowlisted(self):
+        duplicated = {
+            "id": "Q20",
+            "title": "重复节点",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        plain = {
+            "id": "Q21",
+            "title": "普通节点",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        grow_json.DUPLICATE_ID_COUNTS = {"Q20": 2}
+        grow_json.ALLOWED_DUPLICATE_IDS = set()
+
+        grow_json.normalize_node(duplicated)
+        grow_json.normalize_node(plain)
+
+        self.assertIn("duplicate_id:2", duplicated["quality_reasons"])
+        self.assertLess(duplicated["quality_score"], plain["quality_score"])
+
+    def test_allowlisted_duplicate_id_is_marked_without_penalty(self):
+        node = {
+            "id": "Q20",
+            "title": "合法重复",
+            "children_status": "pending",
+            "source_relation": "subclass",
+            "children": [],
+        }
+        grow_json.DUPLICATE_ID_COUNTS = {"Q20": 2}
+        grow_json.ALLOWED_DUPLICATE_IDS = {"Q20"}
+
+        grow_json.normalize_node(node)
+
+        self.assertIn("allowed_duplicate_id:2", node["quality_reasons"])
+        self.assertNotIn("duplicate_id:2", node["quality_reasons"])
+
+    def test_prepare_quality_context_uses_validation_allowlist(self):
+        grow_json.save_json(
+            grow_json.VALIDATION_ALLOWLIST_FILE,
+            {
+                "duplicate_ids": {
+                    "Q20": "测试合法重复"
+                }
+            },
+        )
+        root = {
+            "id": "root",
+            "title": "万物",
+            "children_status": "loaded",
+            "children": [
+                {
+                    "id": "Q20",
+                    "title": "路径一",
+                    "children_status": "pending",
+                    "children": [],
+                },
+                {
+                    "id": "Q20",
+                    "title": "路径二",
+                    "children_status": "pending",
+                    "children": [],
+                },
+            ],
+        }
+
+        grow_json.prepare_quality_context(root)
+
+        self.assertEqual(grow_json.DUPLICATE_ID_COUNTS["Q20"], 2)
+        self.assertIn("Q20", grow_json.ALLOWED_DUPLICATE_IDS)
+
+    def test_current_strategy_leaf_is_not_fetched_again(self):
+        leaf = {
+            "id": "Q99",
+            "title": "终止节点",
+            "children_status": "loaded",
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION,
+            "is_leaf": True,
+            "children": [],
+        }
+        grow_json.normalize_node(leaf)
+        grow_json.apply_end_metadata(leaf)
+
+        self.assertEqual(leaf["end_reason"], "wikidata_no_children")
+        self.assertFalse(grow_json.should_fetch(leaf))
+
+    def test_rotate_candidates_continues_after_last_scan_key(self):
+        candidates = [
+            {"scan_key": "id:Q1", "priority": 10, "depth": 1},
+            {"scan_key": "id:Q2", "priority": 9, "depth": 1},
+            {"scan_key": "id:Q3", "priority": 8, "depth": 1},
+        ]
+
+        rotated = grow_json.rotate_candidates(candidates, "id:Q1")
+
+        self.assertEqual([item["scan_key"] for item in rotated], ["id:Q2", "id:Q3", "id:Q1"])
+
+    def test_write_static_api_includes_end_node_and_children_endpoint(self):
+        root = {
+            "id": "root",
+            "title": "万物",
+            "children_status": "loaded",
+            "children": [
+                {
+                    "id": "Q99",
+                    "title": "终止节点",
+                    "data_source": "nodes/Q99.json",
+                    "children_status": "loaded",
+                    "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION,
+                    "is_leaf": True,
+                }
+            ],
+        }
+        grow_json.save_json(
+            self.nodes_dir / "Q99.json",
+            {
+                "id": "Q99",
+                "title": "终止节点",
+                "children_status": "loaded",
+                "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION,
+                "is_leaf": True,
+                "updated_at": "2026-05-14T00:00:00Z",
+                "children": [],
+            },
+        )
+
+        summary = grow_json.write_static_api(root)
+
+        self.assertEqual(len(summary["end_nodes"]), 1)
+        end_node = grow_json.load_json(grow_json.API_DIR / "getEndNode.json")
+        children_api = grow_json.load_json(grow_json.API_DIR / "children" / "nodes" / "Q99.json")
+        node_api = grow_json.load_json(grow_json.API_DIR / "nodes" / "Q99.json")
+
+        self.assertEqual(end_node["total_items"], 1)
+        self.assertEqual(children_api["child_count"], 0)
+        self.assertEqual(node_api["node"]["id"], "Q99")
+
+    def test_zero_request_refresh_can_skip_growth_history_append(self):
+        grow_json.save_json(
+            grow_json.GROWTH_HISTORY_FILE,
+            [
+                {
+                    "run_at": "2026-05-13T00:00:00Z",
+                    "added_nodes": 0,
+                    "total_nodes": 1,
+                }
+            ],
+        )
+
+        grow_json.record_growth_history(1, 0, append_history=False)
+
+        history = grow_json.load_json_array(grow_json.GROWTH_HISTORY_FILE)
+        stats = grow_json.load_json(grow_json.STATS_FILE)
+        self.assertEqual(len(history), 1)
+        self.assertEqual(stats["history_entries"], 1)
+
+
+if __name__ == "__main__":
+    unittest.main()

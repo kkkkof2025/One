@@ -9,53 +9,83 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2179",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-12T02:12:59Z"
     },
     {
       "title": "柯伊伯带",
       "data_source": "nodes/Q427.json",
       "children_status": "error",
       "is_leaf": false,
-      "id": "Q427"
+      "id": "Q427",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:33Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "離散盤",
       "data_source": "nodes/Q180380.json",
       "children_status": "error",
       "is_leaf": false,
-      "id": "Q180380"
+      "id": "Q180380",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:34Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "金牛T星",
       "data_source": "nodes/Q6232.json",
       "children_status": "error",
       "is_leaf": false,
-      "id": "Q6232"
+      "id": "Q6232",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:35Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "原行星盤",
       "data_source": "nodes/Q505781.json",
       "children_status": "error",
       "is_leaf": false,
-      "id": "Q505781"
-    },
-    {
-      "title": "吸积盘",
-      "data_source": "nodes/Q237604.json",
-      "children_status": "loaded",
-      "is_leaf": false,
-      "id": "Q237604",
-      "fetch_strategy_version": 2
+      "id": "Q505781",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:36Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "岩屑盤",
+      "data_source": "nodes/Q1326555.json",
       "children_status": "pending",
       "is_leaf": false,
       "id": "Q1326555",
-      "source_relation": "subclass"
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-08T02:14:55Z",
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 89,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

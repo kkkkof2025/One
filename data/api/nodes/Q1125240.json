@@ -1,0 +1,26 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q1125240.json",
+  "node": {
+    "id": "Q1125240",
+    "title": "NGC 6044",
+    "children_status": "loaded",
+    "children": [],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-08T02:14:30Z",
+    "is_leaf": true,
+    "quality_score": 51,
+    "quality_reasons": [
+      "qid",
+      "non_zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "leaf"
+    ],
+    "quality_version": 3,
+    "review_status": "approved",
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-08T02:14:30Z"
+  }
+}

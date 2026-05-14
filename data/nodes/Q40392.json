@@ -1,0 +1,15 @@
+{
+  "id": "Q40392",
+  "title": "超大質量黑洞",
+  "children_status": "pending",
+  "children": [],
+  "quality_score": 75,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

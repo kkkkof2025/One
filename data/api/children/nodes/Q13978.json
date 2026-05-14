@@ -1,0 +1,32 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q13978.json",
+  "node": {
+    "title": "M61",
+    "children_count": 1,
+    "id": "Q13978",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 57,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T00:57:07Z"
+  },
+  "children": [
+    {
+      "title": "SN 1961i",
+      "children_count": 0,
+      "id": "Q9326449",
+      "data_source": "nodes/Q9326449.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T00:57:08Z",
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:57:08Z"
+    }
+  ],
+  "child_count": 1
+}

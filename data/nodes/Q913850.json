@@ -8,9 +8,24 @@
       "data_source": "nodes/Q1759661.json",
       "children_status": "loaded",
       "is_leaf": true,
-      "id": "Q1759661"
+      "id": "Q1759661",
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:46Z"
     }
   ],
   "updated_at": "2026-05-06T03:29:45Z",
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 83,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

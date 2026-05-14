@@ -1,0 +1,4 @@
+{
+  "decisions": {},
+  "notes": "复核处理记录用于让 review_queue 过滤已经确认、暂缓、加入人工关注或加入允许列表的节点。key 通常来自 review_queue.json 的 review_key。"
+}

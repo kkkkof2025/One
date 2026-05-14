@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q8001373.json",
+  "node": {
+    "id": "Q8001373",
+    "title": "中国野生动物",
+    "children_status": "loaded",
+    "children": [],
+    "updated_at": "2026-05-06T03:29:56Z",
+    "is_leaf": true,
+    "quality_score": 77,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "leaf"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

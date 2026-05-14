@@ -9,24 +9,45 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q237604",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:54Z"
     },
     {
       "title": "电磁辐射",
+      "data_source": "nodes/Q12969754.json",
       "children_status": "pending",
       "is_leaf": false,
       "id": "Q12969754",
-      "source_relation": "has_part"
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     },
     {
       "title": "超大質量黑洞",
+      "data_source": "nodes/Q40392.json",
       "children_status": "pending",
       "is_leaf": false,
       "id": "Q40392",
-      "source_relation": "has_part"
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "updated_at": "2026-05-08T02:14:53Z",
   "fetch_strategy_version": 2,
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 87,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1454986.json",
+  "node": {
+    "title": "物质系统",
+    "children_count": 0,
+    "id": "Q1454986",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

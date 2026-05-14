@@ -9,7 +9,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q82522",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 85,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:21Z"
     },
     {
       "title": "武仙座超星系团",
@@ -17,10 +21,25 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2636625",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:25Z"
     }
   ],
   "updated_at": "2026-05-08T02:14:20Z",
   "fetch_strategy_version": 2,
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 85,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

@@ -9,7 +9,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q13720",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:26Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:07:26Z"
     },
     {
       "title": "Segue 1",
@@ -17,7 +23,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1813110",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:27Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:07:27Z"
     },
     {
       "title": "Segue 2",
@@ -25,7 +37,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2266221",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:28Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:07:28Z"
     },
     {
       "title": "人馬座矮不規則星系",
@@ -33,7 +51,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1149676",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:30Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:07:30Z"
     },
     {
       "title": "人馬座矮橢球星系",
@@ -41,7 +65,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q32885",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:31Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:07:31Z"
     },
     {
       "title": "仙女座I",
@@ -49,7 +79,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2727447",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:13Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:13Z"
     },
     {
       "title": "仙女座II",
@@ -57,7 +93,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q287905",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:15Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:15Z"
     },
     {
       "title": "仙女座III",
@@ -65,7 +107,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2704275",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:16Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:16Z"
     },
     {
       "title": "仙女座IV",
@@ -73,7 +121,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2025704",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:17Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:17Z"
     },
     {
       "title": "仙女座IX",
@@ -81,7 +135,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q779522",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:18Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:18Z"
     },
     {
       "title": "仙女座V",
@@ -89,7 +149,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2704510",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:20Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:20Z"
     },
     {
       "title": "仙女座VI",
@@ -97,7 +163,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1656479",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:21Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:21Z"
     },
     {
       "title": "仙女座VIII",
@@ -105,7 +177,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2259795",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:22Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:22Z"
     },
     {
       "title": "仙女座X",
@@ -113,7 +191,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q4759486",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:23Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:23Z"
     },
     {
       "title": "仙女座星系",
@@ -121,7 +205,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2469",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:25Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:25Z"
     },
     {
       "title": "六分儀座A",
@@ -129,7 +219,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1282228",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:26Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:26Z"
     },
     {
       "title": "六分儀座B",
@@ -137,7 +233,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2746406",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:27Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:27Z"
     },
     {
       "title": "六分儀座矮星系",
@@ -145,7 +247,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q32886",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:29Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:29Z"
     },
     {
       "title": "凤凰座矮星系",
@@ -153,7 +261,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q782095",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:30Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:30Z"
     },
     {
       "title": "后髮座矮星系",
@@ -161,7 +275,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q2476549",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:31Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:31Z"
     },
     {
       "title": "大熊座II矮星系",
@@ -169,7 +289,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q33110",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:32Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:32Z"
     },
     {
       "title": "大熊座矮星系",
@@ -177,7 +303,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q32888",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:34Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:34Z"
     },
     {
       "title": "大犬座矮星系",
@@ -185,7 +317,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q35745",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:35Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:18:35Z"
     },
     {
       "title": "大麦哲伦星系",
@@ -193,7 +331,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q49957",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:18:53Z"
     },
     {
       "title": "天爐座矮星系",
@@ -201,7 +343,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q35818",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:23Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:23Z"
     },
     {
       "title": "天龙座矮星系",
@@ -209,7 +357,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q11566",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:24Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:24Z"
     },
     {
       "title": "威爾曼1",
@@ -217,7 +371,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q32882",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:25Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:25Z"
     },
     {
       "title": "寶瓶座矮星系",
@@ -225,10 +385,27 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1194660",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:26Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:26Z"
     }
   ],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-07T02:07:25Z",
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 89,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

@@ -1,0 +1,17 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q180380.json",
+  "node": {
+    "title": "離散盤",
+    "children_count": 0,
+    "id": "Q180380",
+    "children_status": "error",
+    "quality_score": 63,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-13T02:28:34Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+  },
+  "children": [],
+  "child_count": 0
+}

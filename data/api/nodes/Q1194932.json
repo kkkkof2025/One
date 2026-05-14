@@ -1,0 +1,26 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q1194932.json",
+  "node": {
+    "id": "Q1194932",
+    "title": "马菲1",
+    "children_status": "loaded",
+    "children": [],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T03:03:32Z",
+    "is_leaf": true,
+    "quality_score": 77,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "leaf"
+    ],
+    "quality_version": 3,
+    "review_status": "approved",
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-07T03:03:32Z"
+  }
+}

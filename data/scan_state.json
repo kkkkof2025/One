@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-05-14T03:54:32Z",
+  "fetch_strategy_version": 2,
+  "scan_order": "priority-depth-first-cursor-v1",
+  "last_scan_key": "",
+  "last_scan_title": "",
+  "candidate_count": 53,
+  "selected_count": 0,
+  "request_count": 0,
+  "max_requests": 0,
+  "exhausted": false
+}

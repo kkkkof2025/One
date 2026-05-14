@@ -9,7 +9,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q815835",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:15Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:15Z"
     },
     {
       "title": "R136a2",
@@ -17,7 +23,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q17144092",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:16Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:16Z"
     },
     {
       "title": "R136a3",
@@ -25,7 +37,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q19831590",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:17Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:17Z"
     },
     {
       "title": "R136b",
@@ -33,7 +51,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1082845",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:18Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:18Z"
     },
     {
       "title": "R136c",
@@ -41,10 +65,27 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q19831587",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:19Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:19Z"
     }
   ],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-07T02:51:13Z",
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 63,
+  "quality_reasons": [
+    "qid",
+    "non_zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

@@ -1,0 +1,19 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q223376.json",
+  "node": {
+    "title": "匈牙利族小行星",
+    "children_count": 0,
+    "id": "Q223376",
+    "children_status": "loaded",
+    "is_leaf": true,
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-13T02:28:17Z",
+    "quality_score": 77,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-13T02:28:17Z"
+  },
+  "children": [],
+  "child_count": 0
+}

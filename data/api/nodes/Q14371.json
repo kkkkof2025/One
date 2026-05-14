@@ -1,0 +1,53 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q14371.json",
+  "node": {
+    "id": "Q14371",
+    "title": "風車星系",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "M101 OT2015-1",
+        "data_source": "nodes/Q55621538.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q55621538",
+        "fetch_strategy_version": 2,
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:30Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:30Z"
+      },
+      {
+        "title": "SN 2023ixf",
+        "data_source": "nodes/Q118512328.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q118512328",
+        "fetch_strategy_version": 2,
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:31Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:31Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T00:54:29Z",
+    "is_leaf": false,
+    "quality_score": 85,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

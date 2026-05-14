@@ -1,0 +1,37 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q2352556.json",
+  "node": {
+    "id": "Q2352556",
+    "title": "M101星系群",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "風車星系",
+        "data_source": "nodes/Q14371.json",
+        "children_status": "loaded",
+        "is_leaf": false,
+        "id": "Q14371",
+        "fetch_strategy_version": 2,
+        "quality_score": 85,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:29Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T00:54:26Z",
+    "is_leaf": false,
+    "quality_score": 83,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

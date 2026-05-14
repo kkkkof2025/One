@@ -9,7 +9,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2352556",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:26Z"
     },
     {
       "title": "M74星系群",
@@ -17,7 +21,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q4818153",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:32Z"
     },
     {
       "title": "M81星系團",
@@ -25,7 +33,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1536497",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 85,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:36Z"
     },
     {
       "title": "M94星系團",
@@ -33,7 +45,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1033145",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:41Z"
     },
     {
       "title": "M96星系群",
@@ -41,7 +57,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1577945",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 88,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:43Z"
     },
     {
       "title": "NGC 1023星系群",
@@ -49,7 +69,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q1927127",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:56:53Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T00:56:53Z"
     },
     {
       "title": "半人馬座 A/M83星系團",
@@ -57,7 +83,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1881065",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 85,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:56:54Z"
     },
     {
       "title": "大熊座星系團",
@@ -65,7 +95,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q338941",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:56:58Z"
     },
     {
       "title": "天爐座星系團",
@@ -73,7 +107,13 @@
       "children_status": "loaded",
       "is_leaf": true,
       "id": "Q61226",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:57:00Z",
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T00:57:00Z"
     },
     {
       "title": "室女座星系團",
@@ -81,7 +121,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q271818",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:57:01Z"
     },
     {
       "title": "本地板",
@@ -89,7 +133,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q6664252",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:07:23Z"
     },
     {
       "title": "波江座星系團",
@@ -97,7 +145,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q942427",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:27Z"
     },
     {
       "title": "獵犬II星系群",
@@ -105,7 +157,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2537436",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:30Z"
     },
     {
       "title": "玉夫座星系群",
@@ -113,7 +169,11 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1521081",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:32Z"
     },
     {
       "title": "馬菲星系群",
@@ -121,10 +181,25 @@
       "children_status": "loaded",
       "is_leaf": false,
       "id": "Q843331",
-      "fetch_strategy_version": 2
+      "fetch_strategy_version": 2,
+      "quality_score": 88,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:35Z"
     }
   ],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-07T00:54:25Z",
-  "is_leaf": false
+  "is_leaf": false,
+  "quality_score": 89,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "has_children"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

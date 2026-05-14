@@ -1,0 +1,574 @@
+{
+  "generated_at": "2026-05-07T08:50:51Z",
+  "threshold": 45,
+  "limit": 200,
+  "total_candidates": 24,
+  "suppressed_items": 0,
+  "decision_file": "review_decisions.json",
+  "total_items": 24,
+  "reason_distribution": {
+    "total_items": 24,
+    "categories": [
+      {
+        "key": "non_zh_label",
+        "label": "缺少中文标签",
+        "count": 24,
+        "sample_review_keys": [
+          "id:Q55621538",
+          "id:Q118512328",
+          "id:Q14013",
+          "id:Q2759979",
+          "id:Q14377"
+        ]
+      }
+    ],
+    "raw_reasons": [
+      {
+        "reason": "good_title_length",
+        "count": 24
+      },
+      {
+        "reason": "non_zh_label",
+        "count": 24
+      },
+      {
+        "reason": "qid",
+        "count": 24
+      },
+      {
+        "reason": "loaded",
+        "count": 15
+      },
+      {
+        "reason": "missing_relation",
+        "count": 15
+      },
+      {
+        "reason": "leaf",
+        "count": 14
+      },
+      {
+        "reason": "relation:has_part",
+        "count": 9
+      },
+      {
+        "reason": "has_children",
+        "count": 1
+      }
+    ],
+    "children_statuses": [
+      {
+        "status": "loaded",
+        "label": "已加载",
+        "count": 15
+      },
+      {
+        "status": "pending",
+        "label": "待扩展",
+        "count": 9
+      }
+    ]
+  },
+  "items": [
+    {
+      "title": "M101 OT2015-1",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q55621538",
+      "updated_at": "2026-05-07T00:54:30Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M101星系群 / 風車星系 / M101 OT2015-1",
+      "location": "nodes/Q55621538.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q55621538"
+    },
+    {
+      "title": "SN 2023ixf",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q118512328",
+      "updated_at": "2026-05-07T00:54:31Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M101星系群 / 風車星系 / SN 2023ixf",
+      "location": "nodes/Q118512328.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q118512328"
+    },
+    {
+      "title": "M74",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q14013",
+      "updated_at": "2026-05-07T00:54:34Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M74星系群 / M74",
+      "location": "nodes/Q14013.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14013"
+    },
+    {
+      "title": "M82 X-1",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q2759979",
+      "updated_at": "2026-05-07T00:54:39Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M81星系團 / 雪茄星系 / M82 X-1",
+      "location": "nodes/Q2759979.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q2759979"
+    },
+    {
+      "title": "M105",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q14377",
+      "updated_at": "2026-05-07T00:56:50Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / M105",
+      "location": "nodes/Q14377.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14377"
+    },
+    {
+      "title": "M95",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q14351",
+      "updated_at": "2026-05-07T00:56:51Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / M95",
+      "location": "nodes/Q14351.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14351"
+    },
+    {
+      "title": "M65",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13986",
+      "updated_at": "2026-05-07T00:56:48Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / 獅子座三胞胎 / M65",
+      "location": "nodes/Q13986.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13986"
+    },
+    {
+      "title": "M66",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13992",
+      "updated_at": "2026-05-07T00:56:49Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / 獅子座三胞胎 / M66",
+      "location": "nodes/Q13992.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13992"
+    },
+    {
+      "title": "M49",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13952",
+      "updated_at": "2026-05-07T00:57:03Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49",
+      "location": "nodes/Q13952.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13952"
+    },
+    {
+      "title": "M58",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13970",
+      "updated_at": "2026-05-07T00:57:04Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M58",
+      "location": "nodes/Q13970.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13970"
+    },
+    {
+      "title": "M59",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13971",
+      "updated_at": "2026-05-07T00:57:05Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M59",
+      "location": "nodes/Q13971.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13971"
+    },
+    {
+      "title": "M60",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q13976",
+      "updated_at": "2026-05-07T00:57:06Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M60",
+      "location": "nodes/Q13976.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13976"
+    },
+    {
+      "title": "SN 1961i",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q9326449",
+      "updated_at": "2026-05-07T00:57:08Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M61 / SN 1961i",
+      "location": "nodes/Q9326449.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q9326449"
+    },
+    {
+      "title": "Wildlife of Japan",
+      "children_status": "loaded",
+      "quality_score": 51,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q8001388",
+      "updated_at": "2026-05-06T03:29:55Z",
+      "path": "万物 / 生命 / 野生生物 / Wildlife of Japan",
+      "location": "nodes/Q8001388.json",
+      "priority": 59.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q8001388"
+    },
+    {
+      "title": "M61",
+      "children_status": "loaded",
+      "quality_score": 57,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "has_children"
+      ],
+      "id": "Q13978",
+      "updated_at": "2026-05-07T00:57:07Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M61",
+      "location": "nodes/Q13978.json",
+      "priority": 53.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13978"
+    },
+    {
+      "title": "M84",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q92258118",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M84",
+      "location": "nodes/Q271818.json.children[5]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q92258118"
+    },
+    {
+      "title": "M85",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14035",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M85",
+      "location": "nodes/Q271818.json.children[6]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14035"
+    },
+    {
+      "title": "M86",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q92258250",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M86",
+      "location": "nodes/Q271818.json.children[7]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q92258250"
+    },
+    {
+      "title": "M88",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14048",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M88",
+      "location": "nodes/Q271818.json.children[8]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14048"
+    },
+    {
+      "title": "M89",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14337",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M89",
+      "location": "nodes/Q271818.json.children[9]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14337"
+    },
+    {
+      "title": "M90",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14343",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M90",
+      "location": "nodes/Q271818.json.children[10]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14343"
+    },
+    {
+      "title": "M91",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14344",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M91",
+      "location": "nodes/Q271818.json.children[11]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14344"
+    },
+    {
+      "title": "M98",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14361",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M98",
+      "location": "nodes/Q271818.json.children[12]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14361"
+    },
+    {
+      "title": "VIRGOHI21",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1210087",
+      "source_relation": "has_part",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / VIRGOHI21",
+      "location": "nodes/Q271818.json.children[13]",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1210087"
+    }
+  ]
+}

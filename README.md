@@ -16,14 +16,20 @@
 
 1. 每天 UTC 00:00 自动运行，也就是北京时间 08:00。
 2. 安装 Python 依赖。
-3. 运行 `python scripts/grow_json.py`。
-4. 如果 `data/` 有变化，自动提交到当前分支。
-5. 打包 `index.html` 和 `data/`。
-6. 部署到 GitHub Pages。
+3. 运行离线单元测试。
+4. 校验现有 JSON 数据。
+5. 运行 `python scripts/grow_json.py`。
+6. 运行 `python scripts/generate_review_queue.py` 生成复核队列。
+7. 再次校验生成后的 JSON 数据。
+8. 如果 `data/` 有变化，自动提交到当前分支。
+9. 打包 `index.html` 和 `data/`。
+10. 部署到 GitHub Pages。
 
 也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求 Wikidata 的次数。
 
 增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点。旧策略误判为空叶子的节点会因为 `fetch_strategy_version` 低于当前版本而被重新抓取。
+
+增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上标记 `is_leaf`、`end_reason` 和 `ended_at`；只要抓取策略版本不变，这类节点不会再次请求 Wikidata。
 
 ## 目录结构
 
@@ -34,8 +40,19 @@
 │   ├── root.json                          # 页面和脚本的主数据入口
 │   ├── stats.json                         # 当前总节点数和最近一次增长统计
 │   ├── growth_history.json                # 历史生长记录
+│   ├── scan_state.json                    # 自动增长扫描游标和候选统计
+│   ├── end_nodes.json                     # 已确认不可继续扩展的终止节点
+│   ├── curation.json                      # 人工关注节点和策展信号
+│   ├── validation_allowlist.json           # 数据校验允许列表
+│   ├── review_queue.json                  # 待人工复核节点队列
+│   ├── api/                               # GitHub Pages 静态 API 形式的数据镜像
 │   └── nodes/                             # 懒加载子节点分片
 ├── scripts/grow_json.py                   # Wikidata 增量扩展脚本
+├── scripts/validate_data.py               # JSON 数据校验脚本
+├── scripts/curate_node.py                 # 人工关注节点维护脚本
+├── scripts/generate_review_queue.py       # 生成待复核节点队列
+├── scripts/review_decision.py             # 记录复核处理结果
+├── tests/                                 # 离线单元测试
 ├── index.html                             # 静态知识树页面
 ├── 万物.txt                               # 文本导入示例
 ├── generate_html_from_txt.py              # 从 万物.txt 生成独立 HTML
@@ -50,7 +67,35 @@
 
 `data/root.json` 是入口文件。较大的节点会被拆到 `data/nodes/*.json`，父节点使用 `data_source` 指向子文件。
 
-`data/stats.json` 保存当前总节点数、最近一次新增节点数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，只记录 `run_at`、`added_nodes` 和 `total_nodes`，不记录节点详情。
+`data/stats.json` 保存当前总节点数、最近一次新增节点数、终止节点数、请求数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，记录新增节点、总节点、请求数、候选数和终止节点数，不记录节点详情。
+
+`data/scan_state.json` 保存自动增长的扫描游标、候选数量、请求数量和是否已经扫完当前候选队列。它让下一次运行从 `last_scan_key` 后面继续，而不是每次从同一批节点重新开始。
+
+`data/end_nodes.json` 保存已经通过当前抓取策略确认没有可扩展子节点的节点清单。页面和后续脚本可以直接读取它，避免把终止节点混入下一轮扫描。
+
+`data/api/` 是面向 GitHub Pages 的静态接口镜像。它不是真正的后端服务，但路径设计成接口形式，方便页面和外部脚本调用：
+
+- `data/api/root.json`: 返回根节点。
+- `data/api/nodes/Q1.json`: 返回指定节点完整数据。
+- `data/api/children/nodes/Q1.json`: 返回指定节点的子节点摘要。
+- `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
+
+`data/validation_allowlist.json` 保存人工确认过的校验例外。当前用于记录合法重复 QID，例如同一个 Wikidata 节点合理地出现在多条分类路径中；没有进入允许列表的新重复 ID 仍会作为 warning 报告。
+
+`data/curation.json` 保存人工关注节点。增长脚本会把其中的 `focused_node_ids` 和 `focused_titles` 作为策展信号，提高对应节点的质量分和默认扩展优先级；单个节点上的 `expansion_priority` 仍然是更强的人工覆盖。
+
+`data/review_queue.json` 保存待复核节点队列，由 `scripts/generate_review_queue.py` 生成。队列会收集 `needs_review`、低质量、错误、重复风险、消歧义、过度泛化和缺少中文标签等节点，并给出建议动作；同时写入 `reason_distribution`，按缺中文、重复风险、加载错误、低质量分等维度统计当前队列主要原因。
+
+`data/review_decisions.json` 保存复核处理结果。队列项中的 `review_key` 可以用于记录确认、暂缓、已加入人工关注或已加入允许列表等状态；被记录的节点会从后续复核队列中隐藏。使用显式同步参数时，`curated` 可同时写入 `data/curation.json`，`allowlisted` 可同时写入 `data/validation_allowlist.json`。
+
+维护人工关注节点：
+
+```bash
+python scripts/curate_node.py focus --id Q1 --reason "主干节点" --priority-bonus 24
+python scripts/curate_node.py focus --title "人工节点" --reason "人工策展"
+python scripts/curate_node.py unfocus --id Q1
+python scripts/curate_node.py list
+```
 
 常用字段：
 
@@ -61,9 +106,18 @@
 - `data_source`: 相对 `data/` 的 JSON 路径，用于页面懒加载。
 - `is_leaf`: 已确认没有子节点时为 `true`。
 - `updated_at`: 自动扩展脚本更新时间。
+- `last_checked_at`: 最近一次请求外部知识库检查该节点的时间。
 - `last_error`: 最近一次扩展失败原因。
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
+- `end_reason`: 终止原因。当前自动终止值为 `wikidata_no_children`。
+- `ended_at`: 节点被确认为终止节点的时间。
 - `source_relation`: 节点来自 Wikidata 的哪类关系，例如 `subclass`、`instance`、`part_of`、`has_part`。
+- `quality_score`: 自动计算的节点质量分，范围 `0` 到 `100`。
+- `quality_reasons`: 质量评分原因列表。
+- `quality_version`: 质量评分规则版本。
+- `review_status`: `approved` 或 `needs_review`。低质量节点默认不会继续自动扩展。
+- `manual_review`: 人工确认标记；配合 `review_status` 保留人工判断。
+- `expansion_priority`: 人工指定扩展优先级，可覆盖默认排序。
 
 示例：
 
@@ -91,10 +145,46 @@ python -m pip install -r requirements.txt
 python scripts/grow_json.py
 ```
 
+如果只想刷新终止节点、扫描状态和静态 API 镜像，不请求 Wikidata：
+
+```bash
+ONE_MAX_REQUESTS=0 python scripts/grow_json.py
+```
+
 限制单次请求数：
 
 ```bash
 ONE_MAX_REQUESTS=5 python scripts/grow_json.py
+```
+
+运行离线测试：
+
+```bash
+python -m unittest discover -s tests
+```
+
+校验 JSON 数据：
+
+```bash
+python scripts/validate_data.py
+```
+
+生成复核队列：
+
+```bash
+python scripts/generate_review_queue.py
+```
+
+记录复核处理：
+
+```bash
+python scripts/review_decision.py mark --key id:Q55621538 --status confirmed --reason "暂时接受英文星表名"
+python scripts/review_decision.py mark --key id:Q14013 --status deferred --reason "等待人工补中文标题"
+python scripts/review_decision.py mark --key id:Q1 --status curated --reason "主干节点" --sync-curation --priority-bonus 24
+python scripts/review_decision.py mark --key id:Q79925 --status allowlisted --reason "合法多路径" --sync-allowlist
+python scripts/review_decision.py remove --key id:Q14013
+python scripts/review_decision.py list
+python scripts/review_decision.py list --status deferred
 ```
 
 本地预览静态页面：
@@ -110,6 +200,8 @@ python -m http.server 8000
 - `云球`：围绕当前节点展示子节点和兄弟节点。
 - `经典树`：使用 DOM 列表按需展开 JSON 分片。
 - `树状图`：打开该视图时按需加载 ECharts，只渲染当前直接父层、兄弟层和选中节点的下一层；缩放到更小视野时允许展示更多已加载层，渲染变慢时会自动收起较旧分支。
+
+页面顶部提供增长统计、终止节点数量、复核队列、搜索、状态过滤、全局路径面包屑、当前节点来源信息，以及 AI 上下文导出功能。当前节点工具区可以复制节点接口、子节点接口和终止节点接口 URL。复核队列支持按状态/原因筛选，显示已处理数量、最近处理时间和原因分布，并可复制 `review_key` 供 `scripts/review_decision.py` 使用。AI 上下文可以复制或下载为 Markdown/JSON，包含当前节点、父路径、子节点摘要、静态接口路径、`data_source`、`id`、`source_relation`、状态和更新时间。
 
 ## GitHub Pages 设置
 
@@ -139,6 +231,13 @@ workflow 需要这些权限：
 - `ONE_GROWTH_HISTORY_LIMIT`: `data/growth_history.json` 最多保留多少条历史记录，默认 `365`。
 - `ONE_WIKIDATA_ENDPOINT`: Wikidata SPARQL Endpoint。
 - `ONE_USER_AGENT`: 请求 User-Agent。
+- `ONE_QUALITY_REVIEW_THRESHOLD`: 低于该质量分的节点会进入 `needs_review`，默认 `45`。
+- `ONE_PRIORITY_SCAN_LIMIT`: 每层参与优先级排序的候选节点数，默认 `1000`。
+- `ONE_FOCUS_PRIORITY_BONUS`: 人工关注节点默认扩展优先级加分，默认 `18`。
+- `ONE_REVIEW_QUEUE_LIMIT`: 复核队列最多保留多少个节点，默认 `200`。
+- `ONE_REVIEW_QUEUE_THRESHOLD`: 进入复核队列的质量分阈值，默认跟 `ONE_QUALITY_REVIEW_THRESHOLD` 一致。
+
+GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `5` 到 `20` 之间，并保留默认 `ONE_REQUEST_DELAY=1.0`。需要手动补数据时可以在 workflow 手动触发里临时调高，但不建议长期大批量请求公共 SPARQL 服务。
 
 维基百科辅助脚本支持：
 
@@ -154,10 +253,35 @@ workflow 需要这些权限：
 - 修改数据结构时同步更新 README、MEMORY 和页面加载逻辑。
 - 自动生成的数据尽量只改 `data/`，不要覆盖人工维护的说明文件。
 
+## 已完成维护项
+
+- 页面已支持搜索、状态过滤、全局路径面包屑、节点来源详情，以及 Markdown/JSON AI 上下文复制和下载。
+- `scripts/validate_data.py` 已能检查坏 JSON、断开的 `data_source`、缺失标题、状态枚举、质量字段、重复 ID 和 schema 漂移。
+- `tests/test_grow_json.py` 已覆盖去重、分片、指针更新、人工内容保留、质量评分和扩展优先级。
+- `tests/test_validate_data.py` 已覆盖有效分片、坏 JSON、断开的 `data_source`、循环引用、schema 漂移、重复 ID warning 和重复 ID 允许列表。
+- `tests/test_curate_node.py` 已覆盖人工关注节点的添加、移除和 QID 格式检查。
+- `scripts/grow_json.py` 已引入质量评分、待审状态和优先级排序；低质量节点默认不继续自动扩展，人工 `expansion_priority` 可以覆盖。
+- `data/curation.json` 已记录人工关注节点，并接入质量评分和默认扩展优先级。
+- `scripts/curate_node.py` 已提供人工关注节点的轻量编辑流程。
+- 质量评分已纳入过度泛化标题、消歧义标题、重复风险、人工复核和人工关注信号。
+- `scripts/generate_review_queue.py` 已生成 `data/review_queue.json`，汇总待人工复核节点和建议动作。
+- `scripts/review_decision.py` 已记录复核处理结果，并让后续复核队列跳过已处理节点；`curated` / `allowlisted` 处理可显式同步到人工关注或重复 ID 允许列表，`list --status` 可按状态查看记录。
+- 页面已展示 `data/review_queue.json` 的复核队列，并可点击队列项带入搜索、按状态/原因筛选、复制 `review_key`、查看已处理数量、最近处理时间和原因分布。
+- workflow 已在增长前运行离线测试和数据校验，并在增长后再次校验。
+- `scripts/grow_json.py` 已新增扫描游标、终止节点清单和 `data/api/` 静态接口镜像；页面会优先通过接口式路径读取节点、子节点和终止节点。
+
+## To-do
+
+- 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
+- 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
+- 给复核队列增加批量导出命令，方便人工集中处理缺少中文标签的节点。
+- 在页面复核队列中突出首要复核原因，方便人工先处理同类问题。
+- 观察 `data/scan_state.json` 的 `candidate_count` 和 `exhausted`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
+
 ## 已知限制
 
 - Wikidata 的 `P279` 表示“属于某类/子类”，结果适合做目录扩展，但不等于人工精修分类。
 - 中文标签缺失时，部分节点可能暂时不会被收入结果。
-- 当前扩展策略偏确定性深度优先，后续可以增加优先级队列或质量评分。
+- 当前质量评分仍是启发式规则，不能替代人工策展；`needs_review` 节点需要人工抽查。
 - 页面只负责读取已生成的 JSON，不会在浏览器端实时请求 Wikidata。
 - `树状图` 视图依赖 ECharts CDN，并配置了 jsDelivr 和 unpkg 两个加载地址；CDN 不可用时不会影响 `云球` 和 `经典树` 视图。

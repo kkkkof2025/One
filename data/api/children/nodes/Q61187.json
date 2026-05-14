@@ -1,0 +1,19 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q61187.json",
+  "node": {
+    "title": "唧筒座星系團",
+    "children_count": 0,
+    "id": "Q61187",
+    "children_status": "loaded",
+    "is_leaf": true,
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-07T03:04:32Z",
+    "quality_score": 77,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T03:04:32Z"
+  },
+  "children": [],
+  "child_count": 0
+}

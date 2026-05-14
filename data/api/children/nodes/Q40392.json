@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q40392.json",
+  "node": {
+    "title": "超大質量黑洞",
+    "children_count": 0,
+    "id": "Q40392",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,37 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q24571.json",
+  "node": {
+    "id": "Q24571",
+    "title": "双鱼-鲸鱼座超星系团复合体",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "拉尼亚凯亚超星系团",
+        "data_source": "nodes/Q17863945.json",
+        "children_status": "loaded",
+        "is_leaf": false,
+        "id": "Q17863945",
+        "fetch_strategy_version": 2,
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:22Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T00:54:20Z",
+    "is_leaf": false,
+    "quality_score": 83,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "Q11379",
+  "title": "能量",
+  "children_status": "pending",
+  "children": [],
+  "quality_score": 75,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

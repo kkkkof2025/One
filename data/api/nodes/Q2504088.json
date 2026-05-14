@@ -1,0 +1,19 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q2504088.json",
+  "node": {
+    "id": "Q2504088",
+    "title": "星系際塵埃",
+    "children_status": "pending",
+    "children": [],
+    "quality_score": 75,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

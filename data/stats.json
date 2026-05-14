@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-05-13T02:28:38Z",
+  "generated_at": "2026-05-14T03:54:32Z",
   "total_nodes": 193,
   "last_added_nodes": 0,
+  "last_request_count": 0,
+  "last_scanned_nodes": 199,
+  "last_candidate_nodes": 53,
+  "last_unchanged_requests": 0,
+  "last_failed_requests": 0,
+  "last_end_nodes_marked": 0,
+  "end_node_count": 98,
   "history_entries": 12,
-  "history_file": "growth_history.json"
+  "history_file": "growth_history.json",
+  "end_nodes_file": "end_nodes.json",
+  "scan_state_file": "scan_state.json",
+  "static_api_root": "api"
 }

@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q6005984.json",
+  "node": {
+    "title": "重子物质",
+    "children_count": 0,
+    "id": "Q6005984",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

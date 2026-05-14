@@ -1,0 +1,97 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q2179.json",
+  "node": {
+    "title": "主小行星帶",
+    "children_count": 6,
+    "id": "Q2179",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-12T02:12:59Z"
+  },
+  "children": [
+    {
+      "title": "匈牙利族小行星",
+      "children_count": 0,
+      "id": "Q223376",
+      "data_source": "nodes/Q223376.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-13T02:28:17Z",
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:17Z"
+    },
+    {
+      "title": "小行星11157",
+      "children_count": 0,
+      "id": "Q4540906",
+      "data_source": "nodes/Q4540906.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:37Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "小行星211",
+      "children_count": 0,
+      "id": "Q147632",
+      "data_source": "nodes/Q147632.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:28Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "小行星29361",
+      "children_count": 0,
+      "id": "Q3598680",
+      "data_source": "nodes/Q3598680.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:29Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "小行星66685",
+      "children_count": 0,
+      "id": "Q15182290",
+      "data_source": "nodes/Q15182290.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:31Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "长女星",
+      "children_count": 0,
+      "id": "Q213466",
+      "data_source": "nodes/Q213466.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-13T02:28:32Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    }
+  ],
+  "child_count": 6
+}

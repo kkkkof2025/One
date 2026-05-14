@@ -1,0 +1,19 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q1326555.json",
+  "node": {
+    "id": "Q1326555",
+    "title": "岩屑盤",
+    "children_status": "pending",
+    "children": [],
+    "quality_score": 75,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

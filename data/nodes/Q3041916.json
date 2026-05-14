@@ -5,5 +5,18 @@
   "children": [],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-07T02:51:36Z",
-  "is_leaf": true
+  "is_leaf": true,
+  "quality_score": 77,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "leaf"
+  ],
+  "quality_version": 3,
+  "review_status": "approved",
+  "end_reason": "wikidata_no_children",
+  "ended_at": "2026-05-07T02:51:36Z"
 }

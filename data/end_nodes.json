@@ -1,0 +1,1869 @@
+{
+  "generated_at": "2026-05-14T03:54:31Z",
+  "fetch_strategy_version": 2,
+  "total_items": 98,
+  "items": [
+    {
+      "key": "id:Q23054687",
+      "path": "nodes/Q23054687.json",
+      "title": "BOSS長城",
+      "node": {
+        "title": "BOSS長城",
+        "children_count": 0,
+        "id": "Q23054687",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:19Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:19Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q3329830",
+      "path": "nodes/Q3329830.json",
+      "title": "ESO 137-001",
+      "node": {
+        "title": "ESO 137-001",
+        "children_count": 0,
+        "id": "Q3329830",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:04:50Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:04:50Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q55621538",
+      "path": "nodes/Q55621538.json",
+      "title": "M101 OT2015-1",
+      "node": {
+        "title": "M101 OT2015-1",
+        "children_count": 0,
+        "id": "Q55621538",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:30Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:30Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14377",
+      "path": "nodes/Q14377.json",
+      "title": "M105",
+      "node": {
+        "title": "M105",
+        "children_count": 0,
+        "id": "Q14377",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:50Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:50Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q4658",
+      "path": "nodes/Q4658.json",
+      "title": "M106",
+      "node": {
+        "title": "M106",
+        "children_count": 0,
+        "id": "Q4658",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:31Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2882135",
+      "path": "nodes/Q2882135.json",
+      "title": "M109星系群",
+      "node": {
+        "title": "M109星系群",
+        "children_count": 0,
+        "id": "Q2882135",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:59Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:59Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13720",
+      "path": "nodes/Q13720.json",
+      "title": "M32",
+      "node": {
+        "title": "M32",
+        "children_count": 0,
+        "id": "Q13720",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:26Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:26Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13952",
+      "path": "nodes/Q13952.json",
+      "title": "M49",
+      "node": {
+        "title": "M49",
+        "children_count": 0,
+        "id": "Q13952",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:03Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:03Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13970",
+      "path": "nodes/Q13970.json",
+      "title": "M58",
+      "node": {
+        "title": "M58",
+        "children_count": 0,
+        "id": "Q13970",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:04Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:04Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13971",
+      "path": "nodes/Q13971.json",
+      "title": "M59",
+      "node": {
+        "title": "M59",
+        "children_count": 0,
+        "id": "Q13971",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:05Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:05Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13976",
+      "path": "nodes/Q13976.json",
+      "title": "M60",
+      "node": {
+        "title": "M60",
+        "children_count": 0,
+        "id": "Q13976",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:06Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:06Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13986",
+      "path": "nodes/Q13986.json",
+      "title": "M65",
+      "node": {
+        "title": "M65",
+        "children_count": 0,
+        "id": "Q13986",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:48Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:48Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13992",
+      "path": "nodes/Q13992.json",
+      "title": "M66",
+      "node": {
+        "title": "M66",
+        "children_count": 0,
+        "id": "Q13992",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:49Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:49Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14013",
+      "path": "nodes/Q14013.json",
+      "title": "M74",
+      "node": {
+        "title": "M74",
+        "children_count": 0,
+        "id": "Q14013",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:34Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:34Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2759979",
+      "path": "nodes/Q2759979.json",
+      "title": "M82 X-1",
+      "node": {
+        "title": "M82 X-1",
+        "children_count": 0,
+        "id": "Q2759979",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:39Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:39Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q92258118",
+      "path": "nodes/Q92258118.json",
+      "title": "M84",
+      "node": {
+        "title": "M84",
+        "children_count": 0,
+        "id": "Q92258118",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:00Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:00Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14035",
+      "path": "nodes/Q14035.json",
+      "title": "M85",
+      "node": {
+        "title": "M85",
+        "children_count": 0,
+        "id": "Q14035",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:02Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:02Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q92258250",
+      "path": "nodes/Q92258250.json",
+      "title": "M86",
+      "node": {
+        "title": "M86",
+        "children_count": 0,
+        "id": "Q92258250",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:03Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:03Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q3841190",
+      "path": "nodes/Q3841190.json",
+      "title": "M87*",
+      "node": {
+        "title": "M87*",
+        "children_count": 0,
+        "id": "Q3841190",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:19Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:19Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14048",
+      "path": "nodes/Q14048.json",
+      "title": "M88",
+      "node": {
+        "title": "M88",
+        "children_count": 0,
+        "id": "Q14048",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:04Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:04Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14337",
+      "path": "nodes/Q14337.json",
+      "title": "M89",
+      "node": {
+        "title": "M89",
+        "children_count": 0,
+        "id": "Q14337",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:05Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:05Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14343",
+      "path": "nodes/Q14343.json",
+      "title": "M90",
+      "node": {
+        "title": "M90",
+        "children_count": 0,
+        "id": "Q14343",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:07Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:07Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14344",
+      "path": "nodes/Q14344.json",
+      "title": "M91",
+      "node": {
+        "title": "M91",
+        "children_count": 0,
+        "id": "Q14344",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:08Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:08Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14351",
+      "path": "nodes/Q14351.json",
+      "title": "M95",
+      "node": {
+        "title": "M95",
+        "children_count": 0,
+        "id": "Q14351",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:51Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:51Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14361",
+      "path": "nodes/Q14361.json",
+      "title": "M98",
+      "node": {
+        "title": "M98",
+        "children_count": 0,
+        "id": "Q14361",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:09Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:09Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1927127",
+      "path": "nodes/Q1927127.json",
+      "title": "NGC 1023星系群",
+      "node": {
+        "title": "NGC 1023星系群",
+        "children_count": 0,
+        "id": "Q1927127",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:53Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:53Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1997323",
+      "path": "nodes/Q1997323.json",
+      "title": "NGC 1347",
+      "node": {
+        "title": "NGC 1347",
+        "children_count": 0,
+        "id": "Q1997323",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:28Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:28Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125187",
+      "path": "nodes/Q1125187.json",
+      "title": "NGC 6039",
+      "node": {
+        "title": "NGC 6039",
+        "children_count": 0,
+        "id": "Q1125187",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:28Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:28Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125225",
+      "path": "nodes/Q1125225.json",
+      "title": "NGC 6043",
+      "node": {
+        "title": "NGC 6043",
+        "children_count": 0,
+        "id": "Q1125225",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:29Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:29Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125240",
+      "path": "nodes/Q1125240.json",
+      "title": "NGC 6044",
+      "node": {
+        "title": "NGC 6044",
+        "children_count": 0,
+        "id": "Q1125240",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:30Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:30Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13088699",
+      "path": "nodes/Q13088699.json",
+      "title": "NGC 6045",
+      "node": {
+        "title": "NGC 6045",
+        "children_count": 0,
+        "id": "Q13088699",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:31Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125256",
+      "path": "nodes/Q1125256.json",
+      "title": "NGC 6047",
+      "node": {
+        "title": "NGC 6047",
+        "children_count": 0,
+        "id": "Q1125256",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:32Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:32Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125299",
+      "path": "nodes/Q1125299.json",
+      "title": "NGC 6053",
+      "node": {
+        "title": "NGC 6053",
+        "children_count": 0,
+        "id": "Q1125299",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:33Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:33Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125311",
+      "path": "nodes/Q1125311.json",
+      "title": "NGC 6054",
+      "node": {
+        "title": "NGC 6054",
+        "children_count": 0,
+        "id": "Q1125311",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:34Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:34Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q664460",
+      "path": "nodes/Q664460.json",
+      "title": "NGC 6055",
+      "node": {
+        "title": "NGC 6055",
+        "children_count": 0,
+        "id": "Q664460",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:36Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:36Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1125319",
+      "path": "nodes/Q1125319.json",
+      "title": "NGC 6056",
+      "node": {
+        "title": "NGC 6056",
+        "children_count": 0,
+        "id": "Q1125319",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:37Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:37Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q815835",
+      "path": "nodes/Q815835.json",
+      "title": "R136a1",
+      "node": {
+        "title": "R136a1",
+        "children_count": 0,
+        "id": "Q815835",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:15Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:15Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q17144092",
+      "path": "nodes/Q17144092.json",
+      "title": "R136a2",
+      "node": {
+        "title": "R136a2",
+        "children_count": 0,
+        "id": "Q17144092",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:16Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:16Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q19831590",
+      "path": "nodes/Q19831590.json",
+      "title": "R136a3",
+      "node": {
+        "title": "R136a3",
+        "children_count": 0,
+        "id": "Q19831590",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:17Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:17Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1082845",
+      "path": "nodes/Q1082845.json",
+      "title": "R136b",
+      "node": {
+        "title": "R136b",
+        "children_count": 0,
+        "id": "Q1082845",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:18Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:18Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q19831587",
+      "path": "nodes/Q19831587.json",
+      "title": "R136c",
+      "node": {
+        "title": "R136c",
+        "children_count": 0,
+        "id": "Q19831587",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:19Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:19Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q9326449",
+      "path": "nodes/Q9326449.json",
+      "title": "SN 1961i",
+      "node": {
+        "title": "SN 1961i",
+        "children_count": 0,
+        "id": "Q9326449",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:08Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:08Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q118512328",
+      "path": "nodes/Q118512328.json",
+      "title": "SN 2023ixf",
+      "node": {
+        "title": "SN 2023ixf",
+        "children_count": 0,
+        "id": "Q118512328",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:31Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1813110",
+      "path": "nodes/Q1813110.json",
+      "title": "Segue 1",
+      "node": {
+        "title": "Segue 1",
+        "children_count": 0,
+        "id": "Q1813110",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:27Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:27Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2266221",
+      "path": "nodes/Q2266221.json",
+      "title": "Segue 2",
+      "node": {
+        "title": "Segue 2",
+        "children_count": 0,
+        "id": "Q2266221",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:28Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:28Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q17039109",
+      "path": "nodes/Q17039109.json",
+      "title": "U1.11",
+      "node": {
+        "title": "U1.11",
+        "children_count": 0,
+        "id": "Q17039109",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:07:02Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:07:02Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2479744",
+      "path": "nodes/Q2479744.json",
+      "title": "VFTS 102",
+      "node": {
+        "title": "VFTS 102",
+        "children_count": 0,
+        "id": "Q2479744",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:20Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:20Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1210087",
+      "path": "nodes/Q1210087.json",
+      "title": "VIRGOHI21",
+      "node": {
+        "title": "VIRGOHI21",
+        "children_count": 0,
+        "id": "Q1210087",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:10Z",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:10Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1149676",
+      "path": "nodes/Q1149676.json",
+      "title": "人馬座矮不規則星系",
+      "node": {
+        "title": "人馬座矮不規則星系",
+        "children_count": 0,
+        "id": "Q1149676",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:30Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:30Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q32885",
+      "path": "nodes/Q32885.json",
+      "title": "人馬座矮橢球星系",
+      "node": {
+        "title": "人馬座矮橢球星系",
+        "children_count": 0,
+        "id": "Q32885",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:31Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2727447",
+      "path": "nodes/Q2727447.json",
+      "title": "仙女座I",
+      "node": {
+        "title": "仙女座I",
+        "children_count": 0,
+        "id": "Q2727447",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:13Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:13Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q287905",
+      "path": "nodes/Q287905.json",
+      "title": "仙女座II",
+      "node": {
+        "title": "仙女座II",
+        "children_count": 0,
+        "id": "Q287905",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:15Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:15Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2704275",
+      "path": "nodes/Q2704275.json",
+      "title": "仙女座III",
+      "node": {
+        "title": "仙女座III",
+        "children_count": 0,
+        "id": "Q2704275",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:16Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:16Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2025704",
+      "path": "nodes/Q2025704.json",
+      "title": "仙女座IV",
+      "node": {
+        "title": "仙女座IV",
+        "children_count": 0,
+        "id": "Q2025704",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:17Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:17Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q779522",
+      "path": "nodes/Q779522.json",
+      "title": "仙女座IX",
+      "node": {
+        "title": "仙女座IX",
+        "children_count": 0,
+        "id": "Q779522",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:18Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:18Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2704510",
+      "path": "nodes/Q2704510.json",
+      "title": "仙女座V",
+      "node": {
+        "title": "仙女座V",
+        "children_count": 0,
+        "id": "Q2704510",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:20Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:20Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1656479",
+      "path": "nodes/Q1656479.json",
+      "title": "仙女座VI",
+      "node": {
+        "title": "仙女座VI",
+        "children_count": 0,
+        "id": "Q1656479",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:21Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:21Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2259795",
+      "path": "nodes/Q2259795.json",
+      "title": "仙女座VIII",
+      "node": {
+        "title": "仙女座VIII",
+        "children_count": 0,
+        "id": "Q2259795",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:22Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:22Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q4759486",
+      "path": "nodes/Q4759486.json",
+      "title": "仙女座X",
+      "node": {
+        "title": "仙女座X",
+        "children_count": 0,
+        "id": "Q4759486",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:23Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:23Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2469",
+      "path": "nodes/Q2469.json",
+      "title": "仙女座星系",
+      "node": {
+        "title": "仙女座星系",
+        "children_count": 0,
+        "id": "Q2469",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:25Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:25Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1282228",
+      "path": "nodes/Q1282228.json",
+      "title": "六分儀座A",
+      "node": {
+        "title": "六分儀座A",
+        "children_count": 0,
+        "id": "Q1282228",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:26Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:26Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2746406",
+      "path": "nodes/Q2746406.json",
+      "title": "六分儀座B",
+      "node": {
+        "title": "六分儀座B",
+        "children_count": 0,
+        "id": "Q2746406",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:27Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:27Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q32886",
+      "path": "nodes/Q32886.json",
+      "title": "六分儀座矮星系",
+      "node": {
+        "title": "六分儀座矮星系",
+        "children_count": 0,
+        "id": "Q32886",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:29Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:29Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q782095",
+      "path": "nodes/Q782095.json",
+      "title": "凤凰座矮星系",
+      "node": {
+        "title": "凤凰座矮星系",
+        "children_count": 0,
+        "id": "Q782095",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:30Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:30Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q223376",
+      "path": "nodes/Q223376.json",
+      "title": "匈牙利族小行星",
+      "node": {
+        "title": "匈牙利族小行星",
+        "children_count": 0,
+        "id": "Q223376",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-13T02:28:17Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-13T02:28:17Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q487255",
+      "path": "nodes/Q487255.json",
+      "title": "半人馬座A",
+      "node": {
+        "title": "半人馬座A",
+        "children_count": 0,
+        "id": "Q487255",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:56Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:56Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q61075",
+      "path": "nodes/Q61075.json",
+      "title": "半人馬座星系團",
+      "node": {
+        "title": "半人馬座星系團",
+        "children_count": 0,
+        "id": "Q61075",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:44Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:44Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14030",
+      "path": "nodes/Q14030.json",
+      "title": "南風車星系",
+      "node": {
+        "title": "南風車星系",
+        "children_count": 0,
+        "id": "Q14030",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:57Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:57Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q497745",
+      "path": "nodes/Q497745.json",
+      "title": "史隆長城",
+      "node": {
+        "title": "史隆長城",
+        "children_count": 0,
+        "id": "Q497745",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:04:54Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:04:54Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2476549",
+      "path": "nodes/Q2476549.json",
+      "title": "后髮座矮星系",
+      "node": {
+        "title": "后髮座矮星系",
+        "children_count": 0,
+        "id": "Q2476549",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:31Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q61187",
+      "path": "nodes/Q61187.json",
+      "title": "唧筒座星系團",
+      "node": {
+        "title": "唧筒座星系團",
+        "children_count": 0,
+        "id": "Q61187",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:04:32Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:04:32Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q33110",
+      "path": "nodes/Q33110.json",
+      "title": "大熊座II矮星系",
+      "node": {
+        "title": "大熊座II矮星系",
+        "children_count": 0,
+        "id": "Q33110",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:32Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:32Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q32888",
+      "path": "nodes/Q32888.json",
+      "title": "大熊座矮星系",
+      "node": {
+        "title": "大熊座矮星系",
+        "children_count": 0,
+        "id": "Q32888",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:34Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:34Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q35745",
+      "path": "nodes/Q35745.json",
+      "title": "大犬座矮星系",
+      "node": {
+        "title": "大犬座矮星系",
+        "children_count": 0,
+        "id": "Q35745",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:18:35Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:18:35Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q61226",
+      "path": "nodes/Q61226.json",
+      "title": "天爐座星系團",
+      "node": {
+        "title": "天爐座星系團",
+        "children_count": 0,
+        "id": "Q61226",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:57:00Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:57:00Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q35818",
+      "path": "nodes/Q35818.json",
+      "title": "天爐座矮星系",
+      "node": {
+        "title": "天爐座矮星系",
+        "children_count": 0,
+        "id": "Q35818",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:23Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:23Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q11566",
+      "path": "nodes/Q11566.json",
+      "title": "天龙座矮星系",
+      "node": {
+        "title": "天龙座矮星系",
+        "children_count": 0,
+        "id": "Q11566",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:24Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:24Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q32882",
+      "path": "nodes/Q32882.json",
+      "title": "威爾曼1",
+      "node": {
+        "title": "威爾曼1",
+        "children_count": 0,
+        "id": "Q32882",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:25Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:25Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2602890",
+      "path": "nodes/Q2602890.json",
+      "title": "孔雀-印地安超星系團",
+      "node": {
+        "title": "孔雀-印地安超星系團",
+        "children_count": 0,
+        "id": "Q2602890",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:23Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:23Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1194660",
+      "path": "nodes/Q1194660.json",
+      "title": "寶瓶座矮星系",
+      "node": {
+        "title": "寶瓶座矮星系",
+        "children_count": 0,
+        "id": "Q1194660",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:26Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:26Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q3094136",
+      "path": "nodes/Q3094136.json",
+      "title": "巨型超大类星体群",
+      "node": {
+        "title": "巨型超大类星体群",
+        "children_count": 0,
+        "id": "Q3094136",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:06:43Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:06:43Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q656857",
+      "path": "nodes/Q656857.json",
+      "title": "巨引源",
+      "node": {
+        "title": "巨引源",
+        "children_count": 0,
+        "id": "Q656857",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:42Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:42Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q3041916",
+      "path": "nodes/Q3041916.json",
+      "title": "德文格洛1",
+      "node": {
+        "title": "德文格洛1",
+        "children_count": 0,
+        "id": "Q3041916",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:36Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:36Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q3041912",
+      "path": "nodes/Q3041912.json",
+      "title": "德文格洛2",
+      "node": {
+        "title": "德文格洛2",
+        "children_count": 0,
+        "id": "Q3041912",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:31Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:31Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q15739240",
+      "path": "nodes/Q15739240.json",
+      "title": "柯羅威斯－坎普薩諾超大類星體群",
+      "node": {
+        "title": "柯羅威斯－坎普薩諾超大類星體群",
+        "children_count": 0,
+        "id": "Q15739240",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:07:03Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:07:03Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14354",
+      "path": "nodes/Q14354.json",
+      "title": "梅西爾96",
+      "node": {
+        "title": "梅西爾96",
+        "children_count": 0,
+        "id": "Q14354",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:56:52Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:56:52Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q15241043",
+      "path": "nodes/Q15241043.json",
+      "title": "武仙－北冕座長城",
+      "node": {
+        "title": "武仙－北冕座長城",
+        "children_count": 0,
+        "id": "Q15241043",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:06:44Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:06:44Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q81102410",
+      "path": "nodes/Q81102410.json",
+      "title": "波德星系",
+      "node": {
+        "title": "波德星系",
+        "children_count": 0,
+        "id": "Q81102410",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:37Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:37Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2636046",
+      "path": "nodes/Q2636046.json",
+      "title": "獅子座星系團",
+      "node": {
+        "title": "獅子座星系團",
+        "children_count": 0,
+        "id": "Q2636046",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:24Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:24Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q487221",
+      "path": "nodes/Q487221.json",
+      "title": "玉夫座星系",
+      "node": {
+        "title": "玉夫座星系",
+        "children_count": 0,
+        "id": "Q487221",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:34Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:34Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q26703430",
+      "path": "nodes/Q26703430.json",
+      "title": "蜻蜓44星系",
+      "node": {
+        "title": "蜻蜓44星系",
+        "children_count": 0,
+        "id": "Q26703430",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:23Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:23Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q61095",
+      "path": "nodes/Q61095.json",
+      "title": "長蛇座星系團",
+      "node": {
+        "title": "長蛇座星系團",
+        "children_count": 0,
+        "id": "Q61095",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:04:52Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:04:52Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q698560",
+      "path": "nodes/Q698560.json",
+      "title": "阿普 272",
+      "node": {
+        "title": "阿普 272",
+        "children_count": 0,
+        "id": "Q698560",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-08T02:14:38Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-08T02:14:38Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q14702236",
+      "path": "nodes/Q14702236.json",
+      "title": "雙眼星系",
+      "node": {
+        "title": "雙眼星系",
+        "children_count": 0,
+        "id": "Q14702236",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:07:22Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:07:22Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q520496",
+      "path": "nodes/Q520496.json",
+      "title": "霍奇301",
+      "node": {
+        "title": "霍奇301",
+        "children_count": 0,
+        "id": "Q520496",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:21Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:21Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q1194932",
+      "path": "nodes/Q1194932.json",
+      "title": "马菲1",
+      "node": {
+        "title": "马菲1",
+        "children_count": 0,
+        "id": "Q1194932",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:32Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:32Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q2548238",
+      "path": "nodes/Q2548238.json",
+      "title": "马菲2",
+      "node": {
+        "title": "马菲2",
+        "children_count": 0,
+        "id": "Q2548238",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:34Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:34Z"
+      },
+      "reason": "wikidata_no_children"
+    },
+    {
+      "key": "id:Q13983",
+      "path": "nodes/Q13983.json",
+      "title": "黑眼星系",
+      "node": {
+        "title": "黑眼星系",
+        "children_count": 0,
+        "id": "Q13983",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T00:54:42Z",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T00:54:42Z"
+      },
+      "reason": "wikidata_no_children"
+    }
+  ]
+}

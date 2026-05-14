@@ -1,0 +1,15 @@
+{
+  "id": "Q185674",
+  "title": "场",
+  "children_status": "pending",
+  "children": [],
+  "quality_score": 61,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "short_title",
+    "missing_relation"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

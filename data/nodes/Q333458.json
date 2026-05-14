@@ -4,5 +4,16 @@
   "children_status": "loaded",
   "children": [],
   "updated_at": "2026-05-06T04:03:44Z",
-  "is_leaf": true
+  "is_leaf": true,
+  "quality_score": 77,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "missing_relation",
+    "loaded",
+    "leaf"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
 }

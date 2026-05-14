@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q12969754.json",
+  "node": {
+    "title": "电磁辐射",
+    "children_count": 0,
+    "id": "Q12969754",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

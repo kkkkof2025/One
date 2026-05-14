@@ -1,0 +1,14 @@
+{
+  "focused_node_ids": {
+    "Q1": {
+      "reason": "根路径种子节点：宇宙，是当前知识树的主干之一。",
+      "priority_bonus": 24
+    },
+    "Q3": {
+      "reason": "根路径种子节点：生命，是当前知识树的主干之一。",
+      "priority_bonus": 24
+    }
+  },
+  "focused_titles": {},
+  "notes": "人工关注节点会提升质量评分和默认扩展优先级；仍可在单个节点上使用 expansion_priority 做更强的人工覆盖。"
+}
