@@ -22,9 +22,10 @@
     {
       "title": "小行星211",
       "data_source": "nodes/Q147632.json",
-      "children_status": "error",
-      "is_leaf": false,
-      "id": "Q147632"
+      "children_status": "loaded",
+      "is_leaf": true,
+      "id": "Q147632",
+      "fetch_strategy_version": 2
     },
     {
       "title": "小行星29361",
