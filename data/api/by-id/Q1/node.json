@@ -21,32 +21,41 @@
       {
         "title": "外太空",
         "data_source": "nodes/Q4169.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q4169",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:38Z",
+        "last_checked_at": "2026-05-20T06:19:38Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "大尺度纖維狀結構",
         "data_source": "nodes/Q1133705.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q1133705",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:30Z",
+        "last_checked_at": "2026-05-20T06:19:30Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "时空",
         "data_source": "nodes/Q133327.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q133327",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:32Z",
+        "last_checked_at": "2026-05-20T06:19:32Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "场",
@@ -61,122 +70,158 @@
       {
         "title": "天体",
         "data_source": "nodes/Q6999.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q6999",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:41Z",
+        "last_checked_at": "2026-05-20T06:19:41Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "星系際塵埃",
         "data_source": "nodes/Q2504088.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q2504088",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:35Z",
+        "last_checked_at": "2026-05-20T06:19:35Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "暗物质",
         "data_source": "nodes/Q79925.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q79925",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:43Z",
+        "last_checked_at": "2026-05-20T06:19:43Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "暗能量",
         "data_source": "nodes/Q18343.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q18343",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:34Z",
+        "last_checked_at": "2026-05-20T06:19:34Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "物理物质",
         "data_source": "nodes/Q28732711.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q28732711",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:37Z",
+        "last_checked_at": "2026-05-20T06:19:37Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "重子物质",
         "data_source": "nodes/Q6005984.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q6005984",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:40Z",
+        "last_checked_at": "2026-05-20T06:19:40Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "地球在宇宙中的位置",
         "data_source": "nodes/Q437877.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q437877",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:39Z",
+        "last_checked_at": "2026-05-20T06:19:39Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "物质系统",
         "data_source": "nodes/Q1454986.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q1454986",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:33Z",
+        "last_checked_at": "2026-05-20T06:19:33Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "空洞",
         "data_source": "nodes/Q845371.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q845371",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:44Z",
+        "last_checked_at": "2026-05-20T06:19:44Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "能量",
         "data_source": "nodes/Q11379.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q11379",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:31Z",
+        "last_checked_at": "2026-05-20T06:19:31Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "自然",
         "data_source": "nodes/Q7860.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q7860",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:42Z",
+        "last_checked_at": "2026-05-20T06:19:42Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "邪惡軸心（宇宙學）",
         "data_source": "nodes/Q25304698.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q25304698",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-20T06:19:36Z",
+        "last_checked_at": "2026-05-20T06:19:36Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       }
     ],
     "updated_at": "2026-05-07T00:54:16Z",

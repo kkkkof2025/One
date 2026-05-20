@@ -1,7 +1,7 @@
 {
   "id": "Q3",
   "title": "生命",
-  "children_status": "loaded",
+  "children_status": "error",
   "children": [
     {
       "title": "地球人",
@@ -17,13 +17,15 @@
     {
       "title": "外星生命",
       "data_source": "nodes/Q181508.json",
-      "children_status": "loaded",
+      "children_status": "error",
       "is_leaf": false,
       "id": "Q181508",
-      "quality_score": 89,
+      "quality_score": 73,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-06T03:29:40Z"
+      "updated_at": "2026-05-20T06:19:28Z",
+      "last_checked_at": "2026-05-20T06:19:28Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "擬蕨",
@@ -61,13 +63,15 @@
     {
       "title": "野生生物",
       "data_source": "nodes/Q241741.json",
-      "children_status": "loaded",
+      "children_status": "error",
       "is_leaf": false,
       "id": "Q241741",
-      "quality_score": 89,
+      "quality_score": 73,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-06T03:29:53Z"
+      "updated_at": "2026-05-20T06:19:29Z",
+      "last_checked_at": "2026-05-20T06:19:29Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "隐花植物",
@@ -81,18 +85,20 @@
       "updated_at": "2026-05-06T04:03:44Z"
     }
   ],
-  "updated_at": "2026-05-06T03:29:51Z",
+  "updated_at": "2026-05-20T06:19:27Z",
   "is_leaf": false,
-  "quality_score": 99,
+  "quality_score": 83,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
     "missing_relation",
-    "loaded",
+    "fetch_error",
     "curated_focus",
     "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+  "last_checked_at": "2026-05-20T06:19:27Z"
 }

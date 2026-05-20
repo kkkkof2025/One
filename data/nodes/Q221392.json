@@ -118,22 +118,28 @@
     {
       "title": "物質",
       "data_source": "nodes/Q35758.json",
-      "children_status": "pending",
+      "children_status": "error",
       "is_leaf": false,
       "id": "Q35758",
-      "quality_score": 75,
+      "quality_score": 63,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-20T06:19:46Z",
+      "last_checked_at": "2026-05-20T06:19:46Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "沙普利超星系团",
       "data_source": "nodes/Q1513087.json",
-      "children_status": "pending",
+      "children_status": "error",
       "is_leaf": false,
       "id": "Q1513087",
-      "quality_score": 75,
+      "quality_score": 63,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-20T06:19:45Z",
+      "last_checked_at": "2026-05-20T06:19:45Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
       "title": "玉夫座长城",

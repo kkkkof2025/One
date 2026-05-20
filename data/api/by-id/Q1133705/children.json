@@ -5,10 +5,13 @@
     "title": "大尺度纖維狀結構",
     "children_count": 0,
     "id": "Q1133705",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "error",
+    "quality_score": 63,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-05-20T06:19:30Z",
+    "last_checked_at": "2026-05-20T06:19:30Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
   },
   "children": [],
   "child_count": 0

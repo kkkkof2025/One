@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-20T03:19:46Z",
+  "generated_at": "2026-05-20T06:19:47Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 57,
+  "total_candidates": 77,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 57,
+  "total_items": 77,
   "reason_distribution": {
-    "total_items": 57,
+    "total_items": 77,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,28 +24,28 @@
       {
         "key": "error",
         "label": "加载错误",
-        "count": 9,
+        "count": 29,
         "sample_review_keys": [
-          "id:Q3598680",
-          "id:Q15182290",
-          "id:Q213466",
-          "id:Q505781",
-          "id:Q427"
+          "id:Q79925",
+          "id:Q18343",
+          "id:Q1513087",
+          "id:Q35758",
+          "id:Q3598680"
         ]
       }
     ],
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 57
+        "count": 77
       },
       {
         "reason": "missing_relation",
-        "count": 57
+        "count": 77
       },
       {
         "reason": "qid",
-        "count": 57
+        "count": 77
       },
       {
         "reason": "loaded",
@@ -61,19 +61,23 @@
       },
       {
         "reason": "zh_label",
-        "count": 9
+        "count": 29
       },
       {
         "reason": "fetch_error",
-        "count": 7
-      },
-      {
-        "reason": "allowed_duplicate_id:2",
-        "count": 2
+        "count": 27
       },
       {
         "reason": "has_children",
-        "count": 2
+        "count": 5
+      },
+      {
+        "reason": "allowed_duplicate_id:2",
+        "count": 4
+      },
+      {
+        "reason": "curated_focus",
+        "count": 1
       }
     ],
     "children_statuses": [
@@ -85,11 +89,105 @@
       {
         "status": "error",
         "label": "加载错误",
-        "count": 7
+        "count": 27
       }
     ]
   },
   "items": [
+    {
+      "title": "暗物质",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error",
+        "allowed_duplicate_id:2"
+      ],
+      "id": "Q79925",
+      "updated_at": "2026-05-20T06:19:43Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 暗物质",
+      "location": "nodes/Q79925.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q79925",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "暗能量",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error",
+        "allowed_duplicate_id:2"
+      ],
+      "id": "Q18343",
+      "updated_at": "2026-05-20T06:19:34Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 暗能量",
+      "location": "nodes/Q18343.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q18343",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "沙普利超星系团",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q1513087",
+      "updated_at": "2026-05-20T06:19:45Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 沙普利超星系团",
+      "location": "nodes/Q1513087.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q1513087",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "物質",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q35758",
+      "updated_at": "2026-05-20T06:19:46Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 物質",
+      "location": "nodes/Q35758.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q35758",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
     {
       "title": "小行星29361",
       "children_status": "error",
@@ -248,6 +346,305 @@
       "priority": 67.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q180380",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "地球在宇宙中的位置",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q437877",
+      "updated_at": "2026-05-20T06:19:39Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 地球在宇宙中的位置",
+      "location": "nodes/Q437877.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q437877",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "外太空",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q4169",
+      "updated_at": "2026-05-20T06:19:38Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 外太空",
+      "location": "nodes/Q4169.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q4169",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "大尺度纖維狀結構",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q1133705",
+      "updated_at": "2026-05-20T06:19:30Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 大尺度纖維狀結構",
+      "location": "nodes/Q1133705.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q1133705",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "天体",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q6999",
+      "updated_at": "2026-05-20T06:19:41Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 天体",
+      "location": "nodes/Q6999.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q6999",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "时空",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q133327",
+      "updated_at": "2026-05-20T06:19:32Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 时空",
+      "location": "nodes/Q133327.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q133327",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "星系際塵埃",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q2504088",
+      "updated_at": "2026-05-20T06:19:35Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 星系際塵埃",
+      "location": "nodes/Q2504088.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q2504088",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "物理物质",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q28732711",
+      "updated_at": "2026-05-20T06:19:37Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 物理物质",
+      "location": "nodes/Q28732711.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q28732711",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "物质系统",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q1454986",
+      "updated_at": "2026-05-20T06:19:33Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 物质系统",
+      "location": "nodes/Q1454986.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q1454986",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "空洞",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q845371",
+      "updated_at": "2026-05-20T06:19:44Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 空洞",
+      "location": "nodes/Q845371.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q845371",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "能量",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q11379",
+      "updated_at": "2026-05-20T06:19:31Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 能量",
+      "location": "nodes/Q11379.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q11379",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "自然",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q7860",
+      "updated_at": "2026-05-20T06:19:42Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 自然",
+      "location": "nodes/Q7860.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q7860",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "邪惡軸心（宇宙學）",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q25304698",
+      "updated_at": "2026-05-20T06:19:36Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 邪惡軸心（宇宙學）",
+      "location": "nodes/Q25304698.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q25304698",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "重子物质",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q6005984",
+      "updated_at": "2026-05-20T06:19:40Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 重子物质",
+      "location": "nodes/Q6005984.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q6005984",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -1357,6 +1754,54 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "外星生命",
+      "children_status": "error",
+      "quality_score": 73,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error",
+        "has_children"
+      ],
+      "id": "Q181508",
+      "updated_at": "2026-05-20T06:19:28Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 外星生命",
+      "location": "nodes/Q181508.json",
+      "priority": 57.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q181508",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "野生生物",
+      "children_status": "error",
+      "quality_score": 73,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error",
+        "has_children"
+      ],
+      "id": "Q241741",
+      "updated_at": "2026-05-20T06:19:29Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 野生生物",
+      "location": "nodes/Q241741.json",
+      "priority": 57.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q241741",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
       "title": "M61",
       "children_status": "loaded",
       "quality_score": 57,
@@ -1451,6 +1896,31 @@
       "review_key": "id:Q5116",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "生命",
+      "children_status": "error",
+      "quality_score": 83,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error",
+        "curated_focus",
+        "has_children"
+      ],
+      "id": "Q3",
+      "updated_at": "2026-05-20T06:19:27Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命",
+      "location": "nodes/Q3.json",
+      "priority": 47.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q3",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
     }
   ]
 }

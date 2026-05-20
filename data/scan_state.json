@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-05-20T03:19:27Z",
+  "updated_at": "2026-05-20T06:19:47Z",
   "fetch_strategy_version": 2,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "",
-  "last_scan_title": "",
+  "last_scan_key": "id:Q35758",
+  "last_scan_title": "物質",
   "candidate_count": 53,
-  "selected_count": 0,
-  "request_count": 0,
-  "max_requests": 0,
+  "selected_count": 20,
+  "request_count": 20,
+  "max_requests": 20,
   "exhausted": false
 }

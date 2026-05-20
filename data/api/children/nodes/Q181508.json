@@ -5,12 +5,14 @@
     "title": "外星生命",
     "children_count": 6,
     "id": "Q181508",
-    "children_status": "loaded",
+    "children_status": "error",
     "is_leaf": false,
-    "quality_score": 89,
+    "quality_score": 73,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-06T03:29:40Z"
+    "updated_at": "2026-05-20T06:19:28Z",
+    "last_checked_at": "2026-05-20T06:19:28Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
   },
   "children": [
     {

@@ -1,16 +1,20 @@
 {
   "id": "Q18343",
   "title": "暗能量",
-  "children_status": "pending",
+  "children_status": "error",
   "children": [],
-  "quality_score": 75,
+  "quality_score": 63,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
     "missing_relation",
+    "fetch_error",
     "allowed_duplicate_id:2"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+  "updated_at": "2026-05-20T06:19:34Z",
+  "last_checked_at": "2026-05-20T06:19:34Z"
 }
