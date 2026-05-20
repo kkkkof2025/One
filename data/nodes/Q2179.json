@@ -52,8 +52,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-19T02:34:46Z",
-      "last_checked_at": "2026-05-19T02:34:46Z",
+      "updated_at": "2026-05-20T02:34:51Z",
+      "last_checked_at": "2026-05-20T02:34:51Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
@@ -65,8 +65,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-19T02:34:47Z",
-      "last_checked_at": "2026-05-19T02:34:47Z",
+      "updated_at": "2026-05-20T02:34:52Z",
+      "last_checked_at": "2026-05-20T02:34:52Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
@@ -78,8 +78,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-19T02:34:48Z",
-      "last_checked_at": "2026-05-19T02:34:48Z",
+      "updated_at": "2026-05-20T02:34:53Z",
+      "last_checked_at": "2026-05-20T02:34:53Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   ],

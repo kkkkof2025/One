@@ -7,8 +7,8 @@
     "children_status": "error",
     "children": [],
     "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-    "updated_at": "2026-05-19T02:34:49Z",
-    "last_checked_at": "2026-05-19T02:34:49Z",
+    "updated_at": "2026-05-20T02:34:54Z",
+    "last_checked_at": "2026-05-20T02:34:54Z",
     "quality_score": 63,
     "quality_reasons": [
       "qid",
