@@ -9,9 +9,17 @@ on:
   workflow_dispatch:
     inputs:
       max_requests:
-        description: "Maximum Wikidata requests for this run"
+        description: "Maximum external source requests for this run"
         required: false
-        default: "20"
+        default: "5"
+      request_delay:
+        description: "Minimum delay between non-Wikidata source requests in seconds"
+        required: false
+        default: "5"
+      wikidata_request_delay:
+        description: "Minimum delay between Wikidata requests in seconds"
+        required: false
+        default: "65"
 
 permissions:
   contents: write
@@ -62,7 +70,9 @@ jobs:
       - name: Grow JSON knowledge tree
         if: github.event_name != 'push'
         env:
-          ONE_MAX_REQUESTS: ${{ inputs.max_requests || '20' }}
+          ONE_MAX_REQUESTS: ${{ inputs.max_requests || '5' }}
+          ONE_REQUEST_DELAY: ${{ inputs.request_delay || '5' }}
+          ONE_WIKIDATA_REQUEST_DELAY: ${{ inputs.wikidata_request_delay || '65' }}
         run: python scripts/grow_json.py
 
       - name: Generate review queue

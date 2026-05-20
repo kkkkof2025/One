@@ -1,12 +1,25 @@
 {
-  "updated_at": "2026-05-22T02:38:00Z",
+  "updated_at": "2026-05-22T07:06:10Z",
   "fetch_strategy_version": 2,
   "scan_order": "priority-depth-first-cursor-v1",
   "last_scan_key": "id:Q1349305",
   "last_scan_title": "地球人",
   "candidate_count": 52,
-  "selected_count": 20,
-  "request_count": 20,
-  "max_requests": 20,
-  "exhausted": false
+  "selected_count": 0,
+  "request_count": 0,
+  "max_requests": 0,
+  "exhausted": false,
+  "source_order": [
+    "wikidata",
+    "wikipedia",
+    "conceptnet"
+  ],
+  "available_sources": [
+    "wikidata",
+    "wikipedia",
+    "conceptnet"
+  ],
+  "source_request_counts": {},
+  "source_cooldowns": {},
+  "last_stop_reason": ""
 }

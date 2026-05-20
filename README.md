@@ -18,18 +18,18 @@
 2. 安装 Python 依赖。
 3. 运行离线单元测试。
 4. 校验现有 JSON 数据。
-5. 定时或手动触发时运行 `python scripts/grow_json.py`。
+5. 定时或手动触发时运行 `python scripts/grow_json.py`，按 Wikidata、维基百科分类和 ConceptNet 的顺序尝试增长。
 6. 定时或手动触发时运行 `python scripts/generate_review_queue.py` 生成复核队列。
 7. 定时或手动触发时再次校验生成后的 JSON 数据。
 8. 定时或手动触发时如果 `data/` 有变化，自动提交到当前分支。
 9. 打包 `index.html` 和 `data/`。
 10. 部署到 GitHub Pages。
 
-推送触发只部署当前仓库里的 `index.html` 和 `data/`，不会请求 Wikidata，也不会提交派生数据，避免部署流程形成循环提交。也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求 Wikidata 的次数。
+推送触发只部署当前仓库里的 `index.html` 和 `data/`，不会请求外部来源，也不会提交派生数据，避免部署流程形成循环提交。也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求外部来源的次数。
 
-增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点。旧策略误判为空叶子的节点会因为 `fetch_strategy_version` 低于当前版本而被重新抓取。
+增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点；如果 Wikidata 被 429 限流，会记录来源冷却并继续尝试维基百科分类和 ConceptNet。旧策略误判为空叶子的节点会因为 `fetch_strategy_version` 低于当前版本而被重新抓取。
 
-增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上标记 `is_leaf`、`end_reason` 和 `ended_at`；只要抓取策略版本不变，这类节点不会再次请求 Wikidata。
+增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上标记 `is_leaf`、`end_reason` 和 `ended_at`；只要抓取策略版本不变，这类节点不会再次请求当前增长来源。
 
 ## 目录结构
 
@@ -48,7 +48,7 @@
 │   ├── api/                               # GitHub Pages 静态 API 形式的数据镜像
 │   │   └── by-id/                         # 按节点 id 暴露的稳定接口别名
 │   └── nodes/                             # 懒加载子节点分片
-├── scripts/grow_json.py                   # Wikidata 增量扩展脚本
+├── scripts/grow_json.py                   # 多来源增量扩展脚本
 ├── scripts/validate_data.py               # JSON 数据校验脚本
 ├── scripts/curate_node.py                 # 人工关注节点维护脚本
 ├── scripts/generate_review_queue.py       # 生成待复核节点队列
@@ -70,7 +70,7 @@
 
 `data/stats.json` 保存当前总节点数、最近一次新增节点数、终止节点数、请求数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，记录新增节点、总节点、请求数、候选数和终止节点数，不记录节点详情。
 
-`data/scan_state.json` 保存自动增长的扫描游标、候选数量、请求数量和是否已经扫完当前候选队列。它让下一次运行从 `last_scan_key` 后面继续，而不是每次从同一批节点重新开始。
+`data/scan_state.json` 保存自动增长的扫描游标、候选数量、请求数量、来源顺序和来源冷却状态。它让下一次运行从 `last_scan_key` 后面继续，而不是每次从同一批节点重新开始；如果某个来源被限流，脚本会先记录冷却时间，下次优先跳过它。
 
 `data/end_nodes.json` 保存已经通过当前抓取策略确认没有可扩展子节点的节点清单。页面和后续脚本可以直接读取它，避免把终止节点混入下一轮扫描。
 
@@ -115,9 +115,12 @@ python scripts/curate_node.py list
 - `last_checked_at`: 最近一次请求外部知识库检查该节点的时间。
 - `last_error`: 最近一次扩展失败原因。
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
-- `end_reason`: 终止原因。当前自动终止值为 `wikidata_no_children`。
+- `end_reason`: 终止原因。常见自动终止值包括 `wikidata_no_children`、`wikipedia_no_children`、`conceptnet_no_children` 和 `sources_no_children`。
+- `source_provider`: 节点来自哪个外部来源，例如 `wikidata`、`wikipedia`、`conceptnet`。
 - `ended_at`: 节点被确认为终止节点的时间。
-- `source_relation`: 节点来自 Wikidata 的哪类关系，例如 `subclass`、`instance`、`part_of`、`has_part`。
+- `source_relation`: 节点来自外部来源的哪类关系，例如 `subclass`、`instance`、`part_of`、`has_part`、`wikipedia_category`、`conceptnet_is_a`。
+- `source_url`: 节点对应的外部来源 URL。
+- `last_fetch_source` / `last_fetch_sources`: 最近一次成功检查过的来源。
 - `quality_score`: 自动计算的节点质量分，范围 `0` 到 `100`。
 - `quality_reasons`: 质量评分原因列表。
 - `quality_version`: 质量评分规则版本。
@@ -214,7 +217,7 @@ python -m http.server 8000
 - `经典树`：使用 DOM 列表按需展开 JSON 分片。
 - `树状图`：打开该视图时按需加载 ECharts，只渲染当前直接父层、兄弟层和选中节点的下一层；缩放到更小视野时允许展示更多已加载层，渲染变慢时会自动收起较旧分支。
 
-页面顶部提供增长统计、终止节点数量、复核队列、搜索、状态过滤、全局路径面包屑、当前节点来源信息，以及 AI 上下文导出功能。当前节点工具区可以复制节点接口、子节点接口和终止节点接口 URL。复核队列支持按状态/原因筛选，显示已处理数量、最近处理时间和原因分布，并突出每条复核项的首要原因；每项可复制 `review_key` 供 `scripts/review_decision.py` 使用。AI 上下文可以复制或下载为 Markdown/JSON，包含当前节点、父路径、子节点摘要、静态接口路径、`data_source`、`id`、`source_relation`、状态和更新时间。
+页面顶部提供增长统计、终止节点数量、复核队列、搜索、状态过滤、全局路径面包屑、当前节点来源信息，以及 AI 上下文导出功能。当前节点工具区可以复制节点接口、子节点接口和终止节点接口 URL。复核队列支持按状态/原因筛选，显示已处理数量、最近处理时间和原因分布，并突出每条复核项的首要原因；每项可复制 `review_key` 供 `scripts/review_decision.py` 使用。AI 上下文可以复制或下载为 Markdown/JSON，包含当前节点、父路径、子节点摘要、静态接口路径、`data_source`、`source_provider`、`id`、`source_relation`、状态和更新时间。
 
 ## GitHub Pages 设置
 
@@ -238,19 +241,24 @@ workflow 需要这些权限：
 
 `scripts/grow_json.py` 支持：
 
-- `ONE_MAX_REQUESTS`: 单次运行最多请求 Wikidata 次数，默认 `20`。
+- `ONE_MAX_REQUESTS`: 单次运行最多请求来源次数，默认 `5`。
 - `ONE_QUERY_LIMIT`: 单个节点最多返回子类数量，默认 `50`。
-- `ONE_REQUEST_DELAY`: 请求间隔秒数，默认 `1.0`。
+- `ONE_REQUEST_DELAY`: 非 Wikidata 来源之间的请求间隔秒数，默认 `5.0`。
+- `ONE_WIKIDATA_REQUEST_DELAY`: Wikidata 两次请求之间的最小间隔秒数，默认 `65.0`。
 - `ONE_GROWTH_HISTORY_LIMIT`: `data/growth_history.json` 最多保留多少条历史记录，默认 `365`。
 - `ONE_WIKIDATA_ENDPOINT`: Wikidata SPARQL Endpoint。
+- `ONE_WIKIPEDIA_API_ENDPOINT`: 维基百科 API。
+- `ONE_CONCEPTNET_API_ENDPOINT`: ConceptNet API。
 - `ONE_USER_AGENT`: 请求 User-Agent。
+- `ONE_SOURCE_ORDER`: 来源顺序，默认 `wikidata,wikipedia,conceptnet`。
+- `ONE_SOURCE_COOLDOWN_SECONDS`: 发生 429 后的默认冷却秒数，默认 `3600`。
 - `ONE_QUALITY_REVIEW_THRESHOLD`: 低于该质量分的节点会进入 `needs_review`，默认 `45`。
 - `ONE_PRIORITY_SCAN_LIMIT`: 每层参与优先级排序的候选节点数，默认 `1000`。
 - `ONE_FOCUS_PRIORITY_BONUS`: 人工关注节点默认扩展优先级加分，默认 `18`。
 - `ONE_REVIEW_QUEUE_LIMIT`: 复核队列最多保留多少个节点，默认 `200`。
 - `ONE_REVIEW_QUEUE_THRESHOLD`: 进入复核队列的质量分阈值，默认跟 `ONE_QUALITY_REVIEW_THRESHOLD` 一致。
 
-GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `5` 到 `20` 之间，并保留默认 `ONE_REQUEST_DELAY=1.0`。需要手动补数据时可以在 workflow 手动触发里临时调高，但不建议长期大批量请求公共 SPARQL 服务。
+GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之间，并保留默认的 Wikidata 冷却时间。需要手动补数据时可以在 workflow 手动触发里临时调高，但不建议长期大批量请求公共 SPARQL 服务。
 
 维基百科辅助脚本支持：
 

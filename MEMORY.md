@@ -22,12 +22,13 @@
 - 第二次或排队运行可能会基于旧的 `main` 提交启动；workflow 现在会在增长前切到 `origin/${GITHUB_REF_NAME}` 的最新状态，并在 push 被拒时 rebase 后重试。
 
 - 取消原来的双 workflow 设计，避免两个定时任务同时修改/部署不同产物。
-- 自动扩展主流程改用 Wikidata SPARQL，优先使用 QID，减少中文同名词条造成的误匹配。
-- 自动扩展不能只查 `P279` 子类；当前策略版本 `2` 同时查 `P279`、`P31`、`P361`、`P527`、`P2670`，旧策略误判的空叶子会重新抓取。
+- 自动扩展主流程采用多来源策略，默认按 Wikidata、维基百科分类和 ConceptNet 的顺序尝试，优先使用 QID，减少中文同名词条造成的误匹配。
+- 自动扩展不能只查 `P279` 子类；当前策略版本 `2` 同时查 `P279`、`P31`、`P361`、`P527`、`P2670`，并在 Wikidata 受限时回退到补充来源。
 - 保留 `万物.txt` 作为人工维护的文本样例和导入来源，但不再让 Pages 部署依赖 `output/knowledge_tree.html`。
-- `scripts/grow_json.py` 的请求预算通过 `ONE_MAX_REQUESTS` 控制，默认每次最多请求 20 次。
+- `scripts/grow_json.py` 的请求预算通过 `ONE_MAX_REQUESTS` 控制，默认每次最多请求 5 次；Wikidata 还有单独的最小间隔和 429 冷却。
 - 初始根节点是“万物”，种子节点是 Wikidata 的 `Q1`（宇宙）和 `Q3`（生命）。
 - 每次运行后统计总节点数，并向 `data/growth_history.json` 追加 `run_at`、`added_nodes`、`total_nodes`，不记录节点详情。
+- `data/scan_state.json` 现在还会记录 `source_order`、`available_sources`、`source_request_counts`、`source_cooldowns` 和 `last_stop_reason`，用于避免限流后重复撞同一来源。
 
 ## Decisions Made On 2026-05-07
 
@@ -53,7 +54,7 @@
 ## Decisions Made On 2026-05-14
 
 - 自动增长改为先收集全树可请求候选，再根据 `data/scan_state.json` 的 `last_scan_key` 轮转请求，避免每天从同一批高优先级分支重新扫描。
-- 当前抓取策略下成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上保留 `is_leaf=true`、`end_reason=wikidata_no_children` 和 `ended_at`；抓取策略版本不变时不会再次请求这类节点。
+- 当前抓取策略下成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上保留 `is_leaf=true`、`end_reason` 和 `ended_at`；不同来源会写入对应的 `*_no_children` 或 `sources_no_children`，抓取策略版本不变时不会再次请求这类节点。
 - `scripts/grow_json.py` 会生成 `data/api/` 静态接口镜像：`index.json` 返回路径模板，`root.json` 返回根节点，`by-id/<id>/node.json` 返回节点，`by-id/<id>/children.json` 返回子节点摘要，`by-id/<id>/index.json` 返回该节点接口索引，`nodes/Q....json` 和 `children/nodes/Q....json` 保留旧镜像路径，`getEndNode.json` 返回终止节点清单。
 - 页面读取数据时优先使用 `data/api/by-id/`，缺少接口文件时回退到旧的 `data/api/nodes/*.json`、`data/root.json` 和 `data/nodes/*.json`，以便旧部署仍可打开。
 - 页面顶部新增终止节点统计；节点详情工具区可以复制节点接口、子节点接口和终止节点接口 URL。
@@ -75,7 +76,7 @@
 - `last_checked_at`: 最近一次请求外部知识库检查该节点的时间。
 - `last_error`: 最近一次抓取失败原因。
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
-- `end_reason`: 终止原因；当前自动终止值是 `wikidata_no_children`。
+- `end_reason`: 终止原因；当前自动终止值可能是 `wikidata_no_children`、`wikipedia_no_children`、`conceptnet_no_children` 或 `sources_no_children`。
 - `ended_at`: 节点被确认为终止节点的时间。
 - `source_relation`: 节点来自 Wikidata 的关系类型。
 - `quality_score`: 自动质量评分，范围 `0` 到 `100`。
@@ -90,14 +91,14 @@
 - 本地预览页面要通过 HTTP 服务打开，直接双击 HTML 会让 `fetch()` 读取 JSON 失败。
 - GitHub Actions cron 的 `0 0 * * *` 是 UTC 每天 00:00，也就是北京时间每天 08:00。
 - 部署使用 GitHub Pages 官方 artifact 流程，仓库 Pages 设置需要选择 `GitHub Actions` 作为来源。
-- workflow 的 `push` 触发只运行测试、数据校验和 Pages 部署，不运行增长和自动提交，避免 push 部署形成循环提交；定时和手动触发才会请求 Wikidata 并提交生成数据。
-- 如果 Wikidata Query Service 返回错误，先降低 `ONE_MAX_REQUESTS` 或增加 `ONE_REQUEST_DELAY`。
+- workflow 的 `push` 触发只运行测试、数据校验和 Pages 部署，不运行增长和自动提交，避免 push 部署形成循环提交；定时和手动触发才会请求外部来源并提交生成数据。
+- 如果 Wikidata Query Service 返回 429，先确认是不是冷却期内重复请求，再降低 `ONE_MAX_REQUESTS`、增大 `ONE_WIKIDATA_REQUEST_DELAY`，或临时把 `ONE_SOURCE_ORDER` 改为只跑补充来源。
 - 如果 `树状图` 空白，先检查 jsDelivr 和 unpkg 的 ECharts CDN 是否可访问；页面其他视图不依赖这些 CDN。
 - 提交前优先运行 `python -m unittest discover -s tests` 和 `python scripts/validate_data.py`。
 - 数据增长后运行 `python scripts/generate_review_queue.py`，再运行 `python scripts/validate_data.py`。
-- 只刷新扫描状态、终止节点和静态 API 镜像时，可以运行 `ONE_MAX_REQUESTS=0 python scripts/grow_json.py`，不会请求 Wikidata。
-- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`，再看 `data/end_nodes.json` 是否持续增加。
-- 2026-05-20 排查线上停滞时确认：GitHub Pages 已部署到 2026-05-19 的 Auto-grow 结果，但从 2026-05-13 起 `added_nodes=0`；旧远端脚本没有扫描游标和终止节点清单，会反复请求同一批 `error` 节点并记录 WDQS 429。
+- 只刷新扫描状态、终止节点和静态 API 镜像时，可以运行 `ONE_MAX_REQUESTS=0 python scripts/grow_json.py`，不会请求外部来源。
+- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`、`source_cooldowns`，再看 `data/end_nodes.json` 是否持续增加。
+- 2026-05-20 排查线上停滞时确认：GitHub Pages 已部署到 2026-05-19 的 Auto-grow 结果，但从 2026-05-13 起 `added_nodes=0`；旧远端脚本没有扫描游标、终止节点清单和来源冷却，会反复请求同一批 `error` 节点并记录 WDQS 429。
 - 处理复核队列时先看页面或 `review_queue.json.reason_distribution` 的原因分布，再用页面显示的 `review_key` 调用 `python scripts/review_decision.py mark --key ... --status ... --reason "..."`；需要加入人工关注时加 `--sync-curation`，需要确认合法重复 QID 时加 `--sync-allowlist`。
 - 集中处理缺中文标签时，运行 `python scripts/generate_review_queue.py export --reason non_zh_label --format csv --output output/review_missing_zh.csv` 导出表格。
 - 如果校验报告出现新的重复 ID warning，先确认它是合法多路径还是数据问题；合法多路径可以写入 `data/validation_allowlist.json` 并补充原因。

@@ -37,6 +37,12 @@ class GrowJsonTests(unittest.TestCase):
             "ALLOWED_DUPLICATE_IDS": grow_json.ALLOWED_DUPLICATE_IDS,
             "MAX_REQUESTS": grow_json.MAX_REQUESTS,
             "REQUEST_DELAY": grow_json.REQUEST_DELAY,
+            "WIKIDATA_REQUEST_DELAY": grow_json.WIKIDATA_REQUEST_DELAY,
+            "SOURCE_ORDER": grow_json.SOURCE_ORDER,
+            "SOURCE_COOLDOWN_SECONDS": grow_json.SOURCE_COOLDOWN_SECONDS,
+            "IGNORE_SOURCE_COOLDOWN": grow_json.IGNORE_SOURCE_COOLDOWN,
+            "fetch_wikidata_children": grow_json.fetch_wikidata_children,
+            "fetch_wikipedia_children": grow_json.fetch_wikipedia_children,
             "DEFAULT_FOCUS_PRIORITY_BONUS": grow_json.DEFAULT_FOCUS_PRIORITY_BONUS,
         }
 
@@ -55,6 +61,10 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.ALLOWED_DUPLICATE_IDS = set()
         grow_json.MAX_REQUESTS = 0
         grow_json.REQUEST_DELAY = 0
+        grow_json.WIKIDATA_REQUEST_DELAY = 0
+        grow_json.SOURCE_ORDER = ["wikidata"]
+        grow_json.SOURCE_COOLDOWN_SECONDS = 3600
+        grow_json.IGNORE_SOURCE_COOLDOWN = False
         grow_json.DEFAULT_FOCUS_PRIORITY_BONUS = 18
         grow_json.request_count = 0
         grow_json.nodes_added_this_run = 0
@@ -65,6 +75,11 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.scan_candidate_count = 0
         grow_json.scan_exhausted = False
         grow_json.last_scan_key_this_run = ""
+        grow_json.last_scan_title_this_run = ""
+        grow_json.run_stop_reason = ""
+        grow_json.source_request_counts = {}
+        grow_json.source_cooldowns_this_run = {}
+        grow_json.last_source_request_at = {}
 
     def tearDown(self):
         for name, value in self.original_paths.items():
@@ -397,6 +412,87 @@ class GrowJsonTests(unittest.TestCase):
         rotated = grow_json.rotate_candidates(candidates, "id:Q1")
 
         self.assertEqual([item["scan_key"] for item in rotated], ["id:Q2", "id:Q3", "id:Q1"])
+
+    def test_rate_limit_pauses_without_marking_node_error(self):
+        node = {
+            "id": "Q1",
+            "title": "宇宙",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def rate_limited(_node, _blocked_ids=None):
+            raise RuntimeError("HTTP Error 429: Aggressively rate-limiting to 1 req / min")
+
+        grow_json.fetch_wikidata_children = rate_limited
+        grow_json.SOURCE_ORDER = ["wikidata"]
+        grow_json.MAX_REQUESTS = 1
+
+        changed = grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q1.json",
+                "scan_key": "id:Q1",
+                "title": "宇宙",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertFalse(changed)
+        self.assertEqual(grow_json.request_count, 1)
+        self.assertEqual(node["children_status"], "pending")
+        self.assertNotIn("last_error", node)
+        self.assertEqual(grow_json.run_stop_reason, "all_available_sources_rate_limited")
+        self.assertIn("wikidata", grow_json.source_cooldowns_this_run)
+        self.assertEqual(grow_json.last_scan_key_this_run, "")
+
+    def test_wikipedia_fallback_after_wikidata_rate_limit_adds_children(self):
+        node = {
+            "id": "Q3",
+            "title": "生命",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def rate_limited(_node, _blocked_ids=None):
+            raise RuntimeError("HTTP Error 429: rate limit")
+
+        def wikipedia_children(_node, _blocked_ids=None):
+            return [
+                {
+                    "id": "wikipedia:zh:Category:生物学",
+                    "title": "生物学",
+                    "children_status": "pending",
+                    "source_provider": "wikipedia",
+                    "source_relation": "wikipedia_category",
+                }
+            ]
+
+        grow_json.fetch_wikidata_children = rate_limited
+        grow_json.fetch_wikipedia_children = wikipedia_children
+        grow_json.SOURCE_ORDER = ["wikidata", "wikipedia"]
+        grow_json.MAX_REQUESTS = 2
+
+        changed = grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q3.json",
+                "scan_key": "id:Q3",
+                "title": "生命",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertTrue(changed)
+        self.assertEqual(grow_json.request_count, 2)
+        self.assertEqual(grow_json.source_request_counts, {"wikidata": 1, "wikipedia": 1})
+        self.assertEqual(node["children_status"], "loaded")
+        self.assertEqual(node["last_fetch_source"], "wikipedia")
+        self.assertEqual(node["last_fetch_sources"], ["wikipedia"])
+        self.assertEqual(node["children"][0]["title"], "生物学")
+        self.assertEqual(grow_json.last_scan_key_this_run, "id:Q3")
 
     def test_write_static_api_includes_end_node_and_children_endpoint(self):
         root = {

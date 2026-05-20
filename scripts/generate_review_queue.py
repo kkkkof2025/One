@@ -136,7 +136,9 @@ def node_summary(node: Dict[str, Any], metadata: Dict[str, Any]) -> Dict[str, An
     for field in (
         "id",
         "data_source",
+        "source_provider",
         "source_relation",
+        "source_url",
         "updated_at",
         "last_error",
         "fetch_strategy_version",

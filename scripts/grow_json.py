@@ -4,9 +4,11 @@ import re
 import math
 import shutil
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
+from urllib import parse, request
 
 try:
     from SPARQLWrapper import JSON, SPARQLWrapper
@@ -33,16 +35,36 @@ API_DIR = DATA_DIR / "api"
 API_BY_ID_SUBDIR = "by-id"
 
 QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
-MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "20"))
-REQUEST_DELAY = float(os.environ.get("ONE_REQUEST_DELAY", "1.0"))
+MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "5"))
+REQUEST_DELAY = float(os.environ.get("ONE_REQUEST_DELAY", "5.0"))
+WIKIDATA_REQUEST_DELAY = float(os.environ.get("ONE_WIKIDATA_REQUEST_DELAY", "65.0"))
 HISTORY_LIMIT = int(os.environ.get("ONE_GROWTH_HISTORY_LIMIT", "365"))
 WIKIDATA_ENDPOINT = os.environ.get(
     "ONE_WIKIDATA_ENDPOINT", "https://query.wikidata.org/sparql"
+)
+WIKIPEDIA_API_ENDPOINT = os.environ.get(
+    "ONE_WIKIPEDIA_API_ENDPOINT", "https://zh.wikipedia.org/w/api.php"
+)
+CONCEPTNET_API_ENDPOINT = os.environ.get(
+    "ONE_CONCEPTNET_API_ENDPOINT", "https://api.conceptnet.io"
 )
 USER_AGENT = os.environ.get(
     "ONE_USER_AGENT", "OneKnowledgeTree/0.2 (scheduled GitHub Actions)"
 )
 DEFAULT_FOCUS_PRIORITY_BONUS = int(os.environ.get("ONE_FOCUS_PRIORITY_BONUS", "18"))
+SOURCE_ORDER = [
+    source.strip().lower()
+    for source in os.environ.get("ONE_SOURCE_ORDER", "wikidata,wikipedia,conceptnet").split(",")
+    if source.strip()
+]
+KNOWN_SOURCES = {"wikidata", "wikipedia", "conceptnet"}
+SOURCE_COOLDOWN_SECONDS = int(os.environ.get("ONE_SOURCE_COOLDOWN_SECONDS", "3600"))
+HTTP_TIMEOUT = float(os.environ.get("ONE_HTTP_TIMEOUT", "30"))
+IGNORE_SOURCE_COOLDOWN = os.environ.get("ONE_IGNORE_SOURCE_COOLDOWN", "").lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
 VALID_STATUSES = {"pending", "loaded", "error", "manual"}
 VALID_REVIEW_STATUSES = {"approved", "needs_review"}
@@ -52,6 +74,8 @@ KNOWN_RELATIONS = {
     "part_of",
     "has_part",
     "has_parts_of_class",
+    "wikipedia_category",
+    "conceptnet_is_a",
     "seed",
     "manual",
 }
@@ -61,6 +85,8 @@ RELATION_QUALITY = {
     "part_of": 10,
     "has_parts_of_class": 8,
     "instance": 2,
+    "wikipedia_category": 8,
+    "conceptnet_is_a": 6,
     "seed": 20,
     "manual": 20,
 }
@@ -70,6 +96,8 @@ RELATION_PRIORITY = {
     "part_of": 12,
     "has_parts_of_class": 10,
     "instance": 4,
+    "wikipedia_category": 10,
+    "conceptnet_is_a": 8,
     "seed": 24,
     "manual": 20,
 }
@@ -110,12 +138,163 @@ end_nodes_marked_this_run = 0
 scan_candidate_count = 0
 scan_exhausted = False
 last_scan_key_this_run = ""
+last_scan_title_this_run = ""
+run_stop_reason = ""
+source_request_counts: Dict[str, int] = {}
+source_cooldowns_this_run: Dict[str, Dict[str, Any]] = {}
+last_source_request_at: Dict[str, float] = {}
 
 
 def now_utc() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace(
         "+00:00", "Z"
     )
+
+
+def parse_utc(value: Any) -> Optional[datetime]:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    text = value.strip()
+    if text.endswith("Z"):
+        text = f"{text[:-1]}+00:00"
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def source_order() -> List[str]:
+    ordered = [source for source in SOURCE_ORDER if source in KNOWN_SOURCES]
+    return ordered or ["wikidata"]
+
+
+def source_request_delay(source: str) -> float:
+    if source == "wikidata":
+        return WIKIDATA_REQUEST_DELAY
+    return REQUEST_DELAY
+
+
+def wait_for_source_slot(source: str) -> None:
+    delay = source_request_delay(source)
+    if delay <= 0:
+        return
+    previous = last_source_request_at.get(source)
+    if previous is None:
+        return
+    remaining = delay - (time.monotonic() - previous)
+    if remaining > 0:
+        print(f"  等待 {source} 请求间隔: {remaining:.1f}s")
+        time.sleep(remaining)
+
+
+def remember_source_request(source: str) -> None:
+    last_source_request_at[source] = time.monotonic()
+    source_request_counts[source] = source_request_counts.get(source, 0) + 1
+
+
+def retry_after_seconds(exc: Exception) -> Optional[int]:
+    headers = getattr(exc, "headers", None)
+    if headers is None:
+        return None
+    value = headers.get("Retry-After") if hasattr(headers, "get") else None
+    if value is None:
+        return None
+    text = str(value).strip()
+    if text.isdigit():
+        return max(0, int(text))
+    try:
+        retry_at = parsedate_to_datetime(text)
+    except (TypeError, ValueError):
+        return None
+    if retry_at.tzinfo is None:
+        retry_at = retry_at.replace(tzinfo=timezone.utc)
+    seconds = int((retry_at.astimezone(timezone.utc) - datetime.now(timezone.utc)).total_seconds())
+    return max(0, seconds)
+
+
+def is_rate_limit_error(exc: Exception) -> bool:
+    code = getattr(exc, "code", None) or getattr(exc, "status", None)
+    message = str(exc).lower()
+    return (
+        code == 429
+        or "http error 429" in message
+        or "too many requests" in message
+        or "rate-limit" in message
+        or "rate limit" in message
+        or "rate-limiting" in message
+    )
+
+
+def register_source_cooldown(source: str, exc: Exception) -> None:
+    retry_after = retry_after_seconds(exc) or SOURCE_COOLDOWN_SECONDS
+    occurred_at = now_utc()
+    cooldown_until = (
+        datetime.now(timezone.utc).replace(microsecond=0)
+        + timedelta(seconds=retry_after)
+    ).isoformat().replace("+00:00", "Z")
+    source_cooldowns_this_run[source] = {
+        "source": source,
+        "occurred_at": occurred_at,
+        "retry_after_seconds": retry_after,
+        "cooldown_until": cooldown_until,
+        "last_error": str(exc)[:500],
+    }
+
+
+def active_source_cooldowns(previous: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    previous = previous or load_scan_state()
+    cooldowns: Dict[str, Any] = {}
+    now = datetime.now(timezone.utc)
+    previous_cooldowns = previous.get("source_cooldowns", {})
+    if isinstance(previous_cooldowns, dict):
+        for source, entry in previous_cooldowns.items():
+            if not isinstance(entry, dict):
+                continue
+            until = parse_utc(entry.get("cooldown_until"))
+            if until is not None and until > now:
+                cooldowns[source] = entry
+    cooldowns.update(source_cooldowns_this_run)
+    return cooldowns
+
+
+def source_in_cooldown(source: str, scan_state: Optional[Dict[str, Any]] = None) -> bool:
+    if IGNORE_SOURCE_COOLDOWN:
+        return False
+    cooldown = active_source_cooldowns(scan_state).get(source)
+    if not isinstance(cooldown, dict):
+        return False
+    until = parse_utc(cooldown.get("cooldown_until"))
+    return until is not None and until > datetime.now(timezone.utc)
+
+
+def available_sources(scan_state: Optional[Dict[str, Any]] = None) -> List[str]:
+    return [
+        source
+        for source in source_order()
+        if not source_in_cooldown(source, scan_state)
+    ]
+
+
+def source_can_fetch(source: str, node: Dict[str, Any]) -> bool:
+    title = str(node.get("title", "")).strip()
+    if source == "wikidata":
+        return build_wikidata_query(node) is not None
+    if source in {"wikipedia", "conceptnet"}:
+        return bool(title)
+    return False
+
+
+def can_fetch_from_any_source(node: Dict[str, Any]) -> bool:
+    return any(source_can_fetch(source, node) for source in source_order())
+
+
+class GrowthRunPaused(Exception):
+    def __init__(self, reason: str):
+        super().__init__(reason)
+        self.reason = reason
 
 
 def load_json(path: Path) -> Optional[Dict[str, Any]]:
@@ -478,6 +657,11 @@ def save_scan_state(
         "request_count": request_count,
         "max_requests": MAX_REQUESTS,
         "exhausted": exhausted,
+        "source_order": source_order(),
+        "available_sources": available_sources(previous),
+        "source_request_counts": source_request_counts,
+        "source_cooldowns": active_source_cooldowns(previous),
+        "last_stop_reason": run_stop_reason,
     }
     save_json(SCAN_STATE_FILE, state)
 
@@ -498,7 +682,17 @@ def clear_end_state(node: Dict[str, Any]) -> None:
 
 def mark_end_state(node: Dict[str, Any]) -> None:
     if current_strategy_leaf(node):
-        node["end_reason"] = "wikidata_no_children"
+        sources = node.get("last_fetch_sources")
+        if isinstance(sources, list):
+            clean_sources = [str(source) for source in sources if str(source).strip()]
+        else:
+            clean_sources = []
+        if clean_sources == ["wikidata"] or not clean_sources:
+            node["end_reason"] = "wikidata_no_children"
+        elif len(clean_sources) == 1:
+            node["end_reason"] = f"{clean_sources[0]}_no_children"
+        else:
+            node["end_reason"] = "sources_no_children"
         node["ended_at"] = node.get("updated_at") or now_utc()
     else:
         clear_end_state(node)
@@ -556,7 +750,9 @@ def compact_node_summary(node: Dict[str, Any]) -> Dict[str, Any]:
     for field in (
         "id",
         "data_source",
+        "source_provider",
         "source_relation",
+        "source_url",
         "children_status",
         "is_leaf",
         "end_reason",
@@ -567,6 +763,9 @@ def compact_node_summary(node: Dict[str, Any]) -> Dict[str, Any]:
         "updated_at",
         "last_checked_at",
         "last_error",
+        "last_fetch_source",
+        "last_fetch_sources",
+        "last_source_errors",
     ):
         if node.get(field) is not None:
             summary[field] = node[field]
@@ -777,7 +976,9 @@ def pointer_from_node(node: Dict[str, Any], path: Path) -> Dict[str, Any]:
     if node.get("fetch_strategy_version"):
         pointer["fetch_strategy_version"] = node["fetch_strategy_version"]
     for field in (
+        "source_provider",
         "source_relation",
+        "source_url",
         "quality_score",
         "quality_version",
         "review_status",
@@ -786,6 +987,9 @@ def pointer_from_node(node: Dict[str, Any], path: Path) -> Dict[str, Any]:
         "end_reason",
         "ended_at",
         "last_error",
+        "last_fetch_source",
+        "last_fetch_sources",
+        "last_source_errors",
     ):
         if node.get(field) is not None:
             pointer[field] = node[field]
@@ -910,15 +1114,223 @@ def fetch_wikidata_children(
             "title": label,
             "children_status": "pending",
             "is_leaf": False,
+            "source_provider": "wikidata",
         }
         if is_qid(node_id):
             child["id"] = node_id
+            child["source_url"] = f"https://www.wikidata.org/wiki/{node_id}"
         relation = result.get("relation", {}).get("value", "").strip()
         if relation:
             child["source_relation"] = relation
         children.append(child)
 
     return children
+
+
+def fetch_json_url(url: str) -> Dict[str, Any]:
+    http_request = request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT,
+        },
+    )
+    with request.urlopen(http_request, timeout=HTTP_TIMEOUT) as response:
+        payload = response.read().decode("utf-8")
+    data = json.loads(payload)
+    return data if isinstance(data, dict) else {}
+
+
+def fetch_wikipedia_children(
+    node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
+) -> List[Dict[str, Any]]:
+    title = str(node.get("title", "")).strip()
+    if not title:
+        return []
+    blocked_ids = blocked_ids or set()
+    limit = max(1, min(QUERY_LIMIT, 50))
+    params = {
+        "action": "query",
+        "list": "categorymembers",
+        "cmtitle": f"Category:{title}",
+        "cmtype": "subcat",
+        "cmlimit": str(limit),
+        "format": "json",
+        "formatversion": "2",
+    }
+    url = f"{WIKIPEDIA_API_ENDPOINT}?{parse.urlencode(params)}"
+    data = fetch_json_url(url)
+    members = data.get("query", {}).get("categorymembers", [])
+    if not isinstance(members, list):
+        return []
+
+    children: List[Dict[str, Any]] = []
+    seen: Set[str] = set()
+    for member in members:
+        if not isinstance(member, dict):
+            continue
+        raw_title = str(member.get("title", "")).strip()
+        if not raw_title:
+            continue
+        label = raw_title.removeprefix("Category:").strip()
+        if not label or label == title:
+            continue
+        page_id = member.get("pageid")
+        source_id = f"wikipedia:zh:Category:{label}"
+        if source_id in blocked_ids:
+            continue
+        if source_id in seen:
+            continue
+        seen.add(source_id)
+        child: Dict[str, Any] = {
+            "id": source_id,
+            "title": label,
+            "children_status": "pending",
+            "is_leaf": False,
+            "source_provider": "wikipedia",
+            "source_relation": "wikipedia_category",
+            "source_url": f"https://zh.wikipedia.org/wiki/Category:{parse.quote(label)}",
+        }
+        if page_id is not None:
+            child["source_page_id"] = page_id
+        children.append(child)
+    return children
+
+
+def conceptnet_node_id(title: str) -> str:
+    normalized = re.sub(r"\s+", "_", title.strip())
+    return f"/c/zh/{normalized}"
+
+
+def fetch_conceptnet_children(
+    node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
+) -> List[Dict[str, Any]]:
+    title = str(node.get("title", "")).strip()
+    if not title:
+        return []
+    blocked_ids = blocked_ids or set()
+    limit = max(1, min(QUERY_LIMIT, 50))
+    parent_id = conceptnet_node_id(title)
+    params = {
+        "end": parent_id,
+        "rel": "/r/IsA",
+        "limit": str(limit),
+    }
+    url = f"{CONCEPTNET_API_ENDPOINT.rstrip('/')}/query?{parse.urlencode(params)}"
+    data = fetch_json_url(url)
+    edges = data.get("edges", [])
+    if not isinstance(edges, list):
+        return []
+
+    children: List[Dict[str, Any]] = []
+    seen: Set[str] = set()
+    for edge in edges:
+        if not isinstance(edge, dict):
+            continue
+        start = edge.get("start")
+        if not isinstance(start, dict):
+            continue
+        language = str(start.get("language", "")).strip()
+        if language and language != "zh":
+            continue
+        label = str(start.get("label", "")).strip()
+        concept_id = str(start.get("@id", "")).strip()
+        if not label or label == title or not concept_id:
+            continue
+        source_id = f"conceptnet:{concept_id}"
+        if source_id in blocked_ids:
+            continue
+        if source_id in seen:
+            continue
+        seen.add(source_id)
+        children.append(
+            {
+                "id": source_id,
+                "title": label,
+                "children_status": "pending",
+                "is_leaf": False,
+                "source_provider": "conceptnet",
+                "source_relation": "conceptnet_is_a",
+                "source_url": f"https://conceptnet.io{concept_id}",
+            }
+        )
+    return children
+
+
+def fetch_children_from_source(
+    source: str, node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
+) -> List[Dict[str, Any]]:
+    if source == "wikidata":
+        return fetch_wikidata_children(node, blocked_ids)
+    if source == "wikipedia":
+        return fetch_wikipedia_children(node, blocked_ids)
+    if source == "conceptnet":
+        return fetch_conceptnet_children(node, blocked_ids)
+    return []
+
+
+def fetch_children_from_sources(
+    node: Dict[str, Any],
+    blocked_ids: Optional[Set[str]] = None,
+    scan_state: Optional[Dict[str, Any]] = None,
+) -> Dict[str, Any]:
+    global request_count
+
+    candidates = [
+        source
+        for source in available_sources(scan_state)
+        if source_can_fetch(source, node)
+    ]
+    if not candidates:
+        raise GrowthRunPaused("all_sources_in_cooldown")
+
+    successful_sources: List[str] = []
+    source_errors: Dict[str, str] = {}
+    saw_rate_limit = False
+    for source in candidates:
+        if request_count >= MAX_REQUESTS:
+            raise GrowthRunPaused("request_budget_exhausted")
+
+        wait_for_source_slot(source)
+        request_count += 1
+        remember_source_request(source)
+        print(f"[{request_count}/{MAX_REQUESTS}] 查询({source}): {node.get('title')}")
+
+        try:
+            children = fetch_children_from_source(source, node, blocked_ids)
+        except Exception as exc:
+            if is_rate_limit_error(exc):
+                saw_rate_limit = True
+                register_source_cooldown(source, exc)
+                print(f"  {source} 触发限流: {exc}")
+                continue
+            source_errors[source] = str(exc)
+            print(f"  {source} 查询失败: {exc}")
+            continue
+
+        successful_sources.append(source)
+        if children:
+            return {
+                "children": children,
+                "source": source,
+                "checked_sources": successful_sources,
+                "source_errors": source_errors,
+            }
+        print(f"  {source} 未发现子节点")
+
+    if successful_sources:
+        return {
+            "children": [],
+            "source": successful_sources[-1],
+            "checked_sources": successful_sources,
+            "source_errors": source_errors,
+        }
+    if saw_rate_limit:
+        raise GrowthRunPaused("all_available_sources_rate_limited")
+    if source_errors:
+        detail = "; ".join(f"{source}: {error}" for source, error in source_errors.items())
+        raise RuntimeError(detail)
+    raise GrowthRunPaused("no_available_source")
 
 
 def merge_children(
@@ -947,7 +1359,7 @@ def merge_children(
             added += 1
             continue
 
-        for field in ("id", "title", "source_relation"):
+        for field in ("id", "title", "source_provider", "source_relation", "source_url"):
             if child.get(field) and not current.get(field):
                 current[field] = child[field]
 
@@ -967,6 +1379,9 @@ def materialize_child(child: Dict[str, Any]) -> Tuple[Dict[str, Any], Path, bool
                 "children_status": child.get("children_status", "pending"),
                 "children": child.get("children", []),
             }
+            for field in ("source_provider", "source_relation", "source_url", "source_page_id"):
+                if child.get(field) is not None:
+                    child_data[field] = child[field]
             normalize_node(child_data)
             save_json(path, child_data)
             changed = True
@@ -989,6 +1404,9 @@ def materialize_child(child: Dict[str, Any]) -> Tuple[Dict[str, Any], Path, bool
             "children_status": child.get("children_status", "pending"),
             "children": child.get("children", []),
         }
+        for field in ("source_provider", "source_relation", "source_url", "source_page_id"):
+            if child.get(field) is not None:
+                child_data[field] = child[field]
         normalize_node(child_data)
         save_json(path, child_data)
         changed = True
@@ -1060,7 +1478,7 @@ def should_fetch(node: Dict[str, Any]) -> bool:
     if node.get("review_status") == "needs_review" and not manual_priority:
         return False
 
-    if build_wikidata_query(node) is None:
+    if not can_fetch_from_any_source(node):
         return False
 
     status = node.get("children_status")
@@ -1172,21 +1590,21 @@ def rotate_candidates(candidates: List[Dict[str, Any]], cursor: str) -> List[Dic
     return candidates
 
 
-def process_fetch_candidate(candidate: Dict[str, Any]) -> bool:
+def process_fetch_candidate(
+    candidate: Dict[str, Any], scan_state: Optional[Dict[str, Any]] = None
+) -> bool:
     global request_count, nodes_added_this_run, failed_requests_this_run
-    global unchanged_requests_this_run, end_nodes_marked_this_run, last_scan_key_this_run
+    global unchanged_requests_this_run, end_nodes_marked_this_run
+    global last_scan_key_this_run, last_scan_title_this_run, run_stop_reason
 
     node = candidate["node"]
     file_path = candidate["file_path"]
     pointer_ref = candidate.get("pointer_ref")
     ancestor_ids = set(candidate.get("ancestor_ids") or set())
 
-    request_count += 1
-    last_scan_key_this_run = candidate.get("scan_key", "")
-    print(f"[{request_count}/{MAX_REQUESTS}] 查询: {node.get('title')}")
-
     try:
-        fetched_children = fetch_wikidata_children(node, ancestor_ids)
+        outcome = fetch_children_from_sources(node, ancestor_ids, scan_state)
+        fetched_children = outcome["children"]
         node["children"], added = merge_children(node.get("children", []), fetched_children)
         cyclic_pruned = sanitize_cyclic_children(node, ancestor_ids)
         materialized_children = materialize_inline_children(node)
@@ -1198,6 +1616,13 @@ def process_fetch_candidate(candidate: Dict[str, Any]) -> bool:
         node["updated_at"] = now_utc()
         node["last_checked_at"] = node["updated_at"]
         node.pop("last_error", None)
+        node["last_fetch_source"] = outcome.get("source", "")
+        node["last_fetch_sources"] = outcome.get("checked_sources", [])
+        source_errors = outcome.get("source_errors") or {}
+        if source_errors:
+            node["last_source_errors"] = source_errors
+        else:
+            node.pop("last_source_errors", None)
         node["is_leaf"] = len(node["children"]) == 0
         mark_end_state(node)
         if node.get("end_reason"):
@@ -1213,8 +1638,17 @@ def process_fetch_candidate(candidate: Dict[str, Any]) -> bool:
                 parent_path = candidate.get("parent_path")
                 if isinstance(parent_node, dict) and isinstance(parent_path, Path):
                     save_json(parent_path, parent_node)
-        print(f"  新增节点: {added}，当前子类: {len(node['children'])}")
+        last_scan_key_this_run = candidate.get("scan_key", "")
+        last_scan_title_this_run = str(candidate.get("title", "") or "")
+        print(
+            f"  新增节点: {added}，当前子类: {len(node['children'])}，"
+            f"来源: {node.get('last_fetch_source')}"
+        )
         return changed
+    except GrowthRunPaused as exc:
+        run_stop_reason = exc.reason
+        print(f"  暂停本轮增长: {exc.reason}")
+        return False
     except Exception as exc:
         failed_requests_this_run += 1
         node["children_status"] = "error"
@@ -1235,9 +1669,6 @@ def process_fetch_candidate(candidate: Dict[str, Any]) -> bool:
                     save_json(parent_path, parent_node)
         print(f"  查询失败: {exc}")
         return changed
-    finally:
-        if REQUEST_DELAY > 0:
-            time.sleep(REQUEST_DELAY)
 
 
 def prioritized_children(
@@ -1278,10 +1709,9 @@ def process_node_data(
     changed = sanitize_cyclic_children(data, ancestor_ids) or changed
 
     if request_count < MAX_REQUESTS and should_fetch(data):
-        request_count += 1
-        print(f"[{request_count}/{MAX_REQUESTS}] 查询: {data.get('title')}")
         try:
-            fetched_children = fetch_wikidata_children(data, ancestor_ids)
+            outcome = fetch_children_from_sources(data, ancestor_ids, load_scan_state())
+            fetched_children = outcome["children"]
             data["children"], added = merge_children(data["children"], fetched_children)
             cyclic_pruned = sanitize_cyclic_children(data, ancestor_ids)
             materialized_children = materialize_inline_children(data)
@@ -1293,6 +1723,13 @@ def process_node_data(
             data["updated_at"] = now_utc()
             data["last_checked_at"] = data["updated_at"]
             data.pop("last_error", None)
+            data["last_fetch_source"] = outcome.get("source", "")
+            data["last_fetch_sources"] = outcome.get("checked_sources", [])
+            source_errors = outcome.get("source_errors") or {}
+            if source_errors:
+                data["last_source_errors"] = source_errors
+            else:
+                data.pop("last_source_errors", None)
             data["is_leaf"] = len(data["children"]) == 0
             mark_end_state(data)
             if data.get("end_reason"):
@@ -1300,6 +1737,9 @@ def process_node_data(
             changed = apply_quality_metadata(data) or materialized_children or cyclic_pruned or changed
             changed = True
             print(f"  新增节点: {added}，当前子类: {len(data['children'])}")
+        except GrowthRunPaused as exc:
+            print(f"  暂停本轮增长: {exc.reason}")
+            return changed
         except Exception as exc:
             failed_requests_this_run += 1
             data["children_status"] = "error"
@@ -1310,9 +1750,6 @@ def process_node_data(
             changed = apply_quality_metadata(data) or changed
             changed = True
             print(f"  查询失败: {exc}")
-
-        if REQUEST_DELAY > 0:
-            time.sleep(REQUEST_DELAY)
 
     next_ancestor_ids = set(ancestor_ids)
     node_id = str(data.get("id", "")).strip()
@@ -1394,6 +1831,8 @@ def record_growth_history(
         "failed_requests": failed_requests_this_run,
         "end_nodes_marked": end_nodes_marked_this_run,
         "end_node_count": end_node_count,
+        "source_request_counts": source_request_counts,
+        "stop_reason": run_stop_reason,
     }
     if append_history:
         history.append(entry)
@@ -1415,6 +1854,8 @@ def record_growth_history(
             "last_unchanged_requests": unchanged_requests_this_run,
             "last_failed_requests": failed_requests_this_run,
             "last_end_nodes_marked": end_nodes_marked_this_run,
+            "last_source_request_counts": source_request_counts,
+            "last_stop_reason": run_stop_reason,
             "end_node_count": end_node_count,
             "history_entries": len(history),
             "history_file": GROWTH_HISTORY_FILE.relative_to(DATA_DIR).as_posix(),
@@ -1460,7 +1901,7 @@ def bootstrap_root_files(root: Dict[str, Any]) -> bool:
 
 
 def main() -> None:
-    global nodes_added_this_run, scan_candidate_count, scan_exhausted
+    global nodes_added_this_run, scan_candidate_count, scan_exhausted, run_stop_reason
     root_data = load_json(ROOT_FILE)
     if root_data is None:
         root_data = default_root()
@@ -1481,14 +1922,20 @@ def main() -> None:
         ordered_candidates,
         str(scan_state.get("last_scan_key", "") or ""),
     )
-    selected_candidates = ordered_candidates[: max(0, MAX_REQUESTS)]
+    active_sources = available_sources(scan_state)
+    if MAX_REQUESTS > 0 and not active_sources:
+        run_stop_reason = "all_sources_in_cooldown"
+        print("所有增长来源仍在冷却期内，本轮只刷新静态数据。")
+    selected_candidates = (
+        ordered_candidates[: max(0, MAX_REQUESTS)] if active_sources else []
+    )
     scan_candidate_count = len(candidates)
     scan_exhausted = len(candidates) == len(selected_candidates)
 
     for candidate in selected_candidates:
-        if request_count >= MAX_REQUESTS:
+        if request_count >= MAX_REQUESTS or run_stop_reason:
             break
-        process_fetch_candidate(candidate)
+        process_fetch_candidate(candidate, scan_state)
 
     if changed:
         save_json(ROOT_FILE, root_data)
@@ -1512,7 +1959,7 @@ def main() -> None:
     record_growth_history(total_nodes, end_node_count, append_history=MAX_REQUESTS > 0)
     save_scan_state(
         last_scan_key=last_scan_key_this_run,
-        last_scan_title=selected_candidates[-1].get("title", "") if selected_candidates else "",
+        last_scan_title=last_scan_title_this_run,
         candidate_count=len(candidates),
         selected_count=len(selected_candidates),
         exhausted=scan_exhausted,
@@ -1524,7 +1971,11 @@ def main() -> None:
     print(f"未新增但成功检查数: {unchanged_requests_this_run}")
     print(f"失败请求数: {failed_requests_this_run}")
     print(f"终止节点数: {end_node_count}")
-    print(f"本次 Wikidata 请求数: {request_count}/{MAX_REQUESTS}")
+    print(f"本次来源请求数: {request_count}/{MAX_REQUESTS}")
+    if source_request_counts:
+        print(f"分来源请求数: {source_request_counts}")
+    if run_stop_reason:
+        print(f"本轮停止原因: {run_stop_reason}")
 
 
 if __name__ == "__main__":

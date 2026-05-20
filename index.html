@@ -1563,7 +1563,9 @@
       [
         "id",
         "data_source",
+        "source_provider",
         "source_relation",
+        "source_url",
         "children_status",
         "is_leaf",
         "quality_score",
@@ -1592,6 +1594,7 @@
         node.title,
         node.id,
         node.data_source,
+        node.source_provider,
         node.source_relation,
         node.children_status,
         node.review_status,
@@ -1813,9 +1816,12 @@
       const children = Array.isArray(node.children) ? node.children : [];
       const fields = [
         ["ID", node.id],
+        ["平台", node.source_provider],
         ["来源", node.source_relation],
+        ["来源页", node.source_url],
         ["状态", statusLabel(node.children_status)],
         ["分片", node.data_source],
+        ["抓取源", node.last_fetch_source],
         ["更新", node.updated_at],
         ["检查", node.last_checked_at],
         ["质量", present(node.quality_score) ? `${node.quality_score}/100` : ""],
@@ -1881,7 +1887,7 @@
 
       lines.push("", "## 路径");
       data.path.forEach((node, index) => {
-        const details = [node.id, node.data_source, node.source_relation]
+        const details = [node.id, node.data_source, node.source_provider, node.source_relation]
           .filter(Boolean)
           .join(", ");
         lines.push(`${index + 1}. ${node.title}${details ? ` (${details})` : ""}`);
@@ -1892,7 +1898,13 @@
         lines.push("- 无");
       } else {
         data.children.forEach((node) => {
-          const details = [node.id, node.data_source, node.source_relation, node.children_status]
+          const details = [
+            node.id,
+            node.data_source,
+            node.source_provider,
+            node.source_relation,
+            node.children_status
+          ]
             .filter(Boolean)
             .join(", ");
           lines.push(`- ${node.title}${details ? ` (${details})` : ""}`);
