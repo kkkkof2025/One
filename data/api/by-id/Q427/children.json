@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q427.json",
+  "node": {
+    "title": "柯伊伯带",
+    "children_count": 0,
+    "id": "Q427",
+    "children_status": "error",
+    "quality_score": 63,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-14T02:29:55Z",
+    "last_checked_at": "2026-05-14T02:29:55Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+  },
+  "children": [],
+  "child_count": 0
+}

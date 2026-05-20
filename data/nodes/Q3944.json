@@ -404,6 +404,7 @@
     "good_title_length",
     "missing_relation",
     "loaded",
+    "allowed_duplicate_id:2",
     "has_children"
   ],
   "quality_version": 3,

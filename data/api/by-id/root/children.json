@@ -1,0 +1,41 @@
+{
+  "endpoint": "children",
+  "source": "root.json",
+  "node": {
+    "title": "万物",
+    "children_count": 2,
+    "id": "root",
+    "children_status": "loaded",
+    "quality_score": 100,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-06T00:00:00Z"
+  },
+  "children": [
+    {
+      "title": "宇宙",
+      "children_count": 17,
+      "id": "Q1",
+      "data_source": "nodes/Q1.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 99,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:16Z"
+    },
+    {
+      "title": "生命",
+      "children_count": 7,
+      "id": "Q3",
+      "data_source": "nodes/Q3.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 99,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:51Z"
+    }
+  ],
+  "child_count": 2
+}

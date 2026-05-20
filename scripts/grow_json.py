@@ -30,6 +30,7 @@ VALIDATION_ALLOWLIST_FILE = DATA_DIR / "validation_allowlist.json"
 END_NODES_FILE = DATA_DIR / "end_nodes.json"
 SCAN_STATE_FILE = DATA_DIR / "scan_state.json"
 API_DIR = DATA_DIR / "api"
+API_BY_ID_SUBDIR = "by-id"
 
 QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
 MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "20"))
@@ -195,7 +196,16 @@ def collect_duplicate_id_counts(root: Dict[str, Any]) -> Dict[str, int]:
     counts: Dict[str, int] = {}
     visited_files: Set[Path] = set()
 
-    def visit(node: Any, materialized_path: Optional[Path] = None) -> None:
+    def register_node_id(node_id: Any) -> None:
+        value = str(node_id or "").strip()
+        if is_qid(value):
+            counts[value] = counts.get(value, 0) + 1
+
+    def visit(
+        node: Any,
+        materialized_path: Optional[Path] = None,
+        register_current: bool = True,
+    ) -> None:
         if not isinstance(node, dict):
             return
 
@@ -210,12 +220,12 @@ def collect_duplicate_id_counts(root: Dict[str, Any]) -> Dict[str, int]:
             target_path = DATA_DIR / str(data_source)
             target = load_json(target_path)
             if isinstance(target, dict):
-                visit(target, target_path)
+                register_node_id(node.get("id") or target.get("id"))
+                visit(target, target_path, register_current=False)
                 return
 
-        node_id = str(node.get("id", "")).strip()
-        if is_qid(node_id):
-            counts[node_id] = counts.get(node_id, 0) + 1
+        if register_current:
+            register_node_id(node.get("id"))
 
         for child in node.get("children", []):
             visit(child)
@@ -512,6 +522,26 @@ def api_children_file(path: Path) -> Path:
     return API_DIR / "children" / api_relative_path(path)
 
 
+def api_node_id(node: Dict[str, Any]) -> str:
+    return str(node.get("id", "")).strip()
+
+
+def api_by_id_dir(identifier: str) -> Path:
+    return API_DIR / API_BY_ID_SUBDIR / identifier
+
+
+def api_by_id_node_file(identifier: str) -> Path:
+    return api_by_id_dir(identifier) / "node.json"
+
+
+def api_by_id_children_file(identifier: str) -> Path:
+    return api_by_id_dir(identifier) / "children.json"
+
+
+def api_by_id_index_file(identifier: str) -> Path:
+    return api_by_id_dir(identifier) / "index.json"
+
+
 def api_end_node_file(name: str = "endNode.json") -> Path:
     return API_DIR / name
 
@@ -639,6 +669,7 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
 
     for node, path in collect_tree_nodes(root, ROOT_FILE):
         total_nodes += 1
+        identifier = api_node_id(node)
         node_payload = {
             "endpoint": "node",
             "source": api_relative_path(path),
@@ -657,6 +688,20 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         }
         save_json(api_children_file(path), children_payload)
 
+        if identifier:
+            alias_index_payload = {
+                "endpoint": "index",
+                "id": identifier,
+                "source": api_relative_path(path),
+                "node": "node.json",
+                "children": "children.json",
+                "legacy_node": f"../../{api_relative_path(path)}",
+                "legacy_children": f"../../children/{api_relative_path(path)}",
+            }
+            save_json(api_by_id_node_file(identifier), node_payload)
+            save_json(api_by_id_children_file(identifier), children_payload)
+            save_json(api_by_id_index_file(identifier), alias_index_payload)
+
     end_payload = {
         "endpoint": "endNode",
         "generated_at": generated_at,
@@ -671,6 +716,9 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         "root": "root.json",
         "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
         "children": "children/<relative data path>",
+        "by_id": "by-id/<id>/index.json",
+        "by_id_node": "by-id/<id>/node.json",
+        "by_id_children": "by-id/<id>/children.json",
         "getEndNode": "getEndNode.json",
         "endNode": "endNode.json",
     })

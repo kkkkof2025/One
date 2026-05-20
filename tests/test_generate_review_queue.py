@@ -69,6 +69,9 @@ class GenerateReviewQueueTests(unittest.TestCase):
         self.assertIn("错误节点", titles)
         self.assertEqual(queue["total_items"], len(queue["items"]))
         self.assertGreaterEqual(queue["total_candidates"], queue["total_items"])
+        self.assertTrue(
+            all(item.get("primary_reason") for item in queue["items"])
+        )
 
     def test_reason_distribution_summarizes_major_review_causes(self):
         self.write_json(
@@ -275,6 +278,50 @@ class GenerateReviewQueueTests(unittest.TestCase):
         self.assertEqual(queue["total_candidates"], 1)
         self.assertEqual(queue["suppressed_items"], 1)
         self.assertEqual(queue["items"], [])
+
+    def test_export_filters_review_items_by_reason(self):
+        self.write_json(
+            "root.json",
+            {
+                "id": "root",
+                "title": "万物",
+                "children_status": "loaded",
+                "children": [
+                    {
+                        "id": "Q1",
+                        "title": "M1",
+                        "children_status": "loaded",
+                        "children": [],
+                    },
+                    {
+                        "id": "Q2",
+                        "title": "错误节点",
+                        "children_status": "error",
+                        "last_error": "测试错误",
+                        "children": [],
+                    },
+                ],
+            },
+        )
+        queue = generate_review_queue.generate_review_queue(
+            self.data_dir,
+            limit=20,
+            threshold=45,
+        )
+        output_path = Path(self.temp_dir.name) / "missing_zh.csv"
+
+        exported = generate_review_queue.export_review_items(
+            queue,
+            output_path,
+            reason="non_zh_label",
+            export_format="csv",
+        )
+
+        text = output_path.read_text(encoding="utf-8-sig")
+        self.assertGreaterEqual(exported, 1)
+        self.assertIn("review_key", text)
+        self.assertIn("M1", text)
+        self.assertNotIn("错误节点", text)
 
 
 if __name__ == "__main__":

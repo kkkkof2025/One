@@ -1,0 +1,81 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q843331.json",
+  "node": {
+    "id": "Q843331",
+    "title": "馬菲星系群",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "德文格洛1",
+        "data_source": "nodes/Q3041916.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q3041916",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:36Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:36Z"
+      },
+      {
+        "title": "德文格洛2",
+        "data_source": "nodes/Q3041912.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q3041912",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:31Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:31Z"
+      },
+      {
+        "title": "马菲1",
+        "data_source": "nodes/Q1194932.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q1194932",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:32Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:32Z"
+      },
+      {
+        "title": "马菲2",
+        "data_source": "nodes/Q2548238.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q2548238",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:34Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:34Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T02:51:35Z",
+    "is_leaf": false,
+    "quality_score": 88,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

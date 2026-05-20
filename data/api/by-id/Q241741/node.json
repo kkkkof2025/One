@@ -1,0 +1,101 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q241741.json",
+  "node": {
+    "id": "Q241741",
+    "title": "野生生物",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "Wildlife of Japan",
+        "data_source": "nodes/Q8001388.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q8001388",
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T03:29:55Z"
+      },
+      {
+        "title": "中国野生动物",
+        "data_source": "nodes/Q8001373.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q8001373",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T03:29:56Z"
+      },
+      {
+        "title": "也门野生生物",
+        "data_source": "nodes/Q22083589.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q22083589",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T03:29:57Z"
+      },
+      {
+        "title": "土耳其的野生動物",
+        "data_source": "nodes/Q6085434.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q6085434",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T03:29:58Z"
+      },
+      {
+        "title": "圣多美普林西比动植物",
+        "data_source": "nodes/Q8001438.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q8001438",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T03:29:59Z"
+      },
+      {
+        "title": "尚比亞野生動物",
+        "data_source": "nodes/Q8001447.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q8001447",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T04:03:42Z"
+      },
+      {
+        "title": "巴林的野生动植物",
+        "data_source": "nodes/Q22083579.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q22083579",
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-06T04:03:43Z"
+      }
+    ],
+    "updated_at": "2026-05-06T03:29:53Z",
+    "is_leaf": false,
+    "quality_score": 89,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -46,6 +46,7 @@
 │   ├── validation_allowlist.json           # 数据校验允许列表
 │   ├── review_queue.json                  # 待人工复核节点队列
 │   ├── api/                               # GitHub Pages 静态 API 形式的数据镜像
+│   │   └── by-id/                         # 按节点 id 暴露的稳定接口别名
 │   └── nodes/                             # 懒加载子节点分片
 ├── scripts/grow_json.py                   # Wikidata 增量扩展脚本
 ├── scripts/validate_data.py               # JSON 数据校验脚本
@@ -75,9 +76,14 @@
 
 `data/api/` 是面向 GitHub Pages 的静态接口镜像。它不是真正的后端服务，但路径设计成接口形式，方便页面和外部脚本调用：
 
+- `data/api/index.json`: 返回可用接口和路径模板。
 - `data/api/root.json`: 返回根节点。
-- `data/api/nodes/Q1.json`: 返回指定节点完整数据。
-- `data/api/children/nodes/Q1.json`: 返回指定节点的子节点摘要。
+- `data/api/by-id/root/node.json`: 返回根节点的按 id 接口别名。
+- `data/api/by-id/Q1/node.json`: 返回指定节点完整数据。
+- `data/api/by-id/Q1/children.json`: 返回指定节点的子节点摘要。
+- `data/api/by-id/Q1/index.json`: 返回指定节点的接口索引，包含节点、子节点和旧路径回退信息。
+- `data/api/nodes/Q1.json`: 保留旧节点镜像路径。
+- `data/api/children/nodes/Q1.json`: 保留旧子节点镜像路径。
 - `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
 
 `data/validation_allowlist.json` 保存人工确认过的校验例外。当前用于记录合法重复 QID，例如同一个 Wikidata 节点合理地出现在多条分类路径中；没有进入允许列表的新重复 ID 仍会作为 warning 报告。
@@ -175,6 +181,13 @@ python scripts/validate_data.py
 python scripts/generate_review_queue.py
 ```
 
+批量导出缺少中文标签的复核项：
+
+```bash
+python scripts/generate_review_queue.py export --reason non_zh_label --format csv --output output/review_missing_zh.csv
+python scripts/generate_review_queue.py export --reason non_zh_label --format md --output output/review_missing_zh.md
+```
+
 记录复核处理：
 
 ```bash
@@ -201,7 +214,7 @@ python -m http.server 8000
 - `经典树`：使用 DOM 列表按需展开 JSON 分片。
 - `树状图`：打开该视图时按需加载 ECharts，只渲染当前直接父层、兄弟层和选中节点的下一层；缩放到更小视野时允许展示更多已加载层，渲染变慢时会自动收起较旧分支。
 
-页面顶部提供增长统计、终止节点数量、复核队列、搜索、状态过滤、全局路径面包屑、当前节点来源信息，以及 AI 上下文导出功能。当前节点工具区可以复制节点接口、子节点接口和终止节点接口 URL。复核队列支持按状态/原因筛选，显示已处理数量、最近处理时间和原因分布，并可复制 `review_key` 供 `scripts/review_decision.py` 使用。AI 上下文可以复制或下载为 Markdown/JSON，包含当前节点、父路径、子节点摘要、静态接口路径、`data_source`、`id`、`source_relation`、状态和更新时间。
+页面顶部提供增长统计、终止节点数量、复核队列、搜索、状态过滤、全局路径面包屑、当前节点来源信息，以及 AI 上下文导出功能。当前节点工具区可以复制节点接口、子节点接口和终止节点接口 URL。复核队列支持按状态/原因筛选，显示已处理数量、最近处理时间和原因分布，并突出每条复核项的首要原因；每项可复制 `review_key` 供 `scripts/review_decision.py` 使用。AI 上下文可以复制或下载为 Markdown/JSON，包含当前节点、父路径、子节点摘要、静态接口路径、`data_source`、`id`、`source_relation`、状态和更新时间。
 
 ## GitHub Pages 设置
 
@@ -265,7 +278,9 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `5` 到 `20` 之�
 - `scripts/curate_node.py` 已提供人工关注节点的轻量编辑流程。
 - 质量评分已纳入过度泛化标题、消歧义标题、重复风险、人工复核和人工关注信号。
 - `scripts/generate_review_queue.py` 已生成 `data/review_queue.json`，汇总待人工复核节点和建议动作。
+- `scripts/generate_review_queue.py export` 已支持按原因/状态批量导出 CSV、JSONL 或 Markdown，默认导出缺少中文标签的复核项。
 - `scripts/review_decision.py` 已记录复核处理结果，并让后续复核队列跳过已处理节点；`curated` / `allowlisted` 处理可显式同步到人工关注或重复 ID 允许列表，`list --status` 可按状态查看记录。
+- 重复 ID 统计已按逻辑路径计数，多个 `data_source` 指针会被识别为多路径；当前合法多路径记录在 `data/validation_allowlist.json`。
 - 页面已展示 `data/review_queue.json` 的复核队列，并可点击队列项带入搜索、按状态/原因筛选、复制 `review_key`、查看已处理数量、最近处理时间和原因分布。
 - workflow 已在增长前运行离线测试和数据校验，并在增长后再次校验。
 - `scripts/grow_json.py` 已新增扫描游标、终止节点清单和 `data/api/` 静态接口镜像；页面会优先通过接口式路径读取节点、子节点和终止节点。
@@ -274,8 +289,6 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `5` 到 `20` 之�
 
 - 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 给复核队列增加批量导出命令，方便人工集中处理缺少中文标签的节点。
-- 在页面复核队列中突出首要复核原因，方便人工先处理同类问题。
 - 观察 `data/scan_state.json` 的 `candidate_count` 和 `exhausted`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
 
 ## 已知限制

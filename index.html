@@ -306,6 +306,31 @@
       overflow-wrap: anywhere;
     }
 
+    .review-primary {
+      width: max-content;
+      max-width: 100%;
+      border-radius: 999px;
+      padding: 3px 7px;
+      color: #ffffff;
+      background: var(--warn);
+      font-size: 11px;
+      font-weight: 650;
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    .review-primary.error {
+      background: var(--error);
+    }
+
+    .review-primary.duplicate_id {
+      background: #7a4d00;
+    }
+
+    .review-primary.non_zh_label {
+      background: var(--accent);
+    }
+
     .review-item-path,
     .review-item-key,
     .review-item-action,
@@ -1387,16 +1412,25 @@
       return "";
     }
 
+    function nodeIdForApi(node) {
+      if (!node) return "";
+      return String(node.id || "").trim();
+    }
+
     function apiPath(path) {
       return `${CONFIG.apiBase}/${path}`.replace(/\/+/g, "/");
     }
 
     function nodeApiPath(node) {
+      const id = nodeIdForApi(node);
+      if (id) return apiPath(`by-id/${id}/node.json`);
       const source = sourcePathForNode(node);
       return source ? apiPath(source) : "";
     }
 
     function childrenApiPath(node) {
+      const id = nodeIdForApi(node);
+      if (id) return apiPath(`by-id/${id}/children.json`);
       const source = sourcePathForNode(node);
       return source ? apiPath(`children/${source}`) : "";
     }
@@ -1417,9 +1451,13 @@
     const dataApi = {
       async getRoot() {
         try {
-          return unwrapNodePayload(await fetchJson(apiPath("root.json")));
+          return unwrapNodePayload(await fetchJson(apiPath("by-id/root/node.json")));
         } catch (error) {
-          return fetchJson("data/root.json");
+          try {
+            return unwrapNodePayload(await fetchJson(apiPath("root.json")));
+          } catch (fallbackError) {
+            return fetchJson("data/root.json");
+          }
         }
       },
       async getNode(node) {
@@ -2200,6 +2238,12 @@
       return Array.from(new Set(labels)).slice(0, 5).join(" · ");
     }
 
+    function primaryReasonLabel(item) {
+      if (item.primary_reason_label) return item.primary_reason_label;
+      const summary = reviewReasonSummary(item).split(" · ").filter(Boolean);
+      return summary[0] || "人工复核";
+    }
+
     function selectReviewItem(item) {
       nodeSearch.value = item.id || item.title || "";
       searchFilter.value = "all";
@@ -2266,6 +2310,10 @@
         title.className = "review-item-title";
         title.textContent = item.title || "未命名";
 
+        const primary = document.createElement("span");
+        primary.className = `review-primary ${item.primary_reason || ""}`.trim();
+        primary.textContent = primaryReasonLabel(item);
+
         const path = document.createElement("span");
         path.className = "review-item-path";
         path.textContent = item.path || item.location || "";
@@ -2281,7 +2329,7 @@
         const reasons = document.createElement("span");
         reasons.className = "review-item-reasons";
         reasons.textContent = reviewReasonSummary(item);
-        main.append(title, path, key, reasons, action);
+        main.append(title, primary, path, key, reasons, action);
 
         const side = document.createElement("span");
         side.className = "review-item-side";

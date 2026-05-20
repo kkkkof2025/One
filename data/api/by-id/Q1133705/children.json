@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1133705.json",
+  "node": {
+    "title": "大尺度纖維狀結構",
+    "children_count": 0,
+    "id": "Q1133705",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

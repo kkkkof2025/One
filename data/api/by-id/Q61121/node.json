@@ -1,0 +1,65 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q61121.json",
+  "node": {
+    "id": "Q61121",
+    "title": "長蛇-半人馬座超星系團",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "半人馬座星系團",
+        "data_source": "nodes/Q61075.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q61075",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:44Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:03:44Z"
+      },
+      {
+        "title": "矩尺座星系团",
+        "data_source": "nodes/Q1068075.json",
+        "children_status": "loaded",
+        "is_leaf": false,
+        "id": "Q1068075",
+        "fetch_strategy_version": 2,
+        "quality_score": 83,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:03:55Z"
+      },
+      {
+        "title": "唧筒座星系團",
+        "data_source": "nodes/Q61187.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q61187",
+        "fetch_strategy_version": 2,
+        "quality_score": 77,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T03:04:32Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T03:04:32Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T03:03:43Z",
+    "is_leaf": false,
+    "quality_score": 87,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

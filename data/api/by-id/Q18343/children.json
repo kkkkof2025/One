@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q18343.json",
+  "node": {
+    "title": "暗能量",
+    "children_count": 0,
+    "id": "Q18343",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

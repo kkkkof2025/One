@@ -1,0 +1,19 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q3094136.json",
+  "node": {
+    "title": "巨型超大类星体群",
+    "children_count": 0,
+    "id": "Q3094136",
+    "children_status": "loaded",
+    "is_leaf": true,
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-07T03:06:43Z",
+    "quality_score": 77,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T03:06:43Z"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,206 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1.json",
+  "node": {
+    "title": "宇宙",
+    "children_count": 17,
+    "id": "Q1",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 99,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T00:54:16Z"
+  },
+  "children": [
+    {
+      "title": "可觀測宇宙",
+      "children_count": 12,
+      "id": "Q221392",
+      "data_source": "nodes/Q221392.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T00:54:18Z"
+    },
+    {
+      "title": "外太空",
+      "children_count": 0,
+      "id": "Q4169",
+      "data_source": "nodes/Q4169.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "大尺度纖維狀結構",
+      "children_count": 0,
+      "id": "Q1133705",
+      "data_source": "nodes/Q1133705.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "时空",
+      "children_count": 0,
+      "id": "Q133327",
+      "data_source": "nodes/Q133327.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "场",
+      "children_count": 0,
+      "id": "Q185674",
+      "data_source": "nodes/Q185674.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 61,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "天体",
+      "children_count": 0,
+      "id": "Q6999",
+      "data_source": "nodes/Q6999.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星系際塵埃",
+      "children_count": 0,
+      "id": "Q2504088",
+      "data_source": "nodes/Q2504088.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "暗物质",
+      "children_count": 0,
+      "id": "Q79925",
+      "data_source": "nodes/Q79925.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "暗能量",
+      "children_count": 0,
+      "id": "Q18343",
+      "data_source": "nodes/Q18343.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "物理物质",
+      "children_count": 0,
+      "id": "Q28732711",
+      "data_source": "nodes/Q28732711.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "重子物质",
+      "children_count": 0,
+      "id": "Q6005984",
+      "data_source": "nodes/Q6005984.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "地球在宇宙中的位置",
+      "children_count": 0,
+      "id": "Q437877",
+      "data_source": "nodes/Q437877.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "物质系统",
+      "children_count": 0,
+      "id": "Q1454986",
+      "data_source": "nodes/Q1454986.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "空洞",
+      "children_count": 0,
+      "id": "Q845371",
+      "data_source": "nodes/Q845371.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "能量",
+      "children_count": 0,
+      "id": "Q11379",
+      "data_source": "nodes/Q11379.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "自然",
+      "children_count": 0,
+      "id": "Q7860",
+      "data_source": "nodes/Q7860.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "邪惡軸心（宇宙學）",
+      "children_count": 0,
+      "id": "Q25304698",
+      "data_source": "nodes/Q25304698.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 17
+}

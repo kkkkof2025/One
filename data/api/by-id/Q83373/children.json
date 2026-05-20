@@ -1,0 +1,52 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q83373.json",
+  "node": {
+    "title": "类星体",
+    "children_count": 3,
+    "id": "Q83373",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 87,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-08T02:14:53Z"
+  },
+  "children": [
+    {
+      "title": "吸积盘",
+      "children_count": 1,
+      "id": "Q237604",
+      "data_source": "nodes/Q237604.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:54Z"
+    },
+    {
+      "title": "电磁辐射",
+      "children_count": 0,
+      "id": "Q12969754",
+      "data_source": "nodes/Q12969754.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "超大質量黑洞",
+      "children_count": 0,
+      "id": "Q40392",
+      "data_source": "nodes/Q40392.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 3
+}

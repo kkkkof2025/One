@@ -13,7 +13,8 @@
     "good_title_length",
     "missing_relation",
     "loaded",
-    "leaf"
+    "leaf",
+    "allowed_duplicate_id:2"
   ],
   "quality_version": 3,
   "review_status": "approved",

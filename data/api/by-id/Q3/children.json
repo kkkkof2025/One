@@ -1,0 +1,102 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q3.json",
+  "node": {
+    "title": "生命",
+    "children_count": 7,
+    "id": "Q3",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 99,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-06T03:29:51Z"
+  },
+  "children": [
+    {
+      "title": "地球人",
+      "children_count": 0,
+      "id": "Q1349305",
+      "data_source": "nodes/Q1349305.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:39Z"
+    },
+    {
+      "title": "外星生命",
+      "children_count": 6,
+      "id": "Q181508",
+      "data_source": "nodes/Q181508.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:40Z"
+    },
+    {
+      "title": "擬蕨",
+      "children_count": 0,
+      "id": "Q3824034",
+      "data_source": "nodes/Q3824034.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:50Z"
+    },
+    {
+      "title": "池生动物",
+      "children_count": 0,
+      "id": "Q105721447",
+      "data_source": "nodes/Q105721447.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:51Z"
+    },
+    {
+      "title": "碳生命",
+      "children_count": 0,
+      "id": "Q4215735",
+      "data_source": "nodes/Q4215735.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:52Z"
+    },
+    {
+      "title": "野生生物",
+      "children_count": 7,
+      "id": "Q241741",
+      "data_source": "nodes/Q241741.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:53Z"
+    },
+    {
+      "title": "隐花植物",
+      "children_count": 0,
+      "id": "Q333458",
+      "data_source": "nodes/Q333458.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T04:03:44Z"
+    }
+  ],
+  "child_count": 7
+}

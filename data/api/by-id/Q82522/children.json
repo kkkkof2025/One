@@ -1,0 +1,44 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q82522.json",
+  "node": {
+    "title": "后髮座超星系團",
+    "children_count": 2,
+    "id": "Q82522",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 85,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-08T02:14:21Z"
+  },
+  "children": [
+    {
+      "title": "后髮座星系團",
+      "children_count": 1,
+      "id": "Q870674",
+      "data_source": "nodes/Q870674.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:22Z"
+    },
+    {
+      "title": "獅子座星系團",
+      "children_count": 0,
+      "id": "Q2636046",
+      "data_source": "nodes/Q2636046.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-08T02:14:24Z",
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:24Z"
+    }
+  ],
+  "child_count": 2
+}

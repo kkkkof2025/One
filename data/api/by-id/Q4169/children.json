@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q4169.json",
+  "node": {
+    "title": "外太空",
+    "children_count": 0,
+    "id": "Q4169",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,19 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1282228.json",
+  "node": {
+    "title": "六分儀座A",
+    "children_count": 0,
+    "id": "Q1282228",
+    "children_status": "loaded",
+    "is_leaf": true,
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-07T02:18:26Z",
+    "quality_score": 77,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T02:18:26Z"
+  },
+  "children": [],
+  "child_count": 0
+}

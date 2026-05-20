@@ -1,0 +1,30 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q2636625.json",
+  "node": {
+    "title": "武仙座超星系团",
+    "children_count": 1,
+    "id": "Q2636625",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 83,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-08T02:14:25Z"
+  },
+  "children": [
+    {
+      "title": "武仙座星系团",
+      "children_count": 10,
+      "id": "Q777857",
+      "data_source": "nodes/Q777857.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-08T02:14:27Z"
+    }
+  ],
+  "child_count": 1
+}

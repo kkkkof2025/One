@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "root",
+  "source": "root.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../root.json",
+  "legacy_children": "../../children/root.json"
+}

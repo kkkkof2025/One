@@ -1,4 +1,5 @@
 import argparse
+import csv
 import json
 import os
 import sys
@@ -47,6 +48,30 @@ REVIEW_REASON_CATEGORIES = (
     ("missing_title", "缺少标题"),
     ("disambiguation", "消歧义标题"),
     ("broad_title", "过泛标题"),
+)
+REVIEW_REASON_LABELS = dict(REVIEW_REASON_CATEGORIES)
+PRIMARY_REASON_ORDER = (
+    "error",
+    "duplicate_id",
+    "missing_title",
+    "missing_id",
+    "non_zh_label",
+    "disambiguation",
+    "broad_title",
+    "low_quality",
+    "needs_review",
+)
+EXPORT_FIELDS = (
+    "review_key",
+    "primary_reason_label",
+    "title",
+    "id",
+    "path",
+    "children_status",
+    "quality_score",
+    "review_status",
+    "suggested_action",
+    "location",
 )
 CHILDREN_STATUS_LABELS = {
     "pending": "待扩展",
@@ -286,6 +311,19 @@ def build_reason_distribution(items: List[Dict[str, Any]], threshold: int) -> Di
     }
 
 
+def primary_reason_for_item(item: Dict[str, Any], threshold: int) -> Dict[str, str]:
+    for key in PRIMARY_REASON_ORDER:
+        if item_in_reason_category(item, key, threshold):
+            return {
+                "primary_reason": key,
+                "primary_reason_label": REVIEW_REASON_LABELS.get(key, key),
+            }
+    return {
+        "primary_reason": "review",
+        "primary_reason_label": "人工复核",
+    }
+
+
 def review_item(
     data_dir: Path,
     node: Dict[str, Any],
@@ -293,6 +331,7 @@ def review_item(
     location_path: Optional[Path],
     fallback_location: str,
     metadata: Dict[str, Any],
+    threshold: int,
 ) -> Dict[str, Any]:
     item = node_summary(node, metadata)
     item.update(
@@ -304,6 +343,7 @@ def review_item(
         }
     )
     item["review_key"] = review_key_for_item(item)
+    item.update(primary_reason_for_item(item, threshold))
     return item
 
 
@@ -348,6 +388,7 @@ def collect_review_items(
                     location_path,
                     fallback_location,
                     metadata,
+                    threshold,
                 )
             )
 
@@ -409,6 +450,83 @@ def generate_review_queue(
     }
 
 
+def filter_export_items(
+    items: List[Dict[str, Any]],
+    reason: str = "all",
+    status: str = "all",
+    threshold: int = DEFAULT_THRESHOLD,
+) -> List[Dict[str, Any]]:
+    filtered = []
+    for item in items:
+        if reason != "all" and not item_in_reason_category(item, reason, threshold):
+            continue
+        if status != "all" and str(item.get("children_status", "")) != status:
+            continue
+        filtered.append(item)
+    return filtered
+
+
+def item_export_row(item: Dict[str, Any]) -> Dict[str, Any]:
+    return {field: item.get(field, "") for field in EXPORT_FIELDS}
+
+
+def export_review_items(
+    queue: Dict[str, Any],
+    output_path: Path,
+    *,
+    reason: str = "all",
+    status: str = "all",
+    export_format: str = "csv",
+) -> int:
+    items = queue.get("items", [])
+    if not isinstance(items, list):
+        raise ValueError("review queue items must be a list")
+    threshold = int(queue.get("threshold", DEFAULT_THRESHOLD) or DEFAULT_THRESHOLD)
+    filtered = filter_export_items(items, reason=reason, status=status, threshold=threshold)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if export_format == "jsonl":
+        with output_path.open("w", encoding="utf-8", newline="") as f:
+            for item in filtered:
+                f.write(json.dumps(item_export_row(item), ensure_ascii=False))
+                f.write("\n")
+        return len(filtered)
+
+    if export_format == "md":
+        lines = [
+            "# One 复核队列导出",
+            "",
+            f"- 原因: {reason}",
+            f"- 状态: {status}",
+            f"- 数量: {len(filtered)}",
+            "",
+        ]
+        for index, item in enumerate(filtered, 1):
+            lines.extend(
+                [
+                    f"## {index}. {item.get('title', '未命名')}",
+                    "",
+                    f"- review_key: {item.get('review_key', '')}",
+                    f"- 首要原因: {item.get('primary_reason_label', '')}",
+                    f"- ID: {item.get('id', '')}",
+                    f"- 路径: {item.get('path', '')}",
+                    f"- 状态: {item.get('children_status', '')}",
+                    f"- 质量: {item.get('quality_score', '')}",
+                    f"- 建议: {item.get('suggested_action', '')}",
+                    "",
+                ]
+            )
+        output_path.write_text("\n".join(lines), encoding="utf-8")
+        return len(filtered)
+
+    with output_path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(EXPORT_FIELDS))
+        writer.writeheader()
+        for item in filtered:
+            writer.writerow(item_export_row(item))
+    return len(filtered)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate review queue for One data.")
     parser.add_argument(
@@ -428,9 +546,86 @@ def main() -> int:
         default=DEFAULT_THRESHOLD,
         help=f"Quality score threshold. Default: {DEFAULT_THRESHOLD}",
     )
+    subparsers = parser.add_subparsers(dest="command")
+
+    generate_parser = subparsers.add_parser("generate", help="Generate review_queue.json")
+    generate_parser.add_argument(
+        "--data-dir",
+        default=str(DEFAULT_DATA_DIR),
+        help="Path to the data directory. Default: data",
+    )
+    generate_parser.add_argument(
+        "--limit",
+        type=int,
+        default=DEFAULT_LIMIT,
+        help=f"Maximum number of review items. Default: {DEFAULT_LIMIT}",
+    )
+    generate_parser.add_argument(
+        "--threshold",
+        type=int,
+        default=DEFAULT_THRESHOLD,
+        help=f"Quality score threshold. Default: {DEFAULT_THRESHOLD}",
+    )
+
+    export_parser = subparsers.add_parser("export", help="Export review queue items")
+    export_parser.add_argument(
+        "--data-dir",
+        default=str(DEFAULT_DATA_DIR),
+        help="Path to the data directory. Default: data",
+    )
+    export_parser.add_argument(
+        "--reason",
+        default="non_zh_label",
+        help="Reason category to export, such as non_zh_label, duplicate_id, error, or all.",
+    )
+    export_parser.add_argument(
+        "--status",
+        default="all",
+        help="children_status filter: pending, loaded, error, manual, or all.",
+    )
+    export_parser.add_argument(
+        "--format",
+        choices=("csv", "jsonl", "md"),
+        default="csv",
+        help="Export format. Default: csv",
+    )
+    export_parser.add_argument(
+        "--output",
+        default="output/review_queue_export.csv",
+        help="Output file path. Default: output/review_queue_export.csv",
+    )
     args = parser.parse_args()
 
+    if args.command is None:
+        data_dir = Path(args.data_dir)
+        queue = generate_review_queue(data_dir, args.limit, args.threshold)
+        save_json(data_dir / REVIEW_QUEUE_FILE, queue)
+        print(f"已生成复核队列: {queue['total_items']} 项")
+        categories = queue.get("reason_distribution", {}).get("categories", [])
+        if categories:
+            summary = "，".join(
+                f"{category['label']} {category['count']}"
+                for category in categories[:5]
+            )
+            print(f"原因分布: {summary}")
+        return 0
+
     data_dir = Path(args.data_dir)
+    if args.command == "export":
+        queue = load_json(data_dir / REVIEW_QUEUE_FILE)
+        if not isinstance(queue, dict):
+            queue = generate_review_queue(data_dir)
+        output_path = Path(args.output)
+        exported = export_review_items(
+            queue,
+            output_path,
+            reason=args.reason,
+            status=args.status,
+            export_format=args.format,
+        )
+        print(f"已导出复核队列: {exported} 项 -> {output_path}")
+        return 0
+
     queue = generate_review_queue(data_dir, args.limit, args.threshold)
     save_json(data_dir / REVIEW_QUEUE_FILE, queue)
     print(f"已生成复核队列: {queue['total_items']} 项")

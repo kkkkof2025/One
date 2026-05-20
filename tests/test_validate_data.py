@@ -222,6 +222,54 @@ class ValidateDataTests(unittest.TestCase):
         self.assertFalse(any("重复 ID" in warning for warning in validator.warnings))
         self.assertEqual(validator.allowed_duplicate_hits, {"Q1"})
 
+    def test_allowlisted_duplicate_data_source_pointers_suppress_warning(self):
+        self.write_json(
+            "validation_allowlist.json",
+            {
+                "duplicate_ids": {
+                    "Q1": "测试同一个分片可以被多条路径引用"
+                }
+            },
+        )
+        self.write_json(
+            "root.json",
+            {
+                "id": "root",
+                "title": "万物",
+                "children_status": "loaded",
+                "children": [
+                    {
+                        "id": "Q1",
+                        "title": "路径一",
+                        "data_source": "nodes/Q1.json",
+                        "children_status": "loaded",
+                    },
+                    {
+                        "id": "Q1",
+                        "title": "路径二",
+                        "data_source": "nodes/Q1.json",
+                        "children_status": "loaded",
+                    },
+                ],
+            },
+        )
+        self.write_json(
+            "nodes/Q1.json",
+            {
+                "id": "Q1",
+                "title": "共享节点",
+                "children_status": "loaded",
+                "children": [],
+            },
+        )
+
+        validator = self.validator()
+
+        self.assertEqual(validator.validate(), 0)
+        self.assertFalse(any("重复 ID" in warning for warning in validator.warnings))
+        self.assertFalse(any("可能可以移除" in warning for warning in validator.warnings))
+        self.assertEqual(validator.allowed_duplicate_hits, {"Q1"})
+
     def test_stale_allowlisted_duplicate_id_warns(self):
         self.write_json(
             "validation_allowlist.json",

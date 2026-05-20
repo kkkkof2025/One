@@ -1,0 +1,58 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q224145.json",
+  "node": {
+    "title": "蜘蛛星云",
+    "children_count": 3,
+    "id": "Q224145",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 87,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T02:18:54Z"
+  },
+  "children": [
+    {
+      "title": "R136",
+      "children_count": 5,
+      "id": "Q5116",
+      "data_source": "nodes/Q5116.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:13Z"
+    },
+    {
+      "title": "VFTS 102",
+      "children_count": 0,
+      "id": "Q2479744",
+      "data_source": "nodes/Q2479744.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:20Z",
+      "quality_score": 51,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:20Z"
+    },
+    {
+      "title": "霍奇301",
+      "children_count": 0,
+      "id": "Q520496",
+      "data_source": "nodes/Q520496.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "end_reason": "wikidata_no_children",
+      "ended_at": "2026-05-07T02:51:21Z",
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-07T02:51:21Z"
+    }
+  ],
+  "child_count": 3
+}

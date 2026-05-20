@@ -1,0 +1,19 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q2636046.json",
+  "node": {
+    "title": "獅子座星系團",
+    "children_count": 0,
+    "id": "Q2636046",
+    "children_status": "loaded",
+    "is_leaf": true,
+    "end_reason": "wikidata_no_children",
+    "ended_at": "2026-05-08T02:14:24Z",
+    "quality_score": 77,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-08T02:14:24Z"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,39 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q942427.json",
+  "node": {
+    "id": "Q942427",
+    "title": "波江座星系團",
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "NGC 1347",
+        "data_source": "nodes/Q1997323.json",
+        "children_status": "loaded",
+        "is_leaf": true,
+        "id": "Q1997323",
+        "fetch_strategy_version": 2,
+        "quality_score": 51,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-07T02:51:28Z",
+        "end_reason": "wikidata_no_children",
+        "ended_at": "2026-05-07T02:51:28Z"
+      }
+    ],
+    "fetch_strategy_version": 2,
+    "updated_at": "2026-05-07T02:51:27Z",
+    "is_leaf": false,
+    "quality_score": 83,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "loaded",
+      "has_children"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

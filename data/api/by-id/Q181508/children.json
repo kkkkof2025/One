@@ -1,0 +1,90 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q181508.json",
+  "node": {
+    "title": "外星生命",
+    "children_count": 6,
+    "id": "Q181508",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-06T03:29:40Z"
+  },
+  "children": [
+    {
+      "title": "土卫六生命",
+      "children_count": 0,
+      "id": "Q2591050",
+      "data_source": "nodes/Q2591050.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:42Z"
+    },
+    {
+      "title": "外星人",
+      "children_count": 0,
+      "id": "Q15107669",
+      "data_source": "nodes/Q15107669.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:43Z"
+    },
+    {
+      "title": "月球生命",
+      "children_count": 0,
+      "id": "Q136546064",
+      "data_source": "nodes/Q136546064.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:44Z"
+    },
+    {
+      "title": "火星人",
+      "children_count": 1,
+      "id": "Q913850",
+      "data_source": "nodes/Q913850.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:45Z"
+    },
+    {
+      "title": "火星生命",
+      "children_count": 0,
+      "id": "Q601319",
+      "data_source": "nodes/Q601319.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:47Z"
+    },
+    {
+      "title": "金星生命",
+      "children_count": 0,
+      "id": "Q2582723",
+      "data_source": "nodes/Q2582723.json",
+      "children_status": "loaded",
+      "is_leaf": true,
+      "quality_score": 77,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-06T03:29:49Z"
+    }
+  ],
+  "child_count": 6
+}

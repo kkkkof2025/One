@@ -338,6 +338,40 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(grow_json.DUPLICATE_ID_COUNTS["Q20"], 2)
         self.assertIn("Q20", grow_json.ALLOWED_DUPLICATE_IDS)
 
+    def test_duplicate_id_counts_include_multiple_data_source_pointers_once_each(self):
+        grow_json.save_json(
+            self.nodes_dir / "Q20.json",
+            {
+                "id": "Q20",
+                "title": "共享节点",
+                "children_status": "loaded",
+                "children": [],
+            },
+        )
+        root = {
+            "id": "root",
+            "title": "万物",
+            "children_status": "loaded",
+            "children": [
+                {
+                    "id": "Q20",
+                    "title": "路径一",
+                    "data_source": "nodes/Q20.json",
+                    "children_status": "loaded",
+                },
+                {
+                    "id": "Q20",
+                    "title": "路径二",
+                    "data_source": "nodes/Q20.json",
+                    "children_status": "loaded",
+                },
+            ],
+        }
+
+        counts = grow_json.collect_duplicate_id_counts(root)
+
+        self.assertEqual(counts["Q20"], 2)
+
     def test_current_strategy_leaf_is_not_fetched_again(self):
         leaf = {
             "id": "Q99",
@@ -399,10 +433,16 @@ class GrowJsonTests(unittest.TestCase):
         end_node = grow_json.load_json(grow_json.API_DIR / "getEndNode.json")
         children_api = grow_json.load_json(grow_json.API_DIR / "children" / "nodes" / "Q99.json")
         node_api = grow_json.load_json(grow_json.API_DIR / "nodes" / "Q99.json")
+        alias_node_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "node.json")
+        alias_children_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "children.json")
+        alias_index_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "index.json")
 
         self.assertEqual(end_node["total_items"], 1)
         self.assertEqual(children_api["child_count"], 0)
         self.assertEqual(node_api["node"]["id"], "Q99")
+        self.assertEqual(alias_node_api["node"]["id"], "Q99")
+        self.assertEqual(alias_children_api["child_count"], 0)
+        self.assertEqual(alias_index_api["id"], "Q99")
 
     def test_zero_request_refresh_can_skip_growth_history_append(self):
         grow_json.save_json(

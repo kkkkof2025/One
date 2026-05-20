@@ -8,7 +8,8 @@
     "qid",
     "zh_label",
     "good_title_length",
-    "missing_relation"
+    "missing_relation",
+    "allowed_duplicate_id:2"
   ],
   "quality_version": 3,
   "review_status": "approved"

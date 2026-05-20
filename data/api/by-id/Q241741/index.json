@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "Q241741",
+  "source": "nodes/Q241741.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/Q241741.json",
+  "legacy_children": "../../children/nodes/Q241741.json"
+}

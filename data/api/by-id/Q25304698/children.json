@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q25304698.json",
+  "node": {
+    "title": "邪惡軸心（宇宙學）",
+    "children_count": 0,
+    "id": "Q25304698",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

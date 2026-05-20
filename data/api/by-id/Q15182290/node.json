@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q15182290.json",
+  "node": {
+    "id": "Q15182290",
+    "title": "小行星66685",
+    "children_status": "error",
+    "children": [],
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "updated_at": "2026-05-14T02:29:53Z",
+    "last_checked_at": "2026-05-14T02:29:53Z",
+    "quality_score": 63,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "missing_relation",
+      "fetch_error"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

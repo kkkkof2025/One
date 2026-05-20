@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q7860.json",
+  "node": {
+    "title": "自然",
+    "children_count": 0,
+    "id": "Q7860",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

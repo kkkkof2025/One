@@ -561,6 +561,7 @@ class DataValidator:
         location: str,
         materialized_path: Optional[Path],
         stack: Set[Path],
+        register_current: bool = True,
     ) -> None:
         if not isinstance(node, dict):
             self.error(location, "节点必须是 JSON object")
@@ -628,13 +629,21 @@ class DataValidator:
                             location,
                             f"指针 ID `{pointer_id}` 与目标文件 ID `{target_id}` 不一致",
                         )
+                    self.register_id(pointer_id or target_id, location)
                     target_location = self.relative_location(target_path)
-                    self.validate_node(target, target_location, target_path, stack)
+                    self.validate_node(
+                        target,
+                        target_location,
+                        target_path,
+                        stack,
+                        register_current=False,
+                    )
             if materialized_path is not None:
                 stack.discard(materialized_path)
             return
 
-        self.register_id(node.get("id"), location)
+        if register_current:
+            self.register_id(node.get("id"), location)
 
         for index, child in enumerate(children or []):
             self.validate_node(
@@ -642,6 +651,7 @@ class DataValidator:
                 f"{location}.children[{index}]",
                 None,
                 stack,
+                True,
             )
 
         if materialized_path is not None:

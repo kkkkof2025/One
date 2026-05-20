@@ -1,0 +1,15 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q437877.json",
+  "node": {
+    "title": "地球在宇宙中的位置",
+    "children_count": 0,
+    "id": "Q437877",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
