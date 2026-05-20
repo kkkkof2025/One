@@ -14,18 +14,18 @@
 
 主流程位于 `.github/workflows/grow-and-deploy.yml`：
 
-1. 每天 UTC 00:00 自动运行，也就是北京时间 08:00。
+1. 每天 UTC 00:00 自动运行，也就是北京时间 08:00；推送到 `main` 时也会运行一次部署流程。
 2. 安装 Python 依赖。
 3. 运行离线单元测试。
 4. 校验现有 JSON 数据。
-5. 运行 `python scripts/grow_json.py`。
-6. 运行 `python scripts/generate_review_queue.py` 生成复核队列。
-7. 再次校验生成后的 JSON 数据。
-8. 如果 `data/` 有变化，自动提交到当前分支。
+5. 定时或手动触发时运行 `python scripts/grow_json.py`。
+6. 定时或手动触发时运行 `python scripts/generate_review_queue.py` 生成复核队列。
+7. 定时或手动触发时再次校验生成后的 JSON 数据。
+8. 定时或手动触发时如果 `data/` 有变化，自动提交到当前分支。
 9. 打包 `index.html` 和 `data/`。
 10. 部署到 GitHub Pages。
 
-也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求 Wikidata 的次数。
+推送触发只部署当前仓库里的 `index.html` 和 `data/`，不会请求 Wikidata，也不会提交派生数据，避免部署流程形成循环提交。也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求 Wikidata 的次数。
 
 增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点。旧策略误判为空叶子的节点会因为 `fetch_strategy_version` 低于当前版本而被重新抓取。
 
@@ -218,7 +218,7 @@ python -m http.server 8000
 
 ## GitHub Pages 设置
 
-仓库需要在 GitHub Pages 设置中选择 `GitHub Actions` 作为部署来源。workflow 会上传由 `index.html` 和 `data/` 组成的静态产物。
+仓库需要在 GitHub Pages 设置中选择 `GitHub Actions` 作为部署来源。workflow 会上传由 `index.html` 和 `data/` 组成的静态产物。推送到 `main` 会立即部署当前数据；每日定时和手动触发会先执行增长，再部署增长后的数据。
 
 workflow 需要这些权限：
 

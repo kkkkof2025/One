@@ -1,6 +1,9 @@
 name: Grow and Deploy Knowledge Tree
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
@@ -57,17 +60,21 @@ jobs:
         run: python scripts/validate_data.py
 
       - name: Grow JSON knowledge tree
+        if: github.event_name != 'push'
         env:
           ONE_MAX_REQUESTS: ${{ inputs.max_requests || '20' }}
         run: python scripts/grow_json.py
 
       - name: Generate review queue
+        if: github.event_name != 'push'
         run: python scripts/generate_review_queue.py
 
       - name: Validate generated JSON data
+        if: github.event_name != 'push'
         run: python scripts/validate_data.py
 
       - name: Commit generated data
+        if: github.event_name != 'push'
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"

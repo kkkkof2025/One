@@ -90,6 +90,7 @@
 - 本地预览页面要通过 HTTP 服务打开，直接双击 HTML 会让 `fetch()` 读取 JSON 失败。
 - GitHub Actions cron 的 `0 0 * * *` 是 UTC 每天 00:00，也就是北京时间每天 08:00。
 - 部署使用 GitHub Pages 官方 artifact 流程，仓库 Pages 设置需要选择 `GitHub Actions` 作为来源。
+- workflow 的 `push` 触发只运行测试、数据校验和 Pages 部署，不运行增长和自动提交，避免 push 部署形成循环提交；定时和手动触发才会请求 Wikidata 并提交生成数据。
 - 如果 Wikidata Query Service 返回错误，先降低 `ONE_MAX_REQUESTS` 或增加 `ONE_REQUEST_DELAY`。
 - 如果 `树状图` 空白，先检查 jsDelivr 和 unpkg 的 ECharts CDN 是否可访问；页面其他视图不依赖这些 CDN。
 - 提交前优先运行 `python -m unittest discover -s tests` 和 `python scripts/validate_data.py`。
