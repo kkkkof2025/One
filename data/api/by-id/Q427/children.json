@@ -9,8 +9,8 @@
     "quality_score": 63,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-20T02:34:54Z",
-    "last_checked_at": "2026-05-20T02:34:54Z",
+    "updated_at": "2026-05-20T08:06:12Z",
+    "last_checked_at": "2026-05-20T08:06:12Z",
     "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
   },
   "children": [],

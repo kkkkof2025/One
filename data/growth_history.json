@@ -105,5 +105,17 @@
     "failed_requests": 20,
     "end_nodes_marked": 0,
     "end_node_count": 98
+  },
+  {
+    "run_at": "2026-05-20T08:06:30Z",
+    "added_nodes": 0,
+    "total_nodes": 193,
+    "requests": 20,
+    "scanned_nodes": 199,
+    "candidate_nodes": 53,
+    "unchanged_requests": 0,
+    "failed_requests": 20,
+    "end_nodes_marked": 0,
+    "end_node_count": 98
   }
 ]

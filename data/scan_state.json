@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-20T06:19:47Z",
+  "updated_at": "2026-05-20T08:06:30Z",
   "fetch_strategy_version": 2,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q35758",
-  "last_scan_title": "物質",
+  "last_scan_key": "id:Q601319",
+  "last_scan_title": "火星生命",
   "candidate_count": 53,
   "selected_count": 20,
   "request_count": 20,

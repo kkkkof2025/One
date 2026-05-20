@@ -9,13 +9,15 @@
       {
         "title": "地球人",
         "data_source": "nodes/Q1349305.json",
-        "children_status": "loaded",
+        "children_status": "error",
         "is_leaf": true,
         "id": "Q1349305",
-        "quality_score": 77,
+        "quality_score": 61,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-06T03:29:39Z"
+        "updated_at": "2026-05-20T08:06:19Z",
+        "last_checked_at": "2026-05-20T08:06:19Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "外星生命",
@@ -33,35 +35,41 @@
       {
         "title": "擬蕨",
         "data_source": "nodes/Q3824034.json",
-        "children_status": "loaded",
+        "children_status": "error",
         "is_leaf": true,
         "id": "Q3824034",
-        "quality_score": 77,
+        "quality_score": 61,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-06T03:29:50Z"
+        "updated_at": "2026-05-20T08:06:21Z",
+        "last_checked_at": "2026-05-20T08:06:21Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "池生动物",
         "data_source": "nodes/Q105721447.json",
-        "children_status": "loaded",
+        "children_status": "error",
         "is_leaf": true,
         "id": "Q105721447",
-        "quality_score": 77,
+        "quality_score": 61,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-06T03:29:51Z"
+        "updated_at": "2026-05-20T08:06:18Z",
+        "last_checked_at": "2026-05-20T08:06:18Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "碳生命",
         "data_source": "nodes/Q4215735.json",
-        "children_status": "loaded",
+        "children_status": "error",
         "is_leaf": true,
         "id": "Q4215735",
-        "quality_score": 77,
+        "quality_score": 61,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-06T03:29:52Z"
+        "updated_at": "2026-05-20T08:06:22Z",
+        "last_checked_at": "2026-05-20T08:06:22Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       },
       {
         "title": "野生生物",
@@ -79,13 +87,15 @@
       {
         "title": "隐花植物",
         "data_source": "nodes/Q333458.json",
-        "children_status": "loaded",
+        "children_status": "error",
         "is_leaf": true,
         "id": "Q333458",
-        "quality_score": 77,
+        "quality_score": 61,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-06T04:03:44Z"
+        "updated_at": "2026-05-20T08:06:20Z",
+        "last_checked_at": "2026-05-20T08:06:20Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       }
     ],
     "updated_at": "2026-05-20T06:19:27Z",
