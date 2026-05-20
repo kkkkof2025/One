@@ -13,7 +13,8 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-12T02:12:59Z"
+      "updated_at": "2026-05-12T02:12:59Z",
+      "last_checked_at": "2026-05-12T02:12:59Z"
     },
     {
       "title": "柯伊伯带",
@@ -24,8 +25,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-14T02:29:55Z",
-      "last_checked_at": "2026-05-14T02:29:55Z",
+      "updated_at": "2026-05-19T02:34:49Z",
+      "last_checked_at": "2026-05-19T02:34:49Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
@@ -37,8 +38,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-14T02:29:56Z",
-      "last_checked_at": "2026-05-14T02:29:56Z",
+      "updated_at": "2026-05-19T02:34:50Z",
+      "last_checked_at": "2026-05-19T02:34:50Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
@@ -50,8 +51,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-14T02:29:57Z",
-      "last_checked_at": "2026-05-14T02:29:57Z",
+      "updated_at": "2026-05-19T02:34:51Z",
+      "last_checked_at": "2026-05-19T02:34:51Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {
@@ -63,8 +64,8 @@
       "quality_score": 63,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-14T02:29:58Z",
-      "last_checked_at": "2026-05-14T02:29:58Z",
+      "updated_at": "2026-05-19T02:34:45Z",
+      "last_checked_at": "2026-05-19T02:34:45Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     {

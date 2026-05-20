@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T02:25:57Z",
+  "generated_at": "2026-05-20T02:45:44Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 57,
@@ -26,11 +26,11 @@
         "label": "加载错误",
         "count": 9,
         "sample_review_keys": [
-          "id:Q4540906",
-          "id:Q147632",
           "id:Q3598680",
           "id:Q15182290",
-          "id:Q213466"
+          "id:Q213466",
+          "id:Q505781",
+          "id:Q427"
         ]
       }
     ],
@@ -49,6 +49,10 @@
       },
       {
         "reason": "loaded",
+        "count": 50
+      },
+      {
+        "reason": "leaf",
         "count": 48
       },
       {
@@ -56,16 +60,12 @@
         "count": 48
       },
       {
-        "reason": "leaf",
-        "count": 46
+        "reason": "zh_label",
+        "count": 9
       },
       {
         "reason": "fetch_error",
-        "count": 9
-      },
-      {
-        "reason": "zh_label",
-        "count": 9
+        "count": 7
       },
       {
         "reason": "allowed_duplicate_id:2",
@@ -80,62 +80,16 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 48
+        "count": 50
       },
       {
         "status": "error",
         "label": "加载错误",
-        "count": 9
+        "count": 7
       }
     ]
   },
   "items": [
-    {
-      "title": "小行星11157",
-      "children_status": "error",
-      "quality_score": 63,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error"
-      ],
-      "id": "Q4540906",
-      "updated_at": "2026-05-14T02:29:59Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星11157",
-      "location": "nodes/Q4540906.json",
-      "priority": 67.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q4540906",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "小行星211",
-      "children_status": "error",
-      "quality_score": 63,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error"
-      ],
-      "id": "Q147632",
-      "updated_at": "2026-05-14T02:30:00Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星211",
-      "location": "nodes/Q147632.json",
-      "priority": 67.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q147632",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
     {
       "title": "小行星29361",
       "children_status": "error",
@@ -149,7 +103,7 @@
         "fetch_error"
       ],
       "id": "Q3598680",
-      "updated_at": "2026-05-14T02:29:52Z",
+      "updated_at": "2026-05-19T02:34:46Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星29361",
       "location": "nodes/Q3598680.json",
@@ -172,7 +126,7 @@
         "fetch_error"
       ],
       "id": "Q15182290",
-      "updated_at": "2026-05-14T02:29:53Z",
+      "updated_at": "2026-05-19T02:34:47Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星66685",
       "location": "nodes/Q15182290.json",
@@ -195,7 +149,7 @@
         "fetch_error"
       ],
       "id": "Q213466",
-      "updated_at": "2026-05-14T02:29:54Z",
+      "updated_at": "2026-05-19T02:34:48Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 长女星",
       "location": "nodes/Q213466.json",
@@ -218,7 +172,7 @@
         "fetch_error"
       ],
       "id": "Q505781",
-      "updated_at": "2026-05-14T02:29:58Z",
+      "updated_at": "2026-05-19T02:34:45Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 原行星盤",
       "location": "nodes/Q505781.json",
@@ -241,7 +195,7 @@
         "fetch_error"
       ],
       "id": "Q427",
-      "updated_at": "2026-05-14T02:29:55Z",
+      "updated_at": "2026-05-19T02:34:49Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 柯伊伯带",
       "location": "nodes/Q427.json",
@@ -264,7 +218,7 @@
         "fetch_error"
       ],
       "id": "Q6232",
-      "updated_at": "2026-05-14T02:29:57Z",
+      "updated_at": "2026-05-19T02:34:51Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 金牛T星",
       "location": "nodes/Q6232.json",
@@ -287,7 +241,7 @@
         "fetch_error"
       ],
       "id": "Q180380",
-      "updated_at": "2026-05-14T02:29:56Z",
+      "updated_at": "2026-05-19T02:34:50Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 離散盤",
       "location": "nodes/Q180380.json",
@@ -1425,6 +1379,54 @@
       "review_key": "id:Q13978",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "小行星11157",
+      "children_status": "loaded",
+      "quality_score": 77,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q4540906",
+      "updated_at": "2026-05-17T02:25:42Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星11157",
+      "location": "nodes/Q4540906.json",
+      "priority": 53.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q4540906",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "小行星211",
+      "children_status": "loaded",
+      "quality_score": 77,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "leaf"
+      ],
+      "id": "Q147632",
+      "updated_at": "2026-05-18T02:35:49Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星211",
+      "location": "nodes/Q147632.json",
+      "priority": 53.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q147632",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
     },
     {
       "title": "R136",
