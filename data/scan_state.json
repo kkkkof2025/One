@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-20T08:06:30Z",
+  "updated_at": "2026-05-21T02:36:08Z",
   "fetch_strategy_version": 2,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q601319",
-  "last_scan_title": "火星生命",
+  "last_scan_key": "id:Q12969754",
+  "last_scan_title": "电磁辐射",
   "candidate_count": 53,
   "selected_count": 20,
   "request_count": 20,

@@ -5,12 +5,14 @@
     "title": "火星人",
     "children_count": 1,
     "id": "Q913850",
-    "children_status": "loaded",
+    "children_status": "error",
     "is_leaf": false,
-    "quality_score": 83,
+    "quality_score": 67,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-06T03:29:45Z"
+    "updated_at": "2026-05-21T02:36:06Z",
+    "last_checked_at": "2026-05-21T02:36:06Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
   },
   "children": [
     {
@@ -18,12 +20,14 @@
       "children_count": 0,
       "id": "Q1759661",
       "data_source": "nodes/Q1759661.json",
-      "children_status": "loaded",
+      "children_status": "error",
       "is_leaf": true,
-      "quality_score": 77,
+      "quality_score": 61,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-06T03:29:46Z"
+      "updated_at": "2026-05-21T02:36:00Z",
+      "last_checked_at": "2026-05-21T02:36:00Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   ],
   "child_count": 1

@@ -1,18 +1,18 @@
 {
   "id": "Q147632",
   "title": "小行星211",
-  "children_status": "loaded",
+  "children_status": "error",
   "children": [],
   "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-  "updated_at": "2026-05-18T02:35:49Z",
-  "last_checked_at": "2026-05-18T02:35:49Z",
-  "quality_score": 77,
+  "updated_at": "2026-05-21T02:36:01Z",
+  "last_checked_at": "2026-05-21T02:36:01Z",
+  "quality_score": 61,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
     "missing_relation",
-    "loaded",
+    "fetch_error",
     "leaf"
   ],
   "quality_version": 3,
