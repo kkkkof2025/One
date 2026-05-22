@@ -7,15 +7,14 @@
     "children_status": "error",
     "children": [],
     "updated_at": "2026-05-21T02:36:03Z",
-    "is_leaf": true,
-    "quality_score": 35,
+    "is_leaf": false,
+    "quality_score": 37,
     "quality_reasons": [
       "qid",
       "non_zh_label",
       "good_title_length",
       "missing_relation",
-      "fetch_error",
-      "leaf"
+      "fetch_error"
     ],
     "quality_version": 3,
     "review_status": "needs_review",

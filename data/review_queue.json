@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-21T02:36:08Z",
+  "generated_at": "2026-05-22T02:38:00Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 97,
+  "total_candidates": 100,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 97,
+  "total_items": 100,
   "reason_distribution": {
-    "total_items": 97,
+    "total_items": 100,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,13 +24,13 @@
       {
         "key": "error",
         "label": "加载错误",
-        "count": 50,
+        "count": 53,
         "sample_review_keys": [
           "id:Q8001388",
-          "id:Q4540906",
-          "id:Q147632",
-          "id:Q1759661",
-          "id:Q8001373"
+          "id:Q185674",
+          "id:Q79925",
+          "id:Q18343",
+          "id:Q1513087"
         ]
       },
       {
@@ -52,28 +52,24 @@
     ],
     "raw_reasons": [
       {
-        "reason": "good_title_length",
-        "count": 97
-      },
-      {
         "reason": "missing_relation",
-        "count": 97
+        "count": 100
       },
       {
         "reason": "qid",
-        "count": 97
+        "count": 100
       },
       {
-        "reason": "leaf",
-        "count": 53
+        "reason": "good_title_length",
+        "count": 99
       },
       {
         "reason": "fetch_error",
-        "count": 50
+        "count": 53
       },
       {
         "reason": "zh_label",
-        "count": 49
+        "count": 52
       },
       {
         "reason": "non_zh_label",
@@ -82,6 +78,10 @@
       {
         "reason": "loaded",
         "count": 47
+      },
+      {
+        "reason": "leaf",
+        "count": 45
       },
       {
         "reason": "has_children",
@@ -94,13 +94,17 @@
       {
         "reason": "curated_focus",
         "count": 1
+      },
+      {
+        "reason": "short_title",
+        "count": 1
       }
     ],
     "children_statuses": [
       {
         "status": "error",
         "label": "加载错误",
-        "count": 50
+        "count": 53
       },
       {
         "status": "loaded",
@@ -113,192 +117,46 @@
     {
       "title": "Wildlife of Japan",
       "children_status": "error",
-      "quality_score": 35,
+      "quality_score": 37,
       "review_status": "needs_review",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
         "missing_relation",
-        "fetch_error",
-        "leaf"
+        "fetch_error"
       ],
       "id": "Q8001388",
       "updated_at": "2026-05-21T02:36:03Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命 / 野生生物 / Wildlife of Japan",
       "location": "nodes/Q8001388.json",
-      "priority": 135.0,
+      "priority": 133.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q8001388",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
     {
-      "title": "小行星11157",
+      "title": "场",
       "children_status": "error",
-      "quality_score": 61,
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
-        "good_title_length",
+        "short_title",
         "missing_relation",
-        "fetch_error",
-        "leaf"
+        "fetch_error"
       ],
-      "id": "Q4540906",
-      "updated_at": "2026-05-21T02:36:02Z",
+      "id": "Q185674",
+      "updated_at": "2026-05-22T02:37:50Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星11157",
-      "location": "nodes/Q4540906.json",
-      "priority": 69.0,
+      "path": "万物 / 宇宙 / 场",
+      "location": "nodes/Q185674.json",
+      "priority": 81.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q4540906",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "小行星211",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q147632",
-      "updated_at": "2026-05-21T02:36:01Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星211",
-      "location": "nodes/Q147632.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q147632",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "白火星人",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q1759661",
-      "updated_at": "2026-05-21T02:36:00Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命 / 外星生命 / 火星人 / 白火星人",
-      "location": "nodes/Q1759661.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q1759661",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "中国野生动物",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q8001373",
-      "updated_at": "2026-05-21T02:35:57Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命 / 野生生物 / 中国野生动物",
-      "location": "nodes/Q8001373.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q8001373",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "土耳其的野生動物",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q6085434",
-      "updated_at": "2026-05-21T02:35:56Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命 / 野生生物 / 土耳其的野生動物",
-      "location": "nodes/Q6085434.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q6085434",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "圣多美普林西比动植物",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q8001438",
-      "updated_at": "2026-05-21T02:35:58Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命 / 野生生物 / 圣多美普林西比动植物",
-      "location": "nodes/Q8001438.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q8001438",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
-    },
-    {
-      "title": "尚比亞野生動物",
-      "children_status": "error",
-      "quality_score": 61,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "leaf"
-      ],
-      "id": "Q8001447",
-      "updated_at": "2026-05-21T02:35:59Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命 / 野生生物 / 尚比亞野生動物",
-      "location": "nodes/Q8001447.json",
-      "priority": 69.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q8001447",
+      "review_key": "id:Q185674",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -420,6 +278,52 @@
       "primary_reason_label": "加载错误"
     },
     {
+      "title": "小行星11157",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q4540906",
+      "updated_at": "2026-05-22T02:37:47Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星11157",
+      "location": "nodes/Q4540906.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q4540906",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "小行星211",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q147632",
+      "updated_at": "2026-05-22T02:37:42Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星211",
+      "location": "nodes/Q147632.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q147632",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
       "title": "小行星29361",
       "children_status": "error",
       "quality_score": 63,
@@ -432,7 +336,7 @@
         "fetch_error"
       ],
       "id": "Q3598680",
-      "updated_at": "2026-05-21T02:35:54Z",
+      "updated_at": "2026-05-22T02:37:46Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星29361",
       "location": "nodes/Q3598680.json",
@@ -455,7 +359,7 @@
         "fetch_error"
       ],
       "id": "Q15182290",
-      "updated_at": "2026-05-21T02:35:52Z",
+      "updated_at": "2026-05-22T02:37:44Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 小行星66685",
       "location": "nodes/Q15182290.json",
@@ -478,7 +382,7 @@
         "fetch_error"
       ],
       "id": "Q213466",
-      "updated_at": "2026-05-21T02:35:53Z",
+      "updated_at": "2026-05-22T02:37:45Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 主小行星帶 / 长女星",
       "location": "nodes/Q213466.json",
@@ -501,13 +405,36 @@
         "fetch_error"
       ],
       "id": "Q505781",
-      "updated_at": "2026-05-21T02:35:50Z",
+      "updated_at": "2026-05-22T02:37:40Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 原行星盤",
       "location": "nodes/Q505781.json",
       "priority": 67.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q505781",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "岩屑盤",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q1326555",
+      "updated_at": "2026-05-22T02:37:53Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 岩屑盤",
+      "location": "nodes/Q1326555.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q1326555",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -524,7 +451,7 @@
         "fetch_error"
       ],
       "id": "Q427",
-      "updated_at": "2026-05-21T02:35:49Z",
+      "updated_at": "2026-05-22T02:37:39Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 柯伊伯带",
       "location": "nodes/Q427.json",
@@ -547,7 +474,7 @@
         "fetch_error"
       ],
       "id": "Q6232",
-      "updated_at": "2026-05-21T02:35:51Z",
+      "updated_at": "2026-05-22T02:37:41Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 金牛T星",
       "location": "nodes/Q6232.json",
@@ -570,7 +497,7 @@
         "fetch_error"
       ],
       "id": "Q180380",
-      "updated_at": "2026-05-21T02:35:48Z",
+      "updated_at": "2026-05-22T02:37:38Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 吸积盘 / 星周盤 / 離散盤",
       "location": "nodes/Q180380.json",
@@ -600,6 +527,29 @@
       "priority": 67.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q12969754",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "超大質量黑洞",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q40392",
+      "updated_at": "2026-05-22T02:37:49Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / 类星体 / 超大質量黑洞",
+      "location": "nodes/Q40392.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q40392",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -662,7 +612,7 @@
         "fetch_error"
       ],
       "id": "Q1133705",
-      "updated_at": "2026-05-20T06:19:30Z",
+      "updated_at": "2026-05-22T02:37:55Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 大尺度纖維狀結構",
       "location": "nodes/Q1133705.json",
@@ -708,7 +658,7 @@
         "fetch_error"
       ],
       "id": "Q133327",
-      "updated_at": "2026-05-20T06:19:32Z",
+      "updated_at": "2026-05-22T02:37:58Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 时空",
       "location": "nodes/Q133327.json",
@@ -823,7 +773,7 @@
         "fetch_error"
       ],
       "id": "Q11379",
-      "updated_at": "2026-05-20T06:19:31Z",
+      "updated_at": "2026-05-22T02:37:57Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 宇宙 / 能量",
       "location": "nodes/Q11379.json",
@@ -915,7 +865,7 @@
         "fetch_error"
       ],
       "id": "Q1349305",
-      "updated_at": "2026-05-20T08:06:19Z",
+      "updated_at": "2026-05-22T02:37:59Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命 / 地球人",
       "location": "nodes/Q1349305.json",
@@ -991,6 +941,29 @@
       "priority": 67.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q136546064",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "白火星人",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q1759661",
+      "updated_at": "2026-05-21T02:36:00Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 外星生命 / 火星人 / 白火星人",
+      "location": "nodes/Q1759661.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q1759661",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -1076,7 +1049,7 @@
         "fetch_error"
       ],
       "id": "Q105721447",
-      "updated_at": "2026-05-20T08:06:18Z",
+      "updated_at": "2026-05-22T02:37:54Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命 / 池生动物",
       "location": "nodes/Q105721447.json",
@@ -1110,6 +1083,29 @@
       "primary_reason_label": "加载错误"
     },
     {
+      "title": "中国野生动物",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q8001373",
+      "updated_at": "2026-05-21T02:35:57Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 野生生物 / 中国野生动物",
+      "location": "nodes/Q8001373.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q8001373",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
       "title": "也门野生生物",
       "children_status": "error",
       "quality_score": 63,
@@ -1129,6 +1125,75 @@
       "priority": 67.0,
       "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
       "review_key": "id:Q22083589",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "土耳其的野生動物",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q6085434",
+      "updated_at": "2026-05-21T02:35:56Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 野生生物 / 土耳其的野生動物",
+      "location": "nodes/Q6085434.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q6085434",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "圣多美普林西比动植物",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q8001438",
+      "updated_at": "2026-05-21T02:35:58Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 野生生物 / 圣多美普林西比动植物",
+      "location": "nodes/Q8001438.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q8001438",
+      "primary_reason": "error",
+      "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "尚比亞野生動物",
+      "children_status": "error",
+      "quality_score": 63,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "missing_relation",
+        "fetch_error"
+      ],
+      "id": "Q8001447",
+      "updated_at": "2026-05-21T02:35:59Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+      "path": "万物 / 生命 / 野生生物 / 尚比亞野生動物",
+      "location": "nodes/Q8001447.json",
+      "priority": 67.0,
+      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
+      "review_key": "id:Q8001447",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
     },
@@ -2298,7 +2363,7 @@
         "has_children"
       ],
       "id": "Q181508",
-      "updated_at": "2026-05-20T06:19:28Z",
+      "updated_at": "2026-05-22T02:37:51Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命 / 外星生命",
       "location": "nodes/Q181508.json",
@@ -2322,7 +2387,7 @@
         "has_children"
       ],
       "id": "Q241741",
-      "updated_at": "2026-05-20T06:19:29Z",
+      "updated_at": "2026-05-22T02:37:52Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命 / 野生生物",
       "location": "nodes/Q241741.json",
@@ -2395,7 +2460,7 @@
         "has_children"
       ],
       "id": "Q3",
-      "updated_at": "2026-05-21T02:36:04Z",
+      "updated_at": "2026-05-22T02:37:48Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
       "path": "万物 / 生命",
       "location": "nodes/Q3.json",

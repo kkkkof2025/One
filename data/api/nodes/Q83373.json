@@ -34,12 +34,15 @@
       {
         "title": "超大質量黑洞",
         "data_source": "nodes/Q40392.json",
-        "children_status": "pending",
+        "children_status": "error",
         "is_leaf": false,
         "id": "Q40392",
-        "quality_score": 75,
+        "quality_score": 63,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-22T02:37:49Z",
+        "last_checked_at": "2026-05-22T02:37:49Z",
+        "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       }
     ],
     "updated_at": "2026-05-08T02:14:53Z",
