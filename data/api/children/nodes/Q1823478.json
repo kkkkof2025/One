@@ -36,35 +36,65 @@
       "is_leaf": false,
       "quality_score": 93,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T07:53:49Z",
+      "last_checked_at": "2026-05-23T07:53:49Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-05-23T07:53:49Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:53:49Z"
+      }
     },
     {
       "title": "寄生",
-      "children_count": 0,
+      "children_count": 2,
       "id": "Q186517",
       "data_source": "nodes/Q186517.json",
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q186517",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T07:53:44Z",
+      "last_checked_at": "2026-05-23T07:53:44Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:53:44Z"
+      }
     },
     {
       "title": "共生",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q121610",
       "data_source": "nodes/Q121610.json",
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q121610",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T07:53:34Z",
+      "last_checked_at": "2026-05-23T07:53:34Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:53:34Z"
+      }
     },
     {
       "title": "捕食",
@@ -78,7 +108,19 @@
       "is_leaf": false,
       "quality_score": 93,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T07:53:39Z",
+      "last_checked_at": "2026-05-23T07:53:39Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-05-23T07:53:39Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:53:39Z"
+      }
     },
     {
       "title": "物种间相互作用",
@@ -92,7 +134,19 @@
       "is_leaf": false,
       "quality_score": 93,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T07:53:29Z",
+      "last_checked_at": "2026-05-23T07:53:29Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-05-23T07:53:29Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:53:29Z"
+      }
     },
     {
       "title": "biological process involved in intraspecies interaction between organisms",

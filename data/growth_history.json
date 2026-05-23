@@ -261,5 +261,22 @@
     },
     "max_sources_per_node": 1,
     "stop_reason": ""
+  },
+  {
+    "run_at": "2026-05-23T07:53:50Z",
+    "added_nodes": 3,
+    "total_nodes": 208,
+    "requests": 5,
+    "scanned_nodes": 211,
+    "candidate_nodes": 202,
+    "unchanged_requests": 3,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "wikidata_api": 5
+    },
+    "max_sources_per_node": 1,
+    "stop_reason": ""
   }
 ]
