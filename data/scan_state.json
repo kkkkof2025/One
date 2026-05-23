@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-05-23T02:05:22Z",
+  "updated_at": "2026-05-23T02:14:23Z",
   "fetch_strategy_version": 4,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q15241043",
-  "last_scan_title": "武仙－北冕座長城",
-  "candidate_count": 187,
+  "last_scan_key": "id:Q3094136",
+  "last_scan_title": "巨型超大类星体群",
+  "candidate_count": 189,
   "selected_count": 3,
   "request_count": 5,
   "max_requests": 5,
@@ -17,13 +17,12 @@
   ],
   "available_sources": [
     "wikidata_api",
-    "wikipedia",
-    "conceptnet"
+    "wikipedia"
   ],
   "source_request_counts": {
-    "wikidata": 1,
     "wikidata_api": 3,
-    "wikipedia": 1
+    "wikipedia": 1,
+    "conceptnet": 1
   },
   "source_cooldowns": {
     "wikidata": {
@@ -33,6 +32,14 @@
       "retry_after_seconds": 1000,
       "cooldown_until": "2026-05-23T02:21:52Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-05-23T02:14:13Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-05-23T02:24:13Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "last_stop_reason": "request_budget_exhausted"

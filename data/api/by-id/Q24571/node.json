@@ -24,8 +24,8 @@
         ]
       }
     ],
-    "fetch_strategy_version": 2,
-    "updated_at": "2026-05-07T00:54:20Z",
+    "fetch_strategy_version": 4,
+    "updated_at": "2026-05-23T02:14:18Z",
     "is_leaf": false,
     "quality_score": 83,
     "quality_reasons": [
@@ -37,6 +37,11 @@
       "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "last_checked_at": "2026-05-23T02:14:18Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ]
   }
 }
