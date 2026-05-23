@@ -36,6 +36,7 @@ class GrowJsonTests(unittest.TestCase):
             "DUPLICATE_ID_COUNTS": grow_json.DUPLICATE_ID_COUNTS,
             "ALLOWED_DUPLICATE_IDS": grow_json.ALLOWED_DUPLICATE_IDS,
             "MAX_REQUESTS": grow_json.MAX_REQUESTS,
+            "MAX_SOURCES_PER_NODE": grow_json.MAX_SOURCES_PER_NODE,
             "REQUEST_DELAY": grow_json.REQUEST_DELAY,
             "WIKIDATA_REQUEST_DELAY": grow_json.WIKIDATA_REQUEST_DELAY,
             "SOURCE_ORDER": grow_json.SOURCE_ORDER,
@@ -63,6 +64,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.DUPLICATE_ID_COUNTS = {}
         grow_json.ALLOWED_DUPLICATE_IDS = set()
         grow_json.MAX_REQUESTS = 0
+        grow_json.MAX_SOURCES_PER_NODE = 1
         grow_json.REQUEST_DELAY = 0
         grow_json.WIKIDATA_REQUEST_DELAY = 0
         grow_json.SOURCE_ORDER = ["wikidata"]
@@ -525,6 +527,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.fetch_wikipedia_children = wikipedia_children
         grow_json.SOURCE_ORDER = ["wikidata", "wikipedia"]
         grow_json.MAX_REQUESTS = 2
+        grow_json.MAX_SOURCES_PER_NODE = 0
 
         changed = grow_json.process_fetch_candidate(
             {
@@ -564,6 +567,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.fetch_conceptnet_children = conceptnet_transient
         grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
         grow_json.MAX_REQUESTS = 2
+        grow_json.MAX_SOURCES_PER_NODE = 0
 
         grow_json.process_fetch_candidate(
             {
@@ -599,6 +603,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.fetch_conceptnet_children = empty_children
         grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
         grow_json.MAX_REQUESTS = 2
+        grow_json.MAX_SOURCES_PER_NODE = 0
 
         grow_json.process_fetch_candidate(
             {
@@ -660,6 +665,90 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(grow_json.request_count, 1)
         self.assertEqual(node["last_fetch_source"], "conceptnet")
         self.assertEqual(node["children"][0]["title"], "子节点")
+
+    def test_max_sources_per_node_checks_one_source_then_moves_on(self):
+        node = {
+            "id": "Q14",
+            "title": "小预算节点",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def empty_children(_node, _blocked_ids=None):
+            return []
+
+        grow_json.fetch_wikipedia_children = empty_children
+        grow_json.fetch_conceptnet_children = empty_children
+        grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
+        grow_json.MAX_REQUESTS = 2
+        grow_json.MAX_SOURCES_PER_NODE = 1
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q14.json",
+                "scan_key": "id:Q14",
+                "title": "小预算节点",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(grow_json.request_count, 1)
+        self.assertEqual(node["children_status"], "pending")
+        self.assertIn("wikipedia", node["source_no_children"])
+        self.assertIn("wikipedia", node["source_checked"])
+        self.assertNotIn("conceptnet", node.get("source_checked", {}))
+        self.assertTrue(grow_json.source_can_fetch("conceptnet", node))
+
+    def test_loaded_duplicate_source_stays_candidate_for_other_sources(self):
+        node = {
+            "id": "Q15",
+            "title": "已有子节点",
+            "children_status": "loaded",
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,
+            "children": [
+                {
+                    "id": "Q16",
+                    "title": "已存在",
+                    "children_status": "pending",
+                }
+            ],
+        }
+
+        def duplicate_child(_node, _blocked_ids=None):
+            return [
+                {
+                    "id": "Q16",
+                    "title": "已存在",
+                    "children_status": "pending",
+                    "source_provider": "wikidata",
+                }
+            ]
+
+        grow_json.fetch_wikidata_children = duplicate_child
+        grow_json.SOURCE_ORDER = ["wikidata", "wikipedia"]
+        grow_json.MAX_REQUESTS = 1
+        grow_json.MAX_SOURCES_PER_NODE = 1
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q15.json",
+                "scan_key": "id:Q15",
+                "title": "已有子节点",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(grow_json.request_count, 1)
+        self.assertEqual(node["children_status"], "loaded")
+        self.assertIn("wikidata", node["source_checked"])
+        self.assertNotEqual(node.get("fetch_strategy_version"), grow_json.FETCH_STRATEGY_VERSION)
+        self.assertFalse(grow_json.source_can_fetch("wikidata", node))
+        self.assertTrue(grow_json.source_can_fetch("wikipedia", node))
+        self.assertTrue(grow_json.should_fetch(node))
 
     def test_legacy_wikidata_leaf_reopens_for_new_sources(self):
         node = {

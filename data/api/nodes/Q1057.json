@@ -47,13 +47,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T02:05:12Z",
-    "last_checked_at": "2026-05-23T02:05:12Z",
+    "updated_at": "2026-05-23T07:05:44Z",
+    "last_checked_at": "2026-05-23T07:05:44Z",
     "last_fetch_source": "wikidata_api",
     "last_fetch_sources": [
       "wikidata_api"
     ],
     "fetch_strategy_version": 4,
-    "is_leaf": false
+    "is_leaf": false,
+    "source_checked": {
+      "wikidata_api": "2026-05-23T07:05:44Z"
+    }
   }
 }

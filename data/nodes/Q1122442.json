@@ -16,6 +16,9 @@
       "updated_at": "2026-05-07T00:56:48Z",
       "source_no_children": {
         "wikidata": "2026-05-07T00:56:48Z"
+      },
+      "source_checked": {
+        "wikidata": "2026-05-07T00:56:48Z"
       }
     },
     {
@@ -30,6 +33,9 @@
       "review_status": "approved",
       "updated_at": "2026-05-07T00:56:49Z",
       "source_no_children": {
+        "wikidata": "2026-05-07T00:56:49Z"
+      },
+      "source_checked": {
         "wikidata": "2026-05-07T00:56:49Z"
       }
     }

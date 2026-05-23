@@ -19,6 +19,9 @@
         "updated_at": "2026-05-07T02:51:36Z",
         "source_no_children": {
           "wikidata": "2026-05-07T02:51:36Z"
+        },
+        "source_checked": {
+          "wikidata": "2026-05-07T02:51:36Z"
         }
       },
       {
@@ -33,6 +36,9 @@
         "review_status": "approved",
         "updated_at": "2026-05-07T03:03:31Z",
         "source_no_children": {
+          "wikidata": "2026-05-07T03:03:31Z"
+        },
+        "source_checked": {
           "wikidata": "2026-05-07T03:03:31Z"
         }
       },
@@ -49,6 +55,9 @@
         "updated_at": "2026-05-07T03:03:32Z",
         "source_no_children": {
           "wikidata": "2026-05-07T03:03:32Z"
+        },
+        "source_checked": {
+          "wikidata": "2026-05-07T03:03:32Z"
         }
       },
       {
@@ -63,6 +72,9 @@
         "review_status": "approved",
         "updated_at": "2026-05-07T03:03:34Z",
         "source_no_children": {
+          "wikidata": "2026-05-07T03:03:34Z"
+        },
+        "source_checked": {
           "wikidata": "2026-05-07T03:03:34Z"
         }
       }

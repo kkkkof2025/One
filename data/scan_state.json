@@ -1,40 +1,30 @@
 {
-  "updated_at": "2026-05-23T03:55:12Z",
-  "fetch_strategy_version": 4,
+  "updated_at": "2026-05-23T07:05:55Z",
+  "fetch_strategy_version": 5,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q82522",
-  "last_scan_title": "后髮座超星系團",
-  "candidate_count": 188,
-  "selected_count": 3,
+  "last_scan_key": "id:Q1823478",
+  "last_scan_title": "生物间相互作用",
+  "candidate_count": 197,
+  "selected_count": 5,
   "request_count": 5,
   "max_requests": 5,
+  "max_sources_per_node": 1,
   "exhausted": false,
   "source_order": [
-    "wikidata",
     "wikidata_api",
     "wikipedia",
+    "wikidata",
     "conceptnet"
   ],
   "available_sources": [
-    "wikidata",
     "wikidata_api",
-    "wikipedia"
+    "wikipedia",
+    "wikidata",
+    "conceptnet"
   ],
   "source_request_counts": {
-    "wikidata_api": 1,
-    "wikipedia": 1,
-    "conceptnet": 1,
-    "wikidata": 2
+    "wikidata_api": 5
   },
-  "source_cooldowns": {
-    "conceptnet": {
-      "source": "conceptnet",
-      "reason": "transient_error",
-      "occurred_at": "2026-05-23T03:54:06Z",
-      "retry_after_seconds": 600,
-      "cooldown_until": "2026-05-23T04:04:06Z",
-      "last_error": "HTTP Error 502: Bad Gateway"
-    }
-  },
+  "source_cooldowns": {},
   "last_stop_reason": ""
 }

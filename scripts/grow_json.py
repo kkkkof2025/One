@@ -4,6 +4,7 @@ import re
 import math
 import shutil
 import time
+import tempfile
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -36,6 +37,7 @@ API_BY_ID_SUBDIR = "by-id"
 
 QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
 MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "5"))
+MAX_SOURCES_PER_NODE = int(os.environ.get("ONE_MAX_SOURCES_PER_NODE", "1"))
 REQUEST_DELAY = float(os.environ.get("ONE_REQUEST_DELAY", "5.0"))
 WIKIDATA_REQUEST_DELAY = float(os.environ.get("ONE_WIKIDATA_REQUEST_DELAY", "65.0"))
 HISTORY_LIMIT = int(os.environ.get("ONE_GROWTH_HISTORY_LIMIT", "365"))
@@ -58,7 +60,7 @@ DEFAULT_FOCUS_PRIORITY_BONUS = int(os.environ.get("ONE_FOCUS_PRIORITY_BONUS", "1
 SOURCE_ORDER = [
     source.strip().lower()
     for source in os.environ.get(
-        "ONE_SOURCE_ORDER", "wikidata,wikidata_api,wikipedia,conceptnet"
+        "ONE_SOURCE_ORDER", "wikidata_api,wikipedia,wikidata,conceptnet"
     ).split(",")
     if source.strip()
 ]
@@ -112,7 +114,7 @@ RELATION_PRIORITY = {
 QUALITY_SCORE_VERSION = 3
 QUALITY_REVIEW_THRESHOLD = int(os.environ.get("ONE_QUALITY_REVIEW_THRESHOLD", "45"))
 PRIORITY_SCAN_LIMIT = int(os.environ.get("ONE_PRIORITY_SCAN_LIMIT", "1000"))
-FETCH_STRATEGY_VERSION = 4
+FETCH_STRATEGY_VERSION = 5
 BROAD_TITLES = {
     "事物",
     "对象",
@@ -324,6 +326,37 @@ def source_no_children_sources(node: Dict[str, Any]) -> Set[str]:
     }
 
 
+def source_checked_map(node: Dict[str, Any]) -> Dict[str, Any]:
+    data = node.get("source_checked")
+    return data if isinstance(data, dict) else {}
+
+
+def source_checked_sources(node: Dict[str, Any]) -> Set[str]:
+    return {
+        str(source).strip().lower()
+        for source in source_checked_map(node)
+        if str(source).strip()
+    }
+
+
+def source_done_sources(node: Dict[str, Any]) -> Set[str]:
+    return source_checked_sources(node).union(source_no_children_sources(node))
+
+
+def mark_source_checked(
+    node: Dict[str, Any], sources: List[str], checked_at: str
+) -> None:
+    if not sources:
+        return
+    data = dict(source_checked_map(node))
+    for source in sources:
+        clean_source = str(source).strip().lower()
+        if clean_source:
+            data[clean_source] = checked_at
+    if data:
+        node["source_checked"] = data
+
+
 def mark_source_no_children(
     node: Dict[str, Any], sources: List[str], checked_at: str
 ) -> None:
@@ -340,6 +373,10 @@ def mark_source_no_children(
 
 def clear_source_no_children(node: Dict[str, Any]) -> None:
     node.pop("source_no_children", None)
+
+
+def clear_source_checked(node: Dict[str, Any]) -> None:
+    node.pop("source_checked", None)
 
 
 def source_supported_for_node(source: str, node: Dict[str, Any]) -> bool:
@@ -365,8 +402,8 @@ def all_sources_exhausted(node: Dict[str, Any]) -> bool:
     supported_sources = supported_sources_for_node(node)
     if not supported_sources:
         return False
-    no_children = source_no_children_sources(node)
-    return all(source in no_children for source in supported_sources)
+    done_sources = source_done_sources(node)
+    return all(source in done_sources for source in supported_sources)
 
 
 def legacy_no_children_sources(node: Dict[str, Any]) -> List[str]:
@@ -428,8 +465,39 @@ def normalize_source_no_children(node: Dict[str, Any]) -> bool:
     return changed
 
 
+def normalize_source_checked(node: Dict[str, Any]) -> bool:
+    checked_at = (
+        node.get("last_checked_at")
+        or node.get("updated_at")
+        or node.get("ended_at")
+        or now_utc()
+    )
+    data: Dict[str, Any] = {}
+    changed = False
+    for source, value in source_checked_map(node).items():
+        clean_source = str(source).strip().lower()
+        if not clean_source or clean_source not in KNOWN_SOURCES:
+            changed = True
+            continue
+        data[clean_source] = value if isinstance(value, str) and value.strip() else checked_at
+
+    for source, value in source_no_children_map(node).items():
+        clean_source = str(source).strip().lower()
+        if clean_source and clean_source in KNOWN_SOURCES and clean_source not in data:
+            data[clean_source] = value if isinstance(value, str) and value.strip() else checked_at
+            changed = True
+
+    if data:
+        if node.get("source_checked") != data:
+            node["source_checked"] = data
+            changed = True
+    elif node.pop("source_checked", None) is not None:
+        changed = True
+    return changed
+
+
 def source_can_fetch(source: str, node: Dict[str, Any]) -> bool:
-    if source in source_no_children_sources(node):
+    if source in source_done_sources(node):
         return False
     return source_supported_for_node(source, node)
 
@@ -461,9 +529,27 @@ def load_json_array(path: Path) -> List[Any]:
 
 def save_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+    tmp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            "w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix="tmp-",
+            suffix=".json",
+            delete=False,
+        ) as f:
+            tmp_path = Path(f.name)
+            json.dump(data, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        os.replace(tmp_path, path)
+    except Exception:
+        if tmp_path is not None and tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except OSError:
+                pass
+        raise
 
 
 def is_qid(value: Any) -> bool:
@@ -821,6 +907,7 @@ def save_scan_state(
         "selected_count": selected_count,
         "request_count": request_count,
         "max_requests": MAX_REQUESTS,
+        "max_sources_per_node": MAX_SOURCES_PER_NODE,
         "exhausted": exhausted,
         "source_order": source_order(),
         "available_sources": available_sources(previous),
@@ -932,6 +1019,7 @@ def compact_node_summary(node: Dict[str, Any]) -> Dict[str, Any]:
         "last_fetch_sources",
         "last_source_errors",
         "source_no_children",
+        "source_checked",
     ):
         if node.get(field) is not None:
             summary[field] = node[field]
@@ -1122,6 +1210,7 @@ def normalize_node(node: Dict[str, Any]) -> bool:
         changed = True
 
     changed = normalize_source_no_children(node) or changed
+    changed = normalize_source_checked(node) or changed
 
     review_status = node.get("review_status")
     if review_status is not None and review_status not in VALID_REVIEW_STATUSES:
@@ -1159,6 +1248,7 @@ def pointer_from_node(node: Dict[str, Any], path: Path) -> Dict[str, Any]:
         "last_fetch_sources",
         "last_source_errors",
         "source_no_children",
+        "source_checked",
     ):
         if node.get(field) is not None:
             pointer[field] = node[field]
@@ -1568,7 +1658,7 @@ def fetch_children_from_sources(
         remaining_sources = [
             source
             for source in supported_sources
-            if source not in source_no_children_sources(node)
+            if source not in source_done_sources(node)
         ]
         if not remaining_sources:
             return {
@@ -1581,6 +1671,9 @@ def fetch_children_from_sources(
         if all(source_in_cooldown(source, scan_state) for source in remaining_sources):
             raise GrowthRunPaused("node_sources_in_cooldown")
         raise GrowthRunPaused("no_available_source")
+
+    if MAX_SOURCES_PER_NODE > 0:
+        candidates = candidates[:MAX_SOURCES_PER_NODE]
 
     successful_sources: List[str] = []
     source_errors: Dict[str, str] = {}
@@ -1615,17 +1708,19 @@ def fetch_children_from_sources(
 
         successful_sources.append(source)
         if children:
+            done_sources = source_done_sources(node).union(successful_sources)
+            complete = all(source in done_sources for source in supported_sources)
             return {
                 "children": children,
                 "source": source,
                 "checked_sources": successful_sources,
                 "source_errors": source_errors,
-                "complete": True,
+                "complete": complete,
             }
         print(f"  {source} 未发现子节点")
 
     if successful_sources:
-        exhausted_sources = source_no_children_sources(node).union(successful_sources)
+        exhausted_sources = source_done_sources(node).union(successful_sources)
         complete = (
             not source_errors
             and not saw_rate_limit
@@ -1943,18 +2038,26 @@ def process_fetch_candidate(
             node["last_source_errors"] = source_errors
         else:
             node.pop("last_source_errors", None)
+        if checked_sources:
+            mark_source_checked(node, checked_sources, node["last_checked_at"])
+        if checked_sources and not fetched_children:
+            mark_source_no_children(node, checked_sources, node["last_checked_at"])
+        complete = bool(outcome.get("complete")) or all_sources_exhausted(node)
         has_children = len(node["children"]) > 0
         if fetched_children or has_children:
             node["children_status"] = "loaded"
-            node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+            if complete:
+                node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+            elif int(node.get("fetch_strategy_version", 0) or 0) >= FETCH_STRATEGY_VERSION:
+                node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION - 1
             node["is_leaf"] = False
             clear_end_state(node)
         else:
-            mark_source_no_children(node, checked_sources, node["last_checked_at"])
-            complete = bool(outcome.get("complete"))
             node["children_status"] = "loaded" if complete else "pending"
             if complete:
                 node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+            elif int(node.get("fetch_strategy_version", 0) or 0) >= FETCH_STRATEGY_VERSION:
+                node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION - 1
             node["is_leaf"] = len(node["children"]) == 0 and complete
         mark_end_state(node)
         if node.get("end_reason"):
@@ -2069,18 +2172,26 @@ def process_node_data(
                 data["last_source_errors"] = source_errors
             else:
                 data.pop("last_source_errors", None)
+            if checked_sources:
+                mark_source_checked(data, checked_sources, data["last_checked_at"])
+            if checked_sources and not fetched_children:
+                mark_source_no_children(data, checked_sources, data["last_checked_at"])
+            complete = bool(outcome.get("complete")) or all_sources_exhausted(data)
             has_children = len(data["children"]) > 0
             if fetched_children or has_children:
                 data["children_status"] = "loaded"
-                data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                if complete:
+                    data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                elif int(data.get("fetch_strategy_version", 0) or 0) >= FETCH_STRATEGY_VERSION:
+                    data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION - 1
                 data["is_leaf"] = False
                 clear_end_state(data)
             else:
-                mark_source_no_children(data, checked_sources, data["last_checked_at"])
-                complete = bool(outcome.get("complete"))
                 data["children_status"] = "loaded" if complete else "pending"
                 if complete:
                     data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                elif int(data.get("fetch_strategy_version", 0) or 0) >= FETCH_STRATEGY_VERSION:
+                    data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION - 1
                 data["is_leaf"] = complete
             mark_end_state(data)
             if data.get("end_reason"):
@@ -2183,6 +2294,7 @@ def record_growth_history(
         "end_nodes_marked": end_nodes_marked_this_run,
         "end_node_count": end_node_count,
         "source_request_counts": source_request_counts,
+        "max_sources_per_node": MAX_SOURCES_PER_NODE,
         "stop_reason": run_stop_reason,
     }
     if append_history:
@@ -2206,6 +2318,7 @@ def record_growth_history(
             "last_failed_requests": failed_requests_this_run,
             "last_end_nodes_marked": end_nodes_marked_this_run,
             "last_source_request_counts": source_request_counts,
+            "max_sources_per_node": MAX_SOURCES_PER_NODE,
             "last_stop_reason": run_stop_reason,
             "end_node_count": end_node_count,
             "history_entries": len(history),

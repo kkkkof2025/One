@@ -1578,7 +1578,8 @@
         "last_fetch_source",
         "last_fetch_sources",
         "last_source_errors",
-        "source_no_children"
+        "source_no_children",
+        "source_checked"
       ].forEach((field) => {
         if (present(node[field])) summary[field] = node[field];
       });
@@ -1801,6 +1802,12 @@
       return Object.keys(data).filter(Boolean).sort().join(", ");
     }
 
+    function sourceCheckedText(node) {
+      const data = node?.source_checked;
+      if (!data || typeof data !== "object") return "";
+      return Object.keys(data).filter(Boolean).sort().join(", ");
+    }
+
     function renderNodeDetails() {
       const node = currentNode();
       nodeDetails.innerHTML = "";
@@ -1839,6 +1846,7 @@
         ["待审", node.review_status === "needs_review" ? "是" : ""],
         ["终止", node.is_leaf ? (node.end_reason || "是") : ""],
         ["已查空来源", sourceNoChildrenText(node)],
+        ["已检查来源", sourceCheckedText(node)],
         ["子节点", children.length]
       ];
 

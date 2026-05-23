@@ -22,12 +22,15 @@
       "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T01:06:59Z",
-      "last_checked_at": "2026-05-23T01:06:59Z",
+      "updated_at": "2026-05-23T07:05:41Z",
+      "last_checked_at": "2026-05-23T07:05:41Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
-      ]
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:05:41Z"
+      }
     },
     {
       "title": "生命",
@@ -39,12 +42,15 @@
       "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T01:07:07Z",
-      "last_checked_at": "2026-05-23T01:07:07Z",
+      "updated_at": "2026-05-23T07:05:43Z",
+      "last_checked_at": "2026-05-23T07:05:43Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
-      ]
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-23T07:05:43Z"
+      }
     }
   ],
   "child_count": 2

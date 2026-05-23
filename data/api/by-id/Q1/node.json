@@ -232,7 +232,7 @@
         "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       }
     ],
-    "updated_at": "2026-05-23T01:06:59Z",
+    "updated_at": "2026-05-23T07:05:41Z",
     "is_leaf": false,
     "fetch_strategy_version": 4,
     "quality_score": 99,
@@ -247,10 +247,13 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "last_checked_at": "2026-05-23T01:06:59Z",
+    "last_checked_at": "2026-05-23T07:05:41Z",
     "last_fetch_source": "wikidata_api",
     "last_fetch_sources": [
       "wikidata_api"
-    ]
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-05-23T07:05:41Z"
+    }
   }
 }

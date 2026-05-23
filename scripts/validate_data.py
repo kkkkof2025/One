@@ -38,6 +38,7 @@ ALLOWED_NODE_FIELDS = {
     "last_fetch_sources",
     "last_source_errors",
     "source_no_children",
+    "source_checked",
     "last_checked_at",
     "end_reason",
     "ended_at",
@@ -631,6 +632,20 @@ class DataValidator:
                         self.error(
                             location,
                             "`source_no_children` 的检查时间必须是非空字符串",
+                        )
+
+        source_checked = node.get("source_checked")
+        if source_checked is not None:
+            if not isinstance(source_checked, dict):
+                self.error(location, "`source_checked` 必须是 object")
+            else:
+                for source, checked_at in source_checked.items():
+                    if not isinstance(source, str) or not source.strip():
+                        self.error(location, "`source_checked` 的来源名必须是非空字符串")
+                    if not isinstance(checked_at, str) or not checked_at.strip():
+                        self.error(
+                            location,
+                            "`source_checked` 的检查时间必须是非空字符串",
                         )
 
         data_source = node.get("data_source")

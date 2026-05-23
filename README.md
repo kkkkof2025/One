@@ -18,18 +18,18 @@
 2. 安装 Python 依赖。
 3. 运行离线单元测试。
 4. 校验现有 JSON 数据。
-5. 定时或手动触发时运行 `python scripts/grow_json.py`，按 Wikidata Query Service、Wikidata API、维基百科分类和 ConceptNet 的顺序尝试增长。
+5. 定时或手动触发时运行 `python scripts/grow_json.py`，按 Wikidata API、维基百科分类、Wikidata Query Service 和 ConceptNet 的顺序尝试增长。
 6. 定时或手动触发时运行 `python scripts/generate_review_queue.py` 生成复核队列。
 7. 定时或手动触发时再次校验生成后的 JSON 数据。
 8. 定时或手动触发时如果 `data/` 有变化，自动提交到当前分支。
 9. 打包 `index.html` 和 `data/`。
 10. 部署到 GitHub Pages。
 
-推送触发只部署当前仓库里的 `index.html` 和 `data/`，不会请求外部来源，也不会提交派生数据，避免部署流程形成循环提交。也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求外部来源的次数，或用 `source_order` 临时跳过不可用来源。
+推送触发只部署当前仓库里的 `index.html` 和 `data/`，不会请求外部来源，也不会提交派生数据，避免部署流程形成循环提交。也可以在 GitHub Actions 页面手动触发，并通过 `max_requests` 控制单次最多请求外部来源的次数，通过 `max_sources_per_node` 控制单个节点本轮最多尝试几个来源，或用 `source_order` 临时跳过不可用来源。
 
-增长脚本不会只依赖单一“子类”关系。当前会按 Wikidata Query Service 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class）一起寻找可继续生长的子节点；如果 WDQS 被 429 限流，会记录来源冷却并继续尝试 Wikidata API 的直接 `P527` / `P2670` 声明、维基百科分类和 ConceptNet。旧策略误判为空叶子的节点会迁移为 `source_no_children.wikidata`，只跳过已查空来源，仍允许补充来源继续尝试。
+增长脚本不会只依赖单一“子类”关系。当前会先用 Wikidata API 读取直接 `P527` / `P2670` 声明，再尝试维基百科分类、Wikidata Query Service 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class），最后把 ConceptNet 作为补充来源；如果某个来源限流或 5xx，会记录来源冷却并让后续节点尝试其它来源。旧策略误判为空叶子的节点会迁移为 `source_no_children.wikidata`，只跳过已查空来源，仍允许补充来源继续尝试。
 
-增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。单个来源成功查询但没有子节点时，只会写入节点的 `source_no_children`；只有当前可用策略里的支持来源都查空后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
+增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。默认每个节点每轮只尝试 1 个来源，防止 5 次预算被同一个低产节点吃完；成功检查过的来源会写入 `source_checked`，没有返回子节点的来源还会写入 `source_no_children`。只有当前策略里的支持来源都检查完且没有子节点后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
 
 当 `fetch_strategy_version` 升级时，旧扫描游标会自动失效，下一轮会从新策略下的最高优先级候选重新开始，避免新策略仍被旧游标卡在低收益分支后面。
 
@@ -119,6 +119,7 @@ python scripts/curate_node.py list
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
 - `end_reason`: 终止原因。常见自动终止值包括 `wikidata_no_children`、`wikidata_api_no_children`、`wikipedia_no_children`、`conceptnet_no_children` 和 `sources_no_children`。
 - `source_no_children`: 已成功检查但没有返回子节点的来源映射，key 是来源名，value 是检查时间；这些来源后续会被跳过。
+- `source_checked`: 已成功检查过的来源映射，key 是来源名，value 是检查时间；即使该来源只返回了已有子节点，也会被记录，避免后续重复消耗请求预算。
 - `source_provider`: 节点来自哪个外部来源，例如 `wikidata`、`wikidata_api`、`wikipedia`、`conceptnet`。
 - `ended_at`: 节点被确认为终止节点的时间。
 - `source_relation`: 节点来自外部来源的哪类关系，例如 `subclass`、`instance`、`part_of`、`has_part`、`wikipedia_category`、`conceptnet_is_a`。
@@ -254,7 +255,8 @@ workflow 需要这些权限：
 - `ONE_WIKIPEDIA_API_ENDPOINT`: 维基百科 API。
 - `ONE_CONCEPTNET_API_ENDPOINT`: ConceptNet API。
 - `ONE_USER_AGENT`: 请求 User-Agent。
-- `ONE_SOURCE_ORDER`: 来源顺序，默认 `wikidata,wikidata_api,wikipedia,conceptnet`。
+- `ONE_SOURCE_ORDER`: 来源顺序，默认 `wikidata_api,wikipedia,wikidata,conceptnet`。
+- `ONE_MAX_SOURCES_PER_NODE`: 单次运行中同一个节点最多尝试几个来源，默认 `1`；设为 `0` 表示不限制，适合人工彻底排查单个节点。
 - `ONE_SOURCE_COOLDOWN_SECONDS`: 发生 429 或 5xx 临时错误后的默认冷却秒数，默认 `3600`。
 - `ONE_TRANSIENT_SOURCE_COOLDOWN_SECONDS`: 发生 5xx 或超时等临时错误后的冷却秒数，默认 `600`。
 - `ONE_IGNORE_SOURCE_COOLDOWN`: 设为 `1` / `true` / `yes` 时忽略并清空当前冷却状态，适合手动排查网络问题后刷新状态。
@@ -298,13 +300,13 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - 页面已展示 `data/review_queue.json` 的复核队列，并可点击队列项带入搜索、按状态/原因筛选、复制 `review_key`、查看已处理数量、最近处理时间和原因分布。
 - workflow 已在增长前运行离线测试和数据校验，并在增长后再次校验。
 - `scripts/grow_json.py` 已新增扫描游标、终止节点清单和 `data/api/` 静态接口镜像；页面会优先通过接口式路径读取节点、子节点和终止节点。
-- `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
+- `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_checked` 和 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
 
 ## To-do
 
 - 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count` 和 `exhausted`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
 
 ## 已知限制
 

@@ -110,12 +110,15 @@
         "quality_score": 100,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-23T02:05:17Z",
-        "last_checked_at": "2026-05-23T02:05:17Z",
+        "updated_at": "2026-05-23T07:05:45Z",
+        "last_checked_at": "2026-05-23T07:05:45Z",
         "last_fetch_source": "wikidata_api",
         "last_fetch_sources": [
           "wikidata_api"
-        ]
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-05-23T07:05:45Z"
+        }
       },
       {
         "title": "代謝",
@@ -130,15 +133,18 @@
         "quality_score": 100,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-23T02:05:12Z",
-        "last_checked_at": "2026-05-23T02:05:12Z",
+        "updated_at": "2026-05-23T07:05:44Z",
+        "last_checked_at": "2026-05-23T07:05:44Z",
         "last_fetch_source": "wikidata_api",
         "last_fetch_sources": [
           "wikidata_api"
-        ]
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-05-23T07:05:44Z"
+        }
       }
     ],
-    "updated_at": "2026-05-23T01:07:07Z",
+    "updated_at": "2026-05-23T07:05:43Z",
     "is_leaf": false,
     "quality_score": 99,
     "quality_reasons": [
@@ -152,11 +158,14 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "last_checked_at": "2026-05-23T01:07:07Z",
+    "last_checked_at": "2026-05-23T07:05:43Z",
     "last_fetch_source": "wikidata_api",
     "last_fetch_sources": [
       "wikidata_api"
     ],
-    "fetch_strategy_version": 4
+    "fetch_strategy_version": 4,
+    "source_checked": {
+      "wikidata_api": "2026-05-23T07:05:43Z"
+    }
   }
 }

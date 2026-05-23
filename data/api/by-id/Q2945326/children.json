@@ -48,6 +48,9 @@
       "updated_at": "2026-05-07T03:07:02Z",
       "source_no_children": {
         "wikidata": "2026-05-07T03:07:02Z"
+      },
+      "source_checked": {
+        "wikidata": "2026-05-07T03:07:02Z"
       }
     },
     {
@@ -63,6 +66,9 @@
       "updated_at": "2026-05-07T03:06:43Z",
       "source_no_children": {
         "wikidata": "2026-05-07T03:06:43Z"
+      },
+      "source_checked": {
+        "wikidata": "2026-05-07T03:06:43Z"
       }
     },
     {
@@ -77,6 +83,9 @@
       "review_status": "approved",
       "updated_at": "2026-05-07T03:07:03Z",
       "source_no_children": {
+        "wikidata": "2026-05-07T03:07:03Z"
+      },
+      "source_checked": {
         "wikidata": "2026-05-07T03:07:03Z"
       }
     }

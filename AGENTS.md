@@ -45,6 +45,8 @@
 - [x] 将抓取策略升级为按来源记录 `source_no_children`，避免单个补充来源查空就把节点永久封存。
 - [x] 新增 Wikidata API 直接声明补充来源，并把 502/503/504/超时纳入来源冷却。
 - [x] 请求失败后也会推进扫描游标，减少下一轮重复卡在同一批 error 分支。
+- [x] 新增 `source_checked` 和 `ONE_MAX_SOURCES_PER_NODE`，默认每轮每节点只尝试 1 个来源，避免小请求预算被单个低产节点耗尽。
+- [x] 默认来源顺序调整为 `wikidata_api,wikipedia,wikidata,conceptnet`，让轻量补充来源优先，WDQS 后置。
 
 ## Agent Rules
 
@@ -58,6 +60,6 @@
 
 - 定期复核 `data/validation_allowlist.json`，清理已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns` 和节点的 `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`max_sources_per_node` 和节点的 `source_checked` / `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
 
-_Last updated: 2026-05-22_
+_Last updated: 2026-05-23_

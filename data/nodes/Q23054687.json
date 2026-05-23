@@ -28,5 +28,10 @@
   ],
   "last_source_errors": {
     "conceptnet": "HTTP Error 502: Bad Gateway"
+  },
+  "source_checked": {
+    "wikidata": "2026-05-07T00:54:19Z",
+    "wikidata_api": "2026-05-23T02:14:13Z",
+    "wikipedia": "2026-05-23T02:14:13Z"
   }
 }

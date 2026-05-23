@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-05-23T03:55:12Z",
+  "generated_at": "2026-05-23T07:08:21Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 100,
+  "total_candidates": 101,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 100,
+  "total_items": 101,
   "reason_distribution": {
-    "total_items": 100,
+    "total_items": 101,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 49,
+        "count": 50,
         "sample_review_keys": [
           "id:Q8001388",
+          "id:Q22294683",
           "id:Q55621538",
           "id:Q118512328",
-          "id:Q14013",
-          "id:Q2759979"
+          "id:Q14013"
         ]
       },
       {
@@ -36,24 +36,26 @@
       {
         "key": "low_quality",
         "label": "低质量分",
-        "count": 1,
+        "count": 2,
         "sample_review_keys": [
-          "id:Q8001388"
+          "id:Q8001388",
+          "id:Q22294683"
         ]
       },
       {
         "key": "needs_review",
         "label": "待人工复核",
-        "count": 1,
+        "count": 2,
         "sample_review_keys": [
-          "id:Q8001388"
+          "id:Q8001388",
+          "id:Q22294683"
         ]
       }
     ],
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 100
+        "count": 101
       },
       {
         "reason": "good_title_length",
@@ -73,7 +75,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 49
+        "count": 50
       },
       {
         "reason": "has_children",
@@ -89,6 +91,10 @@
       },
       {
         "reason": "relation:has_part",
+        "count": 2
+      },
+      {
+        "reason": "long_title",
         "count": 1
       },
       {
@@ -105,7 +111,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 46
+        "count": 47
       },
       {
         "status": "loaded",
@@ -137,6 +143,29 @@
       "review_key": "id:Q8001388",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "biological process involved in intraspecies interaction between organisms",
+      "children_status": "pending",
+      "quality_score": 41,
+      "review_status": "needs_review",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "long_title",
+        "relation:has_part"
+      ],
+      "id": "Q22294683",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22294683",
+      "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / biological process involved in intraspecies interaction between organisms",
+      "location": "nodes/Q22294683.json",
+      "priority": 99.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q22294683",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
     },
     {
       "title": "场",

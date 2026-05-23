@@ -70,7 +70,14 @@
 - 节点新增 `source_no_children` 映射，记录每个已成功查空来源的检查时间；后续扫描会跳过这些来源，但只有所有支持来源都查空时才写入全局终止状态和 `data/end_nodes.json`。
 - 旧的 `wikidata_no_children` 叶子会迁移成 `source_no_children.wikidata`，如果新策略下还有 Wikipedia、ConceptNet 或 Wikidata API 可尝试，会重新变为 `pending`，不会继续被当成最终终止节点。
 - 429、502、503、504 和超时会写入 `source_cooldowns`；临时来源错误默认只冷却 600 秒，429 默认冷却 3600 秒。节点即使请求失败也会在消耗请求后推进扫描游标，避免下一轮总是卡在同一个分支；手动排查时可用 `ONE_IGNORE_SOURCE_COOLDOWN=1` 清空当前冷却。
-- 页面节点详情和 AI 上下文导出会展示 `source_no_children`，静态 API 摘要也保留该字段。
+- 页面节点详情和 AI 上下文导出会展示 `source_no_children`，静态 API 摘要也保留该字段；v5 起页面也展示 `source_checked`。
+
+## Decisions Made On 2026-05-23
+
+- 线上增长到 `total_nodes=199` 后，连续两次 `max_requests=5` 出现 0 增长；日志显示小预算被同一个低产节点的多个来源和已有子节点的重复结果消耗。
+- `scripts/grow_json.py` 的抓取策略版本升级到 `5`，默认来源顺序改为 `wikidata_api,wikipedia,wikidata,conceptnet`，优先使用较轻的 API 和分类补充，降低 WDQS 的等待和限流影响。
+- 新增 `ONE_MAX_SOURCES_PER_NODE`，默认 `1`；每轮同一个节点最多尝试 1 个来源，避免 5 次请求预算被一个节点吃完。设为 `0` 可恢复“不限制”，适合人工彻底排查单个节点。
+- 节点新增 `source_checked` 映射，记录已经成功检查过的来源；如果某个来源只返回已有子节点，也会被跳过，不再把整个节点提前标成当前策略完成，后续仍可尝试其它来源。
 
 ## Data Schema Memory
 
@@ -88,6 +95,7 @@
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
 - `end_reason`: 终止原因；当前自动终止值可能是 `wikidata_no_children`、`wikidata_api_no_children`、`wikipedia_no_children`、`conceptnet_no_children` 或 `sources_no_children`。
 - `source_no_children`: 已成功检查但没有返回子节点的来源映射；这些来源后续会被跳过，但不代表节点已经全局终止。
+- `source_checked`: 已成功检查过的来源映射；这些来源后续会被跳过，避免重复消耗请求预算。
 - `ended_at`: 节点被确认为终止节点的时间。
 - `source_relation`: 节点来自 Wikidata 的关系类型。
 - `quality_score`: 自动质量评分，范围 `0` 到 `100`。
@@ -103,16 +111,16 @@
 - GitHub Actions cron 的 `0 0 * * *` 是 UTC 每天 00:00，也就是北京时间每天 08:00。
 - 部署使用 GitHub Pages 官方 artifact 流程，仓库 Pages 设置需要选择 `GitHub Actions` 作为来源。
 - workflow 的 `push` 触发只运行测试、数据校验和 Pages 部署，不运行增长和自动提交，避免 push 部署形成循环提交；定时和手动触发才会请求外部来源并提交生成数据。
-- 如果 Wikidata Query Service 返回 429，先确认是不是冷却期内重复请求，再降低 `ONE_MAX_REQUESTS`、增大 `ONE_WIKIDATA_REQUEST_DELAY`，或临时把 `ONE_SOURCE_ORDER` 改为 `wikidata_api,wikipedia,conceptnet` 只跑补充来源。
+- 如果 Wikidata Query Service 返回 429，先确认是不是冷却期内重复请求，再降低 `ONE_MAX_REQUESTS`、增大 `ONE_WIKIDATA_REQUEST_DELAY`，或保留默认 `ONE_SOURCE_ORDER=wikidata_api,wikipedia,wikidata,conceptnet` 让 WDQS 后置。
 - 如果 `树状图` 空白，先检查 jsDelivr 和 unpkg 的 ECharts CDN 是否可访问；页面其他视图不依赖这些 CDN。
 - 提交前优先运行 `python -m unittest discover -s tests` 和 `python scripts/validate_data.py`。
 - 数据增长后运行 `python scripts/generate_review_queue.py`，再运行 `python scripts/validate_data.py`。
 - 只刷新扫描状态、终止节点和静态 API 镜像时，可以运行 `ONE_MAX_REQUESTS=0 python scripts/grow_json.py`，不会请求外部来源。
-- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`、`source_cooldowns`，再看节点的 `source_no_children` 是否只剩少数来源可试，以及 `data/end_nodes.json` 是否持续增加。
+- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`、`source_cooldowns` 和 `max_sources_per_node`，再看节点的 `source_checked` / `source_no_children` 是否只剩少数来源可试，以及 `data/end_nodes.json` 是否持续增加。
 - 2026-05-20 排查线上停滞时确认：GitHub Pages 已部署到 2026-05-19 的 Auto-grow 结果，但从 2026-05-13 起 `added_nodes=0`；旧远端脚本没有扫描游标、终止节点清单和来源冷却，会反复请求同一批 `error` 节点并记录 WDQS 429。
 - 处理复核队列时先看页面或 `review_queue.json.reason_distribution` 的原因分布，再用页面显示的 `review_key` 调用 `python scripts/review_decision.py mark --key ... --status ... --reason "..."`；需要加入人工关注时加 `--sync-curation`，需要确认合法重复 QID 时加 `--sync-allowlist`。
 - 集中处理缺中文标签时，运行 `python scripts/generate_review_queue.py export --reason non_zh_label --format csv --output output/review_missing_zh.csv` 导出表格。
 - 如果校验报告出现新的重复 ID warning，先确认它是合法多路径还是数据问题；合法多路径可以写入 `data/validation_allowlist.json` 并补充原因。
 - 新的人工关注节点优先通过 `python scripts/curate_node.py focus --id Q... --reason "..."` 写入 `data/curation.json`；只有需要强制覆盖默认排序时才直接改节点的 `expansion_priority`。
 
-_Last updated: 2026-05-22_
+_Last updated: 2026-05-23_
