@@ -1,18 +1,55 @@
 {
   "id": "Q2996394",
   "title": "生物過程",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "生物间相互作用",
+      "data_source": "nodes/Q1823478.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1823478",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1823478",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "biological phase",
+      "data_source": "nodes/Q22299142.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q22299142",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22299142",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata_api",
   "source_relation": "has_part",
   "source_url": "https://www.wikidata.org/wiki/Q2996394",
-  "quality_score": 93,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:has_part"
+    "relation:has_part",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-05-23T02:05:17Z",
+  "last_checked_at": "2026-05-23T02:05:17Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ],
+  "fetch_strategy_version": 4,
+  "is_leaf": false
 }

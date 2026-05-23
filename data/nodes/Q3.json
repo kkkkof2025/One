@@ -97,28 +97,42 @@
     {
       "title": "生物過程",
       "data_source": "nodes/Q2996394.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q2996394",
+      "fetch_strategy_version": 4,
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q2996394",
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T02:05:17Z",
+      "last_checked_at": "2026-05-23T02:05:17Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ]
     },
     {
       "title": "代謝",
       "data_source": "nodes/Q1057.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q1057",
+      "fetch_strategy_version": 4,
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q1057",
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-05-23T02:05:12Z",
+      "last_checked_at": "2026-05-23T02:05:12Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ]
     }
   ],
   "updated_at": "2026-05-23T01:07:07Z",

@@ -1,25 +1,39 @@
 {
-  "updated_at": "2026-05-23T01:07:58Z",
+  "updated_at": "2026-05-23T02:05:22Z",
   "fetch_strategy_version": 4,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q17863945",
-  "last_scan_title": "拉尼亚凯亚超星系团",
-  "candidate_count": 191,
-  "selected_count": 6,
-  "request_count": 6,
-  "max_requests": 6,
+  "last_scan_key": "id:Q15241043",
+  "last_scan_title": "武仙－北冕座長城",
+  "candidate_count": 187,
+  "selected_count": 3,
+  "request_count": 5,
+  "max_requests": 5,
   "exhausted": false,
   "source_order": [
+    "wikidata",
     "wikidata_api",
-    "wikipedia"
+    "wikipedia",
+    "conceptnet"
   ],
   "available_sources": [
     "wikidata_api",
-    "wikipedia"
+    "wikipedia",
+    "conceptnet"
   ],
   "source_request_counts": {
-    "wikidata_api": 6
+    "wikidata": 1,
+    "wikidata_api": 3,
+    "wikipedia": 1
   },
-  "source_cooldowns": {},
-  "last_stop_reason": ""
+  "source_cooldowns": {
+    "wikidata": {
+      "source": "wikidata",
+      "reason": "rate_limited",
+      "occurred_at": "2026-05-23T02:05:12Z",
+      "retry_after_seconds": 1000,
+      "cooldown_until": "2026-05-23T02:21:52Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    }
+  },
+  "last_stop_reason": "request_budget_exhausted"
 }

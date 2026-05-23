@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-23T01:08:24Z",
+  "generated_at": "2026-05-23T02:05:22Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 99,
+  "total_candidates": 100,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 99,
+  "total_items": 100,
   "reason_distribution": {
-    "total_items": 99,
+    "total_items": 100,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 48,
+        "count": 49,
         "sample_review_keys": [
           "id:Q8001388",
           "id:Q55621538",
@@ -52,16 +52,16 @@
     ],
     "raw_reasons": [
       {
-        "reason": "missing_relation",
-        "count": 99
-      },
-      {
         "reason": "qid",
-        "count": 99
+        "count": 100
       },
       {
         "reason": "good_title_length",
-        "count": 98
+        "count": 99
+      },
+      {
+        "reason": "missing_relation",
+        "count": 99
       },
       {
         "reason": "fetch_error",
@@ -73,7 +73,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 48
+        "count": 49
       },
       {
         "reason": "has_children",
@@ -86,6 +86,10 @@
       {
         "reason": "loaded",
         "count": 2
+      },
+      {
+        "reason": "relation:has_part",
+        "count": 1
       },
       {
         "reason": "short_title",
@@ -101,7 +105,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 45
+        "count": 46
       },
       {
         "status": "loaded",
@@ -2349,6 +2353,29 @@
       "priority": 47.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q5116",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "biological phase",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q22299142",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22299142",
+      "path": "万物 / 生命 / 生物過程 / biological phase",
+      "location": "nodes/Q22299142.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q22299142",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     }

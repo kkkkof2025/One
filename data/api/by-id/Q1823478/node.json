@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q1823478.json",
+  "node": {
+    "id": "Q1823478",
+    "title": "生物间相互作用",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q1823478",
+    "quality_score": 93,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:has_part"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

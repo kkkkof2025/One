@@ -1,0 +1,18 @@
+{
+  "id": "Q21130714",
+  "title": "分解代谢过程",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata_api",
+  "source_relation": "has_part",
+  "source_url": "https://www.wikidata.org/wiki/Q21130714",
+  "quality_score": 93,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "relation:has_part"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}
