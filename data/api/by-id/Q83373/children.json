@@ -10,7 +10,12 @@
     "quality_score": 87,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-08T02:14:53Z"
+    "updated_at": "2026-05-23T03:54:36Z",
+    "last_checked_at": "2026-05-23T03:54:36Z",
+    "last_fetch_source": "wikidata",
+    "last_fetch_sources": [
+      "wikidata"
+    ]
   },
   "children": [
     {

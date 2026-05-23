@@ -28,7 +28,12 @@
       "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-08T02:14:21Z"
+      "updated_at": "2026-05-23T03:55:12Z",
+      "last_checked_at": "2026-05-23T03:55:12Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ]
     },
     {
       "title": "武仙座超星系团",
