@@ -42,6 +42,9 @@ HISTORY_LIMIT = int(os.environ.get("ONE_GROWTH_HISTORY_LIMIT", "365"))
 WIKIDATA_ENDPOINT = os.environ.get(
     "ONE_WIKIDATA_ENDPOINT", "https://query.wikidata.org/sparql"
 )
+WIKIDATA_API_ENDPOINT = os.environ.get(
+    "ONE_WIKIDATA_API_ENDPOINT", "https://www.wikidata.org/w/api.php"
+)
 WIKIPEDIA_API_ENDPOINT = os.environ.get(
     "ONE_WIKIPEDIA_API_ENDPOINT", "https://zh.wikipedia.org/w/api.php"
 )
@@ -54,11 +57,16 @@ USER_AGENT = os.environ.get(
 DEFAULT_FOCUS_PRIORITY_BONUS = int(os.environ.get("ONE_FOCUS_PRIORITY_BONUS", "18"))
 SOURCE_ORDER = [
     source.strip().lower()
-    for source in os.environ.get("ONE_SOURCE_ORDER", "wikidata,wikipedia,conceptnet").split(",")
+    for source in os.environ.get(
+        "ONE_SOURCE_ORDER", "wikidata,wikidata_api,wikipedia,conceptnet"
+    ).split(",")
     if source.strip()
 ]
-KNOWN_SOURCES = {"wikidata", "wikipedia", "conceptnet"}
+KNOWN_SOURCES = {"wikidata", "wikidata_api", "wikipedia", "conceptnet"}
 SOURCE_COOLDOWN_SECONDS = int(os.environ.get("ONE_SOURCE_COOLDOWN_SECONDS", "3600"))
+TRANSIENT_SOURCE_COOLDOWN_SECONDS = int(
+    os.environ.get("ONE_TRANSIENT_SOURCE_COOLDOWN_SECONDS", "600")
+)
 HTTP_TIMEOUT = float(os.environ.get("ONE_HTTP_TIMEOUT", "30"))
 IGNORE_SOURCE_COOLDOWN = os.environ.get("ONE_IGNORE_SOURCE_COOLDOWN", "").lower() in {
     "1",
@@ -104,7 +112,7 @@ RELATION_PRIORITY = {
 QUALITY_SCORE_VERSION = 3
 QUALITY_REVIEW_THRESHOLD = int(os.environ.get("ONE_QUALITY_REVIEW_THRESHOLD", "45"))
 PRIORITY_SCAN_LIMIT = int(os.environ.get("ONE_PRIORITY_SCAN_LIMIT", "1000"))
-FETCH_STRATEGY_VERSION = 2
+FETCH_STRATEGY_VERSION = 4
 BROAD_TITLES = {
     "事物",
     "对象",
@@ -228,8 +236,30 @@ def is_rate_limit_error(exc: Exception) -> bool:
     )
 
 
-def register_source_cooldown(source: str, exc: Exception) -> None:
-    retry_after = retry_after_seconds(exc) or SOURCE_COOLDOWN_SECONDS
+def is_transient_source_error(exc: Exception) -> bool:
+    code = getattr(exc, "code", None) or getattr(exc, "status", None)
+    message = str(exc).lower()
+    return (
+        code in {500, 502, 503, 504}
+        or "http error 500" in message
+        or "http error 502" in message
+        or "http error 503" in message
+        or "http error 504" in message
+        or "temporarily unavailable" in message
+        or "timed out" in message
+        or "timeout" in message
+    )
+
+
+def register_source_cooldown(
+    source: str, exc: Exception, reason: str = "rate_limited"
+) -> None:
+    fallback_seconds = (
+        TRANSIENT_SOURCE_COOLDOWN_SECONDS
+        if reason == "transient_error"
+        else SOURCE_COOLDOWN_SECONDS
+    )
+    retry_after = retry_after_seconds(exc) or fallback_seconds
     occurred_at = now_utc()
     cooldown_until = (
         datetime.now(timezone.utc).replace(microsecond=0)
@@ -237,6 +267,7 @@ def register_source_cooldown(source: str, exc: Exception) -> None:
     ).isoformat().replace("+00:00", "Z")
     source_cooldowns_this_run[source] = {
         "source": source,
+        "reason": reason,
         "occurred_at": occurred_at,
         "retry_after_seconds": retry_after,
         "cooldown_until": cooldown_until,
@@ -245,6 +276,8 @@ def register_source_cooldown(source: str, exc: Exception) -> None:
 
 
 def active_source_cooldowns(previous: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    if IGNORE_SOURCE_COOLDOWN:
+        return {}
     previous = previous or load_scan_state()
     cooldowns: Dict[str, Any] = {}
     now = datetime.now(timezone.utc)
@@ -278,13 +311,127 @@ def available_sources(scan_state: Optional[Dict[str, Any]] = None) -> List[str]:
     ]
 
 
-def source_can_fetch(source: str, node: Dict[str, Any]) -> bool:
+def source_no_children_map(node: Dict[str, Any]) -> Dict[str, Any]:
+    data = node.get("source_no_children")
+    return data if isinstance(data, dict) else {}
+
+
+def source_no_children_sources(node: Dict[str, Any]) -> Set[str]:
+    return {
+        str(source).strip().lower()
+        for source in source_no_children_map(node)
+        if str(source).strip()
+    }
+
+
+def mark_source_no_children(
+    node: Dict[str, Any], sources: List[str], checked_at: str
+) -> None:
+    if not sources:
+        return
+    data = dict(source_no_children_map(node))
+    for source in sources:
+        clean_source = str(source).strip().lower()
+        if clean_source:
+            data[clean_source] = checked_at
+    if data:
+        node["source_no_children"] = data
+
+
+def clear_source_no_children(node: Dict[str, Any]) -> None:
+    node.pop("source_no_children", None)
+
+
+def source_supported_for_node(source: str, node: Dict[str, Any]) -> bool:
     title = str(node.get("title", "")).strip()
     if source == "wikidata":
         return build_wikidata_query(node) is not None
+    if source == "wikidata_api":
+        return is_qid(node.get("id"))
     if source in {"wikipedia", "conceptnet"}:
         return bool(title)
     return False
+
+
+def supported_sources_for_node(node: Dict[str, Any]) -> List[str]:
+    return [
+        source
+        for source in source_order()
+        if source_supported_for_node(source, node)
+    ]
+
+
+def all_sources_exhausted(node: Dict[str, Any]) -> bool:
+    supported_sources = supported_sources_for_node(node)
+    if not supported_sources:
+        return False
+    no_children = source_no_children_sources(node)
+    return all(source in no_children for source in supported_sources)
+
+
+def legacy_no_children_sources(node: Dict[str, Any]) -> List[str]:
+    reason = str(node.get("end_reason", "") or "").strip()
+    if reason == "sources_no_children":
+        return supported_sources_for_node(node)
+    suffix = "_no_children"
+    if reason.endswith(suffix):
+        source = reason[: -len(suffix)].strip().lower()
+        if source in KNOWN_SOURCES and source_supported_for_node(source, node):
+            return [source]
+    return []
+
+
+def normalize_source_no_children(node: Dict[str, Any]) -> bool:
+    checked_at = (
+        node.get("ended_at")
+        or node.get("last_checked_at")
+        or node.get("updated_at")
+        or now_utc()
+    )
+    data: Dict[str, Any] = {}
+    changed = False
+    for source, value in source_no_children_map(node).items():
+        clean_source = str(source).strip().lower()
+        if not clean_source or clean_source not in KNOWN_SOURCES:
+            changed = True
+            continue
+        data[clean_source] = value if isinstance(value, str) and value.strip() else checked_at
+
+    if not data:
+        legacy_sources = legacy_no_children_sources(node)
+        if legacy_sources:
+            data = {source: checked_at for source in legacy_sources}
+            changed = True
+
+    if data:
+        if node.get("source_no_children") != data:
+            node["source_no_children"] = data
+            changed = True
+    elif node.pop("source_no_children", None) is not None:
+        changed = True
+
+    if (
+        data
+        and node.get("is_leaf") is True
+        and node.get("children_status") == "loaded"
+    ):
+        if all_sources_exhausted(node):
+            if int(node.get("fetch_strategy_version", 0) or 0) < FETCH_STRATEGY_VERSION:
+                node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                changed = True
+        else:
+            node["children_status"] = "pending"
+            node["is_leaf"] = False
+            clear_end_state(node)
+            changed = True
+
+    return changed
+
+
+def source_can_fetch(source: str, node: Dict[str, Any]) -> bool:
+    if source in source_no_children_sources(node):
+        return False
+    return source_supported_for_node(source, node)
 
 
 def can_fetch_from_any_source(node: Dict[str, Any]) -> bool:
@@ -637,6 +784,19 @@ def load_scan_state() -> Dict[str, Any]:
     return data if isinstance(data, dict) else {}
 
 
+def scan_state_strategy_version(scan_state: Dict[str, Any]) -> int:
+    try:
+        return int(scan_state.get("fetch_strategy_version", 0) or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def cursor_from_scan_state(scan_state: Dict[str, Any]) -> str:
+    if scan_state_strategy_version(scan_state) < FETCH_STRATEGY_VERSION:
+        return ""
+    return str(scan_state.get("last_scan_key", "") or "")
+
+
 def save_scan_state(
     *,
     last_scan_key: str,
@@ -646,12 +806,17 @@ def save_scan_state(
     exhausted: bool,
 ) -> None:
     previous = load_scan_state()
+    preserve_previous_cursor = (
+        scan_state_strategy_version(previous) >= FETCH_STRATEGY_VERSION
+    )
     state = {
         "updated_at": now_utc(),
         "fetch_strategy_version": FETCH_STRATEGY_VERSION,
         "scan_order": "priority-depth-first-cursor-v1",
-        "last_scan_key": last_scan_key or previous.get("last_scan_key", ""),
-        "last_scan_title": last_scan_title or previous.get("last_scan_title", ""),
+        "last_scan_key": last_scan_key
+        or (previous.get("last_scan_key", "") if preserve_previous_cursor else ""),
+        "last_scan_title": last_scan_title
+        or (previous.get("last_scan_title", "") if preserve_previous_cursor else ""),
         "candidate_count": candidate_count,
         "selected_count": selected_count,
         "request_count": request_count,
@@ -668,11 +833,11 @@ def save_scan_state(
 
 def current_strategy_leaf(node: Dict[str, Any]) -> bool:
     strategy_version = int(node.get("fetch_strategy_version", 0) or 0)
-    return (
-        node.get("is_leaf") is True
-        and node.get("children_status") == "loaded"
-        and strategy_version >= FETCH_STRATEGY_VERSION
-    )
+    if node.get("is_leaf") is not True or node.get("children_status") != "loaded":
+        return False
+    if source_no_children_map(node):
+        return all_sources_exhausted(node)
+    return strategy_version >= FETCH_STRATEGY_VERSION
 
 
 def clear_end_state(node: Dict[str, Any]) -> None:
@@ -682,17 +847,17 @@ def clear_end_state(node: Dict[str, Any]) -> None:
 
 def mark_end_state(node: Dict[str, Any]) -> None:
     if current_strategy_leaf(node):
-        sources = node.get("last_fetch_sources")
-        if isinstance(sources, list):
-            clean_sources = [str(source) for source in sources if str(source).strip()]
-        else:
-            clean_sources = []
-        if clean_sources == ["wikidata"] or not clean_sources:
+        no_children_sources = sorted(source_no_children_sources(node))
+        if all_sources_exhausted(node):
+            if len(no_children_sources) == 1:
+                node["end_reason"] = f"{no_children_sources[0]}_no_children"
+            else:
+                node["end_reason"] = "sources_no_children"
+        elif not source_no_children_map(node):
             node["end_reason"] = "wikidata_no_children"
-        elif len(clean_sources) == 1:
-            node["end_reason"] = f"{clean_sources[0]}_no_children"
         else:
-            node["end_reason"] = "sources_no_children"
+            clear_end_state(node)
+            return
         node["ended_at"] = node.get("updated_at") or now_utc()
     else:
         clear_end_state(node)
@@ -766,6 +931,7 @@ def compact_node_summary(node: Dict[str, Any]) -> Dict[str, Any]:
         "last_fetch_source",
         "last_fetch_sources",
         "last_source_errors",
+        "source_no_children",
     ):
         if node.get(field) is not None:
             summary[field] = node[field]
@@ -955,6 +1121,8 @@ def normalize_node(node: Dict[str, Any]) -> bool:
         node["is_leaf"] = False
         changed = True
 
+    changed = normalize_source_no_children(node) or changed
+
     review_status = node.get("review_status")
     if review_status is not None and review_status not in VALID_REVIEW_STATUSES:
         node.pop("review_status", None)
@@ -990,6 +1158,7 @@ def pointer_from_node(node: Dict[str, Any], path: Path) -> Dict[str, Any]:
         "last_fetch_source",
         "last_fetch_sources",
         "last_source_errors",
+        "source_no_children",
     ):
         if node.get(field) is not None:
             pointer[field] = node[field]
@@ -1141,6 +1310,117 @@ def fetch_json_url(url: str) -> Dict[str, Any]:
     return data if isinstance(data, dict) else {}
 
 
+def wikidata_label_from_entity(entity: Dict[str, Any], fallback: str = "") -> str:
+    labels = entity.get("labels", {})
+    if not isinstance(labels, dict):
+        return fallback
+    for language in ("zh", "zh-hans", "zh-cn", "en"):
+        label_entry = labels.get(language)
+        if isinstance(label_entry, dict):
+            value = str(label_entry.get("value", "")).strip()
+            if value:
+                return value
+    return fallback
+
+
+def fetch_wikidata_api_entities(ids: List[str], props: str) -> Dict[str, Any]:
+    if not ids:
+        return {}
+    params = {
+        "action": "wbgetentities",
+        "ids": "|".join(ids),
+        "props": props,
+        "languages": "zh|zh-hans|zh-cn|en",
+        "format": "json",
+        "formatversion": "2",
+    }
+    url = f"{WIKIDATA_API_ENDPOINT}?{parse.urlencode(params)}"
+    data = fetch_json_url(url)
+    entities = data.get("entities", {})
+    return entities if isinstance(entities, dict) else {}
+
+
+def wikidata_claim_entity_id(claim: Dict[str, Any]) -> str:
+    mainsnak = claim.get("mainsnak")
+    if not isinstance(mainsnak, dict):
+        return ""
+    datavalue = mainsnak.get("datavalue")
+    if not isinstance(datavalue, dict):
+        return ""
+    value = datavalue.get("value")
+    if not isinstance(value, dict):
+        return ""
+    entity_id = str(value.get("id", "")).strip()
+    return entity_id if is_qid(entity_id) else ""
+
+
+def fetch_wikidata_api_children(
+    node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
+) -> List[Dict[str, Any]]:
+    node_id = str(node.get("id", "")).strip()
+    if not is_qid(node_id):
+        return []
+    blocked_ids = blocked_ids or set()
+    limit = max(1, min(QUERY_LIMIT, 50))
+    entities = fetch_wikidata_api_entities([node_id], "claims")
+    entity = entities.get(node_id)
+    if not isinstance(entity, dict):
+        return []
+
+    claims = entity.get("claims", {})
+    if not isinstance(claims, dict):
+        return []
+
+    relation_properties = {
+        "P527": "has_part",
+        "P2670": "has_parts_of_class",
+    }
+    child_relations: Dict[str, str] = {}
+    child_ids: List[str] = []
+    for property_id, relation in relation_properties.items():
+        values = claims.get(property_id, [])
+        if not isinstance(values, list):
+            continue
+        for claim in values:
+            if not isinstance(claim, dict):
+                continue
+            child_id = wikidata_claim_entity_id(claim)
+            if not child_id or child_id == node_id or child_id in blocked_ids:
+                continue
+            if child_id not in child_relations:
+                child_relations[child_id] = relation
+                child_ids.append(child_id)
+            if len(child_ids) >= limit:
+                break
+        if len(child_ids) >= limit:
+            break
+
+    if not child_ids:
+        return []
+
+    label_entities = fetch_wikidata_api_entities(child_ids, "labels")
+    children: List[Dict[str, Any]] = []
+    for child_id in child_ids:
+        child_entity = label_entities.get(child_id)
+        label = child_id
+        if isinstance(child_entity, dict):
+            label = wikidata_label_from_entity(child_entity, child_id)
+        if not label or label == child_id or label == node.get("title"):
+            continue
+        children.append(
+            {
+                "id": child_id,
+                "title": label,
+                "children_status": "pending",
+                "is_leaf": False,
+                "source_provider": "wikidata_api",
+                "source_relation": child_relations[child_id],
+                "source_url": f"https://www.wikidata.org/wiki/{child_id}",
+            }
+        )
+    return children
+
+
 def fetch_wikipedia_children(
     node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
 ) -> List[Dict[str, Any]]:
@@ -1262,6 +1542,8 @@ def fetch_children_from_source(
 ) -> List[Dict[str, Any]]:
     if source == "wikidata":
         return fetch_wikidata_children(node, blocked_ids)
+    if source == "wikidata_api":
+        return fetch_wikidata_api_children(node, blocked_ids)
     if source == "wikipedia":
         return fetch_wikipedia_children(node, blocked_ids)
     if source == "conceptnet":
@@ -1276,17 +1558,34 @@ def fetch_children_from_sources(
 ) -> Dict[str, Any]:
     global request_count
 
+    supported_sources = supported_sources_for_node(node)
     candidates = [
         source
         for source in available_sources(scan_state)
-        if source_can_fetch(source, node)
+        if source in supported_sources and source_can_fetch(source, node)
     ]
     if not candidates:
-        raise GrowthRunPaused("all_sources_in_cooldown")
+        remaining_sources = [
+            source
+            for source in supported_sources
+            if source not in source_no_children_sources(node)
+        ]
+        if not remaining_sources:
+            return {
+                "children": [],
+                "source": "",
+                "checked_sources": [],
+                "source_errors": {},
+                "complete": True,
+            }
+        if all(source_in_cooldown(source, scan_state) for source in remaining_sources):
+            raise GrowthRunPaused("node_sources_in_cooldown")
+        raise GrowthRunPaused("no_available_source")
 
     successful_sources: List[str] = []
     source_errors: Dict[str, str] = {}
     saw_rate_limit = False
+    saw_transient_error = False
     for source in candidates:
         if request_count >= MAX_REQUESTS:
             raise GrowthRunPaused("request_budget_exhausted")
@@ -1301,8 +1600,14 @@ def fetch_children_from_sources(
         except Exception as exc:
             if is_rate_limit_error(exc):
                 saw_rate_limit = True
-                register_source_cooldown(source, exc)
+                register_source_cooldown(source, exc, "rate_limited")
                 print(f"  {source} 触发限流: {exc}")
+                continue
+            if is_transient_source_error(exc):
+                saw_transient_error = True
+                source_errors[source] = str(exc)
+                register_source_cooldown(source, exc, "transient_error")
+                print(f"  {source} 暂时不可用，已进入冷却: {exc}")
                 continue
             source_errors[source] = str(exc)
             print(f"  {source} 查询失败: {exc}")
@@ -1315,18 +1620,28 @@ def fetch_children_from_sources(
                 "source": source,
                 "checked_sources": successful_sources,
                 "source_errors": source_errors,
+                "complete": True,
             }
         print(f"  {source} 未发现子节点")
 
     if successful_sources:
+        exhausted_sources = source_no_children_sources(node).union(successful_sources)
+        complete = (
+            not source_errors
+            and not saw_rate_limit
+            and all(source in exhausted_sources for source in supported_sources)
+        )
         return {
             "children": [],
             "source": successful_sources[-1],
             "checked_sources": successful_sources,
             "source_errors": source_errors,
+            "complete": complete,
         }
-    if saw_rate_limit:
-        raise GrowthRunPaused("all_available_sources_rate_limited")
+    if saw_rate_limit or saw_transient_error:
+        if not available_sources(scan_state):
+            raise GrowthRunPaused("all_sources_in_cooldown")
+        raise GrowthRunPaused("node_sources_unavailable")
     if source_errors:
         detail = "; ".join(f"{source}: {error}" for source, error in source_errors.items())
         raise RuntimeError(detail)
@@ -1601,6 +1916,12 @@ def process_fetch_candidate(
     file_path = candidate["file_path"]
     pointer_ref = candidate.get("pointer_ref")
     ancestor_ids = set(candidate.get("ancestor_ids") or set())
+    request_count_before = request_count
+
+    def remember_candidate_position() -> None:
+        global last_scan_key_this_run, last_scan_title_this_run
+        last_scan_key_this_run = candidate.get("scan_key", "")
+        last_scan_title_this_run = str(candidate.get("title", "") or "")
 
     try:
         outcome = fetch_children_from_sources(node, ancestor_ids, scan_state)
@@ -1611,23 +1932,35 @@ def process_fetch_candidate(
         nodes_added_this_run += added
         if added == 0:
             unchanged_requests_this_run += 1
-        node["children_status"] = "loaded"
-        node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
         node["updated_at"] = now_utc()
         node["last_checked_at"] = node["updated_at"]
         node.pop("last_error", None)
         node["last_fetch_source"] = outcome.get("source", "")
-        node["last_fetch_sources"] = outcome.get("checked_sources", [])
+        checked_sources = outcome.get("checked_sources", [])
+        node["last_fetch_sources"] = checked_sources
         source_errors = outcome.get("source_errors") or {}
         if source_errors:
             node["last_source_errors"] = source_errors
         else:
             node.pop("last_source_errors", None)
-        node["is_leaf"] = len(node["children"]) == 0
+        has_children = len(node["children"]) > 0
+        if fetched_children or has_children:
+            node["children_status"] = "loaded"
+            node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+            node["is_leaf"] = False
+            clear_end_state(node)
+        else:
+            mark_source_no_children(node, checked_sources, node["last_checked_at"])
+            complete = bool(outcome.get("complete"))
+            node["children_status"] = "loaded" if complete else "pending"
+            if complete:
+                node["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+            node["is_leaf"] = len(node["children"]) == 0 and complete
         mark_end_state(node)
         if node.get("end_reason"):
             end_nodes_marked_this_run += 1
-        changed = apply_quality_metadata(node) or materialized_children or cyclic_pruned
+        apply_quality_metadata(node)
+        changed = True
         save_json(file_path, node)
         if pointer_ref is not None:
             pointer = pointer_from_node(node, file_path)
@@ -1638,14 +1971,18 @@ def process_fetch_candidate(
                 parent_path = candidate.get("parent_path")
                 if isinstance(parent_node, dict) and isinstance(parent_path, Path):
                     save_json(parent_path, parent_node)
-        last_scan_key_this_run = candidate.get("scan_key", "")
-        last_scan_title_this_run = str(candidate.get("title", "") or "")
+        remember_candidate_position()
         print(
             f"  新增节点: {added}，当前子类: {len(node['children'])}，"
             f"来源: {node.get('last_fetch_source')}"
         )
         return changed
     except GrowthRunPaused as exc:
+        if request_count > request_count_before:
+            remember_candidate_position()
+        if exc.reason in {"node_sources_in_cooldown", "node_sources_unavailable"}:
+            print(f"  跳过当前节点: {exc.reason}")
+            return False
         run_stop_reason = exc.reason
         print(f"  暂停本轮增长: {exc.reason}")
         return False
@@ -1656,7 +1993,8 @@ def process_fetch_candidate(
         node["updated_at"] = now_utc()
         node["last_checked_at"] = node["updated_at"]
         clear_end_state(node)
-        changed = apply_quality_metadata(node)
+        apply_quality_metadata(node)
+        changed = True
         save_json(file_path, node)
         if pointer_ref is not None:
             pointer = pointer_from_node(node, file_path)
@@ -1667,6 +2005,8 @@ def process_fetch_candidate(
                 parent_path = candidate.get("parent_path")
                 if isinstance(parent_node, dict) and isinstance(parent_path, Path):
                     save_json(parent_path, parent_node)
+        if request_count > request_count_before:
+            remember_candidate_position()
         print(f"  查询失败: {exc}")
         return changed
 
@@ -1718,19 +2058,30 @@ def process_node_data(
             nodes_added_this_run += added
             if added == 0:
                 unchanged_requests_this_run += 1
-            data["children_status"] = "loaded"
-            data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
             data["updated_at"] = now_utc()
             data["last_checked_at"] = data["updated_at"]
             data.pop("last_error", None)
             data["last_fetch_source"] = outcome.get("source", "")
-            data["last_fetch_sources"] = outcome.get("checked_sources", [])
+            checked_sources = outcome.get("checked_sources", [])
+            data["last_fetch_sources"] = checked_sources
             source_errors = outcome.get("source_errors") or {}
             if source_errors:
                 data["last_source_errors"] = source_errors
             else:
                 data.pop("last_source_errors", None)
-            data["is_leaf"] = len(data["children"]) == 0
+            has_children = len(data["children"]) > 0
+            if fetched_children or has_children:
+                data["children_status"] = "loaded"
+                data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                data["is_leaf"] = False
+                clear_end_state(data)
+            else:
+                mark_source_no_children(data, checked_sources, data["last_checked_at"])
+                complete = bool(outcome.get("complete"))
+                data["children_status"] = "loaded" if complete else "pending"
+                if complete:
+                    data["fetch_strategy_version"] = FETCH_STRATEGY_VERSION
+                data["is_leaf"] = complete
             mark_end_state(data)
             if data.get("end_reason"):
                 end_nodes_marked_this_run += 1
@@ -1920,26 +2271,31 @@ def main() -> None:
     scan_state = load_scan_state()
     ordered_candidates = rotate_candidates(
         ordered_candidates,
-        str(scan_state.get("last_scan_key", "") or ""),
+        cursor_from_scan_state(scan_state),
     )
     active_sources = available_sources(scan_state)
     if MAX_REQUESTS > 0 and not active_sources:
         run_stop_reason = "all_sources_in_cooldown"
         print("所有增长来源仍在冷却期内，本轮只刷新静态数据。")
-    selected_candidates = (
-        ordered_candidates[: max(0, MAX_REQUESTS)] if active_sources else []
-    )
     scan_candidate_count = len(candidates)
-    scan_exhausted = len(candidates) == len(selected_candidates)
+    selected_count = 0
 
-    for candidate in selected_candidates:
+    if active_sources:
+        iterable_candidates = ordered_candidates
+    else:
+        iterable_candidates = []
+
+    for candidate in iterable_candidates:
         if request_count >= MAX_REQUESTS or run_stop_reason:
             break
-        process_fetch_candidate(candidate, scan_state)
+        selected_count += 1
+        changed = process_fetch_candidate(candidate, scan_state) or changed
+
+    scan_exhausted = len(candidates) == selected_count and not run_stop_reason
 
     if changed:
         save_json(ROOT_FILE, root_data)
-        print("根节点数据已更新。")
+        print("根节点或分片数据已更新。")
     else:
         print("没有发现需要保存的数据变化。")
 
@@ -1961,7 +2317,7 @@ def main() -> None:
         last_scan_key=last_scan_key_this_run,
         last_scan_title=last_scan_title_this_run,
         candidate_count=len(candidates),
-        selected_count=len(selected_candidates),
+        selected_count=selected_count,
         exhausted=scan_exhausted,
     )
     print(f"本次新增节点数: {nodes_added_this_run}")

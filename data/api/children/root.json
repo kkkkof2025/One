@@ -22,21 +22,29 @@
       "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:54:16Z"
+      "updated_at": "2026-05-23T01:06:59Z",
+      "last_checked_at": "2026-05-23T01:06:59Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ]
     },
     {
       "title": "生命",
-      "children_count": 7,
+      "children_count": 9,
       "id": "Q3",
       "data_source": "nodes/Q3.json",
-      "children_status": "error",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 83,
+      "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-22T02:37:48Z",
-      "last_checked_at": "2026-05-22T02:37:48Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+      "updated_at": "2026-05-23T01:07:07Z",
+      "last_checked_at": "2026-05-23T01:07:07Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ]
     }
   ],
   "child_count": 2

@@ -6,30 +6,32 @@
     {
       "title": "M65",
       "data_source": "nodes/Q13986.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q13986",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T00:56:48Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:48Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:48Z"
+      }
     },
     {
       "title": "M66",
       "data_source": "nodes/Q13992.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q13992",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T00:56:49Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:49Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:49Z"
+      }
     }
   ],
   "fetch_strategy_version": 2,

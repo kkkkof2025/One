@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-05-22T07:06:10Z",
-  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-23T01:07:58Z",
+  "fetch_strategy_version": 4,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q1349305",
-  "last_scan_title": "地球人",
-  "candidate_count": 52,
-  "selected_count": 0,
-  "request_count": 0,
-  "max_requests": 0,
+  "last_scan_key": "id:Q17863945",
+  "last_scan_title": "拉尼亚凯亚超星系团",
+  "candidate_count": 191,
+  "selected_count": 6,
+  "request_count": 6,
+  "max_requests": 6,
   "exhausted": false,
   "source_order": [
-    "wikidata",
-    "wikipedia",
-    "conceptnet"
+    "wikidata_api",
+    "wikipedia"
   ],
   "available_sources": [
-    "wikidata",
-    "wikipedia",
-    "conceptnet"
+    "wikidata_api",
+    "wikipedia"
   ],
-  "source_request_counts": {},
+  "source_request_counts": {
+    "wikidata_api": 6
+  },
   "source_cooldowns": {},
   "last_stop_reason": ""
 }

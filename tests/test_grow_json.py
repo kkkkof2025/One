@@ -40,9 +40,12 @@ class GrowJsonTests(unittest.TestCase):
             "WIKIDATA_REQUEST_DELAY": grow_json.WIKIDATA_REQUEST_DELAY,
             "SOURCE_ORDER": grow_json.SOURCE_ORDER,
             "SOURCE_COOLDOWN_SECONDS": grow_json.SOURCE_COOLDOWN_SECONDS,
+            "TRANSIENT_SOURCE_COOLDOWN_SECONDS": grow_json.TRANSIENT_SOURCE_COOLDOWN_SECONDS,
             "IGNORE_SOURCE_COOLDOWN": grow_json.IGNORE_SOURCE_COOLDOWN,
             "fetch_wikidata_children": grow_json.fetch_wikidata_children,
+            "fetch_wikidata_api_children": grow_json.fetch_wikidata_api_children,
             "fetch_wikipedia_children": grow_json.fetch_wikipedia_children,
+            "fetch_conceptnet_children": grow_json.fetch_conceptnet_children,
             "DEFAULT_FOCUS_PRIORITY_BONUS": grow_json.DEFAULT_FOCUS_PRIORITY_BONUS,
         }
 
@@ -64,6 +67,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.WIKIDATA_REQUEST_DELAY = 0
         grow_json.SOURCE_ORDER = ["wikidata"]
         grow_json.SOURCE_COOLDOWN_SECONDS = 3600
+        grow_json.TRANSIENT_SOURCE_COOLDOWN_SECONDS = 600
         grow_json.IGNORE_SOURCE_COOLDOWN = False
         grow_json.DEFAULT_FOCUS_PRIORITY_BONUS = 18
         grow_json.request_count = 0
@@ -413,6 +417,22 @@ class GrowJsonTests(unittest.TestCase):
 
         self.assertEqual([item["scan_key"] for item in rotated], ["id:Q2", "id:Q3", "id:Q1"])
 
+    def test_old_strategy_scan_cursor_is_ignored(self):
+        state = {
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,
+            "last_scan_key": "id:Q-old",
+        }
+
+        self.assertEqual(grow_json.cursor_from_scan_state(state), "")
+
+    def test_current_strategy_scan_cursor_is_preserved(self):
+        state = {
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION,
+            "last_scan_key": "id:Q-current",
+        }
+
+        self.assertEqual(grow_json.cursor_from_scan_state(state), "id:Q-current")
+
     def test_rate_limit_pauses_without_marking_node_error(self):
         node = {
             "id": "Q1",
@@ -443,9 +463,41 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(grow_json.request_count, 1)
         self.assertEqual(node["children_status"], "pending")
         self.assertNotIn("last_error", node)
-        self.assertEqual(grow_json.run_stop_reason, "all_available_sources_rate_limited")
+        self.assertEqual(grow_json.run_stop_reason, "all_sources_in_cooldown")
         self.assertIn("wikidata", grow_json.source_cooldowns_this_run)
-        self.assertEqual(grow_json.last_scan_key_this_run, "")
+        self.assertEqual(grow_json.last_scan_key_this_run, "id:Q1")
+
+    def test_transient_source_error_uses_shorter_cooldown(self):
+        grow_json.TRANSIENT_SOURCE_COOLDOWN_SECONDS = 45
+
+        grow_json.register_source_cooldown(
+            "wikipedia",
+            RuntimeError("HTTP Error 502: Bad Gateway"),
+            "transient_error",
+        )
+
+        cooldown = grow_json.source_cooldowns_this_run["wikipedia"]
+        self.assertEqual(cooldown["reason"], "transient_error")
+        self.assertEqual(cooldown["retry_after_seconds"], 45)
+
+    def test_ignore_source_cooldown_clears_previous_cooldowns(self):
+        grow_json.save_json(
+            grow_json.SCAN_STATE_FILE,
+            {
+                "source_cooldowns": {
+                    "wikipedia": {
+                        "source": "wikipedia",
+                        "cooldown_until": "2999-01-01T00:00:00Z",
+                    }
+                }
+            },
+        )
+
+        self.assertTrue(grow_json.source_in_cooldown("wikipedia"))
+        grow_json.IGNORE_SOURCE_COOLDOWN = True
+
+        self.assertFalse(grow_json.source_in_cooldown("wikipedia"))
+        self.assertEqual(grow_json.active_source_cooldowns(), {})
 
     def test_wikipedia_fallback_after_wikidata_rate_limit_adds_children(self):
         node = {
@@ -493,6 +545,142 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(node["last_fetch_sources"], ["wikipedia"])
         self.assertEqual(node["children"][0]["title"], "生物学")
         self.assertEqual(grow_json.last_scan_key_this_run, "id:Q3")
+
+    def test_single_source_no_children_keeps_node_pending(self):
+        node = {
+            "id": "Q10",
+            "title": "测试节点",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def wikipedia_empty(_node, _blocked_ids=None):
+            return []
+
+        def conceptnet_transient(_node, _blocked_ids=None):
+            raise RuntimeError("HTTP Error 502: Bad Gateway")
+
+        grow_json.fetch_wikipedia_children = wikipedia_empty
+        grow_json.fetch_conceptnet_children = conceptnet_transient
+        grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
+        grow_json.MAX_REQUESTS = 2
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q10.json",
+                "scan_key": "id:Q10",
+                "title": "测试节点",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(grow_json.request_count, 2)
+        self.assertEqual(node["children_status"], "pending")
+        self.assertFalse(node["is_leaf"])
+        self.assertNotIn("end_reason", node)
+        self.assertIn("wikipedia", node["source_no_children"])
+        self.assertIn("conceptnet", node["last_source_errors"])
+        self.assertIn("conceptnet", grow_json.source_cooldowns_this_run)
+
+    def test_all_sources_no_children_marks_leaf(self):
+        node = {
+            "id": "Q11",
+            "title": "测试叶子",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def empty_children(_node, _blocked_ids=None):
+            return []
+
+        grow_json.fetch_wikipedia_children = empty_children
+        grow_json.fetch_conceptnet_children = empty_children
+        grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
+        grow_json.MAX_REQUESTS = 2
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q11.json",
+                "scan_key": "id:Q11",
+                "title": "测试叶子",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(node["children_status"], "loaded")
+        self.assertTrue(node["is_leaf"])
+        self.assertEqual(node["end_reason"], "sources_no_children")
+        self.assertEqual(
+            set(node["source_no_children"]),
+            {"wikipedia", "conceptnet"},
+        )
+
+    def test_source_no_children_is_skipped_on_next_run(self):
+        node = {
+            "id": "Q12",
+            "title": "可继续节点",
+            "children_status": "pending",
+            "children": [],
+            "source_no_children": {"wikipedia": "2026-05-14T00:00:00Z"},
+        }
+
+        def wikipedia_should_not_run(_node, _blocked_ids=None):
+            raise AssertionError("wikipedia should be skipped")
+
+        def conceptnet_children(_node, _blocked_ids=None):
+            return [
+                {
+                    "id": "conceptnet:/c/zh/子节点",
+                    "title": "子节点",
+                    "children_status": "pending",
+                    "source_provider": "conceptnet",
+                }
+            ]
+
+        grow_json.fetch_wikipedia_children = wikipedia_should_not_run
+        grow_json.fetch_conceptnet_children = conceptnet_children
+        grow_json.SOURCE_ORDER = ["wikipedia", "conceptnet"]
+        grow_json.MAX_REQUESTS = 1
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q12.json",
+                "scan_key": "id:Q12",
+                "title": "可继续节点",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(grow_json.request_count, 1)
+        self.assertEqual(node["last_fetch_source"], "conceptnet")
+        self.assertEqual(node["children"][0]["title"], "子节点")
+
+    def test_legacy_wikidata_leaf_reopens_for_new_sources(self):
+        node = {
+            "id": "Q13",
+            "title": "旧叶子",
+            "children_status": "loaded",
+            "children": [],
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,
+            "is_leaf": True,
+            "end_reason": "wikidata_no_children",
+            "ended_at": "2026-05-14T00:00:00Z",
+        }
+        grow_json.SOURCE_ORDER = ["wikidata", "wikipedia"]
+
+        changed = grow_json.normalize_node(node)
+
+        self.assertTrue(changed)
+        self.assertEqual(node["children_status"], "pending")
+        self.assertFalse(node["is_leaf"])
+        self.assertEqual(node["source_no_children"], {"wikidata": "2026-05-14T00:00:00Z"})
+        self.assertNotIn("end_reason", node)
 
     def test_write_static_api_includes_end_node_and_children_endpoint(self):
         root = {

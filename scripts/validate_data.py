@@ -37,6 +37,7 @@ ALLOWED_NODE_FIELDS = {
     "last_fetch_source",
     "last_fetch_sources",
     "last_source_errors",
+    "source_no_children",
     "last_checked_at",
     "end_reason",
     "ended_at",
@@ -617,6 +618,20 @@ class DataValidator:
         quality_reasons = node.get("quality_reasons")
         if quality_reasons is not None and not isinstance(quality_reasons, list):
             self.error(location, "`quality_reasons` 必须是数组")
+
+        source_no_children = node.get("source_no_children")
+        if source_no_children is not None:
+            if not isinstance(source_no_children, dict):
+                self.error(location, "`source_no_children` 必须是 object")
+            else:
+                for source, checked_at in source_no_children.items():
+                    if not isinstance(source, str) or not source.strip():
+                        self.error(location, "`source_no_children` 的来源名必须是非空字符串")
+                    if not isinstance(checked_at, str) or not checked_at.strip():
+                        self.error(
+                            location,
+                            "`source_no_children` 的检查时间必须是非空字符串",
+                        )
 
         data_source = node.get("data_source")
         if data_source:

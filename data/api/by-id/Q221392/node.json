@@ -9,16 +9,17 @@
       {
         "title": "BOSS長城",
         "data_source": "nodes/Q23054687.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q23054687",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T00:54:19Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T00:54:19Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T00:54:19Z"
+        }
       },
       {
         "title": "双鱼-鲸鱼座超星系团复合体",
@@ -35,16 +36,17 @@
       {
         "title": "史隆長城",
         "data_source": "nodes/Q497745.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q497745",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T03:04:54Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T03:04:54Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T03:04:54Z"
+        }
       },
       {
         "title": "天體物理學中心2長城",
@@ -52,39 +54,46 @@
         "children_status": "loaded",
         "is_leaf": false,
         "id": "Q1139177",
-        "fetch_strategy_version": 2,
+        "fetch_strategy_version": 4,
         "quality_score": 85,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-08T02:14:20Z"
+        "updated_at": "2026-05-23T01:07:35Z",
+        "last_checked_at": "2026-05-23T01:07:35Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ]
       },
       {
         "title": "巨型超大类星体群",
         "data_source": "nodes/Q3094136.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q3094136",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T03:06:43Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T03:06:43Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T03:06:43Z"
+        }
       },
       {
         "title": "武仙－北冕座長城",
         "data_source": "nodes/Q15241043.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q15241043",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T03:06:44Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T03:06:44Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T03:06:44Z"
+        }
       },
       {
         "title": "超大類星體群",
@@ -92,11 +101,16 @@
         "children_status": "loaded",
         "is_leaf": false,
         "id": "Q2945326",
-        "fetch_strategy_version": 2,
+        "fetch_strategy_version": 4,
         "quality_score": 88,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-07T03:06:45Z"
+        "updated_at": "2026-05-23T01:07:26Z",
+        "last_checked_at": "2026-05-23T01:07:26Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ]
       },
       {
         "title": "暗物质",
@@ -164,8 +178,8 @@
         "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
       }
     ],
-    "fetch_strategy_version": 2,
-    "updated_at": "2026-05-07T00:54:18Z",
+    "fetch_strategy_version": 4,
+    "updated_at": "2026-05-23T01:07:13Z",
     "is_leaf": false,
     "quality_score": 89,
     "quality_reasons": [
@@ -177,6 +191,11 @@
       "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "last_checked_at": "2026-05-23T01:07:13Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ]
   }
 }

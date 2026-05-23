@@ -10,7 +10,12 @@
     "quality_score": 99,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-07T00:54:16Z"
+    "updated_at": "2026-05-23T01:06:59Z",
+    "last_checked_at": "2026-05-23T01:06:59Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ]
   },
   "children": [
     {
@@ -23,7 +28,12 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:54:18Z"
+      "updated_at": "2026-05-23T01:07:13Z",
+      "last_checked_at": "2026-05-23T01:07:13Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ]
     },
     {
       "title": "外太空",

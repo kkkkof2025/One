@@ -30,28 +30,30 @@
       "children_count": 0,
       "id": "Q2479744",
       "data_source": "nodes/Q2479744.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:20Z",
-      "quality_score": 51,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T02:51:20Z"
+      "updated_at": "2026-05-07T02:51:20Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:20Z"
+      }
     },
     {
       "title": "霍奇301",
       "children_count": 0,
       "id": "Q520496",
       "data_source": "nodes/Q520496.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:21Z",
-      "quality_score": 77,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T02:51:21Z"
+      "updated_at": "2026-05-07T02:51:21Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:21Z"
+      }
     }
   ],
   "child_count": 3

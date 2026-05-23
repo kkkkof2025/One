@@ -9,44 +9,47 @@
       {
         "title": "M84",
         "data_source": "nodes/Q92258118.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q92258118",
         "fetch_strategy_version": 2,
-        "quality_score": 51,
+        "quality_score": 49,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T02:07:00Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T02:07:00Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T02:07:00Z"
+        }
       },
       {
         "title": "M86",
         "data_source": "nodes/Q92258250.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q92258250",
         "fetch_strategy_version": 2,
-        "quality_score": 51,
+        "quality_score": 49,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T02:07:03Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T02:07:03Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T02:07:03Z"
+        }
       },
       {
         "title": "雙眼星系",
         "data_source": "nodes/Q14702236.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q14702236",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T02:07:22Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T02:07:22Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T02:07:22Z"
+        }
       }
     ],
     "fetch_strategy_version": 2,

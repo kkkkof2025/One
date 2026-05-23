@@ -5,14 +5,15 @@
     "title": "唧筒座星系團",
     "children_count": 0,
     "id": "Q61187",
-    "children_status": "loaded",
-    "is_leaf": true,
-    "end_reason": "wikidata_no_children",
-    "ended_at": "2026-05-07T03:04:32Z",
-    "quality_score": 77,
+    "children_status": "pending",
+    "is_leaf": false,
+    "quality_score": 75,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-07T03:04:32Z"
+    "updated_at": "2026-05-07T03:04:32Z",
+    "source_no_children": {
+      "wikidata": "2026-05-07T03:04:32Z"
+    }
   },
   "children": [],
   "child_count": 0

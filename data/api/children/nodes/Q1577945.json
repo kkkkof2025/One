@@ -30,42 +30,45 @@
       "children_count": 0,
       "id": "Q14377",
       "data_source": "nodes/Q14377.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:50Z",
-      "quality_score": 51,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:50Z"
+      "updated_at": "2026-05-07T00:56:50Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:50Z"
+      }
     },
     {
       "title": "M95",
       "children_count": 0,
       "id": "Q14351",
       "data_source": "nodes/Q14351.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:51Z",
-      "quality_score": 51,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:51Z"
+      "updated_at": "2026-05-07T00:56:51Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:51Z"
+      }
     },
     {
       "title": "梅西爾96",
       "children_count": 0,
       "id": "Q14354",
       "data_source": "nodes/Q14354.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:52Z",
-      "quality_score": 77,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:52Z"
+      "updated_at": "2026-05-07T00:56:52Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:52Z"
+      }
     }
   ],
   "child_count": 4

@@ -18,14 +18,15 @@
       "children_count": 0,
       "id": "Q3329830",
       "data_source": "nodes/Q3329830.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T03:04:50Z",
-      "quality_score": 51,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T03:04:50Z"
+      "updated_at": "2026-05-07T03:04:50Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T03:04:50Z"
+      }
     }
   ],
   "child_count": 1

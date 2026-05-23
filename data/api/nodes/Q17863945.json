@@ -9,16 +9,17 @@
       {
         "title": "孔雀-印地安超星系團",
         "data_source": "nodes/Q2602890.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q2602890",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T00:54:23Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T00:54:23Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T00:54:23Z"
+        }
       },
       {
         "title": "室女座超星系团",
@@ -35,16 +36,17 @@
       {
         "title": "巨引源",
         "data_source": "nodes/Q656857.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q656857",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T03:03:42Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T03:03:42Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T03:03:42Z"
+        }
       },
       {
         "title": "長蛇-半人馬座超星系團",
@@ -85,20 +87,21 @@
       {
         "title": "長蛇座星系團",
         "data_source": "nodes/Q61095.json",
-        "children_status": "loaded",
-        "is_leaf": true,
+        "children_status": "pending",
+        "is_leaf": false,
         "id": "Q61095",
         "fetch_strategy_version": 2,
-        "quality_score": 77,
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-05-07T03:04:52Z",
-        "end_reason": "wikidata_no_children",
-        "ended_at": "2026-05-07T03:04:52Z"
+        "source_no_children": {
+          "wikidata": "2026-05-07T03:04:52Z"
+        }
       }
     ],
-    "fetch_strategy_version": 2,
-    "updated_at": "2026-05-07T00:54:22Z",
+    "fetch_strategy_version": 4,
+    "updated_at": "2026-05-23T01:07:44Z",
     "is_leaf": false,
     "quality_score": 89,
     "quality_reasons": [
@@ -110,6 +113,11 @@
       "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "last_checked_at": "2026-05-23T01:07:44Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ]
   }
 }

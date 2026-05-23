@@ -141,5 +141,53 @@
     "failed_requests": 20,
     "end_nodes_marked": 0,
     "end_node_count": 98
+  },
+  {
+    "run_at": "2026-05-22T10:44:15Z",
+    "added_nodes": 0,
+    "total_nodes": 193,
+    "requests": 3,
+    "scanned_nodes": 199,
+    "candidate_nodes": 191,
+    "unchanged_requests": 0,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "wikidata_api": 1,
+      "wikipedia": 1,
+      "conceptnet": 1
+    },
+    "stop_reason": "all_sources_in_cooldown"
+  },
+  {
+    "run_at": "2026-05-22T10:48:55Z",
+    "added_nodes": 0,
+    "total_nodes": 193,
+    "requests": 0,
+    "scanned_nodes": 199,
+    "candidate_nodes": 191,
+    "unchanged_requests": 0,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {},
+    "stop_reason": "all_sources_in_cooldown"
+  },
+  {
+    "run_at": "2026-05-23T01:07:58Z",
+    "added_nodes": 2,
+    "total_nodes": 195,
+    "requests": 6,
+    "scanned_nodes": 199,
+    "candidate_nodes": 191,
+    "unchanged_requests": 5,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "wikidata_api": 6
+    },
+    "stop_reason": ""
   }
 ]

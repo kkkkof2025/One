@@ -1,22 +1,21 @@
 {
   "id": "Q656857",
   "title": "巨引源",
-  "children_status": "loaded",
+  "children_status": "pending",
   "children": [],
   "fetch_strategy_version": 2,
   "updated_at": "2026-05-07T03:03:42Z",
-  "is_leaf": true,
-  "quality_score": 77,
+  "is_leaf": false,
+  "quality_score": 75,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "missing_relation",
-    "loaded",
-    "leaf"
+    "missing_relation"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "end_reason": "wikidata_no_children",
-  "ended_at": "2026-05-07T03:03:42Z"
+  "source_no_children": {
+    "wikidata": "2026-05-07T03:03:42Z"
+  }
 }

@@ -12,11 +12,16 @@
         "children_status": "loaded",
         "is_leaf": false,
         "id": "Q17863945",
-        "fetch_strategy_version": 2,
+        "fetch_strategy_version": 4,
         "quality_score": 89,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-07T00:54:22Z"
+        "updated_at": "2026-05-23T01:07:44Z",
+        "last_checked_at": "2026-05-23T01:07:44Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ]
       }
     ],
     "fetch_strategy_version": 2,

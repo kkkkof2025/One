@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-22T07:06:43Z",
+  "generated_at": "2026-05-23T01:08:24Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 100,
+  "total_candidates": 99,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 100,
+  "total_items": 99,
   "reason_distribution": {
-    "total_items": 100,
+    "total_items": 99,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "error",
         "label": "加载错误",
-        "count": 53,
+        "count": 52,
         "sample_review_keys": [
           "id:Q8001388",
           "id:Q185674",
@@ -53,47 +53,39 @@
     "raw_reasons": [
       {
         "reason": "missing_relation",
-        "count": 100
-      },
-      {
-        "reason": "qid",
-        "count": 100
-      },
-      {
-        "reason": "good_title_length",
         "count": 99
       },
       {
+        "reason": "qid",
+        "count": 99
+      },
+      {
+        "reason": "good_title_length",
+        "count": 98
+      },
+      {
         "reason": "fetch_error",
-        "count": 53
+        "count": 52
       },
       {
         "reason": "zh_label",
-        "count": 52
+        "count": 51
       },
       {
         "reason": "non_zh_label",
         "count": 48
       },
       {
-        "reason": "loaded",
-        "count": 47
-      },
-      {
-        "reason": "leaf",
-        "count": 45
-      },
-      {
         "reason": "has_children",
-        "count": 6
+        "count": 5
       },
       {
         "reason": "allowed_duplicate_id:2",
         "count": 4
       },
       {
-        "reason": "curated_focus",
-        "count": 1
+        "reason": "loaded",
+        "count": 2
       },
       {
         "reason": "short_title",
@@ -104,12 +96,17 @@
       {
         "status": "error",
         "label": "加载错误",
-        "count": 53
+        "count": 52
+      },
+      {
+        "status": "pending",
+        "label": "待扩展",
+        "count": 45
       },
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 47
+        "count": 2
       }
     ]
   },
@@ -1269,23 +1266,21 @@
     },
     {
       "title": "M101 OT2015-1",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q55621538",
       "updated_at": "2026-05-07T00:54:30Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M101星系群 / 風車星系 / M101 OT2015-1",
       "location": "nodes/Q55621538.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q55621538",
       "primary_reason": "non_zh_label",
@@ -1293,23 +1288,21 @@
     },
     {
       "title": "SN 2023ixf",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q118512328",
       "updated_at": "2026-05-07T00:54:31Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M101星系群 / 風車星系 / SN 2023ixf",
       "location": "nodes/Q118512328.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q118512328",
       "primary_reason": "non_zh_label",
@@ -1317,23 +1310,21 @@
     },
     {
       "title": "M74",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14013",
       "updated_at": "2026-05-07T00:54:34Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M74星系群 / M74",
       "location": "nodes/Q14013.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14013",
       "primary_reason": "non_zh_label",
@@ -1341,23 +1332,21 @@
     },
     {
       "title": "M82 X-1",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q2759979",
       "updated_at": "2026-05-07T00:54:39Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M81星系團 / 雪茄星系 / M82 X-1",
       "location": "nodes/Q2759979.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q2759979",
       "primary_reason": "non_zh_label",
@@ -1365,23 +1354,21 @@
     },
     {
       "title": "M105",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14377",
       "updated_at": "2026-05-07T00:56:50Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / M105",
       "location": "nodes/Q14377.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14377",
       "primary_reason": "non_zh_label",
@@ -1389,23 +1376,21 @@
     },
     {
       "title": "M95",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14351",
       "updated_at": "2026-05-07T00:56:51Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / M95",
       "location": "nodes/Q14351.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14351",
       "primary_reason": "non_zh_label",
@@ -1413,23 +1398,21 @@
     },
     {
       "title": "M65",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13986",
       "updated_at": "2026-05-07T00:56:48Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / 獅子座三胞胎 / M65",
       "location": "nodes/Q13986.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13986",
       "primary_reason": "non_zh_label",
@@ -1437,23 +1420,21 @@
     },
     {
       "title": "M66",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13992",
       "updated_at": "2026-05-07T00:56:49Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M96星系群 / 獅子座三胞胎 / M66",
       "location": "nodes/Q13992.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13992",
       "primary_reason": "non_zh_label",
@@ -1461,23 +1442,21 @@
     },
     {
       "title": "M49",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13952",
       "updated_at": "2026-05-07T00:57:03Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49",
       "location": "nodes/Q13952.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13952",
       "primary_reason": "non_zh_label",
@@ -1485,23 +1464,21 @@
     },
     {
       "title": "M58",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13970",
       "updated_at": "2026-05-07T00:57:04Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M58",
       "location": "nodes/Q13970.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13970",
       "primary_reason": "non_zh_label",
@@ -1509,23 +1486,21 @@
     },
     {
       "title": "M59",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13971",
       "updated_at": "2026-05-07T00:57:05Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M59",
       "location": "nodes/Q13971.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13971",
       "primary_reason": "non_zh_label",
@@ -1533,23 +1508,21 @@
     },
     {
       "title": "M60",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13976",
       "updated_at": "2026-05-07T00:57:06Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M60",
       "location": "nodes/Q13976.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13976",
       "primary_reason": "non_zh_label",
@@ -1557,23 +1530,21 @@
     },
     {
       "title": "SN 1961i",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q9326449",
       "updated_at": "2026-05-07T00:57:08Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M61 / SN 1961i",
       "location": "nodes/Q9326449.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q9326449",
       "primary_reason": "non_zh_label",
@@ -1581,16 +1552,14 @@
     },
     {
       "title": "M84",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
         "missing_relation",
-        "loaded",
-        "leaf",
         "allowed_duplicate_id:2"
       ],
       "id": "Q92258118",
@@ -1598,7 +1567,7 @@
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M84",
       "location": "nodes/Q92258118.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q92258118",
       "primary_reason": "non_zh_label",
@@ -1606,23 +1575,21 @@
     },
     {
       "title": "M85",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14035",
       "updated_at": "2026-05-07T02:07:02Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M85",
       "location": "nodes/Q14035.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14035",
       "primary_reason": "non_zh_label",
@@ -1630,16 +1597,14 @@
     },
     {
       "title": "M86",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
         "missing_relation",
-        "loaded",
-        "leaf",
         "allowed_duplicate_id:2"
       ],
       "id": "Q92258250",
@@ -1647,7 +1612,7 @@
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M86",
       "location": "nodes/Q92258250.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q92258250",
       "primary_reason": "non_zh_label",
@@ -1655,23 +1620,21 @@
     },
     {
       "title": "M88",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14048",
       "updated_at": "2026-05-07T02:07:04Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M88",
       "location": "nodes/Q14048.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14048",
       "primary_reason": "non_zh_label",
@@ -1679,23 +1642,21 @@
     },
     {
       "title": "M89",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14337",
       "updated_at": "2026-05-07T02:07:05Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M89",
       "location": "nodes/Q14337.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14337",
       "primary_reason": "non_zh_label",
@@ -1703,23 +1664,21 @@
     },
     {
       "title": "M90",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14343",
       "updated_at": "2026-05-07T02:07:07Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M90",
       "location": "nodes/Q14343.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14343",
       "primary_reason": "non_zh_label",
@@ -1727,23 +1686,21 @@
     },
     {
       "title": "M91",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14344",
       "updated_at": "2026-05-07T02:07:08Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M91",
       "location": "nodes/Q14344.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14344",
       "primary_reason": "non_zh_label",
@@ -1751,23 +1708,21 @@
     },
     {
       "title": "M98",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q14361",
       "updated_at": "2026-05-07T02:07:09Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M98",
       "location": "nodes/Q14361.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q14361",
       "primary_reason": "non_zh_label",
@@ -1775,23 +1730,21 @@
     },
     {
       "title": "VIRGOHI21",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1210087",
       "updated_at": "2026-05-07T02:07:10Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / VIRGOHI21",
       "location": "nodes/Q1210087.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1210087",
       "primary_reason": "non_zh_label",
@@ -1799,23 +1752,21 @@
     },
     {
       "title": "M87*",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q3841190",
       "updated_at": "2026-05-07T02:07:19Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / 室女A星系 / M87*",
       "location": "nodes/Q3841190.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q3841190",
       "primary_reason": "non_zh_label",
@@ -1823,23 +1774,21 @@
     },
     {
       "title": "M32",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13720",
       "updated_at": "2026-05-07T02:07:26Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / M32",
       "location": "nodes/Q13720.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13720",
       "primary_reason": "non_zh_label",
@@ -1847,23 +1796,21 @@
     },
     {
       "title": "Segue 1",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1813110",
       "updated_at": "2026-05-07T02:07:27Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / Segue 1",
       "location": "nodes/Q1813110.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1813110",
       "primary_reason": "non_zh_label",
@@ -1871,23 +1818,21 @@
     },
     {
       "title": "Segue 2",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q2266221",
       "updated_at": "2026-05-07T02:07:28Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / Segue 2",
       "location": "nodes/Q2266221.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q2266221",
       "primary_reason": "non_zh_label",
@@ -1895,23 +1840,21 @@
     },
     {
       "title": "R136a1",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q815835",
       "updated_at": "2026-05-07T02:51:15Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136a1",
       "location": "nodes/Q815835.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q815835",
       "primary_reason": "non_zh_label",
@@ -1919,23 +1862,21 @@
     },
     {
       "title": "R136a2",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q17144092",
       "updated_at": "2026-05-07T02:51:16Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136a2",
       "location": "nodes/Q17144092.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q17144092",
       "primary_reason": "non_zh_label",
@@ -1943,23 +1884,21 @@
     },
     {
       "title": "R136a3",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q19831590",
       "updated_at": "2026-05-07T02:51:17Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136a3",
       "location": "nodes/Q19831590.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q19831590",
       "primary_reason": "non_zh_label",
@@ -1967,23 +1906,21 @@
     },
     {
       "title": "R136b",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1082845",
       "updated_at": "2026-05-07T02:51:18Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136b",
       "location": "nodes/Q1082845.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1082845",
       "primary_reason": "non_zh_label",
@@ -1991,23 +1928,21 @@
     },
     {
       "title": "R136c",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q19831587",
       "updated_at": "2026-05-07T02:51:19Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136c",
       "location": "nodes/Q19831587.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q19831587",
       "primary_reason": "non_zh_label",
@@ -2015,23 +1950,21 @@
     },
     {
       "title": "VFTS 102",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q2479744",
       "updated_at": "2026-05-07T02:51:20Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / VFTS 102",
       "location": "nodes/Q2479744.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q2479744",
       "primary_reason": "non_zh_label",
@@ -2039,23 +1972,21 @@
     },
     {
       "title": "NGC 1347",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1997323",
       "updated_at": "2026-05-07T02:51:28Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 波江座星系團 / NGC 1347",
       "location": "nodes/Q1997323.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1997323",
       "primary_reason": "non_zh_label",
@@ -2063,23 +1994,21 @@
     },
     {
       "title": "M106",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q4658",
       "updated_at": "2026-05-07T02:51:31Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 獵犬II星系群 / M106",
       "location": "nodes/Q4658.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q4658",
       "primary_reason": "non_zh_label",
@@ -2087,23 +2016,21 @@
     },
     {
       "title": "ESO 137-001",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q3329830",
       "updated_at": "2026-05-07T03:04:50Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 長蛇-半人馬座超星系團 / 矩尺座星系团 / ESO 137-001",
       "location": "nodes/Q3329830.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q3329830",
       "primary_reason": "non_zh_label",
@@ -2111,23 +2038,21 @@
     },
     {
       "title": "NGC 6039",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125187",
       "updated_at": "2026-05-08T02:14:28Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6039",
       "location": "nodes/Q1125187.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125187",
       "primary_reason": "non_zh_label",
@@ -2135,23 +2060,21 @@
     },
     {
       "title": "NGC 6043",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125225",
       "updated_at": "2026-05-08T02:14:29Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6043",
       "location": "nodes/Q1125225.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125225",
       "primary_reason": "non_zh_label",
@@ -2159,23 +2082,21 @@
     },
     {
       "title": "NGC 6044",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125240",
       "updated_at": "2026-05-08T02:14:30Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6044",
       "location": "nodes/Q1125240.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125240",
       "primary_reason": "non_zh_label",
@@ -2183,23 +2104,21 @@
     },
     {
       "title": "NGC 6045",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q13088699",
       "updated_at": "2026-05-08T02:14:31Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6045",
       "location": "nodes/Q13088699.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13088699",
       "primary_reason": "non_zh_label",
@@ -2207,23 +2126,21 @@
     },
     {
       "title": "NGC 6047",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125256",
       "updated_at": "2026-05-08T02:14:32Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6047",
       "location": "nodes/Q1125256.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125256",
       "primary_reason": "non_zh_label",
@@ -2231,23 +2148,21 @@
     },
     {
       "title": "NGC 6053",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125299",
       "updated_at": "2026-05-08T02:14:33Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6053",
       "location": "nodes/Q1125299.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125299",
       "primary_reason": "non_zh_label",
@@ -2255,23 +2170,21 @@
     },
     {
       "title": "NGC 6054",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125311",
       "updated_at": "2026-05-08T02:14:34Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6054",
       "location": "nodes/Q1125311.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125311",
       "primary_reason": "non_zh_label",
@@ -2279,23 +2192,21 @@
     },
     {
       "title": "NGC 6055",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q664460",
       "updated_at": "2026-05-08T02:14:36Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6055",
       "location": "nodes/Q664460.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q664460",
       "primary_reason": "non_zh_label",
@@ -2303,23 +2214,21 @@
     },
     {
       "title": "NGC 6056",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q1125319",
       "updated_at": "2026-05-08T02:14:37Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6056",
       "location": "nodes/Q1125319.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1125319",
       "primary_reason": "non_zh_label",
@@ -2327,23 +2236,21 @@
     },
     {
       "title": "U1.11",
-      "children_status": "loaded",
-      "quality_score": 51,
+      "children_status": "pending",
+      "quality_score": 49,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "non_zh_label",
         "good_title_length",
-        "missing_relation",
-        "loaded",
-        "leaf"
+        "missing_relation"
       ],
       "id": "Q17039109",
       "updated_at": "2026-05-07T03:07:02Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / U1.11",
       "location": "nodes/Q17039109.json",
-      "priority": 59.0,
+      "priority": 61.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q17039109",
       "primary_reason": "non_zh_label",
@@ -2444,31 +2351,6 @@
       "review_key": "id:Q5116",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
-    },
-    {
-      "title": "生命",
-      "children_status": "error",
-      "quality_score": 83,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "missing_relation",
-        "fetch_error",
-        "curated_focus",
-        "has_children"
-      ],
-      "id": "Q3",
-      "updated_at": "2026-05-22T02:37:48Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-      "path": "万物 / 生命",
-      "location": "nodes/Q3.json",
-      "priority": 47.0,
-      "suggested_action": "检查 last_error，必要时降低请求频率、重试或改为人工节点。",
-      "review_key": "id:Q3",
-      "primary_reason": "error",
-      "primary_reason_label": "加载错误"
     }
   ]
 }

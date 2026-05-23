@@ -42,6 +42,9 @@
 - [x] 给增长部署 workflow 增加 `push` 触发；push 只测试、校验并部署当前数据，不执行增长和自动提交。
 - [x] 增长脚本改为多来源适配器，Wikidata 限流后会记录冷却并回退到维基百科分类和 ConceptNet。
 - [x] 给增长脚本加入 429 感知的冷却状态、来源请求统计和静态接口字段补充，避免继续撞同一来源。
+- [x] 将抓取策略升级为按来源记录 `source_no_children`，避免单个补充来源查空就把节点永久封存。
+- [x] 新增 Wikidata API 直接声明补充来源，并把 502/503/504/超时纳入来源冷却。
+- [x] 请求失败后也会推进扫描游标，减少下一轮重复卡在同一批 error 分支。
 
 ## Agent Rules
 
@@ -55,6 +58,6 @@
 
 - 定期复核 `data/validation_allowlist.json`，清理已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted` 和 `source_cooldowns`，判断增长慢是候选不足还是来源限流。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns` 和节点的 `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
 
-_Last updated: 2026-05-20_
+_Last updated: 2026-05-22_

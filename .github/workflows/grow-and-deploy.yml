@@ -20,6 +20,10 @@ on:
         description: "Minimum delay between Wikidata requests in seconds"
         required: false
         default: "65"
+      source_order:
+        description: "Comma-separated source order"
+        required: false
+        default: "wikidata,wikidata_api,wikipedia,conceptnet"
 
 permissions:
   contents: write
@@ -73,6 +77,7 @@ jobs:
           ONE_MAX_REQUESTS: ${{ inputs.max_requests || '5' }}
           ONE_REQUEST_DELAY: ${{ inputs.request_delay || '5' }}
           ONE_WIKIDATA_REQUEST_DELAY: ${{ inputs.wikidata_request_delay || '65' }}
+          ONE_SOURCE_ORDER: ${{ inputs.source_order || 'wikidata,wikidata_api,wikipedia,conceptnet' }}
         run: python scripts/grow_json.py
 
       - name: Generate review queue

@@ -28,8 +28,8 @@
       "updated_at": "2026-05-08T02:14:25Z"
     }
   ],
-  "updated_at": "2026-05-08T02:14:20Z",
-  "fetch_strategy_version": 2,
+  "updated_at": "2026-05-23T01:07:35Z",
+  "fetch_strategy_version": 4,
   "is_leaf": false,
   "quality_score": 85,
   "quality_reasons": [
@@ -41,5 +41,10 @@
     "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "last_checked_at": "2026-05-23T01:07:35Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }

@@ -78,14 +78,15 @@
       "children_count": 0,
       "id": "Q1927127",
       "data_source": "nodes/Q1927127.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:56:53Z",
-      "quality_score": 77,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:53Z"
+      "updated_at": "2026-05-07T00:56:53Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:56:53Z"
+      }
     },
     {
       "title": "半人馬座 A/M83星系團",
@@ -116,14 +117,15 @@
       "children_count": 0,
       "id": "Q61226",
       "data_source": "nodes/Q61226.json",
-      "children_status": "loaded",
-      "is_leaf": true,
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T00:57:00Z",
-      "quality_score": 77,
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:57:00Z"
+      "updated_at": "2026-05-07T00:57:00Z",
+      "source_no_children": {
+        "wikidata": "2026-05-07T00:57:00Z"
+      }
     },
     {
       "title": "室女座星系團",

@@ -6,72 +6,77 @@
     {
       "title": "R136a1",
       "data_source": "nodes/Q815835.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q815835",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T02:51:15Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:15Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:15Z"
+      }
     },
     {
       "title": "R136a2",
       "data_source": "nodes/Q17144092.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q17144092",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T02:51:16Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:16Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:16Z"
+      }
     },
     {
       "title": "R136a3",
       "data_source": "nodes/Q19831590.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q19831590",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T02:51:17Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:17Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:17Z"
+      }
     },
     {
       "title": "R136b",
       "data_source": "nodes/Q1082845.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q1082845",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T02:51:18Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:18Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:18Z"
+      }
     },
     {
       "title": "R136c",
       "data_source": "nodes/Q19831587.json",
-      "children_status": "loaded",
-      "is_leaf": true,
+      "children_status": "pending",
+      "is_leaf": false,
       "id": "Q19831587",
       "fetch_strategy_version": 2,
-      "quality_score": 51,
+      "quality_score": 49,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-07T02:51:19Z",
-      "end_reason": "wikidata_no_children",
-      "ended_at": "2026-05-07T02:51:19Z"
+      "source_no_children": {
+        "wikidata": "2026-05-07T02:51:19Z"
+      }
     }
   ],
   "fetch_strategy_version": 2,

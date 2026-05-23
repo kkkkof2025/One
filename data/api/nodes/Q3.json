@@ -4,7 +4,7 @@
   "node": {
     "id": "Q3",
     "title": "生命",
-    "children_status": "error",
+    "children_status": "loaded",
     "children": [
       {
         "title": "地球人",
@@ -96,23 +96,53 @@
         "updated_at": "2026-05-20T08:06:20Z",
         "last_checked_at": "2026-05-20T08:06:20Z",
         "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+      },
+      {
+        "title": "生物過程",
+        "data_source": "nodes/Q2996394.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2996394",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q2996394",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "代謝",
+        "data_source": "nodes/Q1057.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1057",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q1057",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
-    "updated_at": "2026-05-22T02:37:48Z",
+    "updated_at": "2026-05-23T01:07:07Z",
     "is_leaf": false,
-    "quality_score": 83,
+    "quality_score": 99,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
       "missing_relation",
-      "fetch_error",
+      "loaded",
       "curated_focus",
       "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-    "last_checked_at": "2026-05-22T02:37:48Z"
+    "last_checked_at": "2026-05-23T01:07:07Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "fetch_strategy_version": 4
   }
 }
