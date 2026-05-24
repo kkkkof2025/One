@@ -88,6 +88,8 @@
 - `data/api/children/nodes/Q1.json`: 保留旧子节点镜像路径。
 - `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
 
+`by-id` 接口对普通 QID 保持原样，例如 `Q1`；如果节点 ID 来自 Wikipedia 或 ConceptNet，包含冒号、斜杠或中文等特殊字符，目录名会使用 URL 编码，页面会自动按编码后的路径读取。
+
 `data/validation_allowlist.json` 保存人工确认过的校验例外。当前用于记录合法重复 QID，例如同一个 Wikidata 节点合理地出现在多条分类路径中；没有进入允许列表的新重复 ID 仍会作为 warning 报告。
 
 `data/curation.json` 保存人工关注节点。增长脚本会把其中的 `focused_node_ids` 和 `focused_titles` 作为策展信号，提高对应节点的质量分和默认扩展优先级；单个节点上的 `expansion_priority` 仍然是更强的人工覆盖。
@@ -107,7 +109,7 @@ python scripts/curate_node.py list
 
 常用字段：
 
-- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`。
+- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`，Wikipedia / ConceptNet 补充节点会使用带来源前缀的 ID。
 - `title`: 节点标题。
 - `children_status`: 子节点状态，取值为 `pending`、`loaded`、`error` 或 `manual`。
 - `children`: 子节点数组。

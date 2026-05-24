@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-05-24T02:33:25Z",
+  "updated_at": "2026-05-24T02:48:52Z",
   "fetch_strategy_version": 5,
   "scan_order": "priority-depth-first-cursor-v1",
   "last_scan_key": "id:Q2374421",
   "last_scan_title": "共生物",
-  "candidate_count": 205,
+  "candidate_count": 213,
   "selected_count": 5,
   "request_count": 5,
   "max_requests": 5,

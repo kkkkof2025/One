@@ -972,8 +972,12 @@ def api_node_id(node: Dict[str, Any]) -> str:
     return str(node.get("id", "")).strip()
 
 
+def api_by_id_slug(identifier: str) -> str:
+    return parse.quote(identifier, safe="")
+
+
 def api_by_id_dir(identifier: str) -> Path:
-    return API_DIR / API_BY_ID_SUBDIR / identifier
+    return API_DIR / API_BY_ID_SUBDIR / api_by_id_slug(identifier)
 
 
 def api_by_id_node_file(identifier: str) -> Path:
@@ -1113,73 +1117,89 @@ def collect_end_nodes(root: Dict[str, Any], path: Path) -> List[Dict[str, Any]]:
 
 
 def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
-    if API_DIR.exists():
-        shutil.rmtree(API_DIR)
+    global API_DIR
 
-    total_nodes = 0
-    end_nodes = collect_end_nodes(root, ROOT_FILE)
-    generated_at = now_utc()
+    original_api_dir = API_DIR
+    staging_dir = original_api_dir.parent / f".{original_api_dir.name}.build-{os.getpid()}"
+    if staging_dir.exists():
+        shutil.rmtree(staging_dir)
+    API_DIR = staging_dir
 
-    for node, path in collect_tree_nodes(root, ROOT_FILE):
-        total_nodes += 1
-        identifier = api_node_id(node)
-        node_payload = {
-            "endpoint": "node",
-            "source": api_relative_path(path),
-            "node": node,
-        }
-        save_json(api_node_file(path), node_payload)
+    try:
+        total_nodes = 0
+        end_nodes = collect_end_nodes(root, ROOT_FILE)
+        generated_at = now_utc()
 
-        children_payload = {
-            "endpoint": "children",
-            "source": api_relative_path(path),
-            "node": compact_node_summary(node),
-            "children": compact_api_children(node),
-            "child_count": len(node.get("children", []))
-            if isinstance(node.get("children"), list)
-            else 0,
-        }
-        save_json(api_children_file(path), children_payload)
-
-        if identifier:
-            alias_index_payload = {
-                "endpoint": "index",
-                "id": identifier,
+        for node, path in collect_tree_nodes(root, ROOT_FILE):
+            total_nodes += 1
+            identifier = api_node_id(node)
+            node_payload = {
+                "endpoint": "node",
                 "source": api_relative_path(path),
-                "node": "node.json",
-                "children": "children.json",
-                "legacy_node": f"../../{api_relative_path(path)}",
-                "legacy_children": f"../../children/{api_relative_path(path)}",
+                "node": node,
             }
-            save_json(api_by_id_node_file(identifier), node_payload)
-            save_json(api_by_id_children_file(identifier), children_payload)
-            save_json(api_by_id_index_file(identifier), alias_index_payload)
+            save_json(api_node_file(path), node_payload)
 
-    end_payload = {
-        "endpoint": "endNode",
-        "generated_at": generated_at,
-        "fetch_strategy_version": FETCH_STRATEGY_VERSION,
-        "total_items": len(end_nodes),
-        "items": end_nodes,
-    }
-    save_json(api_end_node_file("endNode.json"), end_payload)
-    save_json(api_end_node_file("getEndNode.json"), end_payload)
-    save_json(api_end_node_file("index.json"), {
-        "endpoint": "index",
-        "root": "root.json",
-        "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
-        "children": "children/<relative data path>",
-        "by_id": "by-id/<id>/index.json",
-        "by_id_node": "by-id/<id>/node.json",
-        "by_id_children": "by-id/<id>/children.json",
-        "getEndNode": "getEndNode.json",
-        "endNode": "endNode.json",
-    })
-    return {
-        "total_nodes": total_nodes,
-        "end_nodes": end_nodes,
-        "end_payload": end_payload,
-    }
+            children_payload = {
+                "endpoint": "children",
+                "source": api_relative_path(path),
+                "node": compact_node_summary(node),
+                "children": compact_api_children(node),
+                "child_count": len(node.get("children", []))
+                if isinstance(node.get("children"), list)
+                else 0,
+            }
+            save_json(api_children_file(path), children_payload)
+
+            if identifier:
+                alias_index_payload = {
+                    "endpoint": "index",
+                    "id": identifier,
+                    "source": api_relative_path(path),
+                    "node": "node.json",
+                    "children": "children.json",
+                    "legacy_node": f"../../{api_relative_path(path)}",
+                    "legacy_children": f"../../children/{api_relative_path(path)}",
+                }
+                save_json(api_by_id_node_file(identifier), node_payload)
+                save_json(api_by_id_children_file(identifier), children_payload)
+                save_json(api_by_id_index_file(identifier), alias_index_payload)
+
+        end_payload = {
+            "endpoint": "endNode",
+            "generated_at": generated_at,
+            "fetch_strategy_version": FETCH_STRATEGY_VERSION,
+            "total_items": len(end_nodes),
+            "items": end_nodes,
+        }
+        save_json(api_end_node_file("endNode.json"), end_payload)
+        save_json(api_end_node_file("getEndNode.json"), end_payload)
+        save_json(api_end_node_file("index.json"), {
+            "endpoint": "index",
+            "root": "root.json",
+            "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
+            "children": "children/<relative data path>",
+            "by_id": "by-id/<id>/index.json",
+            "by_id_node": "by-id/<id>/node.json",
+            "by_id_children": "by-id/<id>/children.json",
+            "getEndNode": "getEndNode.json",
+            "endNode": "endNode.json",
+        })
+
+        if original_api_dir.exists():
+            shutil.rmtree(original_api_dir)
+        staging_dir.rename(original_api_dir)
+        API_DIR = original_api_dir
+        return {
+            "total_nodes": total_nodes,
+            "end_nodes": end_nodes,
+            "end_payload": end_payload,
+        }
+    except Exception:
+        if staging_dir.exists():
+            shutil.rmtree(staging_dir)
+        API_DIR = original_api_dir
+        raise
 
 
 def normalize_node(node: Dict[str, Any]) -> bool:

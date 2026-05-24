@@ -15,17 +15,17 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-24T02:33:24Z",
-      "last_checked_at": "2026-05-24T02:33:24Z",
+      "updated_at": "2026-05-23T14:52:48Z",
+      "last_checked_at": "2026-05-23T14:52:48Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
       ],
       "source_no_children": {
-        "wikidata_api": "2026-05-24T02:33:24Z"
+        "wikidata_api": "2026-05-23T14:52:48Z"
       },
       "source_checked": {
-        "wikidata_api": "2026-05-24T02:33:24Z"
+        "wikidata_api": "2026-05-23T14:52:48Z"
       }
     },
     {
@@ -108,15 +108,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-05-24T02:33:09Z",
-  "last_checked_at": "2026-05-24T02:33:09Z",
+  "updated_at": "2026-05-23T14:52:40Z",
+  "last_checked_at": "2026-05-23T14:52:40Z",
   "last_fetch_source": "wikipedia",
   "last_fetch_sources": [
     "wikipedia"
   ],
   "source_checked": {
-    "wikidata_api": "2026-05-23T07:53:34Z",
-    "wikipedia": "2026-05-24T02:33:09Z"
+    "wikidata_api": "2026-05-23T14:51:30Z",
+    "wikipedia": "2026-05-23T14:52:40Z"
   },
   "is_leaf": false
 }

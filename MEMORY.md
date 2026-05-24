@@ -78,12 +78,14 @@
 - `scripts/grow_json.py` 的抓取策略版本升级到 `5`，默认来源顺序改为 `wikidata_api,wikipedia,wikidata,conceptnet`，优先使用较轻的 API 和分类补充，降低 WDQS 的等待和限流影响。
 - 新增 `ONE_MAX_SOURCES_PER_NODE`，默认 `1`；每轮同一个节点最多尝试 1 个来源，避免 5 次请求预算被一个节点吃完。设为 `0` 可恢复“不限制”，适合人工彻底排查单个节点。
 - 节点新增 `source_checked` 映射，记录已经成功检查过的来源；如果某个来源只返回已有子节点，也会被跳过，不再把整个节点提前标成当前策略完成，后续仍可尝试其它来源。
+- `data/api/by-id/<id>/` 对非 QID 节点使用 URL 编码后的目录名，避免 Wikipedia / ConceptNet ID 中的冒号、斜杠或中文在 Windows 上写入失败；页面读取 by-id 接口时也会编码 ID。
+- `write_static_api()` 改为先写入临时 API 目录，全部成功后再替换 `data/api/`，避免中途异常导致已发布的静态接口镜像被删除一半。
 
 ## Data Schema Memory
 
 节点常用字段：
 
-- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`。
+- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`，补充来源可使用 `wikipedia:` 或 `conceptnet:` 前缀。
 - `title`: 展示标题。
 - `children_status`: `pending`、`loaded`、`error` 或 `manual`。
 - `children`: 子节点数组。

@@ -22,6 +22,7 @@ VALID_REVIEW_DECISION_STATUSES = {
     "ignored",
     "deferred",
 }
+VALID_EXTERNAL_ID_PREFIXES = ("wikipedia:", "conceptnet:")
 ALLOWED_NODE_FIELDS = {
     "id",
     "title",
@@ -187,8 +188,13 @@ class DataValidator:
             return
 
         value = node_id.strip()
-        if value != "root" and not re.fullmatch(r"Q\d+", value):
-            self.warning(location, f"`id` 不是 root 或 Wikidata QID: {value}")
+        valid_id = (
+            value == "root"
+            or re.fullmatch(r"Q\d+", value)
+            or value.startswith(VALID_EXTERNAL_ID_PREFIXES)
+        )
+        if not valid_id:
+            self.warning(location, f"`id` 不是 root、Wikidata QID 或已登记来源 ID: {value}")
 
         previous = self.id_locations.get(value)
         if previous is not None and previous != location:

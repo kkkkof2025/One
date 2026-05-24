@@ -182,6 +182,35 @@ class ValidateDataTests(unittest.TestCase):
         self.assertEqual(validator.validate(), 0)
         self.assertTrue(any("重复 ID" in warning for warning in validator.warnings))
 
+    def test_known_external_source_ids_are_not_qid_warnings(self):
+        self.write_json(
+            "root.json",
+            {
+                "id": "root",
+                "title": "万物",
+                "children_status": "loaded",
+                "children": [
+                    {
+                        "id": "wikipedia:zh:Category:寄生",
+                        "title": "寄生",
+                        "children_status": "pending",
+                        "children": [],
+                    },
+                    {
+                        "id": "conceptnet:/c/zh/子节点",
+                        "title": "子节点",
+                        "children_status": "pending",
+                        "children": [],
+                    },
+                ],
+            },
+        )
+
+        validator = self.validator()
+
+        self.assertEqual(validator.validate(), 0)
+        self.assertFalse(any("Wikidata QID" in warning for warning in validator.warnings))
+
     def test_allowlisted_duplicate_id_suppresses_warning(self):
         self.write_json(
             "validation_allowlist.json",

@@ -817,6 +817,33 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(alias_children_api["child_count"], 0)
         self.assertEqual(alias_index_api["id"], "Q99")
 
+    def test_static_api_by_id_alias_encodes_non_qid_id(self):
+        identifier = "wikipedia:zh:Category:寄生生物題材作品"
+        root = {
+            "id": "root",
+            "title": "万物",
+            "children_status": "loaded",
+            "children": [
+                {
+                    "id": identifier,
+                    "title": "寄生生物題材作品",
+                    "children_status": "pending",
+                    "children": [],
+                }
+            ],
+        }
+
+        grow_json.write_static_api(root)
+
+        alias_dir = grow_json.API_DIR / "by-id" / grow_json.api_by_id_slug(identifier)
+        alias_node_api = grow_json.load_json(alias_dir / "node.json")
+        alias_index_api = grow_json.load_json(alias_dir / "index.json")
+
+        self.assertTrue(alias_dir.exists())
+        self.assertNotIn(":", alias_dir.name)
+        self.assertEqual(alias_node_api["node"]["id"], identifier)
+        self.assertEqual(alias_index_api["id"], identifier)
+
     def test_zero_request_refresh_can_skip_growth_history_append(self):
         grow_json.save_json(
             grow_json.GROWTH_HISTORY_FILE,

@@ -263,7 +263,7 @@
     "stop_reason": ""
   },
   {
-    "run_at": "2026-05-23T07:53:50Z",
+    "run_at": "2026-05-23T14:51:51Z",
     "added_nodes": 3,
     "total_nodes": 208,
     "requests": 5,
@@ -280,12 +280,12 @@
     "stop_reason": ""
   },
   {
-    "run_at": "2026-05-24T02:33:25Z",
+    "run_at": "2026-05-24T02:48:52Z",
     "added_nodes": 8,
     "total_nodes": 216,
     "requests": 5,
-    "scanned_nodes": 214,
-    "candidate_nodes": 205,
+    "scanned_nodes": 222,
+    "candidate_nodes": 213,
     "unchanged_requests": 3,
     "failed_requests": 0,
     "end_nodes_marked": 0,
