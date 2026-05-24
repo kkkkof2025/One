@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/心智改变寄生.json",
+  "node": {
+    "id": "wikipedia:zh:Category:心智改变寄生",
+    "title": "心智改变寄生",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BF%83%E6%99%BA%E6%94%B9%E5%8F%98%E5%AF%84%E7%94%9F",
+    "source_page_id": 1710971,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

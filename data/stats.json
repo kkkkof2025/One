@@ -1,20 +1,21 @@
 {
-  "generated_at": "2026-05-23T07:53:50Z",
-  "total_nodes": 208,
-  "last_added_nodes": 3,
+  "generated_at": "2026-05-24T02:33:25Z",
+  "total_nodes": 216,
+  "last_added_nodes": 8,
   "last_request_count": 5,
-  "last_scanned_nodes": 211,
-  "last_candidate_nodes": 202,
+  "last_scanned_nodes": 214,
+  "last_candidate_nodes": 205,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
-    "wikidata_api": 5
+    "wikipedia": 2,
+    "wikidata_api": 3
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 31,
+  "history_entries": 32,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

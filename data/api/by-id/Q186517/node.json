@@ -17,7 +17,19 @@
         "source_url": "https://www.wikidata.org/wiki/Q221673",
         "quality_score": 93,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-24T02:33:19Z",
+        "last_checked_at": "2026-05-24T02:33:19Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_no_children": {
+          "wikidata_api": "2026-05-24T02:33:19Z"
+        },
+        "source_checked": {
+          "wikidata_api": "2026-05-24T02:33:19Z"
+        }
       },
       {
         "title": "寄生物",
@@ -29,6 +41,57 @@
         "source_relation": "has_part",
         "source_url": "https://www.wikidata.org/wiki/Q10253316",
         "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-24T02:33:15Z",
+        "last_checked_at": "2026-05-24T02:33:15Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_no_children": {
+          "wikidata_api": "2026-05-24T02:33:15Z"
+        },
+        "source_checked": {
+          "wikidata_api": "2026-05-24T02:33:15Z"
+        }
+      },
+      {
+        "title": "寄生生物題材作品",
+        "data_source": "nodes/寄生生物題材作品.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:寄生生物題材作品",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AF%84%E7%94%9F%E7%94%9F%E7%89%A9%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "寄生真菌",
+        "data_source": "nodes/寄生真菌.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:寄生真菌",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AF%84%E7%94%9F%E7%9C%9F%E8%8F%8C",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "心智改变寄生",
+        "data_source": "nodes/心智改变寄生.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:心智改变寄生",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BF%83%E6%99%BA%E6%94%B9%E5%8F%98%E5%AF%84%E7%94%9F",
+        "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
       }
@@ -47,14 +110,15 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T07:53:44Z",
-    "last_checked_at": "2026-05-23T07:53:44Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-05-24T02:33:14Z",
+    "last_checked_at": "2026-05-24T02:33:14Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-05-23T07:53:44Z"
+      "wikidata_api": "2026-05-23T07:53:44Z",
+      "wikipedia": "2026-05-24T02:33:14Z"
     },
     "is_leaf": false
   }

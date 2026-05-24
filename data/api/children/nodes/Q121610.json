@@ -3,7 +3,7 @@
   "source": "nodes/Q121610.json",
   "node": {
     "title": "共生",
-    "children_count": 1,
+    "children_count": 6,
     "id": "Q121610",
     "source_provider": "wikidata_api",
     "source_relation": "has_part",
@@ -13,14 +13,15 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T07:53:34Z",
-    "last_checked_at": "2026-05-23T07:53:34Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-05-24T02:33:09Z",
+    "last_checked_at": "2026-05-24T02:33:09Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-05-23T07:53:34Z"
+      "wikidata_api": "2026-05-23T07:53:34Z",
+      "wikipedia": "2026-05-24T02:33:09Z"
     }
   },
   "children": [
@@ -36,8 +37,90 @@
       "is_leaf": false,
       "quality_score": 93,
       "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-24T02:33:24Z",
+      "last_checked_at": "2026-05-24T02:33:24Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-05-24T02:33:24Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-05-24T02:33:24Z"
+      }
+    },
+    {
+      "title": "互利共生",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:互利共生",
+      "data_source": "nodes/互利共生.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%92%E5%88%A9%E5%85%B1%E7%94%9F",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "化學共生",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:化學共生",
+      "data_source": "nodes/化學共生.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%96%E5%AD%B8%E5%85%B1%E7%94%9F",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "寄生",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:寄生",
+      "data_source": "nodes/寄生.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AF%84%E7%94%9F",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生態系統",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:生態系統",
+      "data_source": "nodes/生態系統.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E6%85%8B%E7%B3%BB%E7%B5%B1",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "超个体",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:超个体",
+      "data_source": "nodes/超个体.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B6%85%E4%B8%AA%E4%BD%93",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
       "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 6
 }
