@@ -172,6 +172,52 @@ class GrowJsonTests(unittest.TestCase):
             saved = json.load(f)
         self.assertEqual(saved["children"][0]["title"], "人工子节点")
 
+    def test_materialize_external_children_with_same_title_use_distinct_shards(self):
+        wikipedia_child = {
+            "id": "wikipedia:zh:Category:寄生",
+            "title": "寄生",
+            "children_status": "pending",
+            "children": [],
+            "source_provider": "wikipedia",
+        }
+        conceptnet_child = {
+            "id": "conceptnet:/c/zh/寄生",
+            "title": "寄生",
+            "children_status": "pending",
+            "children": [],
+            "source_provider": "conceptnet",
+        }
+
+        wikipedia_data, wikipedia_path, _ = grow_json.materialize_child(wikipedia_child)
+        conceptnet_data, conceptnet_path, _ = grow_json.materialize_child(conceptnet_child)
+
+        self.assertNotEqual(wikipedia_path, conceptnet_path)
+        self.assertEqual(wikipedia_data["id"], "wikipedia:zh:Category:寄生")
+        self.assertEqual(conceptnet_data["id"], "conceptnet:/c/zh/寄生")
+        self.assertEqual(wikipedia_child["data_source"], grow_json.data_relative_path(wikipedia_path))
+        self.assertEqual(conceptnet_child["data_source"], grow_json.data_relative_path(conceptnet_path))
+
+    def test_node_file_for_external_node_keeps_matching_legacy_title_shard(self):
+        legacy_path = self.nodes_dir / "寄生.json"
+        grow_json.save_json(
+            legacy_path,
+            {
+                "id": "wikipedia:zh:Category:寄生",
+                "title": "寄生",
+                "children_status": "pending",
+                "children": [],
+            },
+        )
+
+        path = grow_json.node_file_for(
+            {
+                "id": "wikipedia:zh:Category:寄生",
+                "title": "寄生",
+            }
+        )
+
+        self.assertEqual(path, legacy_path)
+
     def test_quality_metadata_sets_review_status(self):
         approved = {
             "id": "Q1",

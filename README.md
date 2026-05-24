@@ -90,6 +90,8 @@
 
 `by-id` 接口对普通 QID 保持原样，例如 `Q1`；如果节点 ID 来自 Wikipedia 或 ConceptNet，包含冒号、斜杠或中文等特殊字符，目录名会使用 URL 编码，页面会自动按编码后的路径读取。
 
+新建的非 QID 分片会在标题后追加来源 ID 的短哈希，例如 `寄生-xxxxxxxxxxxx.json`。这可以避免 Wikipedia 和 ConceptNet 等补充来源出现同名节点时写入同一个 `data/nodes/<标题>.json`；已经存在且 ID 匹配的旧标题分片会继续沿用，不做破坏性迁移。
+
 `data/validation_allowlist.json` 保存人工确认过的校验例外。当前用于记录合法重复 QID，例如同一个 Wikidata 节点合理地出现在多条分类路径中；没有进入允许列表的新重复 ID 仍会作为 warning 报告。
 
 `data/curation.json` 保存人工关注节点。增长脚本会把其中的 `focused_node_ids` 和 `focused_titles` 作为策展信号，提高对应节点的质量分和默认扩展优先级；单个节点上的 `expansion_priority` 仍然是更强的人工覆盖。

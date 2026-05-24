@@ -48,6 +48,7 @@
 - [x] 新增 `source_checked` 和 `ONE_MAX_SOURCES_PER_NODE`，默认每轮每节点只尝试 1 个来源，避免小请求预算被单个低产节点耗尽。
 - [x] 默认来源顺序调整为 `wikidata_api,wikipedia,wikidata,conceptnet`，让轻量补充来源优先，WDQS 后置。
 - [x] 修复非 QID 节点的 `by-id` 静态接口目录编码，并让静态 API 镜像先临时构建再整体替换。
+- [x] 新建非 QID 分片文件名加入来源 ID 短哈希，避免不同补充来源的同名节点共用一个 `data/nodes/<标题>.json`。
 
 ## Agent Rules
 
@@ -63,4 +64,4 @@
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
 - 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`max_sources_per_node` 和节点的 `source_checked` / `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
 
-_Last updated: 2026-05-23_
+_Last updated: 2026-05-24_

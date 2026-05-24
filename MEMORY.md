@@ -81,6 +81,11 @@
 - `data/api/by-id/<id>/` 对非 QID 节点使用 URL 编码后的目录名，避免 Wikipedia / ConceptNet ID 中的冒号、斜杠或中文在 Windows 上写入失败；页面读取 by-id 接口时也会编码 ID。
 - `write_static_api()` 改为先写入临时 API 目录，全部成功后再替换 `data/api/`，避免中途异常导致已发布的静态接口镜像被删除一半。
 
+## Decisions Made On 2026-05-24
+
+- 新建的非 QID 节点分片不再只按标题命名，而是使用标题加来源 ID 短哈希，避免 Wikipedia、ConceptNet 等补充来源出现同名节点时写入同一个 `data/nodes/<标题>.json`。
+- 为了兼容已有数据，如果旧标题分片已经存在且其中的 `id` 与当前节点一致，`node_file_for()` 会继续返回旧路径，不会主动迁移或复制现有分片。
+
 ## Data Schema Memory
 
 节点常用字段：
@@ -125,4 +130,4 @@
 - 如果校验报告出现新的重复 ID warning，先确认它是合法多路径还是数据问题；合法多路径可以写入 `data/validation_allowlist.json` 并补充原因。
 - 新的人工关注节点优先通过 `python scripts/curate_node.py focus --id Q... --reason "..."` 写入 `data/curation.json`；只有需要强制覆盖默认排序时才直接改节点的 `expansion_priority`。
 
-_Last updated: 2026-05-23_
+_Last updated: 2026-05-24_

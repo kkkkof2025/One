@@ -5,6 +5,7 @@ import math
 import shutil
 import time
 import tempfile
+import hashlib
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -562,10 +563,23 @@ def safe_slug(text: Any, fallback: str = "node") -> str:
     return (slug[:80] or fallback).strip(".")
 
 
+def external_node_file_slug(node: Dict[str, Any]) -> str:
+    node_id = str(node.get("id", "")).strip()
+    title_slug = safe_slug(node.get("title"), fallback="external")[:48]
+    digest = hashlib.sha1(node_id.encode("utf-8")).hexdigest()[:12]
+    return f"{title_slug}-{digest}"
+
+
 def node_file_for(node: Dict[str, Any]) -> Path:
     node_id = str(node.get("id", "")).strip()
     if is_qid(node_id):
         return NODES_DIR / f"{node_id}.json"
+    if node_id:
+        legacy_path = NODES_DIR / f"{safe_slug(node.get('title'))}.json"
+        legacy_data = load_json(legacy_path)
+        if isinstance(legacy_data, dict) and str(legacy_data.get("id", "")).strip() == node_id:
+            return legacy_path
+        return NODES_DIR / f"{external_node_file_slug(node)}.json"
     return NODES_DIR / f"{safe_slug(node.get('title'))}.json"
 
 
