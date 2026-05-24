@@ -1423,14 +1423,14 @@
 
     function nodeApiPath(node) {
       const id = nodeIdForApi(node);
-      if (id) return apiPath(`by-id/${id}/node.json`);
+      if (id) return apiPath(`by-id/${encodeURIComponent(id)}/node.json`);
       const source = sourcePathForNode(node);
       return source ? apiPath(source) : "";
     }
 
     function childrenApiPath(node) {
       const id = nodeIdForApi(node);
-      if (id) return apiPath(`by-id/${id}/children.json`);
+      if (id) return apiPath(`by-id/${encodeURIComponent(id)}/children.json`);
       const source = sourcePathForNode(node);
       return source ? apiPath(`children/${source}`) : "";
     }

@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:化學共生",
+  "source": "nodes/化學共生.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/化學共生.json",
+  "legacy_children": "../../children/nodes/化學共生.json"
+}

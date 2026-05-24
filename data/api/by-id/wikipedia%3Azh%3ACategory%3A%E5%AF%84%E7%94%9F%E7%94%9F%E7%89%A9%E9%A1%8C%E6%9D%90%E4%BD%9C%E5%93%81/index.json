@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:寄生生物題材作品",
+  "source": "nodes/寄生生物題材作品.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/寄生生物題材作品.json",
+  "legacy_children": "../../children/nodes/寄生生物題材作品.json"
+}

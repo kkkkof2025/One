@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-05-23T07:05:55Z",
+  "updated_at": "2026-05-24T02:48:52Z",
   "fetch_strategy_version": 5,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q1823478",
-  "last_scan_title": "生物间相互作用",
-  "candidate_count": 197,
+  "last_scan_key": "id:Q2374421",
+  "last_scan_title": "共生物",
+  "candidate_count": 213,
   "selected_count": 5,
   "request_count": 5,
   "max_requests": 5,
@@ -23,7 +23,8 @@
     "conceptnet"
   ],
   "source_request_counts": {
-    "wikidata_api": 5
+    "wikipedia": 2,
+    "wikidata_api": 3
   },
   "source_cooldowns": {},
   "last_stop_reason": ""
