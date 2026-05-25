@@ -79,6 +79,7 @@
 `data/api/` 是面向 GitHub Pages 的静态接口镜像。它不是真正的后端服务，但路径设计成接口形式，方便页面和外部脚本调用：
 
 - `data/api/index.json`: 返回可用接口和路径模板。
+- `data/api/client.js`: 浏览器或脚本可加载的静态调用层，暴露 `OneKnowledgeApi.getNode()`、`getChildren()` 和 `getEndNode()`。
 - `data/api/root.json`: 返回根节点。
 - `data/api/by-id/root/node.json`: 返回根节点的按 id 接口别名。
 - `data/api/by-id/Q1/node.json`: 返回指定节点完整数据。
@@ -91,6 +92,18 @@
 `by-id` 接口对普通 QID 保持原样，例如 `Q1`；如果节点 ID 来自 Wikipedia 或 ConceptNet，包含冒号、斜杠或中文等特殊字符，目录名会使用 URL 编码，页面会自动按编码后的路径读取。
 
 新建的非 QID 分片会在标题后追加来源 ID 的短哈希，例如 `寄生-xxxxxxxxxxxx.json`。这可以避免 Wikipedia 和 ConceptNet 等补充来源出现同名节点时写入同一个 `data/nodes/<标题>.json`；已经存在且 ID 匹配的旧标题分片会继续沿用，不做破坏性迁移。
+
+外部页面可以直接加载静态调用层，不需要知道具体目录编码规则：
+
+```html
+<script src="https://kkkkof2025.github.io/One/data/api/client.js"></script>
+<script>
+  OneKnowledgeApi.getChildren("Q1").then(console.log);
+  OneKnowledgeApi.getEndNode().then(console.log);
+</script>
+```
+
+在 Node.js 或其它脚本环境中，也可以传入 `baseUrl` 和自定义 `fetch`：`OneKnowledgeApi.getNode("Q1", { baseUrl: "https://kkkkof2025.github.io/One/data/api/" })`。
 
 `data/validation_allowlist.json` 保存人工确认过的校验例外。当前用于记录合法重复 QID，例如同一个 Wikidata 节点合理地出现在多条分类路径中；没有进入允许列表的新重复 ID 仍会作为 warning 报告。
 

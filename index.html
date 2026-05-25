@@ -1119,6 +1119,7 @@
           <button id="copyNodeApi" class="detail-action" type="button">复制节点接口</button>
           <button id="copyChildrenApi" class="detail-action" type="button">复制子节点接口</button>
           <button id="copyEndNodeApi" class="detail-action" type="button">复制终止接口</button>
+          <button id="copyApiClient" class="detail-action" type="button">复制客户端</button>
         </div>
       </div>
     </section>
@@ -1234,6 +1235,7 @@
     const copyNodeApi = document.getElementById("copyNodeApi");
     const copyChildrenApi = document.getElementById("copyChildrenApi");
     const copyEndNodeApi = document.getElementById("copyEndNodeApi");
+    const copyApiClient = document.getElementById("copyApiClient");
 
     const cache = new Map();
     let rootNode = null;
@@ -1437,6 +1439,10 @@
 
     function endNodeApiPath() {
       return apiPath("getEndNode.json");
+    }
+
+    function apiClientPath() {
+      return apiPath("client.js");
     }
 
     function absoluteApiUrl(path) {
@@ -1818,7 +1824,8 @@
         downloadJson,
         copyNodeApi,
         copyChildrenApi,
-        copyEndNodeApi
+        copyEndNodeApi,
+        copyApiClient
       ].forEach((button) => {
         button.disabled = !node;
       });
@@ -1830,6 +1837,7 @@
       copyNodeApi.disabled = !nodeApiPath(node);
       copyChildrenApi.disabled = !childrenApiPath(node);
       copyEndNodeApi.disabled = false;
+      copyApiClient.disabled = false;
 
       const children = Array.isArray(node.children) ? node.children : [];
       const fields = [
@@ -2066,6 +2074,7 @@
         if (kind === "node") path = nodeApiPath(node);
         if (kind === "children") path = childrenApiPath(node);
         if (kind === "endNode") path = endNodeApiPath();
+        if (kind === "client") path = apiClientPath();
         if (!path) throw new Error("missing api path");
         await writeClipboard(absoluteApiUrl(path));
         button.textContent = "已复制";
@@ -3309,6 +3318,7 @@
     copyNodeApi.addEventListener("click", () => copyApiEndpoint("node", copyNodeApi));
     copyChildrenApi.addEventListener("click", () => copyApiEndpoint("children", copyChildrenApi));
     copyEndNodeApi.addEventListener("click", () => copyApiEndpoint("endNode", copyEndNodeApi));
+    copyApiClient.addEventListener("click", () => copyApiEndpoint("client", copyApiClient));
 
     cloudBack.addEventListener("click", () => {
       if (cloudTrail.length <= 1) return;

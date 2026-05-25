@@ -855,6 +855,8 @@ class GrowJsonTests(unittest.TestCase):
         alias_node_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "node.json")
         alias_children_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "children.json")
         alias_index_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "index.json")
+        api_index = grow_json.load_json(grow_json.API_DIR / "index.json")
+        api_client = (grow_json.API_DIR / "client.js").read_text(encoding="utf-8")
 
         self.assertEqual(end_node["total_items"], 1)
         self.assertEqual(children_api["child_count"], 0)
@@ -862,6 +864,11 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(alias_node_api["node"]["id"], "Q99")
         self.assertEqual(alias_children_api["child_count"], 0)
         self.assertEqual(alias_index_api["id"], "Q99")
+        self.assertEqual(api_index["client"], "client.js")
+        self.assertIn("CLIENT_BASE_URL", api_client)
+        self.assertIn("OneKnowledgeApi", api_client)
+        self.assertIn("getChildren", api_client)
+        self.assertIn("getEndNode", api_client)
 
     def test_static_api_by_id_alias_encodes_non_qid_id(self):
         identifier = "wikipedia:zh:Category:寄生生物題材作品"

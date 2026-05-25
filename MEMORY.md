@@ -8,6 +8,7 @@
 - 生长统计写入 `data/stats.json`，历史生长记录写入 `data/growth_history.json`。
 - 扫描游标写入 `data/scan_state.json`，终止节点清单写入 `data/end_nodes.json`。
 - GitHub Pages 静态接口镜像写入 `data/api/`，其中 `by-id/<id>/node.json` 和 `by-id/<id>/children.json` 是按节点 id 调用的稳定别名。
+- 静态接口调用层写入 `data/api/client.js`，外部脚本可用 `OneKnowledgeApi.getChildren("Q1")`、`getNode()` 和 `getEndNode()` 读取数据。
 - 人工策展信号写入 `data/curation.json`。
 - 校验允许列表写入 `data/validation_allowlist.json`。
 - 待复核节点队列写入 `data/review_queue.json`。
@@ -85,6 +86,7 @@
 
 - 新建的非 QID 节点分片不再只按标题命名，而是使用标题加来源 ID 短哈希，避免 Wikipedia、ConceptNet 等补充来源出现同名节点时写入同一个 `data/nodes/<标题>.json`。
 - 为了兼容已有数据，如果旧标题分片已经存在且其中的 `id` 与当前节点一致，`node_file_for()` 会继续返回旧路径，不会主动迁移或复制现有分片。
+- `write_static_api()` 会生成 `data/api/client.js`，暴露 `OneKnowledgeApi.getRoot()`、`getNode(node)`、`getChildren(node)` 和 `getEndNode()`；这是 GitHub Pages 上的静态调用层，用来模拟带入参的接口。
 
 ## Data Schema Memory
 

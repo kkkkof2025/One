@@ -1,6 +1,14 @@
 {
   "endpoint": "index",
   "root": "root.json",
+  "client": "client.js",
+  "client_global": "OneKnowledgeApi",
+  "client_methods": [
+    "getRoot",
+    "getNode",
+    "getChildren",
+    "getEndNode"
+  ],
   "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
   "children": "children/<relative data path>",
   "by_id": "by-id/<id>/index.json",
