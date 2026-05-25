@@ -10,12 +10,15 @@
     "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T01:07:13Z",
-    "last_checked_at": "2026-05-23T01:07:13Z",
+    "updated_at": "2026-05-25T02:41:41Z",
+    "last_checked_at": "2026-05-25T02:41:41Z",
     "last_fetch_source": "wikidata_api",
     "last_fetch_sources": [
       "wikidata_api"
-    ]
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-05-25T02:41:41Z"
+    }
   },
   "children": [
     {
@@ -107,12 +110,15 @@
       "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T01:07:35Z",
-      "last_checked_at": "2026-05-23T01:07:35Z",
+      "updated_at": "2026-05-25T02:41:56Z",
+      "last_checked_at": "2026-05-25T02:41:56Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
-      ]
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-25T02:41:56Z"
+      }
     },
     {
       "title": "巨型超大类星体群",
@@ -160,12 +166,15 @@
       "quality_score": 88,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T01:07:26Z",
-      "last_checked_at": "2026-05-23T01:07:26Z",
+      "updated_at": "2026-05-25T02:41:51Z",
+      "last_checked_at": "2026-05-25T02:41:51Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
-      ]
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-25T02:41:51Z"
+      }
     },
     {
       "title": "暗物质",

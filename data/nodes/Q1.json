@@ -13,12 +13,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T01:07:13Z",
-      "last_checked_at": "2026-05-23T01:07:13Z",
+      "updated_at": "2026-05-25T02:41:41Z",
+      "last_checked_at": "2026-05-25T02:41:41Z",
       "last_fetch_source": "wikidata_api",
       "last_fetch_sources": [
         "wikidata_api"
-      ]
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-05-25T02:41:41Z"
+      }
     },
     {
       "title": "外太空",

@@ -33,7 +33,7 @@
       "updated_at": "2026-05-08T02:14:25Z"
     }
   ],
-  "updated_at": "2026-05-23T01:07:35Z",
+  "updated_at": "2026-05-25T02:41:56Z",
   "fetch_strategy_version": 4,
   "is_leaf": false,
   "quality_score": 85,
@@ -47,9 +47,12 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "last_checked_at": "2026-05-23T01:07:35Z",
+  "last_checked_at": "2026-05-25T02:41:56Z",
   "last_fetch_source": "wikidata_api",
   "last_fetch_sources": [
     "wikidata_api"
-  ]
+  ],
+  "source_checked": {
+    "wikidata_api": "2026-05-25T02:41:56Z"
+  }
 }

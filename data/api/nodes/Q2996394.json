@@ -39,7 +39,19 @@
         "source_url": "https://www.wikidata.org/wiki/Q22299142",
         "quality_score": 67,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-05-25T02:41:46Z",
+        "last_checked_at": "2026-05-25T02:41:46Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_no_children": {
+          "wikidata_api": "2026-05-25T02:41:46Z"
+        },
+        "source_checked": {
+          "wikidata_api": "2026-05-25T02:41:46Z"
+        }
       }
     ],
     "source_provider": "wikidata_api",
