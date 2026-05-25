@@ -29,7 +29,7 @@
 
 增长脚本不会只依赖单一“子类”关系。当前会先用 Wikidata API 读取直接 `P527` / `P2670` 声明，再尝试维基百科分类、Wikidata Query Service 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class），最后把 ConceptNet 和 DBpedia 分类作为低优先级补充来源；如果某个来源限流或 5xx，会记录来源冷却并让后续节点尝试其它来源。旧策略误判为空叶子的节点会迁移为 `source_no_children.wikidata`，只跳过已查空来源，仍允许补充来源继续尝试。
 
-增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。默认每个节点每轮只尝试 1 个来源，防止 5 次预算被同一个低产节点吃完；成功检查过的来源会写入 `source_checked`，没有返回子节点的来源还会写入 `source_no_children`。只有当前策略里的支持来源都检查完且没有子节点后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
+增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。默认每个节点每轮只尝试 1 个来源，防止 5 次预算被同一个低产节点吃完；已经查过部分来源但还没完成的节点会优先继续尝试下一个来源，避免所有候选都先消耗在同一个低产来源上。成功检查过的来源会写入 `source_checked`，没有返回子节点的来源还会写入 `source_no_children`。只有当前策略里的支持来源都检查完且没有子节点后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
 
 当 `fetch_strategy_version` 升级时，旧扫描游标会自动失效，下一轮会从新策略下的最高优先级候选重新开始，避免新策略仍被旧游标卡在低收益分支后面。
 
@@ -320,12 +320,13 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - `scripts/grow_json.py` 已新增扫描游标、终止节点清单和 `data/api/` 静态接口镜像；页面会优先通过接口式路径读取节点、子节点和终止节点。
 - `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_checked` 和 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
 - `scripts/grow_json.py` 已新增 DBpedia 分类层级作为最后备用来源，继续受请求预算、来源冷却和单节点来源上限控制。
+- `scripts/grow_json.py` 的候选排序已改为优先补完已开始检查的节点，让同一节点尽快从 `wikidata_api` 轮到 Wikipedia、WDQS、ConceptNet 或 DBpedia，而不是把全部候选先过一遍同一来源。
 
 ## To-do
 
 - 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`source_request_counts` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
 
 ## 已知限制
 

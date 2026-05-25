@@ -119,7 +119,7 @@ RELATION_PRIORITY = {
 QUALITY_SCORE_VERSION = 3
 QUALITY_REVIEW_THRESHOLD = int(os.environ.get("ONE_QUALITY_REVIEW_THRESHOLD", "45"))
 PRIORITY_SCAN_LIMIT = int(os.environ.get("ONE_PRIORITY_SCAN_LIMIT", "1000"))
-FETCH_STRATEGY_VERSION = 6
+FETCH_STRATEGY_VERSION = 7
 BROAD_TITLES = {
     "事物",
     "对象",
@@ -2237,16 +2237,40 @@ def collect_fetch_candidates(
     return changed
 
 
+def candidate_source_progress(node: Dict[str, Any]) -> int:
+    supported_sources = set(supported_sources_for_node(node))
+    if not supported_sources:
+        return 0
+    return len(source_done_sources(node).intersection(supported_sources))
+
+
+def refresh_candidate_source_progress(candidate: Dict[str, Any]) -> None:
+    node = candidate.get("node")
+    if not isinstance(node, dict):
+        candidate["source_progress"] = 0
+        return
+    candidate["source_progress"] = candidate_source_progress(node)
+
+
 def sort_scan_candidates(candidates: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    for candidate in candidates:
+        refresh_candidate_source_progress(candidate)
     ordered = sorted(
         candidates,
-        key=lambda item: (-float(item.get("priority", 0.0)), item.get("depth", 0), item.get("scan_key", "")),
+        key=lambda item: (
+            -int(item.get("source_progress", 0) or 0),
+            -float(item.get("priority", 0.0)),
+            item.get("depth", 0),
+            item.get("scan_key", ""),
+        ),
     )
     return ordered
 
 
 def rotate_candidates(candidates: List[Dict[str, Any]], cursor: str) -> List[Dict[str, Any]]:
     if not cursor:
+        return candidates
+    if candidates and int(candidates[0].get("source_progress", 0) or 0) > 0:
         return candidates
     for index, candidate in enumerate(candidates):
         if candidate.get("scan_key") == cursor:

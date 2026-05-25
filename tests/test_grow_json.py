@@ -466,6 +466,45 @@ class GrowJsonTests(unittest.TestCase):
 
         self.assertEqual([item["scan_key"] for item in rotated], ["id:Q2", "id:Q3", "id:Q1"])
 
+    def test_partial_source_progress_is_prioritized_before_untouched_nodes(self):
+        partial = {
+            "id": "Q1",
+            "title": "宇宙",
+            "children_status": "loaded",
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,
+            "children": [],
+            "source_checked": {"wikidata_api": "2026-05-25T00:00:00Z"},
+        }
+        untouched = {
+            "id": "Q2",
+            "title": "高优先级未开始节点",
+            "children_status": "loaded",
+            "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,
+            "children": [],
+        }
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "conceptnet"]
+        candidates = [
+            {
+                "node": untouched,
+                "scan_key": "id:Q2",
+                "priority": 100,
+                "depth": 1,
+            },
+            {
+                "node": partial,
+                "scan_key": "id:Q1",
+                "priority": 10,
+                "depth": 1,
+            },
+        ]
+
+        ordered = grow_json.sort_scan_candidates(candidates)
+        rotated = grow_json.rotate_candidates(ordered, "id:Q1")
+
+        self.assertEqual(ordered[0]["scan_key"], "id:Q1")
+        self.assertEqual(ordered[0]["source_progress"], 1)
+        self.assertEqual(rotated[0]["scan_key"], "id:Q1")
+
     def test_old_strategy_scan_cursor_is_ignored(self):
         state = {
             "fetch_strategy_version": grow_json.FETCH_STRATEGY_VERSION - 1,

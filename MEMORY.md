@@ -94,6 +94,7 @@
 - `scripts/grow_json.py` 的抓取策略版本升级到 `6`，默认来源顺序为 `wikidata_api,wikipedia,wikidata,conceptnet,dbpedia`；DBpedia 放在最后，只作为分类层级备用来源，不提高默认请求预算或频率。
 - 新增 `ONE_DBPEDIA_ENDPOINT`，默认使用 `https://dbpedia.org/sparql`；DBpedia 适配器只读取 `Category:* skos:broader <父分类>` 关系，生成 `dbpedia:` 前缀 ID 和 `dbpedia_category` 关系。
 - DBpedia 请求继续复用统一的 `ONE_USER_AGENT`、来源冷却、`ONE_MAX_REQUESTS` 和 `ONE_MAX_SOURCES_PER_NODE` 控制；如果 DBpedia 不可用，会像其它来源一样进入冷却，不会阻塞整个增长流程。
+- `scripts/grow_json.py` 的抓取策略版本升级到 `7`，候选排序新增 `source_progress`：已经成功检查过部分来源但尚未完成的节点会排在未开始节点前面，避免连续多轮全部预算都花在 `wikidata_api` 这类同一顺位来源上。扫描游标只在没有部分进度候选时继续按 `last_scan_key` 轮转。
 
 ## Data Schema Memory
 

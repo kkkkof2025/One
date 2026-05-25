@@ -52,6 +52,7 @@
 - [x] 新增 `data/api/client.js` 静态调用层，提供 `getNode`、`getChildren` 和 `getEndNode` 形式的接口调用。
 - [x] 页面数据读取优先走 `OneKnowledgeApi` 静态客户端，失败时回退原始 JSON 路径。
 - [x] 新增 DBpedia 分类层级备用来源，默认放在来源顺序最后，并沿用请求预算、UA 和来源冷却。
+- [x] 调整增长候选调度，优先补完已开始检查的节点，减少连续多轮预算全部消耗在 `wikidata_api`。
 
 ## Agent Rules
 
