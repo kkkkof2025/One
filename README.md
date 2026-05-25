@@ -79,7 +79,7 @@
 `data/api/` 是面向 GitHub Pages 的静态接口镜像。它不是真正的后端服务，但路径设计成接口形式，方便页面和外部脚本调用：
 
 - `data/api/index.json`: 返回可用接口和路径模板。
-- `data/api/client.js`: 浏览器或脚本可加载的静态调用层，暴露 `OneKnowledgeApi.getNode()`、`getChildren()` 和 `getEndNode()`。
+- `data/api/client.js`: 浏览器或脚本可加载的静态调用层，暴露 `OneKnowledgeApi.getNode()`、`getChildren()`、`getEndNode()` 和 `getScanState()`。
 - `data/api/root.json`: 返回根节点。
 - `data/api/by-id/root/node.json`: 返回根节点的按 id 接口别名。
 - `data/api/by-id/Q1/node.json`: 返回指定节点完整数据。
@@ -88,6 +88,7 @@
 - `data/api/nodes/Q1.json`: 保留旧节点镜像路径。
 - `data/api/children/nodes/Q1.json`: 保留旧子节点镜像路径。
 - `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
+- `data/api/getScanState.json`: 返回当前扫描游标、来源冷却和候选来源摘要，等价于 `data/api/scanState.json`。
 
 `by-id` 接口对普通 QID 保持原样，例如 `Q1`；如果节点 ID 来自 Wikipedia、ConceptNet 或 DBpedia，包含冒号、斜杠或中文等特殊字符，目录名会使用 URL 编码，页面会自动按编码后的路径读取。
 
@@ -100,6 +101,7 @@
 <script>
   OneKnowledgeApi.getChildren("Q1").then(console.log);
   OneKnowledgeApi.getEndNode().then(console.log);
+  OneKnowledgeApi.getScanState().then(console.log);
 </script>
 ```
 
@@ -322,6 +324,7 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - `scripts/grow_json.py` 已新增 DBpedia 分类层级作为最后备用来源，继续受请求预算、来源冷却和单节点来源上限控制。
 - `scripts/grow_json.py` 的候选排序已改为优先补完已开始检查的节点，让同一节点尽快从 `wikidata_api` 轮到 Wikipedia、WDQS、ConceptNet 或 DBpedia，而不是把全部候选先过一遍同一来源。
 - `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，用于解释 0 增长时下一个来源、可用来源和冷却阻塞数量。
+- `data/api/client.js` 已新增 `getScanState()`，页面顶部的扫描诊断面板会直接展示候选来源摘要、可用来源和冷却状态。
 
 ## To-do
 

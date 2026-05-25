@@ -975,11 +975,20 @@ class GrowJsonTests(unittest.TestCase):
                 "children": [],
             },
         )
+        grow_json.save_json(
+            grow_json.SCAN_STATE_FILE,
+            {
+                "candidate_count": 7,
+                "available_sources": ["wikidata_api", "wikipedia"],
+                "candidate_source_summary": {"blocked_by_cooldown": 0},
+            },
+        )
 
         summary = grow_json.write_static_api(root)
 
         self.assertEqual(len(summary["end_nodes"]), 1)
         end_node = grow_json.load_json(grow_json.API_DIR / "getEndNode.json")
+        scan_state_api = grow_json.load_json(grow_json.API_DIR / "getScanState.json")
         children_api = grow_json.load_json(grow_json.API_DIR / "children" / "nodes" / "Q99.json")
         node_api = grow_json.load_json(grow_json.API_DIR / "nodes" / "Q99.json")
         alias_node_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "node.json")
@@ -989,16 +998,19 @@ class GrowJsonTests(unittest.TestCase):
         api_client = (grow_json.API_DIR / "client.js").read_text(encoding="utf-8")
 
         self.assertEqual(end_node["total_items"], 1)
+        self.assertEqual(scan_state_api["candidate_count"], 7)
         self.assertEqual(children_api["child_count"], 0)
         self.assertEqual(node_api["node"]["id"], "Q99")
         self.assertEqual(alias_node_api["node"]["id"], "Q99")
         self.assertEqual(alias_children_api["child_count"], 0)
         self.assertEqual(alias_index_api["id"], "Q99")
         self.assertEqual(api_index["client"], "client.js")
+        self.assertEqual(api_index["getScanState"], "getScanState.json")
         self.assertIn("CLIENT_BASE_URL", api_client)
         self.assertIn("OneKnowledgeApi", api_client)
         self.assertIn("getChildren", api_client)
         self.assertIn("getEndNode", api_client)
+        self.assertIn("getScanState", api_client)
 
     def test_static_api_by_id_alias_encodes_non_qid_id(self):
         identifier = "wikipedia:zh:Category:寄生生物題材作品"

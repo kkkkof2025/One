@@ -70,6 +70,10 @@
     return fetchJson("getEndNode.json", options);
   }
 
+  async function getScanState(options) {
+    return fetchJson("getScanState.json", options);
+  }
+
   var api = {
     apiUrl: apiUrl,
     fetchJson: fetchJson,
@@ -77,7 +81,8 @@
     getRoot: getRoot,
     getNode: getNode,
     getChildren: getChildren,
-    getEndNode: getEndNode
+    getEndNode: getEndNode,
+    getScanState: getScanState
   };
 
   global.OneKnowledgeApi = api;

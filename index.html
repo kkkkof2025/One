@@ -103,7 +103,8 @@
     }
 
     .stat-tile,
-    .history-tile {
+    .history-tile,
+    .diagnostic-tile {
       min-height: 58px;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -128,11 +129,17 @@
       overflow-wrap: anywhere;
     }
 
-    .history-tile {
+    .history-tile,
+    .diagnostic-tile {
       padding-bottom: 6px;
     }
 
-    .history-tile summary {
+    .diagnostic-tile {
+      grid-column: 1 / -1;
+    }
+
+    .history-tile summary,
+    .diagnostic-tile summary {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -143,16 +150,19 @@
       list-style: none;
     }
 
-    .history-tile summary::-webkit-details-marker {
+    .history-tile summary::-webkit-details-marker,
+    .diagnostic-tile summary::-webkit-details-marker {
       display: none;
     }
 
-    .history-title {
+    .history-title,
+    .diagnostic-title {
       color: var(--text);
       font-weight: 650;
     }
 
-    .history-count {
+    .history-count,
+    .diagnostic-count {
       flex: 0 0 auto;
       color: var(--accent);
       font-size: 13px;
@@ -173,6 +183,35 @@
       gap: 8px;
       align-items: center;
       min-height: 22px;
+    }
+
+    .diagnostic-list {
+      display: grid;
+      gap: 6px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .diagnostic-row {
+      display: grid;
+      grid-template-columns: minmax(92px, 0.7fr) minmax(0, 2fr);
+      gap: 8px;
+      align-items: start;
+      min-height: 22px;
+    }
+
+    .diagnostic-row-label {
+      color: var(--muted);
+      font-weight: 650;
+      line-height: 1.3;
+    }
+
+    .diagnostic-row-value {
+      color: var(--text);
+      line-height: 1.3;
+      overflow-wrap: anywhere;
     }
 
     .history-add {
@@ -953,6 +992,11 @@
         grid-template-columns: 1fr auto;
       }
 
+      .diagnostic-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
       .history-total {
         grid-column: 2;
       }
@@ -1060,6 +1104,13 @@
           <span id="historyCount" class="history-count">--</span>
         </summary>
         <div id="growthHistoryList" class="history-list">暂无记录</div>
+      </details>
+      <details class="diagnostic-tile">
+        <summary>
+          <span class="diagnostic-title">扫描诊断</span>
+          <span id="scanDiagnosticSummary" class="diagnostic-count">--</span>
+        </summary>
+        <div id="scanDiagnosticList" class="diagnostic-list">暂无诊断数据</div>
       </details>
     </section>
 
@@ -1218,6 +1269,8 @@
     const endNodeCountEl = document.getElementById("endNodeCount");
     const historyCountEl = document.getElementById("historyCount");
     const growthHistoryListEl = document.getElementById("growthHistoryList");
+    const scanDiagnosticSummaryEl = document.getElementById("scanDiagnosticSummary");
+    const scanDiagnosticListEl = document.getElementById("scanDiagnosticList");
     const reviewCountEl = document.getElementById("reviewCount");
     const reviewFilter = document.getElementById("reviewFilter");
     const reviewMetaEl = document.getElementById("reviewMeta");
@@ -1242,6 +1295,7 @@
     let rootNode = null;
     let statsData = null;
     let growthHistory = [];
+    let scanStateData = null;
     let endNodeData = null;
     let reviewQueueData = null;
     let reviewDecisionData = null;
@@ -1304,6 +1358,62 @@
         hour: "2-digit",
         minute: "2-digit"
       }).format(date);
+    }
+
+    function formatCountMap(counts, options = {}) {
+      if (!counts || typeof counts !== "object") return "无";
+      const entries = Object.entries(counts)
+        .filter(([, value]) => Number(value) > 0);
+      if (entries.length === 0) return "无";
+      entries.sort((a, b) => {
+        if (options.numericKeys) return Number(a[0]) - Number(b[0]);
+        const diff = Number(b[1]) - Number(a[1]);
+        if (diff !== 0) return diff;
+        return String(a[0]).localeCompare(String(b[0]), "zh-CN");
+      });
+      return entries.map(([key, value]) => `${key} ${formatNumber(value)}`).join(" · ");
+    }
+
+    function formatSourceList(list) {
+      if (!Array.isArray(list) || list.length === 0) return "无";
+      return list.map((item) => String(item || "").trim()).filter(Boolean).join(" → ") || "无";
+    }
+
+    function formatCooldowns(cooldowns) {
+      if (!cooldowns || typeof cooldowns !== "object") return "无";
+      const entries = Object.values(cooldowns)
+        .filter((entry) => entry && typeof entry === "object");
+      if (entries.length === 0) return "无";
+      entries.sort((a, b) => String(a.source || "").localeCompare(String(b.source || ""), "zh-CN"));
+      return entries.map((entry) => {
+        const source = entry.source || "来源";
+        const reason = entry.reason ? ` · ${entry.reason}` : "";
+        const until = entry.cooldown_until ? ` · 到 ${formatDateTime(entry.cooldown_until)}` : "";
+        return `${source}${reason}${until}`;
+      }).join(" · ");
+    }
+
+    function renderDiagnosticRows(container, rows) {
+      container.innerHTML = "";
+      const usableRows = Array.isArray(rows)
+        ? rows.filter((row) => row && row.value !== undefined && row.value !== null)
+        : [];
+      if (usableRows.length === 0) {
+        container.textContent = "暂无诊断数据";
+        return;
+      }
+      usableRows.forEach((rowData) => {
+        const row = document.createElement("div");
+        row.className = "diagnostic-row";
+        const label = document.createElement("span");
+        label.className = "diagnostic-row-label";
+        label.textContent = rowData.label;
+        const value = document.createElement("span");
+        value.className = "diagnostic-row-value";
+        value.textContent = rowData.value || "--";
+        row.append(label, value);
+        container.append(row);
+      });
     }
 
     function setCloudDriftTarget(x, y) {
@@ -1532,6 +1642,22 @@
       },
       async getStats() {
         return fetchJson("data/stats.json");
+      },
+      async getScanState(stats) {
+        const client = staticApiClient();
+        if (client && typeof client.getScanState === "function") {
+          try {
+            return await client.getScanState();
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
+        try {
+          return fetchJson(apiPath("getScanState.json"));
+        } catch (error) {
+          const scanStateFile = stats?.scan_state_file || "scan_state.json";
+          return fetchJson(`data/${scanStateFile}`);
+        }
       },
       async getHistory(stats) {
         const historyFile = stats?.history_file || "growth_history.json";
@@ -2137,6 +2263,7 @@
       } catch (error) {
         statsData = null;
         growthHistory = [];
+        scanStateData = null;
         endNodeData = null;
         renderGrowthStats();
         return;
@@ -2147,6 +2274,12 @@
         growthHistory = Array.isArray(history) ? history : [];
       } catch (error) {
         growthHistory = [];
+      }
+
+      try {
+        scanStateData = await dataApi.getScanState(statsData);
+      } catch (error) {
+        scanStateData = null;
       }
 
       try {
@@ -2166,6 +2299,8 @@
         endNodeCountEl.textContent = "--";
         historyCountEl.textContent = "等待统计";
         growthHistoryListEl.textContent = "下一次 GitHub Actions 运行后会生成统计记录";
+        scanDiagnosticSummaryEl.textContent = "等待诊断";
+        scanDiagnosticListEl.textContent = "下一次增长刷新后会生成扫描诊断";
         return;
       }
 
@@ -2176,6 +2311,7 @@
         statsData.end_node_count ?? endNodeData?.total_items
       );
       historyCountEl.textContent = `${formatNumber(growthHistory.length)} 条`;
+      renderScanDiagnostics();
 
       const recent = growthHistory.slice(-8).reverse();
       growthHistoryListEl.innerHTML = "";
@@ -2207,6 +2343,46 @@
       });
     }
 
+    function renderScanDiagnostics() {
+      const summary = scanStateData?.candidate_source_summary
+        || statsData?.last_candidate_source_summary
+        || {};
+      const candidateCount = scanStateData?.candidate_count
+        ?? summary.candidate_count
+        ?? statsData?.last_candidate_nodes;
+      const blockedCount = summary.blocked_by_cooldown ?? 0;
+      const requestCount = scanStateData?.request_count ?? statsData?.last_request_count;
+      const maxRequests = scanStateData?.max_requests ?? statsData?.max_requests;
+      const rows = [
+        {
+          label: "扫描",
+          value: `候选 ${formatNumber(candidateCount)} · 已选 ${formatNumber(scanStateData?.selected_count)} · 请求 ${formatNumber(requestCount)}/${formatNumber(maxRequests)}`
+        },
+        { label: "来源顺序", value: formatSourceList(scanStateData?.source_order) },
+        { label: "当前可用", value: formatSourceList(scanStateData?.available_sources) },
+        { label: "已查进度", value: formatCountMap(summary.source_progress_counts, { numericKeys: true }) },
+        { label: "下个来源", value: formatCountMap(summary.next_source_counts) },
+        { label: "可用下个", value: formatCountMap(summary.available_next_source_counts) },
+        { label: "冷却阻塞", value: formatNumber(blockedCount) },
+        { label: "冷却状态", value: formatCooldowns(scanStateData?.source_cooldowns) }
+      ];
+      if (scanStateData?.last_scan_title || scanStateData?.last_scan_key) {
+        rows.push({
+          label: "扫描游标",
+          value: [scanStateData.last_scan_title, scanStateData.last_scan_key]
+            .filter(Boolean)
+            .join(" · ")
+        });
+      }
+      if (scanStateData?.last_stop_reason) {
+        rows.push({ label: "停止原因", value: scanStateData.last_stop_reason });
+      }
+      if (scanStateData?.exhausted !== undefined) {
+        rows.push({ label: "已耗尽", value: scanStateData.exhausted ? "是" : "否" });
+      }
+      scanDiagnosticSummaryEl.textContent = `候选 ${formatNumber(candidateCount)} · 冷却 ${formatNumber(blockedCount)}`;
+      renderDiagnosticRows(scanDiagnosticListEl, rows);
+    }
     async function loadReviewQueue() {
       try {
         reviewQueueData = await dataApi.getReviewQueue();

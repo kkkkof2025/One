@@ -8,7 +8,7 @@
 - 生长统计写入 `data/stats.json`，历史生长记录写入 `data/growth_history.json`。
 - 扫描游标写入 `data/scan_state.json`，终止节点清单写入 `data/end_nodes.json`。
 - GitHub Pages 静态接口镜像写入 `data/api/`，其中 `by-id/<id>/node.json` 和 `by-id/<id>/children.json` 是按节点 id 调用的稳定别名。
-- 静态接口调用层写入 `data/api/client.js`，外部脚本可用 `OneKnowledgeApi.getChildren("Q1")`、`getNode()` 和 `getEndNode()` 读取数据。
+- 静态接口调用层写入 `data/api/client.js`，外部脚本可用 `OneKnowledgeApi.getChildren("Q1")`、`getNode()`、`getEndNode()` 和 `getScanState()` 读取数据。
 - 人工策展信号写入 `data/curation.json`。
 - 校验允许列表写入 `data/validation_allowlist.json`。
 - 待复核节点队列写入 `data/review_queue.json`。
@@ -96,6 +96,7 @@
 - DBpedia 请求继续复用统一的 `ONE_USER_AGENT`、来源冷却、`ONE_MAX_REQUESTS` 和 `ONE_MAX_SOURCES_PER_NODE` 控制；如果 DBpedia 不可用，会像其它来源一样进入冷却，不会阻塞整个增长流程。
 - `scripts/grow_json.py` 的抓取策略版本升级到 `7`，候选排序新增 `source_progress`：已经成功检查过部分来源但尚未完成的节点会排在未开始节点前面，避免连续多轮全部预算都花在 `wikidata_api` 这类同一顺位来源上。扫描游标只在没有部分进度候选时继续按 `last_scan_key` 轮转。
 - `data/scan_state.json`、`data/stats.json` 和 `data/growth_history.json` 写入 `candidate_source_summary`，包含 `source_progress_counts`、`next_source_counts`、`available_next_source_counts` 和 `blocked_by_cooldown`，用于解释 0 增长到底是来源冷却、候选进度不足，还是补充来源仍可尝试。
+- 静态 API 新增 `data/api/getScanState.json` / `scanState.json` 和 `OneKnowledgeApi.getScanState()`；首页顶部新增扫描诊断面板，直接展示来源顺序、当前可用来源、候选进度、下个来源和冷却状态。
 
 ## Data Schema Memory
 

@@ -7,7 +7,8 @@
     "getRoot",
     "getNode",
     "getChildren",
-    "getEndNode"
+    "getEndNode",
+    "getScanState"
   ],
   "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
   "children": "children/<relative data path>",
@@ -15,5 +16,7 @@
   "by_id_node": "by-id/<id>/node.json",
   "by_id_children": "by-id/<id>/children.json",
   "getEndNode": "getEndNode.json",
-  "endNode": "endNode.json"
+  "endNode": "endNode.json",
+  "getScanState": "getScanState.json",
+  "scanState": "scanState.json"
 }

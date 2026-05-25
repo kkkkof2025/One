@@ -1291,6 +1291,10 @@ def static_api_client_js() -> str:
     return fetchJson("getEndNode.json", options);
   }
 
+  async function getScanState(options) {
+    return fetchJson("getScanState.json", options);
+  }
+
   var api = {
     apiUrl: apiUrl,
     fetchJson: fetchJson,
@@ -1298,7 +1302,8 @@ def static_api_client_js() -> str:
     getRoot: getRoot,
     getNode: getNode,
     getChildren: getChildren,
-    getEndNode: getEndNode
+    getEndNode: getEndNode,
+    getScanState: getScanState
   };
 
   global.OneKnowledgeApi = api;
@@ -1365,12 +1370,15 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         }
         save_json(api_end_node_file("endNode.json"), end_payload)
         save_json(api_end_node_file("getEndNode.json"), end_payload)
+        scan_state_payload = load_scan_state()
+        save_json(API_DIR / "scanState.json", scan_state_payload)
+        save_json(API_DIR / "getScanState.json", scan_state_payload)
         save_json(api_end_node_file("index.json"), {
             "endpoint": "index",
             "root": "root.json",
             "client": "client.js",
             "client_global": "OneKnowledgeApi",
-            "client_methods": ["getRoot", "getNode", "getChildren", "getEndNode"],
+            "client_methods": ["getRoot", "getNode", "getChildren", "getEndNode", "getScanState"],
             "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
             "children": "children/<relative data path>",
             "by_id": "by-id/<id>/index.json",
@@ -1378,6 +1386,8 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
             "by_id_children": "by-id/<id>/children.json",
             "getEndNode": "getEndNode.json",
             "endNode": "endNode.json",
+            "getScanState": "getScanState.json",
+            "scanState": "scanState.json",
         })
         save_text(API_DIR / "client.js", static_api_client_js())
 
@@ -2772,9 +2782,6 @@ def main() -> None:
             "items": end_nodes,
         },
     )
-    api_summary = write_static_api(root_data)
-    end_node_count = len(api_summary["end_nodes"])
-    record_growth_history(total_nodes, end_node_count, append_history=MAX_REQUESTS > 0)
     save_scan_state(
         last_scan_key=last_scan_key_this_run,
         last_scan_title=last_scan_title_this_run,
@@ -2782,6 +2789,9 @@ def main() -> None:
         selected_count=selected_count,
         exhausted=scan_exhausted,
     )
+    api_summary = write_static_api(root_data)
+    end_node_count = len(api_summary["end_nodes"])
+    record_growth_history(total_nodes, end_node_count, append_history=MAX_REQUESTS > 0)
     print(f"本次新增节点数: {nodes_added_this_run}")
     print(f"当前总节点数: {total_nodes}")
     print(f"本次扫描候选节点数: {nodes_scanned_this_run}")
