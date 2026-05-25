@@ -49,6 +49,7 @@ class GrowJsonTests(unittest.TestCase):
             "fetch_conceptnet_children": grow_json.fetch_conceptnet_children,
             "fetch_dbpedia_bindings": grow_json.fetch_dbpedia_bindings,
             "DEFAULT_FOCUS_PRIORITY_BONUS": grow_json.DEFAULT_FOCUS_PRIORITY_BONUS,
+            "candidate_source_summary_this_run": grow_json.candidate_source_summary_this_run,
         }
 
         grow_json.DATA_DIR = self.data_dir
@@ -87,6 +88,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.source_request_counts = {}
         grow_json.source_cooldowns_this_run = {}
         grow_json.last_source_request_at = {}
+        grow_json.candidate_source_summary_this_run = {}
 
     def tearDown(self):
         for name, value in self.original_paths.items():
@@ -504,6 +506,53 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(ordered[0]["scan_key"], "id:Q1")
         self.assertEqual(ordered[0]["source_progress"], 1)
         self.assertEqual(rotated[0]["scan_key"], "id:Q1")
+
+    def test_candidate_source_summary_counts_progress_and_cooldowns(self):
+        partial = {
+            "id": "Q1",
+            "title": "部分完成节点",
+            "children_status": "loaded",
+            "children": [],
+            "source_checked": {"wikidata_api": "2026-05-25T00:00:00Z"},
+        }
+        blocked = {
+            "id": "Q2",
+            "title": "冷却阻塞节点",
+            "children_status": "loaded",
+            "children": [],
+            "source_checked": {
+                "wikidata_api": "2026-05-25T00:00:00Z",
+                "conceptnet": "2026-05-25T00:00:00Z",
+            },
+        }
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "conceptnet"]
+        scan_state = {
+            "source_cooldowns": {
+                "wikipedia": {"cooldown_until": "2999-01-01T00:00:00Z"}
+            }
+        }
+
+        summary = grow_json.summarize_candidate_sources(
+            [{"node": partial}, {"node": blocked}], scan_state
+        )
+
+        self.assertEqual(summary["candidate_count"], 2)
+        self.assertEqual(summary["source_progress_counts"], {"1": 1, "2": 1})
+        self.assertEqual(summary["next_source_counts"], {"wikipedia": 2})
+        self.assertEqual(summary["available_next_source_counts"], {"conceptnet": 1})
+        self.assertEqual(summary["blocked_by_cooldown"], 1)
+
+    def test_legacy_default_source_order_keeps_dbpedia_available(self):
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata", "conceptnet"]
+
+        self.assertEqual(
+            grow_json.source_order(),
+            ["wikidata_api", "wikipedia", "wikidata", "conceptnet", "dbpedia"],
+        )
+
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia"]
+
+        self.assertEqual(grow_json.source_order(), ["wikidata_api", "wikipedia"])
 
     def test_old_strategy_scan_cursor_is_ignored(self):
         state = {
@@ -990,13 +1039,14 @@ class GrowJsonTests(unittest.TestCase):
             ],
         )
 
+        grow_json.candidate_source_summary_this_run = {"blocked_by_cooldown": 2}
         grow_json.record_growth_history(1, 0, append_history=False)
 
         history = grow_json.load_json_array(grow_json.GROWTH_HISTORY_FILE)
         stats = grow_json.load_json(grow_json.STATS_FILE)
         self.assertEqual(len(history), 1)
         self.assertEqual(stats["history_entries"], 1)
-
+        self.assertEqual(stats["last_candidate_source_summary"], {"blocked_by_cooldown": 2})
 
 if __name__ == "__main__":
     unittest.main()

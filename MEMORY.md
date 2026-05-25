@@ -95,6 +95,7 @@
 - 新增 `ONE_DBPEDIA_ENDPOINT`，默认使用 `https://dbpedia.org/sparql`；DBpedia 适配器只读取 `Category:* skos:broader <父分类>` 关系，生成 `dbpedia:` 前缀 ID 和 `dbpedia_category` 关系。
 - DBpedia 请求继续复用统一的 `ONE_USER_AGENT`、来源冷却、`ONE_MAX_REQUESTS` 和 `ONE_MAX_SOURCES_PER_NODE` 控制；如果 DBpedia 不可用，会像其它来源一样进入冷却，不会阻塞整个增长流程。
 - `scripts/grow_json.py` 的抓取策略版本升级到 `7`，候选排序新增 `source_progress`：已经成功检查过部分来源但尚未完成的节点会排在未开始节点前面，避免连续多轮全部预算都花在 `wikidata_api` 这类同一顺位来源上。扫描游标只在没有部分进度候选时继续按 `last_scan_key` 轮转。
+- `data/scan_state.json`、`data/stats.json` 和 `data/growth_history.json` 写入 `candidate_source_summary`，包含 `source_progress_counts`、`next_source_counts`、`available_next_source_counts` 和 `blocked_by_cooldown`，用于解释 0 增长到底是来源冷却、候选进度不足，还是补充来源仍可尝试。
 
 ## Data Schema Memory
 
@@ -133,7 +134,7 @@
 - 提交前优先运行 `python -m unittest discover -s tests` 和 `python scripts/validate_data.py`。
 - 数据增长后运行 `python scripts/generate_review_queue.py`，再运行 `python scripts/validate_data.py`。
 - 只刷新扫描状态、终止节点和静态 API 镜像时，可以运行 `ONE_MAX_REQUESTS=0 python scripts/grow_json.py`，不会请求外部来源。
-- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`、`source_cooldowns` 和 `max_sources_per_node`，再看节点的 `source_checked` / `source_no_children` 是否只剩少数来源可试，以及 `data/end_nodes.json` 是否持续增加。
+- 观察增长变慢时，先看 `data/scan_state.json` 的 `candidate_count`、`selected_count`、`exhausted`、`candidate_source_summary`、`source_cooldowns` 和 `max_sources_per_node`，再看节点的 `source_checked` / `source_no_children` 是否只剩少数来源可试，以及 `data/end_nodes.json` 是否持续增加。
 - 2026-05-20 排查线上停滞时确认：GitHub Pages 已部署到 2026-05-19 的 Auto-grow 结果，但从 2026-05-13 起 `added_nodes=0`；旧远端脚本没有扫描游标、终止节点清单和来源冷却，会反复请求同一批 `error` 节点并记录 WDQS 429。
 - 处理复核队列时先看页面或 `review_queue.json.reason_distribution` 的原因分布，再用页面显示的 `review_key` 调用 `python scripts/review_decision.py mark --key ... --status ... --reason "..."`；需要加入人工关注时加 `--sync-curation`，需要确认合法重复 QID 时加 `--sync-allowlist`。
 - 集中处理缺中文标签时，运行 `python scripts/generate_review_queue.py export --reason non_zh_label --format csv --output output/review_missing_zh.csv` 导出表格。

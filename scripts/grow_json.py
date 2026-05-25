@@ -59,11 +59,11 @@ USER_AGENT = os.environ.get(
     "ONE_USER_AGENT", "OneKnowledgeTree/0.2 (scheduled GitHub Actions)"
 )
 DEFAULT_FOCUS_PRIORITY_BONUS = int(os.environ.get("ONE_FOCUS_PRIORITY_BONUS", "18"))
+DEFAULT_SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata", "conceptnet", "dbpedia"]
+LEGACY_DEFAULT_SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata", "conceptnet"]
 SOURCE_ORDER = [
     source.strip().lower()
-    for source in os.environ.get(
-        "ONE_SOURCE_ORDER", "wikidata_api,wikipedia,wikidata,conceptnet,dbpedia"
-    ).split(",")
+    for source in os.environ.get("ONE_SOURCE_ORDER", ",".join(DEFAULT_SOURCE_ORDER)).split(",")
     if source.strip()
 ]
 KNOWN_SOURCES = {"wikidata", "wikidata_api", "wikipedia", "conceptnet", "dbpedia"}
@@ -158,6 +158,7 @@ run_stop_reason = ""
 source_request_counts: Dict[str, int] = {}
 source_cooldowns_this_run: Dict[str, Dict[str, Any]] = {}
 last_source_request_at: Dict[str, float] = {}
+candidate_source_summary_this_run: Dict[str, Any] = {}
 
 
 def now_utc() -> str:
@@ -183,6 +184,8 @@ def parse_utc(value: Any) -> Optional[datetime]:
 
 def source_order() -> List[str]:
     ordered = [source for source in SOURCE_ORDER if source in KNOWN_SOURCES]
+    if ordered == LEGACY_DEFAULT_SOURCE_ORDER:
+        return ordered + ["dbpedia"]
     return ordered or ["wikidata"]
 
 
@@ -316,6 +319,60 @@ def available_sources(scan_state: Optional[Dict[str, Any]] = None) -> List[str]:
         for source in source_order()
         if not source_in_cooldown(source, scan_state)
     ]
+
+
+def next_source_for_node(
+    node: Dict[str, Any],
+    scan_state: Optional[Dict[str, Any]] = None,
+    respect_cooldown: bool = True,
+) -> str:
+    sources = available_sources(scan_state) if respect_cooldown else source_order()
+    for source in sources:
+        if source_can_fetch(source, node):
+            return source
+    return ""
+
+
+def source_progress_bucket(progress: int) -> str:
+    return str(max(0, progress))
+
+
+def increment_count(counts: Dict[str, int], key: str) -> None:
+    counts[key] = counts.get(key, 0) + 1
+
+
+def summarize_candidate_sources(
+    candidates: List[Dict[str, Any]], scan_state: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    next_source_counts: Dict[str, int] = {}
+    available_next_source_counts: Dict[str, int] = {}
+    source_progress_counts: Dict[str, int] = {}
+    blocked_by_cooldown = 0
+
+    for candidate in candidates:
+        node = candidate.get("node")
+        if not isinstance(node, dict):
+            continue
+        progress = candidate_source_progress(node)
+        increment_count(source_progress_counts, source_progress_bucket(progress))
+
+        next_source = next_source_for_node(node, scan_state, respect_cooldown=False)
+        if next_source:
+            increment_count(next_source_counts, next_source)
+
+        available_next_source = next_source_for_node(node, scan_state)
+        if available_next_source:
+            increment_count(available_next_source_counts, available_next_source)
+        elif next_source:
+            blocked_by_cooldown += 1
+
+    return {
+        "candidate_count": len(candidates),
+        "source_progress_counts": source_progress_counts,
+        "next_source_counts": next_source_counts,
+        "available_next_source_counts": available_next_source_counts,
+        "blocked_by_cooldown": blocked_by_cooldown,
+    }
 
 
 def source_no_children_map(node: Dict[str, Any]) -> Dict[str, Any]:
@@ -957,6 +1014,7 @@ def save_scan_state(
         "available_sources": available_sources(previous),
         "source_request_counts": source_request_counts,
         "source_cooldowns": active_source_cooldowns(previous),
+        "candidate_source_summary": candidate_source_summary_this_run,
         "last_stop_reason": run_stop_reason,
     }
     save_json(SCAN_STATE_FILE, state)
@@ -2572,6 +2630,7 @@ def record_growth_history(
         "end_nodes_marked": end_nodes_marked_this_run,
         "end_node_count": end_node_count,
         "source_request_counts": source_request_counts,
+        "candidate_source_summary": candidate_source_summary_this_run,
         "max_sources_per_node": MAX_SOURCES_PER_NODE,
         "stop_reason": run_stop_reason,
     }
@@ -2596,6 +2655,7 @@ def record_growth_history(
             "last_failed_requests": failed_requests_this_run,
             "last_end_nodes_marked": end_nodes_marked_this_run,
             "last_source_request_counts": source_request_counts,
+            "last_candidate_source_summary": candidate_source_summary_this_run,
             "max_sources_per_node": MAX_SOURCES_PER_NODE,
             "last_stop_reason": run_stop_reason,
             "end_node_count": end_node_count,
@@ -2644,6 +2704,7 @@ def bootstrap_root_files(root: Dict[str, Any]) -> bool:
 
 def main() -> None:
     global nodes_added_this_run, scan_candidate_count, scan_exhausted, run_stop_reason
+    global candidate_source_summary_this_run
     root_data = load_json(ROOT_FILE)
     if root_data is None:
         root_data = default_root()
@@ -2665,6 +2726,16 @@ def main() -> None:
         cursor_from_scan_state(scan_state),
     )
     active_sources = available_sources(scan_state)
+    candidate_source_summary_this_run = summarize_candidate_sources(
+        ordered_candidates, scan_state
+    )
+    if candidate_source_summary_this_run:
+        print(
+            "候选来源摘要: "
+            f"下个来源 {candidate_source_summary_this_run.get('next_source_counts', {})}，"
+            f"可用来源 {candidate_source_summary_this_run.get('available_next_source_counts', {})}，"
+            f"冷却阻塞 {candidate_source_summary_this_run.get('blocked_by_cooldown', 0)}"
+        )
     if MAX_REQUESTS > 0 and not active_sources:
         run_stop_reason = "all_sources_in_cooldown"
         print("所有增长来源仍在冷却期内，本轮只刷新静态数据。")

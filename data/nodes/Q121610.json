@@ -167,7 +167,7 @@
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q186517",
-      "quality_score": 99,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
       "updated_at": "2026-05-25T09:23:44Z",

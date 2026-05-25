@@ -53,6 +53,7 @@
 - [x] 页面数据读取优先走 `OneKnowledgeApi` 静态客户端，失败时回退原始 JSON 路径。
 - [x] 新增 DBpedia 分类层级备用来源，默认放在来源顺序最后，并沿用请求预算、UA 和来源冷却。
 - [x] 调整增长候选调度，优先补完已开始检查的节点，减少连续多轮预算全部消耗在 `wikidata_api`。
+- [x] 新增 `candidate_source_summary` 诊断字段，记录候选来源进度、下一个来源、可用来源和冷却阻塞数量。
 
 ## Agent Rules
 
@@ -66,6 +67,6 @@
 
 - 定期复核 `data/validation_allowlist.json`，清理已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`max_sources_per_node` 和节点的 `source_checked` / `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`candidate_source_summary`、`source_cooldowns`、`max_sources_per_node` 和节点的 `source_checked` / `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
 
 _Last updated: 2026-05-25_

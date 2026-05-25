@@ -70,9 +70,9 @@
 
 `data/root.json` 是入口文件。较大的节点会被拆到 `data/nodes/*.json`，父节点使用 `data_source` 指向子文件。
 
-`data/stats.json` 保存当前总节点数、最近一次新增节点数、终止节点数、请求数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，记录新增节点、总节点、请求数、候选数和终止节点数，不记录节点详情。
+`data/stats.json` 保存当前总节点数、最近一次新增节点数、终止节点数、请求数和统计生成时间。`data/growth_history.json` 按运行时间追加历史记录，记录新增节点、总节点、请求数、候选数、候选来源摘要和终止节点数，不记录节点详情。
 
-`data/scan_state.json` 保存自动增长的扫描游标、候选数量、请求数量、来源顺序和来源冷却状态。它让下一次运行从 `last_scan_key` 后面继续，而不是每次从同一批节点重新开始；如果某个来源被限流，脚本会先记录冷却时间，下次优先跳过它。
+`data/scan_state.json` 保存自动增长的扫描游标、候选数量、请求数量、来源顺序、来源冷却状态和 `candidate_source_summary`。它让下一次运行从 `last_scan_key` 后面继续，而不是每次从同一批节点重新开始；如果某个来源被限流，脚本会先记录冷却时间，下次优先跳过它。`candidate_source_summary` 会拆分 `source_progress_counts`、`next_source_counts`、`available_next_source_counts` 和 `blocked_by_cooldown`，用于判断 0 增长是因为来源冷却、候选已部分查完，还是还有可用补充来源。
 
 `data/end_nodes.json` 保存已经通过当前抓取策略确认没有可扩展子节点的节点清单。页面和后续脚本可以直接读取它，避免把终止节点混入下一轮扫描。`source_no_children` 只表示某个来源已查空，不等同于全局终止。
 
@@ -321,12 +321,13 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_checked` 和 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
 - `scripts/grow_json.py` 已新增 DBpedia 分类层级作为最后备用来源，继续受请求预算、来源冷却和单节点来源上限控制。
 - `scripts/grow_json.py` 的候选排序已改为优先补完已开始检查的节点，让同一节点尽快从 `wikidata_api` 轮到 Wikipedia、WDQS、ConceptNet 或 DBpedia，而不是把全部候选先过一遍同一来源。
+- `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，用于解释 0 增长时下一个来源、可用来源和冷却阻塞数量。
 
 ## To-do
 
 - 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`source_request_counts` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`candidate_source_summary`、`source_cooldowns`、`source_request_counts` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
 
 ## 已知限制
 
