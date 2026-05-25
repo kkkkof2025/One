@@ -1153,6 +1153,7 @@
     </section>
   </div>
 
+  <script src="data/api/client.js"></script>
   <script>
     const CONFIG = {
       centerDeadRadius: 66,
@@ -1445,6 +1446,14 @@
       return apiPath("client.js");
     }
 
+    function staticApiClient() {
+      const client = window.OneKnowledgeApi;
+      if (client && typeof client.getNode === "function" && typeof client.getChildren === "function") {
+        return client;
+      }
+      return null;
+    }
+
     function absoluteApiUrl(path) {
       return new URL(path, window.location.href).href;
     }
@@ -1456,6 +1465,14 @@
 
     const dataApi = {
       async getRoot() {
+        const client = staticApiClient();
+        if (client && typeof client.getRoot === "function") {
+          try {
+            return await client.getRoot();
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
         try {
           return unwrapNodePayload(await fetchJson(apiPath("by-id/root/node.json")));
         } catch (error) {
@@ -1467,6 +1484,14 @@
         }
       },
       async getNode(node) {
+        const client = staticApiClient();
+        if (client && typeof client.getNode === "function") {
+          try {
+            return await client.getNode(node);
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
         const path = nodeApiPath(node);
         if (path) {
           try {
@@ -1481,6 +1506,14 @@
         return node;
       },
       async getChildren(node) {
+        const client = staticApiClient();
+        if (client && typeof client.getChildren === "function") {
+          try {
+            return await client.getChildren(node);
+          } catch (error) {
+            // Fall through to hydrated node data.
+          }
+        }
         const path = childrenApiPath(node);
         if (path) {
           try {
@@ -1512,6 +1545,14 @@
         return fetchJson(`data/${decisionFile}`);
       },
       async getEndNode() {
+        const client = staticApiClient();
+        if (client && typeof client.getEndNode === "function") {
+          try {
+            return await client.getEndNode();
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
         try {
           return fetchJson(endNodeApiPath());
         } catch (error) {

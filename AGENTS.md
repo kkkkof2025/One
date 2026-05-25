@@ -50,6 +50,7 @@
 - [x] 修复非 QID 节点的 `by-id` 静态接口目录编码，并让静态 API 镜像先临时构建再整体替换。
 - [x] 新建非 QID 分片文件名加入来源 ID 短哈希，避免不同补充来源的同名节点共用一个 `data/nodes/<标题>.json`。
 - [x] 新增 `data/api/client.js` 静态调用层，提供 `getNode`、`getChildren` 和 `getEndNode` 形式的接口调用。
+- [x] 页面数据读取优先走 `OneKnowledgeApi` 静态客户端，失败时回退原始 JSON 路径。
 
 ## Agent Rules
 

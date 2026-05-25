@@ -87,6 +87,7 @@
 - 新建的非 QID 节点分片不再只按标题命名，而是使用标题加来源 ID 短哈希，避免 Wikipedia、ConceptNet 等补充来源出现同名节点时写入同一个 `data/nodes/<标题>.json`。
 - 为了兼容已有数据，如果旧标题分片已经存在且其中的 `id` 与当前节点一致，`node_file_for()` 会继续返回旧路径，不会主动迁移或复制现有分片。
 - `write_static_api()` 会生成 `data/api/client.js`，暴露 `OneKnowledgeApi.getRoot()`、`getNode(node)`、`getChildren(node)` 和 `getEndNode()`；这是 GitHub Pages 上的静态调用层，用来模拟带入参的接口。
+- `index.html` 会优先使用 `data/api/client.js` 读取根节点、节点、子节点和终止节点；客户端缺失或请求失败时仍回退到旧的静态 JSON 路径。
 
 ## Data Schema Memory
 
