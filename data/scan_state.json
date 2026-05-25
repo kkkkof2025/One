@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-05-25T02:42:02Z",
-  "fetch_strategy_version": 5,
+  "updated_at": "2026-05-25T09:23:50Z",
+  "fetch_strategy_version": 7,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q17863945",
-  "last_scan_title": "拉尼亚凯亚超星系团",
+  "last_scan_key": "id:Q3",
+  "last_scan_title": "生命",
   "candidate_count": 213,
-  "selected_count": 5,
+  "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
   "max_sources_per_node": 1,
@@ -19,12 +19,22 @@
   "available_sources": [
     "wikidata_api",
     "wikipedia",
-    "wikidata",
-    "conceptnet"
+    "wikidata"
   ],
   "source_request_counts": {
-    "wikidata_api": 5
+    "conceptnet": 1,
+    "wikidata": 2,
+    "wikipedia": 2
   },
-  "source_cooldowns": {},
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-05-25T09:22:39Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-05-25T09:32:39Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
   "last_stop_reason": ""
 }

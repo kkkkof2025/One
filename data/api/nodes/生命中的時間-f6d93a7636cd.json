@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/生命中的時間-f6d93a7636cd.json",
+  "node": {
+    "id": "wikipedia:zh:Category:生命中的時間",
+    "title": "生命中的時間",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E4%B8%AD%E7%9A%84%E6%99%82%E9%96%93",
+    "source_page_id": 7910501,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

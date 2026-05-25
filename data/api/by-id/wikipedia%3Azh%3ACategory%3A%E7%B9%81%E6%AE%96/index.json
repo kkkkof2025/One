@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:繁殖",
+  "source": "nodes/繁殖-7756c1ec8b99.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/繁殖-7756c1ec8b99.json",
+  "legacy_children": "../../children/nodes/繁殖-7756c1ec8b99.json"
+}

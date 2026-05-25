@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:非传统生物",
+  "source": "nodes/非传统生物-2faa7af9b163.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/非传统生物-2faa7af9b163.json",
+  "legacy_children": "../../children/nodes/非传统生物-2faa7af9b163.json"
+}

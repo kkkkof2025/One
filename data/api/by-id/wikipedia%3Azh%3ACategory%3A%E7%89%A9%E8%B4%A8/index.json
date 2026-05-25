@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:物质",
+  "source": "nodes/物质-a9d49a650d95.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/物质-a9d49a650d95.json",
+  "legacy_children": "../../children/nodes/物质-a9d49a650d95.json"
+}

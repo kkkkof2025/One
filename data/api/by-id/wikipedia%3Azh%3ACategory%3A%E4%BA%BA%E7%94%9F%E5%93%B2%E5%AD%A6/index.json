@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人生哲学",
+  "source": "nodes/人生哲学-2aa24ff97acb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/人生哲学-2aa24ff97acb.json",
+  "legacy_children": "../../children/nodes/人生哲学-2aa24ff97acb.json"
+}

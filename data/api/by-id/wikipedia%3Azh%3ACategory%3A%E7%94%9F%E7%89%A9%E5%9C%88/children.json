@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/生物圈-7f1c527bed4c.json",
+  "node": {
+    "title": "生物圈",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:生物圈",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

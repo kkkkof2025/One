@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命科學",
+  "source": "nodes/生命科學-8e0503f1c9d8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/生命科學-8e0503f1c9d8.json",
+  "legacy_children": "../../children/nodes/生命科學-8e0503f1c9d8.json"
+}

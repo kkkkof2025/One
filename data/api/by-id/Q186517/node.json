@@ -94,6 +94,58 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "吸血",
+        "data_source": "nodes/Q939099.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q939099",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q939099",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "外寄生蟲",
+        "data_source": "nodes/Q5334259.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5334259",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q5334259",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "巢寄生",
+        "data_source": "nodes/Q647144.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q647144",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q647144",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "盜食寄生",
+        "data_source": "nodes/Q1479109.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1479109",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1479109",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata_api",
@@ -110,15 +162,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T14:52:41Z",
-    "last_checked_at": "2026-05-23T14:52:41Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-05-25T09:23:44Z",
+    "last_checked_at": "2026-05-25T09:23:44Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-05-23T14:51:36Z",
-      "wikipedia": "2026-05-23T14:52:41Z"
+      "wikipedia": "2026-05-23T14:52:41Z",
+      "wikidata": "2026-05-25T09:23:44Z"
     },
     "is_leaf": false
   }

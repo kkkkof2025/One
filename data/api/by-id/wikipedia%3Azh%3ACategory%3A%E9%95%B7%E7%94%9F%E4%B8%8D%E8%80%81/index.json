@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:長生不老",
+  "source": "nodes/長生不老-fa63d9b5676e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/長生不老-fa63d9b5676e.json",
+  "legacy_children": "../../children/nodes/長生不老-fa63d9b5676e.json"
+}

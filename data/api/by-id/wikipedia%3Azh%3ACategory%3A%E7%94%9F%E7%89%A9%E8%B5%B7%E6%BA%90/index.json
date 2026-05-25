@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物起源",
+  "source": "nodes/生物起源-8de84b1d1b5f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/生物起源-8de84b1d1b5f.json",
+  "legacy_children": "../../children/nodes/生物起源-8de84b1d1b5f.json"
+}
