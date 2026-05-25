@@ -202,6 +202,12 @@ class ValidateDataTests(unittest.TestCase):
                         "children_status": "pending",
                         "children": [],
                     },
+                    {
+                        "id": "dbpedia:Category:Astrobiology",
+                        "title": "Astrobiology",
+                        "children_status": "pending",
+                        "children": [],
+                    },
                 ],
             },
         )

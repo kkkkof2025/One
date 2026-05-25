@@ -47,6 +47,7 @@ class GrowJsonTests(unittest.TestCase):
             "fetch_wikidata_api_children": grow_json.fetch_wikidata_api_children,
             "fetch_wikipedia_children": grow_json.fetch_wikipedia_children,
             "fetch_conceptnet_children": grow_json.fetch_conceptnet_children,
+            "fetch_dbpedia_bindings": grow_json.fetch_dbpedia_bindings,
             "DEFAULT_FOCUS_PRIORITY_BONUS": grow_json.DEFAULT_FOCUS_PRIORITY_BONUS,
         }
 
@@ -594,6 +595,47 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(node["last_fetch_sources"], ["wikipedia"])
         self.assertEqual(node["children"][0]["title"], "生物学")
         self.assertEqual(grow_json.last_scan_key_this_run, "id:Q3")
+
+    def test_dbpedia_source_returns_category_children(self):
+        node = {
+            "title": "Life",
+            "children_status": "pending",
+            "children": [],
+        }
+        captured = {}
+
+        def fake_bindings(query):
+            captured["query"] = query
+            return [
+                {
+                    "item": {"value": "http://dbpedia.org/resource/Category:Astrobiology"},
+                    "itemLabel": {"value": "Astrobiology"},
+                },
+                {
+                    "item": {"value": "http://dbpedia.org/resource/Category:Life"},
+                    "itemLabel": {"value": "Life"},
+                },
+                {
+                    "item": {"value": "http://dbpedia.org/resource/Category:Astrobiology"},
+                    "itemLabel": {"value": "Duplicate"},
+                },
+            ]
+
+        grow_json.fetch_dbpedia_bindings = fake_bindings
+
+        children = grow_json.fetch_dbpedia_children(node)
+
+        self.assertIn("skos:broader", captured["query"])
+        self.assertEqual(len(children), 1)
+        self.assertEqual(children[0]["id"], "dbpedia:Category:Astrobiology")
+        self.assertEqual(children[0]["title"], "Astrobiology")
+        self.assertEqual(children[0]["source_provider"], "dbpedia")
+        self.assertEqual(children[0]["source_relation"], "dbpedia_category")
+        self.assertTrue(grow_json.source_supported_for_node("dbpedia", node))
+        self.assertEqual(
+            grow_json.fetch_children_from_source("dbpedia", node)[0]["source_url"],
+            "http://dbpedia.org/resource/Category:Astrobiology",
+        )
 
     def test_single_source_no_children_keeps_node_pending(self):
         node = {

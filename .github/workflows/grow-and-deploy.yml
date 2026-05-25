@@ -27,7 +27,7 @@ on:
       source_order:
         description: "Comma-separated source order"
         required: false
-        default: "wikidata_api,wikipedia,wikidata,conceptnet"
+        default: "wikidata_api,wikipedia,wikidata,conceptnet,dbpedia"
 
 permissions:
   contents: write
@@ -82,7 +82,7 @@ jobs:
           ONE_REQUEST_DELAY: ${{ inputs.request_delay || '5' }}
           ONE_WIKIDATA_REQUEST_DELAY: ${{ inputs.wikidata_request_delay || '65' }}
           ONE_MAX_SOURCES_PER_NODE: ${{ inputs.max_sources_per_node || '1' }}
-          ONE_SOURCE_ORDER: ${{ inputs.source_order || 'wikidata_api,wikipedia,wikidata,conceptnet' }}
+          ONE_SOURCE_ORDER: ${{ inputs.source_order || 'wikidata_api,wikipedia,wikidata,conceptnet,dbpedia' }}
         run: python scripts/grow_json.py
 
       - name: Generate review queue

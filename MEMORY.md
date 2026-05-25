@@ -89,11 +89,17 @@
 - `write_static_api()` 会生成 `data/api/client.js`，暴露 `OneKnowledgeApi.getRoot()`、`getNode(node)`、`getChildren(node)` 和 `getEndNode()`；这是 GitHub Pages 上的静态调用层，用来模拟带入参的接口。
 - `index.html` 会优先使用 `data/api/client.js` 读取根节点、节点、子节点和终止节点；客户端缺失或请求失败时仍回退到旧的静态 JSON 路径。
 
+## Decisions Made On 2026-05-25
+
+- `scripts/grow_json.py` 的抓取策略版本升级到 `6`，默认来源顺序为 `wikidata_api,wikipedia,wikidata,conceptnet,dbpedia`；DBpedia 放在最后，只作为分类层级备用来源，不提高默认请求预算或频率。
+- 新增 `ONE_DBPEDIA_ENDPOINT`，默认使用 `https://dbpedia.org/sparql`；DBpedia 适配器只读取 `Category:* skos:broader <父分类>` 关系，生成 `dbpedia:` 前缀 ID 和 `dbpedia_category` 关系。
+- DBpedia 请求继续复用统一的 `ONE_USER_AGENT`、来源冷却、`ONE_MAX_REQUESTS` 和 `ONE_MAX_SOURCES_PER_NODE` 控制；如果 DBpedia 不可用，会像其它来源一样进入冷却，不会阻塞整个增长流程。
+
 ## Data Schema Memory
 
 节点常用字段：
 
-- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`，补充来源可使用 `wikipedia:` 或 `conceptnet:` 前缀。
+- `id`: 外部知识库 ID。Wikidata 节点使用 `Q...`，补充来源可使用 `wikipedia:`、`conceptnet:` 或 `dbpedia:` 前缀。
 - `title`: 展示标题。
 - `children_status`: `pending`、`loaded`、`error` 或 `manual`。
 - `children`: 子节点数组。
@@ -103,11 +109,11 @@
 - `last_checked_at`: 最近一次请求外部知识库检查该节点的时间。
 - `last_error`: 最近一次抓取失败原因。
 - `fetch_strategy_version`: 最近一次成功扩展使用的抓取策略版本。
-- `end_reason`: 终止原因；当前自动终止值可能是 `wikidata_no_children`、`wikidata_api_no_children`、`wikipedia_no_children`、`conceptnet_no_children` 或 `sources_no_children`。
+- `end_reason`: 终止原因；当前自动终止值可能是 `wikidata_no_children`、`wikidata_api_no_children`、`wikipedia_no_children`、`conceptnet_no_children`、`dbpedia_no_children` 或 `sources_no_children`。
 - `source_no_children`: 已成功检查但没有返回子节点的来源映射；这些来源后续会被跳过，但不代表节点已经全局终止。
 - `source_checked`: 已成功检查过的来源映射；这些来源后续会被跳过，避免重复消耗请求预算。
 - `ended_at`: 节点被确认为终止节点的时间。
-- `source_relation`: 节点来自 Wikidata 的关系类型。
+- `source_relation`: 节点来自外部来源的关系类型，例如 `subclass`、`instance`、`part_of`、`has_part`、`wikipedia_category`、`conceptnet_is_a` 或 `dbpedia_category`。
 - `quality_score`: 自动质量评分，范围 `0` 到 `100`。
 - `quality_reasons`: 质量评分原因列表。
 - `quality_version`: 质量评分规则版本。
@@ -121,7 +127,7 @@
 - GitHub Actions cron 的 `0 0 * * *` 是 UTC 每天 00:00，也就是北京时间每天 08:00。
 - 部署使用 GitHub Pages 官方 artifact 流程，仓库 Pages 设置需要选择 `GitHub Actions` 作为来源。
 - workflow 的 `push` 触发只运行测试、数据校验和 Pages 部署，不运行增长和自动提交，避免 push 部署形成循环提交；定时和手动触发才会请求外部来源并提交生成数据。
-- 如果 Wikidata Query Service 返回 429，先确认是不是冷却期内重复请求，再降低 `ONE_MAX_REQUESTS`、增大 `ONE_WIKIDATA_REQUEST_DELAY`，或保留默认 `ONE_SOURCE_ORDER=wikidata_api,wikipedia,wikidata,conceptnet` 让 WDQS 后置。
+- 如果 Wikidata Query Service 返回 429，先确认是不是冷却期内重复请求，再降低 `ONE_MAX_REQUESTS`、增大 `ONE_WIKIDATA_REQUEST_DELAY`，或保留默认 `ONE_SOURCE_ORDER=wikidata_api,wikipedia,wikidata,conceptnet,dbpedia` 让 WDQS 后置，并把 DBpedia 保持为最后备用来源。
 - 如果 `树状图` 空白，先检查 jsDelivr 和 unpkg 的 ECharts CDN 是否可访问；页面其他视图不依赖这些 CDN。
 - 提交前优先运行 `python -m unittest discover -s tests` 和 `python scripts/validate_data.py`。
 - 数据增长后运行 `python scripts/generate_review_queue.py`，再运行 `python scripts/validate_data.py`。
@@ -133,4 +139,4 @@
 - 如果校验报告出现新的重复 ID warning，先确认它是合法多路径还是数据问题；合法多路径可以写入 `data/validation_allowlist.json` 并补充原因。
 - 新的人工关注节点优先通过 `python scripts/curate_node.py focus --id Q... --reason "..."` 写入 `data/curation.json`；只有需要强制覆盖默认排序时才直接改节点的 `expansion_priority`。
 
-_Last updated: 2026-05-24_
+_Last updated: 2026-05-25_

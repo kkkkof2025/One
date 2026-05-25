@@ -22,7 +22,7 @@ VALID_REVIEW_DECISION_STATUSES = {
     "ignored",
     "deferred",
 }
-VALID_EXTERNAL_ID_PREFIXES = ("wikipedia:", "conceptnet:")
+VALID_EXTERNAL_ID_PREFIXES = ("wikipedia:", "conceptnet:", "dbpedia:")
 ALLOWED_NODE_FIELDS = {
     "id",
     "title",

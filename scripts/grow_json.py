@@ -54,6 +54,7 @@ WIKIPEDIA_API_ENDPOINT = os.environ.get(
 CONCEPTNET_API_ENDPOINT = os.environ.get(
     "ONE_CONCEPTNET_API_ENDPOINT", "https://api.conceptnet.io"
 )
+DBPEDIA_ENDPOINT = os.environ.get("ONE_DBPEDIA_ENDPOINT", "https://dbpedia.org/sparql")
 USER_AGENT = os.environ.get(
     "ONE_USER_AGENT", "OneKnowledgeTree/0.2 (scheduled GitHub Actions)"
 )
@@ -61,11 +62,11 @@ DEFAULT_FOCUS_PRIORITY_BONUS = int(os.environ.get("ONE_FOCUS_PRIORITY_BONUS", "1
 SOURCE_ORDER = [
     source.strip().lower()
     for source in os.environ.get(
-        "ONE_SOURCE_ORDER", "wikidata_api,wikipedia,wikidata,conceptnet"
+        "ONE_SOURCE_ORDER", "wikidata_api,wikipedia,wikidata,conceptnet,dbpedia"
     ).split(",")
     if source.strip()
 ]
-KNOWN_SOURCES = {"wikidata", "wikidata_api", "wikipedia", "conceptnet"}
+KNOWN_SOURCES = {"wikidata", "wikidata_api", "wikipedia", "conceptnet", "dbpedia"}
 SOURCE_COOLDOWN_SECONDS = int(os.environ.get("ONE_SOURCE_COOLDOWN_SECONDS", "3600"))
 TRANSIENT_SOURCE_COOLDOWN_SECONDS = int(
     os.environ.get("ONE_TRANSIENT_SOURCE_COOLDOWN_SECONDS", "600")
@@ -87,6 +88,7 @@ KNOWN_RELATIONS = {
     "has_parts_of_class",
     "wikipedia_category",
     "conceptnet_is_a",
+    "dbpedia_category",
     "seed",
     "manual",
 }
@@ -98,6 +100,7 @@ RELATION_QUALITY = {
     "instance": 2,
     "wikipedia_category": 8,
     "conceptnet_is_a": 6,
+    "dbpedia_category": 5,
     "seed": 20,
     "manual": 20,
 }
@@ -109,13 +112,14 @@ RELATION_PRIORITY = {
     "instance": 4,
     "wikipedia_category": 10,
     "conceptnet_is_a": 8,
+    "dbpedia_category": 6,
     "seed": 24,
     "manual": 20,
 }
 QUALITY_SCORE_VERSION = 3
 QUALITY_REVIEW_THRESHOLD = int(os.environ.get("ONE_QUALITY_REVIEW_THRESHOLD", "45"))
 PRIORITY_SCAN_LIMIT = int(os.environ.get("ONE_PRIORITY_SCAN_LIMIT", "1000"))
-FETCH_STRATEGY_VERSION = 5
+FETCH_STRATEGY_VERSION = 6
 BROAD_TITLES = {
     "事物",
     "对象",
@@ -386,7 +390,7 @@ def source_supported_for_node(source: str, node: Dict[str, Any]) -> bool:
         return build_wikidata_query(node) is not None
     if source == "wikidata_api":
         return is_qid(node.get("id"))
-    if source in {"wikipedia", "conceptnet"}:
+    if source in {"wikipedia", "conceptnet", "dbpedia"}:
         return bool(title)
     return False
 
@@ -1780,6 +1784,101 @@ def fetch_conceptnet_children(
     return children
 
 
+def dbpedia_category_uri(title: str) -> str:
+    normalized = re.sub(r"\s+", "_", title.strip())
+    encoded = parse.quote(normalized, safe="")
+    return f"http://dbpedia.org/resource/Category:{encoded}"
+
+
+def dbpedia_label_from_uri(uri: str) -> str:
+    tail = str(uri or "").rstrip("/").rsplit("/", 1)[-1]
+    if tail.startswith("Category:"):
+        tail = tail[len("Category:") :]
+    return parse.unquote(tail).replace("_", " ").strip()
+
+
+def build_dbpedia_query(node: Dict[str, Any]) -> Optional[str]:
+    title = str(node.get("title", "")).strip()
+    if not title:
+        return None
+    parent_uri = dbpedia_category_uri(title)
+    return f"""
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT DISTINCT ?item ?itemLabel WHERE {{
+  VALUES ?parent {{ <{parent_uri}> }}
+  ?item skos:broader ?parent .
+  FILTER(STRSTARTS(STR(?item), "http://dbpedia.org/resource/Category:"))
+  OPTIONAL {{ ?item rdfs:label ?zhLabel . FILTER(langMatches(lang(?zhLabel), "zh")) }}
+  OPTIONAL {{ ?item rdfs:label ?enLabel . FILTER(langMatches(lang(?enLabel), "en")) }}
+  BIND(
+    COALESCE(
+      ?zhLabel,
+      ?enLabel,
+      REPLACE(
+        STRAFTER(STR(?item), "http://dbpedia.org/resource/Category:"),
+        "_",
+        " "
+      )
+    ) AS ?itemLabel
+  )
+}}
+ORDER BY ?itemLabel
+LIMIT {QUERY_LIMIT}
+"""
+
+
+def fetch_dbpedia_bindings(query: str) -> List[Dict[str, Any]]:
+    sparql = SPARQLWrapper(DBPEDIA_ENDPOINT)
+    sparql.setReturnFormat(JSON)
+    sparql.addCustomHttpHeader("User-Agent", USER_AGENT)
+    sparql.setQuery(query)
+    results = sparql.query().convert()
+    if not isinstance(results, dict):
+        return []
+    bindings = results.get("results", {}).get("bindings", [])
+    return bindings if isinstance(bindings, list) else []
+
+
+def fetch_dbpedia_children(
+    node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
+) -> List[Dict[str, Any]]:
+    query = build_dbpedia_query(node)
+    if not query:
+        return []
+    blocked_ids = blocked_ids or set()
+    bindings = fetch_dbpedia_bindings(query)
+    children: List[Dict[str, Any]] = []
+    seen: Set[str] = set()
+
+    for result in bindings:
+        item = str(result.get("item", {}).get("value", "")).strip()
+        if not item:
+            continue
+        label = str(result.get("itemLabel", {}).get("value", "")).strip()
+        if not label:
+            label = dbpedia_label_from_uri(item)
+        if not label or label == node.get("title"):
+            continue
+        source_tail = parse.unquote(item.rstrip("/").rsplit("/", 1)[-1].strip())
+        source_id = f"dbpedia:{source_tail}"
+        if source_id in blocked_ids or source_id in seen:
+            continue
+        seen.add(source_id)
+        children.append(
+            {
+                "id": source_id,
+                "title": label,
+                "children_status": "pending",
+                "is_leaf": False,
+                "source_provider": "dbpedia",
+                "source_relation": "dbpedia_category",
+                "source_url": item,
+            }
+        )
+    return children
+
+
 def fetch_children_from_source(
     source: str, node: Dict[str, Any], blocked_ids: Optional[Set[str]] = None
 ) -> List[Dict[str, Any]]:
@@ -1791,6 +1890,8 @@ def fetch_children_from_source(
         return fetch_wikipedia_children(node, blocked_ids)
     if source == "conceptnet":
         return fetch_conceptnet_children(node, blocked_ids)
+    if source == "dbpedia":
+        return fetch_dbpedia_children(node, blocked_ids)
     return []
 
 

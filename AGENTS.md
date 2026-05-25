@@ -51,6 +51,7 @@
 - [x] 新建非 QID 分片文件名加入来源 ID 短哈希，避免不同补充来源的同名节点共用一个 `data/nodes/<标题>.json`。
 - [x] 新增 `data/api/client.js` 静态调用层，提供 `getNode`、`getChildren` 和 `getEndNode` 形式的接口调用。
 - [x] 页面数据读取优先走 `OneKnowledgeApi` 静态客户端，失败时回退原始 JSON 路径。
+- [x] 新增 DBpedia 分类层级备用来源，默认放在来源顺序最后，并沿用请求预算、UA 和来源冷却。
 
 ## Agent Rules
 
@@ -66,4 +67,4 @@
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
 - 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`source_cooldowns`、`max_sources_per_node` 和节点的 `source_checked` / `source_no_children`，判断增长慢是候选不足、来源限流，还是当前来源已查空。
 
-_Last updated: 2026-05-24_
+_Last updated: 2026-05-25_
