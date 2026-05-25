@@ -1,16 +1,14 @@
 {
-  "generated_at": "2026-05-25T02:42:02Z",
+  "generated_at": "2026-05-25T09:24:08Z",
   "total_nodes": 216,
   "last_added_nodes": 0,
-  "last_request_count": 5,
+  "last_request_count": 0,
   "last_scanned_nodes": 222,
   "last_candidate_nodes": 213,
-  "last_unchanged_requests": 5,
+  "last_unchanged_requests": 0,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
-  "last_source_request_counts": {
-    "wikidata_api": 5
-  },
+  "last_source_request_counts": {},
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
