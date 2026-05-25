@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物分類樹",
+  "source": "nodes/生物分類樹-dddb7a5f7724.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/生物分類樹-dddb7a5f7724.json",
+  "legacy_children": "../../children/nodes/生物分類樹-dddb7a5f7724.json"
+}

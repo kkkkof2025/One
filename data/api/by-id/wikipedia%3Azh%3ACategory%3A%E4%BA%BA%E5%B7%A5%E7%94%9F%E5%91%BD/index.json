@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人工生命",
+  "source": "nodes/人工生命-828127497ec0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/人工生命-828127497ec0.json",
+  "legacy_children": "../../children/nodes/人工生命-828127497ec0.json"
+}

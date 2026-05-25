@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:行为",
+  "source": "nodes/行为-2b260b48baf4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/行为-2b260b48baf4.json",
+  "legacy_children": "../../children/nodes/行为-2b260b48baf4.json"
+}

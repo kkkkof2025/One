@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:意识",
+  "source": "nodes/意识-23805e0dbfcb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/意识-23805e0dbfcb.json",
+  "legacy_children": "../../children/nodes/意识-23805e0dbfcb.json"
+}

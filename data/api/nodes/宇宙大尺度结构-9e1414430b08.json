@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/宇宙大尺度结构-9e1414430b08.json",
+  "node": {
+    "id": "wikipedia:zh:Category:宇宙大尺度结构",
+    "title": "宇宙大尺度结构",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%87%E5%AE%99%E5%A4%A7%E5%B0%BA%E5%BA%A6%E7%BB%93%E6%9E%84",
+    "source_page_id": 161479,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

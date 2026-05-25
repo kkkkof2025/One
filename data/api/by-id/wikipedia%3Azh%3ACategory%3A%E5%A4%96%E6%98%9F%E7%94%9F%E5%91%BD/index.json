@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:外星生命",
+  "source": "nodes/外星生命-05b395b50688.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/外星生命-05b395b50688.json",
+  "legacy_children": "../../children/nodes/外星生命-05b395b50688.json"
+}

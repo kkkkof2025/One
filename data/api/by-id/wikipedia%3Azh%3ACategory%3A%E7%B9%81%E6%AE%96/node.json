@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/繁殖-7756c1ec8b99.json",
+  "node": {
+    "id": "wikipedia:zh:Category:繁殖",
+    "title": "繁殖",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B9%81%E6%AE%96",
+    "source_page_id": 634067,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

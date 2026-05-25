@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命題材作品",
+  "source": "nodes/生命題材作品-b97ef1af69db.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/生命題材作品-b97ef1af69db.json",
+  "legacy_children": "../../children/nodes/生命題材作品-b97ef1af69db.json"
+}

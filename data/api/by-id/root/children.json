@@ -14,7 +14,7 @@
   "children": [
     {
       "title": "宇宙",
-      "children_count": 17,
+      "children_count": 21,
       "id": "Q1",
       "data_source": "nodes/Q1.json",
       "children_status": "loaded",
@@ -22,19 +22,20 @@
       "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T07:05:41Z",
-      "last_checked_at": "2026-05-23T07:05:41Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-05-25T09:23:44Z",
+      "last_checked_at": "2026-05-25T09:23:44Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_checked": {
-        "wikidata_api": "2026-05-23T07:05:41Z"
+        "wikidata_api": "2026-05-23T07:05:41Z",
+        "wikipedia": "2026-05-25T09:23:44Z"
       }
     },
     {
       "title": "生命",
-      "children_count": 9,
+      "children_count": 34,
       "id": "Q3",
       "data_source": "nodes/Q3.json",
       "children_status": "loaded",
@@ -42,14 +43,15 @@
       "quality_score": 99,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T07:05:43Z",
-      "last_checked_at": "2026-05-23T07:05:43Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-05-25T09:23:49Z",
+      "last_checked_at": "2026-05-25T09:23:49Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_checked": {
-        "wikidata_api": "2026-05-23T07:05:43Z"
+        "wikidata_api": "2026-05-23T07:05:43Z",
+        "wikipedia": "2026-05-25T09:23:49Z"
       }
     }
   ],

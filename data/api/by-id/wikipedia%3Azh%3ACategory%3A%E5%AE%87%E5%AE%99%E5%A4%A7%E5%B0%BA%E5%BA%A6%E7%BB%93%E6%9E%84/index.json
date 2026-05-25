@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:宇宙大尺度结构",
+  "source": "nodes/宇宙大尺度结构-9e1414430b08.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/宇宙大尺度结构-9e1414430b08.json",
+  "legacy_children": "../../children/nodes/宇宙大尺度结构-9e1414430b08.json"
+}

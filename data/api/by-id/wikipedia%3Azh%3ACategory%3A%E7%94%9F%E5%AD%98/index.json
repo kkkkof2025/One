@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生存",
+  "source": "nodes/生存-c84780bd7944.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/生存-c84780bd7944.json",
+  "legacy_children": "../../children/nodes/生存-c84780bd7944.json"
+}

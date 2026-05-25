@@ -95,6 +95,146 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "同病毒共存",
+        "data_source": "nodes/Q110115947.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q110115947",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q110115947",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "捕食者-猎物相互作用",
+        "data_source": "nodes/Q2178572.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2178572",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q2178572",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "偏利共生",
+        "data_source": "nodes/Q191934.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q191934",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q191934",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "內共生學說",
+        "data_source": "nodes/Q2030494.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2030494",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q2030494",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "內共生體",
+        "data_source": "nodes/Q2456754.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2456754",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q2456754",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "寄生",
+        "data_source": "nodes/Q186517.json",
+        "children_status": "loaded",
+        "is_leaf": false,
+        "id": "Q186517",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q186517",
+        "quality_score": 100,
+        "quality_version": 3,
+        "review_status": "approved",
+        "updated_at": "2026-05-23T14:52:41Z",
+        "last_checked_at": "2026-05-23T14:52:41Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-05-23T14:51:36Z",
+          "wikipedia": "2026-05-23T14:52:41Z"
+        }
+      },
+      {
+        "title": "攜播",
+        "data_source": "nodes/Q4892641.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4892641",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4892641",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "片害共生",
+        "data_source": "nodes/Q462809.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q462809",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q462809",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "菌异营",
+        "data_source": "nodes/Q2420488.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2420488",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q2420488",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "菌根",
+        "data_source": "nodes/Q99974.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q99974",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q99974",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata_api",
@@ -111,15 +251,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-23T14:52:40Z",
-    "last_checked_at": "2026-05-23T14:52:40Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-05-25T09:22:40Z",
+    "last_checked_at": "2026-05-25T09:22:40Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-05-23T14:51:30Z",
-      "wikipedia": "2026-05-23T14:52:40Z"
+      "wikipedia": "2026-05-23T14:52:40Z",
+      "wikidata": "2026-05-25T09:22:40Z"
     },
     "is_leaf": false
   }

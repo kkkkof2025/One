@@ -52,7 +52,7 @@
     },
     {
       "title": "寄生",
-      "children_count": 5,
+      "children_count": 9,
       "id": "Q186517",
       "data_source": "nodes/Q186517.json",
       "source_provider": "wikidata_api",
@@ -63,20 +63,21 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T14:52:41Z",
-      "last_checked_at": "2026-05-23T14:52:41Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-05-25T09:23:44Z",
+      "last_checked_at": "2026-05-25T09:23:44Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
         "wikidata_api": "2026-05-23T14:51:36Z",
-        "wikipedia": "2026-05-23T14:52:41Z"
+        "wikipedia": "2026-05-23T14:52:41Z",
+        "wikidata": "2026-05-25T09:23:44Z"
       }
     },
     {
       "title": "共生",
-      "children_count": 6,
+      "children_count": 16,
       "id": "Q121610",
       "data_source": "nodes/Q121610.json",
       "source_provider": "wikidata_api",
@@ -87,15 +88,16 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T14:52:40Z",
-      "last_checked_at": "2026-05-23T14:52:40Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-05-25T09:22:40Z",
+      "last_checked_at": "2026-05-25T09:22:40Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
         "wikidata_api": "2026-05-23T14:51:30Z",
-        "wikipedia": "2026-05-23T14:52:40Z"
+        "wikipedia": "2026-05-23T14:52:40Z",
+        "wikidata": "2026-05-25T09:22:40Z"
       }
     },
     {

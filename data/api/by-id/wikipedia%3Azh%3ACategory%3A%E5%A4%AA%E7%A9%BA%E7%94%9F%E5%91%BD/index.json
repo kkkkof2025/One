@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:太空生命",
+  "source": "nodes/太空生命-3574c4796cdf.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/太空生命-3574c4796cdf.json",
+  "legacy_children": "../../children/nodes/太空生命-3574c4796cdf.json"
+}

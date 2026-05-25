@@ -1,0 +1,9 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:有争议生命",
+  "source": "nodes/有争议生命-793f20c3afa2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "legacy_node": "../../nodes/有争议生命-793f20c3afa2.json",
+  "legacy_children": "../../children/nodes/有争议生命-793f20c3afa2.json"
+}

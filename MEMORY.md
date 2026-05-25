@@ -46,7 +46,7 @@
 - `scripts/generate_review_queue.py` 会生成 `data/review_queue.json`，收集 `needs_review`、低质量、错误、重复风险、消歧义、过度泛化和缺少中文标签等节点，并给出建议动作；同时写入 `reason_distribution`，汇总缺中文、重复风险、加载错误、低质量分等主要复核原因。
 - `scripts/review_decision.py` 会维护 `data/review_decisions.json`；状态为 `confirmed`、`curated`、`allowlisted`、`ignored` 或 `deferred` 的 `review_key` 会从后续复核队列中过滤。显式使用 `--sync-curation` 时，`curated` 会同步写入 `data/curation.json`；显式使用 `--sync-allowlist` 时，`allowlisted` 会同步写入 `data/validation_allowlist.json`。
 - `scripts/review_decision.py list --status <status>` 可以按复核处理状态过滤记录；`--status` 可重复使用。
-- `data/validation_allowlist.json` 记录人工确认过的合法重复 QID；当前允许暗物质、暗能量，以及 M84、M86、本星系群、矩尺座星系团、巨型超大类星体群等 7 个节点的合法多路径。
+- `data/validation_allowlist.json` 记录人工确认过的合法重复 QID；当前允许暗物质、暗能量，以及 M84、M86、本星系群、矩尺座星系团、巨型超大类星体群、寄生等 8 个节点的合法多路径。
 - `tests/test_validate_data.py` 覆盖有效分片、坏 JSON、断开的 `data_source`、循环引用、schema 漂移、重复 ID warning 和重复 ID 允许列表。
 - `index.html` 顶部新增增长统计、复核队列、搜索、状态过滤、全局路径面包屑、节点来源详情，以及 AI 上下文 Markdown/JSON 复制和下载；导出内容包含当前节点、父路径、子节点摘要和来源字段。
 - 页面复核队列支持按复核状态、加载状态和质量原因筛选；每个队列项可以复制 `review_key`，并可点击带入全局搜索。
