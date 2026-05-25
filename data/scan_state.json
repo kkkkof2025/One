@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-24T02:48:52Z",
+  "updated_at": "2026-05-25T02:42:02Z",
   "fetch_strategy_version": 5,
   "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q2374421",
-  "last_scan_title": "共生物",
+  "last_scan_key": "id:Q17863945",
+  "last_scan_title": "拉尼亚凯亚超星系团",
   "candidate_count": 213,
   "selected_count": 5,
   "request_count": 5,
@@ -23,8 +23,7 @@
     "conceptnet"
   ],
   "source_request_counts": {
-    "wikipedia": 2,
-    "wikidata_api": 3
+    "wikidata_api": 5
   },
   "source_cooldowns": {},
   "last_stop_reason": ""

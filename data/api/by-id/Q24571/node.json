@@ -16,12 +16,15 @@
         "quality_score": 89,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-23T01:07:44Z",
-        "last_checked_at": "2026-05-23T01:07:44Z",
+        "updated_at": "2026-05-25T02:42:01Z",
+        "last_checked_at": "2026-05-25T02:42:01Z",
         "last_fetch_source": "wikidata_api",
         "last_fetch_sources": [
           "wikidata_api"
-        ]
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-05-25T02:42:01Z"
+        }
       }
     ],
     "fetch_strategy_version": 4,
