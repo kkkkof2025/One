@@ -4,7 +4,7 @@
   "children_status": "pending",
   "children": [],
   "fetch_strategy_version": 2,
-  "updated_at": "2026-05-23T02:14:13Z",
+  "updated_at": "2026-05-26T02:30:56Z",
   "is_leaf": false,
   "quality_score": 75,
   "quality_reasons": [
@@ -18,20 +18,18 @@
   "source_no_children": {
     "wikidata": "2026-05-07T00:54:19Z",
     "wikidata_api": "2026-05-23T02:14:13Z",
-    "wikipedia": "2026-05-23T02:14:13Z"
+    "wikipedia": "2026-05-23T02:14:13Z",
+    "dbpedia": "2026-05-26T02:30:56Z"
   },
-  "last_checked_at": "2026-05-23T02:14:13Z",
-  "last_fetch_source": "wikipedia",
+  "last_checked_at": "2026-05-26T02:30:56Z",
+  "last_fetch_source": "dbpedia",
   "last_fetch_sources": [
-    "wikidata_api",
-    "wikipedia"
+    "dbpedia"
   ],
-  "last_source_errors": {
-    "conceptnet": "HTTP Error 502: Bad Gateway"
-  },
   "source_checked": {
     "wikidata": "2026-05-07T00:54:19Z",
     "wikidata_api": "2026-05-23T02:14:13Z",
-    "wikipedia": "2026-05-23T02:14:13Z"
+    "wikipedia": "2026-05-23T02:14:13Z",
+    "dbpedia": "2026-05-26T02:30:56Z"
   }
 }
