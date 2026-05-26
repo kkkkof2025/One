@@ -36,6 +36,7 @@ class GrowJsonTests(unittest.TestCase):
             "DUPLICATE_ID_COUNTS": grow_json.DUPLICATE_ID_COUNTS,
             "ALLOWED_DUPLICATE_IDS": grow_json.ALLOWED_DUPLICATE_IDS,
             "MAX_REQUESTS": grow_json.MAX_REQUESTS,
+            "SCHEDULE_PREVIEW_REQUESTS": grow_json.SCHEDULE_PREVIEW_REQUESTS,
             "MAX_SOURCES_PER_NODE": grow_json.MAX_SOURCES_PER_NODE,
             "SOURCE_DIVERSITY": grow_json.SOURCE_DIVERSITY,
             "REQUEST_DELAY": grow_json.REQUEST_DELAY,
@@ -67,6 +68,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.DUPLICATE_ID_COUNTS = {}
         grow_json.ALLOWED_DUPLICATE_IDS = set()
         grow_json.MAX_REQUESTS = 0
+        grow_json.SCHEDULE_PREVIEW_REQUESTS = 5
         grow_json.MAX_SOURCES_PER_NODE = 1
         grow_json.SOURCE_DIVERSITY = True
         grow_json.REQUEST_DELAY = 0
@@ -616,6 +618,49 @@ class GrowJsonTests(unittest.TestCase):
             {"wikidata_api": 2, "wikipedia": 1, "wikidata": 1},
         )
         self.assertTrue(summary["source_diversity_enabled"])
+
+    def test_next_run_preview_works_during_zero_request_refresh(self):
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata"]
+        grow_json.MAX_REQUESTS = 0
+        grow_json.SCHEDULE_PREVIEW_REQUESTS = 3
+        candidates = [
+            {
+                "node": {
+                    "id": "Q1",
+                    "title": "未开始",
+                    "children_status": "pending",
+                    "children": [],
+                },
+                "scan_key": "id:Q1",
+                "title": "未开始",
+                "priority": 100,
+                "depth": 1,
+            },
+            {
+                "node": {
+                    "id": "Q2",
+                    "title": "下个维基百科",
+                    "children_status": "pending",
+                    "children": [],
+                    "source_checked": {"wikidata_api": "2026-05-25T00:00:00Z"},
+                },
+                "scan_key": "id:Q2",
+                "title": "下个维基百科",
+                "priority": 90,
+                "depth": 1,
+            },
+        ]
+
+        actual = grow_json.summarize_candidate_selection(candidates, {})
+        preview = grow_json.summarize_next_run_preview(candidates, {})
+
+        self.assertEqual(actual["selection_limit"], 0)
+        self.assertEqual(actual["scheduled_source_counts"], {})
+        self.assertEqual(preview["selection_limit"], 2)
+        self.assertEqual(
+            preview["scheduled_source_counts"],
+            {"wikidata_api": 1, "wikipedia": 1},
+        )
 
     def test_source_outcome_counts_record_productive_source(self):
         node = {

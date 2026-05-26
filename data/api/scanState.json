@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T04:19:36Z",
+  "updated_at": "2026-05-26T04:51:11Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
   "last_scan_key": "",
@@ -51,9 +51,64 @@
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
     "source_diversity_enabled": true,
+    "request_limit": 0,
     "selection_limit": 0,
     "scheduled_source_counts": {},
-    "scheduled_candidates": []
+    "scheduled_candidates": [],
+    "next_run_preview": {
+      "scheduler": "priority-source-round-robin-v1",
+      "source_diversity_enabled": true,
+      "request_limit": 5,
+      "selection_limit": 5,
+      "scheduled_source_counts": {
+        "conceptnet": 2,
+        "wikidata": 1,
+        "wikipedia": 1,
+        "wikidata_api": 1
+      },
+      "scheduled_candidates": [
+        {
+          "scan_key": "id:Q186517",
+          "title": "寄生",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 122.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q1",
+          "title": "宇宙",
+          "next_source": "wikidata",
+          "source_progress": 2,
+          "priority": 139.0,
+          "depth": 1
+        },
+        {
+          "scan_key": "id:Q170430",
+          "title": "捕食",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 123.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q15241043",
+          "title": "武仙－北冕座長城",
+          "next_source": "wikidata_api",
+          "source_progress": 1,
+          "priority": 91.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q23054687",
+          "title": "BOSS長城",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 91.0,
+          "depth": 3
+        }
+      ]
+    }
   },
   "last_stop_reason": ""
 }

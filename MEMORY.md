@@ -95,7 +95,7 @@
 - 新增 `ONE_DBPEDIA_ENDPOINT`，默认使用 `https://dbpedia.org/sparql`；DBpedia 适配器只读取 `Category:* skos:broader <父分类>` 关系，生成 `dbpedia:` 前缀 ID 和 `dbpedia_category` 关系。
 - DBpedia 请求继续复用统一的 `ONE_USER_AGENT`、来源冷却、`ONE_MAX_REQUESTS` 和 `ONE_MAX_SOURCES_PER_NODE` 控制；如果 DBpedia 不可用，会像其它来源一样进入冷却，不会阻塞整个增长流程。
 - `scripts/grow_json.py` 的抓取策略版本升级到 `7`，候选排序新增 `source_progress`：已经成功检查过部分来源但尚未完成的节点会排在未开始节点前面，避免连续多轮全部预算都花在 `wikidata_api` 这类同一顺位来源上。扫描游标只在没有部分进度候选时继续按 `last_scan_key` 轮转。
-- `scripts/grow_json.py` 的抓取策略版本再升级到 `8`，默认开启按候选“下一个可用来源”轮转分发，尽量把同一轮的请求散到不同来源；`data/stats.json` 还会记录 `growth_efficiency_summary`，包括近几轮新增、请求、零增长连击和来源结果汇总。
+- `scripts/grow_json.py` 的抓取策略版本再升级到 `8`，默认开启按候选“下一个可用来源”轮转分发，尽量把同一轮的请求散到不同来源；0 请求刷新也会按 `ONE_SCHEDULE_PREVIEW_REQUESTS` 生成 `candidate_source_summary.next_run_preview`，用于展示下一次正常增长会打哪些来源。`data/stats.json` 还会记录 `growth_efficiency_summary`，包括近几轮新增、请求、零增长连击和来源结果汇总。
 - `data/scan_state.json`、`data/stats.json` 和 `data/growth_history.json` 写入 `candidate_source_summary`，包含 `source_progress_counts`、`next_source_counts`、`available_next_source_counts` 和 `blocked_by_cooldown`，用于解释 0 增长到底是来源冷却、候选进度不足，还是补充来源仍可尝试。
 - 静态 API 新增 `data/api/getScanState.json` / `scanState.json` / `getStats.json` / `stats.json` 和 `OneKnowledgeApi.getScanState()`、`getStats()`；首页顶部新增扫描诊断面板，直接展示来源顺序、当前可用来源、候选进度、下个来源、来源结果和冷却状态。
 

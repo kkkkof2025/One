@@ -279,6 +279,7 @@ workflow 需要这些权限：
 - `ONE_USER_AGENT`: 请求 User-Agent。
 - `ONE_SOURCE_ORDER`: 来源顺序，默认 `wikidata_api,wikipedia,wikidata,conceptnet,dbpedia`。
 - `ONE_SOURCE_DIVERSITY`: 设为 `0` / `false` / `no` 时关闭按来源轮转的候选调度；默认开启。
+- `ONE_SCHEDULE_PREVIEW_REQUESTS`: 0 请求刷新时用于生成“下轮预览”的请求预算，默认 `5`，只影响诊断展示，不会请求外部来源。
 - `ONE_MAX_SOURCES_PER_NODE`: 单次运行中同一个节点最多尝试几个来源，默认 `1`；设为 `0` 表示不限制，适合人工彻底排查单个节点。
 - `ONE_SOURCE_COOLDOWN_SECONDS`: 发生 429 或 5xx 临时错误后的默认冷却秒数，默认 `3600`。
 - `ONE_TRANSIENT_SOURCE_COOLDOWN_SECONDS`: 发生 5xx 或超时等临时错误后的冷却秒数，默认 `600`。
@@ -326,7 +327,7 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_checked` 和 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
 - `scripts/grow_json.py` 已新增 DBpedia 分类层级作为最后备用来源，继续受请求预算、来源冷却和单节点来源上限控制。
 - `scripts/grow_json.py` 的候选排序已改为优先补完已开始检查的节点，让同一节点尽快从 `wikidata_api` 轮到 Wikipedia、WDQS、ConceptNet 或 DBpedia，而不是把全部候选先过一遍同一来源。
-- `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，并补充来源结果统计与近轮效率摘要，用于解释 0 增长时下一个来源、可用来源、冷却阻塞和最近是否真的有产出。
+- `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，并补充来源结果统计、下轮调度预览与近轮效率摘要，用于解释 0 增长时下一个来源、可用来源、冷却阻塞和最近是否真的有产出。
 - `data/api/client.js` 已新增 `getScanState()` 和 `getStats()`，页面顶部的扫描诊断面板会直接展示候选来源摘要、可用来源、来源结果和冷却状态。
 
 ## To-do

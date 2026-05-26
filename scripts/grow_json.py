@@ -38,6 +38,7 @@ API_BY_ID_SUBDIR = "by-id"
 
 QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
 MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "5"))
+SCHEDULE_PREVIEW_REQUESTS = int(os.environ.get("ONE_SCHEDULE_PREVIEW_REQUESTS", "5"))
 MAX_SOURCES_PER_NODE = int(os.environ.get("ONE_MAX_SOURCES_PER_NODE", "1"))
 SOURCE_DIVERSITY = os.environ.get("ONE_SOURCE_DIVERSITY", "1").lower() not in {
     "0",
@@ -378,12 +379,12 @@ def compact_candidate_for_summary(
 
 
 def summarize_candidate_selection(
-    candidates: List[Dict[str, Any]], scan_state: Optional[Dict[str, Any]] = None
+    candidates: List[Dict[str, Any]],
+    scan_state: Optional[Dict[str, Any]] = None,
+    request_limit: Optional[int] = None,
 ) -> Dict[str, Any]:
-    if MAX_REQUESTS <= 0:
-        limit = 0
-    else:
-        limit = min(MAX_REQUESTS, len(candidates))
+    limit_source = MAX_REQUESTS if request_limit is None else request_limit
+    limit = min(max(0, limit_source), len(candidates))
     selected = candidates[:limit]
     scheduled_source_counts: Dict[str, int] = {}
     for candidate in selected:
@@ -395,12 +396,23 @@ def summarize_candidate_selection(
         if SOURCE_DIVERSITY
         else "priority-cursor-v1",
         "source_diversity_enabled": SOURCE_DIVERSITY,
+        "request_limit": max(0, limit_source),
         "selection_limit": limit,
         "scheduled_source_counts": scheduled_source_counts,
         "scheduled_candidates": [
             compact_candidate_for_summary(candidate, scan_state) for candidate in selected
         ],
     }
+
+
+def summarize_next_run_preview(
+    candidates: List[Dict[str, Any]], scan_state: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    return summarize_candidate_selection(
+        candidates,
+        scan_state,
+        request_limit=SCHEDULE_PREVIEW_REQUESTS,
+    )
 
 
 def spread_candidates_by_next_source(
@@ -2943,6 +2955,9 @@ def main() -> None:
     )
     candidate_source_summary_this_run.update(
         summarize_candidate_selection(ordered_candidates, scan_state)
+    )
+    candidate_source_summary_this_run["next_run_preview"] = summarize_next_run_preview(
+        ordered_candidates, scan_state
     )
     if candidate_source_summary_this_run:
         print(

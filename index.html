@@ -1432,6 +1432,14 @@
       return `近${formatNumber(windowRuns)}/${formatNumber(windowLimit)}轮 +${formatNumber(added)} / ${formatNumber(requests)}，效率 ${ratio}${lastRun} · 0增连击 ${formatNumber(streak)}`;
     }
 
+    function formatSchedulePreview(preview) {
+      if (!preview || typeof preview !== "object") return "无";
+      const counts = formatCountMap(preview.scheduled_source_counts);
+      if (counts === "无") return "无";
+      const limit = preview.request_limit ?? preview.selection_limit;
+      return `预算 ${formatNumber(limit)} · ${counts}`;
+    }
+
     function renderDiagnosticRows(container, rows) {
       container.innerHTML = "";
       const usableRows = Array.isArray(rows)
@@ -2412,6 +2420,7 @@
         { label: "来源顺序", value: formatSourceList(scanStateData?.source_order) },
         { label: "当前可用", value: formatSourceList(scanStateData?.available_sources) },
         { label: "本轮调度", value: formatCountMap(summary.scheduled_source_counts) },
+        { label: "下轮预览", value: formatSchedulePreview(summary.next_run_preview) },
         { label: "已查进度", value: formatCountMap(summary.source_progress_counts, { numericKeys: true }) },
         { label: "下个来源", value: formatCountMap(summary.next_source_counts) },
         { label: "可用下个", value: formatCountMap(summary.available_next_source_counts) },
