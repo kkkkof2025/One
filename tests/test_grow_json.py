@@ -1170,6 +1170,7 @@ class GrowJsonTests(unittest.TestCase):
         api_client = (grow_json.API_DIR / "client.js").read_text(encoding="utf-8")
         stats_api = grow_json.load_json(grow_json.API_DIR / "stats.json")
         get_stats_api = grow_json.load_json(grow_json.API_DIR / "getStats.json")
+        next_schedule_api = grow_json.load_json(grow_json.API_DIR / "getNextSchedule.json")
 
         self.assertEqual(end_node["total_items"], 1)
         self.assertEqual(scan_state_api["candidate_count"], 7)
@@ -1181,14 +1182,18 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(api_index["client"], "client.js")
         self.assertEqual(api_index["getScanState"], "getScanState.json")
         self.assertEqual(api_index["getStats"], "getStats.json")
+        self.assertEqual(api_index["getNextSchedule"], "getNextSchedule.json")
         self.assertEqual(stats_api["total_nodes"], 1)
         self.assertEqual(get_stats_api["total_nodes"], 1)
+        self.assertEqual(next_schedule_api["endpoint"], "nextSchedule")
+        self.assertEqual(next_schedule_api["source"], "getScanState.json")
         self.assertIn("CLIENT_BASE_URL", api_client)
         self.assertIn("OneKnowledgeApi", api_client)
         self.assertIn("getChildren", api_client)
         self.assertIn("getEndNode", api_client)
         self.assertIn("getScanState", api_client)
         self.assertIn("getStats", api_client)
+        self.assertIn("getNextSchedule", api_client)
 
     def test_static_api_by_id_alias_encodes_non_qid_id(self):
         identifier = "wikipedia:zh:Category:寄生生物題材作品"

@@ -1409,6 +1409,10 @@ def static_api_client_js() -> str:
     return fetchJson("getStats.json", options);
   }
 
+  async function getNextSchedule(options) {
+    return fetchJson("getNextSchedule.json", options);
+  }
+
   var api = {
     apiUrl: apiUrl,
     fetchJson: fetchJson,
@@ -1418,7 +1422,8 @@ def static_api_client_js() -> str:
     getChildren: getChildren,
     getEndNode: getEndNode,
     getScanState: getScanState,
-    getStats: getStats
+    getStats: getStats,
+    getNextSchedule: getNextSchedule
   };
 
   global.OneKnowledgeApi = api;
@@ -1491,6 +1496,26 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         stats_payload = load_json(STATS_FILE) or {}
         save_json(API_DIR / "stats.json", stats_payload)
         save_json(API_DIR / "getStats.json", stats_payload)
+        preview_payload = scan_state_payload.get("candidate_source_summary", {}).get(
+            "next_run_preview", {}
+        )
+        next_schedule_payload = {
+            "endpoint": "nextSchedule",
+            "generated_at": generated_at,
+            "source": "getScanState.json",
+            "request_limit": int(preview_payload.get("request_limit", MAX_REQUESTS) or 0),
+            "selection_limit": int(preview_payload.get("selection_limit", 0) or 0),
+            "scheduler": preview_payload.get(
+                "scheduler", "priority-source-round-robin-v1"
+            ),
+            "source_diversity_enabled": bool(
+                preview_payload.get("source_diversity_enabled", SOURCE_DIVERSITY)
+            ),
+            "scheduled_source_counts": preview_payload.get("scheduled_source_counts", {}),
+            "scheduled_candidates": preview_payload.get("scheduled_candidates", []),
+        }
+        save_json(API_DIR / "nextSchedule.json", next_schedule_payload)
+        save_json(API_DIR / "getNextSchedule.json", next_schedule_payload)
         save_json(api_end_node_file("index.json"), {
             "endpoint": "index",
             "root": "root.json",
@@ -1503,6 +1528,7 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
                 "getEndNode",
                 "getScanState",
                 "getStats",
+                "getNextSchedule",
             ],
             "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
             "children": "children/<relative data path>",
@@ -1515,6 +1541,8 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
             "scanState": "scanState.json",
             "getStats": "getStats.json",
             "stats": "stats.json",
+            "getNextSchedule": "getNextSchedule.json",
+            "nextSchedule": "nextSchedule.json",
         })
         save_text(API_DIR / "client.js", static_api_client_js())
 
