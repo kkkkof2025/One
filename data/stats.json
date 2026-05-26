@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T02:06:27Z",
+  "generated_at": "2026-05-26T04:19:36Z",
   "total_nodes": 258,
   "last_added_nodes": 0,
   "last_request_count": 0,
@@ -13,9 +13,10 @@
   "last_candidate_source_summary": {
     "candidate_count": 255,
     "source_progress_counts": {
-      "3": 4,
+      "4": 3,
       "2": 6,
       "1": 106,
+      "3": 1,
       "0": 139
     },
     "next_source_counts": {
@@ -43,20 +44,21 @@
     "added_nodes": 60,
     "requests": 40,
     "added_per_request": 1.5,
-    "zero_growth_streak": 1,
+    "zero_growth_streak": 2,
     "last_productive_run_at": "2026-05-25T09:23:50Z",
     "source_request_counts": {
-      "wikidata_api": 22,
-      "wikipedia": 10,
+      "wikidata_api": 19,
+      "wikipedia": 9,
       "conceptnet": 3,
-      "wikidata": 5
+      "wikidata": 6,
+      "dbpedia": 3
     },
     "source_outcome_counts": {}
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 35,
+  "history_entries": 36,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

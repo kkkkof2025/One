@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26T02:06:27Z",
+  "updated_at": "2026-05-26T04:19:36Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
   "last_scan_key": "",
@@ -30,9 +30,10 @@
   "candidate_source_summary": {
     "candidate_count": 255,
     "source_progress_counts": {
-      "3": 4,
+      "4": 3,
       "2": 6,
       "1": 106,
+      "3": 1,
       "0": 139
     },
     "next_source_counts": {

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-25T09:31:11Z",
+  "generated_at": "2026-05-26T02:31:02Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 102,
+  "total_candidates": 101,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 102,
+  "total_items": 101,
   "reason_distribution": {
-    "total_items": 102,
+    "total_items": 101,
     "categories": [
       {
         "key": "non_zh_label",
@@ -19,14 +19,6 @@
           "id:Q55621538",
           "id:Q118512328",
           "id:Q14013"
-        ]
-      },
-      {
-        "key": "duplicate_id",
-        "label": "重复 ID 风险",
-        "count": 1,
-        "sample_review_keys": [
-          "id:Q186517"
         ]
       },
       {
@@ -63,11 +55,11 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 102
+        "count": 101
       },
       {
         "reason": "good_title_length",
-        "count": 100
+        "count": 99
       },
       {
         "reason": "missing_relation",
@@ -79,7 +71,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 52
+        "count": 51
       },
       {
         "reason": "non_zh_label",
@@ -87,7 +79,7 @@
       },
       {
         "reason": "has_children",
-        "count": 6
+        "count": 5
       },
       {
         "reason": "allowed_duplicate_id:2",
@@ -95,15 +87,11 @@
       },
       {
         "reason": "loaded",
-        "count": 3
+        "count": 2
       },
       {
         "reason": "relation:has_part",
-        "count": 3
-      },
-      {
-        "reason": "duplicate_id:2",
-        "count": 1
+        "count": 2
       },
       {
         "reason": "long_title",
@@ -128,7 +116,7 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 3
+        "count": 2
       }
     ]
   },
@@ -2420,33 +2408,6 @@
       "review_key": "id:Q22299142",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
-    },
-    {
-      "title": "寄生",
-      "children_status": "loaded",
-      "quality_score": 99,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "zh_label",
-        "good_title_length",
-        "relation:has_part",
-        "loaded",
-        "duplicate_id:2",
-        "has_children"
-      ],
-      "id": "Q186517",
-      "source_provider": "wikidata_api",
-      "source_relation": "has_part",
-      "source_url": "https://www.wikidata.org/wiki/Q186517",
-      "updated_at": "2026-05-25T09:23:44Z",
-      "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / 寄生",
-      "location": "nodes/Q186517.json",
-      "priority": 25.0,
-      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
-      "review_key": "id:Q186517",
-      "primary_reason": "duplicate_id",
-      "primary_reason_label": "重复 ID 风险"
     }
   ]
 }

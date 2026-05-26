@@ -13,25 +13,23 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T02:14:13Z",
-      "last_checked_at": "2026-05-23T02:14:13Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-05-26T02:30:56Z",
+      "last_checked_at": "2026-05-26T02:30:56Z",
+      "last_fetch_source": "dbpedia",
       "last_fetch_sources": [
-        "wikidata_api",
-        "wikipedia"
+        "dbpedia"
       ],
-      "last_source_errors": {
-        "conceptnet": "HTTP Error 502: Bad Gateway"
-      },
       "source_no_children": {
         "wikidata": "2026-05-07T00:54:19Z",
         "wikidata_api": "2026-05-23T02:14:13Z",
-        "wikipedia": "2026-05-23T02:14:13Z"
+        "wikipedia": "2026-05-23T02:14:13Z",
+        "dbpedia": "2026-05-26T02:30:56Z"
       },
       "source_checked": {
         "wikidata": "2026-05-07T00:54:19Z",
         "wikidata_api": "2026-05-23T02:14:13Z",
-        "wikipedia": "2026-05-23T02:14:13Z"
+        "wikipedia": "2026-05-23T02:14:13Z",
+        "dbpedia": "2026-05-26T02:30:56Z"
       }
     },
     {
@@ -61,25 +59,23 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-23T03:54:06Z",
-      "last_checked_at": "2026-05-23T03:54:06Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-05-26T02:31:01Z",
+      "last_checked_at": "2026-05-26T02:31:01Z",
+      "last_fetch_source": "dbpedia",
       "last_fetch_sources": [
-        "wikidata_api",
-        "wikipedia"
+        "dbpedia"
       ],
-      "last_source_errors": {
-        "conceptnet": "HTTP Error 502: Bad Gateway"
-      },
       "source_no_children": {
         "wikidata": "2026-05-07T03:04:54Z",
         "wikidata_api": "2026-05-23T03:54:06Z",
-        "wikipedia": "2026-05-23T03:54:06Z"
+        "wikipedia": "2026-05-23T03:54:06Z",
+        "dbpedia": "2026-05-26T02:31:01Z"
       },
       "source_checked": {
         "wikidata": "2026-05-07T03:04:54Z",
         "wikidata_api": "2026-05-23T03:54:06Z",
-        "wikipedia": "2026-05-23T03:54:06Z"
+        "wikipedia": "2026-05-23T03:54:06Z",
+        "dbpedia": "2026-05-26T02:31:01Z"
       }
     },
     {
