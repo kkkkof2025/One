@@ -37,6 +37,7 @@ class GrowJsonTests(unittest.TestCase):
             "ALLOWED_DUPLICATE_IDS": grow_json.ALLOWED_DUPLICATE_IDS,
             "MAX_REQUESTS": grow_json.MAX_REQUESTS,
             "MAX_SOURCES_PER_NODE": grow_json.MAX_SOURCES_PER_NODE,
+            "SOURCE_DIVERSITY": grow_json.SOURCE_DIVERSITY,
             "REQUEST_DELAY": grow_json.REQUEST_DELAY,
             "WIKIDATA_REQUEST_DELAY": grow_json.WIKIDATA_REQUEST_DELAY,
             "SOURCE_ORDER": grow_json.SOURCE_ORDER,
@@ -67,6 +68,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.ALLOWED_DUPLICATE_IDS = set()
         grow_json.MAX_REQUESTS = 0
         grow_json.MAX_SOURCES_PER_NODE = 1
+        grow_json.SOURCE_DIVERSITY = True
         grow_json.REQUEST_DELAY = 0
         grow_json.WIKIDATA_REQUEST_DELAY = 0
         grow_json.SOURCE_ORDER = ["wikidata"]
@@ -86,6 +88,7 @@ class GrowJsonTests(unittest.TestCase):
         grow_json.last_scan_title_this_run = ""
         grow_json.run_stop_reason = ""
         grow_json.source_request_counts = {}
+        grow_json.source_outcome_counts = {}
         grow_json.source_cooldowns_this_run = {}
         grow_json.last_source_request_at = {}
         grow_json.candidate_source_summary_this_run = {}
@@ -542,6 +545,122 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(summary["available_next_source_counts"], {"conceptnet": 1})
         self.assertEqual(summary["blocked_by_cooldown"], 1)
 
+    def test_source_diversity_spreads_scheduled_candidate_sources(self):
+        grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata"]
+        grow_json.MAX_REQUESTS = 4
+        candidates = [
+            {
+                "node": {
+                    "id": "Q1",
+                    "title": "未开始 A",
+                    "children_status": "pending",
+                    "children": [],
+                },
+                "scan_key": "id:Q1",
+                "title": "未开始 A",
+                "priority": 100,
+                "depth": 1,
+            },
+            {
+                "node": {
+                    "id": "Q2",
+                    "title": "未开始 B",
+                    "children_status": "pending",
+                    "children": [],
+                },
+                "scan_key": "id:Q2",
+                "title": "未开始 B",
+                "priority": 90,
+                "depth": 1,
+            },
+            {
+                "node": {
+                    "id": "Q3",
+                    "title": "下个维基百科",
+                    "children_status": "pending",
+                    "children": [],
+                    "source_checked": {"wikidata_api": "2026-05-25T00:00:00Z"},
+                },
+                "scan_key": "id:Q3",
+                "title": "下个维基百科",
+                "priority": 80,
+                "depth": 1,
+            },
+            {
+                "node": {
+                    "id": "Q4",
+                    "title": "下个 WDQS",
+                    "children_status": "pending",
+                    "children": [],
+                    "source_checked": {
+                        "wikidata_api": "2026-05-25T00:00:00Z",
+                        "wikipedia": "2026-05-25T00:00:00Z",
+                    },
+                },
+                "scan_key": "id:Q4",
+                "title": "下个 WDQS",
+                "priority": 70,
+                "depth": 1,
+            },
+        ]
+
+        spread = grow_json.spread_candidates_by_next_source(candidates, {})
+        summary = grow_json.summarize_candidate_selection(spread, {})
+
+        self.assertEqual(
+            [item["scan_key"] for item in spread],
+            ["id:Q1", "id:Q3", "id:Q4", "id:Q2"],
+        )
+        self.assertEqual(
+            summary["scheduled_source_counts"],
+            {"wikidata_api": 2, "wikipedia": 1, "wikidata": 1},
+        )
+        self.assertTrue(summary["source_diversity_enabled"])
+
+    def test_source_outcome_counts_record_productive_source(self):
+        node = {
+            "id": "Q20",
+            "title": "可增长",
+            "children_status": "pending",
+            "children": [],
+        }
+
+        def wikipedia_children(_node, _blocked_ids=None):
+            return [
+                {
+                    "id": "wikipedia:zh:Category:子类",
+                    "title": "子类",
+                    "children_status": "pending",
+                    "source_provider": "wikipedia",
+                }
+            ]
+
+        grow_json.fetch_wikipedia_children = wikipedia_children
+        grow_json.SOURCE_ORDER = ["wikipedia"]
+        grow_json.MAX_REQUESTS = 1
+
+        grow_json.process_fetch_candidate(
+            {
+                "node": node,
+                "file_path": self.nodes_dir / "Q20.json",
+                "scan_key": "id:Q20",
+                "title": "可增长",
+                "ancestor_ids": set(),
+            },
+            {},
+        )
+
+        self.assertEqual(grow_json.source_request_counts, {"wikipedia": 1})
+        self.assertEqual(
+            grow_json.source_outcome_counts["wikipedia"]["children_returned_requests"],
+            1,
+        )
+        self.assertEqual(
+            grow_json.source_outcome_counts["wikipedia"]["productive_requests"],
+            1,
+        )
+        self.assertEqual(grow_json.source_outcome_counts["wikipedia"]["added_nodes"], 1)
+
     def test_legacy_default_source_order_keeps_dbpedia_available(self):
         grow_json.SOURCE_ORDER = ["wikidata_api", "wikipedia", "wikidata", "conceptnet"]
 
@@ -983,6 +1102,14 @@ class GrowJsonTests(unittest.TestCase):
                 "candidate_source_summary": {"blocked_by_cooldown": 0},
             },
         )
+        grow_json.save_json(
+            grow_json.STATS_FILE,
+            {
+                "generated_at": "2026-05-25T00:00:00Z",
+                "total_nodes": 1,
+                "history_file": "growth_history.json",
+            },
+        )
 
         summary = grow_json.write_static_api(root)
 
@@ -996,6 +1123,8 @@ class GrowJsonTests(unittest.TestCase):
         alias_index_api = grow_json.load_json(grow_json.API_DIR / "by-id" / "Q99" / "index.json")
         api_index = grow_json.load_json(grow_json.API_DIR / "index.json")
         api_client = (grow_json.API_DIR / "client.js").read_text(encoding="utf-8")
+        stats_api = grow_json.load_json(grow_json.API_DIR / "stats.json")
+        get_stats_api = grow_json.load_json(grow_json.API_DIR / "getStats.json")
 
         self.assertEqual(end_node["total_items"], 1)
         self.assertEqual(scan_state_api["candidate_count"], 7)
@@ -1006,11 +1135,15 @@ class GrowJsonTests(unittest.TestCase):
         self.assertEqual(alias_index_api["id"], "Q99")
         self.assertEqual(api_index["client"], "client.js")
         self.assertEqual(api_index["getScanState"], "getScanState.json")
+        self.assertEqual(api_index["getStats"], "getStats.json")
+        self.assertEqual(stats_api["total_nodes"], 1)
+        self.assertEqual(get_stats_api["total_nodes"], 1)
         self.assertIn("CLIENT_BASE_URL", api_client)
         self.assertIn("OneKnowledgeApi", api_client)
         self.assertIn("getChildren", api_client)
         self.assertIn("getEndNode", api_client)
         self.assertIn("getScanState", api_client)
+        self.assertIn("getStats", api_client)
 
     def test_static_api_by_id_alias_encodes_non_qid_id(self):
         identifier = "wikipedia:zh:Category:寄生生物題材作品"

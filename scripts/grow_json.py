@@ -39,9 +39,15 @@ API_BY_ID_SUBDIR = "by-id"
 QUERY_LIMIT = int(os.environ.get("ONE_QUERY_LIMIT", "50"))
 MAX_REQUESTS = int(os.environ.get("ONE_MAX_REQUESTS", "5"))
 MAX_SOURCES_PER_NODE = int(os.environ.get("ONE_MAX_SOURCES_PER_NODE", "1"))
+SOURCE_DIVERSITY = os.environ.get("ONE_SOURCE_DIVERSITY", "1").lower() not in {
+    "0",
+    "false",
+    "no",
+}
 REQUEST_DELAY = float(os.environ.get("ONE_REQUEST_DELAY", "5.0"))
 WIKIDATA_REQUEST_DELAY = float(os.environ.get("ONE_WIKIDATA_REQUEST_DELAY", "65.0"))
 HISTORY_LIMIT = int(os.environ.get("ONE_GROWTH_HISTORY_LIMIT", "365"))
+GROWTH_EFFICIENCY_WINDOW = int(os.environ.get("ONE_GROWTH_EFFICIENCY_WINDOW", "8"))
 WIKIDATA_ENDPOINT = os.environ.get(
     "ONE_WIKIDATA_ENDPOINT", "https://query.wikidata.org/sparql"
 )
@@ -119,7 +125,7 @@ RELATION_PRIORITY = {
 QUALITY_SCORE_VERSION = 3
 QUALITY_REVIEW_THRESHOLD = int(os.environ.get("ONE_QUALITY_REVIEW_THRESHOLD", "45"))
 PRIORITY_SCAN_LIMIT = int(os.environ.get("ONE_PRIORITY_SCAN_LIMIT", "1000"))
-FETCH_STRATEGY_VERSION = 7
+FETCH_STRATEGY_VERSION = 8
 BROAD_TITLES = {
     "事物",
     "对象",
@@ -156,6 +162,7 @@ last_scan_key_this_run = ""
 last_scan_title_this_run = ""
 run_stop_reason = ""
 source_request_counts: Dict[str, int] = {}
+source_outcome_counts: Dict[str, Dict[str, int]] = {}
 source_cooldowns_this_run: Dict[str, Dict[str, Any]] = {}
 last_source_request_at: Dict[str, float] = {}
 candidate_source_summary_this_run: Dict[str, Any] = {}
@@ -339,6 +346,94 @@ def source_progress_bucket(progress: int) -> str:
 
 def increment_count(counts: Dict[str, int], key: str) -> None:
     counts[key] = counts.get(key, 0) + 1
+
+
+def record_source_outcome(source: str, field: str, amount: int = 1) -> None:
+    if not source or amount <= 0:
+        return
+    bucket = source_outcome_counts.setdefault(source, {})
+    bucket[field] = bucket.get(field, 0) + amount
+
+
+def candidate_next_source(
+    candidate: Dict[str, Any], scan_state: Optional[Dict[str, Any]] = None
+) -> str:
+    node = candidate.get("node")
+    if not isinstance(node, dict):
+        return ""
+    return next_source_for_node(node, scan_state)
+
+
+def compact_candidate_for_summary(
+    candidate: Dict[str, Any], scan_state: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    return {
+        "scan_key": candidate.get("scan_key", ""),
+        "title": candidate.get("title", ""),
+        "next_source": candidate_next_source(candidate, scan_state),
+        "source_progress": int(candidate.get("source_progress", 0) or 0),
+        "priority": round(float(candidate.get("priority", 0.0) or 0.0), 2),
+        "depth": int(candidate.get("depth", 0) or 0),
+    }
+
+
+def summarize_candidate_selection(
+    candidates: List[Dict[str, Any]], scan_state: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    if MAX_REQUESTS <= 0:
+        limit = 0
+    else:
+        limit = min(MAX_REQUESTS, len(candidates))
+    selected = candidates[:limit]
+    scheduled_source_counts: Dict[str, int] = {}
+    for candidate in selected:
+        source = candidate_next_source(candidate, scan_state)
+        if source:
+            increment_count(scheduled_source_counts, source)
+    return {
+        "scheduler": "priority-source-round-robin-v1"
+        if SOURCE_DIVERSITY
+        else "priority-cursor-v1",
+        "source_diversity_enabled": SOURCE_DIVERSITY,
+        "selection_limit": limit,
+        "scheduled_source_counts": scheduled_source_counts,
+        "scheduled_candidates": [
+            compact_candidate_for_summary(candidate, scan_state) for candidate in selected
+        ],
+    }
+
+
+def spread_candidates_by_next_source(
+    candidates: List[Dict[str, Any]], scan_state: Optional[Dict[str, Any]] = None
+) -> List[Dict[str, Any]]:
+    if not SOURCE_DIVERSITY or len(candidates) < 2:
+        return candidates
+
+    buckets: Dict[str, List[Dict[str, Any]]] = {}
+    source_sequence: List[str] = []
+    without_source: List[Dict[str, Any]] = []
+
+    for candidate in candidates:
+        source = candidate_next_source(candidate, scan_state)
+        if not source:
+            without_source.append(candidate)
+            continue
+        if source not in buckets:
+            buckets[source] = []
+            source_sequence.append(source)
+        buckets[source].append(candidate)
+
+    if len(source_sequence) < 2:
+        return candidates
+
+    spread: List[Dict[str, Any]] = []
+    while any(buckets[source] for source in source_sequence):
+        for source in source_sequence:
+            bucket = buckets[source]
+            if bucket:
+                spread.append(bucket.pop(0))
+
+    return spread + without_source
 
 
 def summarize_candidate_sources(
@@ -999,7 +1094,9 @@ def save_scan_state(
     state = {
         "updated_at": now_utc(),
         "fetch_strategy_version": FETCH_STRATEGY_VERSION,
-        "scan_order": "priority-depth-first-cursor-v1",
+        "scan_order": "priority-depth-first-source-round-robin-v1"
+        if SOURCE_DIVERSITY
+        else "priority-depth-first-cursor-v1",
         "last_scan_key": last_scan_key
         or (previous.get("last_scan_key", "") if preserve_previous_cursor else ""),
         "last_scan_title": last_scan_title
@@ -1013,6 +1110,7 @@ def save_scan_state(
         "source_order": source_order(),
         "available_sources": available_sources(previous),
         "source_request_counts": source_request_counts,
+        "source_outcome_counts": source_outcome_counts,
         "source_cooldowns": active_source_cooldowns(previous),
         "candidate_source_summary": candidate_source_summary_this_run,
         "last_stop_reason": run_stop_reason,
@@ -1295,6 +1393,10 @@ def static_api_client_js() -> str:
     return fetchJson("getScanState.json", options);
   }
 
+  async function getStats(options) {
+    return fetchJson("getStats.json", options);
+  }
+
   var api = {
     apiUrl: apiUrl,
     fetchJson: fetchJson,
@@ -1303,7 +1405,8 @@ def static_api_client_js() -> str:
     getNode: getNode,
     getChildren: getChildren,
     getEndNode: getEndNode,
-    getScanState: getScanState
+    getScanState: getScanState,
+    getStats: getStats
   };
 
   global.OneKnowledgeApi = api;
@@ -1373,12 +1476,22 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         scan_state_payload = load_scan_state()
         save_json(API_DIR / "scanState.json", scan_state_payload)
         save_json(API_DIR / "getScanState.json", scan_state_payload)
+        stats_payload = load_json(STATS_FILE) or {}
+        save_json(API_DIR / "stats.json", stats_payload)
+        save_json(API_DIR / "getStats.json", stats_payload)
         save_json(api_end_node_file("index.json"), {
             "endpoint": "index",
             "root": "root.json",
             "client": "client.js",
             "client_global": "OneKnowledgeApi",
-            "client_methods": ["getRoot", "getNode", "getChildren", "getEndNode", "getScanState"],
+            "client_methods": [
+                "getRoot",
+                "getNode",
+                "getChildren",
+                "getEndNode",
+                "getScanState",
+                "getStats",
+            ],
             "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
             "children": "children/<relative data path>",
             "by_id": "by-id/<id>/index.json",
@@ -1388,6 +1501,8 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
             "endNode": "endNode.json",
             "getScanState": "getScanState.json",
             "scanState": "scanState.json",
+            "getStats": "getStats.json",
+            "stats": "stats.json",
         })
         save_text(API_DIR / "client.js", static_api_client_js())
 
@@ -2015,21 +2130,25 @@ def fetch_children_from_sources(
         except Exception as exc:
             if is_rate_limit_error(exc):
                 saw_rate_limit = True
+                record_source_outcome(source, "rate_limited_requests")
                 register_source_cooldown(source, exc, "rate_limited")
                 print(f"  {source} 触发限流: {exc}")
                 continue
             if is_transient_source_error(exc):
                 saw_transient_error = True
                 source_errors[source] = str(exc)
+                record_source_outcome(source, "transient_error_requests")
                 register_source_cooldown(source, exc, "transient_error")
                 print(f"  {source} 暂时不可用，已进入冷却: {exc}")
                 continue
             source_errors[source] = str(exc)
+            record_source_outcome(source, "failed_requests")
             print(f"  {source} 查询失败: {exc}")
             continue
 
         successful_sources.append(source)
         if children:
+            record_source_outcome(source, "children_returned_requests")
             done_sources = source_done_sources(node).union(successful_sources)
             complete = all(source in done_sources for source in supported_sources)
             return {
@@ -2039,6 +2158,7 @@ def fetch_children_from_sources(
                 "source_errors": source_errors,
                 "complete": complete,
             }
+        record_source_outcome(source, "no_children_requests")
         print(f"  {source} 未发现子节点")
 
     if successful_sources:
@@ -2371,8 +2491,17 @@ def process_fetch_candidate(
         cyclic_pruned = sanitize_cyclic_children(node, ancestor_ids)
         materialized_children = materialize_inline_children(node)
         nodes_added_this_run += added
+        outcome_source = str(outcome.get("source", "") or "")
+        if fetched_children and outcome_source:
+            if added > 0:
+                record_source_outcome(outcome_source, "productive_requests")
+                record_source_outcome(outcome_source, "added_nodes", added)
+            else:
+                record_source_outcome(outcome_source, "duplicate_requests")
         if added == 0:
             unchanged_requests_this_run += 1
+            if outcome_source:
+                record_source_outcome(outcome_source, "unchanged_requests")
         node["updated_at"] = now_utc()
         node["last_checked_at"] = node["updated_at"]
         node.pop("last_error", None)
@@ -2624,6 +2753,74 @@ def count_tree_nodes(node: Dict[str, Any], path: Optional[Path] = None, visited=
     return total
 
 
+def as_int(value: Any) -> int:
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def merge_flat_counts(target: Dict[str, int], source: Any) -> None:
+    if not isinstance(source, dict):
+        return
+    for key, value in source.items():
+        count = as_int(value)
+        if count > 0:
+            target[str(key)] = target.get(str(key), 0) + count
+
+
+def merge_nested_counts(
+    target: Dict[str, Dict[str, int]], source: Any
+) -> None:
+    if not isinstance(source, dict):
+        return
+    for source_name, counts in source.items():
+        if not isinstance(counts, dict):
+            continue
+        bucket = target.setdefault(str(source_name), {})
+        merge_flat_counts(bucket, counts)
+
+
+def summarize_growth_efficiency(history: List[Dict[str, Any]]) -> Dict[str, Any]:
+    window_size = max(1, GROWTH_EFFICIENCY_WINDOW)
+    recent = history[-window_size:] if history else []
+    total_requests = sum(as_int(entry.get("requests")) for entry in recent)
+    total_added = sum(as_int(entry.get("added_nodes")) for entry in recent)
+    zero_growth_streak = 0
+    last_productive_run_at = ""
+
+    for entry in reversed(history):
+        if as_int(entry.get("added_nodes")) > 0:
+            last_productive_run_at = str(entry.get("run_at", "") or "")
+            break
+
+    for entry in reversed(history):
+        if as_int(entry.get("added_nodes")) == 0:
+            zero_growth_streak += 1
+        else:
+            break
+
+    source_requests: Dict[str, int] = {}
+    source_outcomes: Dict[str, Dict[str, int]] = {}
+    for entry in recent:
+        merge_flat_counts(source_requests, entry.get("source_request_counts"))
+        merge_nested_counts(source_outcomes, entry.get("source_outcome_counts"))
+
+    return {
+        "window_runs": len(recent),
+        "window_limit": window_size,
+        "added_nodes": total_added,
+        "requests": total_requests,
+        "added_per_request": round(total_added / total_requests, 3)
+        if total_requests > 0
+        else 0,
+        "zero_growth_streak": zero_growth_streak,
+        "last_productive_run_at": last_productive_run_at,
+        "source_request_counts": source_requests,
+        "source_outcome_counts": source_outcomes,
+    }
+
+
 def record_growth_history(
     total_nodes: int, end_node_count: int, append_history: bool = True
 ) -> None:
@@ -2640,6 +2837,7 @@ def record_growth_history(
         "end_nodes_marked": end_nodes_marked_this_run,
         "end_node_count": end_node_count,
         "source_request_counts": source_request_counts,
+        "source_outcome_counts": source_outcome_counts,
         "candidate_source_summary": candidate_source_summary_this_run,
         "max_sources_per_node": MAX_SOURCES_PER_NODE,
         "stop_reason": run_stop_reason,
@@ -2652,6 +2850,7 @@ def record_growth_history(
 
     if append_history or not GROWTH_HISTORY_FILE.exists():
         save_json(GROWTH_HISTORY_FILE, history)
+    growth_efficiency_summary = summarize_growth_efficiency(history)
     save_json(
         STATS_FILE,
         {
@@ -2665,7 +2864,9 @@ def record_growth_history(
             "last_failed_requests": failed_requests_this_run,
             "last_end_nodes_marked": end_nodes_marked_this_run,
             "last_source_request_counts": source_request_counts,
+            "last_source_outcome_counts": source_outcome_counts,
             "last_candidate_source_summary": candidate_source_summary_this_run,
+            "growth_efficiency_summary": growth_efficiency_summary,
             "max_sources_per_node": MAX_SOURCES_PER_NODE,
             "last_stop_reason": run_stop_reason,
             "end_node_count": end_node_count,
@@ -2735,9 +2936,13 @@ def main() -> None:
         ordered_candidates,
         cursor_from_scan_state(scan_state),
     )
+    ordered_candidates = spread_candidates_by_next_source(ordered_candidates, scan_state)
     active_sources = available_sources(scan_state)
     candidate_source_summary_this_run = summarize_candidate_sources(
         ordered_candidates, scan_state
+    )
+    candidate_source_summary_this_run.update(
+        summarize_candidate_selection(ordered_candidates, scan_state)
     )
     if candidate_source_summary_this_run:
         print(
@@ -2789,9 +2994,9 @@ def main() -> None:
         selected_count=selected_count,
         exhausted=scan_exhausted,
     )
-    api_summary = write_static_api(root_data)
-    end_node_count = len(api_summary["end_nodes"])
+    end_node_count = len(end_nodes)
     record_growth_history(total_nodes, end_node_count, append_history=MAX_REQUESTS > 0)
+    write_static_api(root_data)
     print(f"本次新增节点数: {nodes_added_this_run}")
     print(f"当前总节点数: {total_nodes}")
     print(f"本次扫描候选节点数: {nodes_scanned_this_run}")

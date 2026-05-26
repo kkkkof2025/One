@@ -8,7 +8,8 @@
     "getNode",
     "getChildren",
     "getEndNode",
-    "getScanState"
+    "getScanState",
+    "getStats"
   ],
   "node": "<relative data path, e.g. root.json or nodes/Q1.json>",
   "children": "children/<relative data path>",
@@ -18,5 +19,7 @@
   "getEndNode": "getEndNode.json",
   "endNode": "endNode.json",
   "getScanState": "getScanState.json",
-  "scanState": "scanState.json"
+  "scanState": "scanState.json",
+  "getStats": "getStats.json",
+  "stats": "stats.json"
 }

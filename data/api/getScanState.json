@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-25T14:54:38Z",
-  "fetch_strategy_version": 7,
-  "scan_order": "priority-depth-first-cursor-v1",
-  "last_scan_key": "id:Q111171519",
-  "last_scan_title": "物种间相互作用",
+  "updated_at": "2026-05-26T02:06:27Z",
+  "fetch_strategy_version": 8,
+  "scan_order": "priority-depth-first-source-round-robin-v1",
+  "last_scan_key": "",
+  "last_scan_title": "",
   "candidate_count": 255,
   "selected_count": 0,
   "request_count": 0,
@@ -25,6 +25,7 @@
     "dbpedia"
   ],
   "source_request_counts": {},
+  "source_outcome_counts": {},
   "source_cooldowns": {},
   "candidate_source_summary": {
     "candidate_count": 255,
@@ -46,7 +47,12 @@
       "wikipedia": 47,
       "wikidata_api": 198
     },
-    "blocked_by_cooldown": 0
+    "blocked_by_cooldown": 0,
+    "scheduler": "priority-source-round-robin-v1",
+    "source_diversity_enabled": true,
+    "selection_limit": 0,
+    "scheduled_source_counts": {},
+    "scheduled_candidates": []
   },
   "last_stop_reason": ""
 }

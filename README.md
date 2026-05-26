@@ -29,7 +29,7 @@
 
 增长脚本不会只依赖单一“子类”关系。当前会先用 Wikidata API 读取直接 `P527` / `P2670` 声明，再尝试维基百科分类、Wikidata Query Service 的 `P279`（subclass of）、`P31`（instance of）、`P361`（part of）、`P527`（has part）和 `P2670`（has parts of the class），最后把 ConceptNet 和 DBpedia 分类作为低优先级补充来源；如果某个来源限流或 5xx，会记录来源冷却并让后续节点尝试其它来源。旧策略误判为空叶子的节点会迁移为 `source_no_children.wikidata`，只跳过已查空来源，仍允许补充来源继续尝试。
 
-增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。默认每个节点每轮只尝试 1 个来源，防止 5 次预算被同一个低产节点吃完；已经查过部分来源但还没完成的节点会优先继续尝试下一个来源，避免所有候选都先消耗在同一个低产来源上。成功检查过的来源会写入 `source_checked`，没有返回子节点的来源还会写入 `source_no_children`。只有当前策略里的支持来源都检查完且没有子节点后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
+增长脚本会先收集当前所有可扩展候选节点，再根据 `data/scan_state.json` 里的 `last_scan_key` 从上次结束位置之后继续轮转请求，避免每天都从同一批高优先级分支开头扫描。默认每个节点每轮只尝试 1 个来源，防止 5 次预算被同一个低产节点吃完；脚本还会默认按候选的“下一个可用来源”做轮转分发，让同一轮请求尽量分散到不同来源。已经查过部分来源但还没完成的节点会优先继续尝试下一个来源，避免所有候选都先消耗在同一个低产来源上。成功检查过的来源会写入 `source_checked`，没有返回子节点的来源还会写入 `source_no_children`。只有当前策略里的支持来源都检查完且没有子节点后，节点才会写入 `data/end_nodes.json`，并标记 `is_leaf`、`end_reason` 和 `ended_at`。
 
 当 `fetch_strategy_version` 升级时，旧扫描游标会自动失效，下一轮会从新策略下的最高优先级候选重新开始，避免新策略仍被旧游标卡在低收益分支后面。
 
@@ -89,6 +89,7 @@
 - `data/api/children/nodes/Q1.json`: 保留旧子节点镜像路径。
 - `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
 - `data/api/getScanState.json`: 返回当前扫描游标、来源冷却和候选来源摘要，等价于 `data/api/scanState.json`。
+- `data/api/getStats.json`: 返回最近一次增长统计和近轮效率摘要，等价于 `data/api/stats.json`。
 
 `by-id` 接口对普通 QID 保持原样，例如 `Q1`；如果节点 ID 来自 Wikipedia、ConceptNet 或 DBpedia，包含冒号、斜杠或中文等特殊字符，目录名会使用 URL 编码，页面会自动按编码后的路径读取。
 
@@ -102,6 +103,7 @@
   OneKnowledgeApi.getChildren("Q1").then(console.log);
   OneKnowledgeApi.getEndNode().then(console.log);
   OneKnowledgeApi.getScanState().then(console.log);
+  OneKnowledgeApi.getStats().then(console.log);
 </script>
 ```
 
@@ -276,6 +278,7 @@ workflow 需要这些权限：
 - `ONE_DBPEDIA_ENDPOINT`: DBpedia SPARQL Endpoint。
 - `ONE_USER_AGENT`: 请求 User-Agent。
 - `ONE_SOURCE_ORDER`: 来源顺序，默认 `wikidata_api,wikipedia,wikidata,conceptnet,dbpedia`。
+- `ONE_SOURCE_DIVERSITY`: 设为 `0` / `false` / `no` 时关闭按来源轮转的候选调度；默认开启。
 - `ONE_MAX_SOURCES_PER_NODE`: 单次运行中同一个节点最多尝试几个来源，默认 `1`；设为 `0` 表示不限制，适合人工彻底排查单个节点。
 - `ONE_SOURCE_COOLDOWN_SECONDS`: 发生 429 或 5xx 临时错误后的默认冷却秒数，默认 `3600`。
 - `ONE_TRANSIENT_SOURCE_COOLDOWN_SECONDS`: 发生 5xx 或超时等临时错误后的冷却秒数，默认 `600`。
@@ -323,14 +326,14 @@ GitHub Actions 定时运行建议保持 `ONE_MAX_REQUESTS` 在 `1` 到 `5` 之�
 - `scripts/grow_json.py` 已把终止判断改为按来源记录 `source_checked` 和 `source_no_children`；某个补充来源查空不会直接封存节点，旧 Wikidata 叶子会重新开放给补充来源。
 - `scripts/grow_json.py` 已新增 DBpedia 分类层级作为最后备用来源，继续受请求预算、来源冷却和单节点来源上限控制。
 - `scripts/grow_json.py` 的候选排序已改为优先补完已开始检查的节点，让同一节点尽快从 `wikidata_api` 轮到 Wikipedia、WDQS、ConceptNet 或 DBpedia，而不是把全部候选先过一遍同一来源。
-- `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，用于解释 0 增长时下一个来源、可用来源和冷却阻塞数量。
-- `data/api/client.js` 已新增 `getScanState()`，页面顶部的扫描诊断面板会直接展示候选来源摘要、可用来源和冷却状态。
+- `scripts/grow_json.py` 已把候选来源摘要写入 `scan_state.json`、`stats.json` 和 `growth_history.json`，并补充来源结果统计与近轮效率摘要，用于解释 0 增长时下一个来源、可用来源、冷却阻塞和最近是否真的有产出。
+- `data/api/client.js` 已新增 `getScanState()` 和 `getStats()`，页面顶部的扫描诊断面板会直接展示候选来源摘要、可用来源、来源结果和冷却状态。
 
 ## To-do
 
 - 定期复核 `data/validation_allowlist.json`，移除已经不再重复出现的允许项。
 - 扩展 `data/curation.json` 的人工关注列表，优先补充主干路径和人工维护过的节点。
-- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`candidate_source_summary`、`source_cooldowns`、`source_request_counts` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
+- 观察 `data/scan_state.json` 的 `candidate_count`、`exhausted`、`candidate_source_summary`、`source_cooldowns`、`source_request_counts`、`source_outcome_counts` 和 `max_sources_per_node`，如果长期为 0，再考虑增加新的数据关系或人工种子节点。
 
 ## 已知限制
 

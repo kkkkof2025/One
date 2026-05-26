@@ -1393,6 +1393,45 @@
       }).join(" · ");
     }
 
+    function formatSourceOutcomeCounts(counts) {
+      if (!counts || typeof counts !== "object") return "无";
+      const entries = Object.entries(counts)
+        .filter(([, value]) => value && typeof value === "object");
+      if (entries.length === 0) return "无";
+      entries.sort((a, b) => String(a[0]).localeCompare(String(b[0]), "zh-CN"));
+      return entries.map(([source, info]) => {
+        const parts = [];
+        const fields = [
+          ["added_nodes", "增"],
+          ["productive_requests", "成"],
+          ["duplicate_requests", "重"],
+          ["no_children_requests", "空"],
+          ["failed_requests", "错"],
+          ["rate_limited_requests", "限"],
+          ["transient_error_requests", "暂"]
+        ];
+        fields.forEach(([field, label]) => {
+          const value = Number(info[field]);
+          if (Number.isFinite(value) && value > 0) {
+            parts.push(`${label}${formatNumber(value)}`);
+          }
+        });
+        return `${source} ${parts.join(" · ") || "0"}`;
+      }).join(" · ");
+    }
+
+    function formatGrowthEfficiency(summary) {
+      if (!summary || typeof summary !== "object") return "无";
+      const windowRuns = summary.window_runs ?? 0;
+      const windowLimit = summary.window_limit ?? 0;
+      const added = summary.added_nodes ?? 0;
+      const requests = summary.requests ?? 0;
+      const ratio = summary.added_per_request ?? 0;
+      const streak = summary.zero_growth_streak ?? 0;
+      const lastRun = summary.last_productive_run_at ? ` · 上次有增 ${formatDateTime(summary.last_productive_run_at)}` : "";
+      return `近${formatNumber(windowRuns)}/${formatNumber(windowLimit)}轮 +${formatNumber(added)} / ${formatNumber(requests)}，效率 ${ratio}${lastRun} · 0增连击 ${formatNumber(streak)}`;
+    }
+
     function renderDiagnosticRows(container, rows) {
       container.innerHTML = "";
       const usableRows = Array.isArray(rows)
@@ -1641,7 +1680,19 @@
         };
       },
       async getStats() {
-        return fetchJson("data/stats.json");
+        const client = staticApiClient();
+        if (client && typeof client.getStats === "function") {
+          try {
+            return await client.getStats();
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
+        try {
+          return fetchJson(apiPath("getStats.json"));
+        } catch (error) {
+          return fetchJson("data/stats.json");
+        }
       },
       async getScanState(stats) {
         const client = staticApiClient();
@@ -2360,9 +2411,12 @@
         },
         { label: "来源顺序", value: formatSourceList(scanStateData?.source_order) },
         { label: "当前可用", value: formatSourceList(scanStateData?.available_sources) },
+        { label: "本轮调度", value: formatCountMap(summary.scheduled_source_counts) },
         { label: "已查进度", value: formatCountMap(summary.source_progress_counts, { numericKeys: true }) },
         { label: "下个来源", value: formatCountMap(summary.next_source_counts) },
         { label: "可用下个", value: formatCountMap(summary.available_next_source_counts) },
+        { label: "来源结果", value: formatSourceOutcomeCounts(statsData?.growth_efficiency_summary?.source_outcome_counts || statsData?.last_source_outcome_counts) },
+        { label: "近轮效率", value: formatGrowthEfficiency(statsData?.growth_efficiency_summary) },
         { label: "冷却阻塞", value: formatNumber(blockedCount) },
         { label: "冷却状态", value: formatCooldowns(scanStateData?.source_cooldowns) }
       ];
