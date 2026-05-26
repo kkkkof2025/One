@@ -4,6 +4,7 @@
   "source": "nodes/死亡-04b0c3ed086c.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/死亡-04b0c3ed086c.json",
   "legacy_children": "../../children/nodes/死亡-04b0c3ed086c.json"
 }

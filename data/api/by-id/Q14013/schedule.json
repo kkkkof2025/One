@@ -1,0 +1,69 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-26T14:34:24Z",
+  "id": "Q14013",
+  "source": "nodes/Q14013.json",
+  "node": {
+    "title": "M74",
+    "children_count": 0,
+    "id": "Q14013",
+    "children_status": "pending",
+    "is_leaf": false,
+    "quality_score": 49,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-07T00:54:34Z",
+    "source_no_children": {
+      "wikidata": "2026-05-07T00:54:34Z"
+    },
+    "source_checked": {
+      "wikidata": "2026-05-07T00:54:34Z"
+    }
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [
+    "wikidata"
+  ],
+  "no_children_sources": [
+    "wikidata"
+  ],
+  "done_sources": [
+    "wikidata"
+  ],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikidata_api",
+  "next_source_without_cooldown": "wikidata_api",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {},
+  "progress": {
+    "supported": 5,
+    "done": 1,
+    "remaining": 4
+  }
+}

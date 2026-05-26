@@ -1,0 +1,55 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-26T14:34:24Z",
+  "id": "root",
+  "source": "root.json",
+  "node": {
+    "title": "万物",
+    "children_count": 2,
+    "id": "root",
+    "children_status": "loaded",
+    "quality_score": 100,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-06T00:00:00Z"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "",
+  "next_source_without_cooldown": "",
+  "can_fetch": false,
+  "eligible": false,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "root",
+  "source_cooldowns": {},
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}

@@ -66,6 +66,12 @@
     return fetchJson("by-id/" + encodeURIComponent(id) + "/children.json", options);
   }
 
+  async function getSchedule(node, options) {
+    var id = nodeId(node);
+    if (!id) throw new Error("node id is required");
+    return fetchJson("by-id/" + encodeURIComponent(id) + "/schedule.json", options);
+  }
+
   async function getEndNode(options) {
     return fetchJson("getEndNode.json", options);
   }
@@ -89,6 +95,7 @@
     getRoot: getRoot,
     getNode: getNode,
     getChildren: getChildren,
+    getSchedule: getSchedule,
     getEndNode: getEndNode,
     getScanState: getScanState,
     getStats: getStats,

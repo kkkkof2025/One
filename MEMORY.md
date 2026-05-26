@@ -56,7 +56,7 @@
 
 - 自动增长改为先收集全树可请求候选，再根据 `data/scan_state.json` 的 `last_scan_key` 轮转请求，避免每天从同一批高优先级分支重新扫描。
 - 当前抓取策略下成功查询但没有子节点的节点会写入 `data/end_nodes.json`，并在节点上保留 `is_leaf=true`、`end_reason` 和 `ended_at`；不同来源会写入对应的 `*_no_children` 或 `sources_no_children`，抓取策略版本不变时不会再次请求这类节点。
-- `scripts/grow_json.py` 会生成 `data/api/` 静态接口镜像：`index.json` 返回路径模板，`root.json` 返回根节点，`by-id/<id>/node.json` 返回节点，`by-id/<id>/children.json` 返回子节点摘要，`by-id/<id>/index.json` 返回该节点接口索引，`nodes/Q....json` 和 `children/nodes/Q....json` 保留旧镜像路径，`getEndNode.json` 返回终止节点清单。
+- `scripts/grow_json.py` 会生成 `data/api/` 静态接口镜像：`index.json` 返回路径模板，`root.json` 返回根节点，`by-id/<id>/node.json` 返回节点，`by-id/<id>/children.json` 返回子节点摘要，`by-id/<id>/schedule.json` 返回节点调度状态，`by-id/<id>/index.json` 返回该节点接口索引，`nodes/Q....json` 和 `children/nodes/Q....json` 保留旧镜像路径，`getEndNode.json` 返回终止节点清单。
 - 页面读取数据时优先使用 `data/api/by-id/`，缺少接口文件时回退到旧的 `data/api/nodes/*.json`、`data/root.json` 和 `data/nodes/*.json`，以便旧部署仍可打开。
 - 页面顶部新增终止节点统计；节点详情工具区可以复制节点接口、子节点接口和终止节点接口 URL。
 - `scripts/generate_review_queue.py export` 可以按复核原因和节点状态批量导出 CSV、JSONL 或 Markdown，默认导出 `non_zh_label` 缺中文标签项。
@@ -98,6 +98,11 @@
 - `scripts/grow_json.py` 的抓取策略版本再升级到 `8`，默认开启按候选“下一个可用来源”轮转分发，尽量把同一轮的请求散到不同来源；0 请求刷新也会按 `ONE_SCHEDULE_PREVIEW_REQUESTS` 生成 `candidate_source_summary.next_run_preview`，用于展示下一次正常增长会打哪些来源。`data/stats.json` 还会记录 `growth_efficiency_summary`，包括近几轮新增、请求、零增长连击和来源结果汇总。
 - `data/scan_state.json`、`data/stats.json` 和 `data/growth_history.json` 写入 `candidate_source_summary`，包含 `source_progress_counts`、`next_source_counts`、`available_next_source_counts` 和 `blocked_by_cooldown`，用于解释 0 增长到底是来源冷却、候选进度不足，还是补充来源仍可尝试。
 - 静态 API 新增 `data/api/getScanState.json` / `scanState.json` / `getStats.json` / `stats.json` / `getNextSchedule.json` / `nextSchedule.json` 和 `OneKnowledgeApi.getScanState()`、`getStats()`、`getNextSchedule()`；首页顶部新增扫描诊断面板，直接展示来源顺序、当前可用来源、候选进度、下个来源、来源结果和冷却状态。
+
+## Decisions Made On 2026-05-26
+
+- 静态 API 新增 `data/api/by-id/<id>/schedule.json` 和 `OneKnowledgeApi.getSchedule(node)`，用于按节点读取支持来源、已查来源、剩余来源、冷却状态、是否终止和下一可请求来源。
+- 页面节点详情工具区新增“复制调度接口”，AI 上下文导出中的节点摘要也会带上 `api_schedule`，方便外部按节点调用。
 
 ## Data Schema Memory
 

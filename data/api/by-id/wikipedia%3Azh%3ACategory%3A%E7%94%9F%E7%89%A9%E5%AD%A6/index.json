@@ -4,6 +4,7 @@
   "source": "nodes/生物学-c6c6ae15ce5f.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/生物学-c6c6ae15ce5f.json",
   "legacy_children": "../../children/nodes/生物学-c6c6ae15ce5f.json"
 }

@@ -4,6 +4,7 @@
   "source": "nodes/生物学进化-63f9aad1d482.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/生物学进化-63f9aad1d482.json",
   "legacy_children": "../../children/nodes/生物学进化-63f9aad1d482.json"
 }

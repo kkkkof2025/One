@@ -4,6 +4,7 @@
   "source": "nodes/物质-a9d49a650d95.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/物质-a9d49a650d95.json",
   "legacy_children": "../../children/nodes/物质-a9d49a650d95.json"
 }

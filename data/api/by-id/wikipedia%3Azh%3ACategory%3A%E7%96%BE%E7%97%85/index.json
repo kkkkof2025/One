@@ -4,6 +4,7 @@
   "source": "nodes/疾病-b2c3f9013536.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/疾病-b2c3f9013536.json",
   "legacy_children": "../../children/nodes/疾病-b2c3f9013536.json"
 }

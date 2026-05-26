@@ -1169,6 +1169,7 @@
           <button id="downloadJson" class="detail-action" type="button">下载 JSON</button>
           <button id="copyNodeApi" class="detail-action" type="button">复制节点接口</button>
           <button id="copyChildrenApi" class="detail-action" type="button">复制子节点接口</button>
+          <button id="copyScheduleApi" class="detail-action" type="button">复制调度接口</button>
           <button id="copyEndNodeApi" class="detail-action" type="button">复制终止接口</button>
           <button id="copyApiClient" class="detail-action" type="button">复制客户端</button>
         </div>
@@ -1288,6 +1289,7 @@
     const downloadJson = document.getElementById("downloadJson");
     const copyNodeApi = document.getElementById("copyNodeApi");
     const copyChildrenApi = document.getElementById("copyChildrenApi");
+    const copyScheduleApi = document.getElementById("copyScheduleApi");
     const copyEndNodeApi = document.getElementById("copyEndNodeApi");
     const copyApiClient = document.getElementById("copyApiClient");
 
@@ -1595,6 +1597,11 @@
       return source ? apiPath(`children/${source}`) : "";
     }
 
+    function scheduleApiPath(node) {
+      const id = nodeIdForApi(node);
+      return id ? apiPath(`by-id/${encodeURIComponent(id)}/schedule.json`) : "";
+    }
+
     function endNodeApiPath() {
       return apiPath("getEndNode.json");
     }
@@ -1685,6 +1692,47 @@
           node: compactNode(hydrated),
           child_count: Array.isArray(hydrated.children) ? hydrated.children.length : 0,
           children: Array.isArray(hydrated.children) ? hydrated.children.map(compactNode) : []
+        };
+      },
+      async getSchedule(node) {
+        const client = staticApiClient();
+        if (client && typeof client.getSchedule === "function") {
+          try {
+            return await client.getSchedule(node);
+          } catch (error) {
+            // Fall through to direct fetch.
+          }
+        }
+        const path = scheduleApiPath(node);
+        if (path) {
+          try {
+            return fetchJson(path);
+          } catch (error) {
+            // Fall through to hydrated node data.
+          }
+        }
+        const hydrated = await dataApi.getNode(node);
+        return {
+          endpoint: "schedule",
+          id: hydrated.id || "",
+          source: hydrated.data_source || "",
+          node: compactNode(hydrated),
+          supported_sources: [],
+          checked_sources: [],
+          no_children_sources: [],
+          done_sources: [],
+          remaining_sources: [],
+          next_source: "",
+          next_source_without_cooldown: "",
+          can_fetch: false,
+          eligible: false,
+          exhausted: false,
+          terminal: false,
+          source_exhausted: false,
+          blocked_by_cooldown: false,
+          block_reason: "unavailable",
+          source_cooldowns: {},
+          progress: { supported: 0, done: 0, remaining: 0 }
         };
       },
       async getStats() {
@@ -1817,8 +1865,10 @@
       });
       const nodeEndpoint = nodeApiPath(node);
       const childrenEndpoint = childrenApiPath(node);
+      const scheduleEndpoint = scheduleApiPath(node);
       if (nodeEndpoint) summary.api_node = nodeEndpoint;
       if (childrenEndpoint) summary.api_children = childrenEndpoint;
+      if (scheduleEndpoint) summary.api_schedule = scheduleEndpoint;
       return summary;
     }
 
@@ -2050,6 +2100,7 @@
         downloadJson,
         copyNodeApi,
         copyChildrenApi,
+        copyScheduleApi,
         copyEndNodeApi,
         copyApiClient
       ].forEach((button) => {
@@ -2062,6 +2113,7 @@
       }
       copyNodeApi.disabled = !nodeApiPath(node);
       copyChildrenApi.disabled = !childrenApiPath(node);
+      copyScheduleApi.disabled = !scheduleApiPath(node);
       copyEndNodeApi.disabled = false;
       copyApiClient.disabled = false;
 
@@ -2299,6 +2351,7 @@
         let path = "";
         if (kind === "node") path = nodeApiPath(node);
         if (kind === "children") path = childrenApiPath(node);
+        if (kind === "schedule") path = scheduleApiPath(node);
         if (kind === "endNode") path = endNodeApiPath();
         if (kind === "client") path = apiClientPath();
         if (!path) throw new Error("missing api path");
@@ -3597,6 +3650,7 @@
     downloadJson.addEventListener("click", () => downloadContext("json", downloadJson));
     copyNodeApi.addEventListener("click", () => copyApiEndpoint("node", copyNodeApi));
     copyChildrenApi.addEventListener("click", () => copyApiEndpoint("children", copyChildrenApi));
+    copyScheduleApi.addEventListener("click", () => copyApiEndpoint("schedule", copyScheduleApi));
     copyEndNodeApi.addEventListener("click", () => copyApiEndpoint("endNode", copyEndNodeApi));
     copyApiClient.addEventListener("click", () => copyApiEndpoint("client", copyApiClient));
 

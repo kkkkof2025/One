@@ -4,6 +4,7 @@
   "source": "nodes/寄生真菌.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/寄生真菌.json",
   "legacy_children": "../../children/nodes/寄生真菌.json"
 }

@@ -4,6 +4,7 @@
   "source": "root.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../root.json",
   "legacy_children": "../../children/root.json"
 }

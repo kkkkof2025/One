@@ -4,6 +4,7 @@
   "source": "nodes/野生生物-9a7f30510df5.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/野生生物-9a7f30510df5.json",
   "legacy_children": "../../children/nodes/野生生物-9a7f30510df5.json"
 }

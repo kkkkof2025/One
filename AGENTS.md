@@ -6,6 +6,8 @@
 
 ## Current Task Record
 
+- [x] 给每个节点补充 `schedule` 静态接口和页面复制入口，让外部可以按 node 直接判断剩余来源、终止状态和冷却情况。
+
 - [x] 修复中文编码损坏导致的脚本路径、页面文案和数据标题错误。
 - [x] 将两个互相重叠的定时 workflow 收敛为一个增长并部署的 workflow。
 - [x] 把主数据入口统一为 `data/root.json`，并使用 `data/nodes/*.json` 做懒加载分片。

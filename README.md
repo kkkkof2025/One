@@ -79,12 +79,13 @@
 `data/api/` 是面向 GitHub Pages 的静态接口镜像。它不是真正的后端服务，但路径设计成接口形式，方便页面和外部脚本调用：
 
 - `data/api/index.json`: 返回可用接口和路径模板。
-- `data/api/client.js`: 浏览器或脚本可加载的静态调用层，暴露 `OneKnowledgeApi.getNode()`、`getChildren()`、`getEndNode()` 和 `getScanState()`。
+- `data/api/client.js`: 浏览器或脚本可加载的静态调用层，暴露 `OneKnowledgeApi.getNode()`、`getChildren()`、`getSchedule()`、`getEndNode()` 和 `getScanState()`。
 - `data/api/root.json`: 返回根节点。
 - `data/api/by-id/root/node.json`: 返回根节点的按 id 接口别名。
 - `data/api/by-id/Q1/node.json`: 返回指定节点完整数据。
 - `data/api/by-id/Q1/children.json`: 返回指定节点的子节点摘要。
-- `data/api/by-id/Q1/index.json`: 返回指定节点的接口索引，包含节点、子节点和旧路径回退信息。
+- `data/api/by-id/Q1/index.json`: 返回指定节点的接口索引，包含节点、子节点、调度接口和旧路径回退信息。
+- `data/api/by-id/Q1/schedule.json`: 返回该节点的调度状态、剩余来源、终止判断和冷却信息。
 - `data/api/nodes/Q1.json`: 保留旧节点镜像路径。
 - `data/api/children/nodes/Q1.json`: 保留旧子节点镜像路径。
 - `data/api/getEndNode.json`: 返回终止节点清单，等价于 `data/api/endNode.json`。
@@ -102,6 +103,7 @@
 <script src="https://kkkkof2025.github.io/One/data/api/client.js"></script>
 <script>
   OneKnowledgeApi.getChildren("Q1").then(console.log);
+  OneKnowledgeApi.getSchedule("Q1").then(console.log);
   OneKnowledgeApi.getEndNode().then(console.log);
   OneKnowledgeApi.getScanState().then(console.log);
   OneKnowledgeApi.getStats().then(console.log);

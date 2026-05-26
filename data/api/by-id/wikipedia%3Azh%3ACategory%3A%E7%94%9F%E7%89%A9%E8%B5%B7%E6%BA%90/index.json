@@ -4,6 +4,7 @@
   "source": "nodes/生物起源-8de84b1d1b5f.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/生物起源-8de84b1d1b5f.json",
   "legacy_children": "../../children/nodes/生物起源-8de84b1d1b5f.json"
 }

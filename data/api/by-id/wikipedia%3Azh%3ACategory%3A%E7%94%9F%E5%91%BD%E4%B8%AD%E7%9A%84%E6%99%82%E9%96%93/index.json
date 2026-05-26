@@ -4,6 +4,7 @@
   "source": "nodes/生命中的時間-f6d93a7636cd.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/生命中的時間-f6d93a7636cd.json",
   "legacy_children": "../../children/nodes/生命中的時間-f6d93a7636cd.json"
 }

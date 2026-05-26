@@ -1,0 +1,86 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-26T14:34:24Z",
+  "id": "Q23054687",
+  "source": "nodes/Q23054687.json",
+  "node": {
+    "title": "BOSS長城",
+    "children_count": 0,
+    "id": "Q23054687",
+    "children_status": "pending",
+    "is_leaf": false,
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-26T02:30:56Z",
+    "last_checked_at": "2026-05-26T02:30:56Z",
+    "last_fetch_source": "dbpedia",
+    "last_fetch_sources": [
+      "dbpedia"
+    ],
+    "source_no_children": {
+      "wikidata": "2026-05-07T00:54:19Z",
+      "wikidata_api": "2026-05-23T02:14:13Z",
+      "wikipedia": "2026-05-23T02:14:13Z",
+      "dbpedia": "2026-05-26T02:30:56Z"
+    },
+    "source_checked": {
+      "wikidata": "2026-05-07T00:54:19Z",
+      "wikidata_api": "2026-05-23T02:14:13Z",
+      "wikipedia": "2026-05-23T02:14:13Z",
+      "dbpedia": "2026-05-26T02:30:56Z"
+    }
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [
+    "dbpedia",
+    "wikidata",
+    "wikidata_api",
+    "wikipedia"
+  ],
+  "no_children_sources": [
+    "dbpedia",
+    "wikidata",
+    "wikidata_api",
+    "wikipedia"
+  ],
+  "done_sources": [
+    "dbpedia",
+    "wikidata",
+    "wikidata_api",
+    "wikipedia"
+  ],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "conceptnet"
+  ],
+  "next_source": "conceptnet",
+  "next_source_without_cooldown": "conceptnet",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {},
+  "progress": {
+    "supported": 5,
+    "done": 4,
+    "remaining": 1
+  }
+}

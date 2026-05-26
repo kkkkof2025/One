@@ -4,6 +4,7 @@
   "source": "nodes/超个体.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/超个体.json",
   "legacy_children": "../../children/nodes/超个体.json"
 }

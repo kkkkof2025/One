@@ -1200,6 +1200,10 @@ def api_by_id_children_file(identifier: str) -> Path:
     return api_by_id_dir(identifier) / "children.json"
 
 
+def api_by_id_schedule_file(identifier: str) -> Path:
+    return api_by_id_dir(identifier) / "schedule.json"
+
+
 def api_by_id_index_file(identifier: str) -> Path:
     return api_by_id_dir(identifier) / "index.json"
 
@@ -1263,6 +1267,117 @@ def compact_api_children(node: Dict[str, Any]) -> List[Dict[str, Any]]:
                 summary.update(target_summary)
         summaries.append(summary)
     return summaries
+
+
+def node_schedule_block_reason(
+    node: Dict[str, Any],
+    eligible: bool,
+    next_source: str,
+    next_source_without_cooldown: str,
+    exhausted: bool,
+    supported_sources: List[str],
+) -> str:
+    if node.get("id") == "root":
+        return "root"
+    if exhausted:
+        return "exhausted"
+    manual_priority = isinstance(node.get("expansion_priority"), (int, float))
+    if node.get("review_status") == "needs_review" and not manual_priority:
+        return "needs_review"
+    if not supported_sources:
+        return "unsupported"
+    if not can_fetch_from_any_source(node):
+        return "sources_done"
+    if eligible and next_source:
+        return "ready"
+    if eligible and next_source_without_cooldown and not next_source:
+        return "source_cooldown"
+    return "status_not_fetchable"
+
+
+def node_schedule_payload(
+    node: Dict[str, Any],
+    path: Path,
+    scan_state: Optional[Dict[str, Any]],
+    generated_at: str,
+) -> Dict[str, Any]:
+    supported_sources = supported_sources_for_node(node)
+    checked_sources = sorted(source_checked_sources(node))
+    no_children_sources = sorted(source_no_children_sources(node))
+    done_source_set = source_done_sources(node)
+    done_sources = sorted(done_source_set)
+    supported_done_sources = [
+        source for source in supported_sources if source in done_source_set
+    ]
+    source_exhausted = bool(supported_sources) and len(supported_done_sources) == len(
+        supported_sources
+    )
+    terminal = current_strategy_leaf(node)
+    exhausted = terminal or source_exhausted
+    remaining_sources = [
+        source for source in supported_sources if source not in done_source_set
+    ]
+    implicit_done_sources: List[str] = []
+    if exhausted:
+        if terminal and not source_exhausted:
+            implicit_done_sources = list(supported_sources)
+        remaining_sources = []
+
+    eligible = should_fetch(node)
+    next_source_without_cooldown = (
+        next_source_for_node(node, scan_state, respect_cooldown=False)
+        if eligible
+        else ""
+    )
+    next_source = next_source_for_node(node, scan_state) if eligible else ""
+    cooldowns = active_source_cooldowns(scan_state)
+    relevant_cooldowns = {
+        source: cooldowns[source]
+        for source in remaining_sources
+        if source in cooldowns
+    }
+    block_reason = node_schedule_block_reason(
+        node,
+        eligible,
+        next_source,
+        next_source_without_cooldown,
+        exhausted,
+        supported_sources,
+    )
+    return {
+        "endpoint": "schedule",
+        "generated_at": generated_at,
+        "id": api_node_id(node),
+        "source": api_relative_path(path),
+        "node": compact_node_summary(node),
+        "fetch_strategy_version": FETCH_STRATEGY_VERSION,
+        "source_order": source_order(),
+        "supported_sources": supported_sources,
+        "checked_sources": checked_sources,
+        "no_children_sources": no_children_sources,
+        "done_sources": done_sources,
+        "implicit_done_sources": implicit_done_sources,
+        "remaining_sources": remaining_sources,
+        "next_source": next_source,
+        "next_source_without_cooldown": next_source_without_cooldown,
+        "can_fetch": bool(eligible and next_source),
+        "eligible": eligible,
+        "exhausted": exhausted,
+        "terminal": terminal,
+        "source_exhausted": source_exhausted,
+        "blocked_by_cooldown": bool(
+            eligible and next_source_without_cooldown and not next_source
+        ),
+        "block_reason": block_reason,
+        "source_cooldowns": relevant_cooldowns,
+        "progress": {
+            "supported": len(supported_sources),
+            "done": len(supported_done_sources)
+            if not implicit_done_sources
+            else len(implicit_done_sources),
+            "remaining": len(remaining_sources),
+        },
+    }
 
 
 def collect_tree_nodes(
@@ -1397,6 +1512,12 @@ def static_api_client_js() -> str:
     return fetchJson("by-id/" + encodeURIComponent(id) + "/children.json", options);
   }
 
+  async function getSchedule(node, options) {
+    var id = nodeId(node);
+    if (!id) throw new Error("node id is required");
+    return fetchJson("by-id/" + encodeURIComponent(id) + "/schedule.json", options);
+  }
+
   async function getEndNode(options) {
     return fetchJson("getEndNode.json", options);
   }
@@ -1420,6 +1541,7 @@ def static_api_client_js() -> str:
     getRoot: getRoot,
     getNode: getNode,
     getChildren: getChildren,
+    getSchedule: getSchedule,
     getEndNode: getEndNode,
     getScanState: getScanState,
     getStats: getStats,
@@ -1445,6 +1567,7 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         total_nodes = 0
         end_nodes = collect_end_nodes(root, ROOT_FILE)
         generated_at = now_utc()
+        scan_state_payload = load_scan_state()
 
         for node, path in collect_tree_nodes(root, ROOT_FILE):
             total_nodes += 1
@@ -1468,17 +1591,22 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
             save_json(api_children_file(path), children_payload)
 
             if identifier:
+                schedule_payload = node_schedule_payload(
+                    node, path, scan_state_payload, generated_at
+                )
                 alias_index_payload = {
                     "endpoint": "index",
                     "id": identifier,
                     "source": api_relative_path(path),
                     "node": "node.json",
                     "children": "children.json",
+                    "schedule": "schedule.json",
                     "legacy_node": f"../../{api_relative_path(path)}",
                     "legacy_children": f"../../children/{api_relative_path(path)}",
                 }
                 save_json(api_by_id_node_file(identifier), node_payload)
                 save_json(api_by_id_children_file(identifier), children_payload)
+                save_json(api_by_id_schedule_file(identifier), schedule_payload)
                 save_json(api_by_id_index_file(identifier), alias_index_payload)
 
         end_payload = {
@@ -1490,7 +1618,6 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
         }
         save_json(api_end_node_file("endNode.json"), end_payload)
         save_json(api_end_node_file("getEndNode.json"), end_payload)
-        scan_state_payload = load_scan_state()
         save_json(API_DIR / "scanState.json", scan_state_payload)
         save_json(API_DIR / "getScanState.json", scan_state_payload)
         stats_payload = load_json(STATS_FILE) or {}
@@ -1525,6 +1652,7 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
                 "getRoot",
                 "getNode",
                 "getChildren",
+                "getSchedule",
                 "getEndNode",
                 "getScanState",
                 "getStats",
@@ -1535,6 +1663,7 @@ def write_static_api(root: Dict[str, Any]) -> Dict[str, Any]:
             "by_id": "by-id/<id>/index.json",
             "by_id_node": "by-id/<id>/node.json",
             "by_id_children": "by-id/<id>/children.json",
+            "by_id_schedule": "by-id/<id>/schedule.json",
             "getEndNode": "getEndNode.json",
             "endNode": "endNode.json",
             "getScanState": "getScanState.json",

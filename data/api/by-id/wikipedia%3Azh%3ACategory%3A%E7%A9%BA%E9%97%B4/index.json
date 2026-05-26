@@ -4,6 +4,7 @@
   "source": "nodes/空间-4d6d43f9229e.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/空间-4d6d43f9229e.json",
   "legacy_children": "../../children/nodes/空间-4d6d43f9229e.json"
 }

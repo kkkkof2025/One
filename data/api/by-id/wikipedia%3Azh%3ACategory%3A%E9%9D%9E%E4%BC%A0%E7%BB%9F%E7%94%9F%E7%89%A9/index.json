@@ -4,6 +4,7 @@
   "source": "nodes/非传统生物-2faa7af9b163.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/非传统生物-2faa7af9b163.json",
   "legacy_children": "../../children/nodes/非传统生物-2faa7af9b163.json"
 }

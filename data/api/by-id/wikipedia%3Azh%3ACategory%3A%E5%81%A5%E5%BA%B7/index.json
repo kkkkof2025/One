@@ -4,6 +4,7 @@
   "source": "nodes/健康-877e7e7f97d8.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/健康-877e7e7f97d8.json",
   "legacy_children": "../../children/nodes/健康-877e7e7f97d8.json"
 }

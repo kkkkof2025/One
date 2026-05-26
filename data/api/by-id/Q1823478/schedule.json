@@ -1,0 +1,79 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-26T14:34:24Z",
+  "id": "Q1823478",
+  "source": "nodes/Q1823478.json",
+  "node": {
+    "title": "生物间相互作用",
+    "children_count": 6,
+    "id": "Q1823478",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q1823478",
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 100,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-25T09:31:05Z",
+    "last_checked_at": "2026-05-25T09:31:05Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_no_children": {
+      "wikipedia": "2026-05-25T09:31:05Z"
+    },
+    "source_checked": {
+      "wikidata_api": "2026-05-23T07:05:46Z",
+      "wikipedia": "2026-05-25T09:31:05Z"
+    }
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [
+    "wikidata_api",
+    "wikipedia"
+  ],
+  "no_children_sources": [
+    "wikipedia"
+  ],
+  "done_sources": [
+    "wikidata_api",
+    "wikipedia"
+  ],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikidata",
+  "next_source_without_cooldown": "wikidata",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {},
+  "progress": {
+    "supported": 5,
+    "done": 2,
+    "remaining": 3
+  }
+}

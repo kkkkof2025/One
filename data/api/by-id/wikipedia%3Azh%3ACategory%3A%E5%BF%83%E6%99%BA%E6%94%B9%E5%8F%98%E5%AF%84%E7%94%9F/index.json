@@ -4,6 +4,7 @@
   "source": "nodes/心智改变寄生.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/心智改变寄生.json",
   "legacy_children": "../../children/nodes/心智改变寄生.json"
 }

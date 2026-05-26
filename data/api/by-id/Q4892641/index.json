@@ -4,6 +4,7 @@
   "source": "nodes/Q4892641.json",
   "node": "node.json",
   "children": "children.json",
+  "schedule": "schedule.json",
   "legacy_node": "../../nodes/Q4892641.json",
   "legacy_children": "../../children/nodes/Q4892641.json"
 }

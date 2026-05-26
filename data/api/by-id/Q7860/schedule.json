@@ -1,0 +1,59 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-26T14:34:24Z",
+  "id": "Q7860",
+  "source": "nodes/Q7860.json",
+  "node": {
+    "title": "自然",
+    "children_count": 0,
+    "id": "Q7860",
+    "children_status": "error",
+    "quality_score": 63,
+    "quality_version": 3,
+    "review_status": "approved",
+    "updated_at": "2026-05-20T06:19:42Z",
+    "last_checked_at": "2026-05-20T06:19:42Z",
+    "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikidata_api",
+  "next_source_without_cooldown": "wikidata_api",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {},
+  "progress": {
+    "supported": 5,
+    "done": 0,
+    "remaining": 5
+  }
+}
