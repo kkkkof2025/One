@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/生物防治-be00f0e4e876.json",
+  "node": {
+    "title": "生物防治",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:生物防治",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E9%98%B2%E6%B2%BB",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

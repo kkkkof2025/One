@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-05-26T14:34:24Z",
+  "generated_at": "2026-05-27T02:41:59Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,

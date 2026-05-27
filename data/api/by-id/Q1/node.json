@@ -287,7 +287,7 @@
         "review_status": "approved"
       }
     ],
-    "updated_at": "2026-05-25T09:23:44Z",
+    "updated_at": "2026-05-27T02:40:54Z",
     "is_leaf": false,
     "fetch_strategy_version": 4,
     "quality_score": 99,
@@ -302,14 +302,15 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "last_checked_at": "2026-05-25T09:23:44Z",
-    "last_fetch_source": "wikipedia",
+    "last_checked_at": "2026-05-27T02:40:54Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:41Z",
-      "wikipedia": "2026-05-25T09:23:44Z"
+      "wikipedia": "2026-05-25T09:23:44Z",
+      "wikidata": "2026-05-27T02:40:54Z"
     }
   }
 }

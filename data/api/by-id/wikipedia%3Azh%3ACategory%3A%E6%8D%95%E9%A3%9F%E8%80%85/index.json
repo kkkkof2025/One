@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:捕食者",
+  "source": "nodes/捕食者-724059fb8f12.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/捕食者-724059fb8f12.json",
+  "legacy_children": "../../children/nodes/捕食者-724059fb8f12.json"
+}

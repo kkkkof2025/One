@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物防治",
+  "source": "nodes/生物防治-be00f0e4e876.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物防治-be00f0e4e876.json",
+  "legacy_children": "../../children/nodes/生物防治-be00f0e4e876.json"
+}

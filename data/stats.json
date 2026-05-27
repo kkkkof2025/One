@@ -1,15 +1,39 @@
 {
-  "generated_at": "2026-05-26T14:34:23Z",
-  "total_nodes": 258,
-  "last_added_nodes": 0,
-  "last_request_count": 0,
+  "generated_at": "2026-05-27T02:41:59Z",
+  "total_nodes": 262,
+  "last_added_nodes": 5,
+  "last_request_count": 5,
   "last_scanned_nodes": 265,
   "last_candidate_nodes": 255,
-  "last_unchanged_requests": 0,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
-  "last_source_request_counts": {},
-  "last_source_outcome_counts": {},
+  "last_source_request_counts": {
+    "conceptnet": 1,
+    "wikidata": 2,
+    "wikipedia": 1,
+    "wikidata_api": 1
+  },
+  "last_source_outcome_counts": {
+    "conceptnet": {
+      "transient_error_requests": 1
+    },
+    "wikidata": {
+      "children_returned_requests": 1,
+      "duplicate_requests": 1,
+      "unchanged_requests": 1,
+      "rate_limited_requests": 1
+    },
+    "wikipedia": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 5
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
+    }
+  },
   "last_candidate_source_summary": {
     "candidate_count": 255,
     "source_progress_counts": {
@@ -34,10 +58,56 @@
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
     "source_diversity_enabled": true,
-    "request_limit": 0,
-    "selection_limit": 0,
-    "scheduled_source_counts": {},
-    "scheduled_candidates": [],
+    "request_limit": 5,
+    "selection_limit": 5,
+    "scheduled_source_counts": {
+      "conceptnet": 2,
+      "wikidata": 1,
+      "wikipedia": 1,
+      "wikidata_api": 1
+    },
+    "scheduled_candidates": [
+      {
+        "scan_key": "id:Q186517",
+        "title": "寄生",
+        "next_source": "conceptnet",
+        "source_progress": 4,
+        "priority": 122.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q1",
+        "title": "宇宙",
+        "next_source": "wikidata",
+        "source_progress": 2,
+        "priority": 139.0,
+        "depth": 1
+      },
+      {
+        "scan_key": "id:Q170430",
+        "title": "捕食",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 123.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q15241043",
+        "title": "武仙－北冕座長城",
+        "next_source": "wikidata_api",
+        "source_progress": 1,
+        "priority": 91.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q23054687",
+        "title": "BOSS長城",
+        "next_source": "conceptnet",
+        "source_progress": 4,
+        "priority": 91.0,
+        "depth": 3
+      }
+    ],
     "next_run_preview": {
       "scheduler": "priority-source-round-robin-v1",
       "source_diversity_enabled": true,
@@ -96,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 60,
+    "added_nodes": 65,
     "requests": 40,
-    "added_per_request": 1.5,
-    "zero_growth_streak": 2,
-    "last_productive_run_at": "2026-05-25T09:23:50Z",
+    "added_per_request": 1.625,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-05-27T02:41:59Z",
     "source_request_counts": {
       "wikidata_api": 19,
       "wikipedia": 9,
@@ -108,12 +178,31 @@
       "wikidata": 6,
       "dbpedia": 3
     },
-    "source_outcome_counts": {}
+    "source_outcome_counts": {
+      "conceptnet": {
+        "transient_error_requests": 1
+      },
+      "wikidata": {
+        "children_returned_requests": 1,
+        "duplicate_requests": 1,
+        "unchanged_requests": 1,
+        "rate_limited_requests": 1
+      },
+      "wikipedia": {
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 5
+      },
+      "wikidata_api": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      }
+    }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 36,
+  "history_entries": 37,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

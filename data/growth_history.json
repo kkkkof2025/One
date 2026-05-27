@@ -391,5 +391,174 @@
     },
     "max_sources_per_node": 1,
     "stop_reason": ""
+  },
+  {
+    "run_at": "2026-05-27T02:41:59Z",
+    "added_nodes": 5,
+    "total_nodes": 262,
+    "requests": 5,
+    "scanned_nodes": 265,
+    "candidate_nodes": 255,
+    "unchanged_requests": 2,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "conceptnet": 1,
+      "wikidata": 2,
+      "wikipedia": 1,
+      "wikidata_api": 1
+    },
+    "source_outcome_counts": {
+      "conceptnet": {
+        "transient_error_requests": 1
+      },
+      "wikidata": {
+        "children_returned_requests": 1,
+        "duplicate_requests": 1,
+        "unchanged_requests": 1,
+        "rate_limited_requests": 1
+      },
+      "wikipedia": {
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 5
+      },
+      "wikidata_api": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      }
+    },
+    "candidate_source_summary": {
+      "candidate_count": 255,
+      "source_progress_counts": {
+        "4": 3,
+        "2": 6,
+        "1": 106,
+        "3": 1,
+        "0": 139
+      },
+      "next_source_counts": {
+        "conceptnet": 4,
+        "wikidata": 6,
+        "wikipedia": 47,
+        "wikidata_api": 198
+      },
+      "available_next_source_counts": {
+        "conceptnet": 4,
+        "wikidata": 6,
+        "wikipedia": 47,
+        "wikidata_api": 198
+      },
+      "blocked_by_cooldown": 0,
+      "scheduler": "priority-source-round-robin-v1",
+      "source_diversity_enabled": true,
+      "request_limit": 5,
+      "selection_limit": 5,
+      "scheduled_source_counts": {
+        "conceptnet": 2,
+        "wikidata": 1,
+        "wikipedia": 1,
+        "wikidata_api": 1
+      },
+      "scheduled_candidates": [
+        {
+          "scan_key": "id:Q186517",
+          "title": "寄生",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 122.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q1",
+          "title": "宇宙",
+          "next_source": "wikidata",
+          "source_progress": 2,
+          "priority": 139.0,
+          "depth": 1
+        },
+        {
+          "scan_key": "id:Q170430",
+          "title": "捕食",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 123.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q15241043",
+          "title": "武仙－北冕座長城",
+          "next_source": "wikidata_api",
+          "source_progress": 1,
+          "priority": 91.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q23054687",
+          "title": "BOSS長城",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 91.0,
+          "depth": 3
+        }
+      ],
+      "next_run_preview": {
+        "scheduler": "priority-source-round-robin-v1",
+        "source_diversity_enabled": true,
+        "request_limit": 5,
+        "selection_limit": 5,
+        "scheduled_source_counts": {
+          "conceptnet": 2,
+          "wikidata": 1,
+          "wikipedia": 1,
+          "wikidata_api": 1
+        },
+        "scheduled_candidates": [
+          {
+            "scan_key": "id:Q186517",
+            "title": "寄生",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 122.0,
+            "depth": 4
+          },
+          {
+            "scan_key": "id:Q1",
+            "title": "宇宙",
+            "next_source": "wikidata",
+            "source_progress": 2,
+            "priority": 139.0,
+            "depth": 1
+          },
+          {
+            "scan_key": "id:Q170430",
+            "title": "捕食",
+            "next_source": "wikipedia",
+            "source_progress": 1,
+            "priority": 123.0,
+            "depth": 4
+          },
+          {
+            "scan_key": "id:Q15241043",
+            "title": "武仙－北冕座長城",
+            "next_source": "wikidata_api",
+            "source_progress": 1,
+            "priority": 91.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q23054687",
+            "title": "BOSS長城",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 91.0,
+            "depth": 3
+          }
+        ]
+      }
+    },
+    "max_sources_per_node": 1,
+    "stop_reason": ""
   }
 ]

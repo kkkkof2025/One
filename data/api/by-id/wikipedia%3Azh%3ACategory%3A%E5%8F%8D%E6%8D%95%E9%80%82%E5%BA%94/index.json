@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:反捕适应",
+  "source": "nodes/反捕适应-7838390baf6f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/反捕适应-7838390baf6f.json",
+  "legacy_children": "../../children/nodes/反捕适应-7838390baf6f.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:顶级掠食者",
+  "source": "nodes/顶级掠食者-23e8e9c6e0ae.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/顶级掠食者-23e8e9c6e0ae.json",
+  "legacy_children": "../../children/nodes/顶级掠食者-23e8e9c6e0ae.json"
+}
