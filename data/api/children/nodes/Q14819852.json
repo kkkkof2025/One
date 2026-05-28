@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q14819852.json",
+  "node": {
+    "title": "出生",
+    "children_count": 0,
+    "id": "Q14819852",
+    "source_provider": "wikidata",
+    "source_relation": "part_of",
+    "source_url": "https://www.wikidata.org/wiki/Q14819852",
+    "children_status": "pending",
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-27T02:41:59Z",
-  "total_nodes": 262,
-  "last_added_nodes": 5,
+  "generated_at": "2026-05-28T02:28:27Z",
+  "total_nodes": 266,
+  "last_added_nodes": 4,
   "last_request_count": 5,
-  "last_scanned_nodes": 265,
-  "last_candidate_nodes": 255,
+  "last_scanned_nodes": 270,
+  "last_candidate_nodes": 259,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -20,14 +20,13 @@
     },
     "wikidata": {
       "children_returned_requests": 1,
-      "duplicate_requests": 1,
-      "unchanged_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 4,
       "rate_limited_requests": 1
     },
     "wikipedia": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 5
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +34,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 255,
+    "candidate_count": 259,
     "source_progress_counts": {
       "4": 3,
-      "2": 6,
-      "1": 106,
-      "3": 1,
-      "0": 139
+      "2": 7,
+      "1": 104,
+      "3": 2,
+      "0": 143
     },
     "next_source_counts": {
-      "conceptnet": 4,
+      "conceptnet": 5,
       "wikidata": 6,
-      "wikipedia": 47,
-      "wikidata_api": 198
+      "wikipedia": 51,
+      "wikidata_api": 197
     },
     "available_next_source_counts": {
-      "conceptnet": 4,
+      "conceptnet": 5,
       "wikidata": 6,
-      "wikipedia": 47,
-      "wikidata_api": 198
+      "wikipedia": 51,
+      "wikidata_api": 197
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,28 +75,28 @@
         "depth": 4
       },
       {
-        "scan_key": "id:Q1",
-        "title": "宇宙",
+        "scan_key": "id:Q3",
+        "title": "生命",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 139.0,
         "depth": 1
       },
       {
-        "scan_key": "id:Q170430",
-        "title": "捕食",
-        "next_source": "wikipedia",
-        "source_progress": 1,
-        "priority": 123.0,
-        "depth": 4
-      },
-      {
         "scan_key": "id:Q15241043",
         "title": "武仙－北冕座長城",
-        "next_source": "wikidata_api",
-        "source_progress": 1,
+        "next_source": "wikipedia",
+        "source_progress": 2,
         "priority": 91.0,
         "depth": 3
+      },
+      {
+        "scan_key": "id:Q15739240",
+        "title": "柯羅威斯－坎普薩諾超大類星體群",
+        "next_source": "wikidata_api",
+        "source_progress": 1,
+        "priority": 87.0,
+        "depth": 4
       },
       {
         "scan_key": "id:Q23054687",
@@ -129,28 +128,28 @@
           "depth": 4
         },
         {
-          "scan_key": "id:Q1",
-          "title": "宇宙",
+          "scan_key": "id:Q3",
+          "title": "生命",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 139.0,
           "depth": 1
         },
         {
-          "scan_key": "id:Q170430",
-          "title": "捕食",
-          "next_source": "wikipedia",
-          "source_progress": 1,
-          "priority": 123.0,
-          "depth": 4
-        },
-        {
           "scan_key": "id:Q15241043",
           "title": "武仙－北冕座長城",
-          "next_source": "wikidata_api",
-          "source_progress": 1,
+          "next_source": "wikipedia",
+          "source_progress": 2,
           "priority": 91.0,
           "depth": 3
+        },
+        {
+          "scan_key": "id:Q15739240",
+          "title": "柯羅威斯－坎普薩諾超大類星體群",
+          "next_source": "wikidata_api",
+          "source_progress": 1,
+          "priority": 87.0,
+          "depth": 4
         },
         {
           "scan_key": "id:Q23054687",
@@ -166,43 +165,47 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 65,
+    "added_nodes": 63,
     "requests": 40,
-    "added_per_request": 1.625,
+    "added_per_request": 1.575,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-05-27T02:41:59Z",
+    "last_productive_run_at": "2026-05-28T02:28:27Z",
     "source_request_counts": {
-      "wikidata_api": 19,
-      "wikipedia": 9,
-      "conceptnet": 3,
-      "wikidata": 6,
+      "wikidata_api": 15,
+      "wikipedia": 10,
+      "conceptnet": 4,
+      "wikidata": 8,
       "dbpedia": 3
     },
     "source_outcome_counts": {
       "conceptnet": {
-        "transient_error_requests": 1
+        "transient_error_requests": 2
       },
       "wikidata": {
-        "children_returned_requests": 1,
+        "children_returned_requests": 2,
         "duplicate_requests": 1,
         "unchanged_requests": 1,
-        "rate_limited_requests": 1
+        "rate_limited_requests": 2,
+        "productive_requests": 1,
+        "added_nodes": 4
       },
       "wikipedia": {
         "children_returned_requests": 1,
         "productive_requests": 1,
-        "added_nodes": 5
-      },
-      "wikidata_api": {
+        "added_nodes": 5,
         "no_children_requests": 1,
         "unchanged_requests": 1
+      },
+      "wikidata_api": {
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 37,
+  "history_entries": 38,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

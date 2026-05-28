@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-05-27T02:41:59Z",
+  "generated_at": "2026-05-28T02:28:27Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,28 +22,28 @@
       "depth": 4
     },
     {
-      "scan_key": "id:Q1",
-      "title": "宇宙",
+      "scan_key": "id:Q3",
+      "title": "生命",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 139.0,
       "depth": 1
     },
     {
-      "scan_key": "id:Q170430",
-      "title": "捕食",
-      "next_source": "wikipedia",
-      "source_progress": 1,
-      "priority": 123.0,
-      "depth": 4
-    },
-    {
       "scan_key": "id:Q15241043",
       "title": "武仙－北冕座長城",
-      "next_source": "wikidata_api",
-      "source_progress": 1,
+      "next_source": "wikipedia",
+      "source_progress": 2,
       "priority": 91.0,
       "depth": 3
+    },
+    {
+      "scan_key": "id:Q15739240",
+      "title": "柯羅威斯－坎普薩諾超大類星體群",
+      "next_source": "wikidata_api",
+      "source_progress": 1,
+      "priority": 87.0,
+      "depth": 4
     },
     {
       "scan_key": "id:Q23054687",

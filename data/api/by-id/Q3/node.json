@@ -475,9 +475,61 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "临终",
+        "data_source": "nodes/Q267505.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q267505",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q267505",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "出生",
+        "data_source": "nodes/Q14819852.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q14819852",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q14819852",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "水與國際貿易間的關係",
+        "data_source": "nodes/Q6055287.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q6055287",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q6055287",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "环境界",
+        "data_source": "nodes/Q2572474.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2572474",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q2572474",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
-    "updated_at": "2026-05-25T09:23:49Z",
+    "updated_at": "2026-05-28T02:27:22Z",
     "is_leaf": false,
     "quality_score": 99,
     "quality_reasons": [
@@ -491,15 +543,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "last_checked_at": "2026-05-25T09:23:49Z",
-    "last_fetch_source": "wikipedia",
+    "last_checked_at": "2026-05-28T02:27:22Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "fetch_strategy_version": 4,
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:43Z",
-      "wikipedia": "2026-05-25T09:23:49Z"
+      "wikipedia": "2026-05-25T09:23:49Z",
+      "wikidata": "2026-05-28T02:27:22Z"
     }
   }
 }
