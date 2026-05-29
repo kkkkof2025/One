@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-05-28T02:28:27Z",
+  "generated_at": "2026-05-29T02:31:53Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 4
     },
     {
-      "scan_key": "id:Q3",
-      "title": "生命",
+      "scan_key": "id:Q1057",
+      "title": "代謝",
       "next_source": "wikidata",
       "source_progress": 2,
-      "priority": 139.0,
-      "depth": 1
-    },
-    {
-      "scan_key": "id:Q15241043",
-      "title": "武仙－北冕座長城",
-      "next_source": "wikipedia",
-      "source_progress": 2,
-      "priority": 91.0,
-      "depth": 3
+      "priority": 130.0,
+      "depth": 2
     },
     {
       "scan_key": "id:Q15739240",
       "title": "柯羅威斯－坎普薩諾超大類星體群",
+      "next_source": "wikipedia",
+      "source_progress": 2,
+      "priority": 87.0,
+      "depth": 4
+    },
+    {
+      "scan_key": "id:Q3094136",
+      "title": "巨型超大类星体群",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 87.0,
