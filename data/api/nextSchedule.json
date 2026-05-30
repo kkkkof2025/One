@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-05-29T02:31:53Z",
+  "generated_at": "2026-05-30T02:26:25Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,28 +22,28 @@
       "depth": 4
     },
     {
-      "scan_key": "id:Q1057",
-      "title": "代謝",
+      "scan_key": "id:Q2996394",
+      "title": "生物過程",
       "next_source": "wikidata",
-      "source_progress": 2,
+      "source_progress": 3,
       "priority": 130.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q15739240",
-      "title": "柯羅威斯－坎普薩諾超大類星體群",
+      "scan_key": "id:Q3094136",
+      "title": "巨型超大类星体群",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 87.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q3094136",
-      "title": "巨型超大类星体群",
+      "scan_key": "id:Q2602890",
+      "title": "孔雀-印地安超星系團",
       "next_source": "wikidata_api",
       "source_progress": 1,
-      "priority": 87.0,
-      "depth": 4
+      "priority": 83.0,
+      "depth": 5
     },
     {
       "scan_key": "id:Q23054687",

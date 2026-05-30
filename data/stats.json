@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T02:31:53Z",
+  "generated_at": "2026-05-30T02:26:25Z",
   "total_nodes": 266,
   "last_added_nodes": 0,
   "last_request_count": 5,
@@ -20,7 +20,7 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "transient_error_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -39,22 +39,22 @@
     "candidate_count": 263,
     "source_progress_counts": {
       "4": 3,
-      "2": 6,
-      "1": 103,
-      "3": 4,
+      "3": 6,
+      "2": 5,
+      "1": 102,
       "0": 147
     },
     "next_source_counts": {
-      "conceptnet": 7,
+      "conceptnet": 8,
       "wikidata": 5,
       "wikipedia": 51,
-      "wikidata_api": 200
+      "wikidata_api": 199
     },
     "available_next_source_counts": {
-      "conceptnet": 7,
+      "conceptnet": 8,
       "wikidata": 5,
       "wikipedia": 51,
-      "wikidata_api": 200
+      "wikidata_api": 199
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,28 +77,28 @@
         "depth": 4
       },
       {
-        "scan_key": "id:Q1057",
-        "title": "代謝",
+        "scan_key": "id:Q2996394",
+        "title": "生物過程",
         "next_source": "wikidata",
-        "source_progress": 2,
+        "source_progress": 3,
         "priority": 130.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q15739240",
-        "title": "柯羅威斯－坎普薩諾超大類星體群",
+        "scan_key": "id:Q3094136",
+        "title": "巨型超大类星体群",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 87.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q3094136",
-        "title": "巨型超大类星体群",
+        "scan_key": "id:Q2602890",
+        "title": "孔雀-印地安超星系團",
         "next_source": "wikidata_api",
         "source_progress": 1,
-        "priority": 87.0,
-        "depth": 4
+        "priority": 83.0,
+        "depth": 5
       },
       {
         "scan_key": "id:Q23054687",
@@ -130,28 +130,28 @@
           "depth": 4
         },
         {
-          "scan_key": "id:Q1057",
-          "title": "代謝",
+          "scan_key": "id:Q2996394",
+          "title": "生物過程",
           "next_source": "wikidata",
-          "source_progress": 2,
+          "source_progress": 3,
           "priority": 130.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q15739240",
-          "title": "柯羅威斯－坎普薩諾超大類星體群",
+          "scan_key": "id:Q3094136",
+          "title": "巨型超大类星体群",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 87.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q3094136",
-          "title": "巨型超大类星体群",
+          "scan_key": "id:Q2602890",
+          "title": "孔雀-印地安超星系團",
           "next_source": "wikidata_api",
           "source_progress": 1,
-          "priority": 87.0,
-          "depth": 4
+          "priority": 83.0,
+          "depth": 5
         },
         {
           "scan_key": "id:Q23054687",
@@ -167,21 +167,21 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 60,
+    "added_nodes": 52,
     "requests": 40,
-    "added_per_request": 1.5,
-    "zero_growth_streak": 1,
+    "added_per_request": 1.3,
+    "zero_growth_streak": 2,
     "last_productive_run_at": "2026-05-28T02:28:27Z",
     "source_request_counts": {
-      "wikipedia": 11,
-      "wikidata_api": 11,
-      "conceptnet": 5,
-      "wikidata": 9,
-      "dbpedia": 4
+      "wikidata_api": 9,
+      "conceptnet": 6,
+      "wikidata": 10,
+      "wikipedia": 10,
+      "dbpedia": 5
     },
     "source_outcome_counts": {
       "conceptnet": {
-        "transient_error_requests": 3
+        "transient_error_requests": 4
       },
       "wikidata": {
         "children_returned_requests": 2,
@@ -189,29 +189,30 @@
         "unchanged_requests": 1,
         "rate_limited_requests": 3,
         "productive_requests": 1,
-        "added_nodes": 4
+        "added_nodes": 4,
+        "transient_error_requests": 1
       },
       "wikipedia": {
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 5,
-        "no_children_requests": 2,
-        "unchanged_requests": 2
-      },
-      "wikidata_api": {
         "no_children_requests": 3,
         "unchanged_requests": 3
       },
+      "wikidata_api": {
+        "no_children_requests": 4,
+        "unchanged_requests": 4
+      },
       "dbpedia": {
-        "no_children_requests": 1,
-        "unchanged_requests": 1
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 39,
+  "history_entries": 40,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

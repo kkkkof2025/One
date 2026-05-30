@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-05-29T02:31:53Z",
+  "generated_at": "2026-05-30T02:26:25Z",
   "id": "Q1057",
   "source": "nodes/Q1057.json",
   "node": {
@@ -15,18 +15,20 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-25T09:30:55Z",
-    "last_checked_at": "2026-05-25T09:30:55Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-05-30T02:26:25Z",
+    "last_checked_at": "2026-05-30T02:26:25Z",
+    "last_fetch_source": "dbpedia",
     "last_fetch_sources": [
-      "wikipedia"
+      "dbpedia"
     ],
     "source_no_children": {
-      "wikipedia": "2026-05-25T09:30:55Z"
+      "wikipedia": "2026-05-25T09:30:55Z",
+      "dbpedia": "2026-05-30T02:26:25Z"
     },
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:44Z",
-      "wikipedia": "2026-05-25T09:30:55Z"
+      "wikipedia": "2026-05-25T09:30:55Z",
+      "dbpedia": "2026-05-30T02:26:25Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -45,52 +47,54 @@
     "dbpedia"
   ],
   "checked_sources": [
+    "dbpedia",
     "wikidata_api",
     "wikipedia"
   ],
   "no_children_sources": [
+    "dbpedia",
     "wikipedia"
   ],
   "done_sources": [
+    "dbpedia",
     "wikidata_api",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
     "wikidata",
-    "conceptnet",
-    "dbpedia"
+    "conceptnet"
   ],
-  "next_source": "dbpedia",
+  "next_source": "",
   "next_source_without_cooldown": "wikidata",
-  "can_fetch": true,
+  "can_fetch": false,
   "eligible": true,
   "exhausted": false,
   "terminal": false,
   "source_exhausted": false,
-  "blocked_by_cooldown": false,
-  "block_reason": "ready",
+  "blocked_by_cooldown": true,
+  "block_reason": "source_cooldown",
   "source_cooldowns": {
     "wikidata": {
       "source": "wikidata",
-      "reason": "rate_limited",
-      "occurred_at": "2026-05-29T02:31:53Z",
-      "retry_after_seconds": 1000,
-      "cooldown_until": "2026-05-29T02:48:33Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+      "reason": "transient_error",
+      "occurred_at": "2026-05-30T02:26:24Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-05-30T02:36:24Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
     },
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-05-29T02:31:52Z",
+      "occurred_at": "2026-05-30T02:26:14Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-05-29T02:41:52Z",
+      "cooldown_until": "2026-05-30T02:36:14Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 2,
-    "remaining": 3
+    "done": 3,
+    "remaining": 2
   }
 }
