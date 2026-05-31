@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q5925744.json",
+  "node": {
+    "title": "人類鐵代謝",
+    "children_count": 0,
+    "id": "Q5925744",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q5925744",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

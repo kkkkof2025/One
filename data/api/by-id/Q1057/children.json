@@ -3,7 +3,7 @@
   "source": "nodes/Q1057.json",
   "node": {
     "title": "代謝",
-    "children_count": 2,
+    "children_count": 9,
     "id": "Q1057",
     "source_provider": "wikidata_api",
     "source_relation": "has_part",
@@ -13,11 +13,11 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-30T02:26:25Z",
-    "last_checked_at": "2026-05-30T02:26:25Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-05-31T02:42:22Z",
+    "last_checked_at": "2026-05-31T02:42:22Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-05-25T09:30:55Z",
@@ -26,7 +26,8 @@
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:44Z",
       "wikipedia": "2026-05-25T09:30:55Z",
-      "dbpedia": "2026-05-30T02:26:25Z"
+      "dbpedia": "2026-05-30T02:26:25Z",
+      "wikidata": "2026-05-31T02:42:22Z"
     }
   },
   "children": [
@@ -57,7 +58,105 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "乙二醛酶系統",
+      "children_count": 0,
+      "id": "Q5573007",
+      "data_source": "nodes/Q5573007.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q5573007",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人類鐵代謝",
+      "children_count": 0,
+      "id": "Q5925744",
+      "data_source": "nodes/Q5925744.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q5925744",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "代谢网络建模",
+      "children_count": 0,
+      "id": "Q6822349",
+      "data_source": "nodes/Q6822349.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q6822349",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物结晶",
+      "children_count": 0,
+      "id": "Q17003203",
+      "data_source": "nodes/Q17003203.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q17003203",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "藥物代謝",
+      "children_count": 0,
+      "id": "Q1124842",
+      "data_source": "nodes/Q1124842.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1124842",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "鈣代謝",
+      "children_count": 0,
+      "id": "Q910704",
+      "data_source": "nodes/Q910704.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q910704",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "休息代謝速率",
+      "children_count": 0,
+      "id": "Q25324083",
+      "data_source": "nodes/Q25324083.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q25324083",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 2
+  "child_count": 9
 }

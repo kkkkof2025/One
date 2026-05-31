@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-05-30T02:26:25Z",
+  "updated_at": "2026-05-31T02:43:31Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q1057",
-  "last_scan_title": "代謝",
+  "last_scan_key": "id:Q2996394",
+  "last_scan_title": "生物過程",
   "candidate_count": 263,
   "selected_count": 6,
   "request_count": 5,
@@ -20,21 +20,25 @@
   "available_sources": [
     "wikidata_api",
     "wikipedia",
+    "wikidata",
     "dbpedia"
   ],
   "source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "transient_error_requests": 1
+      "children_returned_requests": 2,
+      "productive_requests": 1,
+      "added_nodes": 7,
+      "duplicate_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -43,27 +47,15 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-05-30T02:26:14Z",
+      "occurred_at": "2026-05-31T02:42:22Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-05-30T02:36:14Z",
-      "last_error": "HTTP Error 502: Bad Gateway"
-    },
-    "wikidata": {
-      "source": "wikidata",
-      "reason": "transient_error",
-      "occurred_at": "2026-05-30T02:26:24Z",
-      "retry_after_seconds": 600,
-      "cooldown_until": "2026-05-30T02:36:24Z",
+      "cooldown_until": "2026-05-31T02:52:22Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
@@ -71,22 +63,22 @@
     "candidate_count": 263,
     "source_progress_counts": {
       "4": 3,
-      "3": 6,
-      "2": 5,
-      "1": 102,
+      "3": 8,
+      "2": 4,
+      "1": 101,
       "0": 147
     },
     "next_source_counts": {
-      "conceptnet": 8,
+      "conceptnet": 9,
       "wikidata": 5,
       "wikipedia": 51,
-      "wikidata_api": 199
+      "wikidata_api": 198
     },
     "available_next_source_counts": {
-      "conceptnet": 8,
+      "conceptnet": 9,
       "wikidata": 5,
       "wikipedia": 51,
-      "wikidata_api": 199
+      "wikidata_api": 198
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -109,24 +101,24 @@
         "depth": 4
       },
       {
-        "scan_key": "id:Q2996394",
-        "title": "生物過程",
+        "scan_key": "id:Q1057",
+        "title": "代謝",
         "next_source": "wikidata",
         "source_progress": 3,
         "priority": 130.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q3094136",
-        "title": "巨型超大类星体群",
-        "next_source": "wikipedia",
-        "source_progress": 2,
-        "priority": 87.0,
-        "depth": 4
-      },
-      {
         "scan_key": "id:Q2602890",
         "title": "孔雀-印地安超星系團",
+        "next_source": "wikipedia",
+        "source_progress": 2,
+        "priority": 83.0,
+        "depth": 5
+      },
+      {
+        "scan_key": "id:Q2636046",
+        "title": "獅子座星系團",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 83.0,
@@ -162,24 +154,24 @@
           "depth": 4
         },
         {
-          "scan_key": "id:Q2996394",
-          "title": "生物過程",
+          "scan_key": "id:Q1057",
+          "title": "代謝",
           "next_source": "wikidata",
           "source_progress": 3,
           "priority": 130.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q3094136",
-          "title": "巨型超大类星体群",
-          "next_source": "wikipedia",
-          "source_progress": 2,
-          "priority": 87.0,
-          "depth": 4
-        },
-        {
           "scan_key": "id:Q2602890",
           "title": "孔雀-印地安超星系團",
+          "next_source": "wikipedia",
+          "source_progress": 2,
+          "priority": 83.0,
+          "depth": 5
+        },
+        {
+          "scan_key": "id:Q2636046",
+          "title": "獅子座星系團",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 83.0,

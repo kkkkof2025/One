@@ -31,6 +31,97 @@
         "quality_score": 93,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "乙二醛酶系統",
+        "data_source": "nodes/Q5573007.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5573007",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q5573007",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "人類鐵代謝",
+        "data_source": "nodes/Q5925744.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5925744",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q5925744",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "代谢网络建模",
+        "data_source": "nodes/Q6822349.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q6822349",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q6822349",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物结晶",
+        "data_source": "nodes/Q17003203.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q17003203",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q17003203",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "藥物代謝",
+        "data_source": "nodes/Q1124842.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1124842",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q1124842",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "鈣代謝",
+        "data_source": "nodes/Q910704.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q910704",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q910704",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "休息代謝速率",
+        "data_source": "nodes/Q25324083.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q25324083",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q25324083",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata_api",
@@ -47,18 +138,19 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-30T02:26:25Z",
-    "last_checked_at": "2026-05-30T02:26:25Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-05-31T02:42:22Z",
+    "last_checked_at": "2026-05-31T02:42:22Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "fetch_strategy_version": 4,
     "is_leaf": false,
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:44Z",
       "wikipedia": "2026-05-25T09:30:55Z",
-      "dbpedia": "2026-05-30T02:26:25Z"
+      "dbpedia": "2026-05-30T02:26:25Z",
+      "wikidata": "2026-05-31T02:42:22Z"
     },
     "source_no_children": {
       "wikipedia": "2026-05-25T09:30:55Z",

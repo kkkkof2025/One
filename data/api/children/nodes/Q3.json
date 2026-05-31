@@ -134,11 +134,11 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-29T02:31:53Z",
-      "last_checked_at": "2026-05-29T02:31:53Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-05-31T02:43:31Z",
+      "last_checked_at": "2026-05-31T02:43:31Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-05-25T09:31:00Z",
@@ -147,12 +147,13 @@
       "source_checked": {
         "wikidata_api": "2026-05-23T07:05:45Z",
         "wikipedia": "2026-05-25T09:31:00Z",
-        "dbpedia": "2026-05-29T02:31:53Z"
+        "dbpedia": "2026-05-29T02:31:53Z",
+        "wikidata": "2026-05-31T02:43:31Z"
       }
     },
     {
       "title": "代謝",
-      "children_count": 2,
+      "children_count": 9,
       "id": "Q1057",
       "data_source": "nodes/Q1057.json",
       "source_provider": "wikidata_api",
@@ -163,11 +164,11 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-30T02:26:25Z",
-      "last_checked_at": "2026-05-30T02:26:25Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-05-31T02:42:22Z",
+      "last_checked_at": "2026-05-31T02:42:22Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-05-25T09:30:55Z",
@@ -176,7 +177,8 @@
       "source_checked": {
         "wikidata_api": "2026-05-23T07:05:44Z",
         "wikipedia": "2026-05-25T09:30:55Z",
-        "dbpedia": "2026-05-30T02:26:25Z"
+        "dbpedia": "2026-05-30T02:26:25Z",
+        "wikidata": "2026-05-31T02:42:22Z"
       }
     },
     {

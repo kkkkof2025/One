@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q17003203.json",
+  "node": {
+    "title": "生物结晶",
+    "children_count": 0,
+    "id": "Q17003203",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q17003203",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

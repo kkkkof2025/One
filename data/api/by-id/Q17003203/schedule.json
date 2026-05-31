@@ -1,0 +1,68 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-05-31T02:43:31Z",
+  "id": "Q17003203",
+  "source": "nodes/Q17003203.json",
+  "node": {
+    "title": "生物结晶",
+    "children_count": 0,
+    "id": "Q17003203",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q17003203",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikidata_api",
+  "next_source_without_cooldown": "wikidata_api",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-05-31T02:42:22Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-05-31T02:52:22Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 5,
+    "done": 0,
+    "remaining": 5
+  }
+}
