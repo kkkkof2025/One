@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-05-31T02:43:31Z",
+  "generated_at": "2026-06-01T02:51:49Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -14,44 +14,44 @@
   },
   "scheduled_candidates": [
     {
-      "scan_key": "id:Q186517",
-      "title": "寄生",
-      "next_source": "conceptnet",
-      "source_progress": 4,
-      "priority": 122.0,
-      "depth": 4
-    },
-    {
       "scan_key": "id:Q1057",
       "title": "代謝",
-      "next_source": "wikidata",
-      "source_progress": 3,
+      "next_source": "conceptnet",
+      "source_progress": 4,
       "priority": 130.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q2602890",
-      "title": "孔雀-印地安超星系團",
+      "scan_key": "id:Q1823478",
+      "title": "生物间相互作用",
+      "next_source": "wikidata",
+      "source_progress": 2,
+      "priority": 126.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q2636046",
+      "title": "獅子座星系團",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 83.0,
       "depth": 5
     },
     {
-      "scan_key": "id:Q2636046",
-      "title": "獅子座星系團",
+      "scan_key": "id:Q61095",
+      "title": "長蛇座星系團",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 83.0,
       "depth": 5
     },
     {
-      "scan_key": "id:Q23054687",
-      "title": "BOSS長城",
+      "scan_key": "id:Q2996394",
+      "title": "生物過程",
       "next_source": "conceptnet",
       "source_progress": 4,
-      "priority": 91.0,
-      "depth": 3
+      "priority": 130.0,
+      "depth": 2
     }
   ]
 }
