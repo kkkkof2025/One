@@ -1,60 +1,58 @@
 {
-  "generated_at": "2026-06-02T02:48:34Z",
-  "total_nodes": 273,
-  "last_added_nodes": 0,
+  "generated_at": "2026-06-03T02:58:30Z",
+  "total_nodes": 282,
+  "last_added_nodes": 11,
   "last_request_count": 5,
   "last_scanned_nodes": 281,
   "last_candidate_nodes": 270,
-  "last_unchanged_requests": 3,
+  "last_unchanged_requests": 1,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "children_returned_requests": 2,
+      "productive_requests": 2,
+      "added_nodes": 10
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 270,
     "source_progress_counts": {
       "4": 5,
-      "3": 9,
-      "2": 3,
-      "1": 99,
+      "3": 11,
+      "2": 2,
+      "1": 98,
       "0": 154
     },
     "next_source_counts": {
-      "conceptnet": 13,
+      "conceptnet": 14,
       "wikidata": 3,
       "wikipedia": 51,
-      "wikidata_api": 203
+      "wikidata_api": 202
     },
     "available_next_source_counts": {
-      "conceptnet": 13,
+      "conceptnet": 14,
       "wikidata": 3,
       "wikipedia": 51,
-      "wikidata_api": 203
+      "wikidata_api": 202
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,28 +75,28 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q111171519",
-        "title": "物种间相互作用",
+        "scan_key": "id:Q1823478",
+        "title": "生物间相互作用",
         "next_source": "wikidata",
         "source_progress": 3,
-        "priority": 123.0,
-        "depth": 4
+        "priority": 126.0,
+        "depth": 3
       },
       {
-        "scan_key": "id:Q61095",
-        "title": "長蛇座星系團",
+        "scan_key": "id:Q656857",
+        "title": "巨引源",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 83.0,
         "depth": 5
       },
       {
-        "scan_key": "id:Q656857",
-        "title": "巨引源",
+        "scan_key": "id:Q1927127",
+        "title": "NGC 1023星系群",
         "next_source": "wikidata_api",
         "source_progress": 1,
-        "priority": 83.0,
-        "depth": 5
+        "priority": 79.0,
+        "depth": 6
       },
       {
         "scan_key": "id:Q2996394",
@@ -130,28 +128,28 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q111171519",
-          "title": "物种间相互作用",
+          "scan_key": "id:Q1823478",
+          "title": "生物间相互作用",
           "next_source": "wikidata",
           "source_progress": 3,
-          "priority": 123.0,
-          "depth": 4
+          "priority": 126.0,
+          "depth": 3
         },
         {
-          "scan_key": "id:Q61095",
-          "title": "長蛇座星系團",
+          "scan_key": "id:Q656857",
+          "title": "巨引源",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 83.0,
           "depth": 5
         },
         {
-          "scan_key": "id:Q656857",
-          "title": "巨引源",
+          "scan_key": "id:Q1927127",
+          "title": "NGC 1023星系群",
           "next_source": "wikidata_api",
           "source_progress": 1,
-          "priority": 83.0,
-          "depth": 5
+          "priority": 79.0,
+          "depth": 6
         },
         {
           "scan_key": "id:Q2996394",
@@ -167,41 +165,44 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 16,
+    "added_nodes": 27,
     "requests": 40,
-    "added_per_request": 0.4,
-    "zero_growth_streak": 2,
-    "last_productive_run_at": "2026-05-31T02:43:31Z",
+    "added_per_request": 0.675,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-06-03T02:58:30Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "dbpedia": 7,
-      "wikidata": 11,
-      "wikipedia": 7,
-      "wikidata_api": 7
+      "wikidata": 12,
+      "wikipedia": 8,
+      "wikidata_api": 8,
+      "dbpedia": 4
     },
     "source_outcome_counts": {
       "conceptnet": {
-        "transient_error_requests": 7
+        "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 4,
+        "children_returned_requests": 6,
         "duplicate_requests": 2,
         "unchanged_requests": 2,
         "rate_limited_requests": 5,
-        "productive_requests": 2,
-        "added_nodes": 11,
+        "productive_requests": 4,
+        "added_nodes": 21,
         "transient_error_requests": 1
       },
       "wikipedia": {
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 5,
-        "no_children_requests": 6,
-        "unchanged_requests": 6
+        "no_children_requests": 7,
+        "unchanged_requests": 7
       },
       "wikidata_api": {
         "no_children_requests": 7,
-        "unchanged_requests": 7
+        "unchanged_requests": 7,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 1
       },
       "dbpedia": {
         "no_children_requests": 4,
@@ -212,7 +213,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 43,
+  "history_entries": 44,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

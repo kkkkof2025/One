@@ -1,17 +1,33 @@
 {
   "id": "Q1927127",
   "title": "NGC 1023星系群",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "NGC 1239",
+      "data_source": "nodes/Q1042334.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1042334",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1042334",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "fetch_strategy_version": 2,
-  "updated_at": "2026-05-07T00:56:53Z",
+  "updated_at": "2026-06-03T02:57:25Z",
   "is_leaf": false,
-  "quality_score": 75,
+  "quality_score": 83,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "missing_relation"
+    "missing_relation",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
@@ -19,6 +35,12 @@
     "wikidata": "2026-05-07T00:56:53Z"
   },
   "source_checked": {
-    "wikidata": "2026-05-07T00:56:53Z"
-  }
+    "wikidata": "2026-05-07T00:56:53Z",
+    "wikidata_api": "2026-06-03T02:57:25Z"
+  },
+  "last_checked_at": "2026-06-03T02:57:25Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }

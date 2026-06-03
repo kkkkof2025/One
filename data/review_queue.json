@@ -1,24 +1,33 @@
 {
-  "generated_at": "2026-06-02T02:48:35Z",
+  "generated_at": "2026-06-03T02:58:30Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 101,
+  "total_candidates": 104,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 101,
+  "total_items": 104,
   "reason_distribution": {
-    "total_items": 101,
+    "total_items": 104,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 50,
+        "count": 51,
         "sample_review_keys": [
           "id:Q8001388",
           "id:Q22294683",
           "id:Q55621538",
           "id:Q118512328",
           "id:Q14013"
+        ]
+      },
+      {
+        "key": "duplicate_id",
+        "label": "重复 ID 风险",
+        "count": 2,
+        "sample_review_keys": [
+          "id:Q121610",
+          "id:Q170430"
         ]
       },
       {
@@ -55,30 +64,34 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 101
+        "count": 104
       },
       {
         "reason": "good_title_length",
-        "count": 99
+        "count": 102
       },
       {
         "reason": "missing_relation",
         "count": 99
       },
       {
+        "reason": "zh_label",
+        "count": 53
+      },
+      {
         "reason": "fetch_error",
         "count": 52
       },
       {
-        "reason": "zh_label",
+        "reason": "non_zh_label",
         "count": 51
       },
       {
-        "reason": "non_zh_label",
-        "count": 50
+        "reason": "has_children",
+        "count": 7
       },
       {
-        "reason": "has_children",
+        "reason": "relation:has_part",
         "count": 5
       },
       {
@@ -87,10 +100,10 @@
       },
       {
         "reason": "loaded",
-        "count": 2
+        "count": 4
       },
       {
-        "reason": "relation:has_part",
+        "reason": "duplicate_id:2",
         "count": 2
       },
       {
@@ -111,12 +124,12 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 47
+        "count": 48
       },
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 2
+        "count": 4
       }
     ]
   },
@@ -2386,6 +2399,29 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "NGC 1239",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1042334",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1042334",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / NGC 1023星系群 / NGC 1239",
+      "location": "nodes/Q1042334.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1042334",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "biological phase",
       "children_status": "pending",
       "quality_score": 67,
@@ -2408,6 +2444,60 @@
       "review_key": "id:Q22299142",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "共生",
+      "children_status": "loaded",
+      "quality_score": 99,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "loaded",
+        "duplicate_id:2",
+        "has_children"
+      ],
+      "id": "Q121610",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q121610",
+      "updated_at": "2026-05-25T09:22:40Z",
+      "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / 共生",
+      "location": "nodes/Q121610.json",
+      "priority": 25.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q121610",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "捕食",
+      "children_status": "loaded",
+      "quality_score": 99,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "loaded",
+        "duplicate_id:2",
+        "has_children"
+      ],
+      "id": "Q170430",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q170430",
+      "updated_at": "2026-05-27T02:40:55Z",
+      "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / 捕食",
+      "location": "nodes/Q170430.json",
+      "priority": 25.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q170430",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
     }
   ]
 }

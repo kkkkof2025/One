@@ -3,7 +3,7 @@
   "source": "nodes/Q1823478.json",
   "node": {
     "title": "生物间相互作用",
-    "children_count": 6,
+    "children_count": 11,
     "id": "Q1823478",
     "source_provider": "wikidata_api",
     "source_relation": "has_part",
@@ -13,11 +13,11 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-06-02T02:48:34Z",
-    "last_checked_at": "2026-06-02T02:48:34Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-06-03T02:57:25Z",
+    "last_checked_at": "2026-06-03T02:57:25Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-05-25T09:31:05Z",
@@ -26,7 +26,8 @@
     "source_checked": {
       "wikidata_api": "2026-05-23T07:05:46Z",
       "wikipedia": "2026-05-25T09:31:05Z",
-      "dbpedia": "2026-06-02T02:48:34Z"
+      "dbpedia": "2026-06-02T02:48:34Z",
+      "wikidata": "2026-06-03T02:57:25Z"
     }
   },
   "children": [
@@ -139,22 +140,22 @@
     },
     {
       "title": "物种间相互作用",
-      "children_count": 0,
+      "children_count": 5,
       "id": "Q111171519",
       "data_source": "nodes/Q111171519.json",
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q111171519",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-06-01T02:51:49Z",
-      "last_checked_at": "2026-06-01T02:51:49Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-06-03T02:58:30Z",
+      "last_checked_at": "2026-06-03T02:58:30Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-05-23T14:51:24Z",
@@ -164,7 +165,8 @@
       "source_checked": {
         "wikidata_api": "2026-05-23T14:51:24Z",
         "wikipedia": "2026-05-25T09:31:10Z",
-        "dbpedia": "2026-06-01T02:51:49Z"
+        "dbpedia": "2026-06-01T02:51:49Z",
+        "wikidata": "2026-06-03T02:58:30Z"
       }
     },
     {
@@ -180,7 +182,77 @@
       "quality_score": 41,
       "quality_version": 3,
       "review_status": "needs_review"
+    },
+    {
+      "title": "生態促進",
+      "children_count": 0,
+      "id": "Q3064129",
+      "data_source": "nodes/Q3064129.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3064129",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "食物鏈",
+      "children_count": 0,
+      "id": "Q159462",
+      "data_source": "nodes/Q159462.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q159462",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "互養",
+      "children_count": 0,
+      "id": "Q1356726",
+      "data_source": "nodes/Q1356726.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1356726",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "消費者-資源相互作用",
+      "children_count": 0,
+      "id": "Q5164625",
+      "data_source": "nodes/Q5164625.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5164625",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "细胞间相互作用",
+      "children_count": 0,
+      "id": "Q5058397",
+      "data_source": "nodes/Q5058397.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5058397",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 6
+  "child_count": 11
 }

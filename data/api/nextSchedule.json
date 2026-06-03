@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-02T02:48:34Z",
+  "generated_at": "2026-06-03T02:58:30Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,28 +22,28 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q111171519",
-      "title": "物种间相互作用",
+      "scan_key": "id:Q1823478",
+      "title": "生物间相互作用",
       "next_source": "wikidata",
       "source_progress": 3,
-      "priority": 123.0,
-      "depth": 4
+      "priority": 126.0,
+      "depth": 3
     },
     {
-      "scan_key": "id:Q61095",
-      "title": "長蛇座星系團",
+      "scan_key": "id:Q656857",
+      "title": "巨引源",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 83.0,
       "depth": 5
     },
     {
-      "scan_key": "id:Q656857",
-      "title": "巨引源",
+      "scan_key": "id:Q1927127",
+      "title": "NGC 1023星系群",
       "next_source": "wikidata_api",
       "source_progress": 1,
-      "priority": 83.0,
-      "depth": 5
+      "priority": 79.0,
+      "depth": 6
     },
     {
       "scan_key": "id:Q2996394",
