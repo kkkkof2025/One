@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-06-03T02:58:30Z",
+  "generated_at": "2026-06-04T02:52:35Z",
   "id": "Q121610",
   "source": "nodes/Q121610.json",
   "node": {
@@ -12,7 +12,7 @@
     "source_url": "https://www.wikidata.org/wiki/Q121610",
     "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 100,
+    "quality_score": 99,
     "quality_version": 3,
     "review_status": "approved",
     "updated_at": "2026-05-25T09:22:40Z",
@@ -71,9 +71,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-03T02:57:24Z",
+      "occurred_at": "2026-06-04T02:52:30Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-03T03:07:24Z",
+      "cooldown_until": "2026-06-04T03:02:30Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

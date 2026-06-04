@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-03T02:58:30Z",
+  "generated_at": "2026-06-04T02:52:35Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1823478",
-      "title": "生物间相互作用",
+      "scan_key": "id:Q170430",
+      "title": "捕食",
       "next_source": "wikidata",
-      "source_progress": 3,
-      "priority": 126.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q656857",
-      "title": "巨引源",
-      "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 83.0,
-      "depth": 5
+      "priority": 121.0,
+      "depth": 4
     },
     {
       "scan_key": "id:Q1927127",
       "title": "NGC 1023星系群",
+      "next_source": "wikipedia",
+      "source_progress": 2,
+      "priority": 79.0,
+      "depth": 6
+    },
+    {
+      "scan_key": "id:Q26703430",
+      "title": "蜻蜓44星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 79.0,

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-03T02:58:30Z",
+  "generated_at": "2026-06-04T02:52:35Z",
   "total_nodes": 282,
-  "last_added_nodes": 11,
+  "last_added_nodes": 0,
   "last_request_count": 5,
-  "last_scanned_nodes": 281,
-  "last_candidate_nodes": 270,
-  "last_unchanged_requests": 1,
+  "last_scanned_nodes": 292,
+  "last_candidate_nodes": 279,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
-    "wikipedia": 1,
+    "wikidata": 1,
+    "wikipedia": 2,
     "wikidata_api": 1
   },
   "last_source_outcome_counts": {
@@ -19,40 +19,37 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 2,
-      "productive_requests": 2,
-      "added_nodes": 10
+      "rate_limited_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikidata_api": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 1
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 270,
+    "candidate_count": 279,
     "source_progress_counts": {
-      "4": 5,
-      "3": 11,
+      "4": 7,
       "2": 2,
-      "1": 98,
-      "0": 154
+      "1": 97,
+      "3": 10,
+      "0": 163
     },
     "next_source_counts": {
-      "conceptnet": 14,
-      "wikidata": 3,
+      "conceptnet": 17,
+      "wikidata": 1,
       "wikipedia": 51,
-      "wikidata_api": 202
+      "wikidata_api": 210
     },
     "available_next_source_counts": {
-      "conceptnet": 14,
-      "wikidata": 3,
+      "conceptnet": 17,
+      "wikidata": 1,
       "wikipedia": 51,
-      "wikidata_api": 202
+      "wikidata_api": 210
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,24 +72,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1823478",
-        "title": "生物间相互作用",
+        "scan_key": "id:Q170430",
+        "title": "捕食",
         "next_source": "wikidata",
-        "source_progress": 3,
-        "priority": 126.0,
-        "depth": 3
-      },
-      {
-        "scan_key": "id:Q656857",
-        "title": "巨引源",
-        "next_source": "wikipedia",
         "source_progress": 2,
-        "priority": 83.0,
-        "depth": 5
+        "priority": 121.0,
+        "depth": 4
       },
       {
         "scan_key": "id:Q1927127",
         "title": "NGC 1023星系群",
+        "next_source": "wikipedia",
+        "source_progress": 2,
+        "priority": 79.0,
+        "depth": 6
+      },
+      {
+        "scan_key": "id:Q26703430",
+        "title": "蜻蜓44星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 79.0,
@@ -128,24 +125,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1823478",
-          "title": "生物间相互作用",
+          "scan_key": "id:Q170430",
+          "title": "捕食",
           "next_source": "wikidata",
-          "source_progress": 3,
-          "priority": 126.0,
-          "depth": 3
-        },
-        {
-          "scan_key": "id:Q656857",
-          "title": "巨引源",
-          "next_source": "wikipedia",
           "source_progress": 2,
-          "priority": 83.0,
-          "depth": 5
+          "priority": 121.0,
+          "depth": 4
         },
         {
           "scan_key": "id:Q1927127",
           "title": "NGC 1023星系群",
+          "next_source": "wikipedia",
+          "source_progress": 2,
+          "priority": 79.0,
+          "depth": 6
+        },
+        {
+          "scan_key": "id:Q26703430",
+          "title": "蜻蜓44星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 79.0,
@@ -165,15 +162,15 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 27,
+    "added_nodes": 22,
     "requests": 40,
-    "added_per_request": 0.675,
-    "zero_growth_streak": 0,
+    "added_per_request": 0.55,
+    "zero_growth_streak": 1,
     "last_productive_run_at": "2026-06-03T02:58:30Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 12,
-      "wikipedia": 8,
+      "wikidata": 11,
+      "wikipedia": 9,
       "wikidata_api": 8,
       "dbpedia": 4
     },
@@ -182,20 +179,17 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 6,
-        "duplicate_requests": 2,
-        "unchanged_requests": 2,
-        "rate_limited_requests": 5,
+        "children_returned_requests": 5,
         "productive_requests": 4,
         "added_nodes": 21,
-        "transient_error_requests": 1
+        "rate_limited_requests": 5,
+        "transient_error_requests": 1,
+        "duplicate_requests": 1,
+        "unchanged_requests": 1
       },
       "wikipedia": {
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 5,
-        "no_children_requests": 7,
-        "unchanged_requests": 7
+        "no_children_requests": 9,
+        "unchanged_requests": 9
       },
       "wikidata_api": {
         "no_children_requests": 7,
@@ -213,7 +207,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 44,
+  "history_entries": 45,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
