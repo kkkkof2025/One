@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T02:52:35Z",
+  "generated_at": "2026-06-05T02:39:53Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 104,
@@ -2490,7 +2490,7 @@
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q170430",
-      "updated_at": "2026-05-27T02:40:55Z",
+      "updated_at": "2026-06-05T02:39:52Z",
       "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / 捕食",
       "location": "nodes/Q170430.json",
       "priority": 25.0,

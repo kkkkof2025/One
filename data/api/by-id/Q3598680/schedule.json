@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-06-04T02:52:35Z",
+  "generated_at": "2026-06-05T02:39:52Z",
   "id": "Q3598680",
   "source": "nodes/Q3598680.json",
   "node": {
@@ -54,17 +54,17 @@
     "wikidata": {
       "source": "wikidata",
       "reason": "rate_limited",
-      "occurred_at": "2026-06-04T02:52:30Z",
+      "occurred_at": "2026-06-05T02:39:51Z",
       "retry_after_seconds": 1000,
-      "cooldown_until": "2026-06-04T03:09:10Z",
+      "cooldown_until": "2026-06-05T02:56:31Z",
       "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     },
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-04T02:52:30Z",
+      "occurred_at": "2026-06-05T02:39:50Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-04T03:02:30Z",
+      "cooldown_until": "2026-06-05T02:49:50Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

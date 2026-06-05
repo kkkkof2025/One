@@ -7,7 +7,7 @@
     "children_status": "pending",
     "children": [],
     "fetch_strategy_version": 2,
-    "updated_at": "2026-06-04T02:52:30Z",
+    "updated_at": "2026-06-05T02:39:51Z",
     "is_leaf": false,
     "quality_score": 75,
     "quality_reasons": [
@@ -20,16 +20,18 @@
     "review_status": "approved",
     "source_no_children": {
       "wikidata": "2026-05-08T02:14:23Z",
-      "wikidata_api": "2026-06-04T02:52:30Z"
+      "wikidata_api": "2026-06-04T02:52:30Z",
+      "wikipedia": "2026-06-05T02:39:51Z"
     },
     "source_checked": {
       "wikidata": "2026-05-08T02:14:23Z",
-      "wikidata_api": "2026-06-04T02:52:30Z"
+      "wikidata_api": "2026-06-04T02:52:30Z",
+      "wikipedia": "2026-06-05T02:39:51Z"
     },
-    "last_checked_at": "2026-06-04T02:52:30Z",
-    "last_fetch_source": "wikidata_api",
+    "last_checked_at": "2026-06-05T02:39:51Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ]
   }
 }

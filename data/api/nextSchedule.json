@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-04T02:52:35Z",
+  "generated_at": "2026-06-05T02:39:52Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q170430",
-      "title": "捕食",
+      "scan_key": "id:Q45767",
+      "title": "生態競爭",
       "next_source": "wikidata",
       "source_progress": 2,
-      "priority": 121.0,
+      "priority": 123.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q1927127",
-      "title": "NGC 1023星系群",
+      "scan_key": "id:Q26703430",
+      "title": "蜻蜓44星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 79.0,
       "depth": 6
     },
     {
-      "scan_key": "id:Q26703430",
-      "title": "蜻蜓44星系",
+      "scan_key": "id:Q61075",
+      "title": "半人馬座星系團",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 79.0,
