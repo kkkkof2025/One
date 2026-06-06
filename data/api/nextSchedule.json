@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-05T02:39:52Z",
+  "generated_at": "2026-06-06T02:28:04Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q45767",
-      "title": "生態競爭",
+      "scan_key": "id:Q170430",
+      "title": "捕食",
       "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 123.0,
-      "depth": 4
+      "source_progress": 3,
+      "priority": 117.0,
+      "depth": 5
     },
     {
-      "scan_key": "id:Q26703430",
-      "title": "蜻蜓44星系",
+      "scan_key": "id:Q61075",
+      "title": "半人馬座星系團",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 79.0,
       "depth": 6
     },
     {
-      "scan_key": "id:Q61075",
-      "title": "半人馬座星系團",
+      "scan_key": "id:Q61187",
+      "title": "唧筒座星系團",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 79.0,
