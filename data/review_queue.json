@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-06T02:28:05Z",
+  "generated_at": "2026-06-07T02:46:04Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 104,
+  "total_candidates": 117,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 104,
+  "total_items": 117,
   "reason_distribution": {
-    "total_items": 104,
+    "total_items": 117,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 51,
+        "count": 64,
         "sample_review_keys": [
           "id:Q8001388",
           "id:Q22294683",
@@ -64,15 +64,19 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 104
+        "count": 117
       },
       {
         "reason": "good_title_length",
-        "count": 102
+        "count": 115
       },
       {
         "reason": "missing_relation",
         "count": 99
+      },
+      {
+        "reason": "non_zh_label",
+        "count": 64
       },
       {
         "reason": "zh_label",
@@ -83,16 +87,12 @@
         "count": 52
       },
       {
-        "reason": "non_zh_label",
-        "count": 51
+        "reason": "relation:has_part",
+        "count": 18
       },
       {
         "reason": "has_children",
         "count": 7
-      },
-      {
-        "reason": "relation:has_part",
-        "count": 5
       },
       {
         "reason": "allowed_duplicate_id:2",
@@ -117,14 +117,14 @@
     ],
     "children_statuses": [
       {
+        "status": "pending",
+        "label": "待扩展",
+        "count": 61
+      },
+      {
         "status": "error",
         "label": "加载错误",
         "count": 52
-      },
-      {
-        "status": "pending",
-        "label": "待扩展",
-        "count": 48
       },
       {
         "status": "loaded",
@@ -2418,6 +2418,305 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1042334",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "ESO 302-09",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q15921557",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15921557",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / ESO 302-09",
+      "location": "nodes/Q15921557.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q15921557",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "ESO 357-07",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q15916698",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15916698",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / ESO 357-07",
+      "location": "nodes/Q15916698.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q15916698",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "ESO 359-03",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q15921635",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15921635",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / ESO 359-03",
+      "location": "nodes/Q15921635.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q15921635",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "IC 2006",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q3692913",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q3692913",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / IC 2006",
+      "location": "nodes/Q3692913.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q3692913",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "IC 335",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q3713886",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q3713886",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / IC 335",
+      "location": "nodes/Q3713886.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q3713886",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1316",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q495785",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q495785",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1316",
+      "location": "nodes/Q495785.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q495785",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1317",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1256300",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1256300",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1317",
+      "location": "nodes/Q1256300.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1256300",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1340",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1042913",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1042913",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1340",
+      "location": "nodes/Q1042913.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1042913",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1380",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q204551",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q204551",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1380",
+      "location": "nodes/Q204551.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q204551",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1381",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1043103",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1043103",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1381",
+      "location": "nodes/Q1043103.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1043103",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1382",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1043108",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1043108",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1382",
+      "location": "nodes/Q1043108.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1043108",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 1427A",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q507302",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q507302",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / NGC 1427A",
+      "location": "nodes/Q507302.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q507302",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "PGC 12625",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q15916759",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15916759",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 天爐座星系團 / PGC 12625",
+      "location": "nodes/Q15916759.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q15916759",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

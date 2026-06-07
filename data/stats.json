@@ -1,19 +1,18 @@
 {
-  "generated_at": "2026-06-06T02:28:04Z",
-  "total_nodes": 282,
-  "last_added_nodes": 0,
+  "generated_at": "2026-06-07T02:46:04Z",
+  "total_nodes": 295,
+  "last_added_nodes": 13,
   "last_request_count": 5,
   "last_scanned_nodes": 292,
   "last_candidate_nodes": 279,
-  "last_unchanged_requests": 3,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
     "wikidata": 1,
-    "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikipedia": 2,
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
@@ -23,38 +22,35 @@
       "rate_limited_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 13
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 279,
     "source_progress_counts": {
       "4": 7,
-      "3": 13,
-      "2": 2,
-      "1": 94,
+      "3": 15,
+      "2": 1,
+      "1": 93,
       "0": 163
     },
     "next_source_counts": {
-      "conceptnet": 19,
+      "conceptnet": 20,
       "wikidata": 2,
       "wikipedia": 50,
-      "wikidata_api": 208
+      "wikidata_api": 207
     },
     "available_next_source_counts": {
-      "conceptnet": 19,
+      "conceptnet": 20,
       "wikidata": 2,
       "wikipedia": 50,
-      "wikidata_api": 208
+      "wikidata_api": 207
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +73,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q170430",
-        "title": "捕食",
+        "scan_key": "id:Q45767",
+        "title": "生態競爭",
         "next_source": "wikidata",
         "source_progress": 3,
-        "priority": 117.0,
-        "depth": 5
+        "priority": 123.0,
+        "depth": 4
       },
       {
-        "scan_key": "id:Q61075",
-        "title": "半人馬座星系團",
+        "scan_key": "id:Q61187",
+        "title": "唧筒座星系團",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 79.0,
         "depth": 6
       },
       {
-        "scan_key": "id:Q61187",
-        "title": "唧筒座星系團",
+        "scan_key": "id:Q61226",
+        "title": "天爐座星系團",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 79.0,
@@ -130,24 +126,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q170430",
-          "title": "捕食",
+          "scan_key": "id:Q45767",
+          "title": "生態競爭",
           "next_source": "wikidata",
           "source_progress": 3,
-          "priority": 117.0,
-          "depth": 5
+          "priority": 123.0,
+          "depth": 4
         },
         {
-          "scan_key": "id:Q61075",
-          "title": "半人馬座星系團",
+          "scan_key": "id:Q61187",
+          "title": "唧筒座星系團",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 79.0,
           "depth": 6
         },
         {
-          "scan_key": "id:Q61187",
-          "title": "唧筒座星系團",
+          "scan_key": "id:Q61226",
+          "title": "天爐座星系團",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 79.0,
@@ -167,52 +163,51 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 18,
+    "added_nodes": 31,
     "requests": 40,
-    "added_per_request": 0.45,
-    "zero_growth_streak": 3,
-    "last_productive_run_at": "2026-06-03T02:58:30Z",
+    "added_per_request": 0.775,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-06-07T02:46:04Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 10,
-      "wikipedia": 9,
+      "wikipedia": 10,
       "wikidata_api": 8,
-      "dbpedia": 5
+      "dbpedia": 4
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "transient_error_requests": 1,
         "children_returned_requests": 4,
         "productive_requests": 3,
         "added_nodes": 17,
         "duplicate_requests": 1,
         "unchanged_requests": 1,
-        "rate_limited_requests": 5
+        "rate_limited_requests": 6
       },
       "wikipedia": {
-        "no_children_requests": 9,
-        "unchanged_requests": 9
+        "no_children_requests": 10,
+        "unchanged_requests": 10
       },
       "wikidata_api": {
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 1
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 14
       },
       "dbpedia": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5
+        "no_children_requests": 4,
+        "unchanged_requests": 4
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 47,
+  "history_entries": 48,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

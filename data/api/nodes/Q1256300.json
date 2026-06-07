@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q1256300.json",
+  "node": {
+    "id": "Q1256300",
+    "title": "NGC 1317",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q1256300",
+    "quality_score": 67,
+    "quality_reasons": [
+      "qid",
+      "non_zh_label",
+      "good_title_length",
+      "relation:has_part"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

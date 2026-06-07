@@ -1,17 +1,189 @@
 {
   "id": "Q61226",
   "title": "天爐座星系團",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "NGC 1317",
+      "data_source": "nodes/Q1256300.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1256300",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1256300",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1381",
+      "data_source": "nodes/Q1043103.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1043103",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1043103",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1382",
+      "data_source": "nodes/Q1043108.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1043108",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1043108",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "IC 2006",
+      "data_source": "nodes/Q3692913.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3692913",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q3692913",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "IC 335",
+      "data_source": "nodes/Q3713886.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3713886",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q3713886",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "ESO 357-07",
+      "data_source": "nodes/Q15916698.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q15916698",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15916698",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "PGC 12625",
+      "data_source": "nodes/Q15916759.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q15916759",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15916759",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "ESO 302-09",
+      "data_source": "nodes/Q15921557.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q15921557",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15921557",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "ESO 359-03",
+      "data_source": "nodes/Q15921635.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q15921635",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q15921635",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1380",
+      "data_source": "nodes/Q204551.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q204551",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q204551",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1316",
+      "data_source": "nodes/Q495785.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q495785",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q495785",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1427A",
+      "data_source": "nodes/Q507302.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q507302",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q507302",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "NGC 1340",
+      "data_source": "nodes/Q1042913.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1042913",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1042913",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "fetch_strategy_version": 2,
-  "updated_at": "2026-05-07T00:57:00Z",
+  "updated_at": "2026-06-07T02:46:00Z",
   "is_leaf": false,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "missing_relation"
+    "missing_relation",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
@@ -19,6 +191,12 @@
     "wikidata": "2026-05-07T00:57:00Z"
   },
   "source_checked": {
-    "wikidata": "2026-05-07T00:57:00Z"
-  }
+    "wikidata": "2026-05-07T00:57:00Z",
+    "wikidata_api": "2026-06-07T02:46:00Z"
+  },
+  "last_checked_at": "2026-06-07T02:46:00Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }
