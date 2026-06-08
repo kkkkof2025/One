@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-07T02:46:04Z",
+  "generated_at": "2026-06-08T02:50:35Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 4
     },
     {
-      "scan_key": "id:Q61187",
-      "title": "唧筒座星系團",
+      "scan_key": "id:Q61226",
+      "title": "天爐座星系團",
       "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 79.0,
+      "priority": 85.0,
       "depth": 6
     },
     {
-      "scan_key": "id:Q61226",
-      "title": "天爐座星系團",
+      "scan_key": "id:Q698560",
+      "title": "阿普 272",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 79.0,

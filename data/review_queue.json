@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-07T02:46:04Z",
+  "generated_at": "2026-06-08T02:50:36Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 117,
+  "total_candidates": 120,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 117,
+  "total_items": 120,
   "reason_distribution": {
-    "total_items": 117,
+    "total_items": 120,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 64,
+        "count": 66,
         "sample_review_keys": [
           "id:Q8001388",
           "id:Q22294683",
@@ -24,8 +24,9 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 2,
+        "count": 3,
         "sample_review_keys": [
+          "id:Q190334",
           "id:Q121610",
           "id:Q170430"
         ]
@@ -64,11 +65,11 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 117
+        "count": 120
       },
       {
         "reason": "good_title_length",
-        "count": 115
+        "count": 118
       },
       {
         "reason": "missing_relation",
@@ -76,11 +77,11 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 64
+        "count": 66
       },
       {
         "reason": "zh_label",
-        "count": 53
+        "count": 54
       },
       {
         "reason": "fetch_error",
@@ -88,7 +89,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 18
+        "count": 20
       },
       {
         "reason": "has_children",
@@ -104,10 +105,14 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 2
+        "count": 3
       },
       {
         "reason": "long_title",
+        "count": 1
+      },
+      {
+        "reason": "relation:subclass",
         "count": 1
       },
       {
@@ -119,7 +124,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 61
+        "count": 64
       },
       {
         "status": "error",
@@ -2721,6 +2726,52 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "IC 1179",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q12904032",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q12904032",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / 阿普 272 / IC 1179",
+      "location": "nodes/Q12904032.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q12904032",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "NGC 6050",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1080238",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1080238",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / 阿普 272 / NGC 6050",
+      "location": "nodes/Q1080238.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1080238",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "biological phase",
       "children_status": "pending",
       "quality_score": 67,
@@ -2743,6 +2794,30 @@
       "review_key": "id:Q22299142",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "化感作用",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q190334",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q190334",
+      "path": "万物 / 生命 / 生物過程 / 生物间相互作用 / 生態競爭 / 化感作用",
+      "location": "nodes/Q190334.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q190334",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
     },
     {
       "title": "共生",

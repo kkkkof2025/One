@@ -1,23 +1,29 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-06-07T02:46:04Z",
+  "generated_at": "2026-06-08T02:50:35Z",
   "id": "Q698560",
   "source": "nodes/Q698560.json",
   "node": {
     "title": "阿普 272",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q698560",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-08T02:14:38Z",
+    "updated_at": "2026-06-08T02:49:31Z",
+    "last_checked_at": "2026-06-08T02:49:31Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
     "source_no_children": {
       "wikidata": "2026-05-08T02:14:38Z"
     },
     "source_checked": {
-      "wikidata": "2026-05-08T02:14:38Z"
+      "wikidata": "2026-05-08T02:14:38Z",
+      "wikidata_api": "2026-06-08T02:49:31Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -36,23 +42,24 @@
     "dbpedia"
   ],
   "checked_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "no_children_sources": [
     "wikidata"
   ],
   "done_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata_api",
     "wikipedia",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata_api",
-  "next_source_without_cooldown": "wikidata_api",
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -64,15 +71,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-07T02:45:58Z",
+      "occurred_at": "2026-06-08T02:49:30Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-07T02:55:58Z",
+      "cooldown_until": "2026-06-08T02:59:30Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 1,
-    "remaining": 4
+    "done": 2,
+    "remaining": 3
   }
 }

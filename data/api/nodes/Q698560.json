@@ -4,17 +4,46 @@
   "node": {
     "id": "Q698560",
     "title": "阿普 272",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "NGC 6050",
+        "data_source": "nodes/Q1080238.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1080238",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q1080238",
+        "quality_score": 67,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "IC 1179",
+        "data_source": "nodes/Q12904032.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q12904032",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q12904032",
+        "quality_score": 67,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "fetch_strategy_version": 2,
-    "updated_at": "2026-05-08T02:14:38Z",
+    "updated_at": "2026-06-08T02:49:31Z",
     "is_leaf": false,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "missing_relation"
+      "missing_relation",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
@@ -22,7 +51,13 @@
       "wikidata": "2026-05-08T02:14:38Z"
     },
     "source_checked": {
-      "wikidata": "2026-05-08T02:14:38Z"
-    }
+      "wikidata": "2026-05-08T02:14:38Z",
+      "wikidata_api": "2026-06-08T02:49:31Z"
+    },
+    "last_checked_at": "2026-06-08T02:49:31Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ]
   }
 }

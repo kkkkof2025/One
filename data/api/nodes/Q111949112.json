@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q111949112.json",
+  "node": {
+    "id": "Q111949112",
+    "title": "雄竞",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q111949112",
+    "quality_score": 97,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:subclass"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
