@@ -9,12 +9,13 @@
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q190334",
-    "quality_score": 97,
+    "quality_score": 89,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "duplicate_id:2"
     ],
     "quality_version": 3,
     "review_status": "approved"
