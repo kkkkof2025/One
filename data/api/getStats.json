@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T02:27:01Z",
+  "generated_at": "2026-06-10T02:40:08Z",
   "total_nodes": 301,
   "last_added_nodes": 0,
   "last_request_count": 5,
@@ -11,9 +11,8 @@
   "last_source_request_counts": {
     "conceptnet": 1,
     "wikidata": 1,
-    "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikipedia": 2,
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
@@ -23,14 +22,10 @@
       "rate_limited_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
-    },
-    "dbpedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     }
@@ -39,22 +34,22 @@
     "candidate_count": 298,
     "source_progress_counts": {
       "4": 8,
-      "3": 16,
-      "2": 2,
-      "1": 90,
+      "3": 18,
+      "2": 1,
+      "1": 89,
       "0": 182
     },
     "next_source_counts": {
-      "conceptnet": 23,
+      "conceptnet": 24,
       "wikidata": 2,
       "wikipedia": 49,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "available_next_source_counts": {
-      "conceptnet": 23,
+      "conceptnet": 24,
       "wikidata": 2,
       "wikipedia": 49,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +72,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q170430",
-        "title": "捕食",
+        "scan_key": "id:Q10253316",
+        "title": "寄生物",
         "next_source": "wikidata",
         "source_progress": 3,
-        "priority": 117.0,
+        "priority": 119.0,
         "depth": 5
-      },
-      {
-        "scan_key": "id:Q698560",
-        "title": "阿普 272",
-        "next_source": "wikipedia",
-        "source_progress": 2,
-        "priority": 81.0,
-        "depth": 6
       },
       {
         "scan_key": "id:Q1194932",
         "title": "马菲1",
+        "next_source": "wikipedia",
+        "source_progress": 2,
+        "priority": 75.0,
+        "depth": 7
+      },
+      {
+        "scan_key": "id:Q13983",
+        "title": "黑眼星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 75.0,
@@ -130,24 +125,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q170430",
-          "title": "捕食",
+          "scan_key": "id:Q10253316",
+          "title": "寄生物",
           "next_source": "wikidata",
           "source_progress": 3,
-          "priority": 117.0,
+          "priority": 119.0,
           "depth": 5
-        },
-        {
-          "scan_key": "id:Q698560",
-          "title": "阿普 272",
-          "next_source": "wikipedia",
-          "source_progress": 2,
-          "priority": 81.0,
-          "depth": 6
         },
         {
           "scan_key": "id:Q1194932",
           "title": "马菲1",
+          "next_source": "wikipedia",
+          "source_progress": 2,
+          "priority": 75.0,
+          "depth": 7
+        },
+        {
+          "scan_key": "id:Q13983",
+          "title": "黑眼星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 75.0,
@@ -170,46 +165,46 @@
     "added_nodes": 31,
     "requests": 40,
     "added_per_request": 0.775,
-    "zero_growth_streak": 1,
+    "zero_growth_streak": 2,
     "last_productive_run_at": "2026-06-08T02:50:35Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 10,
-      "wikipedia": 10,
+      "wikipedia": 11,
       "wikidata_api": 8,
-      "dbpedia": 4
+      "dbpedia": 3
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 7,
         "children_returned_requests": 3,
         "productive_requests": 3,
-        "added_nodes": 15
+        "added_nodes": 15,
+        "rate_limited_requests": 7
       },
       "wikipedia": {
-        "no_children_requests": 10,
-        "unchanged_requests": 10
+        "no_children_requests": 11,
+        "unchanged_requests": 11
       },
       "wikidata_api": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
         "children_returned_requests": 3,
         "productive_requests": 3,
-        "added_nodes": 16
+        "added_nodes": 16,
+        "no_children_requests": 5,
+        "unchanged_requests": 5
       },
       "dbpedia": {
-        "no_children_requests": 4,
-        "unchanged_requests": 4
+        "no_children_requests": 3,
+        "unchanged_requests": 3
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 50,
+  "history_entries": 51,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

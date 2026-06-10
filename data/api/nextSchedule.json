@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-09T02:27:01Z",
+  "generated_at": "2026-06-10T02:40:08Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q170430",
-      "title": "捕食",
+      "scan_key": "id:Q10253316",
+      "title": "寄生物",
       "next_source": "wikidata",
       "source_progress": 3,
-      "priority": 117.0,
+      "priority": 119.0,
       "depth": 5
-    },
-    {
-      "scan_key": "id:Q698560",
-      "title": "阿普 272",
-      "next_source": "wikipedia",
-      "source_progress": 2,
-      "priority": 81.0,
-      "depth": 6
     },
     {
       "scan_key": "id:Q1194932",
       "title": "马菲1",
+      "next_source": "wikipedia",
+      "source_progress": 2,
+      "priority": 75.0,
+      "depth": 7
+    },
+    {
+      "scan_key": "id:Q13983",
+      "title": "黑眼星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 75.0,
