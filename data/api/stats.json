@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T02:40:08Z",
+  "generated_at": "2026-06-11T02:49:47Z",
   "total_nodes": 301,
   "last_added_nodes": 0,
   "last_request_count": 5,
@@ -34,22 +34,22 @@
     "candidate_count": 298,
     "source_progress_counts": {
       "4": 8,
-      "3": 18,
-      "2": 1,
-      "1": 89,
+      "3": 19,
+      "2": 2,
+      "1": 87,
       "0": 182
     },
     "next_source_counts": {
-      "conceptnet": 24,
-      "wikidata": 2,
-      "wikipedia": 49,
-      "wikidata_api": 223
+      "conceptnet": 25,
+      "wikidata": 3,
+      "wikipedia": 48,
+      "wikidata_api": 222
     },
     "available_next_source_counts": {
-      "conceptnet": 24,
-      "wikidata": 2,
-      "wikipedia": 49,
-      "wikidata_api": 223
+      "conceptnet": 25,
+      "wikidata": 3,
+      "wikipedia": 48,
+      "wikidata_api": 222
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -80,16 +80,16 @@
         "depth": 5
       },
       {
-        "scan_key": "id:Q1194932",
-        "title": "马菲1",
+        "scan_key": "id:Q13983",
+        "title": "黑眼星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 75.0,
         "depth": 7
       },
       {
-        "scan_key": "id:Q13983",
-        "title": "黑眼星系",
+        "scan_key": "id:Q14030",
+        "title": "南風車星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 75.0,
@@ -133,16 +133,16 @@
           "depth": 5
         },
         {
-          "scan_key": "id:Q1194932",
-          "title": "马菲1",
+          "scan_key": "id:Q13983",
+          "title": "黑眼星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 75.0,
           "depth": 7
         },
         {
-          "scan_key": "id:Q13983",
-          "title": "黑眼星系",
+          "scan_key": "id:Q14030",
+          "title": "南風車星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 75.0,
@@ -162,15 +162,15 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 31,
+    "added_nodes": 20,
     "requests": 40,
-    "added_per_request": 0.775,
-    "zero_growth_streak": 2,
+    "added_per_request": 0.5,
+    "zero_growth_streak": 3,
     "last_productive_run_at": "2026-06-08T02:50:35Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 10,
-      "wikipedia": 11,
+      "wikidata": 9,
+      "wikipedia": 12,
       "wikidata_api": 8,
       "dbpedia": 3
     },
@@ -179,21 +179,21 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 15,
-        "rate_limited_requests": 7
+        "rate_limited_requests": 8,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 5
       },
       "wikipedia": {
-        "no_children_requests": 11,
-        "unchanged_requests": 11
+        "no_children_requests": 12,
+        "unchanged_requests": 12
       },
       "wikidata_api": {
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 16,
-        "no_children_requests": 5,
-        "unchanged_requests": 5
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 15
       },
       "dbpedia": {
         "no_children_requests": 3,
@@ -204,7 +204,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 51,
+  "history_entries": 52,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

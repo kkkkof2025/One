@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-10T02:40:08Z",
+  "generated_at": "2026-06-11T02:49:47Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 5
     },
     {
-      "scan_key": "id:Q1194932",
-      "title": "马菲1",
+      "scan_key": "id:Q13983",
+      "title": "黑眼星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 75.0,
       "depth": 7
     },
     {
-      "scan_key": "id:Q13983",
-      "title": "黑眼星系",
+      "scan_key": "id:Q14030",
+      "title": "南風車星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 75.0,
