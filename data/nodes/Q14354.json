@@ -1,17 +1,33 @@
 {
   "id": "Q14354",
   "title": "梅西爾96",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "SN 1998bu",
+      "data_source": "nodes/Q9327625.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q9327625",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q9327625",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "fetch_strategy_version": 2,
-  "updated_at": "2026-05-07T00:56:52Z",
+  "updated_at": "2026-06-12T02:46:20Z",
   "is_leaf": false,
-  "quality_score": 75,
+  "quality_score": 83,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "missing_relation"
+    "missing_relation",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
@@ -19,6 +35,12 @@
     "wikidata": "2026-05-07T00:56:52Z"
   },
   "source_checked": {
-    "wikidata": "2026-05-07T00:56:52Z"
-  }
+    "wikidata": "2026-05-07T00:56:52Z",
+    "wikidata_api": "2026-06-12T02:46:20Z"
+  },
+  "last_checked_at": "2026-06-12T02:46:20Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }

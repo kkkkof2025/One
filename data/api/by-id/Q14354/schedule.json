@@ -1,23 +1,29 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-06-11T02:49:47Z",
+  "generated_at": "2026-06-12T02:46:25Z",
   "id": "Q14354",
   "source": "nodes/Q14354.json",
   "node": {
     "title": "梅西爾96",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q14354",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 75,
+    "quality_score": 83,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-07T00:56:52Z",
+    "updated_at": "2026-06-12T02:46:20Z",
+    "last_checked_at": "2026-06-12T02:46:20Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
     "source_no_children": {
       "wikidata": "2026-05-07T00:56:52Z"
     },
     "source_checked": {
-      "wikidata": "2026-05-07T00:56:52Z"
+      "wikidata": "2026-05-07T00:56:52Z",
+      "wikidata_api": "2026-06-12T02:46:20Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -36,23 +42,24 @@
     "dbpedia"
   ],
   "checked_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "no_children_sources": [
     "wikidata"
   ],
   "done_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata_api",
     "wikipedia",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata_api",
-  "next_source_without_cooldown": "wikidata_api",
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -64,15 +71,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-11T02:49:42Z",
+      "occurred_at": "2026-06-12T02:46:20Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-11T02:59:42Z",
+      "cooldown_until": "2026-06-12T02:56:20Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 1,
-    "remaining": 4
+    "done": 2,
+    "remaining": 3
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-11T02:49:47Z",
-  "total_nodes": 301,
-  "last_added_nodes": 0,
+  "generated_at": "2026-06-12T02:46:25Z",
+  "total_nodes": 302,
+  "last_added_nodes": 1,
   "last_request_count": 5,
   "last_scanned_nodes": 312,
   "last_candidate_nodes": 298,
-  "last_unchanged_requests": 3,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -26,30 +26,31 @@
       "unchanged_requests": 2
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 298,
     "source_progress_counts": {
       "4": 8,
-      "3": 19,
-      "2": 2,
-      "1": 87,
+      "3": 20,
+      "2": 3,
+      "1": 85,
       "0": 182
     },
     "next_source_counts": {
-      "conceptnet": 25,
-      "wikidata": 3,
-      "wikipedia": 48,
-      "wikidata_api": 222
+      "conceptnet": 26,
+      "wikidata": 4,
+      "wikipedia": 47,
+      "wikidata_api": 221
     },
     "available_next_source_counts": {
-      "conceptnet": 25,
-      "wikidata": 3,
-      "wikipedia": 48,
-      "wikidata_api": 222
+      "conceptnet": 26,
+      "wikidata": 4,
+      "wikipedia": 47,
+      "wikidata_api": 221
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -80,16 +81,16 @@
         "depth": 5
       },
       {
-        "scan_key": "id:Q13983",
-        "title": "黑眼星系",
+        "scan_key": "id:Q14030",
+        "title": "南風車星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 75.0,
         "depth": 7
       },
       {
-        "scan_key": "id:Q14030",
-        "title": "南風車星系",
+        "scan_key": "id:Q14354",
+        "title": "梅西爾96",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 75.0,
@@ -133,16 +134,16 @@
           "depth": 5
         },
         {
-          "scan_key": "id:Q13983",
-          "title": "黑眼星系",
+          "scan_key": "id:Q14030",
+          "title": "南風車星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 75.0,
           "depth": 7
         },
         {
-          "scan_key": "id:Q14030",
-          "title": "南風車星系",
+          "scan_key": "id:Q14354",
+          "title": "梅西爾96",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 75.0,
@@ -162,11 +163,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 20,
+    "added_nodes": 21,
     "requests": 40,
-    "added_per_request": 0.5,
-    "zero_growth_streak": 3,
-    "last_productive_run_at": "2026-06-08T02:50:35Z",
+    "added_per_request": 0.525,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-06-12T02:46:25Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 9,
@@ -189,11 +190,11 @@
         "unchanged_requests": 12
       },
       "wikidata_api": {
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 15
+        "no_children_requests": 5,
+        "unchanged_requests": 5,
+        "children_returned_requests": 3,
+        "productive_requests": 3,
+        "added_nodes": 16
       },
       "dbpedia": {
         "no_children_requests": 3,
@@ -204,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 52,
+  "history_entries": 53,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

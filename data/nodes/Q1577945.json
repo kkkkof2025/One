@@ -54,19 +54,25 @@
     {
       "title": "梅西爾96",
       "data_source": "nodes/Q14354.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q14354",
       "fetch_strategy_version": 2,
-      "quality_score": 75,
+      "quality_score": 83,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:52Z",
+      "updated_at": "2026-06-12T02:46:20Z",
+      "last_checked_at": "2026-06-12T02:46:20Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
       "source_no_children": {
         "wikidata": "2026-05-07T00:56:52Z"
       },
       "source_checked": {
-        "wikidata": "2026-05-07T00:56:52Z"
+        "wikidata": "2026-05-07T00:56:52Z",
+        "wikidata_api": "2026-06-12T02:46:20Z"
       }
     }
   ],
