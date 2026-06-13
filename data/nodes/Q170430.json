@@ -67,6 +67,58 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "内部捕食",
+      "data_source": "nodes/Q3408844.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3408844",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q3408844",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "同类相食",
+      "data_source": "nodes/Q44595.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q44595",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q44595",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "絞纏",
+      "data_source": "nodes/Q495626.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q495626",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q495626",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "過捕",
+      "data_source": "nodes/Q7646545.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7646545",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7646545",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata_api",
@@ -84,16 +136,17 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-06-05T02:39:52Z",
-  "last_checked_at": "2026-06-05T02:39:52Z",
-  "last_fetch_source": "dbpedia",
+  "updated_at": "2026-06-13T02:40:00Z",
+  "last_checked_at": "2026-06-13T02:40:00Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "dbpedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-05-23T14:51:32Z",
     "wikipedia": "2026-05-27T02:40:55Z",
-    "dbpedia": "2026-06-05T02:39:52Z"
+    "dbpedia": "2026-06-05T02:39:52Z",
+    "wikidata": "2026-06-13T02:40:00Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-05-23T14:51:32Z",

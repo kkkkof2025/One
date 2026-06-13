@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q15837337.json",
+  "node": {
+    "title": "Oculotrema hippopotami",
+    "children_count": 0,
+    "id": "Q15837337",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q15837337",
+    "children_status": "pending",
+    "quality_score": 55,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

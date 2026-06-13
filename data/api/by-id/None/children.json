@@ -1,0 +1,16 @@
+{
+  "endpoint": "children",
+  "source": "nodes/L1370170-S1.json",
+  "node": {
+    "title": "L1370170-S1",
+    "children_count": 0,
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "children_status": "pending",
+    "quality_score": 23,
+    "quality_version": 3,
+    "review_status": "needs_review"
+  },
+  "children": [],
+  "child_count": 0
+}

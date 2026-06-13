@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-12T02:46:25Z",
+  "generated_at": "2026-06-13T02:40:00Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 5
     },
     {
-      "scan_key": "id:Q14030",
-      "title": "南風車星系",
+      "scan_key": "id:Q14354",
+      "title": "梅西爾96",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 75.0,
       "depth": 7
     },
     {
-      "scan_key": "id:Q14354",
-      "title": "梅西爾96",
+      "scan_key": "id:Q2548238",
+      "title": "马菲2",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 75.0,

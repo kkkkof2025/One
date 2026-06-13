@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q13365584.json",
+  "node": {
+    "title": "改变行为的寄生虫",
+    "children_count": 0,
+    "id": "Q13365584",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q13365584",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

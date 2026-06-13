@@ -33,20 +33,20 @@
     {
       "title": "寄生物",
       "data_source": "nodes/Q10253316.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q10253316",
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q10253316",
-      "quality_score": 93,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-06-09T02:27:01Z",
-      "last_checked_at": "2026-06-09T02:27:01Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-06-13T02:38:55Z",
+      "last_checked_at": "2026-06-13T02:38:55Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-05-23T14:52:44Z",
@@ -56,7 +56,8 @@
       "source_checked": {
         "wikidata_api": "2026-05-23T14:52:44Z",
         "wikipedia": "2026-06-07T02:46:04Z",
-        "dbpedia": "2026-06-09T02:27:01Z"
+        "dbpedia": "2026-06-09T02:27:01Z",
+        "wikidata": "2026-06-13T02:38:55Z"
       }
     },
     {

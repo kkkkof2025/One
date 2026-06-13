@@ -1,0 +1,18 @@
+{
+  "id": "Q5026968",
+  "title": "蛇颈科",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "instance",
+  "source_url": "https://www.wikidata.org/wiki/Q5026968",
+  "quality_score": 81,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "relation:instance"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

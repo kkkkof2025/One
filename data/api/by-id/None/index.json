@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "None",
+  "source": "nodes/L1370170-S1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/L1370170-S1.json",
+  "legacy_children": "../../children/nodes/L1370170-S1.json"
+}

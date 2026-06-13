@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q6839801.json",
+  "node": {
+    "id": "Q6839801",
+    "title": "微寄生物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q6839801",
+    "quality_score": 97,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:subclass"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

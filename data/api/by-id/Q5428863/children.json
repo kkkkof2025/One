@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q5428863.json",
+  "node": {
+    "title": "兼性寄生物",
+    "children_count": 0,
+    "id": "Q5428863",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q5428863",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
