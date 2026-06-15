@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T02:50:30Z",
-  "total_nodes": 322,
-  "last_added_nodes": 0,
+  "generated_at": "2026-06-15T02:56:16Z",
+  "total_nodes": 325,
+  "last_added_nodes": 3,
   "last_request_count": 5,
   "last_scanned_nodes": 333,
   "last_candidate_nodes": 318,
@@ -10,16 +10,18 @@
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 3,
       "rate_limited_requests": 1
     },
     "wikipedia": {
@@ -29,9 +31,6 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "transient_error_requests": 1
     }
   },
   "last_candidate_source_summary": {
@@ -39,21 +38,21 @@
     "source_progress_counts": {
       "4": 10,
       "2": 4,
-      "1": 82,
+      "1": 81,
       "0": 202,
-      "3": 20
+      "3": 21
     },
     "next_source_counts": {
-      "conceptnet": 30,
+      "conceptnet": 31,
       "wikidata": 3,
       "wikipedia": 46,
-      "wikidata_api": 239
+      "wikidata_api": 238
     },
     "available_next_source_counts": {
-      "conceptnet": 30,
+      "conceptnet": 31,
       "wikidata": 3,
       "wikipedia": 46,
-      "wikidata_api": 239
+      "wikidata_api": 238
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -84,16 +83,16 @@
         "depth": 5
       },
       {
-        "scan_key": "id:Q2548238",
-        "title": "马菲2",
+        "scan_key": "id:Q2882135",
+        "title": "M109星系群",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 75.0,
         "depth": 7
       },
       {
-        "scan_key": "id:Q2882135",
-        "title": "M109星系群",
+        "scan_key": "id:Q3041912",
+        "title": "德文格洛2",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 75.0,
@@ -137,16 +136,16 @@
           "depth": 5
         },
         {
-          "scan_key": "id:Q2548238",
-          "title": "马菲2",
+          "scan_key": "id:Q2882135",
+          "title": "M109星系群",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 75.0,
           "depth": 7
         },
         {
-          "scan_key": "id:Q2882135",
-          "title": "M109星系群",
+          "scan_key": "id:Q3041912",
+          "title": "德文格洛2",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 75.0,
@@ -166,15 +165,15 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 41,
+    "added_nodes": 31,
     "requests": 40,
-    "added_per_request": 1.025,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-06-13T02:40:00Z",
+    "added_per_request": 0.775,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-06-15T02:56:16Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 10,
-      "wikipedia": 12,
+      "wikidata": 11,
+      "wikipedia": 11,
       "wikidata_api": 8,
       "dbpedia": 2
     },
@@ -183,21 +182,21 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 7,
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 25
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 28,
+        "rate_limited_requests": 7
       },
       "wikipedia": {
-        "no_children_requests": 12,
-        "unchanged_requests": 12
+        "no_children_requests": 11,
+        "unchanged_requests": 11
       },
       "wikidata_api": {
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 16,
-        "no_children_requests": 5,
-        "unchanged_requests": 5
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 3,
+        "no_children_requests": 6,
+        "unchanged_requests": 6
       },
       "dbpedia": {
         "no_children_requests": 1,
@@ -209,7 +208,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 55,
+  "history_entries": 56,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

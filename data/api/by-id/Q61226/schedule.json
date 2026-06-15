@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-06-14T02:50:30Z",
+  "generated_at": "2026-06-15T02:56:16Z",
   "id": "Q61226",
   "source": "nodes/Q61226.json",
   "node": {
@@ -62,31 +62,23 @@
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "",
+  "next_source": "dbpedia",
   "next_source_without_cooldown": "conceptnet",
-  "can_fetch": false,
+  "can_fetch": true,
   "eligible": true,
   "exhausted": false,
   "terminal": false,
   "source_exhausted": false,
-  "blocked_by_cooldown": true,
-  "block_reason": "source_cooldown",
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-14T02:50:30Z",
+      "occurred_at": "2026-06-15T02:55:10Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-14T03:00:30Z",
+      "cooldown_until": "2026-06-15T03:05:10Z",
       "last_error": "HTTP Error 502: Bad Gateway"
-    },
-    "dbpedia": {
-      "source": "dbpedia",
-      "reason": "transient_error",
-      "occurred_at": "2026-06-14T02:50:30Z",
-      "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-14T03:00:30Z",
-      "last_error": "HTTP Error 503: Service Unavailable"
     }
   },
   "progress": {
