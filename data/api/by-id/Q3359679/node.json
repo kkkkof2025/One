@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q3359679.json",
+  "node": {
+    "id": "Q3359679",
+    "title": "植物根围促生细菌",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q3359679",
+    "quality_score": 97,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:subclass"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

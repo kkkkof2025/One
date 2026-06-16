@@ -4,29 +4,98 @@
   "node": {
     "id": "Q2374421",
     "title": "共生物",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "楚尔人",
+        "data_source": "nodes/Q1081027.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1081027",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q1081027",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "金合欢属植物与蚂蚁的共生",
+        "data_source": "nodes/Q15885761.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q15885761",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q15885761",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "內共生菌",
+        "data_source": "nodes/Q4531856.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4531856",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4531856",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "植物根围促生细菌",
+        "data_source": "nodes/Q3359679.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3359679",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q3359679",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "清潔魚",
+        "data_source": "nodes/Q1727953.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1727953",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1727953",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata_api",
     "source_relation": "has_part",
     "source_url": "https://www.wikidata.org/wiki/Q2374421",
-    "quality_score": 93,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:has_part"
+      "relation:has_part",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-06-11T02:49:47Z",
-    "last_checked_at": "2026-06-11T02:49:47Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-06-16T02:58:51Z",
+    "last_checked_at": "2026-06-16T02:58:51Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-05-23T14:52:48Z",
-      "wikipedia": "2026-06-11T02:49:47Z"
+      "wikipedia": "2026-06-11T02:49:47Z",
+      "wikidata": "2026-06-16T02:58:51Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-05-23T14:52:48Z",

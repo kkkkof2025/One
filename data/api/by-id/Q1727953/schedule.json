@@ -1,0 +1,68 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-06-16T02:59:56Z",
+  "id": "Q1727953",
+  "source": "nodes/Q1727953.json",
+  "node": {
+    "title": "清潔魚",
+    "children_count": 0,
+    "id": "Q1727953",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q1727953",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikidata_api",
+  "next_source_without_cooldown": "wikidata_api",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-06-16T02:58:51Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-06-16T03:08:51Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 5,
+    "done": 0,
+    "remaining": 5
+  }
+}
