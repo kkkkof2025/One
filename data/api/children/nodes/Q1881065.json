@@ -15,20 +15,26 @@
   "children": [
     {
       "title": "半人馬座A",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q487255",
       "data_source": "nodes/Q487255.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 75,
+      "quality_score": 83,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-05-07T00:56:56Z",
+      "updated_at": "2026-06-17T02:53:13Z",
+      "last_checked_at": "2026-06-17T02:53:13Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
       "source_no_children": {
         "wikidata": "2026-05-07T00:56:56Z"
       },
       "source_checked": {
-        "wikidata": "2026-05-07T00:56:56Z"
+        "wikidata": "2026-05-07T00:56:56Z",
+        "wikidata_api": "2026-06-17T02:53:13Z"
       }
     },
     {

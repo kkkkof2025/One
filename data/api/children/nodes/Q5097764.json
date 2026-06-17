@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q5097764.json",
+  "node": {
+    "title": "SN 1986G",
+    "children_count": 0,
+    "id": "Q5097764",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q5097764",
+    "children_status": "pending",
+    "quality_score": 67,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

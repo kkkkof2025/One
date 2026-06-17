@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-16T02:59:57Z",
+  "generated_at": "2026-06-17T02:53:13Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 123,
+  "total_candidates": 124,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 123,
+  "total_items": 124,
   "reason_distribution": {
-    "total_items": 123,
+    "total_items": 124,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 69,
+        "count": 70,
         "sample_review_keys": [
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
@@ -75,11 +75,11 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 122
+        "count": 123
       },
       {
         "reason": "good_title_length",
-        "count": 121
+        "count": 122
       },
       {
         "reason": "missing_relation",
@@ -87,7 +87,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 69
+        "count": 70
       },
       {
         "reason": "zh_label",
@@ -99,7 +99,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 21
+        "count": 22
       },
       {
         "reason": "has_children",
@@ -142,7 +142,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 67
+        "count": 68
       },
       {
         "status": "error",
@@ -2512,6 +2512,29 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "SN 1986G",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q5097764",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q5097764",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 半人馬座 A/M83星系團 / 半人馬座A / SN 1986G",
+      "location": "nodes/Q5097764.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q5097764",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "ESO 302-09",
       "children_status": "pending",
       "quality_score": 67,
@@ -2871,7 +2894,7 @@
       "source_provider": "wikidata_api",
       "source_relation": "has_part",
       "source_url": "https://www.wikidata.org/wiki/Q22299142",
-      "updated_at": "2026-05-25T02:41:46Z",
+      "updated_at": "2026-06-17T02:53:12Z",
       "path": "万物 / 生命 / 生物過程 / biological phase",
       "location": "nodes/Q22299142.json",
       "priority": 43.0,
