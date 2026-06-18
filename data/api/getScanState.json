@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-17T02:53:13Z",
+  "updated_at": "2026-06-18T02:48:23Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
   "last_scan_key": "id:Q487255",
   "last_scan_title": "半人馬座A",
-  "candidate_count": 326,
+  "candidate_count": 327,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -25,12 +25,18 @@
   ],
   "source_request_counts": {
     "conceptnet": 1,
+    "wikidata": 1,
     "wikipedia": 2,
-    "wikidata_api": 2
+    "wikidata_api": 1
   },
   "source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
+    },
+    "wikidata": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 3
     },
     "wikipedia": {
       "no_children_requests": 2,
@@ -38,40 +44,39 @@
     },
     "wikidata_api": {
       "no_children_requests": 1,
-      "unchanged_requests": 1,
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 1
+      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-17T02:53:07Z",
+      "occurred_at": "2026-06-18T02:48:18Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-17T03:03:07Z",
+      "cooldown_until": "2026-06-18T02:58:18Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 326,
+    "candidate_count": 327,
     "source_progress_counts": {
       "4": 10,
-      "2": 1,
-      "1": 79,
-      "0": 210,
-      "3": 26
+      "2": 3,
+      "1": 76,
+      "0": 211,
+      "3": 27
     },
     "next_source_counts": {
-      "conceptnet": 36,
+      "conceptnet": 37,
+      "wikidata": 1,
       "wikipedia": 46,
-      "wikidata_api": 244
+      "wikidata_api": 243
     },
     "available_next_source_counts": {
-      "conceptnet": 36,
+      "conceptnet": 37,
+      "wikidata": 1,
       "wikipedia": 46,
-      "wikidata_api": 244
+      "wikidata_api": 243
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -80,7 +85,8 @@
     "selection_limit": 5,
     "scheduled_source_counts": {
       "conceptnet": 2,
-      "wikipedia": 2,
+      "wikidata": 1,
+      "wikipedia": 1,
       "wikidata_api": 1
     },
     "scheduled_candidates": [
@@ -93,16 +99,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q3041916",
-        "title": "德文格洛1",
+        "scan_key": "id:Q22299142",
+        "title": "biological phase",
+        "next_source": "wikidata",
+        "source_progress": 2,
+        "priority": 101.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q487221",
+        "title": "玉夫座星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 75.0,
         "depth": 7
       },
       {
-        "scan_key": "id:Q487221",
-        "title": "玉夫座星系",
+        "scan_key": "id:Q81102410",
+        "title": "波德星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 75.0,
@@ -115,14 +129,6 @@
         "source_progress": 4,
         "priority": 130.0,
         "depth": 2
-      },
-      {
-        "scan_key": "id:Q22299142",
-        "title": "biological phase",
-        "next_source": "wikipedia",
-        "source_progress": 1,
-        "priority": 101.0,
-        "depth": 3
       }
     ],
     "next_run_preview": {
@@ -132,7 +138,8 @@
       "selection_limit": 5,
       "scheduled_source_counts": {
         "conceptnet": 2,
-        "wikipedia": 2,
+        "wikidata": 1,
+        "wikipedia": 1,
         "wikidata_api": 1
       },
       "scheduled_candidates": [
@@ -145,16 +152,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q3041916",
-          "title": "德文格洛1",
+          "scan_key": "id:Q22299142",
+          "title": "biological phase",
+          "next_source": "wikidata",
+          "source_progress": 2,
+          "priority": 101.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q487221",
+          "title": "玉夫座星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 75.0,
           "depth": 7
         },
         {
-          "scan_key": "id:Q487221",
-          "title": "玉夫座星系",
+          "scan_key": "id:Q81102410",
+          "title": "波德星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 75.0,
@@ -167,14 +182,6 @@
           "source_progress": 4,
           "priority": 130.0,
           "depth": 2
-        },
-        {
-          "scan_key": "id:Q22299142",
-          "title": "biological phase",
-          "next_source": "wikipedia",
-          "source_progress": 1,
-          "priority": 101.0,
-          "depth": 3
         }
       ]
     }

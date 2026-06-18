@@ -1,29 +1,72 @@
 {
   "id": "Q22299142",
   "title": "biological phase",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "囊蚴",
+      "data_source": "nodes/Q3267017.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3267017",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3267017",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "发育阶段",
+      "data_source": "nodes/Q48834911.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q48834911",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q48834911",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生活阶段",
+      "data_source": "nodes/Q1811014.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1811014",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1811014",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata_api",
   "source_relation": "has_part",
   "source_url": "https://www.wikidata.org/wiki/Q22299142",
-  "quality_score": 67,
+  "quality_score": 79,
   "quality_reasons": [
     "qid",
     "non_zh_label",
     "good_title_length",
-    "relation:has_part"
+    "relation:has_part",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-06-17T02:53:12Z",
-  "last_checked_at": "2026-06-17T02:53:12Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-06-18T02:48:18Z",
+  "last_checked_at": "2026-06-18T02:48:18Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-05-25T02:41:46Z",
-    "wikipedia": "2026-06-17T02:53:12Z"
+    "wikipedia": "2026-06-17T02:53:12Z",
+    "wikidata": "2026-06-18T02:48:18Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-05-25T02:41:46Z",

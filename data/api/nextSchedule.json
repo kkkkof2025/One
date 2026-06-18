@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-17T02:53:13Z",
+  "generated_at": "2026-06-18T02:48:23Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,7 +8,8 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 2,
+    "wikidata": 1,
+    "wikipedia": 1,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -21,16 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q3041916",
-      "title": "德文格洛1",
+      "scan_key": "id:Q22299142",
+      "title": "biological phase",
+      "next_source": "wikidata",
+      "source_progress": 2,
+      "priority": 101.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q487221",
+      "title": "玉夫座星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 75.0,
       "depth": 7
     },
     {
-      "scan_key": "id:Q487221",
-      "title": "玉夫座星系",
+      "scan_key": "id:Q81102410",
+      "title": "波德星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 75.0,
@@ -43,14 +52,6 @@
       "source_progress": 4,
       "priority": 130.0,
       "depth": 2
-    },
-    {
-      "scan_key": "id:Q22299142",
-      "title": "biological phase",
-      "next_source": "wikipedia",
-      "source_progress": 1,
-      "priority": 101.0,
-      "depth": 3
     }
   ]
 }
