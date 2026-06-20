@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-19T03:33:29Z",
+  "generated_at": "2026-06-20T02:37:49Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,7 +8,8 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 2,
+    "wikidata": 1,
+    "wikipedia": 1,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -21,16 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q81102410",
-      "title": "波德星系",
-      "next_source": "wikipedia",
+      "scan_key": "id:Q2945326",
+      "title": "超大類星體群",
+      "next_source": "wikidata",
       "source_progress": 2,
-      "priority": 75.0,
-      "depth": 7
+      "priority": 96.0,
+      "depth": 3
     },
     {
       "scan_key": "id:Q1149676",
       "title": "人馬座矮不規則星系",
+      "next_source": "wikipedia",
+      "source_progress": 2,
+      "priority": 71.0,
+      "depth": 8
+    },
+    {
+      "scan_key": "id:Q1194660",
+      "title": "寶瓶座矮星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
@@ -43,14 +52,6 @@
       "source_progress": 4,
       "priority": 130.0,
       "depth": 2
-    },
-    {
-      "scan_key": "id:Q2945326",
-      "title": "超大類星體群",
-      "next_source": "wikipedia",
-      "source_progress": 1,
-      "priority": 96.0,
-      "depth": 3
     }
   ]
 }
