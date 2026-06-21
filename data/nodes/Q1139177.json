@@ -33,7 +33,7 @@
       "updated_at": "2026-05-08T02:14:25Z"
     }
   ],
-  "updated_at": "2026-05-25T02:41:56Z",
+  "updated_at": "2026-06-21T02:54:06Z",
   "fetch_strategy_version": 4,
   "is_leaf": false,
   "quality_score": 85,
@@ -47,12 +47,16 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "last_checked_at": "2026-05-25T02:41:56Z",
-  "last_fetch_source": "wikidata_api",
+  "last_checked_at": "2026-06-21T02:54:06Z",
+  "last_fetch_source": "wikipedia",
   "last_fetch_sources": [
-    "wikidata_api"
+    "wikipedia"
   ],
   "source_checked": {
-    "wikidata_api": "2026-05-25T02:41:56Z"
+    "wikidata_api": "2026-05-25T02:41:56Z",
+    "wikipedia": "2026-06-21T02:54:06Z"
+  },
+  "source_no_children": {
+    "wikipedia": "2026-06-21T02:54:06Z"
   }
 }

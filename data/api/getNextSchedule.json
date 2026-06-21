@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-20T02:37:49Z",
+  "generated_at": "2026-06-21T02:54:06Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1149676",
-      "title": "人馬座矮不規則星系",
+      "scan_key": "id:Q1194660",
+      "title": "寶瓶座矮星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:Q1194660",
-      "title": "寶瓶座矮星系",
+      "scan_key": "id:Q1282228",
+      "title": "六分儀座A",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
