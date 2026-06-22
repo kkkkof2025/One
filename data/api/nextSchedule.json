@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-21T02:54:06Z",
+  "generated_at": "2026-06-22T02:56:41Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2945326",
-      "title": "超大類星體群",
+      "scan_key": "id:Q1139177",
+      "title": "天體物理學中心2長城",
       "next_source": "wikidata",
       "source_progress": 2,
-      "priority": 96.0,
+      "priority": 93.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1194660",
-      "title": "寶瓶座矮星系",
+      "scan_key": "id:Q1282228",
+      "title": "六分儀座A",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:Q1282228",
-      "title": "六分儀座A",
+      "scan_key": "id:Q14702236",
+      "title": "雙眼星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
