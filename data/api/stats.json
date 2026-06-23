@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T02:56:41Z",
+  "generated_at": "2026-06-23T02:31:58Z",
   "total_nodes": 334,
   "last_added_nodes": 0,
   "last_request_count": 5,
@@ -11,8 +11,9 @@
   "last_source_request_counts": {
     "conceptnet": 1,
     "wikidata": 1,
-    "wikipedia": 2,
-    "wikidata_api": 1
+    "wikipedia": 1,
+    "wikidata_api": 1,
+    "dbpedia": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
@@ -22,10 +23,14 @@
       "rate_limited_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
+    },
+    "dbpedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     }
@@ -34,22 +39,22 @@
     "candidate_count": 330,
     "source_progress_counts": {
       "4": 10,
-      "2": 2,
-      "1": 69,
+      "2": 3,
+      "1": 67,
       "0": 214,
-      "3": 35
+      "3": 36
     },
     "next_source_counts": {
-      "conceptnet": 45,
-      "wikidata": 1,
-      "wikipedia": 43,
-      "wikidata_api": 241
+      "conceptnet": 46,
+      "wikidata": 2,
+      "wikipedia": 42,
+      "wikidata_api": 240
     },
     "available_next_source_counts": {
-      "conceptnet": 45,
-      "wikidata": 1,
-      "wikipedia": 43,
-      "wikidata_api": 241
+      "conceptnet": 46,
+      "wikidata": 2,
+      "wikipedia": 42,
+      "wikidata_api": 240
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -80,16 +85,16 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1282228",
-        "title": "六分儀座A",
+        "scan_key": "id:Q14702236",
+        "title": "雙眼星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:Q14702236",
-        "title": "雙眼星系",
+        "scan_key": "id:Q1656479",
+        "title": "仙女座VI",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -133,16 +138,16 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1282228",
-          "title": "六分儀座A",
+          "scan_key": "id:Q14702236",
+          "title": "雙眼星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:Q14702236",
-          "title": "雙眼星系",
+          "scan_key": "id:Q1656479",
+          "title": "仙女座VI",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -162,28 +167,29 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 12,
+    "added_nodes": 9,
     "requests": 40,
-    "added_per_request": 0.3,
-    "zero_growth_streak": 4,
+    "added_per_request": 0.225,
+    "zero_growth_streak": 5,
     "last_productive_run_at": "2026-06-18T02:48:23Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 8,
+      "wikidata": 7,
       "wikipedia": 14,
-      "wikidata_api": 10
+      "wikidata_api": 10,
+      "dbpedia": 1
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 5,
-        "productive_requests": 3,
-        "added_nodes": 11,
-        "rate_limited_requests": 3,
+        "children_returned_requests": 4,
+        "productive_requests": 2,
+        "added_nodes": 8,
         "duplicate_requests": 2,
-        "unchanged_requests": 2
+        "unchanged_requests": 2,
+        "rate_limited_requests": 3
       },
       "wikipedia": {
         "no_children_requests": 14,
@@ -195,13 +201,17 @@
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 1
+      },
+      "dbpedia": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 63,
+  "history_entries": 64,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

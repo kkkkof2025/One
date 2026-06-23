@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-22T02:56:41Z",
+  "generated_at": "2026-06-23T02:31:58Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1282228",
-      "title": "六分儀座A",
+      "scan_key": "id:Q14702236",
+      "title": "雙眼星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:Q14702236",
-      "title": "雙眼星系",
+      "scan_key": "id:Q1656479",
+      "title": "仙女座VI",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
