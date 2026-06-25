@@ -3,7 +3,7 @@
   "title": "匈牙利族小行星",
   "children_status": "pending",
   "children": [],
-  "updated_at": "2026-05-13T02:28:17Z",
+  "updated_at": "2026-06-25T02:34:15Z",
   "fetch_strategy_version": 2,
   "is_leaf": false,
   "quality_score": 75,
@@ -16,9 +16,16 @@
   "quality_version": 3,
   "review_status": "approved",
   "source_no_children": {
-    "wikidata": "2026-05-13T02:28:17Z"
+    "wikidata": "2026-05-13T02:28:17Z",
+    "wikidata_api": "2026-06-25T02:34:15Z"
   },
   "source_checked": {
-    "wikidata": "2026-05-13T02:28:17Z"
-  }
+    "wikidata": "2026-05-13T02:28:17Z",
+    "wikidata_api": "2026-06-25T02:34:15Z"
+  },
+  "last_checked_at": "2026-06-25T02:34:15Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }

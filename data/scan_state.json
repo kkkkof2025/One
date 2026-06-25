@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-24T02:32:47Z",
+  "updated_at": "2026-06-25T02:35:20Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q1139177",
-  "last_scan_title": "天體物理學中心2長城",
+  "last_scan_key": "id:Q17863945",
+  "last_scan_title": "拉尼亚凯亚超星系团",
   "candidate_count": 330,
   "selected_count": 6,
   "request_count": 5,
@@ -20,21 +20,23 @@
   "available_sources": [
     "wikidata_api",
     "wikipedia",
+    "wikidata",
     "dbpedia"
   ],
   "source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "children_returned_requests": 2,
+      "duplicate_requests": 2,
+      "unchanged_requests": 2
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -43,50 +45,38 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-06-24T02:32:44Z",
+      "occurred_at": "2026-06-25T02:34:15Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-06-24T02:42:44Z",
+      "cooldown_until": "2026-06-25T02:44:15Z",
       "last_error": "HTTP Error 502: Bad Gateway"
-    },
-    "wikidata": {
-      "source": "wikidata",
-      "reason": "rate_limited",
-      "occurred_at": "2026-06-24T02:32:44Z",
-      "retry_after_seconds": 1000,
-      "cooldown_until": "2026-06-24T02:49:24Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   },
   "candidate_source_summary": {
     "candidate_count": 330,
     "source_progress_counts": {
       "4": 10,
-      "3": 38,
-      "2": 2,
-      "1": 66,
+      "3": 40,
+      "2": 1,
+      "1": 65,
       "0": 214
     },
     "next_source_counts": {
-      "conceptnet": 47,
+      "conceptnet": 48,
       "wikidata": 2,
       "wikipedia": 42,
-      "wikidata_api": 239
+      "wikidata_api": 238
     },
     "available_next_source_counts": {
-      "conceptnet": 47,
+      "conceptnet": 48,
       "wikidata": 2,
       "wikipedia": 42,
-      "wikidata_api": 239
+      "wikidata_api": 238
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -109,24 +99,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q17863945",
-        "title": "拉尼亚凯亚超星系团",
+        "scan_key": "id:Q1139177",
+        "title": "天體物理學中心2長城",
         "next_source": "wikidata",
         "source_progress": 3,
         "priority": 93.0,
-        "depth": 4
+        "depth": 3
       },
       {
-        "scan_key": "id:Q1656479",
-        "title": "仙女座VI",
+        "scan_key": "id:Q2025704",
+        "title": "仙女座IV",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:Q2025704",
-        "title": "仙女座IV",
+        "scan_key": "id:Q223376",
+        "title": "匈牙利族小行星",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -162,24 +152,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q17863945",
-          "title": "拉尼亚凯亚超星系团",
+          "scan_key": "id:Q1139177",
+          "title": "天體物理學中心2長城",
           "next_source": "wikidata",
           "source_progress": 3,
           "priority": 93.0,
-          "depth": 4
+          "depth": 3
         },
         {
-          "scan_key": "id:Q1656479",
-          "title": "仙女座VI",
+          "scan_key": "id:Q2025704",
+          "title": "仙女座IV",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:Q2025704",
-          "title": "仙女座IV",
+          "scan_key": "id:Q223376",
+          "title": "匈牙利族小行星",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
