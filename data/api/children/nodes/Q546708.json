@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q546708.json",
+  "node": {
+    "title": "S Andromedae",
+    "children_count": 0,
+    "id": "Q546708",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q546708",
+    "children_status": "pending",
+    "quality_score": 67,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-25T02:35:20Z",
+  "generated_at": "2026-06-26T02:36:33Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,7 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikidata": 1,
-    "wikipedia": 1,
+    "wikipedia": 2,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -22,24 +21,16 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1139177",
-      "title": "天體物理學中心2長城",
-      "next_source": "wikidata",
-      "source_progress": 3,
-      "priority": 93.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q2025704",
-      "title": "仙女座IV",
+      "scan_key": "id:Q223376",
+      "title": "匈牙利族小行星",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:Q223376",
-      "title": "匈牙利族小行星",
+      "scan_key": "id:Q2259795",
+      "title": "仙女座VIII",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
@@ -51,6 +42,14 @@
       "next_source": "conceptnet",
       "source_progress": 4,
       "priority": 130.0,
+      "depth": 2
+    },
+    {
+      "scan_key": "id:wikipedia:zh:Category:人工生命",
+      "title": "人工生命",
+      "next_source": "wikipedia",
+      "source_progress": 0,
+      "priority": 105.0,
       "depth": 2
     }
   ]

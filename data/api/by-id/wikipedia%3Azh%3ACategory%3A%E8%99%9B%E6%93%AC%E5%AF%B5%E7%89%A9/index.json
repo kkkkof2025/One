@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:虛擬寵物",
+  "source": "nodes/虛擬寵物-d7cf919997d9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/虛擬寵物-d7cf919997d9.json",
+  "legacy_children": "../../children/nodes/虛擬寵物-d7cf919997d9.json"
+}

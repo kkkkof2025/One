@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/細胞自動機-64b1fbda2e93.json",
+  "node": {
+    "id": "wikipedia:zh:Category:細胞自動機",
+    "title": "細胞自動機",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B4%B0%E8%83%9E%E8%87%AA%E5%8B%95%E6%A9%9F",
+    "source_page_id": 194271,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

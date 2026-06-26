@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/虛擬寵物-d7cf919997d9.json",
+  "node": {
+    "id": "wikipedia:zh:Category:虛擬寵物",
+    "title": "虛擬寵物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%99%9B%E6%93%AC%E5%AF%B5%E7%89%A9",
+    "source_page_id": 315211,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

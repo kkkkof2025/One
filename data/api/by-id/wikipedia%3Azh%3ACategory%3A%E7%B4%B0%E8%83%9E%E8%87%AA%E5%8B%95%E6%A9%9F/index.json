@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:細胞自動機",
+  "source": "nodes/細胞自動機-64b1fbda2e93.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/細胞自動機-64b1fbda2e93.json",
+  "legacy_children": "../../children/nodes/細胞自動機-64b1fbda2e93.json"
+}

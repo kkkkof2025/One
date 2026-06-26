@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-25T02:35:21Z",
+  "generated_at": "2026-06-26T02:36:33Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 124,
+  "total_candidates": 125,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 124,
+  "total_items": 125,
   "reason_distribution": {
-    "total_items": 124,
+    "total_items": 125,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 70,
+        "count": 71,
         "sample_review_keys": [
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
@@ -75,11 +75,11 @@
     "raw_reasons": [
       {
         "reason": "qid",
-        "count": 123
+        "count": 124
       },
       {
         "reason": "good_title_length",
-        "count": 122
+        "count": 123
       },
       {
         "reason": "missing_relation",
@@ -87,7 +87,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 70
+        "count": 71
       },
       {
         "reason": "zh_label",
@@ -99,7 +99,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 22
+        "count": 23
       },
       {
         "reason": "has_children",
@@ -142,7 +142,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 67
+        "count": 68
       },
       {
         "status": "error",
@@ -2830,6 +2830,29 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q15916759",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "S Andromedae",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q546708",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q546708",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 仙女座星系 / S Andromedae",
+      "location": "nodes/Q546708.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q546708",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },
