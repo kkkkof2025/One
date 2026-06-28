@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:靈性",
+  "source": "nodes/靈性-29e6a8e3a88b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/靈性-29e6a8e3a88b.json",
+  "legacy_children": "../../children/nodes/靈性-29e6a8e3a88b.json"
+}

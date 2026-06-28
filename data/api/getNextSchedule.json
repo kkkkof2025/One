@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-27T02:29:45Z",
+  "generated_at": "2026-06-28T02:42:26Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,7 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 1,
-    "wikidata": 1,
+    "wikipedia": 2,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -22,24 +21,16 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2259795",
-      "title": "仙女座VIII",
+      "scan_key": "id:Q2476549",
+      "title": "后髮座矮星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:人工生命",
-      "title": "人工生命",
-      "next_source": "wikidata",
-      "source_progress": 1,
-      "priority": 111.0,
-      "depth": 2
-    },
-    {
-      "scan_key": "id:Q2476549",
-      "title": "后髮座矮星系",
+      "scan_key": "id:Q2704275",
+      "title": "仙女座III",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
@@ -51,6 +42,14 @@
       "next_source": "conceptnet",
       "source_progress": 4,
       "priority": 130.0,
+      "depth": 2
+    },
+    {
+      "scan_key": "id:wikipedia:zh:Category:人生哲学",
+      "title": "人生哲学",
+      "next_source": "wikipedia",
+      "source_progress": 0,
+      "priority": 105.0,
       "depth": 2
     }
   ]

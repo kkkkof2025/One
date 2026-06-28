@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/規範倫理學-a85a7dcd0b1d.json",
+  "node": {
+    "id": "wikipedia:zh:Category:規範倫理學",
+    "title": "規範倫理學",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A6%8F%E7%AF%84%E5%80%AB%E7%90%86%E5%AD%B8",
+    "source_page_id": 6825038,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

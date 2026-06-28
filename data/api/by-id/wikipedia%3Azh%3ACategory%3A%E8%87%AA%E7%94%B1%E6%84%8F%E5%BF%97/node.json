@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/自由意志-e14e89d0bb7b.json",
+  "node": {
+    "id": "wikipedia:zh:Category:自由意志",
+    "title": "自由意志",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%87%AA%E7%94%B1%E6%84%8F%E5%BF%97",
+    "source_page_id": 1244770,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

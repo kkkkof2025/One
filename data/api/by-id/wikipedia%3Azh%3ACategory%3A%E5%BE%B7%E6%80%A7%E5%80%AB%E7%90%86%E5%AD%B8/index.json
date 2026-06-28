@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:德性倫理學",
+  "source": "nodes/德性倫理學-755bc3d26ff0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/德性倫理學-755bc3d26ff0.json",
+  "legacy_children": "../../children/nodes/德性倫理學-755bc3d26ff0.json"
+}

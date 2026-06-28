@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生活型態",
+  "source": "nodes/生活型態-de4f3bbdd22b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生活型態-de4f3bbdd22b.json",
+  "legacy_children": "../../children/nodes/生活型態-de4f3bbdd22b.json"
+}

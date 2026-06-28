@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:利己主義",
+  "source": "nodes/利己主義-aa7ea5085622.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/利己主義-aa7ea5085622.json",
+  "legacy_children": "../../children/nodes/利己主義-aa7ea5085622.json"
+}

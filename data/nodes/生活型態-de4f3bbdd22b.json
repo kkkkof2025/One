@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:生活型態",
+  "title": "生活型態",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E6%B4%BB%E5%9E%8B%E6%85%8B",
+  "source_page_id": 5945971,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

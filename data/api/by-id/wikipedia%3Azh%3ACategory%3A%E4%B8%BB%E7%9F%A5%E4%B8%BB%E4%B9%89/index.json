@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:主知主义",
+  "source": "nodes/主知主义-ba39017dd6d5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/主知主义-ba39017dd6d5.json",
+  "legacy_children": "../../children/nodes/主知主义-ba39017dd6d5.json"
+}

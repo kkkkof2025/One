@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:虚无主义",
+  "source": "nodes/虚无主义-c432e0535b60.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/虚无主义-c432e0535b60.json",
+  "legacy_children": "../../children/nodes/虚无主义-c432e0535b60.json"
+}

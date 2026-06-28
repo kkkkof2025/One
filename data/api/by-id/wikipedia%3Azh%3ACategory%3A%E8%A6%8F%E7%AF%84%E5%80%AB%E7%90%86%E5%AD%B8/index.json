@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:規範倫理學",
+  "source": "nodes/規範倫理學-a85a7dcd0b1d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/規範倫理學-a85a7dcd0b1d.json",
+  "legacy_children": "../../children/nodes/規範倫理學-a85a7dcd0b1d.json"
+}

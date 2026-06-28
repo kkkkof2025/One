@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生活",
+  "source": "nodes/生活-9a3926d78d7b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生活-9a3926d78d7b.json",
+  "legacy_children": "../../children/nodes/生活-9a3926d78d7b.json"
+}

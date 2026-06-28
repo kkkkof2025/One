@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生活质量",
+  "source": "nodes/生活质量-e65419447707.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生活质量-e65419447707.json",
+  "legacy_children": "../../children/nodes/生活质量-e65419447707.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:存在主义",
+  "source": "nodes/存在主义-1685483a4d65.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/存在主义-1685483a4d65.json",
+  "legacy_children": "../../children/nodes/存在主义-1685483a4d65.json"
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/本质论-f507e1634dfc.json",
+  "node": {
+    "title": "本质论",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:本质论",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%AC%E8%B4%A8%E8%AE%BA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

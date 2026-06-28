@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/本质论-f507e1634dfc.json",
+  "node": {
+    "id": "wikipedia:zh:Category:本质论",
+    "title": "本质论",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%AC%E8%B4%A8%E8%AE%BA",
+    "source_page_id": 1704247,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

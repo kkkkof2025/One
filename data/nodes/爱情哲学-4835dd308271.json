@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:爱情哲学",
+  "title": "爱情哲学",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%88%B1%E6%83%85%E5%93%B2%E5%AD%A6",
+  "source_page_id": 7646638,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

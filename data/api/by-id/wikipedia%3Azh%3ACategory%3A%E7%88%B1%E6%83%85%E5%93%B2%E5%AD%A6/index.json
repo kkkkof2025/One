@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:爱情哲学",
+  "source": "nodes/爱情哲学-4835dd308271.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/爱情哲学-4835dd308271.json",
+  "legacy_children": "../../children/nodes/爱情哲学-4835dd308271.json"
+}

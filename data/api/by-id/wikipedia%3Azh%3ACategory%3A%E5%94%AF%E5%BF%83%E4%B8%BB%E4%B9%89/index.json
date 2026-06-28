@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:唯心主义",
+  "source": "nodes/唯心主义-bfce731564ee.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/唯心主义-bfce731564ee.json",
+  "legacy_children": "../../children/nodes/唯心主义-bfce731564ee.json"
+}

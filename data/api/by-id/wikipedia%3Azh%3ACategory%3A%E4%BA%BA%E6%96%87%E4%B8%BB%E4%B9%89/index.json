@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人文主义",
+  "source": "nodes/人文主义-1ca885d6a251.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人文主义-1ca885d6a251.json",
+  "legacy_children": "../../children/nodes/人文主义-1ca885d6a251.json"
+}
