@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q106718306.json",
+  "node": {
+    "id": "Q106718306",
+    "title": "哲学悲观主义",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q106718306",
+    "quality_score": 81,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

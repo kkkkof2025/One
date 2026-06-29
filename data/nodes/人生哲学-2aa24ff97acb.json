@@ -236,6 +236,32 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "哲学悲观主义",
+      "data_source": "nodes/Q106718306.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q106718306",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q106718306",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "环保主义",
+      "data_source": "nodes/Q2855609.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2855609",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q2855609",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -253,14 +279,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-06-28T02:42:26Z",
-  "last_checked_at": "2026-06-28T02:42:26Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-06-29T02:42:49Z",
+  "last_checked_at": "2026-06-29T02:42:49Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-06-28T02:42:26Z"
+    "wikipedia": "2026-06-28T02:42:26Z",
+    "wikidata": "2026-06-29T02:42:49Z"
   },
   "is_leaf": false
 }

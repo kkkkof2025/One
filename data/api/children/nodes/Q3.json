@@ -210,7 +210,7 @@
     },
     {
       "title": "人生哲学",
-      "children_count": 18,
+      "children_count": 20,
       "id": "wikipedia:zh:Category:人生哲学",
       "data_source": "nodes/人生哲学-2aa24ff97acb.json",
       "source_provider": "wikipedia",
@@ -221,14 +221,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-06-28T02:42:26Z",
-      "last_checked_at": "2026-06-28T02:42:26Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-06-29T02:42:49Z",
+      "last_checked_at": "2026-06-29T02:42:49Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-06-28T02:42:26Z"
+        "wikipedia": "2026-06-28T02:42:26Z",
+        "wikidata": "2026-06-29T02:42:49Z"
       }
     },
     {

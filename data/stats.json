@@ -1,52 +1,57 @@
 {
-  "generated_at": "2026-06-28T02:42:26Z",
-  "total_nodes": 358,
-  "last_added_nodes": 18,
+  "generated_at": "2026-06-29T02:42:54Z",
+  "total_nodes": 360,
+  "last_added_nodes": 2,
   "last_request_count": 5,
-  "last_scanned_nodes": 351,
-  "last_candidate_nodes": 336,
+  "last_scanned_nodes": 369,
+  "last_candidate_nodes": 354,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
     "wikipedia": 2,
-    "wikidata_api": 2
+    "wikidata": 1,
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1,
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 18
-    },
-    "wikidata_api": {
       "no_children_requests": 2,
       "unchanged_requests": 2
+    },
+    "wikidata": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 2
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 336,
+    "candidate_count": 354,
     "source_progress_counts": {
       "4": 12,
-      "2": 2,
-      "1": 61,
-      "0": 219,
-      "3": 42
+      "2": 3,
+      "1": 60,
+      "0": 236,
+      "3": 43
     },
     "next_source_counts": {
-      "conceptnet": 55,
-      "wikipedia": 46,
-      "wikidata_api": 235
+      "conceptnet": 56,
+      "wikipedia": 64,
+      "wikidata": 1,
+      "wikidata_api": 233
     },
     "available_next_source_counts": {
-      "conceptnet": 55,
-      "wikipedia": 46,
-      "wikidata_api": 235
+      "conceptnet": 56,
+      "wikipedia": 64,
+      "wikidata": 1,
+      "wikidata_api": 233
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -55,7 +60,8 @@
     "selection_limit": 5,
     "scheduled_source_counts": {
       "conceptnet": 2,
-      "wikipedia": 2,
+      "wikipedia": 1,
+      "wikidata": 1,
       "wikidata_api": 1
     },
     "scheduled_candidates": [
@@ -68,16 +74,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q2476549",
-        "title": "后髮座矮星系",
+        "scan_key": "id:Q2704275",
+        "title": "仙女座III",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:Q2704275",
-        "title": "仙女座III",
+        "scan_key": "id:wikipedia:zh:Category:人生哲学",
+        "title": "人生哲学",
+        "next_source": "wikidata",
+        "source_progress": 1,
+        "priority": 111.0,
+        "depth": 2
+      },
+      {
+        "scan_key": "id:Q2727447",
+        "title": "仙女座I",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -90,14 +104,6 @@
         "source_progress": 4,
         "priority": 130.0,
         "depth": 2
-      },
-      {
-        "scan_key": "id:wikipedia:zh:Category:人生哲学",
-        "title": "人生哲学",
-        "next_source": "wikipedia",
-        "source_progress": 0,
-        "priority": 105.0,
-        "depth": 2
       }
     ],
     "next_run_preview": {
@@ -107,7 +113,8 @@
       "selection_limit": 5,
       "scheduled_source_counts": {
         "conceptnet": 2,
-        "wikipedia": 2,
+        "wikipedia": 1,
+        "wikidata": 1,
         "wikidata_api": 1
       },
       "scheduled_candidates": [
@@ -120,16 +127,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q2476549",
-          "title": "后髮座矮星系",
+          "scan_key": "id:Q2704275",
+          "title": "仙女座III",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:Q2704275",
-          "title": "仙女座III",
+          "scan_key": "id:wikipedia:zh:Category:人生哲学",
+          "title": "人生哲学",
+          "next_source": "wikidata",
+          "source_progress": 1,
+          "priority": 111.0,
+          "depth": 2
+        },
+        {
+          "scan_key": "id:Q2727447",
+          "title": "仙女座I",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -142,14 +157,6 @@
           "source_progress": 4,
           "priority": 130.0,
           "depth": 2
-        },
-        {
-          "scan_key": "id:wikipedia:zh:Category:人生哲学",
-          "title": "人生哲学",
-          "next_source": "wikipedia",
-          "source_progress": 0,
-          "priority": 105.0,
-          "depth": 2
         }
       ]
     }
@@ -157,11 +164,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 24,
+    "added_nodes": 26,
     "requests": 40,
-    "added_per_request": 0.6,
+    "added_per_request": 0.65,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-06-28T02:42:26Z",
+    "last_productive_run_at": "2026-06-29T02:42:54Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 7,
@@ -174,11 +181,13 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 3,
-        "duplicate_requests": 3,
-        "unchanged_requests": 4,
         "rate_limited_requests": 3,
-        "no_children_requests": 1
+        "children_returned_requests": 3,
+        "duplicate_requests": 2,
+        "unchanged_requests": 3,
+        "no_children_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 2
       },
       "wikipedia": {
         "no_children_requests": 11,
@@ -203,7 +212,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 69,
+  "history_entries": 70,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
