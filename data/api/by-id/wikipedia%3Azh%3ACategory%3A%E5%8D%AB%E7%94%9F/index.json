@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:卫生",
+  "source": "nodes/卫生-de8098b6556f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/卫生-de8098b6556f.json",
+  "legacy_children": "../../children/nodes/卫生-de8098b6556f.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康效应因素",
+  "source": "nodes/健康效应因素-733af131bc6a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康效应因素-733af131bc6a.json",
+  "legacy_children": "../../children/nodes/健康效应因素-733af131bc6a.json"
+}

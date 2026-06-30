@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康领域",
+  "source": "nodes/健康领域-1a1e8c0aca0d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康领域-1a1e8c0aca0d.json",
+  "legacy_children": "../../children/nodes/健康领域-1a1e8c0aca0d.json"
+}

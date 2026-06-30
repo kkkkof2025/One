@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:宗教与健康",
+  "source": "nodes/宗教与健康-975a10a94358.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/宗教与健康-975a10a94358.json",
+  "legacy_children": "../../children/nodes/宗教与健康-975a10a94358.json"
+}

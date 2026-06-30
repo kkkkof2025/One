@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:身心障礙",
+  "source": "nodes/身心障礙-e6ac69507b4c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/身心障礙-e6ac69507b4c.json",
+  "legacy_children": "../../children/nodes/身心障礙-e6ac69507b4c.json"
+}

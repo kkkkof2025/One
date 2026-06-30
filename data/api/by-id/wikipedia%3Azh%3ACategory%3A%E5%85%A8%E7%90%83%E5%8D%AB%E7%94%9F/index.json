@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:全球卫生",
+  "source": "nodes/全球卫生-b0f5aa10c7fc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/全球卫生-b0f5aa10c7fc.json",
+  "legacy_children": "../../children/nodes/全球卫生-b0f5aa10c7fc.json"
+}

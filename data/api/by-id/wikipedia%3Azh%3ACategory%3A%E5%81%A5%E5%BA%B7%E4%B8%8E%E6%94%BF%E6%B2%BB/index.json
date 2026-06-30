@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康与政治",
+  "source": "nodes/健康与政治-5e18a162844c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康与政治-5e18a162844c.json",
+  "legacy_children": "../../children/nodes/健康与政治-5e18a162844c.json"
+}

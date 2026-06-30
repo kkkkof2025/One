@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-06-29T02:42:54Z",
+  "generated_at": "2026-06-30T02:37:18Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,7 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 1,
-    "wikidata": 1,
+    "wikipedia": 2,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -22,24 +21,16 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2704275",
-      "title": "仙女座III",
+      "scan_key": "id:Q2727447",
+      "title": "仙女座I",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:人生哲学",
-      "title": "人生哲学",
-      "next_source": "wikidata",
-      "source_progress": 1,
-      "priority": 111.0,
-      "depth": 2
-    },
-    {
-      "scan_key": "id:Q2727447",
-      "title": "仙女座I",
+      "scan_key": "id:Q2746406",
+      "title": "六分儀座B",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,
@@ -51,6 +42,14 @@
       "next_source": "conceptnet",
       "source_progress": 4,
       "priority": 130.0,
+      "depth": 2
+    },
+    {
+      "scan_key": "id:wikipedia:zh:Category:健康",
+      "title": "健康",
+      "next_source": "wikipedia",
+      "source_progress": 0,
+      "priority": 105.0,
       "depth": 2
     }
   ]

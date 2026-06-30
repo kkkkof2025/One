@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康科學",
+  "source": "nodes/健康科學-8d702af28e37.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康科學-8d702af28e37.json",
+  "legacy_children": "../../children/nodes/健康科學-8d702af28e37.json"
+}

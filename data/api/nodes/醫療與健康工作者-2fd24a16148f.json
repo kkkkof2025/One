@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/醫療與健康工作者-2fd24a16148f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:醫療與健康工作者",
+    "title": "醫療與健康工作者",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%86%AB%E7%99%82%E8%88%87%E5%81%A5%E5%BA%B7%E5%B7%A5%E4%BD%9C%E8%80%85",
+    "source_page_id": 5985120,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

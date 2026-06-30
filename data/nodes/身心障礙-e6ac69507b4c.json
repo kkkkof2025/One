@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:身心障礙",
+  "title": "身心障礙",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99",
+  "source_page_id": 66053,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

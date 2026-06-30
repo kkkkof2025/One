@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各時期健康",
+  "source": "nodes/各時期健康-5056df3583dc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各時期健康-5056df3583dc.json",
+  "legacy_children": "../../children/nodes/各時期健康-5056df3583dc.json"
+}

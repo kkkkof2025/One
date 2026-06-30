@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:卫生信息学",
+  "source": "nodes/卫生信息学-4117f9427a8f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/卫生信息学-4117f9427a8f.json",
+  "legacy_children": "../../children/nodes/卫生信息学-4117f9427a8f.json"
+}

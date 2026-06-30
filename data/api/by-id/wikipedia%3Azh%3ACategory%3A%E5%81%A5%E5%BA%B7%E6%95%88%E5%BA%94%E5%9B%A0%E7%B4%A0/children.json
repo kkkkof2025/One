@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/健康效应因素-733af131bc6a.json",
+  "node": {
+    "title": "健康效应因素",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:健康效应因素",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E6%95%88%E5%BA%94%E5%9B%A0%E7%B4%A0",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

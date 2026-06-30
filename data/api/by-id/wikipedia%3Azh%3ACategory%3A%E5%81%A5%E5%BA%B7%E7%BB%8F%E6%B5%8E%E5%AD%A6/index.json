@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康经济学",
+  "source": "nodes/健康经济学-edba958c597e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康经济学-edba958c597e.json",
+  "legacy_children": "../../children/nodes/健康经济学-edba958c597e.json"
+}

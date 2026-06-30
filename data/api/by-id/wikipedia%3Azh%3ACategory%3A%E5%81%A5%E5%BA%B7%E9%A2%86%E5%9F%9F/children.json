@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/健康领域-1a1e8c0aca0d.json",
+  "node": {
+    "title": "健康领域",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:健康领域",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A2%86%E5%9F%9F",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

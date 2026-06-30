@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康意识日",
+  "source": "nodes/健康意识日-a7c448a5535c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康意识日-a7c448a5535c.json",
+  "legacy_children": "../../children/nodes/健康意识日-a7c448a5535c.json"
+}

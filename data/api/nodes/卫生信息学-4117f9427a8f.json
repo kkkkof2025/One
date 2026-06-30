@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/卫生信息学-4117f9427a8f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:卫生信息学",
+    "title": "卫生信息学",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8D%AB%E7%94%9F%E4%BF%A1%E6%81%AF%E5%AD%A6",
+    "source_page_id": 1714356,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

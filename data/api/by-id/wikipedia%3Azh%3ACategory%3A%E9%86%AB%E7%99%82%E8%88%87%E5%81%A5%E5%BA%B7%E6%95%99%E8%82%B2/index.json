@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:醫療與健康教育",
+  "source": "nodes/醫療與健康教育-740501a36ff6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/醫療與健康教育-740501a36ff6.json",
+  "legacy_children": "../../children/nodes/醫療與健康教育-740501a36ff6.json"
+}

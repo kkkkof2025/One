@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各人口健康",
+  "source": "nodes/各人口健康-19174abdeef0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各人口健康-19174abdeef0.json",
+  "legacy_children": "../../children/nodes/各人口健康-19174abdeef0.json"
+}
