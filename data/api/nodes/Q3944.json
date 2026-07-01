@@ -142,19 +142,21 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-06-30T02:37:18Z",
-        "last_checked_at": "2026-06-30T02:37:18Z",
-        "last_fetch_source": "wikidata_api",
+        "updated_at": "2026-07-01T02:43:26Z",
+        "last_checked_at": "2026-07-01T02:43:26Z",
+        "last_fetch_source": "wikipedia",
         "last_fetch_sources": [
-          "wikidata_api"
+          "wikipedia"
         ],
         "source_no_children": {
           "wikidata": "2026-05-07T02:18:15Z",
-          "wikidata_api": "2026-06-30T02:37:18Z"
+          "wikidata_api": "2026-06-30T02:37:18Z",
+          "wikipedia": "2026-07-01T02:43:26Z"
         },
         "source_checked": {
           "wikidata": "2026-05-07T02:18:15Z",
-          "wikidata_api": "2026-06-30T02:37:18Z"
+          "wikidata_api": "2026-06-30T02:37:18Z",
+          "wikipedia": "2026-07-01T02:43:26Z"
         }
       },
       {
@@ -391,19 +393,21 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-06-30T02:37:13Z",
-        "last_checked_at": "2026-06-30T02:37:13Z",
-        "last_fetch_source": "wikidata_api",
+        "updated_at": "2026-07-01T02:43:21Z",
+        "last_checked_at": "2026-07-01T02:43:21Z",
+        "last_fetch_source": "wikipedia",
         "last_fetch_sources": [
-          "wikidata_api"
+          "wikipedia"
         ],
         "source_no_children": {
           "wikidata": "2026-05-07T02:18:27Z",
-          "wikidata_api": "2026-06-30T02:37:13Z"
+          "wikidata_api": "2026-06-30T02:37:13Z",
+          "wikipedia": "2026-07-01T02:43:21Z"
         },
         "source_checked": {
           "wikidata": "2026-05-07T02:18:27Z",
-          "wikidata_api": "2026-06-30T02:37:13Z"
+          "wikidata_api": "2026-06-30T02:37:13Z",
+          "wikipedia": "2026-07-01T02:43:21Z"
         }
       },
       {
@@ -590,12 +594,19 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-05-07T02:51:25Z",
+        "updated_at": "2026-07-01T02:43:22Z",
+        "last_checked_at": "2026-07-01T02:43:22Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
         "source_no_children": {
-          "wikidata": "2026-05-07T02:51:25Z"
+          "wikidata": "2026-05-07T02:51:25Z",
+          "wikidata_api": "2026-07-01T02:43:22Z"
         },
         "source_checked": {
-          "wikidata": "2026-05-07T02:51:25Z"
+          "wikidata": "2026-05-07T02:51:25Z",
+          "wikidata_api": "2026-07-01T02:43:22Z"
         }
       },
       {
