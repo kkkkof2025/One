@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/化石嵌合體-658274cf340a.json",
+  "node": {
+    "id": "wikipedia:zh:Category:化石嵌合體",
+    "title": "化石嵌合體",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%96%E7%9F%B3%E5%B5%8C%E5%90%88%E9%AB%94",
+    "source_page_id": 6801672,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

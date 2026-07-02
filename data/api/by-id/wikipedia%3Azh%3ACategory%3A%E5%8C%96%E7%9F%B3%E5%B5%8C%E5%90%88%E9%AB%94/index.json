@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:化石嵌合體",
+  "source": "nodes/化石嵌合體-658274cf340a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/化石嵌合體-658274cf340a.json",
+  "legacy_children": "../../children/nodes/化石嵌合體-658274cf340a.json"
+}

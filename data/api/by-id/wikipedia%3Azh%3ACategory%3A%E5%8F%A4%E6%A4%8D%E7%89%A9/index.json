@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:古植物",
+  "source": "nodes/古植物-61b45d5852b1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/古植物-61b45d5852b1.json",
+  "legacy_children": "../../children/nodes/古植物-61b45d5852b1.json"
+}

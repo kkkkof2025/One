@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:古生物列表",
+  "source": "nodes/古生物列表-4c0e66ddc228.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/古生物列表-4c0e66ddc228.json",
+  "legacy_children": "../../children/nodes/古生物列表-4c0e66ddc228.json"
+}

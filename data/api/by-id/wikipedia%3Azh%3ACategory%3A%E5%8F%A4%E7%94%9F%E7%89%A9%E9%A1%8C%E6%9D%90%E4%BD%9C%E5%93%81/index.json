@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:古生物題材作品",
+  "source": "nodes/古生物題材作品-f6b50c30302a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/古生物題材作品-f6b50c30302a.json",
+  "legacy_children": "../../children/nodes/古生物題材作品-f6b50c30302a.json"
+}

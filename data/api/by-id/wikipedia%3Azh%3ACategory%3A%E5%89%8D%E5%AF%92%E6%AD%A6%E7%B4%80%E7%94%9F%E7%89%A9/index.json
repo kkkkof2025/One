@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:前寒武紀生物",
+  "source": "nodes/前寒武紀生物-02917b2e8bac.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/前寒武紀生物-02917b2e8bac.json",
+  "legacy_children": "../../children/nodes/前寒武紀生物-02917b2e8bac.json"
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-01T02:43:26Z",
+  "generated_at": "2026-07-02T02:32:47Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2746406",
-      "title": "六分儀座B",
+      "scan_key": "id:Q32882",
+      "title": "威爾曼1",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q32882",
-      "title": "威爾曼1",
+      "scan_key": "id:Q32885",
+      "title": "人馬座矮橢球星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,

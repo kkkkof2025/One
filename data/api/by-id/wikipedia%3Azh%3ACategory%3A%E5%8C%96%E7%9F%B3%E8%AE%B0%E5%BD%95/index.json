@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:化石记录",
+  "source": "nodes/化石记录-c3da157a1e06.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/化石记录-c3da157a1e06.json",
+  "legacy_children": "../../children/nodes/化石记录-c3da157a1e06.json"
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/中生代生物-7808c1dbea8d.json",
+  "node": {
+    "title": "中生代生物",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:中生代生物",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%AD%E7%94%9F%E4%BB%A3%E7%94%9F%E7%89%A9",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

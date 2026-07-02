@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:古生代生物",
+  "source": "nodes/古生代生物-9a32c2e1a1da.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/古生代生物-9a32c2e1a1da.json",
+  "legacy_children": "../../children/nodes/古生代生物-9a32c2e1a1da.json"
+}
