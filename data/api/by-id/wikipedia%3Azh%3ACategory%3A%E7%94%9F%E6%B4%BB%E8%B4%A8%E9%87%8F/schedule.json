@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-07-02T02:32:47Z",
+  "generated_at": "2026-07-03T02:08:17Z",
   "id": "wikipedia:zh:Category:生活质量",
   "source": "nodes/生活质量-e65419447707.json",
   "node": {
@@ -52,9 +52,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-02T02:32:42Z",
+      "occurred_at": "2026-07-03T02:08:12Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-02T02:42:42Z",
+      "cooldown_until": "2026-07-03T02:18:12Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

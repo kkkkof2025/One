@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:被認為和外星生命有關的超常現象",
+  "source": "nodes/被認為和外星生命有關的超常現象-81ea3327698b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/被認為和外星生命有關的超常現象-81ea3327698b.json",
+  "legacy_children": "../../children/nodes/被認為和外星生命有關的超常現象-81ea3327698b.json"
+}

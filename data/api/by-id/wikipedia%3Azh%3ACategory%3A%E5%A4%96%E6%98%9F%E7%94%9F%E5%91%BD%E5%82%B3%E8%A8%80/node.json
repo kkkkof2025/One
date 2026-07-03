@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/外星生命傳言-ae44bbc39a82.json",
+  "node": {
+    "id": "wikipedia:zh:Category:外星生命傳言",
+    "title": "外星生命傳言",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD%E5%82%B3%E8%A8%80",
+    "source_page_id": 5059231,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

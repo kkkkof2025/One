@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:外星科幻題材作品",
+  "source": "nodes/外星科幻題材作品-59ba3169f5ad.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/外星科幻題材作品-59ba3169f5ad.json",
+  "legacy_children": "../../children/nodes/外星科幻題材作品-59ba3169f5ad.json"
+}

@@ -3,16 +3,97 @@
   "source": "nodes/外星生命-05b395b50688.json",
   "node": {
     "title": "外星生命",
-    "children_count": 0,
+    "children_count": 5,
     "id": "wikipedia:zh:Category:外星生命",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-03T02:08:17Z",
+    "last_checked_at": "2026-07-03T02:08:17Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-03T02:08:17Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "星际信息",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:星际信息",
+      "data_source": "nodes/星际信息-3f03c33f4c76.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E9%99%85%E4%BF%A1%E6%81%AF",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "外星生命傳言",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:外星生命傳言",
+      "data_source": "nodes/外星生命傳言-ae44bbc39a82.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD%E5%82%B3%E8%A8%80",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "外星生命研究",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:外星生命研究",
+      "data_source": "nodes/外星生命研究-2754e269093f.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD%E7%A0%94%E7%A9%B6",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "外星科幻題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:外星科幻題材作品",
+      "data_source": "nodes/外星科幻題材作品-59ba3169f5ad.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%A7%91%E5%B9%BB%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "被認為和外星生命有關的超常現象",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:被認為和外星生命有關的超常現象",
+      "data_source": "nodes/被認為和外星生命有關的超常現象-81ea3327698b.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A2%AB%E8%AA%8D%E7%82%BA%E5%92%8C%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD%E6%9C%89%E9%97%9C%E7%9A%84%E8%B6%85%E5%B8%B8%E7%8F%BE%E8%B1%A1",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 5
 }

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:外星生命研究",
+  "source": "nodes/外星生命研究-2754e269093f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/外星生命研究-2754e269093f.json",
+  "legacy_children": "../../children/nodes/外星生命研究-2754e269093f.json"
+}

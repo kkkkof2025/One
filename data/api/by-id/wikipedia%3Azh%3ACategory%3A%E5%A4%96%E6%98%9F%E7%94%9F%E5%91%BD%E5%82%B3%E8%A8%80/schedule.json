@@ -1,0 +1,66 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-07-03T02:08:17Z",
+  "id": "wikipedia:zh:Category:外星生命傳言",
+  "source": "nodes/外星生命傳言-ae44bbc39a82.json",
+  "node": {
+    "title": "外星生命傳言",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:外星生命傳言",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD%E5%82%B3%E8%A8%80",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-07-03T02:08:12Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-07-03T02:18:12Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}

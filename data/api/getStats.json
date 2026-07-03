@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-02T02:32:47Z",
-  "total_nodes": 398,
-  "last_added_nodes": 11,
+  "generated_at": "2026-07-03T02:08:17Z",
+  "total_nodes": 403,
+  "last_added_nodes": 5,
   "last_request_count": 5,
-  "last_scanned_nodes": 400,
-  "last_candidate_nodes": 383,
+  "last_scanned_nodes": 411,
+  "last_candidate_nodes": 394,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,7 +23,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 11
+      "added_nodes": 5
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -35,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 383,
+    "candidate_count": 394,
     "source_progress_counts": {
       "4": 12,
-      "2": 3,
-      "1": 56,
-      "0": 264,
-      "3": 48
+      "2": 4,
+      "1": 55,
+      "0": 274,
+      "3": 49
     },
     "next_source_counts": {
-      "conceptnet": 62,
-      "wikipedia": 89,
+      "conceptnet": 64,
+      "wikipedia": 99,
       "wikidata": 1,
-      "wikidata_api": 231
+      "wikidata_api": 230
     },
     "available_next_source_counts": {
-      "conceptnet": 62,
-      "wikipedia": 89,
+      "conceptnet": 64,
+      "wikipedia": 99,
       "wikidata": 1,
-      "wikidata_api": 231
+      "wikidata_api": 230
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q32882",
-        "title": "威爾曼1",
+        "scan_key": "id:Q32885",
+        "title": "人馬座矮橢球星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康",
-        "title": "健康",
+        "scan_key": "id:wikipedia:zh:Category:古生物",
+        "title": "古生物",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q32885",
-        "title": "人馬座矮橢球星系",
+        "scan_key": "id:Q32886",
+        "title": "六分儀座矮星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -129,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q32882",
-          "title": "威爾曼1",
+          "scan_key": "id:Q32885",
+          "title": "人馬座矮橢球星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康",
-          "title": "健康",
+          "scan_key": "id:wikipedia:zh:Category:古生物",
+          "title": "古生物",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q32885",
-          "title": "人馬座矮橢球星系",
+          "scan_key": "id:Q32886",
+          "title": "六分儀座矮星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -166,36 +166,27 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 66,
+    "added_nodes": 71,
     "requests": 40,
-    "added_per_request": 1.65,
+    "added_per_request": 1.775,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-02T02:32:47Z",
+    "last_productive_run_at": "2026-07-03T02:08:17Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 6,
-      "wikipedia": 15,
-      "wikidata_api": 11
+      "wikipedia": 16,
+      "wikidata_api": 11,
+      "wikidata": 5
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
-      "wikidata": {
-        "children_returned_requests": 3,
-        "duplicate_requests": 2,
-        "unchanged_requests": 4,
-        "no_children_requests": 2,
-        "productive_requests": 1,
-        "added_nodes": 2,
-        "rate_limited_requests": 1
-      },
       "wikipedia": {
         "no_children_requests": 11,
         "unchanged_requests": 11,
-        "children_returned_requests": 4,
-        "productive_requests": 4,
-        "added_nodes": 63
+        "children_returned_requests": 5,
+        "productive_requests": 5,
+        "added_nodes": 68
       },
       "wikidata_api": {
         "no_children_requests": 10,
@@ -203,13 +194,21 @@
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 1
+      },
+      "wikidata": {
+        "no_children_requests": 3,
+        "unchanged_requests": 3,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 2,
+        "rate_limited_requests": 1
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 73,
+  "history_entries": 74,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
