@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:载人航天",
+  "source": "nodes/载人航天-ce91853ba58b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/载人航天-ce91853ba58b.json",
+  "legacy_children": "../../children/nodes/载人航天-ce91853ba58b.json"
+}

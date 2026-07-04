@@ -1,19 +1,80 @@
 {
   "id": "wikipedia:zh:Category:太空生命",
   "title": "太空生命",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "外星生命",
+      "data_source": "nodes/外星生命-05b395b50688.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:外星生命",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-07-03T02:08:17Z",
+      "last_checked_at": "2026-07-03T02:08:17Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-03T02:08:17Z"
+      }
+    },
+    {
+      "title": "载人航天",
+      "data_source": "nodes/载人航天-ce91853ba58b.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:载人航天",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "载人航天任务",
+      "data_source": "nodes/载人航天任务-a7e0fe698612.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:载人航天任务",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%BD%BD%E4%BA%BA%E8%88%AA%E5%A4%A9%E4%BB%BB%E5%8A%A1",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%AA%E7%A9%BA%E7%94%9F%E5%91%BD",
   "source_page_id": 7048604,
-  "quality_score": 75,
+  "quality_score": 87,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-04T02:06:10Z",
+  "last_checked_at": "2026-07-04T02:06:10Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-04T02:06:10Z"
+  },
+  "is_leaf": false
 }

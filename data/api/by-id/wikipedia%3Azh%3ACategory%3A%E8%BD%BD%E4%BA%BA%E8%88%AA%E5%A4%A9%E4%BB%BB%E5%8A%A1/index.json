@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:载人航天任务",
+  "source": "nodes/载人航天任务-a7e0fe698612.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/载人航天任务-a7e0fe698612.json",
+  "legacy_children": "../../children/nodes/载人航天任务-a7e0fe698612.json"
+}
