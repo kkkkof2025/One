@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:超星系团",
+  "source": "nodes/超星系团-95b68ec784b3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/超星系团-95b68ec784b3.json",
+  "legacy_children": "../../children/nodes/超星系团-95b68ec784b3.json"
+}

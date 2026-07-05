@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/暗物質-b0ba483e66e0.json",
+  "node": {
+    "title": "暗物質",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:暗物質",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9A%97%E7%89%A9%E8%B3%AA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

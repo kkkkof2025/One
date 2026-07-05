@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/巡天项目-f889bec17b73.json",
+  "node": {
+    "title": "巡天项目",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:巡天项目",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B7%A1%E5%A4%A9%E9%A1%B9%E7%9B%AE",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

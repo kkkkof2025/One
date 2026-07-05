@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-04T02:06:10Z",
+  "generated_at": "2026-07-05T02:14:34Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q32886",
-      "title": "六分儀座矮星系",
+      "scan_key": "id:Q32888",
+      "title": "大熊座矮星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q32888",
-      "title": "大熊座矮星系",
+      "scan_key": "id:Q33110",
+      "title": "大熊座II矮星系",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,

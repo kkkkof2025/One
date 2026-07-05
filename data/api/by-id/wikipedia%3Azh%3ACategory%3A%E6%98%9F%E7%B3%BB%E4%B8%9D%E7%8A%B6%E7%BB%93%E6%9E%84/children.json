@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/星系丝状结构-2bd77872e820.json",
+  "node": {
+    "title": "星系丝状结构",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:星系丝状结构",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB%E4%B8%9D%E7%8A%B6%E7%BB%93%E6%9E%84",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/星系際介質-cc335456f086.json",
+  "node": {
+    "title": "星系際介質",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:星系際介質",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB%E9%9A%9B%E4%BB%8B%E8%B3%AA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:空洞",
+  "source": "nodes/空洞-065c2d7e0889.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/空洞-065c2d7e0889.json",
+  "legacy_children": "../../children/nodes/空洞-065c2d7e0889.json"
+}

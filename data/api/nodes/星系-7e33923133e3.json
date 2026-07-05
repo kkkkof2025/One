@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/星系-7e33923133e3.json",
+  "node": {
+    "id": "wikipedia:zh:Category:星系",
+    "title": "星系",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB",
+    "source_page_id": 34011,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

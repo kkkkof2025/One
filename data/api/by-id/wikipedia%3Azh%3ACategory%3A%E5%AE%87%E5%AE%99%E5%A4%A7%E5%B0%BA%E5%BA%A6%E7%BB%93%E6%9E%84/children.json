@@ -3,16 +3,139 @@
   "source": "nodes/宇宙大尺度结构-9e1414430b08.json",
   "node": {
     "title": "宇宙大尺度结构",
-    "children_count": 0,
+    "children_count": 8,
     "id": "wikipedia:zh:Category:宇宙大尺度结构",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%87%E5%AE%99%E5%A4%A7%E5%B0%BA%E5%BA%A6%E7%BB%93%E6%9E%84",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-05T02:14:34Z",
+    "last_checked_at": "2026-07-05T02:14:34Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-05T02:14:34Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "巡天项目",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:巡天项目",
+      "data_source": "nodes/巡天项目-f889bec17b73.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B7%A1%E5%A4%A9%E9%A1%B9%E7%9B%AE",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星系",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:星系",
+      "data_source": "nodes/星系-7e33923133e3.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星系丝状结构",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:星系丝状结构",
+      "data_source": "nodes/星系丝状结构-2bd77872e820.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB%E4%B8%9D%E7%8A%B6%E7%BB%93%E6%9E%84",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星系團",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:星系團",
+      "data_source": "nodes/星系團-d8a10cec1fd1.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB%E5%9C%98",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星系際介質",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:星系際介質",
+      "data_source": "nodes/星系際介質-cc335456f086.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%98%9F%E7%B3%BB%E9%9A%9B%E4%BB%8B%E8%B3%AA",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "暗物質",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:暗物質",
+      "data_source": "nodes/暗物質-b0ba483e66e0.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9A%97%E7%89%A9%E8%B3%AA",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "空洞",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:空洞",
+      "data_source": "nodes/空洞-065c2d7e0889.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A9%BA%E6%B4%9E",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "超星系团",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:超星系团",
+      "data_source": "nodes/超星系团-95b68ec784b3.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B6%85%E6%98%9F%E7%B3%BB%E5%9B%A2",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 8
 }

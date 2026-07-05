@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:星系",
+  "source": "nodes/星系-7e33923133e3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/星系-7e33923133e3.json",
+  "legacy_children": "../../children/nodes/星系-7e33923133e3.json"
+}
