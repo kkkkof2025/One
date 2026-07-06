@@ -1,19 +1,110 @@
 {
   "id": "wikipedia:zh:Category:意识",
   "title": "意识",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "主觀體驗",
+      "data_source": "nodes/主觀體驗-cacb7e9aa913.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:主觀體驗",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%BB%E8%A7%80%E9%AB%94%E9%A9%97",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "意識研究",
+      "data_source": "nodes/意識研究-6360782bbb9e.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:意識研究",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%84%8F%E8%AD%98%E7%A0%94%E7%A9%B6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "感觉",
+      "data_source": "nodes/感觉-04f593c9cfcd.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:感觉",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%84%9F%E8%A7%89",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "感質",
+      "data_source": "nodes/感質-955a35134242.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:感質",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%84%9F%E8%B3%AA",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "潜意识",
+      "data_source": "nodes/潜意识-17cc3bca9091.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:潜意识",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%BD%9C%E6%84%8F%E8%AF%86",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "认知",
+      "data_source": "nodes/认知-d7ac275a19c9.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:认知",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%AE%A4%E7%9F%A5",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%84%8F%E8%AF%86",
   "source_page_id": 1693404,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-06T02:26:23Z",
+  "last_checked_at": "2026-07-06T02:26:23Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-06T02:26:23Z"
+  },
+  "is_leaf": false
 }

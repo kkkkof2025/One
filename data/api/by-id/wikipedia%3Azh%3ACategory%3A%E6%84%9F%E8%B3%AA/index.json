@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:感質",
+  "source": "nodes/感質-955a35134242.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/感質-955a35134242.json",
+  "legacy_children": "../../children/nodes/感質-955a35134242.json"
+}

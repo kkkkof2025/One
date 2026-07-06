@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:主觀體驗",
+  "source": "nodes/主觀體驗-cacb7e9aa913.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/主觀體驗-cacb7e9aa913.json",
+  "legacy_children": "../../children/nodes/主觀體驗-cacb7e9aa913.json"
+}

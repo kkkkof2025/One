@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:意識研究",
+  "source": "nodes/意識研究-6360782bbb9e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/意識研究-6360782bbb9e.json",
+  "legacy_children": "../../children/nodes/意識研究-6360782bbb9e.json"
+}

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-05T02:14:34Z",
-  "total_nodes": 413,
-  "last_added_nodes": 8,
+  "generated_at": "2026-07-06T02:26:23Z",
+  "total_nodes": 419,
+  "last_added_nodes": 6,
   "last_request_count": 5,
-  "last_scanned_nodes": 419,
-  "last_candidate_nodes": 401,
+  "last_scanned_nodes": 427,
+  "last_candidate_nodes": 409,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,7 +23,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 8
+      "added_nodes": 6
     },
     "wikidata": {
       "rate_limited_requests": 1
@@ -34,25 +34,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 401,
+    "candidate_count": 409,
     "source_progress_counts": {
       "4": 12,
       "2": 5,
       "1": 54,
-      "0": 279,
-      "3": 51
+      "0": 286,
+      "3": 52
     },
     "next_source_counts": {
-      "conceptnet": 67,
-      "wikipedia": 104,
-      "wikidata": 2,
-      "wikidata_api": 228
+      "conceptnet": 68,
+      "wikipedia": 111,
+      "wikidata": 3,
+      "wikidata_api": 227
     },
     "available_next_source_counts": {
-      "conceptnet": 67,
-      "wikipedia": 104,
-      "wikidata": 2,
-      "wikidata_api": 228
+      "conceptnet": 68,
+      "wikipedia": 111,
+      "wikidata": 3,
+      "wikidata_api": 227
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,8 +75,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q32888",
-        "title": "大熊座矮星系",
+        "scan_key": "id:Q33110",
+        "title": "大熊座II矮星系",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
@@ -91,8 +91,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q33110",
-        "title": "大熊座II矮星系",
+        "scan_key": "id:Q35745",
+        "title": "大犬座矮星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -128,8 +128,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q32888",
-          "title": "大熊座矮星系",
+          "scan_key": "id:Q33110",
+          "title": "大熊座II矮星系",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
@@ -144,8 +144,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q33110",
-          "title": "大熊座II矮星系",
+          "scan_key": "id:Q35745",
+          "title": "大犬座矮星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -165,16 +165,16 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 76,
+    "added_nodes": 64,
     "requests": 40,
-    "added_per_request": 1.9,
+    "added_per_request": 1.6,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-05T02:14:34Z",
+    "last_productive_run_at": "2026-07-06T02:26:23Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
-      "wikidata_api": 10,
-      "wikidata": 6
+      "wikidata": 7,
+      "wikidata_api": 9
     },
     "source_outcome_counts": {
       "conceptnet": {
@@ -185,26 +185,26 @@
         "unchanged_requests": 10,
         "children_returned_requests": 6,
         "productive_requests": 6,
-        "added_nodes": 74
-      },
-      "wikidata_api": {
-        "no_children_requests": 10,
-        "unchanged_requests": 10
+        "added_nodes": 62
       },
       "wikidata": {
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 2,
-        "rate_limited_requests": 3,
+        "rate_limited_requests": 4,
         "no_children_requests": 2,
         "unchanged_requests": 2
+      },
+      "wikidata_api": {
+        "no_children_requests": 9,
+        "unchanged_requests": 9
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 76,
+  "history_entries": 77,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
