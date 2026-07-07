@@ -67,6 +67,84 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "土卫六生命",
+      "data_source": "nodes/Q2591050.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q2591050",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-20T08:06:28Z",
+      "last_checked_at": "2026-05-20T08:06:28Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "外星人",
+      "data_source": "nodes/Q15107669.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q15107669",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-20T08:06:24Z",
+      "last_checked_at": "2026-05-20T08:06:24Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "月球生命",
+      "data_source": "nodes/Q136546064.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q136546064",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-20T08:06:23Z",
+      "last_checked_at": "2026-05-20T08:06:23Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "火星人",
+      "data_source": "nodes/Q913850.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q913850",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-21T02:36:06Z",
+      "last_checked_at": "2026-05-21T02:36:06Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "火星生命",
+      "data_source": "nodes/Q601319.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q601319",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-20T08:06:29Z",
+      "last_checked_at": "2026-05-20T08:06:29Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "金星生命",
+      "data_source": "nodes/Q2582723.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q2582723",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-20T08:06:27Z",
+      "last_checked_at": "2026-05-20T08:06:27Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   ],
   "source_provider": "wikipedia",
@@ -84,14 +162,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-03T02:08:17Z",
-  "last_checked_at": "2026-07-03T02:08:17Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-07T02:14:51Z",
+  "last_checked_at": "2026-07-07T02:14:51Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-03T02:08:17Z"
+    "wikipedia": "2026-07-03T02:08:17Z",
+    "wikidata": "2026-07-07T02:14:51Z"
   },
   "is_leaf": false
 }

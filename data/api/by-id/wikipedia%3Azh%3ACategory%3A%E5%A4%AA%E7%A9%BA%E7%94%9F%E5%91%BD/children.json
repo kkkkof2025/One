@@ -26,7 +26,7 @@
   "children": [
     {
       "title": "外星生命",
-      "children_count": 5,
+      "children_count": 11,
       "id": "wikipedia:zh:Category:外星生命",
       "data_source": "nodes/外星生命-05b395b50688.json",
       "source_provider": "wikipedia",
@@ -37,14 +37,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-03T02:08:17Z",
-      "last_checked_at": "2026-07-03T02:08:17Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-07T02:14:51Z",
+      "last_checked_at": "2026-07-07T02:14:51Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-03T02:08:17Z"
+        "wikipedia": "2026-07-03T02:08:17Z",
+        "wikidata": "2026-07-07T02:14:51Z"
       }
     },
     {

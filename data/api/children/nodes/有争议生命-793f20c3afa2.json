@@ -9,9 +9,22 @@
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%89%E4%BA%89%E8%AE%AE%E7%94%9F%E5%91%BD",
     "children_status": "pending",
+    "is_leaf": false,
     "quality_score": 75,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-07T02:14:56Z",
+    "last_checked_at": "2026-07-07T02:14:56Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_no_children": {
+      "wikipedia": "2026-07-07T02:14:56Z"
+    },
+    "source_checked": {
+      "wikipedia": "2026-07-07T02:14:56Z"
+    }
   },
   "children": [],
   "child_count": 0
