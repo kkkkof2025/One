@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/动物死亡-c5ae7b46d147.json",
+  "node": {
+    "title": "动物死亡",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:动物死亡",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8A%A8%E7%89%A9%E6%AD%BB%E4%BA%A1",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

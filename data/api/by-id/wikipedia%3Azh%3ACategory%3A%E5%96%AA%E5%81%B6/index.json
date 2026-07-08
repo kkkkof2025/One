@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:喪偶",
+  "source": "nodes/喪偶-1d58d16b40b3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/喪偶-1d58d16b40b3.json",
+  "legacy_children": "../../children/nodes/喪偶-1d58d16b40b3.json"
+}

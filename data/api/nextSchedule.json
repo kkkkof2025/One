@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-07T02:14:56Z",
+  "generated_at": "2026-07-08T01:55:24Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q35745",
-      "title": "大犬座矮星系",
+      "scan_key": "id:Q35818",
+      "title": "天爐座矮星系",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:外星生命",
-      "title": "外星生命",
+      "scan_key": "id:wikipedia:zh:Category:宇宙大尺度结构",
+      "title": "宇宙大尺度结构",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 111.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q35818",
-      "title": "天爐座矮星系",
+      "scan_key": "id:Q4759486",
+      "title": "仙女座X",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,

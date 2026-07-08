@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:与死者沟通",
+  "source": "nodes/与死者沟通-2dca9543742f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/与死者沟通-2dca9543742f.json",
+  "legacy_children": "../../children/nodes/与死者沟通-2dca9543742f.json"
+}

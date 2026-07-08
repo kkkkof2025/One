@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各城市死亡",
+  "source": "nodes/各城市死亡-0bd6e3db7ebf.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各城市死亡-0bd6e3db7ebf.json",
+  "legacy_children": "../../children/nodes/各城市死亡-0bd6e3db7ebf.json"
+}

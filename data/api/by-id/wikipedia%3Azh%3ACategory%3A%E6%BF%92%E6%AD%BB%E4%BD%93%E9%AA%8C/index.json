@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:濒死体验",
+  "source": "nodes/濒死体验-82ce7c244cde.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/濒死体验-82ce7c244cde.json",
+  "legacy_children": "../../children/nodes/濒死体验-82ce7c244cde.json"
+}

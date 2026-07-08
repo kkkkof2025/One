@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死亡迹象",
+  "source": "nodes/死亡迹象-73ff9ab5a172.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死亡迹象-73ff9ab5a172.json",
+  "legacy_children": "../../children/nodes/死亡迹象-73ff9ab5a172.json"
+}

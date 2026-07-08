@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:动物死亡",
+  "source": "nodes/动物死亡-c5ae7b46d147.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/动物死亡-c5ae7b46d147.json",
+  "legacy_children": "../../children/nodes/动物死亡-c5ae7b46d147.json"
+}

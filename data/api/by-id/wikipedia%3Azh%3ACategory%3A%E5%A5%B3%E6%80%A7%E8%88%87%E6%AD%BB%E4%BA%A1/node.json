@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/女性與死亡-6629aecbfba5.json",
+  "node": {
+    "id": "wikipedia:zh:Category:女性與死亡",
+    "title": "女性與死亡",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A5%B3%E6%80%A7%E8%88%87%E6%AD%BB%E4%BA%A1",
+    "source_page_id": 6265163,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

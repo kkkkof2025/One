@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:遺體保存技術",
+  "source": "nodes/遺體保存技術-c38b9cbb6f92.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/遺體保存技術-c38b9cbb6f92.json",
+  "legacy_children": "../../children/nodes/遺體保存技術-c38b9cbb6f92.json"
+}

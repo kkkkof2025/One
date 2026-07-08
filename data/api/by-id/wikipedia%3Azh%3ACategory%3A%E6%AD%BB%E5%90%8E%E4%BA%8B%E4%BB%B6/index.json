@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死后事件",
+  "source": "nodes/死后事件-d93a805de06d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死后事件-d93a805de06d.json",
+  "legacy_children": "../../children/nodes/死后事件-d93a805de06d.json"
+}

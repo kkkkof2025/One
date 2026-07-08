@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:尸体",
+  "source": "nodes/尸体-884b74ff38fd.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/尸体-884b74ff38fd.json",
+  "legacy_children": "../../children/nodes/尸体-884b74ff38fd.json"
+}

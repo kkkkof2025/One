@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:细胞程序性死亡",
+  "source": "nodes/细胞程序性死亡-715e500434c1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/细胞程序性死亡-715e500434c1.json",
+  "legacy_children": "../../children/nodes/细胞程序性死亡-715e500434c1.json"
+}

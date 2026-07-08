@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/男性与死亡-9a44ffb3f062.json",
+  "node": {
+    "id": "wikipedia:zh:Category:男性与死亡",
+    "title": "男性与死亡",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%B7%E6%80%A7%E4%B8%8E%E6%AD%BB%E4%BA%A1",
+    "source_page_id": 8851490,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各大洲死亡",
+  "source": "nodes/各大洲死亡-cf681ed7fedc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各大洲死亡-cf681ed7fedc.json",
+  "legacy_children": "../../children/nodes/各大洲死亡-cf681ed7fedc.json"
+}

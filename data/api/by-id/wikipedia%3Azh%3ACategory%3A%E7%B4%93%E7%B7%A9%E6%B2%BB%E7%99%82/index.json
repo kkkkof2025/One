@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:紓緩治療",
+  "source": "nodes/紓緩治療-9ceffbdc912e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/紓緩治療-9ceffbdc912e.json",
+  "legacy_children": "../../children/nodes/紓緩治療-9ceffbdc912e.json"
+}

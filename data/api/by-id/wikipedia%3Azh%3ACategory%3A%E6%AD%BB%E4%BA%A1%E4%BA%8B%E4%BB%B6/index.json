@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死亡事件",
+  "source": "nodes/死亡事件-17b3654bffec.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死亡事件-17b3654bffec.json",
+  "legacy_children": "../../children/nodes/死亡事件-17b3654bffec.json"
+}

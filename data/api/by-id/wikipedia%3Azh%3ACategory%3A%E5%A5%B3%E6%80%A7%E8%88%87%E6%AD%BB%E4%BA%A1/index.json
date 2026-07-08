@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:女性與死亡",
+  "source": "nodes/女性與死亡-6629aecbfba5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/女性與死亡-6629aecbfba5.json",
+  "legacy_children": "../../children/nodes/女性與死亡-6629aecbfba5.json"
+}

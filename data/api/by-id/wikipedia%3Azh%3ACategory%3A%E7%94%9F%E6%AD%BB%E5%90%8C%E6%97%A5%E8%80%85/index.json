@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生死同日者",
+  "source": "nodes/生死同日者-0f4748e617d4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生死同日者-0f4748e617d4.json",
+  "legacy_children": "../../children/nodes/生死同日者-0f4748e617d4.json"
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/死亡相關列表-de549e67ea29.json",
+  "node": {
+    "title": "死亡相關列表",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:死亡相關列表",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%BB%E4%BA%A1%E7%9B%B8%E9%97%9C%E5%88%97%E8%A1%A8",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

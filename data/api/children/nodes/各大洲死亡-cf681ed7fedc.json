@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/各大洲死亡-cf681ed7fedc.json",
+  "node": {
+    "title": "各大洲死亡",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:各大洲死亡",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%A4%A7%E6%B4%B2%E6%AD%BB%E4%BA%A1",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

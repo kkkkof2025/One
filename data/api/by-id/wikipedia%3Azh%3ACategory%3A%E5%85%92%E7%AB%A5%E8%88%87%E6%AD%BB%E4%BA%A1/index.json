@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:兒童與死亡",
+  "source": "nodes/兒童與死亡-061f8b3b360c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/兒童與死亡-061f8b3b360c.json",
+  "legacy_children": "../../children/nodes/兒童與死亡-061f8b3b360c.json"
+}

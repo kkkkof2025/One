@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:逝世",
+  "title": "逝世",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%80%9D%E4%B8%96",
+  "source_page_id": 6060314,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

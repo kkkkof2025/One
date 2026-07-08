@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:兒童與死亡",
+  "title": "兒童與死亡",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%92%E7%AB%A5%E8%88%87%E6%AD%BB%E4%BA%A1",
+  "source_page_id": 1769885,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

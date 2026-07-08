@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:男性与死亡",
+  "source": "nodes/男性与死亡-9a44ffb3f062.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/男性与死亡-9a44ffb3f062.json",
+  "legacy_children": "../../children/nodes/男性与死亡-9a44ffb3f062.json"
+}

@@ -22,13 +22,14 @@
     ],
     "updated_at": "2026-05-21T02:36:06Z",
     "is_leaf": false,
-    "quality_score": 67,
+    "quality_score": 59,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
       "missing_relation",
       "fetch_error",
+      "duplicate_id:2",
       "has_children"
     ],
     "quality_version": 3,

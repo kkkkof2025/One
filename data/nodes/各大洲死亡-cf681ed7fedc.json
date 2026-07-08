@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:各大洲死亡",
+  "title": "各大洲死亡",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%A4%A7%E6%B4%B2%E6%AD%BB%E4%BA%A1",
+  "source_page_id": 5447902,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

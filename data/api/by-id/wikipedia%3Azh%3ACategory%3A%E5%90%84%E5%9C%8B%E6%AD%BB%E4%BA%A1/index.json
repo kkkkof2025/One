@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各國死亡",
+  "source": "nodes/各國死亡-3f139e74d8ee.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各國死亡-3f139e74d8ee.json",
+  "legacy_children": "../../children/nodes/各國死亡-3f139e74d8ee.json"
+}

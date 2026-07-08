@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:命案",
+  "source": "nodes/命案-16a4e1b4ca9d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/命案-16a4e1b4ca9d.json",
+  "legacy_children": "../../children/nodes/命案-16a4e1b4ca9d.json"
+}

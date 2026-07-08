@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死亡的医学方面",
+  "source": "nodes/死亡的医学方面-2665be820dc6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死亡的医学方面-2665be820dc6.json",
+  "legacy_children": "../../children/nodes/死亡的医学方面-2665be820dc6.json"
+}

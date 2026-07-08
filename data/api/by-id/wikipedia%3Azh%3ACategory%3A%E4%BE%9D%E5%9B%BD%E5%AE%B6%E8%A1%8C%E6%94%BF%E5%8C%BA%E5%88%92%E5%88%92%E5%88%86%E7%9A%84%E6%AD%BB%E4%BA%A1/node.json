@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/依国家行政区划划分的死亡-46d358af7769.json",
+  "node": {
+    "id": "wikipedia:zh:Category:依国家行政区划划分的死亡",
+    "title": "依国家行政区划划分的死亡",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BE%9D%E5%9B%BD%E5%AE%B6%E8%A1%8C%E6%94%BF%E5%8C%BA%E5%88%92%E5%88%92%E5%88%86%E7%9A%84%E6%AD%BB%E4%BA%A1",
+    "source_page_id": 8528918,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

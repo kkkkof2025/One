@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:逝世",
+  "source": "nodes/逝世-c2f5813a2320.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/逝世-c2f5813a2320.json",
+  "legacy_children": "../../children/nodes/逝世-c2f5813a2320.json"
+}

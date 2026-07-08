@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:身亡者",
+  "source": "nodes/身亡者-d7c84c474efb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/身亡者-d7c84c474efb.json",
+  "legacy_children": "../../children/nodes/身亡者-d7c84c474efb.json"
+}

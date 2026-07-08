@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死亡文化",
+  "source": "nodes/死亡文化-6ce8b8c8d0fc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死亡文化-6ce8b8c8d0fc.json",
+  "legacy_children": "../../children/nodes/死亡文化-6ce8b8c8d0fc.json"
+}

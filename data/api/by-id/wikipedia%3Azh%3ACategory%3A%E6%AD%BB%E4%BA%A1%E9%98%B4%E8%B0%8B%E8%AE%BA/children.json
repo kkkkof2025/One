@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/死亡阴谋论-130c09cf7133.json",
+  "node": {
+    "title": "死亡阴谋论",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:死亡阴谋论",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%BB%E4%BA%A1%E9%98%B4%E8%B0%8B%E8%AE%BA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
