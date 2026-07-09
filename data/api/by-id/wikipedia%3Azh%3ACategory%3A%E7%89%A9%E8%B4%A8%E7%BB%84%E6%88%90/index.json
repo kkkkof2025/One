@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:物质组成",
+  "source": "nodes/物质组成-c5fcca816856.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/物质组成-c5fcca816856.json",
+  "legacy_children": "../../children/nodes/物质组成-c5fcca816856.json"
+}

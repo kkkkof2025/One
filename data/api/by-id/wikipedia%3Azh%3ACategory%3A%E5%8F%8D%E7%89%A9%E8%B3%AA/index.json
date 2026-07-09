@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:反物質",
+  "source": "nodes/反物質-9ebcf0a8762e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/反物質-9ebcf0a8762e.json",
+  "legacy_children": "../../children/nodes/反物質-9ebcf0a8762e.json"
+}

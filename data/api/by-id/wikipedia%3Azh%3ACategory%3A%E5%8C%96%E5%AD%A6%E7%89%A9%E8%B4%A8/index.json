@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:化学物质",
+  "source": "nodes/化学物质-75351cf42312.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/化学物质-75351cf42312.json",
+  "legacy_children": "../../children/nodes/化学物质-75351cf42312.json"
+}

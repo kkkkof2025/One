@@ -4,20 +4,176 @@
   "node": {
     "id": "wikipedia:zh:Category:物质",
     "title": "物质",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "真空",
+        "data_source": "nodes/真空-fda7c66123b5.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:真空",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%9C%9F%E7%A9%BA",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "化学物质",
+        "data_source": "nodes/化学物质-75351cf42312.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:化学物质",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%96%E5%AD%A6%E7%89%A9%E8%B4%A8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "原子",
+        "data_source": "nodes/原子-6aab6ae2bd2e.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:原子",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8E%9F%E5%AD%90",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "反物質",
+        "data_source": "nodes/反物質-9ebcf0a8762e.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:反物質",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8F%8D%E7%89%A9%E8%B3%AA",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "场物质",
+        "data_source": "nodes/场物质-aa0a7245adb7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:场物质",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9C%BA%E7%89%A9%E8%B4%A8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "奇特物质",
+        "data_source": "nodes/奇特物质-e7b5b10c37b0.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:奇特物质",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A5%87%E7%89%B9%E7%89%A9%E8%B4%A8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "物体",
+        "data_source": "nodes/物体-259db4af378f.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:物体",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E4%BD%93",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "物质状态",
+        "data_source": "nodes/物质状态-5abb0cb79604.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:物质状态",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E8%B4%A8%E7%8A%B6%E6%80%81",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "物质组成",
+        "data_source": "nodes/物质组成-c5fcca816856.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:物质组成",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E8%B4%A8%E7%BB%84%E6%88%90",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "神话传说中的物质",
+        "data_source": "nodes/神话传说中的物质-7066837fb928.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:神话传说中的物质",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E8%AF%9D%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E7%89%A9%E8%B4%A8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "虚构物质",
+        "data_source": "nodes/虚构物质-76f30b8f767d.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:虚构物质",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%99%9A%E6%9E%84%E7%89%A9%E8%B4%A8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E8%B4%A8",
     "source_page_id": 1041667,
-    "quality_score": 75,
+    "quality_score": 89,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-09T02:08:40Z",
+    "last_checked_at": "2026-07-09T02:08:40Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-09T02:08:40Z"
+    },
+    "is_leaf": false
   }
 }

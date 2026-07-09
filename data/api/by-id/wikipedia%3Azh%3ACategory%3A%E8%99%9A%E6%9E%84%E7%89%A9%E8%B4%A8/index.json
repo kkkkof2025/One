@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:虚构物质",
+  "source": "nodes/虚构物质-76f30b8f767d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/虚构物质-76f30b8f767d.json",
+  "legacy_children": "../../children/nodes/虚构物质-76f30b8f767d.json"
+}

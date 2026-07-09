@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/物体-259db4af378f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:物体",
+    "title": "物体",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E4%BD%93",
+    "source_page_id": 1575326,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

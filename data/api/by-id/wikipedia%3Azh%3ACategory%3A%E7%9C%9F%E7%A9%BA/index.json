@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:真空",
+  "source": "nodes/真空-fda7c66123b5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/真空-fda7c66123b5.json",
+  "legacy_children": "../../children/nodes/真空-fda7c66123b5.json"
+}

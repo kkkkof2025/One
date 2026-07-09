@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/化学物质-75351cf42312.json",
+  "node": {
+    "title": "化学物质",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:化学物质",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%96%E5%AD%A6%E7%89%A9%E8%B4%A8",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

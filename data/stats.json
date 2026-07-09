@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T01:55:24Z",
-  "total_nodes": 449,
-  "last_added_nodes": 30,
+  "generated_at": "2026-07-09T02:08:41Z",
+  "total_nodes": 460,
+  "last_added_nodes": 11,
   "last_request_count": 5,
-  "last_scanned_nodes": 439,
-  "last_candidate_nodes": 415,
-  "last_unchanged_requests": 2,
+  "last_scanned_nodes": 469,
+  "last_candidate_nodes": 445,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,10 +23,11 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 30
+      "added_nodes": 11
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -34,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 415,
+    "candidate_count": 445,
     "source_progress_counts": {
       "4": 12,
       "2": 6,
       "1": 53,
-      "0": 290,
-      "3": 54
+      "0": 319,
+      "3": 55
     },
     "next_source_counts": {
-      "conceptnet": 71,
-      "wikipedia": 115,
-      "wikidata": 4,
-      "wikidata_api": 225
+      "conceptnet": 72,
+      "wikipedia": 144,
+      "wikidata": 5,
+      "wikidata_api": 224
     },
     "available_next_source_counts": {
-      "conceptnet": 71,
-      "wikipedia": 115,
-      "wikidata": 4,
-      "wikidata_api": 225
+      "conceptnet": 72,
+      "wikipedia": 144,
+      "wikidata": 5,
+      "wikidata_api": 224
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,8 +76,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q35818",
-        "title": "天爐座矮星系",
+        "scan_key": "id:Q4759486",
+        "title": "仙女座X",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
@@ -91,8 +92,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q4759486",
-        "title": "仙女座X",
+        "scan_key": "id:Q779522",
+        "title": "仙女座IX",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -128,8 +129,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q35818",
-          "title": "天爐座矮星系",
+          "scan_key": "id:Q4759486",
+          "title": "仙女座X",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
@@ -144,8 +145,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q4759486",
-          "title": "仙女座X",
+          "scan_key": "id:Q779522",
+          "title": "仙女座IX",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -165,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 69,
+    "added_nodes": 80,
     "requests": 40,
-    "added_per_request": 1.725,
+    "added_per_request": 2.0,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-08T01:55:24Z",
+    "last_productive_run_at": "2026-07-09T02:08:41Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -181,16 +182,16 @@
         "transient_error_requests": 8
       },
       "wikipedia": {
-        "no_children_requests": 10,
-        "unchanged_requests": 10,
-        "children_returned_requests": 6,
-        "productive_requests": 6,
-        "added_nodes": 63
+        "no_children_requests": 9,
+        "unchanged_requests": 9,
+        "children_returned_requests": 7,
+        "productive_requests": 7,
+        "added_nodes": 74
       },
       "wikidata": {
-        "rate_limited_requests": 5,
-        "no_children_requests": 2,
-        "unchanged_requests": 2,
+        "no_children_requests": 3,
+        "unchanged_requests": 3,
+        "rate_limited_requests": 4,
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 6
@@ -204,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 79,
+  "history_entries": 80,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

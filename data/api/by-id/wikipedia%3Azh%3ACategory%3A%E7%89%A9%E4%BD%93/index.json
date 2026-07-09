@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:物体",
+  "source": "nodes/物体-259db4af378f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/物体-259db4af378f.json",
+  "legacy_children": "../../children/nodes/物体-259db4af378f.json"
+}

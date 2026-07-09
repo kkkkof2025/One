@@ -248,28 +248,41 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-05T02:14:34Z",
-      "last_checked_at": "2026-07-05T02:14:34Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-09T02:08:36Z",
+      "last_checked_at": "2026-07-09T02:08:36Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
+      "source_no_children": {
+        "wikidata": "2026-07-09T02:08:36Z"
+      },
       "source_checked": {
-        "wikipedia": "2026-07-05T02:14:34Z"
+        "wikipedia": "2026-07-05T02:14:34Z",
+        "wikidata": "2026-07-09T02:08:36Z"
       }
     },
     {
       "title": "物质",
       "data_source": "nodes/物质-a9d49a650d95.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:物质",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%A9%E8%B4%A8",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-07-09T02:08:40Z",
+      "last_checked_at": "2026-07-09T02:08:40Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-09T02:08:40Z"
+      }
     },
     {
       "title": "空间",

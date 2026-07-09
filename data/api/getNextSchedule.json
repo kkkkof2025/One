@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-08T01:55:24Z",
+  "generated_at": "2026-07-09T02:08:41Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q35818",
-      "title": "天爐座矮星系",
+      "scan_key": "id:Q4759486",
+      "title": "仙女座X",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 71.0,
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q4759486",
-      "title": "仙女座X",
+      "scan_key": "id:Q779522",
+      "title": "仙女座IX",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 71.0,

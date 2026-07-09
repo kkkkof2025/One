@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/反物質-9ebcf0a8762e.json",
+  "node": {
+    "id": "wikipedia:zh:Category:反物質",
+    "title": "反物質",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8F%8D%E7%89%A9%E8%B3%AA",
+    "source_page_id": 259194,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

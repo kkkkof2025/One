@@ -1,0 +1,66 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-07-09T02:08:41Z",
+  "id": "wikipedia:zh:Category:神话传说中的物质",
+  "source": "nodes/神话传说中的物质-7066837fb928.json",
+  "node": {
+    "title": "神话传说中的物质",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:神话传说中的物质",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E8%AF%9D%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E7%89%A9%E8%B4%A8",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-07-09T02:08:35Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-07-09T02:18:35Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}
