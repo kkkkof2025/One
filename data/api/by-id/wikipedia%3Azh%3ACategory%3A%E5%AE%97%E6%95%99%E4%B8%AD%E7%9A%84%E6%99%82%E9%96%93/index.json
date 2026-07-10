@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:宗教中的時間",
+  "source": "nodes/宗教中的時間-355404d987eb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/宗教中的時間-355404d987eb.json",
+  "legacy_children": "../../children/nodes/宗教中的時間-355404d987eb.json"
+}

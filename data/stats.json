@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-09T02:08:41Z",
-  "total_nodes": 460,
-  "last_added_nodes": 11,
+  "generated_at": "2026-07-10T02:07:50Z",
+  "total_nodes": 474,
+  "last_added_nodes": 15,
   "last_request_count": 5,
-  "last_scanned_nodes": 469,
-  "last_candidate_nodes": 445,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 480,
+  "last_candidate_nodes": 456,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,11 +23,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 11
+      "added_nodes": 8
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 7
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +36,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 445,
+    "candidate_count": 456,
     "source_progress_counts": {
       "4": 12,
-      "2": 6,
-      "1": 53,
-      "0": 319,
-      "3": 55
+      "2": 7,
+      "1": 52,
+      "0": 329,
+      "3": 56
     },
     "next_source_counts": {
-      "conceptnet": 72,
-      "wikipedia": 144,
+      "conceptnet": 74,
+      "wikipedia": 154,
       "wikidata": 5,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "available_next_source_counts": {
-      "conceptnet": 72,
-      "wikipedia": 144,
+      "conceptnet": 74,
+      "wikipedia": 154,
       "wikidata": 5,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +77,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q4759486",
-        "title": "仙女座X",
+        "scan_key": "id:Q779522",
+        "title": "仙女座IX",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:宇宙大尺度结构",
-        "title": "宇宙大尺度结构",
+        "scan_key": "id:wikipedia:zh:Category:意识",
+        "title": "意识",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q779522",
-        "title": "仙女座IX",
+        "scan_key": "id:Q782095",
+        "title": "凤凰座矮星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -129,24 +130,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q4759486",
-          "title": "仙女座X",
+          "scan_key": "id:Q779522",
+          "title": "仙女座IX",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:宇宙大尺度结构",
-          "title": "宇宙大尺度结构",
+          "scan_key": "id:wikipedia:zh:Category:意识",
+          "title": "意识",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q779522",
-          "title": "仙女座IX",
+          "scan_key": "id:Q782095",
+          "title": "凤凰座矮星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,
@@ -166,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 80,
+    "added_nodes": 84,
     "requests": 40,
-    "added_per_request": 2.0,
+    "added_per_request": 2.1,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-09T02:08:41Z",
+    "last_productive_run_at": "2026-07-10T02:07:50Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,15 +187,15 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 74
+        "added_nodes": 71
       },
       "wikidata": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3,
+        "no_children_requests": 2,
+        "unchanged_requests": 2,
         "rate_limited_requests": 4,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 6
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 13
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -205,7 +206,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 80,
+  "history_entries": 81,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

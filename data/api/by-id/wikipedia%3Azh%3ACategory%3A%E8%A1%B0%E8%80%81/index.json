@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:衰老",
+  "source": "nodes/衰老-aa6256643b03.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/衰老-aa6256643b03.json",
+  "legacy_children": "../../children/nodes/衰老-aa6256643b03.json"
+}

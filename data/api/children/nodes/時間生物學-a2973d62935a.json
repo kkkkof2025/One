@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/時間生物學-a2973d62935a.json",
+  "node": {
+    "title": "時間生物學",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:時間生物學",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%99%82%E9%96%93%E7%94%9F%E7%89%A9%E5%AD%B8",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

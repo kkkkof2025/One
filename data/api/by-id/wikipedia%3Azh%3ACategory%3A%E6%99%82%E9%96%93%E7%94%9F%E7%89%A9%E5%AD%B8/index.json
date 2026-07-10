@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:時間生物學",
+  "source": "nodes/時間生物學-a2973d62935a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/時間生物學-a2973d62935a.json",
+  "legacy_children": "../../children/nodes/時間生物學-a2973d62935a.json"
+}

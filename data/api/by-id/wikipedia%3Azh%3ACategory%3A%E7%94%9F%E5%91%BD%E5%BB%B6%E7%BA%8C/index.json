@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命延續",
+  "source": "nodes/生命延續-cdf722d680b7.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生命延續-cdf722d680b7.json",
+  "legacy_children": "../../children/nodes/生命延續-cdf722d680b7.json"
+}

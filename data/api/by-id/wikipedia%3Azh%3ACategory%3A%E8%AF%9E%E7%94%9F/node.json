@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/诞生-c1519ba7ed76.json",
+  "node": {
+    "id": "wikipedia:zh:Category:诞生",
+    "title": "诞生",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%AF%9E%E7%94%9F",
+    "source_page_id": 1526243,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

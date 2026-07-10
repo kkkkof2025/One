@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-09T02:08:41Z",
+  "updated_at": "2026-07-10T02:07:50Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:物质",
-  "last_scan_title": "物质",
-  "candidate_count": 445,
+  "last_scan_key": "id:wikipedia:zh:Category:生命中的時間",
+  "last_scan_title": "生命中的時間",
+  "candidate_count": 456,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,11 +38,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 11
+      "added_nodes": 8
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 7
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -53,32 +54,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-09T02:08:35Z",
+      "occurred_at": "2026-07-10T02:07:45Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-09T02:18:35Z",
+      "cooldown_until": "2026-07-10T02:17:45Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 445,
+    "candidate_count": 456,
     "source_progress_counts": {
       "4": 12,
-      "2": 6,
-      "1": 53,
-      "0": 319,
-      "3": 55
+      "2": 7,
+      "1": 52,
+      "0": 329,
+      "3": 56
     },
     "next_source_counts": {
-      "conceptnet": 72,
-      "wikipedia": 144,
+      "conceptnet": 74,
+      "wikipedia": 154,
       "wikidata": 5,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "available_next_source_counts": {
-      "conceptnet": 72,
-      "wikipedia": 144,
+      "conceptnet": 74,
+      "wikipedia": 154,
       "wikidata": 5,
-      "wikidata_api": 224
+      "wikidata_api": 223
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -101,24 +102,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q4759486",
-        "title": "仙女座X",
+        "scan_key": "id:Q779522",
+        "title": "仙女座IX",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 71.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:宇宙大尺度结构",
-        "title": "宇宙大尺度结构",
+        "scan_key": "id:wikipedia:zh:Category:意识",
+        "title": "意识",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q779522",
-        "title": "仙女座IX",
+        "scan_key": "id:Q782095",
+        "title": "凤凰座矮星系",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 71.0,
@@ -154,24 +155,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q4759486",
-          "title": "仙女座X",
+          "scan_key": "id:Q779522",
+          "title": "仙女座IX",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 71.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:宇宙大尺度结构",
-          "title": "宇宙大尺度结构",
+          "scan_key": "id:wikipedia:zh:Category:意识",
+          "title": "意识",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q779522",
-          "title": "仙女座IX",
+          "scan_key": "id:Q782095",
+          "title": "凤凰座矮星系",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 71.0,

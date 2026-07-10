@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:老化",
+  "source": "nodes/老化-9476ae63e6f4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/老化-9476ae63e6f4.json",
+  "legacy_children": "../../children/nodes/老化-9476ae63e6f4.json"
+}

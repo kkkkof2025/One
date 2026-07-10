@@ -80,6 +80,97 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "知性",
+      "data_source": "nodes/Q1372016.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1372016",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1372016",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人工意識",
+      "data_source": "nodes/Q2993663.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2993663",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q2993663",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "動物意識",
+      "data_source": "nodes/Q4764931.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4764931",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4764931",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "泛歐主義",
+      "data_source": "nodes/Q1294864.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1294864",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1294864",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "虛假意識",
+      "data_source": "nodes/Q2581738.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2581738",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q2581738",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "識",
+      "data_source": "nodes/Q628565.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q628565",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q628565",
+      "quality_score": 83,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "階級意識",
+      "data_source": "nodes/Q1066261.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1066261",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1066261",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -97,14 +188,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-06T02:26:23Z",
-  "last_checked_at": "2026-07-06T02:26:23Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-10T02:07:45Z",
+  "last_checked_at": "2026-07-10T02:07:45Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-06T02:26:23Z"
+    "wikipedia": "2026-07-06T02:26:23Z",
+    "wikidata": "2026-07-10T02:07:45Z"
   },
   "is_leaf": false
 }

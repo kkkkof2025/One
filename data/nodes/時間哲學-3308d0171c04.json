@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:時間哲學",
+  "title": "時間哲學",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%99%82%E9%96%93%E5%93%B2%E5%AD%B8",
+  "source_page_id": 5138428,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

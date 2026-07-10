@@ -1,19 +1,145 @@
 {
   "id": "wikipedia:zh:Category:生命中的時間",
   "title": "生命中的時間",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "宗教中的時間",
+      "data_source": "nodes/宗教中的時間-355404d987eb.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:宗教中的時間",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%97%E6%95%99%E4%B8%AD%E7%9A%84%E6%99%82%E9%96%93",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "時間哲學",
+      "data_source": "nodes/時間哲學-3308d0171c04.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:時間哲學",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%99%82%E9%96%93%E5%93%B2%E5%AD%B8",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "時間生物學",
+      "data_source": "nodes/時間生物學-a2973d62935a.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:時間生物學",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%99%82%E9%96%93%E7%94%9F%E7%89%A9%E5%AD%B8",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死亡",
+      "data_source": "nodes/死亡-04b0c3ed086c.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:死亡",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%BB%E4%BA%A1",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-07-08T01:55:24Z",
+      "last_checked_at": "2026-07-08T01:55:24Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-08T01:55:24Z"
+      }
+    },
+    {
+      "title": "生命延續",
+      "data_source": "nodes/生命延續-cdf722d680b7.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生命延續",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E5%BB%B6%E7%BA%8C",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "老化",
+      "data_source": "nodes/老化-9476ae63e6f4.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:老化",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%80%81%E5%8C%96",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "衰老",
+      "data_source": "nodes/衰老-aa6256643b03.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:衰老",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A1%B0%E8%80%81",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "诞生",
+      "data_source": "nodes/诞生-c1519ba7ed76.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:诞生",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%AF%9E%E7%94%9F",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E4%B8%AD%E7%9A%84%E6%99%82%E9%96%93",
   "source_page_id": 7910501,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-10T02:07:50Z",
+  "last_checked_at": "2026-07-10T02:07:50Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-10T02:07:50Z"
+  },
+  "is_leaf": false
 }

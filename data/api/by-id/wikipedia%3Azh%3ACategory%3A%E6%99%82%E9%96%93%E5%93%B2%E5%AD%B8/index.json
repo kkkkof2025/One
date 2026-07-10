@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:時間哲學",
+  "source": "nodes/時間哲學-3308d0171c04.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/時間哲學-3308d0171c04.json",
+  "legacy_children": "../../children/nodes/時間哲學-3308d0171c04.json"
+}
