@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:生命科学主题",
+  "title": "生命科学主题",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E4%B8%BB%E9%A2%98",
+  "source_page_id": 9245147,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

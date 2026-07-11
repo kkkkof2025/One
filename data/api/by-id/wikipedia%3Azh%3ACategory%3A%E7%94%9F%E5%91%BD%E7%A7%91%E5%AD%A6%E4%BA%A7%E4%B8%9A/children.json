@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/生命科学产业-9bd823c2eca4.json",
+  "node": {
+    "title": "生命科学产业",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:生命科学产业",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E4%BA%A7%E4%B8%9A",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

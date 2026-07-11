@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命科学主题",
+  "source": "nodes/生命科学主题-b3cbf46cfa6e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生命科学主题-b3cbf46cfa6e.json",
+  "legacy_children": "../../children/nodes/生命科学主题-b3cbf46cfa6e.json"
+}

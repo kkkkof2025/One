@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物藝術",
+  "source": "nodes/生物藝術-bc63a2b1f10f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物藝術-bc63a2b1f10f.json",
+  "legacy_children": "../../children/nodes/生物藝術-bc63a2b1f10f.json"
+}

@@ -445,17 +445,26 @@
     },
     {
       "title": "生命科學",
-      "children_count": 0,
+      "children_count": 7,
       "id": "wikipedia:zh:Category:生命科學",
       "data_source": "nodes/生命科學-8e0503f1c9d8.json",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%B8",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-07-11T01:53:55Z",
+      "last_checked_at": "2026-07-11T01:53:55Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-11T01:53:55Z"
+      }
     },
     {
       "title": "生存",

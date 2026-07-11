@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命科學獎項",
+  "source": "nodes/生命科學獎項-fa72b6f1695c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生命科學獎項-fa72b6f1695c.json",
+  "legacy_children": "../../children/nodes/生命科學獎項-fa72b6f1695c.json"
+}

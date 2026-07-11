@@ -1,19 +1,123 @@
 {
   "id": "wikipedia:zh:Category:生命科學",
   "title": "生命科學",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "制药工业",
+      "data_source": "nodes/制药工业-2be6c3bc3687.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:制药工业",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%B7%A5%E4%B8%9A",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生命科学主题",
+      "data_source": "nodes/生命科学主题-b3cbf46cfa6e.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生命科学主题",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E4%B8%BB%E9%A2%98",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生命科学产业",
+      "data_source": "nodes/生命科学产业-9bd823c2eca4.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生命科学产业",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E4%BA%A7%E4%B8%9A",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生命科学研究机构",
+      "data_source": "nodes/生命科学研究机构-52b18fd73fb9.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生命科学研究机构",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生命科學獎項",
+      "data_source": "nodes/生命科學獎項-fa72b6f1695c.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生命科學獎項",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%B8%E7%8D%8E%E9%A0%85",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物技術",
+      "data_source": "nodes/生物技術-b515bddfd710.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生物技術",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E6%8A%80%E8%A1%93",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物藝術",
+      "data_source": "nodes/生物藝術-bc63a2b1f10f.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生物藝術",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E8%97%9D%E8%A1%93",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%B8",
   "source_page_id": 5451176,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-11T01:53:55Z",
+  "last_checked_at": "2026-07-11T01:53:55Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-11T01:53:55Z"
+  },
+  "is_leaf": false
 }
