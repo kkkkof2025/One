@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生命題材電影",
+  "source": "nodes/生命題材電影-c2b2ff2f224c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生命題材電影-c2b2ff2f224c.json",
+  "legacy_children": "../../children/nodes/生命題材電影-c2b2ff2f224c.json"
+}

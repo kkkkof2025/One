@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/生命題材電影-c2b2ff2f224c.json",
+  "node": {
+    "id": "wikipedia:zh:Category:生命題材電影",
+    "title": "生命題材電影",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E9%A1%8C%E6%9D%90%E9%9B%BB%E5%BD%B1",
+    "source_page_id": 5163503,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:侏羅紀公園",
+  "source": "nodes/侏羅紀公園-f79c329a86cd.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/侏羅紀公園-f79c329a86cd.json",
+  "legacy_children": "../../children/nodes/侏羅紀公園-f79c329a86cd.json"
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-11T01:53:55Z",
+  "generated_at": "2026-07-12T01:57:08Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,12 +22,12 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q782095",
-      "title": "凤凰座矮星系",
+      "scan_key": "id:Q520496",
+      "title": "霍奇301",
       "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 71.0,
-      "depth": 8
+      "priority": 63.0,
+      "depth": 10
     },
     {
       "scan_key": "id:wikipedia:zh:Category:死亡",
@@ -38,12 +38,12 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q520496",
-      "title": "霍奇301",
+      "scan_key": "id:Q17039109",
+      "title": "U1.11",
       "next_source": "wikidata_api",
       "source_progress": 1,
-      "priority": 63.0,
-      "depth": 10
+      "priority": 61.0,
+      "depth": 4
     },
     {
       "scan_key": "id:Q2996394",

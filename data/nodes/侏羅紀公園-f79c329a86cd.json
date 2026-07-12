@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:侏羅紀公園",
+  "title": "侏羅紀公園",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BE%8F%E7%BE%85%E7%B4%80%E5%85%AC%E5%9C%92",
+  "source_page_id": 3623371,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

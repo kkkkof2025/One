@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q2438541.json",
+  "node": {
+    "id": "Q2438541",
+    "title": "死亡方式",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "has_parts_of_class",
+    "source_url": "https://www.wikidata.org/wiki/Q2438541",
+    "quality_score": 87,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:has_parts_of_class"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死亡題材作品",
+  "source": "nodes/死亡題材作品-5ac6f2f05e7e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死亡題材作品-5ac6f2f05e7e.json",
+  "legacy_children": "../../children/nodes/死亡題材作品-5ac6f2f05e7e.json"
+}

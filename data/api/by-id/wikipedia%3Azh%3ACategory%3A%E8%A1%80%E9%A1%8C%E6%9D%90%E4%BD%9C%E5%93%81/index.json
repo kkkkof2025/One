@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:血題材作品",
+  "source": "nodes/血題材作品-9c8f3ffe1ae5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/血題材作品-9c8f3ffe1ae5.json",
+  "legacy_children": "../../children/nodes/血題材作品-9c8f3ffe1ae5.json"
+}

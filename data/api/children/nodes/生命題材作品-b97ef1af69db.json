@@ -3,16 +3,139 @@
   "source": "nodes/生命題材作品-b97ef1af69db.json",
   "node": {
     "title": "生命題材作品",
-    "children_count": 0,
+    "children_count": 8,
     "id": "wikipedia:zh:Category:生命題材作品",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-12T01:57:08Z",
+    "last_checked_at": "2026-07-12T01:57:08Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-12T01:57:08Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "侏羅紀公園",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:侏羅紀公園",
+      "data_source": "nodes/侏羅紀公園-f79c329a86cd.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BE%8F%E7%BE%85%E7%B4%80%E5%85%AC%E5%9C%92",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人祭題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:人祭題材作品",
+      "data_source": "nodes/人祭題材作品-8ac185072bf9.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%A5%AD%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "性題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:性題材作品",
+      "data_source": "nodes/性題材作品-2e74516b3aba.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死亡題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:死亡題材作品",
+      "data_source": "nodes/死亡題材作品-5ac6f2f05e7e.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%BB%E4%BA%A1%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生命題材電影",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:生命題材電影",
+      "data_source": "nodes/生命題材電影-c2b2ff2f224c.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%91%BD%E9%A1%8C%E6%9D%90%E9%9B%BB%E5%BD%B1",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "血題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:血題材作品",
+      "data_source": "nodes/血題材作品-9c8f3ffe1ae5.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A1%80%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "長生不老題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:長生不老題材作品",
+      "data_source": "nodes/長生不老題材作品-604bd57d4962.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%95%B7%E7%94%9F%E4%B8%8D%E8%80%81%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "飲食題材作品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:飲食題材作品",
+      "data_source": "nodes/飲食題材作品-55a9fe33f0ad.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%A3%B2%E9%A3%9F%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 8
 }

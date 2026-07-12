@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:性題材作品",
+  "source": "nodes/性題材作品-2e74516b3aba.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/性題材作品-2e74516b3aba.json",
+  "legacy_children": "../../children/nodes/性題材作品-2e74516b3aba.json"
+}

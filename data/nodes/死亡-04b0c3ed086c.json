@@ -392,6 +392,71 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "细胞死亡",
+      "data_source": "nodes/Q2383867.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2383867",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q2383867",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死亡地",
+      "data_source": "nodes/Q18658526.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q18658526",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q18658526",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死亡方式",
+      "data_source": "nodes/Q2438541.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2438541",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q2438541",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死亡日期",
+      "data_source": "nodes/Q18748141.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q18748141",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q18748141",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "死因",
+      "data_source": "nodes/Q1931388.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1931388",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q1931388",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -409,14 +474,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-08T01:55:24Z",
-  "last_checked_at": "2026-07-08T01:55:24Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-12T01:57:04Z",
+  "last_checked_at": "2026-07-12T01:57:04Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-08T01:55:24Z"
+    "wikipedia": "2026-07-08T01:55:24Z",
+    "wikidata": "2026-07-12T01:57:04Z"
   },
   "is_leaf": false
 }
