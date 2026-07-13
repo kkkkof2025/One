@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-12T01:57:09Z",
+  "generated_at": "2026-07-13T01:59:08Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 125,
+  "total_candidates": 127,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 125,
+  "total_items": 127,
   "reason_distribution": {
-    "total_items": 125,
+    "total_items": 127,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 71,
+        "count": 73,
         "sample_review_keys": [
+          "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
           "id:Q22294683",
-          "id:Q55621538",
-          "id:Q118512328"
+          "id:Q55621538"
         ]
       },
       {
@@ -48,8 +48,9 @@
       {
         "key": "low_quality",
         "label": "低质量分",
-        "count": 3,
+        "count": 4,
         "sample_review_keys": [
+          "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
           "id:Q22294683"
@@ -58,8 +59,9 @@
       {
         "key": "needs_review",
         "label": "待人工复核",
-        "count": 3,
+        "count": 4,
         "sample_review_keys": [
+          "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
           "id:Q22294683"
@@ -68,20 +70,21 @@
       {
         "key": "missing_id",
         "label": "缺少 Wikidata QID",
-        "count": 1,
+        "count": 2,
         "sample_review_keys": [
+          "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json"
         ]
       }
     ],
     "raw_reasons": [
       {
-        "reason": "qid",
-        "count": 124
+        "reason": "good_title_length",
+        "count": 125
       },
       {
-        "reason": "good_title_length",
-        "count": 123
+        "reason": "qid",
+        "count": 125
       },
       {
         "reason": "missing_relation",
@@ -89,7 +92,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 71
+        "count": 73
       },
       {
         "reason": "zh_label",
@@ -121,14 +124,14 @@
       },
       {
         "reason": "relation:instance",
+        "count": 4
+      },
+      {
+        "reason": "missing_id",
         "count": 2
       },
       {
         "reason": "long_title",
-        "count": 1
-      },
-      {
-        "reason": "missing_id",
         "count": 1
       },
       {
@@ -144,7 +147,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 68
+        "count": 70
       },
       {
         "status": "error",
@@ -159,6 +162,27 @@
     ]
   },
   "items": [
+    {
+      "title": "L1331482-S1",
+      "children_status": "pending",
+      "quality_score": 23,
+      "review_status": "needs_review",
+      "quality_reasons": [
+        "missing_id",
+        "non_zh_label",
+        "good_title_length",
+        "relation:instance"
+      ],
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "path": "万物 / 宇宙 / 物质 / L1331482-S1",
+      "location": "nodes/L1331482-S1.json",
+      "priority": 135.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "location:nodes/L1331482-S1.json",
+      "primary_reason": "missing_id",
+      "primary_reason_label": "缺少 Wikidata QID"
+    },
     {
       "title": "L1370170-S1",
       "children_status": "pending",
@@ -2146,7 +2170,7 @@
         "missing_relation"
       ],
       "id": "Q1125187",
-      "updated_at": "2026-05-08T02:14:28Z",
+      "updated_at": "2026-07-13T01:59:03Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6039",
       "location": "nodes/Q1125187.json",
@@ -2344,7 +2368,7 @@
         "missing_relation"
       ],
       "id": "Q17039109",
-      "updated_at": "2026-07-12T01:57:04Z",
+      "updated_at": "2026-07-13T01:59:02Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 超大類星體群 / U1.11",
       "location": "nodes/Q17039109.json",
@@ -2401,6 +2425,29 @@
       "review_key": "id:Q241741",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "Zimmerit",
+      "children_status": "pending",
+      "quality_score": 55,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:instance"
+      ],
+      "id": "Q203669",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q203669",
+      "path": "万物 / 宇宙 / 物质 / Zimmerit",
+      "location": "nodes/Q203669.json",
+      "priority": 55.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q203669",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
     },
     {
       "title": "Oculotrema hippopotami",

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q2912794.json",
+  "node": {
+    "title": "生命印記",
+    "children_count": 0,
+    "id": "Q2912794",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q2912794",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

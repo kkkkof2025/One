@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1434580.json",
+  "node": {
+    "title": "原質 (哲學)",
+    "children_count": 0,
+    "id": "Q1434580",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q1434580",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

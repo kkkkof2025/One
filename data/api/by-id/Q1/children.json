@@ -301,7 +301,7 @@
     },
     {
       "title": "物质",
-      "children_count": 11,
+      "children_count": 32,
       "id": "wikipedia:zh:Category:物质",
       "data_source": "nodes/物质-a9d49a650d95.json",
       "source_provider": "wikipedia",
@@ -312,14 +312,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-09T02:08:40Z",
-      "last_checked_at": "2026-07-09T02:08:40Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-13T01:59:02Z",
+      "last_checked_at": "2026-07-13T01:59:02Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-09T02:08:40Z"
+        "wikipedia": "2026-07-09T02:08:40Z",
+        "wikidata": "2026-07-13T01:59:02Z"
       }
     },
     {

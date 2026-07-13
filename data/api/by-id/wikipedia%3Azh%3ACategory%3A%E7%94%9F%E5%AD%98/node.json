@@ -4,20 +4,59 @@
   "node": {
     "id": "wikipedia:zh:Category:生存",
     "title": "生存",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "倖存者",
+        "data_source": "nodes/倖存者-bb8758cf02f7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:倖存者",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%80%96%E5%AD%98%E8%80%85",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生存主义",
+        "data_source": "nodes/生存主义-700a5dc56407.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生存主义",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%AD%98%E4%B8%BB%E4%B9%89",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E5%AD%98",
     "source_page_id": 8487768,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-13T01:59:07Z",
+    "last_checked_at": "2026-07-13T01:59:07Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-13T01:59:07Z"
+    },
+    "is_leaf": false
   }
 }

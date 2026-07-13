@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生存主义",
+  "source": "nodes/生存主义-700a5dc56407.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生存主义-700a5dc56407.json",
+  "legacy_children": "../../children/nodes/生存主义-700a5dc56407.json"
+}

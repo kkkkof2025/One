@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-12T01:57:08Z",
+  "generated_at": "2026-07-13T01:59:07Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,28 +22,28 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q520496",
-      "title": "霍奇301",
+      "scan_key": "id:Q17039109",
+      "title": "U1.11",
       "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 63.0,
-      "depth": 10
+      "priority": 61.0,
+      "depth": 4
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:死亡",
-      "title": "死亡",
+      "scan_key": "id:wikipedia:zh:Category:物质",
+      "title": "物质",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 111.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q17039109",
-      "title": "U1.11",
+      "scan_key": "id:Q1125187",
+      "title": "NGC 6039",
       "next_source": "wikidata_api",
       "source_progress": 1,
-      "priority": 61.0,
-      "depth": 4
+      "priority": 53.0,
+      "depth": 6
     },
     {
       "scan_key": "id:Q2996394",
