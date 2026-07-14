@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物小作品",
+  "source": "nodes/生物小作品-6559834f60b2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物小作品-6559834f60b2.json",
+  "legacy_children": "../../children/nodes/生物小作品-6559834f60b2.json"
+}

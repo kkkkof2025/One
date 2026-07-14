@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:洞穴生物",
+  "source": "nodes/洞穴生物-cba7e1f13ca0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/洞穴生物-cba7e1f13ca0.json",
+  "legacy_children": "../../children/nodes/洞穴生物-cba7e1f13ca0.json"
+}

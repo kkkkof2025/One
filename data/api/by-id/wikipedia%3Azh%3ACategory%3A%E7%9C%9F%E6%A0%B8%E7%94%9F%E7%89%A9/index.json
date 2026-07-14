@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:真核生物",
+  "source": "nodes/真核生物-5e07dcc050ca.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/真核生物-5e07dcc050ca.json",
+  "legacy_children": "../../children/nodes/真核生物-5e07dcc050ca.json"
+}

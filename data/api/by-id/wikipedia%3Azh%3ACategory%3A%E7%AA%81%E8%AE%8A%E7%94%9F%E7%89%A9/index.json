@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:突變生物",
+  "source": "nodes/突變生物-242cf966a5f2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/突變生物-242cf966a5f2.json",
+  "legacy_children": "../../children/nodes/突變生物-242cf966a5f2.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神秘生物",
+  "source": "nodes/神秘生物-c1088a7c667c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神秘生物-c1088a7c667c.json",
+  "legacy_children": "../../children/nodes/神秘生物-c1088a7c667c.json"
+}

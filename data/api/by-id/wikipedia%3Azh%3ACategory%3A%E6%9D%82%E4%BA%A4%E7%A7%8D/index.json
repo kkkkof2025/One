@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:杂交种",
+  "source": "nodes/杂交种-f3a6bc1015b2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/杂交种-f3a6bc1015b2.json",
+  "legacy_children": "../../children/nodes/杂交种-f3a6bc1015b2.json"
+}

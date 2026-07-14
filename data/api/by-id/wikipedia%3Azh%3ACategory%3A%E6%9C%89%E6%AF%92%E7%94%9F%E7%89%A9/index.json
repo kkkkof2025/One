@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:有毒生物",
+  "source": "nodes/有毒生物-3a168cd873a9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/有毒生物-3a168cd873a9.json",
+  "legacy_children": "../../children/nodes/有毒生物-3a168cd873a9.json"
+}

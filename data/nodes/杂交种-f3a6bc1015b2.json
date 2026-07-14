@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:杂交种",
+  "title": "杂交种",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9D%82%E4%BA%A4%E7%A7%8D",
+  "source_page_id": 145140,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

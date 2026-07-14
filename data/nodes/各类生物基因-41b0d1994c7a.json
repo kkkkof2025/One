@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:各类生物基因",
+  "title": "各类生物基因",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E7%B1%BB%E7%94%9F%E7%89%A9%E5%9F%BA%E5%9B%A0",
+  "source_page_id": 3707134,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

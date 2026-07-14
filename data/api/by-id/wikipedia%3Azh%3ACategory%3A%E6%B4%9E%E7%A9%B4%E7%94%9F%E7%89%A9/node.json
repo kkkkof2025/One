@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/洞穴生物-cba7e1f13ca0.json",
+  "node": {
+    "id": "wikipedia:zh:Category:洞穴生物",
+    "title": "洞穴生物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B4%9E%E7%A9%B4%E7%94%9F%E7%89%A9",
+    "source_page_id": 1614341,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

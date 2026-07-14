@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:物種消歧義",
+  "source": "nodes/物種消歧義-2cc9679e789c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/物種消歧義-2cc9679e789c.json",
+  "legacy_children": "../../children/nodes/物種消歧義-2cc9679e789c.json"
+}

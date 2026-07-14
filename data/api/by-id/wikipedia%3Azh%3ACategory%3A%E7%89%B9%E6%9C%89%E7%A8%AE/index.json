@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:特有種",
+  "source": "nodes/特有種-6b4dbcddd3a3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/特有種-6b4dbcddd3a3.json",
+  "legacy_children": "../../children/nodes/特有種-6b4dbcddd3a3.json"
+}

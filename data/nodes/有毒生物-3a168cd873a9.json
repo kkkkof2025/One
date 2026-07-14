@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:有毒生物",
+  "title": "有毒生物",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%89%E6%AF%92%E7%94%9F%E7%89%A9",
+  "source_page_id": 1622987,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

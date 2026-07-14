@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:活化石",
+  "source": "nodes/活化石-6eb1185e7bf6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/活化石-6eb1185e7bf6.json",
+  "legacy_children": "../../children/nodes/活化石-6eb1185e7bf6.json"
+}

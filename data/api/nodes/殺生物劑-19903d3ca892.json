@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/殺生物劑-19903d3ca892.json",
+  "node": {
+    "id": "wikipedia:zh:Category:殺生物劑",
+    "title": "殺生物劑",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AE%BA%E7%94%9F%E7%89%A9%E5%8A%91",
+    "source_page_id": 5940027,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:殺生物劑",
+  "source": "nodes/殺生物劑-19903d3ca892.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/殺生物劑-19903d3ca892.json",
+  "legacy_children": "../../children/nodes/殺生物劑-19903d3ca892.json"
+}

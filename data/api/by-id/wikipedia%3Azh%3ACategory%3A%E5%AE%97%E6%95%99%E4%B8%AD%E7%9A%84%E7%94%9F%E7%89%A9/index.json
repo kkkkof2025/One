@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:宗教中的生物",
+  "source": "nodes/宗教中的生物-1cbd3aee747e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/宗教中的生物-1cbd3aee747e.json",
+  "legacy_children": "../../children/nodes/宗教中的生物-1cbd3aee747e.json"
+}

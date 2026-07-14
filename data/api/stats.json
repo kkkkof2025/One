@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-13T01:59:07Z",
-  "total_nodes": 517,
-  "last_added_nodes": 23,
+  "generated_at": "2026-07-14T01:45:51Z",
+  "total_nodes": 540,
+  "last_added_nodes": 25,
   "last_request_count": 5,
-  "last_scanned_nodes": 515,
-  "last_candidate_nodes": 490,
-  "last_unchanged_requests": 2,
+  "last_scanned_nodes": 538,
+  "last_candidate_nodes": 512,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,12 +23,11 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 2
+      "added_nodes": 25
     },
     "wikidata": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 21
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -36,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 490,
+    "candidate_count": 512,
     "source_progress_counts": {
       "4": 12,
-      "2": 9,
-      "1": 50,
-      "0": 360,
-      "3": 59
+      "2": 10,
+      "1": 49,
+      "0": 381,
+      "3": 60
     },
     "next_source_counts": {
-      "conceptnet": 79,
-      "wikipedia": 173,
+      "conceptnet": 81,
+      "wikipedia": 174,
       "wikidata": 6,
-      "wikidata_api": 232
+      "wikidata_api": 251
     },
     "available_next_source_counts": {
-      "conceptnet": 79,
-      "wikipedia": 173,
+      "conceptnet": 81,
+      "wikipedia": 174,
       "wikidata": 6,
-      "wikidata_api": 232
+      "wikidata_api": 251
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q17039109",
-        "title": "U1.11",
+        "scan_key": "id:Q1125187",
+        "title": "NGC 6039",
         "next_source": "wikipedia",
         "source_progress": 2,
-        "priority": 61.0,
-        "depth": 4
+        "priority": 53.0,
+        "depth": 6
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:物质",
-        "title": "物质",
+        "scan_key": "id:wikipedia:zh:Category:生命中的時間",
+        "title": "生命中的時間",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125187",
-        "title": "NGC 6039",
+        "scan_key": "id:Q1125225",
+        "title": "NGC 6043",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 53.0,
@@ -130,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q17039109",
-          "title": "U1.11",
+          "scan_key": "id:Q1125187",
+          "title": "NGC 6039",
           "next_source": "wikipedia",
           "source_progress": 2,
-          "priority": 61.0,
-          "depth": 4
+          "priority": 53.0,
+          "depth": 6
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:物质",
-          "title": "物质",
+          "scan_key": "id:wikipedia:zh:Category:生命中的時間",
+          "title": "生命中的時間",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125187",
-          "title": "NGC 6039",
+          "scan_key": "id:Q1125225",
+          "title": "NGC 6043",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 53.0,
@@ -167,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 111,
+    "added_nodes": 130,
     "requests": 40,
-    "added_per_request": 2.775,
+    "added_per_request": 3.25,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-13T01:59:07Z",
+    "last_productive_run_at": "2026-07-14T01:45:51Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -187,15 +186,15 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 72
+        "added_nodes": 91
       },
       "wikidata": {
-        "rate_limited_requests": 3,
         "children_returned_requests": 4,
         "productive_requests": 4,
         "added_nodes": 39,
-        "no_children_requests": 1,
-        "unchanged_requests": 1
+        "rate_limited_requests": 2,
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -206,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 84,
+  "history_entries": 85,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

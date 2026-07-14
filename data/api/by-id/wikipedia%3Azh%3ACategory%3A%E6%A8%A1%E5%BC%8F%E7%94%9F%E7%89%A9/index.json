@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:模式生物",
+  "source": "nodes/模式生物-9793176c8ea1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/模式生物-9793176c8ea1.json",
+  "legacy_children": "../../children/nodes/模式生物-9793176c8ea1.json"
+}

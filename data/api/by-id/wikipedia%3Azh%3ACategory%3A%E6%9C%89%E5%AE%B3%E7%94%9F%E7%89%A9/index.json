@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:有害生物",
+  "source": "nodes/有害生物-265cb29d7720.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/有害生物-265cb29d7720.json",
+  "legacy_children": "../../children/nodes/有害生物-265cb29d7720.json"
+}

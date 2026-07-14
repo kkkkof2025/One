@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/神秘生物-c1088a7c667c.json",
+  "node": {
+    "title": "神秘生物",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:神秘生物",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E7%A7%98%E7%94%9F%E7%89%A9",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

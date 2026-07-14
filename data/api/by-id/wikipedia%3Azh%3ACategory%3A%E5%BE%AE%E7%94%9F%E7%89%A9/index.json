@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:微生物",
+  "source": "nodes/微生物-efc660ed8b83.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/微生物-efc660ed8b83.json",
+  "legacy_children": "../../children/nodes/微生物-efc660ed8b83.json"
+}
