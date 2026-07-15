@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-14T01:45:52Z",
+  "generated_at": "2026-07-15T01:42:32Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 127,
+  "total_candidates": 128,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 127,
+  "total_items": 128,
   "reason_distribution": {
-    "total_items": 127,
+    "total_items": 128,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 73,
+        "count": 74,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
@@ -80,11 +80,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 125
+        "count": 126
       },
       {
         "reason": "qid",
-        "count": 125
+        "count": 126
       },
       {
         "reason": "missing_relation",
@@ -92,7 +92,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 73
+        "count": 74
       },
       {
         "reason": "zh_label",
@@ -119,11 +119,11 @@
         "count": 5
       },
       {
-        "reason": "allowed_duplicate_id:2",
-        "count": 4
+        "reason": "relation:instance",
+        "count": 5
       },
       {
-        "reason": "relation:instance",
+        "reason": "allowed_duplicate_id:2",
         "count": 4
       },
       {
@@ -147,7 +147,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 70
+        "count": 71
       },
       {
         "status": "error",
@@ -2192,7 +2192,7 @@
         "missing_relation"
       ],
       "id": "Q1125225",
-      "updated_at": "2026-07-14T01:45:46Z",
+      "updated_at": "2026-07-15T01:42:26Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6043",
       "location": "nodes/Q1125225.json",
@@ -2214,7 +2214,7 @@
         "missing_relation"
       ],
       "id": "Q1125240",
-      "updated_at": "2026-05-08T02:14:30Z",
+      "updated_at": "2026-07-15T01:42:26Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6044",
       "location": "nodes/Q1125240.json",
@@ -2446,6 +2446,29 @@
       "priority": 55.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q203669",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "New England Biolabs",
+      "children_status": "pending",
+      "quality_score": 55,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:instance"
+      ],
+      "id": "Q17134414",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q17134414",
+      "path": "万物 / 生命 / 生命科學 / New England Biolabs",
+      "location": "nodes/Q17134414.json",
+      "priority": 55.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q17134414",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

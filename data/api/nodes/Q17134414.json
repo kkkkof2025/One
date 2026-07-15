@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q17134414.json",
+  "node": {
+    "id": "Q17134414",
+    "title": "New England Biolabs",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q17134414",
+    "quality_score": 55,
+    "quality_reasons": [
+      "qid",
+      "non_zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

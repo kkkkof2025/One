@@ -4,20 +4,59 @@
   "node": {
     "id": "wikipedia:zh:Category:生物圈",
     "title": "生物圈",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "生物圈保护区",
+        "data_source": "nodes/生物圈保护区-f29e586aba98.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物圈保护区",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88%E4%BF%9D%E6%8A%A4%E5%8C%BA",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物群系",
+        "data_source": "nodes/生物群系-fe1548d1f7d7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物群系",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E7%BE%A4%E7%B3%BB",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88",
     "source_page_id": 8235502,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-15T01:42:31Z",
+    "last_checked_at": "2026-07-15T01:42:31Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-15T01:42:31Z"
+    },
+    "is_leaf": false
   }
 }
