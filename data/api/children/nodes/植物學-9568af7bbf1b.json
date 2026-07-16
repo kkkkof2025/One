@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/植物學-9568af7bbf1b.json",
+  "node": {
+    "title": "植物學",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:植物學",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%A4%8D%E7%89%A9%E5%AD%B8",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/各城市生物学-9b004701b4d9.json",
+  "node": {
+    "title": "各城市生物学",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:各城市生物学",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9F%8E%E5%B8%82%E7%94%9F%E7%89%A9%E5%AD%A6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

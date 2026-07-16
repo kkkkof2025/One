@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-15T01:42:32Z",
+  "generated_at": "2026-07-16T01:52:04Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 128,
+  "total_candidates": 129,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 128,
+  "total_items": 129,
   "reason_distribution": {
-    "total_items": 128,
+    "total_items": 129,
     "categories": [
       {
         "key": "non_zh_label",
@@ -75,12 +75,20 @@
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json"
         ]
+      },
+      {
+        "key": "disambiguation",
+        "label": "消歧义标题",
+        "count": 1,
+        "sample_review_keys": [
+          "location:nodes/生物学消歧义-b66276f0e1c3.json"
+        ]
       }
     ],
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 126
+        "count": 127
       },
       {
         "reason": "qid",
@@ -96,7 +104,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 54
+        "count": 55
       },
       {
         "reason": "fetch_error",
@@ -131,11 +139,23 @@
         "count": 2
       },
       {
+        "reason": "disambiguation",
+        "count": 1
+      },
+      {
+        "reason": "external_id",
+        "count": 1
+      },
+      {
         "reason": "long_title",
         "count": 1
       },
       {
         "reason": "relation:subclass",
+        "count": 1
+      },
+      {
+        "reason": "relation:wikipedia_category",
         "count": 1
       },
       {
@@ -147,7 +167,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 71
+        "count": 72
       },
       {
         "status": "error",
@@ -417,6 +437,30 @@
       "review_key": "id:Q185674",
       "primary_reason": "error",
       "primary_reason_label": "加载错误"
+    },
+    {
+      "title": "生物学消歧义",
+      "children_status": "pending",
+      "quality_score": 55,
+      "review_status": "approved",
+      "quality_reasons": [
+        "external_id",
+        "zh_label",
+        "good_title_length",
+        "disambiguation",
+        "relation:wikipedia_category"
+      ],
+      "id": "wikipedia:zh:Category:生物学消歧义",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%A6%E6%B6%88%E6%AD%A7%E4%B9%89",
+      "path": "万物 / 生命 / 生物学 / 生物学消歧义",
+      "location": "nodes/生物学消歧义-b66276f0e1c3.json",
+      "priority": 67.0,
+      "suggested_action": "确认标题是否过泛或消歧义页，必要时替换为更具体的 Wikidata QID。",
+      "review_key": "location:nodes/生物学消歧义-b66276f0e1c3.json",
+      "primary_reason": "disambiguation",
+      "primary_reason_label": "消歧义标题"
     },
     {
       "title": "暗物质",
@@ -2214,7 +2258,7 @@
         "missing_relation"
       ],
       "id": "Q1125240",
-      "updated_at": "2026-07-15T01:42:26Z",
+      "updated_at": "2026-07-16T01:51:58Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6044",
       "location": "nodes/Q1125240.json",
@@ -2258,7 +2302,7 @@
         "missing_relation"
       ],
       "id": "Q1125256",
-      "updated_at": "2026-05-08T02:14:32Z",
+      "updated_at": "2026-07-16T01:51:58Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6047",
       "location": "nodes/Q1125256.json",

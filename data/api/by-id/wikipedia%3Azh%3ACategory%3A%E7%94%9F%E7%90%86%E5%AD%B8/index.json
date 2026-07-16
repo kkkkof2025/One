@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生理學",
+  "source": "nodes/生理學-8cc2772ecf31.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生理學-8cc2772ecf31.json",
+  "legacy_children": "../../children/nodes/生理學-8cc2772ecf31.json"
+}

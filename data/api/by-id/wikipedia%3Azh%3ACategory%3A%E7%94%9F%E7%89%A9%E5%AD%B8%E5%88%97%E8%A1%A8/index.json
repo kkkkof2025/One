@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物學列表",
+  "source": "nodes/生物學列表-af466fb5fd6f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物學列表-af466fb5fd6f.json",
+  "legacy_children": "../../children/nodes/生物學列表-af466fb5fd6f.json"
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-07-15T01:42:31Z",
+  "generated_at": "2026-07-16T01:52:03Z",
   "id": "Q1125240",
   "source": "nodes/Q1125240.json",
   "node": {
@@ -12,19 +12,21 @@
     "quality_score": 49,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-15T01:42:26Z",
-    "last_checked_at": "2026-07-15T01:42:26Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-07-16T01:51:58Z",
+    "last_checked_at": "2026-07-16T01:51:58Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_no_children": {
       "wikidata": "2026-05-08T02:14:30Z",
-      "wikidata_api": "2026-07-15T01:42:26Z"
+      "wikidata_api": "2026-07-15T01:42:26Z",
+      "wikipedia": "2026-07-16T01:51:58Z"
     },
     "source_checked": {
       "wikidata": "2026-05-08T02:14:30Z",
-      "wikidata_api": "2026-07-15T01:42:26Z"
+      "wikidata_api": "2026-07-15T01:42:26Z",
+      "wikipedia": "2026-07-16T01:51:58Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -44,24 +46,26 @@
   ],
   "checked_sources": [
     "wikidata",
-    "wikidata_api"
+    "wikidata_api",
+    "wikipedia"
   ],
   "no_children_sources": [
     "wikidata",
-    "wikidata_api"
+    "wikidata_api",
+    "wikipedia"
   ],
   "done_sources": [
     "wikidata",
-    "wikidata_api"
+    "wikidata_api",
+    "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikipedia",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikipedia",
-  "next_source_without_cooldown": "wikipedia",
+  "next_source": "dbpedia",
+  "next_source_without_cooldown": "conceptnet",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -73,15 +77,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-15T01:42:25Z",
+      "occurred_at": "2026-07-16T01:51:57Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-15T01:52:25Z",
+      "cooldown_until": "2026-07-16T02:01:57Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 2,
-    "remaining": 3
+    "done": 3,
+    "remaining": 2
   }
 }

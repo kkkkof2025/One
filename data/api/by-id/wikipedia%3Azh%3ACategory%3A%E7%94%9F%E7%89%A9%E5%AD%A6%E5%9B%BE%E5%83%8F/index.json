@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学图像",
+  "source": "nodes/生物学图像-9d537291c4cf.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学图像-9d537291c4cf.json",
+  "legacy_children": "../../children/nodes/生物学图像-9d537291c4cf.json"
+}

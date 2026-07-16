@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各大洲生物學",
+  "source": "nodes/各大洲生物學-82989fd6b6ca.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各大洲生物學-82989fd6b6ca.json",
+  "legacy_children": "../../children/nodes/各大洲生物學-82989fd6b6ca.json"
+}

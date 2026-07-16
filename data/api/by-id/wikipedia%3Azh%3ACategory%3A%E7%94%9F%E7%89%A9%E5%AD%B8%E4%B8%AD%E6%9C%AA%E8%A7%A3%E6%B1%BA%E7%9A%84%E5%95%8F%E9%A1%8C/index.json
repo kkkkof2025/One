@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物學中未解決的問題",
+  "source": "nodes/生物學中未解決的問題-3847703de318.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物學中未解決的問題-3847703de318.json",
+  "legacy_children": "../../children/nodes/生物學中未解決的問題-3847703de318.json"
+}

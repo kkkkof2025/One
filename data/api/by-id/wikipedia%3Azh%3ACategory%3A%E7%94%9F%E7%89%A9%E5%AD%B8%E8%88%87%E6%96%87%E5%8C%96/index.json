@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物學與文化",
+  "source": "nodes/生物學與文化-7ddc74a31779.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物學與文化-7ddc74a31779.json",
+  "legacy_children": "../../children/nodes/生物學與文化-7ddc74a31779.json"
+}

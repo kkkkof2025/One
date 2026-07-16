@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物过程",
+  "source": "nodes/生物过程-9a78b771a467.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物过程-9a78b771a467.json",
+  "legacy_children": "../../children/nodes/生物过程-9a78b771a467.json"
+}

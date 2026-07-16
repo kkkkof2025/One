@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学模板",
+  "source": "nodes/生物学模板-1a92bf533ab9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学模板-1a92bf533ab9.json",
+  "legacy_children": "../../children/nodes/生物学模板-1a92bf533ab9.json"
+}

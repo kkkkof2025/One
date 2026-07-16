@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:解剖学",
+  "source": "nodes/解剖学-4a29d3e40c2d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/解剖学-4a29d3e40c2d.json",
+  "legacy_children": "../../children/nodes/解剖学-4a29d3e40c2d.json"
+}

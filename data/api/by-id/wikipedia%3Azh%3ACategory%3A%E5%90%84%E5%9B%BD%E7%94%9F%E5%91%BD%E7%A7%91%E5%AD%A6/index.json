@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各国生命科学",
+  "source": "nodes/各国生命科学-c0c98ada9c5c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各国生命科学-c0c98ada9c5c.json",
+  "legacy_children": "../../children/nodes/各国生命科学-c0c98ada9c5c.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学法则",
+  "source": "nodes/生物学法则-4c230b2491d1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学法则-4c230b2491d1.json",
+  "legacy_children": "../../children/nodes/生物学法则-4c230b2491d1.json"
+}

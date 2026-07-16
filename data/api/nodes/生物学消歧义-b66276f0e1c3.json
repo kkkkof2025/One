@@ -1,0 +1,24 @@
+{
+  "endpoint": "node",
+  "source": "nodes/生物学消歧义-b66276f0e1c3.json",
+  "node": {
+    "id": "wikipedia:zh:Category:生物学消歧义",
+    "title": "生物学消歧义",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%A6%E6%B6%88%E6%AD%A7%E4%B9%89",
+    "source_page_id": 1622761,
+    "quality_score": 55,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "disambiguation",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

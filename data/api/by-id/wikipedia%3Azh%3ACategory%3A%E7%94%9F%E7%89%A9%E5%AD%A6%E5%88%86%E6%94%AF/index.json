@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学分支",
+  "source": "nodes/生物学分支-7e6f27fdf7d3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学分支-7e6f27fdf7d3.json",
+  "legacy_children": "../../children/nodes/生物学分支-7e6f27fdf7d3.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学名祖",
+  "source": "nodes/生物学名祖-f837e833ab1a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学名祖-f837e833ab1a.json",
+  "legacy_children": "../../children/nodes/生物学名祖-f837e833ab1a.json"
+}

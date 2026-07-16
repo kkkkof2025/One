@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:量子生物学",
+  "source": "nodes/量子生物学-e72bd153673c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/量子生物学-e72bd153673c.json",
+  "legacy_children": "../../children/nodes/量子生物学-e72bd153673c.json"
+}

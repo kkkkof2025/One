@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:毒理学",
+  "source": "nodes/毒理学-c5c9112b2d5b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/毒理学-c5c9112b2d5b.json",
+  "legacy_children": "../../children/nodes/毒理学-c5c9112b2d5b.json"
+}

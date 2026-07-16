@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物技术与工具",
+  "source": "nodes/生物技术与工具-3a7cae249f55.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物技术与工具-3a7cae249f55.json",
+  "legacy_children": "../../children/nodes/生物技术与工具-3a7cae249f55.json"
+}

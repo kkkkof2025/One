@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各國生物學",
+  "source": "nodes/各國生物學-f2c764129a5c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各國生物學-f2c764129a5c.json",
+  "legacy_children": "../../children/nodes/各國生物學-f2c764129a5c.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学相互作用",
+  "source": "nodes/生物学相互作用-22a2419f165d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学相互作用-22a2419f165d.json",
+  "legacy_children": "../../children/nodes/生物学相互作用-22a2419f165d.json"
+}

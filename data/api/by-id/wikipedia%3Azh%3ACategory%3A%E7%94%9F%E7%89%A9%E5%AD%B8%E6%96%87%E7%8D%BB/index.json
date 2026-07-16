@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物學文獻",
+  "source": "nodes/生物學文獻-a6681cf263dd.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物學文獻-a6681cf263dd.json",
+  "legacy_children": "../../children/nodes/生物學文獻-a6681cf263dd.json"
+}

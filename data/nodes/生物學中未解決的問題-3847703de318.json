@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:生物學中未解決的問題",
+  "title": "生物學中未解決的問題",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%B8%E4%B8%AD%E6%9C%AA%E8%A7%A3%E6%B1%BA%E7%9A%84%E5%95%8F%E9%A1%8C",
+  "source_page_id": 3187105,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

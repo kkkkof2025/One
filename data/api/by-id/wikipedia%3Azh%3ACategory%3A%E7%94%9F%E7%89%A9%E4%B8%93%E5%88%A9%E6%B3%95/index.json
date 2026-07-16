@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物专利法",
+  "source": "nodes/生物专利法-f3d75c72f68a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物专利法-f3d75c72f68a.json",
+  "legacy_children": "../../children/nodes/生物专利法-f3d75c72f68a.json"
+}

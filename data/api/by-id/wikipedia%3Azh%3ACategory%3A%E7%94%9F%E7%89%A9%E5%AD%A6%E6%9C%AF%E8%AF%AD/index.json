@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物学术语",
+  "source": "nodes/生物学术语-ebdf8acbe08e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物学术语-ebdf8acbe08e.json",
+  "legacy_children": "../../children/nodes/生物学术语-ebdf8acbe08e.json"
+}
