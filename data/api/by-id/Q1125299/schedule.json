@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-07-16T01:52:03Z",
+  "generated_at": "2026-07-17T01:55:45Z",
   "id": "Q1125299",
   "source": "nodes/Q1125299.json",
   "node": {
@@ -12,12 +12,19 @@
     "quality_score": 49,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-05-08T02:14:33Z",
+    "updated_at": "2026-07-17T01:55:41Z",
+    "last_checked_at": "2026-07-17T01:55:41Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
     "source_no_children": {
-      "wikidata": "2026-05-08T02:14:33Z"
+      "wikidata": "2026-05-08T02:14:33Z",
+      "wikidata_api": "2026-07-17T01:55:41Z"
     },
     "source_checked": {
-      "wikidata": "2026-05-08T02:14:33Z"
+      "wikidata": "2026-05-08T02:14:33Z",
+      "wikidata_api": "2026-07-17T01:55:41Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -36,23 +43,25 @@
     "dbpedia"
   ],
   "checked_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "no_children_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "done_sources": [
-    "wikidata"
+    "wikidata",
+    "wikidata_api"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata_api",
     "wikipedia",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata_api",
-  "next_source_without_cooldown": "wikidata_api",
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -64,15 +73,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-16T01:51:57Z",
+      "occurred_at": "2026-07-17T01:55:40Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-16T02:01:57Z",
+      "cooldown_until": "2026-07-17T02:05:40Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 1,
-    "remaining": 4
+    "done": 2,
+    "remaining": 3
   }
 }

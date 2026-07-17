@@ -68,7 +68,7 @@
     },
     {
       "title": "生物",
-      "children_count": 25,
+      "children_count": 38,
       "id": "wikipedia:zh:Category:生物",
       "data_source": "nodes/生物-8ab887b507a7.json",
       "source_provider": "wikipedia",
@@ -79,14 +79,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-14T01:45:51Z",
-      "last_checked_at": "2026-07-14T01:45:51Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-17T01:55:40Z",
+      "last_checked_at": "2026-07-17T01:55:40Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-14T01:45:51Z"
+        "wikipedia": "2026-07-14T01:45:51Z",
+        "wikidata": "2026-07-17T01:55:40Z"
       }
     },
     {

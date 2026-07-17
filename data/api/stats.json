@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-16T01:52:03Z",
-  "total_nodes": 605,
-  "last_added_nodes": 46,
+  "generated_at": "2026-07-17T01:55:45Z",
+  "total_nodes": 621,
+  "last_added_nodes": 16,
   "last_request_count": 5,
-  "last_scanned_nodes": 584,
-  "last_candidate_nodes": 556,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 630,
+  "last_candidate_nodes": 600,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,11 +23,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 46
+      "added_nodes": 3
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 13
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +36,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 556,
+    "candidate_count": 600,
     "source_progress_counts": {
       "4": 12,
-      "2": 12,
-      "1": 47,
-      "0": 423,
-      "3": 62
+      "2": 13,
+      "1": 46,
+      "0": 466,
+      "3": 63
     },
     "next_source_counts": {
-      "conceptnet": 85,
-      "wikipedia": 197,
+      "conceptnet": 87,
+      "wikipedia": 240,
       "wikidata": 6,
-      "wikidata_api": 268
+      "wikidata_api": 267
     },
     "available_next_source_counts": {
-      "conceptnet": 85,
-      "wikipedia": 197,
+      "conceptnet": 87,
+      "wikipedia": 240,
       "wikidata": 6,
-      "wikidata_api": 268
+      "wikidata_api": 267
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +77,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125240",
-        "title": "NGC 6044",
+        "scan_key": "id:Q1125256",
+        "title": "NGC 6047",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 53.0,
         "depth": 6
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生命題材作品",
-        "title": "生命題材作品",
+        "scan_key": "id:wikipedia:zh:Category:生物",
+        "title": "生物",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125256",
-        "title": "NGC 6047",
+        "scan_key": "id:Q1125299",
+        "title": "NGC 6053",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 53.0,
@@ -129,24 +130,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125240",
-          "title": "NGC 6044",
+          "scan_key": "id:Q1125256",
+          "title": "NGC 6047",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 53.0,
           "depth": 6
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生命題材作品",
-          "title": "生命題材作品",
+          "scan_key": "id:wikipedia:zh:Category:生物",
+          "title": "生物",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125256",
-          "title": "NGC 6047",
+          "scan_key": "id:Q1125299",
+          "title": "NGC 6053",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 53.0,
@@ -166,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 161,
+    "added_nodes": 166,
     "requests": 40,
-    "added_per_request": 4.025,
+    "added_per_request": 4.15,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-16T01:52:03Z",
+    "last_productive_run_at": "2026-07-17T01:55:45Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,15 +187,15 @@
         "unchanged_requests": 8,
         "children_returned_requests": 8,
         "productive_requests": 8,
-        "added_nodes": 109
+        "added_nodes": 101
       },
       "wikidata": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3,
-        "children_returned_requests": 4,
-        "productive_requests": 4,
-        "added_nodes": 52,
-        "rate_limited_requests": 1
+        "children_returned_requests": 5,
+        "productive_requests": 5,
+        "added_nodes": 65,
+        "rate_limited_requests": 1,
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -205,7 +206,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 87,
+  "history_entries": 88,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

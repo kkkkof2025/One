@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/前生命化学-d868d8a382b3.json",
+  "node": {
+    "title": "前生命化学",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:前生命化学",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%89%8D%E7%94%9F%E5%91%BD%E5%8C%96%E5%AD%A6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

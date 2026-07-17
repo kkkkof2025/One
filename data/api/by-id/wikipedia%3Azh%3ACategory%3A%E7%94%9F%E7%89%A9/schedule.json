@@ -1,11 +1,11 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-07-16T01:52:03Z",
+  "generated_at": "2026-07-17T01:55:45Z",
   "id": "wikipedia:zh:Category:生物",
   "source": "nodes/生物-8ab887b507a7.json",
   "node": {
     "title": "生物",
-    "children_count": 25,
+    "children_count": 38,
     "id": "wikipedia:zh:Category:生物",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
@@ -15,14 +15,15 @@
     "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-14T01:45:51Z",
-    "last_checked_at": "2026-07-14T01:45:51Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-07-17T01:55:40Z",
+    "last_checked_at": "2026-07-17T01:55:40Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-07-14T01:45:51Z"
+      "wikipedia": "2026-07-14T01:45:51Z",
+      "wikidata": "2026-07-17T01:55:40Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -40,20 +41,21 @@
     "dbpedia"
   ],
   "checked_sources": [
+    "wikidata",
     "wikipedia"
   ],
   "no_children_sources": [],
   "done_sources": [
+    "wikidata",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata",
-  "next_source_without_cooldown": "wikidata",
+  "next_source": "dbpedia",
+  "next_source_without_cooldown": "conceptnet",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -65,15 +67,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-16T01:51:57Z",
+      "occurred_at": "2026-07-17T01:55:40Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-16T02:01:57Z",
+      "cooldown_until": "2026-07-17T02:05:40Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 4,
-    "done": 1,
-    "remaining": 3
+    "done": 2,
+    "remaining": 2
   }
 }
