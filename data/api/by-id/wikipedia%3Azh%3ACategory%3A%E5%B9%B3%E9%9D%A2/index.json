@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:平面",
+  "source": "nodes/平面-8a7a84009080.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/平面-8a7a84009080.json",
+  "legacy_children": "../../children/nodes/平面-8a7a84009080.json"
+}

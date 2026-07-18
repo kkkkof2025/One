@@ -54,14 +54,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-14T01:45:51Z",
-      "last_checked_at": "2026-07-14T01:45:51Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-17T01:55:40Z",
+      "last_checked_at": "2026-07-17T01:55:40Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-14T01:45:51Z"
+        "wikipedia": "2026-07-14T01:45:51Z",
+        "wikidata": "2026-07-17T01:55:40Z"
       }
     },
     {
@@ -609,6 +610,214 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "動物學",
+      "data_source": "nodes/Q431.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q431",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q431",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "形態學",
+      "data_source": "nodes/Q183252.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q183252",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q183252",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "微生物学",
+      "data_source": "nodes/Q7193.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7193",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7193",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "植物学",
+      "data_source": "nodes/Q441.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q441",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q441",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "演化生物学",
+      "data_source": "nodes/Q840400.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q840400",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q840400",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生态学",
+      "data_source": "nodes/Q7150.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7150",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7150",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物化學",
+      "data_source": "nodes/Q7094.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7094",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7094",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物技术",
+      "data_source": "nodes/Q7108.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7108",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7108",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物物理学",
+      "data_source": "nodes/Q7100.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7100",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7100",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "真菌學",
+      "data_source": "nodes/Q7175.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7175",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7175",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "神经生物学",
+      "data_source": "nodes/Q2728012.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2728012",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q2728012",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "细胞生物学",
+      "data_source": "nodes/Q7141.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7141",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7141",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "解剖学",
+      "data_source": "nodes/Q514.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q514",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q514",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "计算生物学",
+      "data_source": "nodes/Q177005.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q177005",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q177005",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "遗传学",
+      "data_source": "nodes/Q7162.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7162",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7162",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物合理性",
+      "data_source": "nodes/Q4915013.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4915013",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q4915013",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -626,14 +835,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-16T01:52:03Z",
-  "last_checked_at": "2026-07-16T01:52:03Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-18T01:45:45Z",
+  "last_checked_at": "2026-07-18T01:45:45Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-16T01:52:03Z"
+    "wikipedia": "2026-07-16T01:52:03Z",
+    "wikidata": "2026-07-18T01:45:45Z"
   },
   "is_leaf": false
 }

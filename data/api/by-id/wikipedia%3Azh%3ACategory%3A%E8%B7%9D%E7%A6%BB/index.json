@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:距离",
+  "source": "nodes/距离-8e6bcf151c0f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/距离-8e6bcf151c0f.json",
+  "legacy_children": "../../children/nodes/距离-8e6bcf151c0f.json"
+}

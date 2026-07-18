@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q4915013.json",
+  "node": {
+    "title": "生物合理性",
+    "children_count": 0,
+    "id": "Q4915013",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q4915013",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

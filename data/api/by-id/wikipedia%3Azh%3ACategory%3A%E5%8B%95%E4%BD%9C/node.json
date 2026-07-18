@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/動作-0a781166ac8f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:動作",
+    "title": "動作",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E4%BD%9C",
+    "source_page_id": 1244768,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

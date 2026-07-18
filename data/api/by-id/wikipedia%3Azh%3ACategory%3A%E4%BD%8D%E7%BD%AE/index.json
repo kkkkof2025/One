@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:位置",
+  "source": "nodes/位置-b3223f217a33.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/位置-b3223f217a33.json",
+  "legacy_children": "../../children/nodes/位置-b3223f217a33.json"
+}

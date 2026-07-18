@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/平面-8a7a84009080.json",
+  "node": {
+    "title": "平面",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:平面",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B9%B3%E9%9D%A2",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

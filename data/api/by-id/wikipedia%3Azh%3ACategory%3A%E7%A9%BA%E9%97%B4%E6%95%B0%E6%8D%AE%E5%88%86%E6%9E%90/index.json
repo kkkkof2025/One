@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:空间数据分析",
+  "source": "nodes/空间数据分析-66b36845f131.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/空间数据分析-66b36845f131.json",
+  "legacy_children": "../../children/nodes/空间数据分析-66b36845f131.json"
+}

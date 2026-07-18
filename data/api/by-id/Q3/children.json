@@ -571,7 +571,7 @@
     },
     {
       "title": "生物学",
-      "children_count": 46,
+      "children_count": 62,
       "id": "wikipedia:zh:Category:生物学",
       "data_source": "nodes/生物学-c6c6ae15ce5f.json",
       "source_provider": "wikipedia",
@@ -582,14 +582,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-16T01:52:03Z",
-      "last_checked_at": "2026-07-16T01:52:03Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-18T01:45:45Z",
+      "last_checked_at": "2026-07-18T01:45:45Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-16T01:52:03Z"
+        "wikipedia": "2026-07-16T01:52:03Z",
+        "wikidata": "2026-07-18T01:45:45Z"
       }
     },
     {

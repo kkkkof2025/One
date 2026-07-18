@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T01:55:45Z",
-  "total_nodes": 621,
-  "last_added_nodes": 16,
+  "generated_at": "2026-07-18T01:45:49Z",
+  "total_nodes": 639,
+  "last_added_nodes": 24,
   "last_request_count": 5,
-  "last_scanned_nodes": 630,
-  "last_candidate_nodes": 600,
+  "last_scanned_nodes": 646,
+  "last_candidate_nodes": 616,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,12 +23,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 3
+      "added_nodes": 8
     },
     "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 13
+      "added_nodes": 16
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -36,25 +36,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 600,
+    "candidate_count": 616,
     "source_progress_counts": {
       "4": 12,
-      "2": 13,
-      "1": 46,
-      "0": 466,
-      "3": 63
+      "2": 14,
+      "1": 45,
+      "0": 481,
+      "3": 64
     },
     "next_source_counts": {
-      "conceptnet": 87,
-      "wikipedia": 240,
+      "conceptnet": 89,
+      "wikipedia": 242,
       "wikidata": 6,
-      "wikidata_api": 267
+      "wikidata_api": 279
     },
     "available_next_source_counts": {
-      "conceptnet": 87,
-      "wikipedia": 240,
+      "conceptnet": 89,
+      "wikipedia": 242,
       "wikidata": 6,
-      "wikidata_api": 267
+      "wikidata_api": 279
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +77,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125256",
-        "title": "NGC 6047",
+        "scan_key": "id:Q1125299",
+        "title": "NGC 6053",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 53.0,
         "depth": 6
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生物",
-        "title": "生物",
+        "scan_key": "id:wikipedia:zh:Category:生物学",
+        "title": "生物学",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125299",
-        "title": "NGC 6053",
+        "scan_key": "id:Q1125311",
+        "title": "NGC 6054",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 53.0,
@@ -130,24 +130,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125256",
-          "title": "NGC 6047",
+          "scan_key": "id:Q1125299",
+          "title": "NGC 6053",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 53.0,
           "depth": 6
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生物",
-          "title": "生物",
+          "scan_key": "id:wikipedia:zh:Category:生物学",
+          "title": "生物学",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125299",
-          "title": "NGC 6053",
+          "scan_key": "id:Q1125311",
+          "title": "NGC 6054",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 53.0,
@@ -167,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 166,
+    "added_nodes": 175,
     "requests": 40,
-    "added_per_request": 4.15,
+    "added_per_request": 4.375,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-17T01:55:45Z",
+    "last_productive_run_at": "2026-07-18T01:45:49Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -190,10 +190,10 @@
         "added_nodes": 101
       },
       "wikidata": {
+        "rate_limited_requests": 1,
         "children_returned_requests": 5,
         "productive_requests": 5,
-        "added_nodes": 65,
-        "rate_limited_requests": 1,
+        "added_nodes": 74,
         "no_children_requests": 2,
         "unchanged_requests": 2
       },
@@ -206,7 +206,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 88,
+  "history_entries": 89,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

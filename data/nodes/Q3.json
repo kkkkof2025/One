@@ -538,14 +538,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-16T01:52:03Z",
-      "last_checked_at": "2026-07-16T01:52:03Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-18T01:45:45Z",
+      "last_checked_at": "2026-07-18T01:45:45Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-16T01:52:03Z"
+        "wikipedia": "2026-07-16T01:52:03Z",
+        "wikidata": "2026-07-18T01:45:45Z"
       }
     },
     {

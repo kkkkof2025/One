@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-17T01:55:45Z",
+  "generated_at": "2026-07-18T01:45:49Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 129,
+  "total_candidates": 135,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 129,
+  "total_items": 135,
   "reason_distribution": {
-    "total_items": 129,
+    "total_items": 135,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 9,
+        "count": 15,
         "sample_review_keys": [
           "id:Q2591050",
           "id:Q15107669",
@@ -88,11 +88,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 127
+        "count": 133
       },
       {
         "reason": "qid",
-        "count": 126
+        "count": 132
       },
       {
         "reason": "missing_relation",
@@ -104,7 +104,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 55
+        "count": 61
       },
       {
         "reason": "fetch_error",
@@ -112,11 +112,11 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 23
+        "count": 29
       },
       {
         "reason": "duplicate_id:2",
-        "count": 9
+        "count": 15
       },
       {
         "reason": "has_children",
@@ -167,7 +167,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 72
+        "count": 78
       },
       {
         "status": "error",
@@ -2324,7 +2324,7 @@
         "missing_relation"
       ],
       "id": "Q1125299",
-      "updated_at": "2026-07-17T01:55:41Z",
+      "updated_at": "2026-07-18T01:45:44Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6053",
       "location": "nodes/Q1125299.json",
@@ -2346,7 +2346,7 @@
         "missing_relation"
       ],
       "id": "Q1125311",
-      "updated_at": "2026-05-08T02:14:34Z",
+      "updated_at": "2026-07-18T01:45:46Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6054",
       "location": "nodes/Q1125311.json",
@@ -3023,6 +3023,150 @@
       "review_key": "id:Q1080238",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "動物學",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q431",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q431",
+      "path": "万物 / 生命 / 生命科學 / 動物學",
+      "location": "nodes/Q431.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q431",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "微生物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7193",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7193",
+      "path": "万物 / 生命 / 生命科學 / 微生物学",
+      "location": "nodes/Q7193.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7193",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "植物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q441",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q441",
+      "path": "万物 / 生命 / 生命科學 / 植物学",
+      "location": "nodes/Q441.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q441",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "生态学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7150",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7150",
+      "path": "万物 / 生命 / 生命科學 / 生态学",
+      "location": "nodes/Q7150.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7150",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "解剖学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q514",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q514",
+      "path": "万物 / 生命 / 生命科學 / 解剖学",
+      "location": "nodes/Q514.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q514",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "遗传学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7162",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7162",
+      "path": "万物 / 生命 / 生命科學 / 遗传学",
+      "location": "nodes/Q7162.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7162",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
     },
     {
       "title": "化感作用",

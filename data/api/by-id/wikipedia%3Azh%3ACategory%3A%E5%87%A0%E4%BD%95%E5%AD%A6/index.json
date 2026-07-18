@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:几何学",
+  "source": "nodes/几何学-6f0fd148513f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/几何学-6f0fd148513f.json",
+  "legacy_children": "../../children/nodes/几何学-6f0fd148513f.json"
+}

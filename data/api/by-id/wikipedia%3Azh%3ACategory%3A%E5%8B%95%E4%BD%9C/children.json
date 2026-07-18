@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/動作-0a781166ac8f.json",
+  "node": {
+    "title": "動作",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:動作",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E4%BD%9C",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

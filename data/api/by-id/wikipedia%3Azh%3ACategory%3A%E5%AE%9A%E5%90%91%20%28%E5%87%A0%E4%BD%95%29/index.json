@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:定向 (几何)",
+  "source": "nodes/定向-(几何)-7163683841f4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/定向-(几何)-7163683841f4.json",
+  "legacy_children": "../../children/nodes/定向-(几何)-7163683841f4.json"
+}

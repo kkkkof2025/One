@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/距离-8e6bcf151c0f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:距离",
+    "title": "距离",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B7%9D%E7%A6%BB",
+    "source_page_id": 7477170,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

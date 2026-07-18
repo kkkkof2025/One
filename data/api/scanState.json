@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-17T01:55:45Z",
+  "updated_at": "2026-07-18T01:45:49Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:生物起源",
-  "last_scan_title": "生物起源",
-  "candidate_count": 600,
+  "last_scan_key": "id:wikipedia:zh:Category:空间",
+  "last_scan_title": "空间",
+  "candidate_count": 616,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,12 +38,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 3
+      "added_nodes": 8
     },
     "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 13
+      "added_nodes": 16
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -54,32 +54,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-17T01:55:40Z",
+      "occurred_at": "2026-07-18T01:45:44Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-17T02:05:40Z",
+      "cooldown_until": "2026-07-18T01:55:44Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 600,
+    "candidate_count": 616,
     "source_progress_counts": {
       "4": 12,
-      "2": 13,
-      "1": 46,
-      "0": 466,
-      "3": 63
+      "2": 14,
+      "1": 45,
+      "0": 481,
+      "3": 64
     },
     "next_source_counts": {
-      "conceptnet": 87,
-      "wikipedia": 240,
+      "conceptnet": 89,
+      "wikipedia": 242,
       "wikidata": 6,
-      "wikidata_api": 267
+      "wikidata_api": 279
     },
     "available_next_source_counts": {
-      "conceptnet": 87,
-      "wikipedia": 240,
+      "conceptnet": 89,
+      "wikipedia": 242,
       "wikidata": 6,
-      "wikidata_api": 267
+      "wikidata_api": 279
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -102,24 +102,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125256",
-        "title": "NGC 6047",
+        "scan_key": "id:Q1125299",
+        "title": "NGC 6053",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 53.0,
         "depth": 6
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生物",
-        "title": "生物",
+        "scan_key": "id:wikipedia:zh:Category:生物学",
+        "title": "生物学",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125299",
-        "title": "NGC 6053",
+        "scan_key": "id:Q1125311",
+        "title": "NGC 6054",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 53.0,
@@ -155,24 +155,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125256",
-          "title": "NGC 6047",
+          "scan_key": "id:Q1125299",
+          "title": "NGC 6053",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 53.0,
           "depth": 6
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生物",
-          "title": "生物",
+          "scan_key": "id:wikipedia:zh:Category:生物学",
+          "title": "生物学",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125299",
-          "title": "NGC 6053",
+          "scan_key": "id:Q1125311",
+          "title": "NGC 6054",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 53.0,
