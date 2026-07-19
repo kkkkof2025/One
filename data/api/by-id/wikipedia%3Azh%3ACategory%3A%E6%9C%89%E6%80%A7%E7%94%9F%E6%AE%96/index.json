@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:有性生殖",
+  "source": "nodes/有性生殖-a70284e884c1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/有性生殖-a70284e884c1.json",
+  "legacy_children": "../../children/nodes/有性生殖-a70284e884c1.json"
+}

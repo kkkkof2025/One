@@ -689,7 +689,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q431",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -717,7 +717,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q7193",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -731,7 +731,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q441",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -759,7 +759,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q7150",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -857,7 +857,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q514",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -885,7 +885,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q7162",
       "children_status": "pending",
       "is_leaf": false,
-      "quality_score": 93,
+      "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved"
     },

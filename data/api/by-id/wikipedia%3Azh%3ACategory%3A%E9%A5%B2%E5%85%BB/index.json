@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:饲养",
+  "source": "nodes/饲养-c8baac4c337c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/饲养-c8baac4c337c.json",
+  "legacy_children": "../../children/nodes/饲养-c8baac4c337c.json"
+}

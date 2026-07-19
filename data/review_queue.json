@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:45:49Z",
+  "generated_at": "2026-07-19T01:54:46Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 135,
@@ -2346,7 +2346,7 @@
         "missing_relation"
       ],
       "id": "Q1125311",
-      "updated_at": "2026-07-18T01:45:46Z",
+      "updated_at": "2026-07-19T01:54:40Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6054",
       "location": "nodes/Q1125311.json",
@@ -2390,7 +2390,7 @@
         "missing_relation"
       ],
       "id": "Q1125319",
-      "updated_at": "2026-05-08T02:14:37Z",
+      "updated_at": "2026-07-19T01:54:41Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 天體物理學中心2長城 / 武仙座超星系团 / 武仙座星系团 / NGC 6056",
       "location": "nodes/Q1125319.json",

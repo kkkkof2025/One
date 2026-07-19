@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/生殖系统-c902363e4541.json",
+  "node": {
+    "title": "生殖系统",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:生殖系统",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E6%AE%96%E7%B3%BB%E7%BB%9F",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

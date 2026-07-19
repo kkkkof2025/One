@@ -325,7 +325,7 @@
     },
     {
       "title": "空间",
-      "children_count": 8,
+      "children_count": 28,
       "id": "wikipedia:zh:Category:空间",
       "data_source": "nodes/空间-4d6d43f9229e.json",
       "source_provider": "wikipedia",
@@ -336,14 +336,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-18T01:45:49Z",
-      "last_checked_at": "2026-07-18T01:45:49Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-19T01:54:41Z",
+      "last_checked_at": "2026-07-19T01:54:41Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-18T01:45:49Z"
+        "wikipedia": "2026-07-18T01:45:49Z",
+        "wikidata": "2026-07-19T01:54:41Z"
       }
     },
     {

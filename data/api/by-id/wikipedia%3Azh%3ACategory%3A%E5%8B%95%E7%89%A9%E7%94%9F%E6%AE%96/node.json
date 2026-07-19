@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/動物生殖-c2a9a9bc9471.json",
+  "node": {
+    "id": "wikipedia:zh:Category:動物生殖",
+    "title": "動物生殖",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E7%89%A9%E7%94%9F%E6%AE%96",
+    "source_page_id": 5490049,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

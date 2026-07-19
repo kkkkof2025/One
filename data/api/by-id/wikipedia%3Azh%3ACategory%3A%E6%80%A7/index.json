@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:性",
+  "source": "nodes/性-b591ed830e9d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/性-b591ed830e9d.json",
+  "legacy_children": "../../children/nodes/性-b591ed830e9d.json"
+}

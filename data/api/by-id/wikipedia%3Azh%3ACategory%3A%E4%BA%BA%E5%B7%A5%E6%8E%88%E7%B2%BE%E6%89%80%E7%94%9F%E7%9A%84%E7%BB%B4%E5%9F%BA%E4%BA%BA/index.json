@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人工授精所生的维基人",
+  "source": "nodes/人工授精所生的维基人-9333ac90b177.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人工授精所生的维基人-9333ac90b177.json",
+  "legacy_children": "../../children/nodes/人工授精所生的维基人-9333ac90b177.json"
+}

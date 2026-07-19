@@ -1,0 +1,66 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-07-19T01:54:45Z",
+  "id": "wikipedia:zh:Category:人工授精所生的维基人",
+  "source": "nodes/人工授精所生的维基人-9333ac90b177.json",
+  "node": {
+    "title": "人工授精所生的维基人",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:人工授精所生的维基人",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E5%B7%A5%E6%8E%88%E7%B2%BE%E6%89%80%E7%94%9F%E7%9A%84%E7%BB%B4%E5%9F%BA%E4%BA%BA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-07-19T01:54:40Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-07-19T02:04:40Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}

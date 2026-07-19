@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:發育生物學",
+  "source": "nodes/發育生物學-67fb4b6243f4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/發育生物學-67fb4b6243f4.json",
+  "legacy_children": "../../children/nodes/發育生物學-67fb4b6243f4.json"
+}

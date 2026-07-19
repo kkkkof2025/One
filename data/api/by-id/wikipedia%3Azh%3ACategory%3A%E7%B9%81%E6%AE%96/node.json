@@ -4,20 +4,176 @@
   "node": {
     "id": "wikipedia:zh:Category:繁殖",
     "title": "繁殖",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "動物生殖",
+        "data_source": "nodes/動物生殖-c2a9a9bc9471.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:動物生殖",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E7%89%A9%E7%94%9F%E6%AE%96",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "有性生殖",
+        "data_source": "nodes/有性生殖-a70284e884c1.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:有性生殖",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%89%E6%80%A7%E7%94%9F%E6%AE%96",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "人工授精所生的维基人",
+        "data_source": "nodes/人工授精所生的维基人-9333ac90b177.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:人工授精所生的维基人",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E5%B7%A5%E6%8E%88%E7%B2%BE%E6%89%80%E7%94%9F%E7%9A%84%E7%BB%B4%E5%9F%BA%E4%BA%BA",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "交配",
+        "data_source": "nodes/交配-d8cd55b920c5.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:交配",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%A4%E9%85%8D",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "性",
+        "data_source": "nodes/性-b591ed830e9d.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:性",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7",
+        "quality_score": 61,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "植物繁殖",
+        "data_source": "nodes/植物繁殖-39eb05f0281c.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:植物繁殖",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%A4%8D%E7%89%A9%E7%B9%81%E6%AE%96",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "無性生殖",
+        "data_source": "nodes/無性生殖-08161323b1b2.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:無性生殖",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%84%A1%E6%80%A7%E7%94%9F%E6%AE%96",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生殖系统",
+        "data_source": "nodes/生殖系统-c902363e4541.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生殖系统",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E6%AE%96%E7%B3%BB%E7%BB%9F",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生育力",
+        "data_source": "nodes/生育力-ee6e5324a252.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生育力",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E8%82%B2%E5%8A%9B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "發育生物學",
+        "data_source": "nodes/發育生物學-67fb4b6243f4.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:發育生物學",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%99%BC%E8%82%B2%E7%94%9F%E7%89%A9%E5%AD%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "饲养",
+        "data_source": "nodes/饲养-c8baac4c337c.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:饲养",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%A5%B2%E5%85%BB",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B9%81%E6%AE%96",
     "source_page_id": 634067,
-    "quality_score": 75,
+    "quality_score": 89,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-19T01:54:45Z",
+    "last_checked_at": "2026-07-19T01:54:45Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-19T01:54:45Z"
+    },
+    "is_leaf": false
   }
 }

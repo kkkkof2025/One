@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:性",
+  "title": "性",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7",
+  "source_page_id": 464583,
+  "quality_score": 61,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "short_title",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

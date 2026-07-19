@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-18T01:45:49Z",
+  "generated_at": "2026-07-19T01:54:45Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1125299",
-      "title": "NGC 6053",
+      "scan_key": "id:Q1125311",
+      "title": "NGC 6054",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 53.0,
       "depth": 6
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:生物学",
-      "title": "生物学",
+      "scan_key": "id:wikipedia:zh:Category:空间",
+      "title": "空间",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 111.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q1125311",
-      "title": "NGC 6054",
+      "scan_key": "id:Q1125319",
+      "title": "NGC 6056",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 53.0,
