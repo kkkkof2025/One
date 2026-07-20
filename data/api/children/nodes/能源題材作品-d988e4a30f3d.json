@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/能源題材作品-d988e4a30f3d.json",
+  "node": {
+    "title": "能源題材作品",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:能源題材作品",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E6%BA%90%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

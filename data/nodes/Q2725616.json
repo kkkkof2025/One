@@ -1,0 +1,18 @@
+{
+  "id": "Q2725616",
+  "title": "植物繁殖",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "has_parts_of_class",
+  "source_url": "https://www.wikidata.org/wiki/Q2725616",
+  "quality_score": 87,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "relation:has_parts_of_class"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

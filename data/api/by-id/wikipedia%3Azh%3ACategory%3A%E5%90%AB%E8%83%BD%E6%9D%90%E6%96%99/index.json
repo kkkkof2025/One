@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:含能材料",
+  "source": "nodes/含能材料-99c79017a16e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/含能材料-99c79017a16e.json",
+  "legacy_children": "../../children/nodes/含能材料-99c79017a16e.json"
+}

@@ -646,7 +646,7 @@
     },
     {
       "title": "繁殖",
-      "children_count": 11,
+      "children_count": 23,
       "id": "wikipedia:zh:Category:繁殖",
       "data_source": "nodes/繁殖-7756c1ec8b99.json",
       "source_provider": "wikipedia",
@@ -657,14 +657,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-19T01:54:45Z",
-      "last_checked_at": "2026-07-19T01:54:45Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-20T03:26:48Z",
+      "last_checked_at": "2026-07-20T03:26:48Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-19T01:54:45Z"
+        "wikipedia": "2026-07-19T01:54:45Z",
+        "wikidata": "2026-07-20T03:26:48Z"
       }
     },
     {

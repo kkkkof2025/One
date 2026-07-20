@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "Q3427333",
+  "source": "nodes/Q3427333.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/Q3427333.json",
+  "legacy_children": "../../children/nodes/Q3427333.json"
+}

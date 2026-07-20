@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能源",
+  "source": "nodes/能源-be77113a4fbc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能源-be77113a4fbc.json",
+  "legacy_children": "../../children/nodes/能源-be77113a4fbc.json"
+}

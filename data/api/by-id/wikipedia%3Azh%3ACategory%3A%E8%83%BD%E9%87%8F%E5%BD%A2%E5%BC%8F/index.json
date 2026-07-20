@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能量形式",
+  "source": "nodes/能量形式-66a3ab8db664.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能量形式-66a3ab8db664.json",
+  "legacy_children": "../../children/nodes/能量形式-66a3ab8db664.json"
+}

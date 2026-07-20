@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能源政策",
+  "source": "nodes/能源政策-b3bb6fcb1f7f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能源政策-b3bb6fcb1f7f.json",
+  "legacy_children": "../../children/nodes/能源政策-b3bb6fcb1f7f.json"
+}

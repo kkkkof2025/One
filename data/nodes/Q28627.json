@@ -1,0 +1,18 @@
+{
+  "id": "Q28627",
+  "title": "妊娠期",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "part_of",
+  "source_url": "https://www.wikidata.org/wiki/Q28627",
+  "quality_score": 89,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "relation:part_of"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q351870.json",
+  "node": {
+    "title": "生殖醫學科",
+    "children_count": 0,
+    "id": "Q351870",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q351870",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

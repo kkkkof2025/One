@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/能量生產-f101fc58de98.json",
+  "node": {
+    "title": "能量生產",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:能量生產",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E9%87%8F%E7%94%9F%E7%94%A2",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

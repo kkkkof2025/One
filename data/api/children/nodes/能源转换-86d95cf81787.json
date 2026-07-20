@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/能源转换-86d95cf81787.json",
+  "node": {
+    "title": "能源转换",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:能源转换",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E6%BA%90%E8%BD%AC%E6%8D%A2",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

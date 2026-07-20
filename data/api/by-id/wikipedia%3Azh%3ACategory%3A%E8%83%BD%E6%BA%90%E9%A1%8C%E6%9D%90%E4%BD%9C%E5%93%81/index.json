@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能源題材作品",
+  "source": "nodes/能源題材作品-d988e4a30f3d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能源題材作品-d988e4a30f3d.json",
+  "legacy_children": "../../children/nodes/能源題材作品-d988e4a30f3d.json"
+}

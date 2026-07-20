@@ -3,7 +3,7 @@
   "source": "nodes/繁殖-7756c1ec8b99.json",
   "node": {
     "title": "繁殖",
-    "children_count": 11,
+    "children_count": 23,
     "id": "wikipedia:zh:Category:繁殖",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
@@ -13,14 +13,15 @@
     "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-19T01:54:45Z",
-    "last_checked_at": "2026-07-19T01:54:45Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-07-20T03:26:48Z",
+    "last_checked_at": "2026-07-20T03:26:48Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-07-19T01:54:45Z"
+      "wikipedia": "2026-07-19T01:54:45Z",
+      "wikidata": "2026-07-20T03:26:48Z"
     }
   },
   "children": [
@@ -177,7 +178,175 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "人類生殖",
+      "children_count": 0,
+      "id": "Q3427336",
+      "data_source": "nodes/Q3427336.json",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q3427336",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "动物繁殖",
+      "children_count": 0,
+      "id": "Q3427333",
+      "data_source": "nodes/Q3427333.json",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q3427333",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "植物繁殖",
+      "children_count": 0,
+      "id": "Q2725616",
+      "data_source": "nodes/Q2725616.json",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q2725616",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "妊娠期",
+      "children_count": 0,
+      "id": "Q28627",
+      "data_source": "nodes/Q28627.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q28627",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "繁衍过程",
+      "children_count": 0,
+      "id": "Q14885910",
+      "data_source": "nodes/Q14885910.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q14885910",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "世代交替",
+      "children_count": 0,
+      "id": "Q725951",
+      "data_source": "nodes/Q725951.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q725951",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "嫁接",
+      "children_count": 0,
+      "id": "Q222958",
+      "data_source": "nodes/Q222958.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q222958",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "无性生殖",
+      "children_count": 0,
+      "id": "Q173432",
+      "data_source": "nodes/Q173432.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q173432",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "有性生殖",
+      "children_count": 0,
+      "id": "Q182353",
+      "data_source": "nodes/Q182353.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q182353",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "森林更新",
+      "children_count": 0,
+      "id": "Q1318447",
+      "data_source": "nodes/Q1318447.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1318447",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生殖醫學科",
+      "children_count": 0,
+      "id": "Q351870",
+      "data_source": "nodes/Q351870.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q351870",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "第三方生殖",
+      "children_count": 0,
+      "id": "Q7784739",
+      "data_source": "nodes/Q7784739.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7784739",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 11
+  "child_count": 23
 }

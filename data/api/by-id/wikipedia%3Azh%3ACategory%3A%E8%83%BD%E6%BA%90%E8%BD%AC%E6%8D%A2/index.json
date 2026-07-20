@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能源转换",
+  "source": "nodes/能源转换-86d95cf81787.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能源转换-86d95cf81787.json",
+  "legacy_children": "../../children/nodes/能源转换-86d95cf81787.json"
+}

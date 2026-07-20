@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:与能量相关的人物",
+  "source": "nodes/与能量相关的人物-9f148728ccdf.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/与能量相关的人物-9f148728ccdf.json",
+  "legacy_children": "../../children/nodes/与能量相关的人物-9f148728ccdf.json"
+}

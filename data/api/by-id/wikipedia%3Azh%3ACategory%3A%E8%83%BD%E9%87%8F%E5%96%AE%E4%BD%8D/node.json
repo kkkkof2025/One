@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/能量單位-a0ac90f64b0a.json",
+  "node": {
+    "id": "wikipedia:zh:Category:能量單位",
+    "title": "能量單位",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E9%87%8F%E5%96%AE%E4%BD%8D",
+    "source_page_id": 52479,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-19T01:54:45Z",
+  "updated_at": "2026-07-20T03:26:52Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:繁殖",
-  "last_scan_title": "繁殖",
-  "candidate_count": 634,
+  "last_scan_key": "id:wikipedia:zh:Category:能量",
+  "last_scan_title": "能量",
+  "candidate_count": 665,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,12 +38,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 11
+      "added_nodes": 12
     },
     "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 20
+      "added_nodes": 12
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -54,32 +54,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-19T01:54:40Z",
+      "occurred_at": "2026-07-20T03:26:47Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-19T02:04:40Z",
+      "cooldown_until": "2026-07-20T03:36:47Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 634,
+    "candidate_count": 665,
     "source_progress_counts": {
       "4": 12,
-      "2": 15,
-      "1": 44,
-      "0": 498,
-      "3": 65
+      "2": 16,
+      "1": 43,
+      "0": 528,
+      "3": 66
     },
     "next_source_counts": {
-      "conceptnet": 91,
-      "wikipedia": 249,
+      "conceptnet": 93,
+      "wikipedia": 259,
       "wikidata": 6,
-      "wikidata_api": 288
+      "wikidata_api": 307
     },
     "available_next_source_counts": {
-      "conceptnet": 91,
-      "wikipedia": 249,
+      "conceptnet": 93,
+      "wikipedia": 259,
       "wikidata": 6,
-      "wikidata_api": 288
+      "wikidata_api": 307
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -102,24 +102,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125311",
-        "title": "NGC 6054",
+        "scan_key": "id:Q1125319",
+        "title": "NGC 6056",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 53.0,
         "depth": 6
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:空间",
-        "title": "空间",
+        "scan_key": "id:wikipedia:zh:Category:繁殖",
+        "title": "繁殖",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q1125319",
-        "title": "NGC 6056",
+        "scan_key": "id:Q13088699",
+        "title": "NGC 6045",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 53.0,
@@ -155,24 +155,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125311",
-          "title": "NGC 6054",
+          "scan_key": "id:Q1125319",
+          "title": "NGC 6056",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 53.0,
           "depth": 6
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:空间",
-          "title": "空间",
+          "scan_key": "id:wikipedia:zh:Category:繁殖",
+          "title": "繁殖",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q1125319",
-          "title": "NGC 6056",
+          "scan_key": "id:Q13088699",
+          "title": "NGC 6045",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 53.0,

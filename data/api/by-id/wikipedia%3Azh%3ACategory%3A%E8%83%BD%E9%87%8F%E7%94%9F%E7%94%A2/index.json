@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能量生產",
+  "source": "nodes/能量生產-f101fc58de98.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能量生產-f101fc58de98.json",
+  "legacy_children": "../../children/nodes/能量生產-f101fc58de98.json"
+}

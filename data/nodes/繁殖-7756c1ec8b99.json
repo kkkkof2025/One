@@ -145,6 +145,162 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "人類生殖",
+      "data_source": "nodes/Q3427336.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3427336",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q3427336",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "动物繁殖",
+      "data_source": "nodes/Q3427333.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3427333",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q3427333",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "植物繁殖",
+      "data_source": "nodes/Q2725616.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2725616",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q2725616",
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "妊娠期",
+      "data_source": "nodes/Q28627.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q28627",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q28627",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "繁衍过程",
+      "data_source": "nodes/Q14885910.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14885910",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q14885910",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "世代交替",
+      "data_source": "nodes/Q725951.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q725951",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q725951",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "嫁接",
+      "data_source": "nodes/Q222958.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q222958",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q222958",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "无性生殖",
+      "data_source": "nodes/Q173432.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q173432",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q173432",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "有性生殖",
+      "data_source": "nodes/Q182353.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q182353",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q182353",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "森林更新",
+      "data_source": "nodes/Q1318447.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1318447",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1318447",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生殖醫學科",
+      "data_source": "nodes/Q351870.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q351870",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q351870",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "第三方生殖",
+      "data_source": "nodes/Q7784739.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7784739",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7784739",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -162,14 +318,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-19T01:54:45Z",
-  "last_checked_at": "2026-07-19T01:54:45Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-20T03:26:48Z",
+  "last_checked_at": "2026-07-20T03:26:48Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-19T01:54:45Z"
+    "wikipedia": "2026-07-19T01:54:45Z",
+    "wikidata": "2026-07-20T03:26:48Z"
   },
   "is_leaf": false
 }
