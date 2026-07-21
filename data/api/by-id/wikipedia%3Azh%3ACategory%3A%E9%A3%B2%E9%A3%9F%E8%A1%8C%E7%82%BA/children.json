@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/飲食行為-d3b89295ac83.json",
+  "node": {
+    "title": "飲食行為",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:飲食行為",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%A3%B2%E9%A3%9F%E8%A1%8C%E7%82%BA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/睡眠-df1a4b14e4a8.json",
+  "node": {
+    "title": "睡眠",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:睡眠",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%9D%A1%E7%9C%A0",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

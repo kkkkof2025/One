@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:动物行为学",
+  "source": "nodes/动物行为学-10030d727578.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/动物行为学-10030d727578.json",
+  "legacy_children": "../../children/nodes/动物行为学-10030d727578.json"
+}

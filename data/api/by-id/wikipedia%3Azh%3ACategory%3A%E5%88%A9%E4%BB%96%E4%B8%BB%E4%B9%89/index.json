@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:利他主义",
+  "source": "nodes/利他主义-8f0c12335d3a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/利他主义-8f0c12335d3a.json",
+  "legacy_children": "../../children/nodes/利他主义-8f0c12335d3a.json"
+}

@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/人類行為-23c3b390b72e.json",
+  "node": {
+    "id": "wikipedia:zh:Category:人類行為",
+    "title": "人類行為",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E8%A1%8C%E7%82%BA",
+    "source_page_id": 665955,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:飲食行為",
+  "source": "nodes/飲食行為-d3b89295ac83.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/飲食行為-d3b89295ac83.json",
+  "legacy_children": "../../children/nodes/飲食行為-d3b89295ac83.json"
+}

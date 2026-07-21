@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/审判-8bf4e5055d56.json",
+  "node": {
+    "title": "审判",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:审判",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%A1%E5%88%A4",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

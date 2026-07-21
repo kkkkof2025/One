@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:行为主义",
+  "source": "nodes/行为主义-0e74885d0adf.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/行为主义-0e74885d0adf.json",
+  "legacy_children": "../../children/nodes/行为主义-0e74885d0adf.json"
+}

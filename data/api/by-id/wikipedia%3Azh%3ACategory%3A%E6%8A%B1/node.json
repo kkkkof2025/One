@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/抱-3cfd4bfccf89.json",
+  "node": {
+    "id": "wikipedia:zh:Category:抱",
+    "title": "抱",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%8A%B1",
+    "source_page_id": 6151559,
+    "quality_score": 61,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "short_title",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

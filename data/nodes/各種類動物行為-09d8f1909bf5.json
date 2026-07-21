@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:各種類動物行為",
+  "title": "各種類動物行為",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E7%A8%AE%E9%A1%9E%E5%8B%95%E7%89%A9%E8%A1%8C%E7%82%BA",
+  "source_page_id": 9473651,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

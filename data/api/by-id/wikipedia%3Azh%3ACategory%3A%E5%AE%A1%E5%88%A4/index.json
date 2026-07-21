@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:审判",
+  "source": "nodes/审判-8bf4e5055d56.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/审判-8bf4e5055d56.json",
+  "legacy_children": "../../children/nodes/审判-8bf4e5055d56.json"
+}

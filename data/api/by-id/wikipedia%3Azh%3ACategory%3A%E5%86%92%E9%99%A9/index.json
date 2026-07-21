@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:冒险",
+  "source": "nodes/冒险-31ca0eee87ab.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/冒险-31ca0eee87ab.json",
+  "legacy_children": "../../children/nodes/冒险-31ca0eee87ab.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:行为作品",
+  "source": "nodes/行为作品-dc45fb409ab1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/行为作品-dc45fb409ab1.json",
+  "legacy_children": "../../children/nodes/行为作品-dc45fb409ab1.json"
+}

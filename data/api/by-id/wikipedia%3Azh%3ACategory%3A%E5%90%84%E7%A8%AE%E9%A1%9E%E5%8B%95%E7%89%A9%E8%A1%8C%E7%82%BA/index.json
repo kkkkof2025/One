@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各種類動物行為",
+  "source": "nodes/各種類動物行為-09d8f1909bf5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各種類動物行為-09d8f1909bf5.json",
+  "legacy_children": "../../children/nodes/各種類動物行為-09d8f1909bf5.json"
+}
