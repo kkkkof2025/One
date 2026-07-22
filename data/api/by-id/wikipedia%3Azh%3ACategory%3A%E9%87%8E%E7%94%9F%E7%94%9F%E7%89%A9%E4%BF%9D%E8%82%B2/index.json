@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:野生生物保育",
+  "source": "nodes/野生生物保育-ff33e19e6e83.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/野生生物保育-ff33e19e6e83.json",
+  "legacy_children": "../../children/nodes/野生生物保育-ff33e19e6e83.json"
+}

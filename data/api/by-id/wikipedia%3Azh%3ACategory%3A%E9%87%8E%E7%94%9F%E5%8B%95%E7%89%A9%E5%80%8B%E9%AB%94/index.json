@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:野生動物個體",
+  "source": "nodes/野生動物個體-2c56c2218063.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/野生動物個體-2c56c2218063.json",
+  "legacy_children": "../../children/nodes/野生動物個體-2c56c2218063.json"
+}

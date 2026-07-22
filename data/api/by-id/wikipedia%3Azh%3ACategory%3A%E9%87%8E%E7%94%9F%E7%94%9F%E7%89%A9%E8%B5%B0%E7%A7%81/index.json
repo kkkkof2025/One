@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:野生生物走私",
+  "source": "nodes/野生生物走私-485d0f15284d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/野生生物走私-485d0f15284d.json",
+  "legacy_children": "../../children/nodes/野生生物走私-485d0f15284d.json"
+}

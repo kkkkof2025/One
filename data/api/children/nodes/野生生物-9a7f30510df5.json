@@ -3,16 +3,111 @@
   "source": "nodes/野生生物-9a7f30510df5.json",
   "node": {
     "title": "野生生物",
-    "children_count": 0,
+    "children_count": 6,
     "id": "wikipedia:zh:Category:野生生物",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E7%94%9F%E7%89%A9",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-22T01:52:58Z",
+    "last_checked_at": "2026-07-22T01:52:58Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-22T01:52:58Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "各地野生生物",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:各地野生生物",
+      "data_source": "nodes/各地野生生物-2b18a7e37aa0.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9C%B0%E9%87%8E%E7%94%9F%E7%94%9F%E7%89%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "野生生物保育",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:野生生物保育",
+      "data_source": "nodes/野生生物保育-ff33e19e6e83.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E7%94%9F%E7%89%A9%E4%BF%9D%E8%82%B2",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "野生動物個體",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:野生動物個體",
+      "data_source": "nodes/野生動物個體-2c56c2218063.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E5%80%8B%E9%AB%94",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "野生動物攝影師",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:野生動物攝影師",
+      "data_source": "nodes/野生動物攝影師-178acda11c67.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E5%8B%95%E7%89%A9%E6%94%9D%E5%BD%B1%E5%B8%AB",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "野生生物康復",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:野生生物康復",
+      "data_source": "nodes/野生生物康復-8a1f23782659.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E7%94%9F%E7%89%A9%E5%BA%B7%E5%BE%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "野生生物走私",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:野生生物走私",
+      "data_source": "nodes/野生生物走私-485d0f15284d.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%87%8E%E7%94%9F%E7%94%9F%E7%89%A9%E8%B5%B0%E7%A7%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 6
 }

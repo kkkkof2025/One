@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:野生動物攝影師",
+  "source": "nodes/野生動物攝影師-178acda11c67.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/野生動物攝影師-178acda11c67.json",
+  "legacy_children": "../../children/nodes/野生動物攝影師-178acda11c67.json"
+}
