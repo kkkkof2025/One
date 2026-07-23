@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-22T01:53:00Z",
+  "generated_at": "2026-07-23T02:00:25Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 135,
+  "total_candidates": 136,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 135,
+  "total_items": 136,
   "reason_distribution": {
-    "total_items": 135,
+    "total_items": 136,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 74,
+        "count": 75,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
@@ -88,11 +88,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 133
+        "count": 134
       },
       {
         "reason": "qid",
-        "count": 132
+        "count": 133
       },
       {
         "reason": "missing_relation",
@@ -100,7 +100,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 74
+        "count": 75
       },
       {
         "reason": "zh_label",
@@ -112,7 +112,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 29
+        "count": 30
       },
       {
         "reason": "duplicate_id:2",
@@ -120,11 +120,11 @@
       },
       {
         "reason": "has_children",
-        "count": 8
+        "count": 9
       },
       {
         "reason": "loaded",
-        "count": 5
+        "count": 6
       },
       {
         "reason": "relation:instance",
@@ -177,7 +177,7 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 5
+        "count": 6
       }
     ]
   },
@@ -1607,28 +1607,6 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
-      "title": "M49",
-      "children_status": "pending",
-      "quality_score": 49,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "non_zh_label",
-        "good_title_length",
-        "missing_relation"
-      ],
-      "id": "Q13952",
-      "updated_at": "2026-05-07T00:57:03Z",
-      "fetch_strategy_version": 2,
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49",
-      "location": "nodes/Q13952.json",
-      "priority": 61.0,
-      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
-      "review_key": "id:Q13952",
-      "primary_reason": "non_zh_label",
-      "primary_reason_label": "缺少中文标签"
-    },
-    {
       "title": "M58",
       "children_status": "pending",
       "quality_score": 49,
@@ -1906,7 +1884,7 @@
         "missing_relation"
       ],
       "id": "Q1210087",
-      "updated_at": "2026-07-22T01:52:53Z",
+      "updated_at": "2026-07-23T02:00:18Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / VIRGOHI21",
       "location": "nodes/Q1210087.json",
@@ -2540,6 +2518,30 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "M49",
+      "children_status": "loaded",
+      "quality_score": 57,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "has_children"
+      ],
+      "id": "Q13952",
+      "updated_at": "2026-07-23T02:00:19Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49",
+      "location": "nodes/Q13952.json",
+      "priority": 53.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q13952",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "M61",
       "children_status": "loaded",
       "quality_score": 57,
@@ -2952,6 +2954,29 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q15916759",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "SN 2024kce",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q138511691",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q138511691",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49 / SN 2024kce",
+      "location": "nodes/Q138511691.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q138511691",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

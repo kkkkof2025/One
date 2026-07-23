@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:虛構永生者",
+  "source": "nodes/虛構永生者-4a21e1023daa.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/虛構永生者-4a21e1023daa.json",
+  "legacy_children": "../../children/nodes/虛構永生者-4a21e1023daa.json"
+}

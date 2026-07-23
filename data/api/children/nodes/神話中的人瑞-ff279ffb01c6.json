@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/神話中的人瑞-ff279ffb01c6.json",
+  "node": {
+    "title": "神話中的人瑞",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:神話中的人瑞",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E8%A9%B1%E4%B8%AD%E7%9A%84%E4%BA%BA%E7%91%9E",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

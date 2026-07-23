@@ -4,20 +4,85 @@
   "node": {
     "id": "wikipedia:zh:Category:長生不老",
     "title": "長生不老",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "長生不老題材作品",
+        "data_source": "nodes/長生不老題材作品-604bd57d4962.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:長生不老題材作品",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%95%B7%E7%94%9F%E4%B8%8D%E8%80%81%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "吸血鬼",
+        "data_source": "nodes/吸血鬼-f1c4837a6190.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:吸血鬼",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%B8%E8%A1%80%E9%AC%BC",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "神話中的人瑞",
+        "data_source": "nodes/神話中的人瑞-ff279ffb01c6.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:神話中的人瑞",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E8%A9%B1%E4%B8%AD%E7%9A%84%E4%BA%BA%E7%91%9E",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "虛構永生者",
+        "data_source": "nodes/虛構永生者-4a21e1023daa.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:虛構永生者",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%99%9B%E6%A7%8B%E6%B0%B8%E7%94%9F%E8%80%85",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%95%B7%E7%94%9F%E4%B8%8D%E8%80%81",
     "source_page_id": 3087297,
-    "quality_score": 75,
+    "quality_score": 88,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-23T02:00:23Z",
+    "last_checked_at": "2026-07-23T02:00:23Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-23T02:00:23Z"
+    },
+    "is_leaf": false
   }
 }

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-22T01:52:58Z",
+  "generated_at": "2026-07-23T02:00:23Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,12 +22,12 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q664460",
-      "title": "NGC 6055",
+      "scan_key": "id:Q1210087",
+      "title": "VIRGOHI21",
       "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 53.0,
-      "depth": 6
+      "priority": 49.0,
+      "depth": 7
     },
     {
       "scan_key": "id:wikipedia:zh:Category:能量",
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1210087",
-      "title": "VIRGOHI21",
+      "scan_key": "id:Q13952",
+      "title": "M49",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,
