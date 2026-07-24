@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T02:00:25Z",
+  "generated_at": "2026-07-24T01:56:32Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 136,
@@ -1618,7 +1618,7 @@
         "missing_relation"
       ],
       "id": "Q13970",
-      "updated_at": "2026-05-07T00:57:04Z",
+      "updated_at": "2026-07-24T01:56:26Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M58",
       "location": "nodes/Q13970.json",
@@ -2531,7 +2531,7 @@
         "has_children"
       ],
       "id": "Q13952",
-      "updated_at": "2026-07-23T02:00:19Z",
+      "updated_at": "2026-07-24T01:56:25Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M49",
       "location": "nodes/Q13952.json",

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:合成生物学",
+  "source": "nodes/合成生物学-f7248d46bfa7.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/合成生物学-f7248d46bfa7.json",
+  "legacy_children": "../../children/nodes/合成生物学-f7248d46bfa7.json"
+}

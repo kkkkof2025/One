@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/賽博格-b1c8e387089b.json",
+  "node": {
+    "id": "wikipedia:zh:Category:賽博格",
+    "title": "賽博格",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B3%BD%E5%8D%9A%E6%A0%BC",
+    "source_page_id": 1848317,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -158,6 +158,45 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "大一統能量",
+      "data_source": "nodes/Q3725248.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3725248",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3725248",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "郎道奇點",
+      "data_source": "nodes/Q4371287.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4371287",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q4371287",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "電弱尺度",
+      "data_source": "nodes/Q5358589.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q5358589",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q5358589",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
@@ -175,14 +214,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-20T03:26:52Z",
-  "last_checked_at": "2026-07-20T03:26:52Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-07-24T01:56:26Z",
+  "last_checked_at": "2026-07-24T01:56:26Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-20T03:26:52Z"
+    "wikipedia": "2026-07-20T03:26:52Z",
+    "wikidata": "2026-07-24T01:56:26Z"
   },
   "is_leaf": false
 }

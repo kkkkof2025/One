@@ -349,7 +349,7 @@
     },
     {
       "title": "能量",
-      "children_count": 12,
+      "children_count": 15,
       "id": "wikipedia:zh:Category:能量",
       "data_source": "nodes/能量-61da5ec42dd6.json",
       "source_provider": "wikipedia",
@@ -360,14 +360,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-20T03:26:52Z",
-      "last_checked_at": "2026-07-20T03:26:52Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-24T01:56:26Z",
+      "last_checked_at": "2026-07-24T01:56:26Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-20T03:26:52Z"
+        "wikipedia": "2026-07-20T03:26:52Z",
+        "wikidata": "2026-07-24T01:56:26Z"
       }
     }
   ],

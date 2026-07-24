@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-23T02:00:23Z",
+  "updated_at": "2026-07-24T01:56:31Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:長生不老",
-  "last_scan_title": "長生不老",
-  "candidate_count": 710,
+  "last_scan_key": "id:wikipedia:zh:Category:非传统生物",
+  "last_scan_title": "非传统生物",
+  "candidate_count": 714,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -20,6 +20,7 @@
   "available_sources": [
     "wikidata_api",
     "wikipedia",
+    "wikidata",
     "dbpedia"
   ],
   "source_request_counts": {
@@ -37,54 +38,47 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 4
+      "added_nodes": 7
     },
     "wikidata": {
-      "rate_limited_requests": 1
-    },
-    "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 3
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-23T02:00:18Z",
+      "occurred_at": "2026-07-24T01:56:25Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-23T02:10:18Z",
+      "cooldown_until": "2026-07-24T02:06:25Z",
       "last_error": "HTTP Error 502: Bad Gateway"
-    },
-    "wikidata": {
-      "source": "wikidata",
-      "reason": "rate_limited",
-      "occurred_at": "2026-07-23T02:00:18Z",
-      "retry_after_seconds": 1000,
-      "cooldown_until": "2026-07-23T02:16:58Z",
-      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 710,
+    "candidate_count": 714,
     "source_progress_counts": {
       "4": 12,
       "2": 17,
       "1": 42,
-      "0": 570,
-      "3": 69
+      "0": 573,
+      "3": 70
     },
     "next_source_counts": {
-      "conceptnet": 97,
-      "wikipedia": 289,
-      "wikidata": 8,
+      "conceptnet": 98,
+      "wikipedia": 291,
+      "wikidata": 9,
       "wikidata_api": 316
     },
     "available_next_source_counts": {
-      "conceptnet": 97,
-      "wikipedia": 289,
-      "wikidata": 8,
+      "conceptnet": 98,
+      "wikipedia": 291,
+      "wikidata": 9,
       "wikidata_api": 316
     },
     "blocked_by_cooldown": 0,
@@ -108,8 +102,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1210087",
-        "title": "VIRGOHI21",
+        "scan_key": "id:Q13952",
+        "title": "M49",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
@@ -124,8 +118,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13952",
-        "title": "M49",
+        "scan_key": "id:Q13970",
+        "title": "M58",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -161,8 +155,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1210087",
-          "title": "VIRGOHI21",
+          "scan_key": "id:Q13952",
+          "title": "M49",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
@@ -177,8 +171,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13952",
-          "title": "M49",
+          "scan_key": "id:Q13970",
+          "title": "M58",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:傳說生物",
+  "source": "nodes/傳說生物-5b01d505b4c5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/傳說生物-5b01d505b4c5.json",
+  "legacy_children": "../../children/nodes/傳說生物-5b01d505b4c5.json"
+}

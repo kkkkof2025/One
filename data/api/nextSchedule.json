@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-23T02:00:23Z",
+  "generated_at": "2026-07-24T01:56:31Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1210087",
-      "title": "VIRGOHI21",
+      "scan_key": "id:Q13952",
+      "title": "M49",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q13952",
-      "title": "M49",
+      "scan_key": "id:Q13970",
+      "title": "M58",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,

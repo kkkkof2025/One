@@ -3,7 +3,7 @@
   "source": "nodes/能量-61da5ec42dd6.json",
   "node": {
     "title": "能量",
-    "children_count": 12,
+    "children_count": 15,
     "id": "wikipedia:zh:Category:能量",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
@@ -13,14 +13,15 @@
     "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-20T03:26:52Z",
-    "last_checked_at": "2026-07-20T03:26:52Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-07-24T01:56:26Z",
+    "last_checked_at": "2026-07-24T01:56:26Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-07-20T03:26:52Z"
+      "wikipedia": "2026-07-20T03:26:52Z",
+      "wikidata": "2026-07-24T01:56:26Z"
     }
   },
   "children": [
@@ -191,7 +192,49 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "大一統能量",
+      "children_count": 0,
+      "id": "Q3725248",
+      "data_source": "nodes/Q3725248.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3725248",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "郎道奇點",
+      "children_count": 0,
+      "id": "Q4371287",
+      "data_source": "nodes/Q4371287.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q4371287",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "電弱尺度",
+      "children_count": 0,
+      "id": "Q5358589",
+      "data_source": "nodes/Q5358589.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q5358589",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 12
+  "child_count": 15
 }

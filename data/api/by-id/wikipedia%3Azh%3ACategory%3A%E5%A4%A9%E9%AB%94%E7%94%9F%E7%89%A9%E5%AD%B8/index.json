@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:天體生物學",
+  "source": "nodes/天體生物學-ef8958d4560d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/天體生物學-ef8958d4560d.json",
+  "legacy_children": "../../children/nodes/天體生物學-ef8958d4560d.json"
+}

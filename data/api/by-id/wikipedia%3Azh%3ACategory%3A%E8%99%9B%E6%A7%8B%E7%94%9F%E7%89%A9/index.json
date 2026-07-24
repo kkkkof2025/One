@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:虛構生物",
+  "source": "nodes/虛構生物-f6c9ebf4166b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/虛構生物-f6c9ebf4166b.json",
+  "legacy_children": "../../children/nodes/虛構生物-f6c9ebf4166b.json"
+}

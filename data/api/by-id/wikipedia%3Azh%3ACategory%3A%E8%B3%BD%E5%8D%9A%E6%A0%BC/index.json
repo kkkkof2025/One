@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:賽博格",
+  "source": "nodes/賽博格-b1c8e387089b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/賽博格-b1c8e387089b.json",
+  "legacy_children": "../../children/nodes/賽博格-b1c8e387089b.json"
+}

@@ -1,19 +1,145 @@
 {
   "id": "wikipedia:zh:Category:非传统生物",
   "title": "非传统生物",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "傳說生物",
+      "data_source": "nodes/傳說生物-5b01d505b4c5.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:傳說生物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%82%B3%E8%AA%AA%E7%94%9F%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "合成生物学",
+      "data_source": "nodes/合成生物学-f7248d46bfa7.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:合成生物学",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "外星生命",
+      "data_source": "nodes/外星生命-05b395b50688.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:外星生命",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%96%E6%98%9F%E7%94%9F%E5%91%BD",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-07-07T02:14:51Z",
+      "last_checked_at": "2026-07-07T02:14:51Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-03T02:08:17Z",
+        "wikidata": "2026-07-07T02:14:51Z"
+      }
+    },
+    {
+      "title": "天體生物學",
+      "data_source": "nodes/天體生物學-ef8958d4560d.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:天體生物學",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%A9%E9%AB%94%E7%94%9F%E7%89%A9%E5%AD%B8",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "有争议生命",
+      "data_source": "nodes/有争议生命-793f20c3afa2.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:有争议生命",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%89%E4%BA%89%E8%AE%AE%E7%94%9F%E5%91%BD",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-07-07T02:14:56Z",
+      "last_checked_at": "2026-07-07T02:14:56Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_no_children": {
+        "wikipedia": "2026-07-07T02:14:56Z"
+      },
+      "source_checked": {
+        "wikipedia": "2026-07-07T02:14:56Z"
+      }
+    },
+    {
+      "title": "虛構生物",
+      "data_source": "nodes/虛構生物-f6c9ebf4166b.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:虛構生物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%99%9B%E6%A7%8B%E7%94%9F%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "賽博格",
+      "data_source": "nodes/賽博格-b1c8e387089b.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:賽博格",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B3%BD%E5%8D%9A%E6%A0%BC",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%9D%9E%E4%BC%A0%E7%BB%9F%E7%94%9F%E7%89%A9",
   "source_page_id": 3182147,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-24T01:56:30Z",
+  "last_checked_at": "2026-07-24T01:56:30Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-24T01:56:30Z"
+  },
+  "is_leaf": false
 }
