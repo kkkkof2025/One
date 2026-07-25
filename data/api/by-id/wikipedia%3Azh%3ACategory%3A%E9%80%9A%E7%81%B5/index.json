@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:通灵",
+  "source": "nodes/通灵-43cf2f8419a5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/通灵-43cf2f8419a5.json",
+  "legacy_children": "../../children/nodes/通灵-43cf2f8419a5.json"
+}

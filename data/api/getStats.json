@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-24T01:56:31Z",
-  "total_nodes": 727,
-  "last_added_nodes": 10,
+  "generated_at": "2026-07-25T01:55:33Z",
+  "total_nodes": 728,
+  "last_added_nodes": 1,
   "last_request_count": 5,
-  "last_scanned_nodes": 753,
-  "last_candidate_nodes": 714,
+  "last_scanned_nodes": 763,
+  "last_candidate_nodes": 722,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,12 +23,10 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 7
+      "added_nodes": 1
     },
     "wikidata": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 3
+      "rate_limited_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -36,25 +34,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 714,
+    "candidate_count": 722,
     "source_progress_counts": {
       "4": 12,
-      "2": 17,
-      "1": 42,
-      "0": 573,
-      "3": 70
+      "2": 18,
+      "1": 41,
+      "0": 580,
+      "3": 71
     },
     "next_source_counts": {
-      "conceptnet": 98,
-      "wikipedia": 291,
+      "conceptnet": 100,
+      "wikipedia": 295,
       "wikidata": 9,
-      "wikidata_api": 316
+      "wikidata_api": 318
     },
     "available_next_source_counts": {
-      "conceptnet": 98,
-      "wikipedia": 291,
+      "conceptnet": 100,
+      "wikipedia": 295,
       "wikidata": 9,
-      "wikidata_api": 316
+      "wikidata_api": 318
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +75,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13952",
-        "title": "M49",
+        "scan_key": "id:Q13970",
+        "title": "M58",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:能量",
-        "title": "能量",
+        "scan_key": "id:wikipedia:zh:Category:行为",
+        "title": "行为",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q13970",
-        "title": "M58",
+        "scan_key": "id:Q13971",
+        "title": "M59",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -130,24 +128,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13952",
-          "title": "M49",
+          "scan_key": "id:Q13970",
+          "title": "M58",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:能量",
-          "title": "能量",
+          "scan_key": "id:wikipedia:zh:Category:行为",
+          "title": "行为",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q13970",
-          "title": "M58",
+          "scan_key": "id:Q13971",
+          "title": "M59",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,
@@ -167,11 +165,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 133,
+    "added_nodes": 118,
     "requests": 40,
-    "added_per_request": 3.325,
+    "added_per_request": 2.95,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-24T01:56:31Z",
+    "last_productive_run_at": "2026-07-25T01:55:33Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -187,13 +185,13 @@
         "unchanged_requests": 8,
         "children_returned_requests": 8,
         "productive_requests": 8,
-        "added_nodes": 68
+        "added_nodes": 66
       },
       "wikidata": {
-        "children_returned_requests": 5,
-        "productive_requests": 5,
-        "added_nodes": 64,
-        "rate_limited_requests": 3
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 51,
+        "rate_limited_requests": 4
       },
       "wikidata_api": {
         "no_children_requests": 7,
@@ -207,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 95,
+  "history_entries": 96,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
