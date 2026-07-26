@@ -4,20 +4,85 @@
   "node": {
     "id": "wikipedia:zh:Category:与能量相关的人物",
     "title": "与能量相关的人物",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "與電學相關的人物",
+        "data_source": "nodes/與電學相關的人物-aed4f173b537.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:與電學相關的人物",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%88%87%E9%9B%BB%E5%AD%B8%E7%9B%B8%E9%97%9C%E7%9A%84%E4%BA%BA%E7%89%A9",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "国际能源署人物",
+        "data_source": "nodes/国际能源署人物-73603cd680c7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:国际能源署人物",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9B%BD%E9%99%85%E8%83%BD%E6%BA%90%E7%BD%B2%E4%BA%BA%E7%89%A9",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "热力学家",
+        "data_source": "nodes/热力学家-96418ad65e14.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:热力学家",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%83%AD%E5%8A%9B%E5%AD%A6%E5%AE%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "能源经济学家",
+        "data_source": "nodes/能源经济学家-7fa79f1bfc60.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:能源经济学家",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E6%BA%90%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%8E%E8%83%BD%E9%87%8F%E7%9B%B8%E5%85%B3%E7%9A%84%E4%BA%BA%E7%89%A9",
     "source_page_id": 1699550,
-    "quality_score": 75,
+    "quality_score": 88,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-07-26T01:59:46Z",
+    "last_checked_at": "2026-07-26T01:59:46Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-07-26T01:59:46Z"
+    },
+    "is_leaf": false
   }
 }

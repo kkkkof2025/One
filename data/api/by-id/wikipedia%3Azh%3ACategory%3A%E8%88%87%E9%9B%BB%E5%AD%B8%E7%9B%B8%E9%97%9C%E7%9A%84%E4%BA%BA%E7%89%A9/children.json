@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/與電學相關的人物-aed4f173b537.json",
+  "node": {
+    "title": "與電學相關的人物",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:與電學相關的人物",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%88%87%E9%9B%BB%E5%AD%B8%E7%9B%B8%E9%97%9C%E7%9A%84%E4%BA%BA%E7%89%A9",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

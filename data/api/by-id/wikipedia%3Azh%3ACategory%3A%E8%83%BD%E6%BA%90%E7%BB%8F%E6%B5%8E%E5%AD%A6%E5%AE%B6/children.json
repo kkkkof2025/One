@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/能源经济学家-7fa79f1bfc60.json",
+  "node": {
+    "title": "能源经济学家",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:能源经济学家",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%83%BD%E6%BA%90%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

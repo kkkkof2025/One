@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/热力学家-96418ad65e14.json",
+  "node": {
+    "title": "热力学家",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:热力学家",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%83%AD%E5%8A%9B%E5%AD%A6%E5%AE%B6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

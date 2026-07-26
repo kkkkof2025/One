@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:热力学家",
+  "source": "nodes/热力学家-96418ad65e14.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/热力学家-96418ad65e14.json",
+  "legacy_children": "../../children/nodes/热力学家-96418ad65e14.json"
+}

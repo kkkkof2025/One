@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:與電學相關的人物",
+  "source": "nodes/與電學相關的人物-aed4f173b537.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/與電學相關的人物-aed4f173b537.json",
+  "legacy_children": "../../children/nodes/與電學相關的人物-aed4f173b537.json"
+}

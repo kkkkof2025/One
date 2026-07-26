@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:能源经济学家",
+  "source": "nodes/能源经济学家-7fa79f1bfc60.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/能源经济学家-7fa79f1bfc60.json",
+  "legacy_children": "../../children/nodes/能源经济学家-7fa79f1bfc60.json"
+}

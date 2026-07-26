@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T01:55:34Z",
+  "generated_at": "2026-07-26T01:59:48Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 136,
@@ -1640,7 +1640,7 @@
         "missing_relation"
       ],
       "id": "Q13971",
-      "updated_at": "2026-07-25T01:55:29Z",
+      "updated_at": "2026-07-26T01:59:41Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M59",
       "location": "nodes/Q13971.json",
@@ -1662,7 +1662,7 @@
         "missing_relation"
       ],
       "id": "Q13976",
-      "updated_at": "2026-05-07T00:57:06Z",
+      "updated_at": "2026-07-26T01:59:41Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M60",
       "location": "nodes/Q13976.json",
