@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:三疊紀生物",
+  "source": "nodes/三疊紀生物-41bf3851407f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/三疊紀生物-41bf3851407f.json",
+  "legacy_children": "../../children/nodes/三疊紀生物-41bf3851407f.json"
+}

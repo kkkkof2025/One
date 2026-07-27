@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-26T01:59:48Z",
+  "generated_at": "2026-07-27T02:07:23Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 136,
+  "total_candidates": 137,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 136,
+  "total_items": 137,
   "reason_distribution": {
-    "total_items": 136,
+    "total_items": 137,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 75,
+        "count": 76,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370170-S1.json",
@@ -88,11 +88,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 134
+        "count": 135
       },
       {
         "reason": "qid",
-        "count": 133
+        "count": 134
       },
       {
         "reason": "missing_relation",
@@ -100,7 +100,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 75
+        "count": 76
       },
       {
         "reason": "zh_label",
@@ -112,7 +112,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 30
+        "count": 31
       },
       {
         "reason": "duplicate_id:2",
@@ -120,11 +120,11 @@
       },
       {
         "reason": "has_children",
-        "count": 9
+        "count": 10
       },
       {
         "reason": "loaded",
-        "count": 6
+        "count": 7
       },
       {
         "reason": "relation:instance",
@@ -177,7 +177,7 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 6
+        "count": 7
       }
     ]
   },
@@ -1475,28 +1475,6 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
-      "title": "M74",
-      "children_status": "pending",
-      "quality_score": 49,
-      "review_status": "approved",
-      "quality_reasons": [
-        "qid",
-        "non_zh_label",
-        "good_title_length",
-        "missing_relation"
-      ],
-      "id": "Q14013",
-      "updated_at": "2026-05-07T00:54:34Z",
-      "fetch_strategy_version": 2,
-      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M74星系群 / M74",
-      "location": "nodes/Q14013.json",
-      "priority": 61.0,
-      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
-      "review_key": "id:Q14013",
-      "primary_reason": "non_zh_label",
-      "primary_reason_label": "缺少中文标签"
-    },
-    {
       "title": "M82 X-1",
       "children_status": "pending",
       "quality_score": 49,
@@ -1662,7 +1640,7 @@
         "missing_relation"
       ],
       "id": "Q13976",
-      "updated_at": "2026-07-26T01:59:41Z",
+      "updated_at": "2026-07-27T02:07:16Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / M60",
       "location": "nodes/Q13976.json",
@@ -2518,6 +2496,30 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "M74",
+      "children_status": "loaded",
+      "quality_score": 57,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "missing_relation",
+        "loaded",
+        "has_children"
+      ],
+      "id": "Q14013",
+      "updated_at": "2026-07-27T02:07:16Z",
+      "fetch_strategy_version": 2,
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M74星系群 / M74",
+      "location": "nodes/Q14013.json",
+      "priority": 53.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14013",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "M49",
       "children_status": "loaded",
       "quality_score": 57,
@@ -2586,6 +2588,29 @@
       "priority": 47.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q5116",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "SN 2013ej",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q30633508",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q30633508",
+      "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M74星系群 / M74 / SN 2013ej",
+      "location": "nodes/Q30633508.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q30633508",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

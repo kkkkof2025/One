@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/三疊紀生物-41bf3851407f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:三疊紀生物",
+    "title": "三疊紀生物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%89%E7%96%8A%E7%B4%80%E7%94%9F%E7%89%A9",
+    "source_page_id": 540409,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

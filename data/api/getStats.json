@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-26T01:59:46Z",
-  "total_nodes": 732,
-  "last_added_nodes": 4,
+  "generated_at": "2026-07-27T02:07:21Z",
+  "total_nodes": 739,
+  "last_added_nodes": 7,
   "last_request_count": 5,
-  "last_scanned_nodes": 764,
-  "last_candidate_nodes": 723,
+  "last_scanned_nodes": 768,
+  "last_candidate_nodes": 727,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,36 +23,38 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 4
+      "added_nodes": 6
     },
     "wikidata": {
-      "rate_limited_requests": 1
-    },
-    "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
+    },
+    "wikidata_api": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 723,
+    "candidate_count": 727,
     "source_progress_counts": {
       "4": 12,
       "2": 18,
       "1": 41,
-      "0": 580,
-      "3": 72
+      "0": 583,
+      "3": 73
     },
     "next_source_counts": {
-      "conceptnet": 101,
-      "wikipedia": 295,
-      "wikidata": 10,
-      "wikidata_api": 317
+      "conceptnet": 102,
+      "wikipedia": 298,
+      "wikidata": 11,
+      "wikidata_api": 316
     },
     "available_next_source_counts": {
-      "conceptnet": 101,
-      "wikipedia": 295,
-      "wikidata": 10,
-      "wikidata_api": 317
+      "conceptnet": 102,
+      "wikipedia": 298,
+      "wikidata": 11,
+      "wikidata_api": 316
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,8 +77,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13971",
-        "title": "M59",
+        "scan_key": "id:Q13976",
+        "title": "M60",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
@@ -91,8 +93,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13976",
-        "title": "M60",
+        "scan_key": "id:Q14013",
+        "title": "M74",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -128,8 +130,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13971",
-          "title": "M59",
+          "scan_key": "id:Q13976",
+          "title": "M60",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
@@ -144,8 +146,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13976",
-          "title": "M60",
+          "scan_key": "id:Q14013",
+          "title": "M74",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,
@@ -165,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 98,
+    "added_nodes": 74,
     "requests": 40,
-    "added_per_request": 2.45,
+    "added_per_request": 1.85,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-07-26T01:59:46Z",
+    "last_productive_run_at": "2026-07-27T02:07:21Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -185,27 +187,29 @@
         "unchanged_requests": 8,
         "children_returned_requests": 8,
         "productive_requests": 8,
-        "added_nodes": 62
+        "added_nodes": 57
       },
       "wikidata": {
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 35,
-        "rate_limited_requests": 5
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 15,
+        "rate_limited_requests": 5,
+        "no_children_requests": 1,
+        "unchanged_requests": 1
       },
       "wikidata_api": {
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 1
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 2
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 97,
+  "history_entries": 98,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

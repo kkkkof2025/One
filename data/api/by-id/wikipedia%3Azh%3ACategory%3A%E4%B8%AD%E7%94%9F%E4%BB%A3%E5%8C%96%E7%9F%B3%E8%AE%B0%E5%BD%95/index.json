@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:中生代化石记录",
+  "source": "nodes/中生代化石记录-aaa6aa5eb211.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/中生代化石记录-aaa6aa5eb211.json",
+  "legacy_children": "../../children/nodes/中生代化石记录-aaa6aa5eb211.json"
+}

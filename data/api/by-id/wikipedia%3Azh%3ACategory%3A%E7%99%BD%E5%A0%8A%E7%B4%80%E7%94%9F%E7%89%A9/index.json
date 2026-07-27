@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:白堊紀生物",
+  "source": "nodes/白堊紀生物-63f66b203d0d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/白堊紀生物-63f66b203d0d.json",
+  "legacy_children": "../../children/nodes/白堊紀生物-63f66b203d0d.json"
+}
