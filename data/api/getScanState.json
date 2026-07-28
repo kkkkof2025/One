@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-07-27T02:07:21Z",
+  "updated_at": "2026-07-28T01:48:55Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:中生代生物",
-  "last_scan_title": "中生代生物",
-  "candidate_count": 727,
+  "last_scan_key": "id:wikipedia:zh:Category:主知主义",
+  "last_scan_title": "主知主义",
+  "candidate_count": 734,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,46 +38,46 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 6
+      "added_nodes": 2
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
-    },
-    "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 4
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-07-27T02:07:15Z",
+      "occurred_at": "2026-07-28T01:48:50Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-07-27T02:17:15Z",
+      "cooldown_until": "2026-07-28T01:58:50Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 727,
+    "candidate_count": 734,
     "source_progress_counts": {
       "4": 12,
-      "2": 18,
-      "1": 41,
-      "0": 583,
-      "3": 73
+      "2": 19,
+      "1": 40,
+      "0": 589,
+      "3": 74
     },
     "next_source_counts": {
-      "conceptnet": 102,
-      "wikipedia": 298,
+      "conceptnet": 104,
+      "wikipedia": 303,
       "wikidata": 11,
       "wikidata_api": 316
     },
     "available_next_source_counts": {
-      "conceptnet": 102,
-      "wikipedia": 298,
+      "conceptnet": 104,
+      "wikipedia": 303,
       "wikidata": 11,
       "wikidata_api": 316
     },
@@ -102,24 +102,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13976",
-        "title": "M60",
+        "scan_key": "id:Q14013",
+        "title": "M74",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:行为",
-        "title": "行为",
+        "scan_key": "id:wikipedia:zh:Category:野生生物",
+        "title": "野生生物",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 111.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q14013",
-        "title": "M74",
+        "scan_key": "id:Q14035",
+        "title": "M85",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -155,24 +155,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13976",
-          "title": "M60",
+          "scan_key": "id:Q14013",
+          "title": "M74",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:行为",
-          "title": "行为",
+          "scan_key": "id:wikipedia:zh:Category:野生生物",
+          "title": "野生生物",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 111.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q14013",
-          "title": "M74",
+          "scan_key": "id:Q14035",
+          "title": "M85",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,

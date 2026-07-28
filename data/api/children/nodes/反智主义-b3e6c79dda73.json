@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/反智主义-b3e6c79dda73.json",
+  "node": {
+    "title": "反智主义",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:反智主义",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8F%8D%E6%99%BA%E4%B8%BB%E4%B9%89",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,19 +1,58 @@
 {
   "id": "wikipedia:zh:Category:主知主义",
   "title": "主知主义",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "反智主义",
+      "data_source": "nodes/反智主义-b3e6c79dda73.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:反智主义",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8F%8D%E6%99%BA%E4%B8%BB%E4%B9%89",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "学者和大学教师",
+      "data_source": "nodes/学者和大学教师-4a1da3f685fb.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:学者和大学教师",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AD%A6%E8%80%85%E5%92%8C%E5%A4%A7%E5%AD%A6%E6%95%99%E5%B8%88",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%BB%E7%9F%A5%E4%B8%BB%E4%B9%89",
   "source_page_id": 8032628,
-  "quality_score": 75,
+  "quality_score": 85,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-07-28T01:48:55Z",
+  "last_checked_at": "2026-07-28T01:48:55Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-07-28T01:48:55Z"
+  },
+  "is_leaf": false
 }

@@ -697,7 +697,7 @@
     },
     {
       "title": "野生生物",
-      "children_count": 6,
+      "children_count": 10,
       "id": "wikipedia:zh:Category:野生生物",
       "data_source": "nodes/野生生物-9a7f30510df5.json",
       "source_provider": "wikipedia",
@@ -708,14 +708,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-22T01:52:58Z",
-      "last_checked_at": "2026-07-22T01:52:58Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-07-28T01:48:51Z",
+      "last_checked_at": "2026-07-28T01:48:51Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-22T01:52:58Z"
+        "wikipedia": "2026-07-22T01:52:58Z",
+        "wikidata": "2026-07-28T01:48:51Z"
       }
     },
     {

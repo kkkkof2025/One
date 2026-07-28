@@ -83,6 +83,58 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "野生动物",
+        "data_source": "nodes/Q16390140.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q16390140",
+        "source_provider": "wikidata",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q16390140",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "野生植物",
+        "data_source": "nodes/Q2570868.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2570868",
+        "source_provider": "wikidata",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q2570868",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "路殺",
+        "data_source": "nodes/Q1324130.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1324130",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q1324130",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "野味",
+        "data_source": "nodes/Q223930.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q223930",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q223930",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikipedia",
@@ -100,14 +152,15 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-22T01:52:58Z",
-    "last_checked_at": "2026-07-22T01:52:58Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-07-28T01:48:51Z",
+    "last_checked_at": "2026-07-28T01:48:51Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-07-22T01:52:58Z"
+      "wikipedia": "2026-07-22T01:52:58Z",
+      "wikidata": "2026-07-28T01:48:51Z"
     },
     "is_leaf": false
   }

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-27T02:07:21Z",
+  "generated_at": "2026-07-28T01:48:55Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q13976",
-      "title": "M60",
+      "scan_key": "id:Q14013",
+      "title": "M74",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
       "depth": 7
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:行为",
-      "title": "行为",
+      "scan_key": "id:wikipedia:zh:Category:野生生物",
+      "title": "野生生物",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 111.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q14013",
-      "title": "M74",
+      "scan_key": "id:Q14035",
+      "title": "M85",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,

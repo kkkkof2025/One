@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:学者和大学教师",
+  "source": "nodes/学者和大学教师-4a1da3f685fb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/学者和大学教师-4a1da3f685fb.json",
+  "legacy_children": "../../children/nodes/学者和大学教师-4a1da3f685fb.json"
+}

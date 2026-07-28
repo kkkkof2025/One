@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q16390140.json",
+  "node": {
+    "id": "Q16390140",
+    "title": "野生动物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q16390140",
+    "quality_score": 93,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:has_part"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
