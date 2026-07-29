@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:主观主义",
+  "source": "nodes/主观主义-6344cfa19c0d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/主观主义-6344cfa19c0d.json",
+  "legacy_children": "../../children/nodes/主观主义-6344cfa19c0d.json"
+}

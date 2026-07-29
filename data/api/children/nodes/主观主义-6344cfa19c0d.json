@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/主观主义-6344cfa19c0d.json",
+  "node": {
+    "title": "主观主义",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:主观主义",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%BB%E8%A7%82%E4%B8%BB%E4%B9%89",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

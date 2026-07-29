@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:想像",
+  "source": "nodes/想像-df67686d4745.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/想像-df67686d4745.json",
+  "legacy_children": "../../children/nodes/想像-df67686d4745.json"
+}
