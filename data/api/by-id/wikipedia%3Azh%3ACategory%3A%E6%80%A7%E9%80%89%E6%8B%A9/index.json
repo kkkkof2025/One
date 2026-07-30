@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:性选择",
+  "source": "nodes/性选择-7de3571a8688.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/性选择-7de3571a8688.json",
+  "legacy_children": "../../children/nodes/性选择-7de3571a8688.json"
+}

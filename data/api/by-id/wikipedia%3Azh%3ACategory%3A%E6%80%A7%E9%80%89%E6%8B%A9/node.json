@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/性选择-7de3571a8688.json",
+  "node": {
+    "id": "wikipedia:zh:Category:性选择",
+    "title": "性选择",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7%E9%80%89%E6%8B%A9",
+    "source_page_id": 1707274,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

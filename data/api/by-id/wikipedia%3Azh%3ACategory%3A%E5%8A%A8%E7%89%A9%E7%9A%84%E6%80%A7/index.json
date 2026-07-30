@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:动物的性",
+  "source": "nodes/动物的性-1c60978e8e92.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/动物的性-1c60978e8e92.json",
+  "legacy_children": "../../children/nodes/动物的性-1c60978e8e92.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:性行为",
+  "source": "nodes/性行为-7cdd2d6164e3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/性行为-7cdd2d6164e3.json",
+  "legacy_children": "../../children/nodes/性行为-7cdd2d6164e3.json"
+}

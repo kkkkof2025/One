@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/动物的性-1c60978e8e92.json",
+  "node": {
+    "title": "动物的性",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:动物的性",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8A%A8%E7%89%A9%E7%9A%84%E6%80%A7",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

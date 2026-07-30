@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/婚配制度-5b2f4b5cf0cc.json",
+  "node": {
+    "title": "婚配制度",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:婚配制度",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A9%9A%E9%85%8D%E5%88%B6%E5%BA%A6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-29T01:51:19Z",
+  "generated_at": "2026-07-30T01:43:49Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q14035",
-      "title": "M85",
+      "scan_key": "id:Q14048",
+      "title": "M88",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
       "depth": 7
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:非传统生物",
-      "title": "非传统生物",
+      "scan_key": "id:wikipedia:zh:Category:長生不老",
+      "title": "長生不老",
       "next_source": "wikidata",
       "source_progress": 1,
-      "priority": 111.0,
+      "priority": 110.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q14048",
-      "title": "M88",
+      "scan_key": "id:Q14337",
+      "title": "M89",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,
