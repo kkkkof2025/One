@@ -40,7 +40,19 @@
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E5%B7%A5%E6%8E%88%E7%B2%BE%E6%89%80%E7%94%9F%E7%9A%84%E7%BB%B4%E5%9F%BA%E4%BA%BA",
       "quality_score": 75,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-07-31T02:01:17Z",
+      "last_checked_at": "2026-07-31T02:01:17Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_no_children": {
+        "wikipedia": "2026-07-31T02:01:17Z"
+      },
+      "source_checked": {
+        "wikipedia": "2026-07-31T02:01:17Z"
+      }
     },
     {
       "title": "交配",

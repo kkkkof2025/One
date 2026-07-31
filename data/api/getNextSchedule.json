@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-07-30T01:43:49Z",
+  "generated_at": "2026-07-31T02:01:18Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q14048",
-      "title": "M88",
+      "scan_key": "id:Q14337",
+      "title": "M89",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
@@ -38,8 +38,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q14337",
-      "title": "M89",
+      "scan_key": "id:Q14343",
+      "title": "M90",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,
