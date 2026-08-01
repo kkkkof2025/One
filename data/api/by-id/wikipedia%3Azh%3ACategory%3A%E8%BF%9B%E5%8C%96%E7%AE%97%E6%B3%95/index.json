@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:进化算法",
+  "source": "nodes/进化算法-1c270cab1c3d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/进化算法-1c270cab1c3d.json",
+  "legacy_children": "../../children/nodes/进化算法-1c270cab1c3d.json"
+}

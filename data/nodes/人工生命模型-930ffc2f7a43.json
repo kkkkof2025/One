@@ -1,19 +1,45 @@
 {
   "id": "wikipedia:zh:Category:人工生命模型",
   "title": "人工生命模型",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "进化算法",
+      "data_source": "nodes/进化算法-1c270cab1c3d.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:进化算法",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%BF%9B%E5%8C%96%E7%AE%97%E6%B3%95",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E5%B7%A5%E7%94%9F%E5%91%BD%E6%A8%A1%E5%9E%8B",
   "source_page_id": 8346311,
-  "quality_score": 75,
+  "quality_score": 83,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-08-01T02:02:50Z",
+  "last_checked_at": "2026-08-01T02:02:50Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-08-01T02:02:50Z"
+  },
+  "is_leaf": false
 }
