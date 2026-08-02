@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人文主义政党",
+  "source": "nodes/人文主义政党-ebce7dcf7ae0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人文主义政党-ebce7dcf7ae0.json",
+  "legacy_children": "../../children/nodes/人文主义政党-ebce7dcf7ae0.json"
+}

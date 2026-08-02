@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:跨性別女性主義",
+  "source": "nodes/跨性別女性主義-32a0c10cdc9f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/跨性別女性主義-32a0c10cdc9f.json",
+  "legacy_children": "../../children/nodes/跨性別女性主義-32a0c10cdc9f.json"
+}

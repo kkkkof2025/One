@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/人文主义者-0d0fec1ef702.json",
+  "node": {
+    "id": "wikipedia:zh:Category:人文主义者",
+    "title": "人文主义者",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E6%96%87%E4%B8%BB%E4%B9%89%E8%80%85",
+    "source_page_id": 3387881,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

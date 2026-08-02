@@ -31,15 +31,24 @@
       {
         "title": "人文主义",
         "data_source": "nodes/人文主义-1ca885d6a251.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "wikipedia:zh:Category:人文主义",
         "source_provider": "wikipedia",
         "source_relation": "wikipedia_category",
         "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E6%96%87%E4%B8%BB%E4%B9%89",
-        "quality_score": 75,
+        "quality_score": 89,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-08-02T01:58:43Z",
+        "last_checked_at": "2026-08-02T01:58:43Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_checked": {
+          "wikipedia": "2026-08-02T01:58:43Z"
+        }
       },
       {
         "title": "個人主義",

@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/世俗人文主义-a0c48ddd065c.json",
+  "node": {
+    "id": "wikipedia:zh:Category:世俗人文主义",
+    "title": "世俗人文主义",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%96%E4%BF%97%E4%BA%BA%E6%96%87%E4%B8%BB%E4%B9%89",
+    "source_page_id": 7440623,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

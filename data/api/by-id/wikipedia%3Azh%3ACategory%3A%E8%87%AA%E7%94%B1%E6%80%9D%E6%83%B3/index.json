@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:自由思想",
+  "source": "nodes/自由思想-4ccf2cdf54fc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/自由思想-4ccf2cdf54fc.json",
+  "legacy_children": "../../children/nodes/自由思想-4ccf2cdf54fc.json"
+}

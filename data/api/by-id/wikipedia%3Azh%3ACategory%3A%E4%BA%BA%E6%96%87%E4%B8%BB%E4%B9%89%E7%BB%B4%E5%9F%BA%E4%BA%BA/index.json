@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人文主义维基人",
+  "source": "nodes/人文主义维基人-0b2a38d1d526.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人文主义维基人-0b2a38d1d526.json",
+  "legacy_children": "../../children/nodes/人文主义维基人-0b2a38d1d526.json"
+}

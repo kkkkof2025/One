@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-01T02:02:50Z",
+  "generated_at": "2026-08-02T01:58:43Z",
   "id": "Q168091",
   "source": "nodes/Q168091.json",
   "node": {
@@ -54,9 +54,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-01T02:02:45Z",
+      "occurred_at": "2026-08-02T01:58:38Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-01T02:12:45Z",
+      "cooldown_until": "2026-08-02T02:08:38Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:世俗人文主义",
+  "source": "nodes/世俗人文主义-a0c48ddd065c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/世俗人文主义-a0c48ddd065c.json",
+  "legacy_children": "../../children/nodes/世俗人文主义-a0c48ddd065c.json"
+}

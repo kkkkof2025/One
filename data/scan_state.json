@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-01T02:02:50Z",
+  "updated_at": "2026-08-02T01:58:43Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:人工生命模型",
-  "last_scan_title": "人工生命模型",
-  "candidate_count": 746,
+  "last_scan_key": "id:wikipedia:zh:Category:人文主义",
+  "last_scan_title": "人文主义",
+  "candidate_count": 747,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,7 +38,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 7
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -53,32 +53,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-01T02:02:45Z",
+      "occurred_at": "2026-08-02T01:58:38Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-01T02:12:45Z",
+      "cooldown_until": "2026-08-02T02:08:38Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 746,
+    "candidate_count": 747,
     "source_progress_counts": {
       "4": 12,
-      "2": 22,
-      "1": 37,
+      "2": 23,
+      "1": 36,
       "0": 597,
-      "3": 78
+      "3": 79
     },
     "next_source_counts": {
-      "conceptnet": 111,
+      "conceptnet": 113,
       "wikipedia": 307,
       "wikidata": 12,
-      "wikidata_api": 316
+      "wikidata_api": 315
     },
     "available_next_source_counts": {
-      "conceptnet": 111,
+      "conceptnet": 113,
       "wikipedia": 307,
       "wikidata": 12,
-      "wikidata_api": 316
+      "wikidata_api": 315
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -101,24 +101,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q14343",
-        "title": "M90",
+        "scan_key": "id:Q14344",
+        "title": "M91",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:太空生命",
-        "title": "太空生命",
+        "scan_key": "id:wikipedia:zh:Category:生物起源",
+        "title": "生物起源",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 109.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q14344",
-        "title": "M91",
+        "scan_key": "id:Q14351",
+        "title": "M95",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -154,24 +154,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q14343",
-          "title": "M90",
+          "scan_key": "id:Q14344",
+          "title": "M91",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:太空生命",
-          "title": "太空生命",
+          "scan_key": "id:wikipedia:zh:Category:生物起源",
+          "title": "生物起源",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 109.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q14344",
-          "title": "M91",
+          "scan_key": "id:Q14351",
+          "title": "M95",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,

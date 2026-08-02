@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:后人类主义",
+  "source": "nodes/后人类主义-f0dd7e64bccb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/后人类主义-f0dd7e64bccb.json",
+  "legacy_children": "../../children/nodes/后人类主义-f0dd7e64bccb.json"
+}

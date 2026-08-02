@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/人文主义政党-ebce7dcf7ae0.json",
+  "node": {
+    "title": "人文主义政党",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:人文主义政党",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E6%96%87%E4%B8%BB%E4%B9%89%E6%94%BF%E5%85%9A",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
