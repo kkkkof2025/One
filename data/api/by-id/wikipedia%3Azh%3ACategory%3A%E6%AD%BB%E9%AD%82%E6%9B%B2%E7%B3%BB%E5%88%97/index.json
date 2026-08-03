@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:死魂曲系列",
+  "source": "nodes/死魂曲系列-c07e43d769d1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/死魂曲系列-c07e43d769d1.json",
+  "legacy_children": "../../children/nodes/死魂曲系列-c07e43d769d1.json"
+}

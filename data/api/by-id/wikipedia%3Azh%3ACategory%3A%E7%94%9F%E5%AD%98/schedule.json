@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-02T01:58:43Z",
+  "generated_at": "2026-08-03T02:01:23Z",
   "id": "wikipedia:zh:Category:生存",
   "source": "nodes/生存-c84780bd7944.json",
   "node": {
@@ -15,14 +15,18 @@
     "quality_score": 85,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-13T01:59:07Z",
-    "last_checked_at": "2026-07-13T01:59:07Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-03T02:01:18Z",
+    "last_checked_at": "2026-08-03T02:01:18Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
+    "source_no_children": {
+      "wikidata": "2026-08-03T02:01:18Z"
+    },
     "source_checked": {
-      "wikipedia": "2026-07-13T01:59:07Z"
+      "wikipedia": "2026-07-13T01:59:07Z",
+      "wikidata": "2026-08-03T02:01:18Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -40,20 +44,23 @@
     "dbpedia"
   ],
   "checked_sources": [
+    "wikidata",
     "wikipedia"
   ],
-  "no_children_sources": [],
+  "no_children_sources": [
+    "wikidata"
+  ],
   "done_sources": [
+    "wikidata",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata",
-  "next_source_without_cooldown": "wikidata",
+  "next_source": "dbpedia",
+  "next_source_without_cooldown": "conceptnet",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -65,15 +72,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-02T01:58:38Z",
+      "occurred_at": "2026-08-03T02:01:18Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-02T02:08:38Z",
+      "cooldown_until": "2026-08-03T02:11:18Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 4,
-    "done": 1,
-    "remaining": 3
+    "done": 2,
+    "remaining": 2
   }
 }

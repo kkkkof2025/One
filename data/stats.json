@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-02T01:58:43Z",
-  "total_nodes": 759,
-  "last_added_nodes": 7,
+  "generated_at": "2026-08-03T02:01:23Z",
+  "total_nodes": 761,
+  "last_added_nodes": 2,
   "last_request_count": 5,
-  "last_scanned_nodes": 789,
-  "last_candidate_nodes": 747,
+  "last_scanned_nodes": 796,
+  "last_candidate_nodes": 754,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,7 +23,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 7
+      "added_nodes": 2
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -35,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 747,
+    "candidate_count": 754,
     "source_progress_counts": {
       "4": 12,
-      "2": 23,
-      "1": 36,
-      "0": 597,
-      "3": 79
+      "2": 24,
+      "1": 35,
+      "0": 603,
+      "3": 80
     },
     "next_source_counts": {
-      "conceptnet": 113,
-      "wikipedia": 307,
+      "conceptnet": 115,
+      "wikipedia": 313,
       "wikidata": 12,
-      "wikidata_api": 315
+      "wikidata_api": 314
     },
     "available_next_source_counts": {
-      "conceptnet": 113,
-      "wikipedia": 307,
+      "conceptnet": 115,
+      "wikipedia": 313,
       "wikidata": 12,
-      "wikidata_api": 315
+      "wikidata_api": 314
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q14344",
-        "title": "M91",
+        "scan_key": "id:Q14351",
+        "title": "M95",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生物起源",
-        "title": "生物起源",
+        "scan_key": "id:wikipedia:zh:Category:生存",
+        "title": "生存",
         "next_source": "wikidata",
         "source_progress": 1,
-        "priority": 109.0,
+        "priority": 107.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q14351",
-        "title": "M95",
+        "scan_key": "id:Q14361",
+        "title": "M98",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -129,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q14344",
-          "title": "M91",
+          "scan_key": "id:Q14351",
+          "title": "M95",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生物起源",
-          "title": "生物起源",
+          "scan_key": "id:wikipedia:zh:Category:生存",
+          "title": "生存",
           "next_source": "wikidata",
           "source_progress": 1,
-          "priority": 109.0,
+          "priority": 107.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q14351",
-          "title": "M95",
+          "scan_key": "id:Q14361",
+          "title": "M98",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,
@@ -166,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 32,
+    "added_nodes": 30,
     "requests": 40,
-    "added_per_request": 0.8,
+    "added_per_request": 0.75,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-02T01:58:43Z",
+    "last_productive_run_at": "2026-08-03T02:01:23Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,29 +186,29 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 27
+        "added_nodes": 25
       },
       "wikidata": {
-        "rate_limited_requests": 2,
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
         "children_returned_requests": 1,
         "productive_requests": 1,
-        "added_nodes": 4
+        "added_nodes": 4,
+        "rate_limited_requests": 1
       },
       "wikidata_api": {
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
         "children_returned_requests": 1,
         "productive_requests": 1,
-        "added_nodes": 1
+        "added_nodes": 1,
+        "no_children_requests": 7,
+        "unchanged_requests": 7
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 104,
+  "history_entries": 105,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

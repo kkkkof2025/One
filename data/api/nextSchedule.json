@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-02T01:58:43Z",
+  "generated_at": "2026-08-03T02:01:23Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q14344",
-      "title": "M91",
+      "scan_key": "id:Q14351",
+      "title": "M95",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
       "depth": 7
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:生物起源",
-      "title": "生物起源",
+      "scan_key": "id:wikipedia:zh:Category:生存",
+      "title": "生存",
       "next_source": "wikidata",
       "source_progress": 1,
-      "priority": 109.0,
+      "priority": 107.0,
       "depth": 2
     },
     {
-      "scan_key": "id:Q14351",
-      "title": "M95",
+      "scan_key": "id:Q14361",
+      "title": "M98",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人祭題材電影",
+  "source": "nodes/人祭題材電影-b4d27bf1e753.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人祭題材電影-b4d27bf1e753.json",
+  "legacy_children": "../../children/nodes/人祭題材電影-b4d27bf1e753.json"
+}

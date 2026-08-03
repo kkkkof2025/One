@@ -502,14 +502,18 @@
       "quality_score": 85,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-13T01:59:07Z",
-      "last_checked_at": "2026-07-13T01:59:07Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-03T02:01:18Z",
+      "last_checked_at": "2026-08-03T02:01:18Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
+      "source_no_children": {
+        "wikidata": "2026-08-03T02:01:18Z"
+      },
       "source_checked": {
-        "wikipedia": "2026-07-13T01:59:07Z"
+        "wikipedia": "2026-07-13T01:59:07Z",
+        "wikidata": "2026-08-03T02:01:18Z"
       }
     },
     {

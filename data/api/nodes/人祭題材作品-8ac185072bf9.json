@@ -4,20 +4,59 @@
   "node": {
     "id": "wikipedia:zh:Category:人祭題材作品",
     "title": "人祭題材作品",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "人祭題材電影",
+        "data_source": "nodes/人祭題材電影-b4d27bf1e753.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:人祭題材電影",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%A5%AD%E9%A1%8C%E6%9D%90%E9%9B%BB%E5%BD%B1",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "死魂曲系列",
+        "data_source": "nodes/死魂曲系列-c07e43d769d1.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:死魂曲系列",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%BB%E9%AD%82%E6%9B%B2%E7%B3%BB%E5%88%97",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%A5%AD%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
     "source_page_id": 8440224,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-03T02:01:23Z",
+    "last_checked_at": "2026-08-03T02:01:23Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-03T02:01:23Z"
+    },
+    "is_leaf": false
   }
 }
