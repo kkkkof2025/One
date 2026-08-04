@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-03T02:01:23Z",
+  "updated_at": "2026-08-04T01:47:25Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:人祭題材作品",
-  "last_scan_title": "人祭題材作品",
-  "candidate_count": 754,
+  "last_scan_key": "id:wikipedia:zh:Category:人类起源",
+  "last_scan_title": "人类起源",
+  "candidate_count": 756,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -41,8 +41,9 @@
       "added_nodes": 2
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 10
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -53,32 +54,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-03T02:01:18Z",
+      "occurred_at": "2026-08-04T01:47:19Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-03T02:11:18Z",
+      "cooldown_until": "2026-08-04T01:57:19Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 754,
+    "candidate_count": 756,
     "source_progress_counts": {
       "4": 12,
-      "2": 24,
-      "1": 35,
-      "0": 603,
-      "3": 80
+      "2": 25,
+      "1": 34,
+      "0": 604,
+      "3": 81
     },
     "next_source_counts": {
-      "conceptnet": 115,
-      "wikipedia": 313,
+      "conceptnet": 117,
+      "wikipedia": 314,
       "wikidata": 12,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "available_next_source_counts": {
-      "conceptnet": 115,
-      "wikipedia": 313,
+      "conceptnet": 117,
+      "wikipedia": 314,
       "wikidata": 12,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -101,24 +102,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q14351",
-        "title": "M95",
+        "scan_key": "id:Q14361",
+        "title": "M98",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生存",
-        "title": "生存",
+        "scan_key": "id:wikipedia:zh:Category:生物圈",
+        "title": "生物圈",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 2
       },
       {
-        "scan_key": "id:Q14361",
-        "title": "M98",
+        "scan_key": "id:Q14377",
+        "title": "M105",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -154,24 +155,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q14351",
-          "title": "M95",
+          "scan_key": "id:Q14361",
+          "title": "M98",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生存",
-          "title": "生存",
+          "scan_key": "id:wikipedia:zh:Category:生物圈",
+          "title": "生物圈",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 2
         },
         {
-          "scan_key": "id:Q14361",
-          "title": "M98",
+          "scan_key": "id:Q14377",
+          "title": "M105",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,

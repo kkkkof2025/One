@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/人類起源神話人物-482d4872e73a.json",
+  "node": {
+    "id": "wikipedia:zh:Category:人類起源神話人物",
+    "title": "人類起源神話人物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E8%B5%B7%E6%BA%90%E7%A5%9E%E8%A9%B1%E4%BA%BA%E7%89%A9",
+    "source_page_id": 5661444,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

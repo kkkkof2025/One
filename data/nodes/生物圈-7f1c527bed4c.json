@@ -28,13 +28,143 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "人類",
+      "data_source": "nodes/Q5.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q5",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q5",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "地球人",
+      "data_source": "nodes/Q1349305.json",
+      "children_status": "error",
+      "is_leaf": false,
+      "id": "Q1349305",
+      "quality_score": 63,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-05-22T02:37:59Z",
+      "last_checked_at": "2026-05-22T02:37:59Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    {
+      "title": "森林",
+      "data_source": "nodes/Q4421.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4421",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q4421",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生態圈",
+      "data_source": "nodes/Q3175157.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3175157",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q3175157",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物地理群落",
+      "data_source": "nodes/Q2626809.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2626809",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q2626809",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人類",
+      "data_source": "nodes/Q1156970.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1156970",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1156970",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "氣候慣性",
+      "data_source": "nodes/Q19903851.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q19903851",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q19903851",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生态域",
+      "data_source": "nodes/Q3487662.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3487662",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q3487662",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "影子生物圈",
+      "data_source": "nodes/Q135741.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q135741",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q135741",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "智力圈",
+      "data_source": "nodes/Q729672.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q729672",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q729672",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88",
   "source_page_id": 8235502,
-  "quality_score": 85,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
@@ -45,14 +175,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-15T01:42:31Z",
-  "last_checked_at": "2026-07-15T01:42:31Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-08-04T01:47:20Z",
+  "last_checked_at": "2026-08-04T01:47:20Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-15T01:42:31Z"
+    "wikipedia": "2026-07-15T01:42:31Z",
+    "wikidata": "2026-08-04T01:47:20Z"
   },
   "is_leaf": false
 }

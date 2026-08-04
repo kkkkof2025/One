@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人類演化",
+  "source": "nodes/人類演化-35dee6cc8699.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人類演化-35dee6cc8699.json",
+  "legacy_children": "../../children/nodes/人類演化-35dee6cc8699.json"
+}

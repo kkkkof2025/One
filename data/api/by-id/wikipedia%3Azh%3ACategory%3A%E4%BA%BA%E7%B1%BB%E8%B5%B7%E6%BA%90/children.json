@@ -3,16 +3,55 @@
   "source": "nodes/人类起源-509049e1bb15.json",
   "node": {
     "title": "人类起源",
-    "children_count": 0,
+    "children_count": 2,
     "id": "wikipedia:zh:Category:人类起源",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%B1%BB%E8%B5%B7%E6%BA%90",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 85,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-04T01:47:24Z",
+    "last_checked_at": "2026-08-04T01:47:24Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-04T01:47:24Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "人類演化",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:人類演化",
+      "data_source": "nodes/人類演化-35dee6cc8699.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E6%BC%94%E5%8C%96",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人類起源神話人物",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:人類起源神話人物",
+      "data_source": "nodes/人類起源神話人物-482d4872e73a.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E8%B5%B7%E6%BA%90%E7%A5%9E%E8%A9%B1%E4%BA%BA%E7%89%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }

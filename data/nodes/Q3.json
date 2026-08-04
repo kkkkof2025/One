@@ -521,17 +521,18 @@
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88",
-      "quality_score": 85,
+      "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-15T01:42:31Z",
-      "last_checked_at": "2026-07-15T01:42:31Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-04T01:47:20Z",
+      "last_checked_at": "2026-08-04T01:47:20Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-15T01:42:31Z"
+        "wikipedia": "2026-07-15T01:42:31Z",
+        "wikidata": "2026-08-04T01:47:20Z"
       }
     },
     {

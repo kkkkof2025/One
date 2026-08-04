@@ -1,19 +1,58 @@
 {
   "id": "wikipedia:zh:Category:人类起源",
   "title": "人类起源",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "人類演化",
+      "data_source": "nodes/人類演化-35dee6cc8699.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:人類演化",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E6%BC%94%E5%8C%96",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人類起源神話人物",
+      "data_source": "nodes/人類起源神話人物-482d4872e73a.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:人類起源神話人物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E8%B5%B7%E6%BA%90%E7%A5%9E%E8%A9%B1%E4%BA%BA%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%B1%BB%E8%B5%B7%E6%BA%90",
   "source_page_id": 284240,
-  "quality_score": 75,
+  "quality_score": 85,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-08-04T01:47:24Z",
+  "last_checked_at": "2026-08-04T01:47:24Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-08-04T01:47:24Z"
+  },
+  "is_leaf": false
 }
