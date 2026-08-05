@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:消費者行為",
+  "source": "nodes/消費者行為-05485b3816cc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/消費者行為-05485b3816cc.json",
+  "legacy_children": "../../children/nodes/消費者行為-05485b3816cc.json"
+}

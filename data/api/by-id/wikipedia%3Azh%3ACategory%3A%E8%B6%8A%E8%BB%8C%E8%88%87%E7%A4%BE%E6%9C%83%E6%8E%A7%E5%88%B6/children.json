@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/越軌與社會控制-3f655e4c6705.json",
+  "node": {
+    "title": "越軌與社會控制",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:越軌與社會控制",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%B6%8A%E8%BB%8C%E8%88%87%E7%A4%BE%E6%9C%83%E6%8E%A7%E5%88%B6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

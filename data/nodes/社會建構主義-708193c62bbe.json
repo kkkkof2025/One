@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:社會建構主義",
+  "title": "社會建構主義",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A4%BE%E6%9C%83%E5%BB%BA%E6%A7%8B%E4%B8%BB%E7%BE%A9",
+  "source_page_id": 7304431,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

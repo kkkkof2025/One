@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/各行為人物-cacecd311434.json",
+  "node": {
+    "title": "各行為人物",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:各行為人物",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E8%A1%8C%E7%82%BA%E4%BA%BA%E7%89%A9",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

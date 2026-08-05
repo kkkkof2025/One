@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/競爭-448f4bafce30.json",
+  "node": {
+    "id": "wikipedia:zh:Category:競爭",
+    "title": "競爭",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%AB%B6%E7%88%AD",
+    "source_page_id": 3674367,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

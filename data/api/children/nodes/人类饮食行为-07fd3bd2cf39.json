@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/人类饮食行为-07fd3bd2cf39.json",
+  "node": {
+    "title": "人类饮食行为",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:人类饮食行为",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%B1%BB%E9%A5%AE%E9%A3%9F%E8%A1%8C%E4%B8%BA",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

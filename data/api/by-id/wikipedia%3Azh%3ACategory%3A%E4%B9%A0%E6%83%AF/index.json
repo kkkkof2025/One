@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:习惯",
+  "source": "nodes/习惯-f467aa57e745.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/习惯-f467aa57e745.json",
+  "legacy_children": "../../children/nodes/习惯-f467aa57e745.json"
+}

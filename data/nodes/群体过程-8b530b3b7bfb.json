@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:群体过程",
+  "title": "群体过程",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BE%A4%E4%BD%93%E8%BF%87%E7%A8%8B",
+  "source_page_id": 1244744,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

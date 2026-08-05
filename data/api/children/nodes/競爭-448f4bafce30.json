@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/競爭-448f4bafce30.json",
+  "node": {
+    "title": "競爭",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:競爭",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%AB%B6%E7%88%AD",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

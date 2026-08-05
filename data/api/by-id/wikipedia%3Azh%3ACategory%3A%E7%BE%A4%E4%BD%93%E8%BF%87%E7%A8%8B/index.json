@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:群体过程",
+  "source": "nodes/群体过程-8b530b3b7bfb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/群体过程-8b530b3b7bfb.json",
+  "legacy_children": "../../children/nodes/群体过程-8b530b3b7bfb.json"
+}

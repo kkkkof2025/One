@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人際關係",
+  "source": "nodes/人際關係-49b45b246dee.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人際關係-49b45b246dee.json",
+  "legacy_children": "../../children/nodes/人際關係-49b45b246dee.json"
+}

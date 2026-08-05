@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-04T01:47:25Z",
+  "generated_at": "2026-08-05T01:48:32Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q14361",
-      "title": "M98",
+      "scan_key": "id:Q14377",
+      "title": "M105",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 49.0,
       "depth": 7
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:生物圈",
-      "title": "生物圈",
+      "scan_key": "id:wikipedia:zh:Category:中生代生物",
+      "title": "中生代生物",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 107.0,
-      "depth": 2
+      "depth": 3
     },
     {
-      "scan_key": "id:Q14377",
-      "title": "M105",
+      "scan_key": "id:Q1997323",
+      "title": "NGC 1347",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 49.0,

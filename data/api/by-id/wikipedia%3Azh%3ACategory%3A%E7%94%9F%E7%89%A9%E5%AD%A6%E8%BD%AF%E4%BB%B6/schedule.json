@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-04T01:47:25Z",
+  "generated_at": "2026-08-05T01:48:32Z",
   "id": "wikipedia:zh:Category:生物学软件",
   "source": "nodes/生物学软件-b65544c18025.json",
   "node": {
@@ -52,9 +52,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-04T01:47:19Z",
+      "occurred_at": "2026-08-05T01:48:27Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-04T01:57:19Z",
+      "cooldown_until": "2026-08-05T01:58:27Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

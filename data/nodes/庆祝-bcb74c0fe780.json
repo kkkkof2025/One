@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:庆祝",
+  "title": "庆祝",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BA%86%E7%A5%9D",
+  "source_page_id": 5966239,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

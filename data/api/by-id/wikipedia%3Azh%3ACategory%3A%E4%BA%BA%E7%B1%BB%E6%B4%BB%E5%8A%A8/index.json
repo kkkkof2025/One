@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人类活动",
+  "source": "nodes/人类活动-87bada0718f0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人类活动-87bada0718f0.json",
+  "legacy_children": "../../children/nodes/人类活动-87bada0718f0.json"
+}

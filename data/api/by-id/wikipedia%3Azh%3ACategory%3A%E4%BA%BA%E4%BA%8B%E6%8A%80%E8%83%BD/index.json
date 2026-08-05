@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人事技能",
+  "source": "nodes/人事技能-bf94f322ba03.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人事技能-bf94f322ba03.json",
+  "legacy_children": "../../children/nodes/人事技能-bf94f322ba03.json"
+}

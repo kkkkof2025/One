@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:衝突",
+  "source": "nodes/衝突-73050e7878ca.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/衝突-73050e7878ca.json",
+  "legacy_children": "../../children/nodes/衝突-73050e7878ca.json"
+}

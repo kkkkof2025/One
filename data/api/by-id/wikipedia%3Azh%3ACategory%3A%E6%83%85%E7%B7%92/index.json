@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:情緒",
+  "source": "nodes/情緒-473cc52ef116.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/情緒-473cc52ef116.json",
+  "legacy_children": "../../children/nodes/情緒-473cc52ef116.json"
+}

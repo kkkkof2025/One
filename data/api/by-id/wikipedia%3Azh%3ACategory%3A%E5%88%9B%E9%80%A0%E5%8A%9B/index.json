@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:创造力",
+  "source": "nodes/创造力-2bb2b51f2f1c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/创造力-2bb2b51f2f1c.json",
+  "legacy_children": "../../children/nodes/创造力-2bb2b51f2f1c.json"
+}

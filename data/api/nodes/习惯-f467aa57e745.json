@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/习惯-f467aa57e745.json",
+  "node": {
+    "id": "wikipedia:zh:Category:习惯",
+    "title": "习惯",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B9%A0%E6%83%AF",
+    "source_page_id": 1774018,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:玩耍",
+  "source": "nodes/玩耍-5651c9a4af6c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/玩耍-5651c9a4af6c.json",
+  "legacy_children": "../../children/nodes/玩耍-5651c9a4af6c.json"
+}

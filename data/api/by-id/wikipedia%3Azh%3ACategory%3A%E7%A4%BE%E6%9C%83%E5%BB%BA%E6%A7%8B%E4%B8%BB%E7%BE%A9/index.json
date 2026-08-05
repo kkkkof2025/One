@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:社會建構主義",
+  "source": "nodes/社會建構主義-708193c62bbe.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/社會建構主義-708193c62bbe.json",
+  "legacy_children": "../../children/nodes/社會建構主義-708193c62bbe.json"
+}

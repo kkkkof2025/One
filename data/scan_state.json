@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-04T01:47:25Z",
+  "updated_at": "2026-08-05T01:48:32Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:人类起源",
-  "last_scan_title": "人类起源",
-  "candidate_count": 756,
+  "last_scan_key": "id:wikipedia:zh:Category:人類行為",
+  "last_scan_title": "人類行為",
+  "candidate_count": 767,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,12 +38,11 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 2
+      "added_nodes": 39
     },
     "wikidata": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 10
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -54,32 +53,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-04T01:47:19Z",
+      "occurred_at": "2026-08-05T01:48:27Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-04T01:57:19Z",
+      "cooldown_until": "2026-08-05T01:58:27Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 756,
+    "candidate_count": 767,
     "source_progress_counts": {
       "4": 12,
-      "2": 25,
-      "1": 34,
-      "0": 604,
-      "3": 81
+      "2": 26,
+      "1": 33,
+      "0": 614,
+      "3": 82
     },
     "next_source_counts": {
-      "conceptnet": 117,
-      "wikipedia": 314,
+      "conceptnet": 119,
+      "wikipedia": 315,
       "wikidata": 12,
-      "wikidata_api": 313
+      "wikidata_api": 321
     },
     "available_next_source_counts": {
-      "conceptnet": 117,
-      "wikipedia": 314,
+      "conceptnet": 119,
+      "wikipedia": 315,
       "wikidata": 12,
-      "wikidata_api": 313
+      "wikidata_api": 321
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -102,24 +101,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q14361",
-        "title": "M98",
+        "scan_key": "id:Q14377",
+        "title": "M105",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:生物圈",
-        "title": "生物圈",
+        "scan_key": "id:wikipedia:zh:Category:中生代生物",
+        "title": "中生代生物",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
-        "depth": 2
+        "depth": 3
       },
       {
-        "scan_key": "id:Q14377",
-        "title": "M105",
+        "scan_key": "id:Q1997323",
+        "title": "NGC 1347",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -155,24 +154,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q14361",
-          "title": "M98",
+          "scan_key": "id:Q14377",
+          "title": "M105",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:生物圈",
-          "title": "生物圈",
+          "scan_key": "id:wikipedia:zh:Category:中生代生物",
+          "title": "中生代生物",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
-          "depth": 2
+          "depth": 3
         },
         {
-          "scan_key": "id:Q14377",
-          "title": "M105",
+          "scan_key": "id:Q1997323",
+          "title": "NGC 1347",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,

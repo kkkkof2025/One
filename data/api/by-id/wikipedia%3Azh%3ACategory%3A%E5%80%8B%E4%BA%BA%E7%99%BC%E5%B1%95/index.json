@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:個人發展",
+  "source": "nodes/個人發展-14cf7f977456.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/個人發展-14cf7f977456.json",
+  "legacy_children": "../../children/nodes/個人發展-14cf7f977456.json"
+}

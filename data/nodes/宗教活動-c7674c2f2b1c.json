@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:宗教活動",
+  "title": "宗教活動",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%97%E6%95%99%E6%B4%BB%E5%8B%95",
+  "source_page_id": 266034,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

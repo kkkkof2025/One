@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:善良",
+  "source": "nodes/善良-6f00063dcc77.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/善良-6f00063dcc77.json",
+  "legacy_children": "../../children/nodes/善良-6f00063dcc77.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:閱讀",
+  "source": "nodes/閱讀-54756df78d97.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/閱讀-54756df78d97.json",
+  "legacy_children": "../../children/nodes/閱讀-54756df78d97.json"
+}

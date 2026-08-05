@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:微观经济行为的基本原则",
+  "source": "nodes/微观经济行为的基本原则-f9c24ab4ddfe.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/微观经济行为的基本原则-f9c24ab4ddfe.json",
+  "legacy_children": "../../children/nodes/微观经济行为的基本原则-f9c24ab4ddfe.json"
+}

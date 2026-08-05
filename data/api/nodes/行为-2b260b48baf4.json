@@ -22,15 +22,24 @@
       {
         "title": "人類行為",
         "data_source": "nodes/人類行為-23c3b390b72e.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "wikipedia:zh:Category:人類行為",
         "source_provider": "wikipedia",
         "source_relation": "wikipedia_category",
         "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E8%A1%8C%E7%82%BA",
-        "quality_score": 75,
+        "quality_score": 89,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-08-05T01:48:32Z",
+        "last_checked_at": "2026-08-05T01:48:32Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_checked": {
+          "wikipedia": "2026-08-05T01:48:32Z"
+        }
       },
       {
         "title": "冒险",

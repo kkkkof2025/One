@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/玩耍-5651c9a4af6c.json",
+  "node": {
+    "id": "wikipedia:zh:Category:玩耍",
+    "title": "玩耍",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%8E%A9%E8%80%8D",
+    "source_page_id": 8892590,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

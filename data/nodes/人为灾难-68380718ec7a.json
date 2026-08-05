@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:人为灾难",
+  "title": "人为灾难",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E4%B8%BA%E7%81%BE%E9%9A%BE",
+  "source_page_id": 1712861,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

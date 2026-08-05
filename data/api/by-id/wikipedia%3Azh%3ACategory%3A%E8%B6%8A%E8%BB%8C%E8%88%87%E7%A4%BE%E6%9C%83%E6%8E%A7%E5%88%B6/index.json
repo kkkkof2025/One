@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:越軌與社會控制",
+  "source": "nodes/越軌與社會控制-3f655e4c6705.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/越軌與社會控制-3f655e4c6705.json",
+  "legacy_children": "../../children/nodes/越軌與社會控制-3f655e4c6705.json"
+}

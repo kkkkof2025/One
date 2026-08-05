@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/行為金融學-7aa2f4b95c45.json",
+  "node": {
+    "id": "wikipedia:zh:Category:行為金融學",
+    "title": "行為金融學",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A1%8C%E7%82%BA%E9%87%91%E8%9E%8D%E5%AD%B8",
+    "source_page_id": 5961054,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

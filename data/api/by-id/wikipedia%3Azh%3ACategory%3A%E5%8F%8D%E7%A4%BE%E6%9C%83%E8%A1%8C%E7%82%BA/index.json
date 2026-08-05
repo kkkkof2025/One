@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:反社會行為",
+  "source": "nodes/反社會行為-cc57b1cd0e33.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/反社會行為-cc57b1cd0e33.json",
+  "legacy_children": "../../children/nodes/反社會行為-cc57b1cd0e33.json"
+}

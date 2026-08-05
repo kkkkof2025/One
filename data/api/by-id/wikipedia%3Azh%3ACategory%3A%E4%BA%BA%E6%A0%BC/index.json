@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人格",
+  "source": "nodes/人格-8fbe707c561e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人格-8fbe707c561e.json",
+  "legacy_children": "../../children/nodes/人格-8fbe707c561e.json"
+}

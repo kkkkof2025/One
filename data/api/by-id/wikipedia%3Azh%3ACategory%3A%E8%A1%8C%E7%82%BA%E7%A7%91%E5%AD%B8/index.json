@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:行為科學",
+  "source": "nodes/行為科學-a7600d1e5b16.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/行為科學-a7600d1e5b16.json",
+  "legacy_children": "../../children/nodes/行為科學-a7600d1e5b16.json"
+}

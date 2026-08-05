@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/人类本性-c11a81ba2c94.json",
+  "node": {
+    "title": "人类本性",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:人类本性",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E7%B1%BB%E6%9C%AC%E6%80%A7",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

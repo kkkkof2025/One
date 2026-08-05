@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:精神障碍",
+  "source": "nodes/精神障碍-a92e20171ab6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/精神障碍-a92e20171ab6.json",
+  "legacy_children": "../../children/nodes/精神障碍-a92e20171ab6.json"
+}

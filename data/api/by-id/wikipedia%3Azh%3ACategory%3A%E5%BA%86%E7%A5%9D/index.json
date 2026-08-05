@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:庆祝",
+  "source": "nodes/庆祝-bcb74c0fe780.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/庆祝-bcb74c0fe780.json",
+  "legacy_children": "../../children/nodes/庆祝-bcb74c0fe780.json"
+}

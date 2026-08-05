@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:组织行为学",
+  "source": "nodes/组织行为学-930ce2570e9e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/组织行为学-930ce2570e9e.json",
+  "legacy_children": "../../children/nodes/组织行为学-930ce2570e9e.json"
+}

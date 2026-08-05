@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/行为修正-ba15eb6fd187.json",
+  "node": {
+    "id": "wikipedia:zh:Category:行为修正",
+    "title": "行为修正",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%A1%8C%E4%B8%BA%E4%BF%AE%E6%AD%A3",
+    "source_page_id": 5478909,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

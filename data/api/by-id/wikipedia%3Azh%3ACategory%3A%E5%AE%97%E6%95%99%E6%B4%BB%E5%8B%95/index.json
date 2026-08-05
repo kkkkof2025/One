@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:宗教活動",
+  "source": "nodes/宗教活動-c7674c2f2b1c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/宗教活動-c7674c2f2b1c.json",
+  "legacy_children": "../../children/nodes/宗教活動-c7674c2f2b1c.json"
+}

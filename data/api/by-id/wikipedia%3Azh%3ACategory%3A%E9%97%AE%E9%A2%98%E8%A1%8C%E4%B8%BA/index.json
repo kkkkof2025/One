@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:问题行为",
+  "source": "nodes/问题行为-8bb12a4fa26e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/问题行为-8bb12a4fa26e.json",
+  "legacy_children": "../../children/nodes/问题行为-8bb12a4fa26e.json"
+}

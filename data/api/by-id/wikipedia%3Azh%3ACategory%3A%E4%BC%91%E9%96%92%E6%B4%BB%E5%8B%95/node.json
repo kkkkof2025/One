@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/休閒活動-b3f321d731a9.json",
+  "node": {
+    "id": "wikipedia:zh:Category:休閒活動",
+    "title": "休閒活動",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BC%91%E9%96%92%E6%B4%BB%E5%8B%95",
+    "source_page_id": 5287659,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
