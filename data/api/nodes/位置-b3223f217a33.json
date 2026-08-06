@@ -4,20 +4,46 @@
   "node": {
     "id": "wikipedia:zh:Category:位置",
     "title": "位置",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "地理位置",
+        "data_source": "nodes/地理位置-b74e1db5ec94.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:地理位置",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BD%8D%E7%BD%AE",
     "source_page_id": 8236850,
-    "quality_score": 75,
+    "quality_score": 83,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-06T01:49:32Z",
+    "last_checked_at": "2026-08-06T01:49:32Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-06T01:49:32Z"
+    },
+    "is_leaf": false
   }
 }

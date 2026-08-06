@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/地理位置-b74e1db5ec94.json",
+  "node": {
+    "title": "地理位置",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:地理位置",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

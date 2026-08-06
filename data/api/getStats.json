@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T01:48:32Z",
-  "total_nodes": 810,
-  "last_added_nodes": 39,
+  "generated_at": "2026-08-06T01:49:32Z",
+  "total_nodes": 811,
+  "last_added_nodes": 1,
   "last_request_count": 5,
-  "last_scanned_nodes": 810,
-  "last_candidate_nodes": 767,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 849,
+  "last_candidate_nodes": 805,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,11 +23,10 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 39
+      "added_nodes": 1
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "rate_limited_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +34,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 767,
+    "candidate_count": 805,
     "source_progress_counts": {
       "4": 12,
-      "2": 26,
-      "1": 33,
-      "0": 614,
-      "3": 82
+      "2": 27,
+      "1": 32,
+      "0": 651,
+      "3": 83
     },
     "next_source_counts": {
-      "conceptnet": 119,
-      "wikipedia": 315,
+      "conceptnet": 121,
+      "wikipedia": 352,
       "wikidata": 12,
-      "wikidata_api": 321
+      "wikidata_api": 320
     },
     "available_next_source_counts": {
-      "conceptnet": 119,
-      "wikipedia": 315,
+      "conceptnet": 121,
+      "wikipedia": 352,
       "wikidata": 12,
-      "wikidata_api": 321
+      "wikidata_api": 320
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +75,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q14377",
-        "title": "M105",
+        "scan_key": "id:Q1997323",
+        "title": "NGC 1347",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
         "depth": 7
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:中生代生物",
-        "title": "中生代生物",
+        "scan_key": "id:wikipedia:zh:Category:人文主义",
+        "title": "人文主义",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1997323",
-        "title": "NGC 1347",
+        "scan_key": "id:Q3329830",
+        "title": "ESO 137-001",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -129,24 +128,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q14377",
-          "title": "M105",
+          "scan_key": "id:Q1997323",
+          "title": "NGC 1347",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
           "depth": 7
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:中生代生物",
-          "title": "中生代生物",
+          "scan_key": "id:wikipedia:zh:Category:人文主义",
+          "title": "人文主义",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1997323",
-          "title": "NGC 1347",
+          "scan_key": "id:Q3329830",
+          "title": "ESO 137-001",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,
@@ -166,11 +165,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 68,
+    "added_nodes": 66,
     "requests": 40,
-    "added_per_request": 1.7,
+    "added_per_request": 1.65,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-05T01:48:32Z",
+    "last_productive_run_at": "2026-08-06T01:49:32Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,12 +185,12 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 58
+        "added_nodes": 56
       },
       "wikidata": {
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
-        "rate_limited_requests": 1,
+        "rate_limited_requests": 2,
+        "no_children_requests": 5,
+        "unchanged_requests": 5,
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 10
@@ -205,7 +204,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 107,
+  "history_entries": 108,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
