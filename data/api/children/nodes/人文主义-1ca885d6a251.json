@@ -3,7 +3,7 @@
   "source": "nodes/人文主义-1ca885d6a251.json",
   "node": {
     "title": "人文主义",
-    "children_count": 7,
+    "children_count": 15,
     "id": "wikipedia:zh:Category:人文主义",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
@@ -13,14 +13,15 @@
     "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-02T01:58:43Z",
-    "last_checked_at": "2026-08-02T01:58:43Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-07T02:12:36Z",
+    "last_checked_at": "2026-08-07T02:12:36Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-08-02T01:58:43Z"
+      "wikipedia": "2026-08-02T01:58:43Z",
+      "wikidata": "2026-08-07T02:12:36Z"
     }
   },
   "children": [
@@ -121,7 +122,119 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "台灣人文煮意麵團",
+      "children_count": 0,
+      "id": "Q137690638",
+      "data_source": "nodes/Q137690638.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q137690638",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "羅馬慈善",
+      "children_count": 0,
+      "id": "Q1188850",
+      "data_source": "nodes/Q1188850.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1188850",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "世俗人文主義",
+      "children_count": 0,
+      "id": "Q312226",
+      "data_source": "nodes/Q312226.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q312226",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "乌班图",
+      "children_count": 0,
+      "id": "Q213843",
+      "data_source": "nodes/Q213843.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q213843",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "基督教人道主義",
+      "children_count": 0,
+      "id": "Q2327432",
+      "data_source": "nodes/Q2327432.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q2327432",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "宗教人文主义",
+      "children_count": 0,
+      "id": "Q1454631",
+      "data_source": "nodes/Q1454631.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1454631",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "整体人文主义",
+      "children_count": 0,
+      "id": "Q56209385",
+      "data_source": "nodes/Q56209385.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q56209385",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "马克思主义的人本主义",
+      "children_count": 0,
+      "id": "Q3842",
+      "data_source": "nodes/Q3842.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q3842",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 7
+  "child_count": 15
 }

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:侏羅紀公園角色",
+  "source": "nodes/侏羅紀公園角色-036f2e0bbc59.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/侏羅紀公園角色-036f2e0bbc59.json",
+  "legacy_children": "../../children/nodes/侏羅紀公園角色-036f2e0bbc59.json"
+}

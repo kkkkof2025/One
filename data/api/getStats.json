@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-06T01:49:32Z",
-  "total_nodes": 811,
-  "last_added_nodes": 1,
+  "generated_at": "2026-08-07T02:12:41Z",
+  "total_nodes": 821,
+  "last_added_nodes": 10,
   "last_request_count": 5,
-  "last_scanned_nodes": 849,
-  "last_candidate_nodes": 805,
+  "last_scanned_nodes": 850,
+  "last_candidate_nodes": 806,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,10 +23,12 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 2
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 8
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -34,25 +36,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 805,
+    "candidate_count": 806,
     "source_progress_counts": {
       "4": 12,
       "2": 27,
       "1": 32,
       "0": 651,
-      "3": 83
+      "3": 84
     },
     "next_source_counts": {
-      "conceptnet": 121,
+      "conceptnet": 122,
       "wikipedia": 352,
-      "wikidata": 12,
-      "wikidata_api": 320
+      "wikidata": 13,
+      "wikidata_api": 319
     },
     "available_next_source_counts": {
-      "conceptnet": 121,
+      "conceptnet": 122,
       "wikipedia": 352,
-      "wikidata": 12,
-      "wikidata_api": 320
+      "wikidata": 13,
+      "wikidata_api": 319
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,8 +77,8 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1997323",
-        "title": "NGC 1347",
+        "scan_key": "id:Q3329830",
+        "title": "ESO 137-001",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 49.0,
@@ -91,8 +93,8 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q3329830",
-        "title": "ESO 137-001",
+        "scan_key": "id:Q4658",
+        "title": "M106",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 49.0,
@@ -128,8 +130,8 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1997323",
-          "title": "NGC 1347",
+          "scan_key": "id:Q3329830",
+          "title": "ESO 137-001",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 49.0,
@@ -144,8 +146,8 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q3329830",
-          "title": "ESO 137-001",
+          "scan_key": "id:Q4658",
+          "title": "M106",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 49.0,
@@ -165,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 66,
+    "added_nodes": 72,
     "requests": 40,
-    "added_per_request": 1.65,
+    "added_per_request": 1.8,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-06T01:49:32Z",
+    "last_productive_run_at": "2026-08-07T02:12:41Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -185,15 +187,15 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 56
+        "added_nodes": 54
       },
       "wikidata": {
-        "rate_limited_requests": 2,
         "no_children_requests": 5,
         "unchanged_requests": 5,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 10
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 18,
+        "rate_limited_requests": 1
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -204,7 +206,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 108,
+  "history_entries": 109,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

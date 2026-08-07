@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:侏罗纪公园系列电子游戏",
+  "source": "nodes/侏罗纪公园系列电子游戏-98f85c8fea97.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/侏罗纪公园系列电子游戏-98f85c8fea97.json",
+  "legacy_children": "../../children/nodes/侏罗纪公园系列电子游戏-98f85c8fea97.json"
+}

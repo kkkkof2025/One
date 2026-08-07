@@ -50,7 +50,7 @@
     },
     {
       "title": "人文主义",
-      "children_count": 7,
+      "children_count": 15,
       "id": "wikipedia:zh:Category:人文主义",
       "data_source": "nodes/人文主义-1ca885d6a251.json",
       "source_provider": "wikipedia",
@@ -61,14 +61,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-02T01:58:43Z",
-      "last_checked_at": "2026-08-02T01:58:43Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-07T02:12:36Z",
+      "last_checked_at": "2026-08-07T02:12:36Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-08-02T01:58:43Z"
+        "wikipedia": "2026-08-02T01:58:43Z",
+        "wikidata": "2026-08-07T02:12:36Z"
       }
     },
     {

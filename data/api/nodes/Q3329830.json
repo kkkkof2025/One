@@ -6,7 +6,7 @@
     "title": "ESO 137-001",
     "children_status": "pending",
     "children": [],
-    "updated_at": "2026-08-06T01:49:28Z",
+    "updated_at": "2026-08-07T02:12:36Z",
     "fetch_strategy_version": 2,
     "is_leaf": false,
     "quality_score": 49,
@@ -20,16 +20,18 @@
     "review_status": "approved",
     "source_no_children": {
       "wikidata": "2026-05-07T03:04:50Z",
-      "wikidata_api": "2026-08-06T01:49:28Z"
+      "wikidata_api": "2026-08-06T01:49:28Z",
+      "wikipedia": "2026-08-07T02:12:36Z"
     },
     "source_checked": {
       "wikidata": "2026-05-07T03:04:50Z",
-      "wikidata_api": "2026-08-06T01:49:28Z"
+      "wikidata_api": "2026-08-06T01:49:28Z",
+      "wikipedia": "2026-08-07T02:12:36Z"
     },
-    "last_checked_at": "2026-08-06T01:49:28Z",
-    "last_fetch_source": "wikidata_api",
+    "last_checked_at": "2026-08-07T02:12:36Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ]
   }
 }

@@ -96,6 +96,110 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "台灣人文煮意麵團",
+        "data_source": "nodes/Q137690638.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q137690638",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q137690638",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "羅馬慈善",
+        "data_source": "nodes/Q1188850.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1188850",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q1188850",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "世俗人文主義",
+        "data_source": "nodes/Q312226.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q312226",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q312226",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "乌班图",
+        "data_source": "nodes/Q213843.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q213843",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q213843",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "基督教人道主義",
+        "data_source": "nodes/Q2327432.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2327432",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q2327432",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "宗教人文主义",
+        "data_source": "nodes/Q1454631.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1454631",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1454631",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "整体人文主义",
+        "data_source": "nodes/Q56209385.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q56209385",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q56209385",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "马克思主义的人本主义",
+        "data_source": "nodes/Q3842.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3842",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q3842",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikipedia",
@@ -113,14 +217,15 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-02T01:58:43Z",
-    "last_checked_at": "2026-08-02T01:58:43Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-07T02:12:36Z",
+    "last_checked_at": "2026-08-07T02:12:36Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-08-02T01:58:43Z"
+      "wikipedia": "2026-08-02T01:58:43Z",
+      "wikidata": "2026-08-07T02:12:36Z"
     },
     "is_leaf": false
   }
