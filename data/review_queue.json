@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T02:12:43Z",
+  "generated_at": "2026-08-08T01:00:18Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -1465,7 +1465,7 @@
         "missing_relation"
       ],
       "id": "Q118512328",
-      "updated_at": "2026-05-07T00:54:31Z",
+      "updated_at": "2026-08-08T01:00:11Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M101星系群 / 風車星系 / SN 2023ixf",
       "location": "nodes/Q118512328.json",
@@ -2127,7 +2127,7 @@
         "missing_relation"
       ],
       "id": "Q4658",
-      "updated_at": "2026-08-07T02:12:37Z",
+      "updated_at": "2026-08-08T01:00:11Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 獵犬II星系群 / M106",
       "location": "nodes/Q4658.json",

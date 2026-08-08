@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:澳大利亚各州和领地死亡",
+  "source": "nodes/澳大利亚各州和领地死亡-ab565013c839.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/澳大利亚各州和领地死亡-ab565013c839.json",
+  "legacy_children": "../../children/nodes/澳大利亚各州和领地死亡-ab565013c839.json"
+}

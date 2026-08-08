@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:加拿大各省及领地死亡",
+  "title": "加拿大各省及领地死亡",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%90%84%E7%9C%81%E5%8F%8A%E9%A2%86%E5%9C%B0%E6%AD%BB%E4%BA%A1",
+  "source_page_id": 8946025,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

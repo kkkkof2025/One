@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:依国家行政区划划分的身亡者",
+  "source": "nodes/依国家行政区划划分的身亡者-4e199a6dc27d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/依国家行政区划划分的身亡者-4e199a6dc27d.json",
+  "legacy_children": "../../children/nodes/依国家行政区划划分的身亡者-4e199a6dc27d.json"
+}

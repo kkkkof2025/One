@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/美國各州死亡-319150081ec6.json",
+  "node": {
+    "id": "wikipedia:zh:Category:美國各州死亡",
+    "title": "美國各州死亡",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BE%8E%E5%9C%8B%E5%90%84%E5%B7%9E%E6%AD%BB%E4%BA%A1",
+    "source_page_id": 7283479,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

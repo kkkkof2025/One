@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:美國各州死亡",
+  "source": "nodes/美國各州死亡-319150081ec6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/美國各州死亡-319150081ec6.json",
+  "legacy_children": "../../children/nodes/美國各州死亡-319150081ec6.json"
+}

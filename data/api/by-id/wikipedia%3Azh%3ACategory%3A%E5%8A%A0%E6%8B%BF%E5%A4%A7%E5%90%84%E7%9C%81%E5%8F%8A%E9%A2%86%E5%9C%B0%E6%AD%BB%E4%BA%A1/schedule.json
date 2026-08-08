@@ -1,0 +1,66 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-08-08T01:00:16Z",
+  "id": "wikipedia:zh:Category:加拿大各省及领地死亡",
+  "source": "nodes/加拿大各省及领地死亡-96979b99eb15.json",
+  "node": {
+    "title": "加拿大各省及领地死亡",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:加拿大各省及领地死亡",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%90%84%E7%9C%81%E5%8F%8A%E9%A2%86%E5%9C%B0%E6%AD%BB%E4%BA%A1",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-08-08T01:00:11Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-08-08T01:10:11Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}
