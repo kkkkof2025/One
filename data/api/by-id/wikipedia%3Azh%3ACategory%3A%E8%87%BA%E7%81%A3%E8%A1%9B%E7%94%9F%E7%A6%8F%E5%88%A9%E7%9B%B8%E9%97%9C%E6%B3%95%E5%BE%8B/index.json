@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:臺灣衛生福利相關法律",
+  "source": "nodes/臺灣衛生福利相關法律-ae935edbbf06.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/臺灣衛生福利相關法律-ae935edbbf06.json",
+  "legacy_children": "../../children/nodes/臺灣衛生福利相關法律-ae935edbbf06.json"
+}

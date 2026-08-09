@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:2019冠狀病毒病疫情相關法律",
+  "source": "nodes/2019冠狀病毒病疫情相關法律-0ee1da66346a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/2019冠狀病毒病疫情相關法律-0ee1da66346a.json",
+  "legacy_children": "../../children/nodes/2019冠狀病毒病疫情相關法律-0ee1da66346a.json"
+}

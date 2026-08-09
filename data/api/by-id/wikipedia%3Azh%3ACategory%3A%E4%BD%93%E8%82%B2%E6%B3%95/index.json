@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:体育法",
+  "source": "nodes/体育法-0203701e06ac.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/体育法-0203701e06ac.json",
+  "legacy_children": "../../children/nodes/体育法-0203701e06ac.json"
+}

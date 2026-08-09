@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-08T01:00:16Z",
+  "generated_at": "2026-08-09T01:04:14Z",
   "id": "wikipedia:zh:Category:生命科學",
   "source": "nodes/生命科學-8e0503f1c9d8.json",
   "node": {
@@ -67,9 +67,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-08T01:00:11Z",
+      "occurred_at": "2026-08-09T01:04:09Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-08T01:10:11Z",
+      "cooldown_until": "2026-08-09T01:14:09Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

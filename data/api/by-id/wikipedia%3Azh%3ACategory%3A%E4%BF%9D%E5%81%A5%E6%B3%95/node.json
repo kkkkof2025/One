@@ -4,20 +4,98 @@
   "node": {
     "id": "wikipedia:zh:Category:保健法",
     "title": "保健法",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "2019冠狀病毒病疫情相關法律",
+        "data_source": "nodes/2019冠狀病毒病疫情相關法律-0ee1da66346a.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:2019冠狀病毒病疫情相關法律",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:2019%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92%E7%97%85%E7%96%AB%E6%83%85%E7%9B%B8%E9%97%9C%E6%B3%95%E5%BE%8B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "体育法",
+        "data_source": "nodes/体育法-0203701e06ac.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:体育法",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BD%93%E8%82%B2%E6%B3%95",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "国际关注的公共卫生紧急事件",
+        "data_source": "nodes/国际关注的公共卫生紧急事件-972d104adca7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:国际关注的公共卫生紧急事件",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9B%BD%E9%99%85%E5%85%B3%E6%B3%A8%E7%9A%84%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "臺灣衛生福利相關法律",
+        "data_source": "nodes/臺灣衛生福利相關法律-ae935edbbf06.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:臺灣衛生福利相關法律",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%87%BA%E7%81%A3%E8%A1%9B%E7%94%9F%E7%A6%8F%E5%88%A9%E7%9B%B8%E9%97%9C%E6%B3%95%E5%BE%8B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "醫療法",
+        "data_source": "nodes/醫療法-6ee6330e86c2.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:醫療法",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%86%AB%E7%99%82%E6%B3%95",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BF%9D%E5%81%A5%E6%B3%95",
     "source_page_id": 7612219,
-    "quality_score": 75,
+    "quality_score": 89,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-09T01:04:14Z",
+    "last_checked_at": "2026-08-09T01:04:14Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-09T01:04:14Z"
+    },
+    "is_leaf": false
   }
 }

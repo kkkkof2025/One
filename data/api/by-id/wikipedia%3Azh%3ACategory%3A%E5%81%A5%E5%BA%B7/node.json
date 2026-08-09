@@ -139,15 +139,24 @@
       {
         "title": "保健法",
         "data_source": "nodes/保健法-096735fce886.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "wikipedia:zh:Category:保健法",
         "source_provider": "wikipedia",
         "source_relation": "wikipedia_category",
         "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BF%9D%E5%81%A5%E6%B3%95",
-        "quality_score": 75,
+        "quality_score": 89,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-08-09T01:04:14Z",
+        "last_checked_at": "2026-08-09T01:04:14Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_checked": {
+          "wikipedia": "2026-08-09T01:04:14Z"
+        }
       },
       {
         "title": "健康意识日",

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:国际关注的公共卫生紧急事件",
+  "source": "nodes/国际关注的公共卫生紧急事件-972d104adca7.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/国际关注的公共卫生紧急事件-972d104adca7.json",
+  "legacy_children": "../../children/nodes/国际关注的公共卫生紧急事件-972d104adca7.json"
+}
