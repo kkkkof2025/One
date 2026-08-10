@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:自由意志主義",
+  "source": "nodes/自由意志主義-5498c8756818.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/自由意志主義-5498c8756818.json",
+  "legacy_children": "../../children/nodes/自由意志主義-5498c8756818.json"
+}

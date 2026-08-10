@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:個人無政府主義",
+  "source": "nodes/個人無政府主義-9a253268178d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/個人無政府主義-9a253268178d.json",
+  "legacy_children": "../../children/nodes/個人無政府主義-9a253268178d.json"
+}

@@ -12980,5 +12980,174 @@
     },
     "max_sources_per_node": 1,
     "stop_reason": ""
+  },
+  {
+    "run_at": "2026-08-10T01:06:12Z",
+    "added_nodes": 10,
+    "total_nodes": 838,
+    "requests": 5,
+    "scanned_nodes": 869,
+    "candidate_nodes": 825,
+    "unchanged_requests": 3,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "conceptnet": 1,
+      "wikipedia": 2,
+      "wikidata": 1,
+      "wikidata_api": 1
+    },
+    "source_outcome_counts": {
+      "conceptnet": {
+        "transient_error_requests": 1
+      },
+      "wikipedia": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 10
+      },
+      "wikidata": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      },
+      "wikidata_api": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      }
+    },
+    "candidate_source_summary": {
+      "candidate_count": 825,
+      "source_progress_counts": {
+        "4": 12,
+        "2": 29,
+        "1": 30,
+        "0": 667,
+        "3": 87
+      },
+      "next_source_counts": {
+        "conceptnet": 127,
+        "wikipedia": 360,
+        "wikidata": 14,
+        "wikidata_api": 324
+      },
+      "available_next_source_counts": {
+        "conceptnet": 127,
+        "wikipedia": 360,
+        "wikidata": 14,
+        "wikidata_api": 324
+      },
+      "blocked_by_cooldown": 0,
+      "scheduler": "priority-source-round-robin-v1",
+      "source_diversity_enabled": true,
+      "request_limit": 5,
+      "selection_limit": 5,
+      "scheduled_source_counts": {
+        "conceptnet": 2,
+        "wikipedia": 1,
+        "wikidata": 1,
+        "wikidata_api": 1
+      },
+      "scheduled_candidates": [
+        {
+          "scan_key": "id:Q1057",
+          "title": "代謝",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 130.0,
+          "depth": 2
+        },
+        {
+          "scan_key": "id:Q13720",
+          "title": "M32",
+          "next_source": "wikipedia",
+          "source_progress": 2,
+          "priority": 45.0,
+          "depth": 8
+        },
+        {
+          "scan_key": "id:wikipedia:zh:Category:保健法",
+          "title": "保健法",
+          "next_source": "wikidata",
+          "source_progress": 1,
+          "priority": 107.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q13986",
+          "title": "M65",
+          "next_source": "wikidata_api",
+          "source_progress": 1,
+          "priority": 45.0,
+          "depth": 8
+        },
+        {
+          "scan_key": "id:Q2996394",
+          "title": "生物過程",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 130.0,
+          "depth": 2
+        }
+      ],
+      "next_run_preview": {
+        "scheduler": "priority-source-round-robin-v1",
+        "source_diversity_enabled": true,
+        "request_limit": 5,
+        "selection_limit": 5,
+        "scheduled_source_counts": {
+          "conceptnet": 2,
+          "wikipedia": 1,
+          "wikidata": 1,
+          "wikidata_api": 1
+        },
+        "scheduled_candidates": [
+          {
+            "scan_key": "id:Q1057",
+            "title": "代謝",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 130.0,
+            "depth": 2
+          },
+          {
+            "scan_key": "id:Q13720",
+            "title": "M32",
+            "next_source": "wikipedia",
+            "source_progress": 2,
+            "priority": 45.0,
+            "depth": 8
+          },
+          {
+            "scan_key": "id:wikipedia:zh:Category:保健法",
+            "title": "保健法",
+            "next_source": "wikidata",
+            "source_progress": 1,
+            "priority": 107.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q13986",
+            "title": "M65",
+            "next_source": "wikidata_api",
+            "source_progress": 1,
+            "priority": 45.0,
+            "depth": 8
+          },
+          {
+            "scan_key": "id:Q2996394",
+            "title": "生物過程",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 130.0,
+            "depth": 2
+          }
+        ]
+      }
+    },
+    "max_sources_per_node": 1,
+    "stop_reason": ""
   }
 ]

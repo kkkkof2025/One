@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:公民權利與自由",
+  "source": "nodes/公民權利與自由-df2d8cdf689a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/公民權利與自由-df2d8cdf689a.json",
+  "legacy_children": "../../children/nodes/公民權利與自由-df2d8cdf689a.json"
+}

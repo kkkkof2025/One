@@ -74,17 +74,26 @@
     },
     {
       "title": "個人主義",
-      "children_count": 0,
+      "children_count": 10,
       "id": "wikipedia:zh:Category:個人主義",
       "data_source": "nodes/個人主義-05b63ba3d724.json",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%80%8B%E4%BA%BA%E4%B8%BB%E7%BE%A9",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-10T01:06:12Z",
+      "last_checked_at": "2026-08-10T01:06:12Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-10T01:06:12Z"
+      }
     },
     {
       "title": "利己主義",

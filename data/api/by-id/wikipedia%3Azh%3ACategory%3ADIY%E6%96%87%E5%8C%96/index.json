@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:DIY文化",
+  "source": "nodes/DIY文化-82ef58a84e69.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/DIY文化-82ef58a84e69.json",
+  "legacy_children": "../../children/nodes/DIY文化-82ef58a84e69.json"
+}

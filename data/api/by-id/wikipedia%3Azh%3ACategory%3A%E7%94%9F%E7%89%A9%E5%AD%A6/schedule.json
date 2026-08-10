@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-09T01:04:14Z",
+  "generated_at": "2026-08-10T01:06:12Z",
   "id": "wikipedia:zh:Category:生物学",
   "source": "nodes/生物学-c6c6ae15ce5f.json",
   "node": {
@@ -67,9 +67,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-09T01:04:09Z",
+      "occurred_at": "2026-08-10T01:06:07Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-09T01:14:09Z",
+      "cooldown_until": "2026-08-10T01:16:07Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

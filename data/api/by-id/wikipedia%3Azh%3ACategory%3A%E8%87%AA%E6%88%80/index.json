@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:自戀",
+  "source": "nodes/自戀-3aa389c1cc93.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/自戀-3aa389c1cc93.json",
+  "legacy_children": "../../children/nodes/自戀-3aa389c1cc93.json"
+}
