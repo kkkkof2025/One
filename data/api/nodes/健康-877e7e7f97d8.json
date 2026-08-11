@@ -17,7 +17,19 @@
         "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%80%8B%E4%BA%BA%E5%81%A5%E5%BA%B7",
         "quality_score": 75,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-08-11T01:05:16Z",
+        "last_checked_at": "2026-08-11T01:05:16Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_no_children": {
+          "wikipedia": "2026-08-11T01:05:16Z"
+        },
+        "source_checked": {
+          "wikipedia": "2026-08-11T01:05:16Z"
+        }
       },
       {
         "title": "各地健康",

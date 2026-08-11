@@ -18,6 +18,19 @@
       "relation:wikipedia_category"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-11T01:05:16Z",
+    "last_checked_at": "2026-08-11T01:05:16Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-11T01:05:16Z"
+    },
+    "source_no_children": {
+      "wikipedia": "2026-08-11T01:05:16Z"
+    },
+    "is_leaf": false
   }
 }

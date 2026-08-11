@@ -4,7 +4,7 @@
   "children_status": "pending",
   "children": [],
   "fetch_strategy_version": 2,
-  "updated_at": "2026-05-07T00:56:49Z",
+  "updated_at": "2026-08-11T01:05:16Z",
   "is_leaf": false,
   "quality_score": 49,
   "quality_reasons": [
@@ -16,9 +16,16 @@
   "quality_version": 3,
   "review_status": "approved",
   "source_no_children": {
-    "wikidata": "2026-05-07T00:56:49Z"
+    "wikidata": "2026-05-07T00:56:49Z",
+    "wikidata_api": "2026-08-11T01:05:16Z"
   },
   "source_checked": {
-    "wikidata": "2026-05-07T00:56:49Z"
-  }
+    "wikidata": "2026-05-07T00:56:49Z",
+    "wikidata_api": "2026-08-11T01:05:16Z"
+  },
+  "last_checked_at": "2026-08-11T01:05:16Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ]
 }
