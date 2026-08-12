@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/河阴之变幸存者-de536f7913cc.json",
+  "node": {
+    "id": "wikipedia:zh:Category:河阴之变幸存者",
+    "title": "河阴之变幸存者",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B2%B3%E9%98%B4%E4%B9%8B%E5%8F%98%E5%B9%B8%E5%AD%98%E8%80%85",
+    "source_page_id": 5692803,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

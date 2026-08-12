@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/南京大屠杀幸存者-76c8720cc022.json",
+  "node": {
+    "title": "南京大屠杀幸存者",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:南京大屠杀幸存者",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80%E5%B9%B8%E5%AD%98%E8%80%85",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

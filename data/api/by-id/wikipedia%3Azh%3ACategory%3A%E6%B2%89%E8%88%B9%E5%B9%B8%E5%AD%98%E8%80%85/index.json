@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:沉船幸存者",
+  "source": "nodes/沉船幸存者-58e86b4e34ab.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/沉船幸存者-58e86b4e34ab.json",
+  "legacy_children": "../../children/nodes/沉船幸存者-58e86b4e34ab.json"
+}

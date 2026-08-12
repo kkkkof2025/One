@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:南京大屠杀幸存者",
+  "source": "nodes/南京大屠杀幸存者-76c8720cc022.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/南京大屠杀幸存者-76c8720cc022.json",
+  "legacy_children": "../../children/nodes/南京大屠杀幸存者-76c8720cc022.json"
+}

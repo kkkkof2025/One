@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-11T01:05:16Z",
-  "total_nodes": 838,
-  "last_added_nodes": 0,
+  "generated_at": "2026-08-12T01:12:46Z",
+  "total_nodes": 855,
+  "last_added_nodes": 17,
   "last_request_count": 5,
   "last_scanned_nodes": 879,
   "last_candidate_nodes": 833,
-  "last_unchanged_requests": 4,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -19,8 +19,11 @@
       "transient_error_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "no_children_requests": 1,
+      "unchanged_requests": 1,
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 17
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -35,22 +38,22 @@
     "candidate_count": 833,
     "source_progress_counts": {
       "4": 12,
-      "2": 30,
-      "1": 29,
-      "0": 674,
-      "3": 88
+      "2": 31,
+      "1": 28,
+      "0": 673,
+      "3": 89
     },
     "next_source_counts": {
-      "conceptnet": 129,
-      "wikipedia": 367,
+      "conceptnet": 131,
+      "wikipedia": 366,
       "wikidata": 14,
-      "wikidata_api": 323
+      "wikidata_api": 322
     },
     "available_next_source_counts": {
-      "conceptnet": 129,
-      "wikipedia": 367,
+      "conceptnet": 131,
+      "wikipedia": 366,
       "wikidata": 14,
-      "wikidata_api": 323
+      "wikidata_api": 322
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -73,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q13986",
-        "title": "M65",
+        "scan_key": "id:Q13992",
+        "title": "M66",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 45.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:個人主義",
-        "title": "個人主義",
+        "scan_key": "id:wikipedia:zh:Category:与能量相关的人物",
+        "title": "与能量相关的人物",
         "next_source": "wikidata",
         "source_progress": 1,
-        "priority": 107.0,
+        "priority": 106.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q13992",
-        "title": "M66",
+        "scan_key": "id:Q1813110",
+        "title": "Segue 1",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 45.0,
@@ -126,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q13986",
-          "title": "M65",
+          "scan_key": "id:Q13992",
+          "title": "M66",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 45.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:個人主義",
-          "title": "個人主義",
+          "scan_key": "id:wikipedia:zh:Category:与能量相关的人物",
+          "title": "与能量相关的人物",
           "next_source": "wikidata",
           "source_progress": 1,
-          "priority": 107.0,
+          "priority": 106.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q13992",
-          "title": "M66",
+          "scan_key": "id:Q1813110",
+          "title": "Segue 1",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 45.0,
@@ -163,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 81,
+    "added_nodes": 86,
     "requests": 40,
-    "added_per_request": 2.025,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-08-10T01:06:12Z",
+    "added_per_request": 2.15,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-08-12T01:12:46Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -183,15 +186,15 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 63
+        "added_nodes": 78
       },
       "wikidata": {
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 18,
-        "no_children_requests": 4,
-        "unchanged_requests": 4,
-        "rate_limited_requests": 2
+        "no_children_requests": 5,
+        "unchanged_requests": 5,
+        "rate_limited_requests": 2,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 8
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -202,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 113,
+  "history_entries": 114,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

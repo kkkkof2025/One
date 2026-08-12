@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:亚美尼亚种族大屠杀幸存者",
+  "source": "nodes/亚美尼亚种族大屠杀幸存者-8b4f2dbfc97d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/亚美尼亚种族大屠杀幸存者-8b4f2dbfc97d.json",
+  "legacy_children": "../../children/nodes/亚美尼亚种族大屠杀幸存者-8b4f2dbfc97d.json"
+}

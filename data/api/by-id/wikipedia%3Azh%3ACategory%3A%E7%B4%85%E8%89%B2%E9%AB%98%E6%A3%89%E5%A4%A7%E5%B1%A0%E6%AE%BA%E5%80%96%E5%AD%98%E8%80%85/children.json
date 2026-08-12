@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/紅色高棉大屠殺倖存者-786b5be7cef0.json",
+  "node": {
+    "title": "紅色高棉大屠殺倖存者",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:紅色高棉大屠殺倖存者",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B4%85%E8%89%B2%E9%AB%98%E6%A3%89%E5%A4%A7%E5%B1%A0%E6%AE%BA%E5%80%96%E5%AD%98%E8%80%85",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-11T01:05:17Z",
+  "generated_at": "2026-08-12T01:12:46Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q13986",
-      "title": "M65",
+      "scan_key": "id:Q13992",
+      "title": "M66",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 45.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:個人主義",
-      "title": "個人主義",
+      "scan_key": "id:wikipedia:zh:Category:与能量相关的人物",
+      "title": "与能量相关的人物",
       "next_source": "wikidata",
       "source_progress": 1,
-      "priority": 107.0,
+      "priority": 106.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q13992",
-      "title": "M66",
+      "scan_key": "id:Q1813110",
+      "title": "Segue 1",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 45.0,

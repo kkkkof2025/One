@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:暗殺未遂倖存者",
+  "source": "nodes/暗殺未遂倖存者-1201e840c5d7.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/暗殺未遂倖存者-1201e840c5d7.json",
+  "legacy_children": "../../children/nodes/暗殺未遂倖存者-1201e840c5d7.json"
+}

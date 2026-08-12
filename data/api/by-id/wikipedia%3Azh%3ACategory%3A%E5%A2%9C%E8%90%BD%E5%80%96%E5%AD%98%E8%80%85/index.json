@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:墜落倖存者",
+  "source": "nodes/墜落倖存者-499f4a51f6d4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/墜落倖存者-499f4a51f6d4.json",
+  "legacy_children": "../../children/nodes/墜落倖存者-499f4a51f6d4.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各疾病倖存者",
+  "source": "nodes/各疾病倖存者-e12a42932fc2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各疾病倖存者-e12a42932fc2.json",
+  "legacy_children": "../../children/nodes/各疾病倖存者-e12a42932fc2.json"
+}

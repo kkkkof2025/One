@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:河阴之变幸存者",
+  "source": "nodes/河阴之变幸存者-de536f7913cc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/河阴之变幸存者-de536f7913cc.json",
+  "legacy_children": "../../children/nodes/河阴之变幸存者-de536f7913cc.json"
+}

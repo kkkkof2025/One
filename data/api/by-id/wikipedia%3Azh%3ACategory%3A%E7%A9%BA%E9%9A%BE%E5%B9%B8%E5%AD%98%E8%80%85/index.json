@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:空难幸存者",
+  "source": "nodes/空难幸存者-24ec03589838.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/空难幸存者-24ec03589838.json",
+  "legacy_children": "../../children/nodes/空难幸存者-24ec03589838.json"
+}

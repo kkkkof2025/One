@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/爆炸幸存者-58dad30fb2e6.json",
+  "node": {
+    "id": "wikipedia:zh:Category:爆炸幸存者",
+    "title": "爆炸幸存者",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%88%86%E7%82%B8%E5%B9%B8%E5%AD%98%E8%80%85",
+    "source_page_id": 7752400,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

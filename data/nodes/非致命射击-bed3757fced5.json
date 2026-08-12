@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:非致命射击",
+  "title": "非致命射击",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%9D%9E%E8%87%B4%E5%91%BD%E5%B0%84%E5%87%BB",
+  "source_page_id": 8990435,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

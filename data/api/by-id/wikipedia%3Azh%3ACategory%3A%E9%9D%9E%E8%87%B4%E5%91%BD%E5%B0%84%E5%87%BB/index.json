@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:非致命射击",
+  "source": "nodes/非致命射击-bed3757fced5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/非致命射击-bed3757fced5.json",
+  "legacy_children": "../../children/nodes/非致命射击-bed3757fced5.json"
+}

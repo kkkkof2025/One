@@ -6,15 +6,24 @@
     {
       "title": "倖存者",
       "data_source": "nodes/倖存者-bb8758cf02f7.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:倖存者",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%80%96%E5%AD%98%E8%80%85",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-12T01:12:46Z",
+      "last_checked_at": "2026-08-12T01:12:46Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-12T01:12:46Z"
+      }
     },
     {
       "title": "生存主义",

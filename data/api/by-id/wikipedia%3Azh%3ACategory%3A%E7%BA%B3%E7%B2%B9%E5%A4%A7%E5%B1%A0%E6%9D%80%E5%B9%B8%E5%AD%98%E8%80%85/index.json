@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:纳粹大屠杀幸存者",
+  "source": "nodes/纳粹大屠杀幸存者-3fa2e2da3c44.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/纳粹大屠杀幸存者-3fa2e2da3c44.json",
+  "legacy_children": "../../children/nodes/纳粹大屠杀幸存者-3fa2e2da3c44.json"
+}

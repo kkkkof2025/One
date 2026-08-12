@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:恐怖攻擊倖存者",
+  "source": "nodes/恐怖攻擊倖存者-c712614c6c88.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/恐怖攻擊倖存者-c712614c6c88.json",
+  "legacy_children": "../../children/nodes/恐怖攻擊倖存者-c712614c6c88.json"
+}

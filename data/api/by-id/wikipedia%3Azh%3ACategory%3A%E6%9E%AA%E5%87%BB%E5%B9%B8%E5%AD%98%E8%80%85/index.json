@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:枪击幸存者",
+  "source": "nodes/枪击幸存者-b8b319904a04.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/枪击幸存者-b8b319904a04.json",
+  "legacy_children": "../../children/nodes/枪击幸存者-b8b319904a04.json"
+}

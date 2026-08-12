@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:幸存者列表",
+  "source": "nodes/幸存者列表-1fdd3239e427.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/幸存者列表-1fdd3239e427.json",
+  "legacy_children": "../../children/nodes/幸存者列表-1fdd3239e427.json"
+}

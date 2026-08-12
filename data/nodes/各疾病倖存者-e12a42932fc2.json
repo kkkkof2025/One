@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:各疾病倖存者",
+  "title": "各疾病倖存者",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E7%96%BE%E7%97%85%E5%80%96%E5%AD%98%E8%80%85",
+  "source_page_id": 6379224,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

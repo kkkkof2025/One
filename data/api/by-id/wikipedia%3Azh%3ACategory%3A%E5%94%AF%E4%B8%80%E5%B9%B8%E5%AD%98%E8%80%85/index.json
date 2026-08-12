@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:唯一幸存者",
+  "source": "nodes/唯一幸存者-cfdc59aa526c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/唯一幸存者-cfdc59aa526c.json",
+  "legacy_children": "../../children/nodes/唯一幸存者-cfdc59aa526c.json"
+}

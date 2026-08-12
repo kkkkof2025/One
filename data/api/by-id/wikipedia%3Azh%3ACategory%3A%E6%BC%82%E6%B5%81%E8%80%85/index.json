@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:漂流者",
+  "source": "nodes/漂流者-50b548c248c8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/漂流者-50b548c248c8.json",
+  "legacy_children": "../../children/nodes/漂流者-50b548c248c8.json"
+}

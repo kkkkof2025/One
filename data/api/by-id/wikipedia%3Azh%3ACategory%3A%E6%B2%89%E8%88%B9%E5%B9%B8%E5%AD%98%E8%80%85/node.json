@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/沉船幸存者-58e86b4e34ab.json",
+  "node": {
+    "id": "wikipedia:zh:Category:沉船幸存者",
+    "title": "沉船幸存者",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B2%89%E8%88%B9%E5%B9%B8%E5%AD%98%E8%80%85",
+    "source_page_id": 9033564,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

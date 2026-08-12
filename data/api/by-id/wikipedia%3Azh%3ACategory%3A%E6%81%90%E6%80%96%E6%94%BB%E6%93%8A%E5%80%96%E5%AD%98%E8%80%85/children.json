@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/恐怖攻擊倖存者-c712614c6c88.json",
+  "node": {
+    "title": "恐怖攻擊倖存者",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:恐怖攻擊倖存者",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%81%90%E6%80%96%E6%94%BB%E6%93%8A%E5%80%96%E5%AD%98%E8%80%85",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

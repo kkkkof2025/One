@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:爆炸幸存者",
+  "source": "nodes/爆炸幸存者-58dad30fb2e6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/爆炸幸存者-58dad30fb2e6.json",
+  "legacy_children": "../../children/nodes/爆炸幸存者-58dad30fb2e6.json"
+}

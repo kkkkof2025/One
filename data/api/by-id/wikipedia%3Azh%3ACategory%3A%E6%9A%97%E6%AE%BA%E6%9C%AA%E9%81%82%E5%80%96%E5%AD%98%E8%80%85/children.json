@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/暗殺未遂倖存者-1201e840c5d7.json",
+  "node": {
+    "title": "暗殺未遂倖存者",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:暗殺未遂倖存者",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9A%97%E6%AE%BA%E6%9C%AA%E9%81%82%E5%80%96%E5%AD%98%E8%80%85",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
