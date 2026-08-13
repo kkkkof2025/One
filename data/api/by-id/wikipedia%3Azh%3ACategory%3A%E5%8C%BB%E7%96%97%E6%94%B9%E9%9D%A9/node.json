@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/医疗改革-1a8832b48ef2.json",
+  "node": {
+    "id": "wikipedia:zh:Category:医疗改革",
+    "title": "医疗改革",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E6%94%B9%E9%9D%A9",
+    "source_page_id": 8602021,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

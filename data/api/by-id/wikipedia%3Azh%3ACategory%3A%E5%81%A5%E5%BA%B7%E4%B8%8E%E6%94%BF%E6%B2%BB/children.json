@@ -3,16 +3,41 @@
   "source": "nodes/健康与政治-5e18a162844c.json",
   "node": {
     "title": "健康与政治",
-    "children_count": 0,
+    "children_count": 1,
     "id": "wikipedia:zh:Category:健康与政治",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E4%B8%8E%E6%94%BF%E6%B2%BB",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 83,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-13T01:14:44Z",
+    "last_checked_at": "2026-08-13T01:14:44Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-13T01:14:44Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "医疗改革",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:医疗改革",
+      "data_source": "nodes/医疗改革-1a8832b48ef2.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E6%94%B9%E9%9D%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 1
 }

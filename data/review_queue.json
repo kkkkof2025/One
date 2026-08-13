@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T01:12:48Z",
+  "generated_at": "2026-08-13T01:14:46Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -1929,7 +1929,7 @@
         "missing_relation"
       ],
       "id": "Q1813110",
-      "updated_at": "2026-08-12T01:12:42Z",
+      "updated_at": "2026-08-13T01:14:39Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / Segue 1",
       "location": "nodes/Q1813110.json",
@@ -1951,7 +1951,7 @@
         "missing_relation"
       ],
       "id": "Q2266221",
-      "updated_at": "2026-05-07T02:07:28Z",
+      "updated_at": "2026-08-13T01:14:39Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / Segue 2",
       "location": "nodes/Q2266221.json",
