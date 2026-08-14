@@ -63,17 +63,18 @@
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%A4%E9%85%8D",
-      "quality_score": 88,
+      "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-07-30T01:43:49Z",
-      "last_checked_at": "2026-07-30T01:43:49Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-14T01:13:27Z",
+      "last_checked_at": "2026-08-14T01:13:27Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-07-30T01:43:49Z"
+        "wikipedia": "2026-07-30T01:43:49Z",
+        "wikidata": "2026-08-14T01:13:27Z"
       }
     },
     {

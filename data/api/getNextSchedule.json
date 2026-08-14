@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-13T01:14:44Z",
+  "generated_at": "2026-08-14T01:13:32Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1813110",
-      "title": "Segue 1",
+      "scan_key": "id:Q2266221",
+      "title": "Segue 2",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 45.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:倖存者",
-      "title": "倖存者",
+      "scan_key": "id:wikipedia:zh:Category:交配",
+      "title": "交配",
       "next_source": "wikidata",
       "source_progress": 1,
-      "priority": 107.0,
+      "priority": 106.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q2266221",
-      "title": "Segue 2",
+      "scan_key": "id:Q2759979",
+      "title": "M82 X-1",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 45.0,

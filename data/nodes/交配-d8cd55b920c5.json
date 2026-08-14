@@ -54,13 +54,65 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "延迟交配",
+      "data_source": "nodes/Q115553436.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q115553436",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q115553436",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "酵母的交配",
+      "data_source": "nodes/Q3604177.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3604177",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3604177",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "婚飛",
+      "data_source": "nodes/Q5369077.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q5369077",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5369077",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "真菌繁殖",
+      "data_source": "nodes/Q6787574.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q6787574",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q6787574",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%A4%E9%85%8D",
   "source_page_id": 1707288,
-  "quality_score": 88,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
@@ -71,14 +123,15 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-07-30T01:43:49Z",
-  "last_checked_at": "2026-07-30T01:43:49Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-08-14T01:13:27Z",
+  "last_checked_at": "2026-08-14T01:13:27Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
-    "wikipedia": "2026-07-30T01:43:49Z"
+    "wikipedia": "2026-07-30T01:43:49Z",
+    "wikidata": "2026-08-14T01:13:27Z"
   },
   "is_leaf": false
 }

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:疾病小作品",
+  "source": "nodes/疾病小作品-64d9499d8475.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/疾病小作品-64d9499d8475.json",
+  "legacy_children": "../../children/nodes/疾病小作品-64d9499d8475.json"
+}

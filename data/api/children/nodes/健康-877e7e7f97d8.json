@@ -177,17 +177,26 @@
     },
     {
       "title": "健康小作品",
-      "children_count": 0,
+      "children_count": 1,
       "id": "wikipedia:zh:Category:健康小作品",
       "data_source": "nodes/健康小作品-c79565b98ba9.json",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E5%B0%8F%E4%BD%9C%E5%93%81",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 75,
+      "quality_score": 83,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-14T01:13:32Z",
+      "last_checked_at": "2026-08-14T01:13:32Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-14T01:13:32Z"
+      }
     },
     {
       "title": "保健法",

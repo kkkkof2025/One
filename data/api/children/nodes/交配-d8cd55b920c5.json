@@ -3,24 +3,25 @@
   "source": "nodes/交配-d8cd55b920c5.json",
   "node": {
     "title": "交配",
-    "children_count": 4,
+    "children_count": 8,
     "id": "wikipedia:zh:Category:交配",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%A4%E9%85%8D",
     "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 88,
+    "quality_score": 89,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-07-30T01:43:49Z",
-    "last_checked_at": "2026-07-30T01:43:49Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-14T01:13:27Z",
+    "last_checked_at": "2026-08-14T01:13:27Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-07-30T01:43:49Z"
+      "wikipedia": "2026-07-30T01:43:49Z",
+      "wikidata": "2026-08-14T01:13:27Z"
     }
   },
   "children": [
@@ -79,7 +80,63 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "延迟交配",
+      "children_count": 0,
+      "id": "Q115553436",
+      "data_source": "nodes/Q115553436.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q115553436",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "酵母的交配",
+      "children_count": 0,
+      "id": "Q3604177",
+      "data_source": "nodes/Q3604177.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3604177",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "婚飛",
+      "children_count": 0,
+      "id": "Q5369077",
+      "data_source": "nodes/Q5369077.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5369077",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "真菌繁殖",
+      "children_count": 0,
+      "id": "Q6787574",
+      "data_source": "nodes/Q6787574.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q6787574",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 4
+  "child_count": 8
 }
