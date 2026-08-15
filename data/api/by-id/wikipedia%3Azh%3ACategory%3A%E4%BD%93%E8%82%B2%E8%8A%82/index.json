@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:体育节",
+  "source": "nodes/体育节-1d83b549577a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/体育节-1d83b549577a.json",
+  "legacy_children": "../../children/nodes/体育节-1d83b549577a.json"
+}

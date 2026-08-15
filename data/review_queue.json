@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T01:13:34Z",
+  "generated_at": "2026-08-15T00:45:03Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -1487,7 +1487,7 @@
         "missing_relation"
       ],
       "id": "Q2759979",
-      "updated_at": "2026-08-14T01:13:27Z",
+      "updated_at": "2026-08-15T00:44:56Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / M81星系團 / 雪茄星系 / M82 X-1",
       "location": "nodes/Q2759979.json",
@@ -1885,7 +1885,7 @@
         "missing_relation"
       ],
       "id": "Q3841190",
-      "updated_at": "2026-05-07T02:07:19Z",
+      "updated_at": "2026-08-15T00:44:57Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 室女座星系團 / 室女A星系 / M87*",
       "location": "nodes/Q3841190.json",

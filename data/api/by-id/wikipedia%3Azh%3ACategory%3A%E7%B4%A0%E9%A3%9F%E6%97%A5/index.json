@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:素食日",
+  "source": "nodes/素食日-429751301aec.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/素食日-429751301aec.json",
+  "legacy_children": "../../children/nodes/素食日-429751301aec.json"
+}

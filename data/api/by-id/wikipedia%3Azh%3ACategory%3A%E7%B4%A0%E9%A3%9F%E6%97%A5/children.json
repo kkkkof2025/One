@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/素食日-429751301aec.json",
+  "node": {
+    "title": "素食日",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:素食日",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B4%A0%E9%A3%9F%E6%97%A5",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

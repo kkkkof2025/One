@@ -3,16 +3,55 @@
   "source": "nodes/健康意识日-a7c448a5535c.json",
   "node": {
     "title": "健康意识日",
-    "children_count": 0,
+    "children_count": 2,
     "id": "wikipedia:zh:Category:健康意识日",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E6%84%8F%E8%AF%86%E6%97%A5",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 85,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-15T00:45:01Z",
+    "last_checked_at": "2026-08-15T00:45:01Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-15T00:45:01Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "体育节",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:体育节",
+      "data_source": "nodes/体育节-1d83b549577a.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BD%93%E8%82%B2%E8%8A%82",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "素食日",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:素食日",
+      "data_source": "nodes/素食日-429751301aec.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B4%A0%E9%A3%9F%E6%97%A5",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }
