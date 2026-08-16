@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康促进",
+  "source": "nodes/健康促进-1b59c3a06e68.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康促进-1b59c3a06e68.json",
+  "legacy_children": "../../children/nodes/健康促进-1b59c3a06e68.json"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:公共医疗",
+  "title": "公共医疗",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%8C%BB%E7%96%97",
+  "source_page_id": 8602020,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

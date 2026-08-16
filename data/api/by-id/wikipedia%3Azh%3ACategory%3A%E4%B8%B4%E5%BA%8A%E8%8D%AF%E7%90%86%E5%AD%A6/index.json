@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:临床药理学",
+  "source": "nodes/临床药理学-bbff9bee28af.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/临床药理学-bbff9bee28af.json",
+  "legacy_children": "../../children/nodes/临床药理学-bbff9bee28af.json"
+}

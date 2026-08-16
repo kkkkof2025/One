@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-15T00:45:02Z",
+  "generated_at": "2026-08-16T00:48:30Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2759979",
-      "title": "M82 X-1",
+      "scan_key": "id:Q3841190",
+      "title": "M87*",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 45.0,
@@ -38,8 +38,8 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q3841190",
-      "title": "M87*",
+      "scan_key": "id:Q55621538",
+      "title": "M101 OT2015-1",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 45.0,

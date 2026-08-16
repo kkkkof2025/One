@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:藥物政策",
+  "source": "nodes/藥物政策-3f1ee85a233a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/藥物政策-3f1ee85a233a.json",
+  "legacy_children": "../../children/nodes/藥物政策-3f1ee85a233a.json"
+}

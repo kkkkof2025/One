@@ -3,16 +3,152 @@
   "source": "nodes/健康政策-c69b1a088cf5.json",
   "node": {
     "title": "健康政策",
-    "children_count": 0,
+    "children_count": 8,
     "id": "wikipedia:zh:Category:健康政策",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E6%94%BF%E7%AD%96",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-16T00:48:30Z",
+    "last_checked_at": "2026-08-16T00:48:30Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-16T00:48:30Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "健康部門",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:健康部門",
+      "data_source": "nodes/健康部門-7baeb87feb43.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%83%A8%E9%96%80",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "临床药理学",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:临床药理学",
+      "data_source": "nodes/临床药理学-bbff9bee28af.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%B4%E5%BA%8A%E8%8D%AF%E7%90%86%E5%AD%A6",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "保健法",
+      "children_count": 5,
+      "id": "wikipedia:zh:Category:保健法",
+      "data_source": "nodes/保健法-096735fce886.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BF%9D%E5%81%A5%E6%B3%95",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-08-10T01:06:07Z",
+      "last_checked_at": "2026-08-10T01:06:07Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ],
+      "source_no_children": {
+        "wikidata": "2026-08-10T01:06:07Z"
+      },
+      "source_checked": {
+        "wikipedia": "2026-08-09T01:04:14Z",
+        "wikidata": "2026-08-10T01:06:07Z"
+      }
+    },
+    {
+      "title": "健康促进",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:健康促进",
+      "data_source": "nodes/健康促进-1b59c3a06e68.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E4%BF%83%E8%BF%9B",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "公共医疗",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:公共医疗",
+      "data_source": "nodes/公共医疗-e1aba617f03b.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%8C%BB%E7%96%97",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "医疗改革",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:医疗改革",
+      "data_source": "nodes/医疗改革-1a8832b48ef2.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E6%94%B9%E9%9D%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "各國健康政策",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:各國健康政策",
+      "data_source": "nodes/各國健康政策-83503f52b174.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9C%8B%E5%81%A5%E5%BA%B7%E6%94%BF%E7%AD%96",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "藥物政策",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:藥物政策",
+      "data_source": "nodes/藥物政策-3f1ee85a233a.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%97%A5%E7%89%A9%E6%94%BF%E7%AD%96",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 8
 }

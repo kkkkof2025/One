@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/健康促进-1b59c3a06e68.json",
+  "node": {
+    "title": "健康促进",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:健康促进",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E4%BF%83%E8%BF%9B",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

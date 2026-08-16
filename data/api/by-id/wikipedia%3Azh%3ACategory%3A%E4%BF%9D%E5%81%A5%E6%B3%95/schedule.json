@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-08-15T00:45:02Z",
+  "generated_at": "2026-08-16T00:48:30Z",
   "id": "wikipedia:zh:Category:保健法",
   "source": "nodes/保健法-096735fce886.json",
   "node": {
@@ -72,9 +72,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-15T00:44:56Z",
+      "occurred_at": "2026-08-16T00:48:25Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-15T00:54:56Z",
+      "cooldown_until": "2026-08-16T00:58:25Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
