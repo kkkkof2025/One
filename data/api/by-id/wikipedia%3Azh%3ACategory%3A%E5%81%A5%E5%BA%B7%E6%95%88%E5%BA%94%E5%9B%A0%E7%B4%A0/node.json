@@ -4,20 +4,176 @@
   "node": {
     "id": "wikipedia:zh:Category:健康效应因素",
     "title": "健康效应因素",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "人体重",
+        "data_source": "nodes/人体重-08031edc99dd.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:人体重",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E4%BD%93%E9%87%8D",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "各類健康影響",
+        "data_source": "nodes/各類健康影響-3bc857d9340a.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:各類健康影響",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E9%A1%9E%E5%81%A5%E5%BA%B7%E5%BD%B1%E9%9F%BF",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "天气与健康",
+        "data_source": "nodes/天气与健康-4ca86fc6bd82.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:天气与健康",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%A9%E6%B0%94%E4%B8%8E%E5%81%A5%E5%BA%B7",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "应激",
+        "data_source": "nodes/应激-f2361d80c151.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:应激",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BA%94%E6%BF%80",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "營養",
+        "data_source": "nodes/營養-df4f46e2e804.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:營養",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%87%9F%E9%A4%8A",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "环境健康",
+        "data_source": "nodes/环境健康-e8590d7ab2e2.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:环境健康",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%8E%AF%E5%A2%83%E5%81%A5%E5%BA%B7",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生活技能",
+        "data_source": "nodes/生活技能-c2e66c27c87c.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生活技能",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E6%B4%BB%E6%8A%80%E8%83%BD",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "睡眠",
+        "data_source": "nodes/睡眠-df1a4b14e4a8.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:睡眠",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%9D%A1%E7%9C%A0",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "辐射健康影响",
+        "data_source": "nodes/辐射健康影响-05eb10d5b26e.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:辐射健康影响",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%BE%90%E5%B0%84%E5%81%A5%E5%BA%B7%E5%BD%B1%E5%93%8D",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "锻炼",
+        "data_source": "nodes/锻炼-186233320f41.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:锻炼",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%94%BB%E7%82%BC",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "飲用水",
+        "data_source": "nodes/飲用水-62e2b305c7b6.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:飲用水",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%A3%B2%E7%94%A8%E6%B0%B4",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E6%95%88%E5%BA%94%E5%9B%A0%E7%B4%A0",
     "source_page_id": 1677270,
-    "quality_score": 75,
+    "quality_score": 89,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-17T00:45:19Z",
+    "last_checked_at": "2026-08-17T00:45:19Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-17T00:45:19Z"
+    },
+    "is_leaf": false
   }
 }

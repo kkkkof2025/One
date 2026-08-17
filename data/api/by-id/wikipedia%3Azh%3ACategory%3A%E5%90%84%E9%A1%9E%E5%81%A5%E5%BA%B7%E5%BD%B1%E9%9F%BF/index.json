@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各類健康影響",
+  "source": "nodes/各類健康影響-3bc857d9340a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各類健康影響-3bc857d9340a.json",
+  "legacy_children": "../../children/nodes/各類健康影響-3bc857d9340a.json"
+}

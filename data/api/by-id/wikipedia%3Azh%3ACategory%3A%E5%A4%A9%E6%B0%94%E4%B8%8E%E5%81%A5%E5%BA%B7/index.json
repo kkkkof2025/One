@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:天气与健康",
+  "source": "nodes/天气与健康-4ca86fc6bd82.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/天气与健康-4ca86fc6bd82.json",
+  "legacy_children": "../../children/nodes/天气与健康-4ca86fc6bd82.json"
+}

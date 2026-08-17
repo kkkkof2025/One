@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/天气与健康-4ca86fc6bd82.json",
+  "node": {
+    "id": "wikipedia:zh:Category:天气与健康",
+    "title": "天气与健康",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%A9%E6%B0%94%E4%B8%8E%E5%81%A5%E5%BA%B7",
+    "source_page_id": 8520470,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

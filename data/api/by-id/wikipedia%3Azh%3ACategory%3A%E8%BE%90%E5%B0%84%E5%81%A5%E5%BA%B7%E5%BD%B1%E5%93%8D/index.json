@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:辐射健康影响",
+  "source": "nodes/辐射健康影响-05eb10d5b26e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/辐射健康影响-05eb10d5b26e.json",
+  "legacy_children": "../../children/nodes/辐射健康影响-05eb10d5b26e.json"
+}
