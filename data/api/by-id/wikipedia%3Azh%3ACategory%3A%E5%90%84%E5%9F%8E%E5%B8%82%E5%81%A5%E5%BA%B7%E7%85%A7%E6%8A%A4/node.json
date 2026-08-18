@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/各城市健康照护-7234ded86596.json",
+  "node": {
+    "id": "wikipedia:zh:Category:各城市健康照护",
+    "title": "各城市健康照护",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9F%8E%E5%B8%82%E5%81%A5%E5%BA%B7%E7%85%A7%E6%8A%A4",
+    "source_page_id": 8992998,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

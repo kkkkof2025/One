@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康照護品質",
+  "source": "nodes/健康照護品質-1b915cc36c48.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康照護品質-1b915cc36c48.json",
+  "legacy_children": "../../children/nodes/健康照護品質-1b915cc36c48.json"
+}

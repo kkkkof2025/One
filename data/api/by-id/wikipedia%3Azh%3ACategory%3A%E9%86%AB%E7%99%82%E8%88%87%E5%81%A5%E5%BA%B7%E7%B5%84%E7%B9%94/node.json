@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/醫療與健康組織-4717a6e59078.json",
+  "node": {
+    "id": "wikipedia:zh:Category:醫療與健康組織",
+    "title": "醫療與健康組織",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%86%AB%E7%99%82%E8%88%87%E5%81%A5%E5%BA%B7%E7%B5%84%E7%B9%94",
+    "source_page_id": 5683976,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

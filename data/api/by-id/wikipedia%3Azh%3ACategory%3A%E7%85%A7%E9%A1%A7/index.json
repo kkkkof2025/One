@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:照顧",
+  "source": "nodes/照顧-574f0487604a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/照顧-574f0487604a.json",
+  "legacy_children": "../../children/nodes/照顧-574f0487604a.json"
+}

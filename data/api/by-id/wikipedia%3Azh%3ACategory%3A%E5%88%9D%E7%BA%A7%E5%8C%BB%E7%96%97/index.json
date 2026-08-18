@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:初级医疗",
+  "source": "nodes/初级医疗-4d0b11b351f5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/初级医疗-4d0b11b351f5.json",
+  "legacy_children": "../../children/nodes/初级医疗-4d0b11b351f5.json"
+}

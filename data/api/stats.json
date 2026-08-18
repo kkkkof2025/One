@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-17T00:45:19Z",
-  "total_nodes": 879,
-  "last_added_nodes": 11,
+  "generated_at": "2026-08-18T00:44:21Z",
+  "total_nodes": 900,
+  "last_added_nodes": 25,
   "last_request_count": 5,
-  "last_scanned_nodes": 912,
-  "last_candidate_nodes": 864,
+  "last_scanned_nodes": 923,
+  "last_candidate_nodes": 874,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,7 +23,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 11
+      "added_nodes": 25
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -35,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 864,
+    "candidate_count": 874,
     "source_progress_counts": {
       "4": 12,
-      "2": 34,
-      "1": 25,
-      "0": 699,
-      "3": 94
+      "2": 35,
+      "1": 24,
+      "0": 708,
+      "3": 95
     },
     "next_source_counts": {
-      "conceptnet": 139,
-      "wikipedia": 388,
+      "conceptnet": 141,
+      "wikipedia": 397,
       "wikidata": 16,
-      "wikidata_api": 321
+      "wikidata_api": 320
     },
     "available_next_source_counts": {
-      "conceptnet": 139,
-      "wikipedia": 388,
+      "conceptnet": 141,
+      "wikipedia": 397,
       "wikidata": 16,
-      "wikidata_api": 321
+      "wikidata_api": 320
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q55621538",
-        "title": "M101 OT2015-1",
+        "scan_key": "id:Q92258118",
+        "title": "M84",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 45.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康政策",
-        "title": "健康政策",
+        "scan_key": "id:wikipedia:zh:Category:健康效应因素",
+        "title": "健康效应因素",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q92258118",
-        "title": "M84",
+        "scan_key": "id:Q92258250",
+        "title": "M86",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 45.0,
@@ -129,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q55621538",
-          "title": "M101 OT2015-1",
+          "scan_key": "id:Q92258118",
+          "title": "M84",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 45.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康政策",
-          "title": "健康政策",
+          "scan_key": "id:wikipedia:zh:Category:健康效应因素",
+          "title": "健康效应因素",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q92258118",
-          "title": "M84",
+          "scan_key": "id:Q92258250",
+          "title": "M86",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 45.0,
@@ -166,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 54,
+    "added_nodes": 69,
     "requests": 40,
-    "added_per_request": 1.35,
+    "added_per_request": 1.725,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-17T00:45:19Z",
+    "last_productive_run_at": "2026-08-18T00:44:21Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,7 +186,7 @@
         "unchanged_requests": 9,
         "children_returned_requests": 7,
         "productive_requests": 7,
-        "added_nodes": 50
+        "added_nodes": 65
       },
       "wikidata": {
         "no_children_requests": 5,
@@ -205,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 119,
+  "history_entries": 120,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

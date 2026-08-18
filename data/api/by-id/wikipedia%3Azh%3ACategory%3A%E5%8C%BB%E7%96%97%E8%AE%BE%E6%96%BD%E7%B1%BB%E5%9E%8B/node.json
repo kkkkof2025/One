@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/医疗设施类型-b55efb3da2a7.json",
+  "node": {
+    "id": "wikipedia:zh:Category:医疗设施类型",
+    "title": "医疗设施类型",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E8%AE%BE%E6%96%BD%E7%B1%BB%E5%9E%8B",
+    "source_page_id": 8565371,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

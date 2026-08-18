@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:間性人與醫學",
+  "source": "nodes/間性人與醫學-59548eb4f1d1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/間性人與醫學-59548eb4f1d1.json",
+  "legacy_children": "../../children/nodes/間性人與醫學-59548eb4f1d1.json"
+}

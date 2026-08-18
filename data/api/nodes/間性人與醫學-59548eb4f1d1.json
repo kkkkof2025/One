@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/間性人與醫學-59548eb4f1d1.json",
+  "node": {
+    "id": "wikipedia:zh:Category:間性人與醫學",
+    "title": "間性人與醫學",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%96%93%E6%80%A7%E4%BA%BA%E8%88%87%E9%86%AB%E5%AD%B8",
+    "source_page_id": 6154040,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

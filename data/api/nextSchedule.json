@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-17T00:45:19Z",
+  "generated_at": "2026-08-18T00:44:21Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q55621538",
-      "title": "M101 OT2015-1",
+      "scan_key": "id:Q92258118",
+      "title": "M84",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 45.0,
       "depth": 8
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:健康政策",
-      "title": "健康政策",
+      "scan_key": "id:wikipedia:zh:Category:健康效应因素",
+      "title": "健康效应因素",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 107.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q92258118",
-      "title": "M84",
+      "scan_key": "id:Q92258250",
+      "title": "M86",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 45.0,

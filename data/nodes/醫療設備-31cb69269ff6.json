@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:醫療設備",
+  "title": "醫療設備",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%86%AB%E7%99%82%E8%A8%AD%E5%82%99",
+  "source_page_id": 76988,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

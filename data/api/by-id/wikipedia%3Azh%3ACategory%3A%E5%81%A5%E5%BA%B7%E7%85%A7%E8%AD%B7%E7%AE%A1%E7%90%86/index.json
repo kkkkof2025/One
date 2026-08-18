@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康照護管理",
+  "source": "nodes/健康照護管理-9ec3c9e4f806.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康照護管理-9ec3c9e4f806.json",
+  "legacy_children": "../../children/nodes/健康照護管理-9ec3c9e4f806.json"
+}

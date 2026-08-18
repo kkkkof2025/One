@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康出版物",
+  "source": "nodes/健康出版物-529a227eeb3d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康出版物-529a227eeb3d.json",
+  "legacy_children": "../../children/nodes/健康出版物-529a227eeb3d.json"
+}

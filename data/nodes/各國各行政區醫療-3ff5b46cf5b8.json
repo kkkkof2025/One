@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:各國各行政區醫療",
+  "title": "各國各行政區醫療",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9C%8B%E5%90%84%E8%A1%8C%E6%94%BF%E5%8D%80%E9%86%AB%E7%99%82",
+  "source_page_id": 9152788,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

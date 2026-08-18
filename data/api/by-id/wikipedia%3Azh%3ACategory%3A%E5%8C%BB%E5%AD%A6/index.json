@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:医学",
+  "source": "nodes/医学-538ff168fd11.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/医学-538ff168fd11.json",
+  "legacy_children": "../../children/nodes/医学-538ff168fd11.json"
+}

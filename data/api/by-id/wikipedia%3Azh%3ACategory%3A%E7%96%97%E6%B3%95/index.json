@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:疗法",
+  "source": "nodes/疗法-f3273a58b658.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/疗法-f3273a58b658.json",
+  "legacy_children": "../../children/nodes/疗法-f3273a58b658.json"
+}

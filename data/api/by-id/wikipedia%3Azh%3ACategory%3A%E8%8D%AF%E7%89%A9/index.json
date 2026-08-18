@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:药物",
+  "source": "nodes/药物-ffab8b9a0094.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/药物-ffab8b9a0094.json",
+  "legacy_children": "../../children/nodes/药物-ffab8b9a0094.json"
+}
