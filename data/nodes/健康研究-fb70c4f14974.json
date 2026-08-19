@@ -1,19 +1,97 @@
 {
   "id": "wikipedia:zh:Category:健康研究",
   "title": "健康研究",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "临床研究",
+      "data_source": "nodes/临床研究-fb484ac10fd3.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:临床研究",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%B4%E5%BA%8A%E7%A0%94%E7%A9%B6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "公共卫生研究",
+      "data_source": "nodes/公共卫生研究-bb371f8e6cae.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:公共卫生研究",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F%E7%A0%94%E7%A9%B6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "医学研究",
+      "data_source": "nodes/医学研究-c7015713714f.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:医学研究",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E5%AD%A6%E7%A0%94%E7%A9%B6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "医疗诈骗",
+      "data_source": "nodes/医疗诈骗-1cde3b5238aa.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:医疗诈骗",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E8%AF%88%E9%AA%97",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生物样本库",
+      "data_source": "nodes/生物样本库-74cdaae017bd.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:生物样本库",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E6%A0%B7%E6%9C%AC%E5%BA%93",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%A0%94%E7%A9%B6",
   "source_page_id": 1542052,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-08-19T00:44:39Z",
+  "last_checked_at": "2026-08-19T00:44:39Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-08-19T00:44:39Z"
+  },
+  "is_leaf": false
 }

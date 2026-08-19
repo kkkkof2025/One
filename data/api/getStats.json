@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-18T00:44:21Z",
-  "total_nodes": 900,
-  "last_added_nodes": 25,
+  "generated_at": "2026-08-19T00:44:39Z",
+  "total_nodes": 905,
+  "last_added_nodes": 5,
   "last_request_count": 5,
-  "last_scanned_nodes": 923,
-  "last_candidate_nodes": 874,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 948,
+  "last_candidate_nodes": 895,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,11 +23,10 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 25
+      "added_nodes": 5
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "rate_limited_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +34,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 874,
+    "candidate_count": 895,
     "source_progress_counts": {
       "4": 12,
-      "2": 35,
-      "1": 24,
-      "0": 708,
-      "3": 95
+      "2": 36,
+      "1": 23,
+      "0": 728,
+      "3": 96
     },
     "next_source_counts": {
-      "conceptnet": 141,
-      "wikipedia": 397,
+      "conceptnet": 143,
+      "wikipedia": 417,
       "wikidata": 16,
-      "wikidata_api": 320
+      "wikidata_api": 319
     },
     "available_next_source_counts": {
-      "conceptnet": 141,
-      "wikipedia": 397,
+      "conceptnet": 143,
+      "wikipedia": 417,
       "wikidata": 16,
-      "wikidata_api": 320
+      "wikidata_api": 319
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +75,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q92258118",
-        "title": "M84",
+        "scan_key": "id:Q92258250",
+        "title": "M86",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 45.0,
         "depth": 8
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康效应因素",
-        "title": "健康效应因素",
+        "scan_key": "id:wikipedia:zh:Category:健康照護",
+        "title": "健康照護",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q92258250",
-        "title": "M86",
+        "scan_key": "id:Q9326449",
+        "title": "SN 1961i",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 45.0,
@@ -129,24 +128,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q92258118",
-          "title": "M84",
+          "scan_key": "id:Q92258250",
+          "title": "M86",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 45.0,
           "depth": 8
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康效应因素",
-          "title": "健康效应因素",
+          "scan_key": "id:wikipedia:zh:Category:健康照護",
+          "title": "健康照護",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q92258250",
-          "title": "M86",
+          "scan_key": "id:Q9326449",
+          "title": "SN 1961i",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 45.0,
@@ -166,11 +165,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 69,
+    "added_nodes": 74,
     "requests": 40,
-    "added_per_request": 1.725,
+    "added_per_request": 1.85,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-18T00:44:21Z",
+    "last_productive_run_at": "2026-08-19T00:44:39Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -182,19 +181,19 @@
         "transient_error_requests": 8
       },
       "wikipedia": {
-        "no_children_requests": 9,
-        "unchanged_requests": 9,
-        "children_returned_requests": 7,
-        "productive_requests": 7,
-        "added_nodes": 65
+        "no_children_requests": 8,
+        "unchanged_requests": 8,
+        "children_returned_requests": 8,
+        "productive_requests": 8,
+        "added_nodes": 70
       },
       "wikidata": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
+        "no_children_requests": 4,
+        "unchanged_requests": 4,
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 4,
-        "rate_limited_requests": 2
+        "rate_limited_requests": 3
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -205,7 +204,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 120,
+  "history_entries": 121,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

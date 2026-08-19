@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:医学研究",
+  "source": "nodes/医学研究-c7015713714f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/医学研究-c7015713714f.json",
+  "legacy_children": "../../children/nodes/医学研究-c7015713714f.json"
+}

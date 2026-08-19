@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:医疗诈骗",
+  "source": "nodes/医疗诈骗-1cde3b5238aa.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/医疗诈骗-1cde3b5238aa.json",
+  "legacy_children": "../../children/nodes/医疗诈骗-1cde3b5238aa.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:公共卫生研究",
+  "source": "nodes/公共卫生研究-bb371f8e6cae.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/公共卫生研究-bb371f8e6cae.json",
+  "legacy_children": "../../children/nodes/公共卫生研究-bb371f8e6cae.json"
+}
