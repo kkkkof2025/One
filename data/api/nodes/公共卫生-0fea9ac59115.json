@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/公共卫生-0fea9ac59115.json",
+  "node": {
+    "id": "wikipedia:zh:Category:公共卫生",
+    "title": "公共卫生",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F",
+    "source_page_id": 341232,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

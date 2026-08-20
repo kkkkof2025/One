@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:听力学",
+  "source": "nodes/听力学-c44ad92166a8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/听力学-c44ad92166a8.json",
+  "legacy_children": "../../children/nodes/听力学-c44ad92166a8.json"
+}

@@ -297,15 +297,24 @@
     {
       "title": "健康科學",
       "data_source": "nodes/健康科學-8d702af28e37.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:健康科學",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%A7%91%E5%AD%B8",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-20T00:44:32Z",
+      "last_checked_at": "2026-08-20T00:44:32Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-20T00:44:32Z"
+      }
     },
     {
       "title": "健康運動",

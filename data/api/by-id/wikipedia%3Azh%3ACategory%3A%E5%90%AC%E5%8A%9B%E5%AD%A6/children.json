@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/听力学-c44ad92166a8.json",
+  "node": {
+    "title": "听力学",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:听力学",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%AC%E5%8A%9B%E5%AD%A6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

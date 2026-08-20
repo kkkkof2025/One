@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:社会工作",
+  "source": "nodes/社会工作-a22cf3444708.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/社会工作-a22cf3444708.json",
+  "legacy_children": "../../children/nodes/社会工作-a22cf3444708.json"
+}

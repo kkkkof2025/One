@@ -4,20 +4,176 @@
   "node": {
     "id": "wikipedia:zh:Category:健康科學",
     "title": "健康科學",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "公共卫生",
+        "data_source": "nodes/公共卫生-0fea9ac59115.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:公共卫生",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "兽医学",
+        "data_source": "nodes/兽医学-fe57d5c65c99.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:兽医学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%BD%E5%8C%BB%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "医学",
+        "data_source": "nodes/医学-538ff168fd11.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:医学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "医疗卫生期刊",
+        "data_source": "nodes/医疗卫生期刊-5e326f6cd17a.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:医疗卫生期刊",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E5%8D%AB%E7%94%9F%E6%9C%9F%E5%88%8A",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "医药科学",
+        "data_source": "nodes/医药科学-ca9b8199fe82.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:医药科学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E8%8D%AF%E7%A7%91%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "各國健康科學",
+        "data_source": "nodes/各國健康科學-bd294e0c0871.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:各國健康科學",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%9C%8B%E5%81%A5%E5%BA%B7%E7%A7%91%E5%AD%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "听力学",
+        "data_source": "nodes/听力学-c44ad92166a8.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:听力学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%AC%E5%8A%9B%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物工程",
+        "data_source": "nodes/生物工程-a23ddefdace4.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物工程",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%B7%A5%E7%A8%8B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物技術",
+        "data_source": "nodes/生物技術-b515bddfd710.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物技術",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E6%8A%80%E8%A1%93",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "社会工作",
+        "data_source": "nodes/社会工作-a22cf3444708.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:社会工作",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A4%BE%E4%BC%9A%E5%B7%A5%E4%BD%9C",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "護理學",
+        "data_source": "nodes/護理學-0c7820704880.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:護理學",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%AD%B7%E7%90%86%E5%AD%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%A7%91%E5%AD%B8",
     "source_page_id": 58258,
-    "quality_score": 75,
+    "quality_score": 89,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-20T00:44:32Z",
+    "last_checked_at": "2026-08-20T00:44:32Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-20T00:44:32Z"
+    },
+    "is_leaf": false
   }
 }

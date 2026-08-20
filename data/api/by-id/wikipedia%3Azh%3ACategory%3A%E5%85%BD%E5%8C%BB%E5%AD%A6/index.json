@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:兽医学",
+  "source": "nodes/兽医学-fe57d5c65c99.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/兽医学-fe57d5c65c99.json",
+  "legacy_children": "../../children/nodes/兽医学-fe57d5c65c99.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:護理學",
+  "source": "nodes/護理學-0c7820704880.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/護理學-0c7820704880.json",
+  "legacy_children": "../../children/nodes/護理學-0c7820704880.json"
+}

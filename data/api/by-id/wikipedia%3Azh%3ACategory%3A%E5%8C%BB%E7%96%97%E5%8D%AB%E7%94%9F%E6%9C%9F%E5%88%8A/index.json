@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:医疗卫生期刊",
+  "source": "nodes/医疗卫生期刊-5e326f6cd17a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/医疗卫生期刊-5e326f6cd17a.json",
+  "legacy_children": "../../children/nodes/医疗卫生期刊-5e326f6cd17a.json"
+}

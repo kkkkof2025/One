@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/社会工作-a22cf3444708.json",
+  "node": {
+    "id": "wikipedia:zh:Category:社会工作",
+    "title": "社会工作",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A4%BE%E4%BC%9A%E5%B7%A5%E4%BD%9C",
+    "source_page_id": 8534486,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
