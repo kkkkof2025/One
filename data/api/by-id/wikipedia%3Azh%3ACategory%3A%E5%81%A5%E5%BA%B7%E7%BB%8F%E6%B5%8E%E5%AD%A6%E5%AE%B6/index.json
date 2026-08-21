@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康经济学家",
+  "source": "nodes/健康经济学家-5eb15779f576.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康经济学家-5eb15779f576.json",
+  "legacy_children": "../../children/nodes/健康经济学家-5eb15779f576.json"
+}

@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/健康经济学家-5eb15779f576.json",
+  "node": {
+    "id": "wikipedia:zh:Category:健康经济学家",
+    "title": "健康经济学家",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6",
+    "source_page_id": 7431761,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:醫學統計學",
+  "source": "nodes/醫學統計學-95b33926c40c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/醫學統計學-95b33926c40c.json",
+  "legacy_children": "../../children/nodes/醫學統計學-95b33926c40c.json"
+}

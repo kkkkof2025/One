@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T00:44:35Z",
+  "generated_at": "2026-08-21T00:49:41Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -2039,7 +2039,7 @@
         "missing_relation"
       ],
       "id": "Q1082845",
-      "updated_at": "2026-05-07T02:51:18Z",
+      "updated_at": "2026-08-21T00:49:35Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136b",
       "location": "nodes/Q1082845.json",
@@ -2083,7 +2083,7 @@
         "missing_relation"
       ],
       "id": "Q2479744",
-      "updated_at": "2026-08-20T00:44:27Z",
+      "updated_at": "2026-08-21T00:49:35Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / VFTS 102",
       "location": "nodes/Q2479744.json",
