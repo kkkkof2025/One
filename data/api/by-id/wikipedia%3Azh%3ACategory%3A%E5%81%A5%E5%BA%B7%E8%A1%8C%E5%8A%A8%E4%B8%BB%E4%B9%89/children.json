@@ -3,16 +3,69 @@
   "source": "nodes/健康行动主义-321bb2a8424a.json",
   "node": {
     "title": "健康行动主义",
-    "children_count": 0,
+    "children_count": 3,
     "id": "wikipedia:zh:Category:健康行动主义",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E8%A1%8C%E5%8A%A8%E4%B8%BB%E4%B9%89",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 87,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-22T00:44:48Z",
+    "last_checked_at": "2026-08-22T00:44:48Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-22T00:44:48Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "健康運動者",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:健康運動者",
+      "data_source": "nodes/健康運動者-3c19d2bd459a.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%81%8B%E5%8B%95%E8%80%85",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "健康運動",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:健康運動",
+      "data_source": "nodes/健康運動-1a28eae84c15.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%81%8B%E5%8B%95",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "医疗行动主义",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:医疗行动主义",
+      "data_source": "nodes/医疗行动主义-d37c710bbc9c.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E8%A1%8C%E5%8A%A8%E4%B8%BB%E4%B9%89",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 3
 }

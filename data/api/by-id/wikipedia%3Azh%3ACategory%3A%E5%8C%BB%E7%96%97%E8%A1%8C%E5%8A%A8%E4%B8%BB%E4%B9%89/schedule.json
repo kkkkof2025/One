@@ -1,0 +1,66 @@
+{
+  "endpoint": "schedule",
+  "generated_at": "2026-08-22T00:44:48Z",
+  "id": "wikipedia:zh:Category:医疗行动主义",
+  "source": "nodes/医疗行动主义-d37c710bbc9c.json",
+  "node": {
+    "title": "医疗行动主义",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:医疗行动主义",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8C%BB%E7%96%97%E8%A1%8C%E5%8A%A8%E4%B8%BB%E4%B9%89",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "fetch_strategy_version": 8,
+  "source_order": [
+    "wikidata_api",
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "supported_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "checked_sources": [],
+  "no_children_sources": [],
+  "done_sources": [],
+  "implicit_done_sources": [],
+  "remaining_sources": [
+    "wikipedia",
+    "wikidata",
+    "conceptnet",
+    "dbpedia"
+  ],
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
+  "can_fetch": true,
+  "eligible": true,
+  "exhausted": false,
+  "terminal": false,
+  "source_exhausted": false,
+  "blocked_by_cooldown": false,
+  "block_reason": "ready",
+  "source_cooldowns": {
+    "conceptnet": {
+      "source": "conceptnet",
+      "reason": "transient_error",
+      "occurred_at": "2026-08-22T00:44:43Z",
+      "retry_after_seconds": 600,
+      "cooldown_until": "2026-08-22T00:54:43Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    }
+  },
+  "progress": {
+    "supported": 4,
+    "done": 0,
+    "remaining": 4
+  }
+}

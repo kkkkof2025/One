@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-21T00:49:40Z",
-  "total_nodes": 915,
-  "last_added_nodes": 5,
+  "generated_at": "2026-08-22T00:44:48Z",
+  "total_nodes": 917,
+  "last_added_nodes": 3,
   "last_request_count": 5,
-  "last_scanned_nodes": 964,
-  "last_candidate_nodes": 908,
+  "last_scanned_nodes": 969,
+  "last_candidate_nodes": 910,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -23,7 +23,7 @@
       "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 5
+      "added_nodes": 3
     },
     "wikidata": {
       "no_children_requests": 1,
@@ -35,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 908,
+    "candidate_count": 910,
     "source_progress_counts": {
       "4": 12,
-      "2": 36,
-      "1": 23,
-      "0": 739,
-      "3": 98
+      "2": 37,
+      "1": 22,
+      "0": 740,
+      "3": 99
     },
     "next_source_counts": {
-      "conceptnet": 145,
-      "wikipedia": 428,
+      "conceptnet": 147,
+      "wikipedia": 429,
       "wikidata": 18,
-      "wikidata_api": 317
+      "wikidata_api": 316
     },
     "available_next_source_counts": {
-      "conceptnet": 145,
-      "wikipedia": 428,
+      "conceptnet": 147,
+      "wikipedia": 429,
       "wikidata": 18,
-      "wikidata_api": 317
+      "wikidata_api": 316
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +76,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q2479744",
-        "title": "VFTS 102",
+        "scan_key": "id:Q1082845",
+        "title": "R136b",
         "next_source": "wikipedia",
         "source_progress": 2,
-        "priority": 37.0,
-        "depth": 10
+        "priority": 33.0,
+        "depth": 11
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康照護",
-        "title": "健康照護",
+        "scan_key": "id:wikipedia:zh:Category:健康研究",
+        "title": "健康研究",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1082845",
-        "title": "R136b",
+        "scan_key": "id:Q17144092",
+        "title": "R136a2",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 33.0,
@@ -129,24 +129,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q2479744",
-          "title": "VFTS 102",
+          "scan_key": "id:Q1082845",
+          "title": "R136b",
           "next_source": "wikipedia",
           "source_progress": 2,
-          "priority": 37.0,
-          "depth": 10
+          "priority": 33.0,
+          "depth": 11
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康照護",
-          "title": "健康照護",
+          "scan_key": "id:wikipedia:zh:Category:健康研究",
+          "title": "健康研究",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1082845",
-          "title": "R136b",
+          "scan_key": "id:Q17144092",
+          "title": "R136a2",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 33.0,
@@ -166,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 72,
+    "added_nodes": 70,
     "requests": 40,
-    "added_per_request": 1.8,
+    "added_per_request": 1.75,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-21T00:49:40Z",
+    "last_productive_run_at": "2026-08-22T00:44:48Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -186,15 +186,12 @@
         "unchanged_requests": 8,
         "children_returned_requests": 8,
         "productive_requests": 8,
-        "added_nodes": 68
+        "added_nodes": 70
       },
       "wikidata": {
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 4,
         "rate_limited_requests": 4,
-        "no_children_requests": 3,
-        "unchanged_requests": 3
+        "no_children_requests": 4,
+        "unchanged_requests": 4
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -205,7 +202,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 123,
+  "history_entries": 124,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

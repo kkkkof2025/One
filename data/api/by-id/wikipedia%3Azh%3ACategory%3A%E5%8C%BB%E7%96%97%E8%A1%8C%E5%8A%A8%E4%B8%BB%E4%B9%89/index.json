@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:医疗行动主义",
+  "source": "nodes/医疗行动主义-d37c710bbc9c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/医疗行动主义-d37c710bbc9c.json",
+  "legacy_children": "../../children/nodes/医疗行动主义-d37c710bbc9c.json"
+}

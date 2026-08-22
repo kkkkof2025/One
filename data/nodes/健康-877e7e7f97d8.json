@@ -109,15 +109,24 @@
     {
       "title": "健康行动主义",
       "data_source": "nodes/健康行动主义-321bb2a8424a.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:健康行动主义",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E8%A1%8C%E5%8A%A8%E4%B8%BB%E4%B9%89",
-      "quality_score": 75,
+      "quality_score": 87,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-22T00:44:48Z",
+      "last_checked_at": "2026-08-22T00:44:48Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-22T00:44:48Z"
+      }
     },
     {
       "title": "健康经济学",
@@ -297,14 +306,18 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-19T00:44:39Z",
-      "last_checked_at": "2026-08-19T00:44:39Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-22T00:44:43Z",
+      "last_checked_at": "2026-08-22T00:44:43Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
+      "source_no_children": {
+        "wikidata": "2026-08-22T00:44:43Z"
+      },
       "source_checked": {
-        "wikipedia": "2026-08-19T00:44:39Z"
+        "wikipedia": "2026-08-19T00:44:39Z",
+        "wikidata": "2026-08-22T00:44:43Z"
       }
     },
     {

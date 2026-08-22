@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-21T00:49:40Z",
+  "generated_at": "2026-08-22T00:44:48Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q2479744",
-      "title": "VFTS 102",
+      "scan_key": "id:Q1082845",
+      "title": "R136b",
       "next_source": "wikipedia",
       "source_progress": 2,
-      "priority": 37.0,
-      "depth": 10
+      "priority": 33.0,
+      "depth": 11
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:健康照護",
-      "title": "健康照護",
+      "scan_key": "id:wikipedia:zh:Category:健康研究",
+      "title": "健康研究",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 107.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1082845",
-      "title": "R136b",
+      "scan_key": "id:Q17144092",
+      "title": "R136a2",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 33.0,
