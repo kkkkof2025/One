@@ -4,20 +4,72 @@
   "node": {
     "id": "wikipedia:zh:Category:健康领域",
     "title": "健康领域",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "心理健康",
+        "data_source": "nodes/心理健康-089a83dc483f.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:心理健康",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "性健康",
+        "data_source": "nodes/性健康-23833db9e6a0.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:性健康",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7%E5%81%A5%E5%BA%B7",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "职业安全与健康",
+        "data_source": "nodes/职业安全与健康-cc369de53019.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:职业安全与健康",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%81%8C%E4%B8%9A%E5%AE%89%E5%85%A8%E4%B8%8E%E5%81%A5%E5%BA%B7",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A2%86%E5%9F%9F",
     "source_page_id": 1676796,
-    "quality_score": 75,
+    "quality_score": 87,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-23T00:50:51Z",
+    "last_checked_at": "2026-08-23T00:50:51Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-23T00:50:51Z"
+    },
+    "is_leaf": false
   }
 }

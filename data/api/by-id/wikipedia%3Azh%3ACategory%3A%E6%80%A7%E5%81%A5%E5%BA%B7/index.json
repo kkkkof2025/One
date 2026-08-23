@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:性健康",
+  "source": "nodes/性健康-23833db9e6a0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/性健康-23833db9e6a0.json",
+  "legacy_children": "../../children/nodes/性健康-23833db9e6a0.json"
+}
