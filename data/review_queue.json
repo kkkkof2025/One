@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T00:50:53Z",
+  "generated_at": "2026-08-24T00:47:02Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -2017,7 +2017,7 @@
         "missing_relation"
       ],
       "id": "Q19831590",
-      "updated_at": "2026-05-07T02:51:17Z",
+      "updated_at": "2026-08-24T00:46:55Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136a3",
       "location": "nodes/Q19831590.json",
@@ -2061,7 +2061,7 @@
         "missing_relation"
       ],
       "id": "Q19831587",
-      "updated_at": "2026-08-23T00:50:46Z",
+      "updated_at": "2026-08-24T00:46:54Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136c",
       "location": "nodes/Q19831587.json",

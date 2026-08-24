@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-23T00:50:51Z",
+  "generated_at": "2026-08-24T00:47:00Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,8 +22,8 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q17144092",
-      "title": "R136a2",
+      "scan_key": "id:Q19831587",
+      "title": "R136c",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 33.0,
@@ -38,8 +38,8 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q19831587",
-      "title": "R136c",
+      "scan_key": "id:Q19831590",
+      "title": "R136a3",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 33.0,

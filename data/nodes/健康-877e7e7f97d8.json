@@ -332,14 +332,18 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-20T00:44:32Z",
-      "last_checked_at": "2026-08-20T00:44:32Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-24T00:46:55Z",
+      "last_checked_at": "2026-08-24T00:46:55Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
+      "source_no_children": {
+        "wikidata": "2026-08-24T00:46:55Z"
+      },
       "source_checked": {
-        "wikipedia": "2026-08-20T00:44:32Z"
+        "wikipedia": "2026-08-20T00:44:32Z",
+        "wikidata": "2026-08-24T00:46:55Z"
       }
     },
     {
@@ -380,15 +384,24 @@
     {
       "title": "健康题材作品",
       "data_source": "nodes/健康题材作品-ff2990b28653.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:健康题材作品",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A2%98%E6%9D%90%E4%BD%9C%E5%93%81",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-24T00:46:59Z",
+      "last_checked_at": "2026-08-24T00:46:59Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-24T00:46:59Z"
+      }
     },
     {
       "title": "健康风险",

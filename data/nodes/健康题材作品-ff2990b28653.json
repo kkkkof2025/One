@@ -1,19 +1,110 @@
 {
   "id": "wikipedia:zh:Category:健康题材作品",
   "title": "健康题材作品",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "健康电子游戏",
+      "data_source": "nodes/健康电子游戏-99924f908903.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:健康电子游戏",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%94%B5%E5%AD%90%E6%B8%B8%E6%88%8F",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "流行文化中的医学与健康",
+      "data_source": "nodes/流行文化中的医学与健康-d68833e919fa.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:流行文化中的医学与健康",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B5%81%E8%A1%8C%E6%96%87%E5%8C%96%E4%B8%AD%E7%9A%84%E5%8C%BB%E5%AD%A6%E4%B8%8E%E5%81%A5%E5%BA%B7",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "健康出版物",
+      "data_source": "nodes/健康出版物-529a227eeb3d.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:健康出版物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E5%87%BA%E7%89%88%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "健康照護題材作品",
+      "data_source": "nodes/健康照護題材作品-bcd84b7652b7.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:健康照護題材作品",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E7%85%A7%E8%AD%B7%E9%A1%8C%E6%9D%90%E4%BD%9C%E5%93%81",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "健康軟體",
+      "data_source": "nodes/健康軟體-fd0260f0fca0.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:健康軟體",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E8%BB%9F%E9%AB%94",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "健康题材图书",
+      "data_source": "nodes/健康题材图书-ac131495d0af.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:健康题材图书",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A2%98%E6%9D%90%E5%9B%BE%E4%B9%A6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A2%98%E6%9D%90%E4%BD%9C%E5%93%81",
   "source_page_id": 1678335,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-08-24T00:46:59Z",
+  "last_checked_at": "2026-08-24T00:46:59Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-08-24T00:46:59Z"
+  },
+  "is_leaf": false
 }

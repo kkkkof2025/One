@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:健康电子游戏",
+  "source": "nodes/健康电子游戏-99924f908903.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/健康电子游戏-99924f908903.json",
+  "legacy_children": "../../children/nodes/健康电子游戏-99924f908903.json"
+}
