@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-24T00:47:00Z",
+  "updated_at": "2026-08-25T00:46:51Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:健康题材作品",
-  "last_scan_title": "健康题材作品",
-  "candidate_count": 915,
+  "last_scan_key": "id:wikipedia:zh:Category:健康风险",
+  "last_scan_title": "健康风险",
+  "candidate_count": 919,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -34,15 +34,13 @@
       "transient_error_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1,
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 6
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 2
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -53,32 +51,32 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-08-24T00:46:54Z",
+      "occurred_at": "2026-08-25T00:46:46Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-08-24T00:56:54Z",
+      "cooldown_until": "2026-08-25T00:56:46Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 915,
+    "candidate_count": 919,
     "source_progress_counts": {
       "4": 12,
-      "2": 38,
-      "1": 21,
-      "0": 743,
-      "3": 101
+      "2": 39,
+      "1": 20,
+      "0": 746,
+      "3": 102
     },
     "next_source_counts": {
-      "conceptnet": 150,
-      "wikipedia": 432,
+      "conceptnet": 152,
+      "wikipedia": 435,
       "wikidata": 19,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "available_next_source_counts": {
-      "conceptnet": 150,
-      "wikipedia": 432,
+      "conceptnet": 152,
+      "wikipedia": 435,
       "wikidata": 19,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -101,24 +99,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q19831587",
-        "title": "R136c",
+        "scan_key": "id:Q19831590",
+        "title": "R136a3",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 33.0,
         "depth": 11
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康科學",
-        "title": "健康科學",
+        "scan_key": "id:wikipedia:zh:Category:健康经济学",
+        "title": "健康经济学",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q19831590",
-        "title": "R136a3",
+        "scan_key": "id:Q815835",
+        "title": "R136a1",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 33.0,
@@ -154,24 +152,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q19831587",
-          "title": "R136c",
+          "scan_key": "id:Q19831590",
+          "title": "R136a3",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 33.0,
           "depth": 11
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康科學",
-          "title": "健康科學",
+          "scan_key": "id:wikipedia:zh:Category:健康经济学",
+          "title": "健康经济学",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q19831590",
-          "title": "R136a3",
+          "scan_key": "id:Q815835",
+          "title": "R136a1",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 33.0,

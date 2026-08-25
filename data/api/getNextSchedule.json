@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-24T00:47:00Z",
+  "generated_at": "2026-08-25T00:46:51Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q19831587",
-      "title": "R136c",
+      "scan_key": "id:Q19831590",
+      "title": "R136a3",
       "next_source": "wikipedia",
       "source_progress": 2,
       "priority": 33.0,
       "depth": 11
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:健康科學",
-      "title": "健康科學",
+      "scan_key": "id:wikipedia:zh:Category:健康经济学",
+      "title": "健康经济学",
       "next_source": "wikidata",
       "source_progress": 1,
       "priority": 107.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q19831590",
-      "title": "R136a3",
+      "scan_key": "id:Q815835",
+      "title": "R136a1",
       "next_source": "wikidata_api",
       "source_progress": 1,
       "priority": 33.0,

@@ -70,6 +70,32 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "药物经济学",
+        "data_source": "nodes/Q1567856.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1567856",
+        "source_provider": "wikidata",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q1567856",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "醫療衛生技術評估",
+        "data_source": "nodes/Q1420413.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1420413",
+        "source_provider": "wikidata",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q1420413",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikipedia",
@@ -87,14 +113,15 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-21T00:49:39Z",
-    "last_checked_at": "2026-08-21T00:49:39Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-25T00:46:47Z",
+    "last_checked_at": "2026-08-25T00:46:47Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
-      "wikipedia": "2026-08-21T00:49:39Z"
+      "wikipedia": "2026-08-21T00:49:39Z",
+      "wikidata": "2026-08-25T00:46:47Z"
     },
     "is_leaf": false
   }

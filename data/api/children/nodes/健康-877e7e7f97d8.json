@@ -162,7 +162,7 @@
     },
     {
       "title": "健康经济学",
-      "children_count": 5,
+      "children_count": 7,
       "id": "wikipedia:zh:Category:健康经济学",
       "data_source": "nodes/健康经济学-edba958c597e.json",
       "source_provider": "wikipedia",
@@ -173,14 +173,15 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-21T00:49:39Z",
-      "last_checked_at": "2026-08-21T00:49:39Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-08-25T00:46:47Z",
+      "last_checked_at": "2026-08-25T00:46:47Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
-        "wikipedia": "2026-08-21T00:49:39Z"
+        "wikipedia": "2026-08-21T00:49:39Z",
+        "wikidata": "2026-08-25T00:46:47Z"
       }
     },
     {
@@ -459,7 +460,19 @@
       "is_leaf": false,
       "quality_score": 75,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-25T00:46:51Z",
+      "last_checked_at": "2026-08-25T00:46:51Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_no_children": {
+        "wikipedia": "2026-08-25T00:46:51Z"
+      },
+      "source_checked": {
+        "wikipedia": "2026-08-25T00:46:51Z"
+      }
     },
     {
       "title": "全球卫生",

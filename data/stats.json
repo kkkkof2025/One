@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-24T00:47:00Z",
-  "total_nodes": 924,
-  "last_added_nodes": 6,
+  "generated_at": "2026-08-25T00:46:51Z",
+  "total_nodes": 926,
+  "last_added_nodes": 2,
   "last_request_count": 5,
-  "last_scanned_nodes": 975,
-  "last_candidate_nodes": 915,
+  "last_scanned_nodes": 981,
+  "last_candidate_nodes": 919,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -19,15 +19,13 @@
       "transient_error_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1,
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 6
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 2
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -35,25 +33,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 915,
+    "candidate_count": 919,
     "source_progress_counts": {
       "4": 12,
-      "2": 38,
-      "1": 21,
-      "0": 743,
-      "3": 101
+      "2": 39,
+      "1": 20,
+      "0": 746,
+      "3": 102
     },
     "next_source_counts": {
-      "conceptnet": 150,
-      "wikipedia": 432,
+      "conceptnet": 152,
+      "wikipedia": 435,
       "wikidata": 19,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "available_next_source_counts": {
-      "conceptnet": 150,
-      "wikipedia": 432,
+      "conceptnet": 152,
+      "wikipedia": 435,
       "wikidata": 19,
-      "wikidata_api": 314
+      "wikidata_api": 313
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -76,24 +74,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q19831587",
-        "title": "R136c",
+        "scan_key": "id:Q19831590",
+        "title": "R136a3",
         "next_source": "wikipedia",
         "source_progress": 2,
         "priority": 33.0,
         "depth": 11
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:健康科學",
-        "title": "健康科學",
+        "scan_key": "id:wikipedia:zh:Category:健康经济学",
+        "title": "健康经济学",
         "next_source": "wikidata",
         "source_progress": 1,
         "priority": 107.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q19831590",
-        "title": "R136a3",
+        "scan_key": "id:Q815835",
+        "title": "R136a1",
         "next_source": "wikidata_api",
         "source_progress": 1,
         "priority": 33.0,
@@ -129,24 +127,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q19831587",
-          "title": "R136c",
+          "scan_key": "id:Q19831590",
+          "title": "R136a3",
           "next_source": "wikipedia",
           "source_progress": 2,
           "priority": 33.0,
           "depth": 11
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:健康科學",
-          "title": "健康科學",
+          "scan_key": "id:wikipedia:zh:Category:健康经济学",
+          "title": "健康经济学",
           "next_source": "wikidata",
           "source_progress": 1,
           "priority": 107.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q19831590",
-          "title": "R136a3",
+          "scan_key": "id:Q815835",
+          "title": "R136a1",
           "next_source": "wikidata_api",
           "source_progress": 1,
           "priority": 33.0,
@@ -166,11 +164,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 69,
+    "added_nodes": 60,
     "requests": 40,
-    "added_per_request": 1.725,
+    "added_per_request": 1.5,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-24T00:47:00Z",
+    "last_productive_run_at": "2026-08-25T00:46:51Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikipedia": 16,
@@ -182,16 +180,19 @@
         "transient_error_requests": 8
       },
       "wikipedia": {
-        "no_children_requests": 8,
-        "unchanged_requests": 8,
-        "children_returned_requests": 8,
-        "productive_requests": 8,
-        "added_nodes": 69
+        "no_children_requests": 9,
+        "unchanged_requests": 9,
+        "children_returned_requests": 7,
+        "productive_requests": 7,
+        "added_nodes": 58
       },
       "wikidata": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
-        "rate_limited_requests": 3
+        "no_children_requests": 4,
+        "unchanged_requests": 4,
+        "rate_limited_requests": 3,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 2
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -202,7 +203,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 126,
+  "history_entries": 127,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
