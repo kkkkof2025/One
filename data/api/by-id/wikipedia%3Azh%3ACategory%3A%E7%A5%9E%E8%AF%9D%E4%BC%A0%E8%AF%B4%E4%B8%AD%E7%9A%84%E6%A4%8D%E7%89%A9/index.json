@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神话传说中的植物",
+  "source": "nodes/神话传说中的植物-8e7403f57fca.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神话传说中的植物-8e7403f57fca.json",
+  "legacy_children": "../../children/nodes/神话传说中的植物-8e7403f57fca.json"
+}

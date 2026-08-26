@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/神話傳說中的人型生物-a5e7bc8072ad.json",
+  "node": {
+    "title": "神話傳說中的人型生物",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:神話傳說中的人型生物",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E8%A9%B1%E5%82%B3%E8%AA%AA%E4%B8%AD%E7%9A%84%E4%BA%BA%E5%9E%8B%E7%94%9F%E7%89%A9",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

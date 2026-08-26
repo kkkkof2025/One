@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:流行文化中的傳說生物",
+  "source": "nodes/流行文化中的傳說生物-32c79057d51f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/流行文化中的傳說生物-32c79057d51f.json",
+  "legacy_children": "../../children/nodes/流行文化中的傳說生物-32c79057d51f.json"
+}

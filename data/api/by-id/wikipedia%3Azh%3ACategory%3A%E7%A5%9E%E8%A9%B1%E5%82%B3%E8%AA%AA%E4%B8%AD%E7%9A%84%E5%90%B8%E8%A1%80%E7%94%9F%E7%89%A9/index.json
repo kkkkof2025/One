@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神話傳說中的吸血生物",
+  "source": "nodes/神話傳說中的吸血生物-87b14141b4b3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神話傳說中的吸血生物-87b14141b4b3.json",
+  "legacy_children": "../../children/nodes/神話傳說中的吸血生物-87b14141b4b3.json"
+}

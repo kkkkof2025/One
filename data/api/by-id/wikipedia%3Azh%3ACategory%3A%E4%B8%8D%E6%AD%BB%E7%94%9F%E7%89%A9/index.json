@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:不死生物",
+  "source": "nodes/不死生物-ee7ca3420b05.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/不死生物-ee7ca3420b05.json",
+  "legacy_children": "../../children/nodes/不死生物-ee7ca3420b05.json"
+}

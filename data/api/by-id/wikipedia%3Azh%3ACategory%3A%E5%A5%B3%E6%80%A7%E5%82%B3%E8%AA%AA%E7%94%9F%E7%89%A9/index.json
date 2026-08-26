@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:女性傳說生物",
+  "source": "nodes/女性傳說生物-ad689b525806.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/女性傳說生物-ad689b525806.json",
+  "legacy_children": "../../children/nodes/女性傳說生物-ad689b525806.json"
+}

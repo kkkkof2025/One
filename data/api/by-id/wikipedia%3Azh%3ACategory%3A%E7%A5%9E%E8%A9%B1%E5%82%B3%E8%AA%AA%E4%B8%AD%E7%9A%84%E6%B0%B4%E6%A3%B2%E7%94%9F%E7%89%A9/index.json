@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神話傳說中的水棲生物",
+  "source": "nodes/神話傳說中的水棲生物-9d4af7843afc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神話傳說中的水棲生物-9d4af7843afc.json",
+  "legacy_children": "../../children/nodes/神話傳說中的水棲生物-9d4af7843afc.json"
+}

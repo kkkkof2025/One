@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神話傳說中的動物",
+  "source": "nodes/神話傳說中的動物-6d6f2719a77d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神話傳說中的動物-6d6f2719a77d.json",
+  "legacy_children": "../../children/nodes/神話傳說中的動物-6d6f2719a77d.json"
+}

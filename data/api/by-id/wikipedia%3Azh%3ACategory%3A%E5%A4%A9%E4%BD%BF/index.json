@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:天使",
+  "source": "nodes/天使-16d3a502161c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/天使-16d3a502161c.json",
+  "legacy_children": "../../children/nodes/天使-16d3a502161c.json"
+}

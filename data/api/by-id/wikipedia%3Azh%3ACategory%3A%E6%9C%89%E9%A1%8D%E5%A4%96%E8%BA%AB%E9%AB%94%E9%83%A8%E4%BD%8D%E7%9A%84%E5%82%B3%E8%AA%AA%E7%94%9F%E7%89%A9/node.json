@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/有額外身體部位的傳說生物-437edbb3dca1.json",
+  "node": {
+    "id": "wikipedia:zh:Category:有額外身體部位的傳說生物",
+    "title": "有額外身體部位的傳說生物",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%89%E9%A1%8D%E5%A4%96%E8%BA%AB%E9%AB%94%E9%83%A8%E4%BD%8D%E7%9A%84%E5%82%B3%E8%AA%AA%E7%94%9F%E7%89%A9",
+    "source_page_id": 5312954,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:身體部位減少的傳說生物",
+  "source": "nodes/身體部位減少的傳說生物-406cf834b3ff.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/身體部位減少的傳說生物-406cf834b3ff.json",
+  "legacy_children": "../../children/nodes/身體部位減少的傳說生物-406cf834b3ff.json"
+}

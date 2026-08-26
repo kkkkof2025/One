@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T00:46:54Z",
+  "generated_at": "2026-08-26T00:48:18Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 137,
@@ -1973,7 +1973,7 @@
         "missing_relation"
       ],
       "id": "Q815835",
-      "updated_at": "2026-08-25T00:46:47Z",
+      "updated_at": "2026-08-26T00:48:12Z",
       "fetch_strategy_version": 2,
       "path": "万物 / 宇宙 / 可觀測宇宙 / 双鱼-鲸鱼座超星系团复合体 / 拉尼亚凯亚超星系团 / 室女座超星系团 / 本地板 / 本星系群 / 大麦哲伦星系 / 蜘蛛星云 / R136 / R136a1",
       "location": "nodes/Q815835.json",

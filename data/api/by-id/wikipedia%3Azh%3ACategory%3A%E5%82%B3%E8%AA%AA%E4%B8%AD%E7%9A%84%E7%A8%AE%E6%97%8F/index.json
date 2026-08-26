@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:傳說中的種族",
+  "source": "nodes/傳說中的種族-ecce34d3ccba.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/傳說中的種族-ecce34d3ccba.json",
+  "legacy_children": "../../children/nodes/傳說中的種族-ecce34d3ccba.json"
+}
