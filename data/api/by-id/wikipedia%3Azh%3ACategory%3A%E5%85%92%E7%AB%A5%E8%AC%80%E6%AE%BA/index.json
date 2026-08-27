@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:兒童謀殺",
+  "source": "nodes/兒童謀殺-1f26a6e53ec8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/兒童謀殺-1f26a6e53ec8.json",
+  "legacy_children": "../../children/nodes/兒童謀殺-1f26a6e53ec8.json"
+}

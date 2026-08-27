@@ -3,16 +3,83 @@
   "source": "nodes/兒童與死亡-061f8b3b360c.json",
   "node": {
     "title": "兒童與死亡",
-    "children_count": 0,
+    "children_count": 4,
     "id": "wikipedia:zh:Category:兒童與死亡",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%92%E7%AB%A5%E8%88%87%E6%AD%BB%E4%BA%A1",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 88,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-08-27T06:19:38Z",
+    "last_checked_at": "2026-08-27T06:19:38Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-08-27T06:19:38Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "兒童死者",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:兒童死者",
+      "data_source": "nodes/兒童死者-d22b90c34b52.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%92%E7%AB%A5%E6%AD%BB%E8%80%85",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "兒童謀殺",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:兒童謀殺",
+      "data_source": "nodes/兒童謀殺-1f26a6e53ec8.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%92%E7%AB%A5%E8%AC%80%E6%AE%BA",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "失親",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:失親",
+      "data_source": "nodes/失親-4b8c5ee12e33.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%B1%E8%A6%AA",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "未成年人謀殺",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:未成年人謀殺",
+      "data_source": "nodes/未成年人謀殺-0d1f776ecea0.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E8%AC%80%E6%AE%BA",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 4
 }

@@ -141,15 +141,24 @@
     {
       "title": "兒童與死亡",
       "data_source": "nodes/兒童與死亡-061f8b3b360c.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:兒童與死亡",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%92%E7%AB%A5%E8%88%87%E6%AD%BB%E4%BA%A1",
-      "quality_score": 75,
+      "quality_score": 88,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-08-27T06:19:38Z",
+      "last_checked_at": "2026-08-27T06:19:38Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-08-27T06:19:38Z"
+      }
     },
     {
       "title": "动物死亡",

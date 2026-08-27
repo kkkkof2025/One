@@ -15844,5 +15844,173 @@
     },
     "max_sources_per_node": 1,
     "stop_reason": ""
+  },
+  {
+    "run_at": "2026-08-27T06:19:38Z",
+    "added_nodes": 4,
+    "total_nodes": 947,
+    "requests": 5,
+    "scanned_nodes": 1001,
+    "candidate_nodes": 938,
+    "unchanged_requests": 2,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "conceptnet": 1,
+      "wikipedia": 2,
+      "wikidata": 1,
+      "wikidata_api": 1
+    },
+    "source_outcome_counts": {
+      "conceptnet": {
+        "transient_error_requests": 1
+      },
+      "wikipedia": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 4
+      },
+      "wikidata": {
+        "rate_limited_requests": 1
+      },
+      "wikidata_api": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      }
+    },
+    "candidate_source_summary": {
+      "candidate_count": 938,
+      "source_progress_counts": {
+        "4": 12,
+        "1": 20,
+        "0": 762,
+        "3": 104,
+        "2": 40
+      },
+      "next_source_counts": {
+        "conceptnet": 156,
+        "wikipedia": 450,
+        "wikidata": 19,
+        "wikidata_api": 313
+      },
+      "available_next_source_counts": {
+        "conceptnet": 156,
+        "wikipedia": 450,
+        "wikidata": 19,
+        "wikidata_api": 313
+      },
+      "blocked_by_cooldown": 0,
+      "scheduler": "priority-source-round-robin-v1",
+      "source_diversity_enabled": true,
+      "request_limit": 5,
+      "selection_limit": 5,
+      "scheduled_source_counts": {
+        "conceptnet": 2,
+        "wikipedia": 1,
+        "wikidata": 1,
+        "wikidata_api": 1
+      },
+      "scheduled_candidates": [
+        {
+          "scan_key": "id:Q1057",
+          "title": "代謝",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 130.0,
+          "depth": 2
+        },
+        {
+          "scan_key": "id:Q102205",
+          "title": "流体",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:wikipedia:zh:Category:傳說生物",
+          "title": "傳說生物",
+          "next_source": "wikidata",
+          "source_progress": 1,
+          "priority": 107.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q104541",
+          "title": "气溶胶",
+          "next_source": "wikidata_api",
+          "source_progress": 0,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q2996394",
+          "title": "生物過程",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 130.0,
+          "depth": 2
+        }
+      ],
+      "next_run_preview": {
+        "scheduler": "priority-source-round-robin-v1",
+        "source_diversity_enabled": true,
+        "request_limit": 5,
+        "selection_limit": 5,
+        "scheduled_source_counts": {
+          "conceptnet": 2,
+          "wikipedia": 1,
+          "wikidata": 1,
+          "wikidata_api": 1
+        },
+        "scheduled_candidates": [
+          {
+            "scan_key": "id:Q1057",
+            "title": "代謝",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 130.0,
+            "depth": 2
+          },
+          {
+            "scan_key": "id:Q102205",
+            "title": "流体",
+            "next_source": "wikipedia",
+            "source_progress": 1,
+            "priority": 135.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:wikipedia:zh:Category:傳說生物",
+            "title": "傳說生物",
+            "next_source": "wikidata",
+            "source_progress": 1,
+            "priority": 107.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q104541",
+            "title": "气溶胶",
+            "next_source": "wikidata_api",
+            "source_progress": 0,
+            "priority": 135.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q2996394",
+            "title": "生物過程",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 130.0,
+            "depth": 2
+          }
+        ]
+      }
+    },
+    "max_sources_per_node": 1,
+    "stop_reason": ""
   }
 ]
