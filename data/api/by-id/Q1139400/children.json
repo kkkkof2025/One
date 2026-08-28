@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1139400.json",
+  "node": {
+    "title": "滲出液",
+    "children_count": 0,
+    "id": "Q1139400",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q1139400",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

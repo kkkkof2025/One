@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-27T06:19:38Z",
+  "generated_at": "2026-08-28T08:13:13Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,8 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 1,
     "wikidata": 1,
+    "wikipedia": 1,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -24,22 +24,22 @@
     {
       "scan_key": "id:Q102205",
       "title": "流体",
+      "next_source": "wikidata",
+      "source_progress": 2,
+      "priority": 135.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q104541",
+      "title": "气溶胶",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:傳說生物",
-      "title": "傳說生物",
-      "next_source": "wikidata",
-      "source_progress": 1,
-      "priority": 107.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q104541",
-      "title": "气溶胶",
+      "scan_key": "id:Q1066261",
+      "title": "階級意識",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

@@ -1,32 +1,33 @@
 {
-  "generated_at": "2026-08-27T06:19:38Z",
-  "total_nodes": 947,
-  "last_added_nodes": 4,
+  "generated_at": "2026-08-28T08:13:13Z",
+  "total_nodes": 967,
+  "last_added_nodes": 20,
   "last_request_count": 5,
-  "last_scanned_nodes": 1001,
-  "last_candidate_nodes": 938,
-  "last_unchanged_requests": 2,
+  "last_scanned_nodes": 1005,
+  "last_candidate_nodes": 942,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikipedia": 2,
-    "wikidata": 1,
+    "wikidata": 2,
+    "wikipedia": 1,
     "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
-    "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1,
+    "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 4
+      "added_nodes": 20,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
-    "wikidata": {
-      "rate_limited_requests": 1
+    "wikipedia": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -34,25 +35,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 938,
+    "candidate_count": 942,
     "source_progress_counts": {
       "4": 12,
-      "1": 20,
-      "0": 762,
-      "3": 104,
-      "2": 40
+      "2": 41,
+      "1": 21,
+      "0": 764,
+      "3": 104
     },
     "next_source_counts": {
       "conceptnet": 156,
-      "wikipedia": 450,
-      "wikidata": 19,
-      "wikidata_api": 313
+      "wikidata": 21,
+      "wikipedia": 453,
+      "wikidata_api": 312
     },
     "available_next_source_counts": {
       "conceptnet": 156,
-      "wikipedia": 450,
-      "wikidata": 19,
-      "wikidata_api": 313
+      "wikidata": 21,
+      "wikipedia": 453,
+      "wikidata_api": 312
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -61,8 +62,8 @@
     "selection_limit": 5,
     "scheduled_source_counts": {
       "conceptnet": 2,
-      "wikipedia": 1,
       "wikidata": 1,
+      "wikipedia": 1,
       "wikidata_api": 1
     },
     "scheduled_candidates": [
@@ -77,22 +78,22 @@
       {
         "scan_key": "id:Q102205",
         "title": "流体",
+        "next_source": "wikidata",
+        "source_progress": 2,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q104541",
+        "title": "气溶胶",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:wikipedia:zh:Category:傳說生物",
-        "title": "傳說生物",
-        "next_source": "wikidata",
-        "source_progress": 1,
-        "priority": 107.0,
-        "depth": 3
-      },
-      {
-        "scan_key": "id:Q104541",
-        "title": "气溶胶",
+        "scan_key": "id:Q1066261",
+        "title": "階級意識",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -114,8 +115,8 @@
       "selection_limit": 5,
       "scheduled_source_counts": {
         "conceptnet": 2,
-        "wikipedia": 1,
         "wikidata": 1,
+        "wikipedia": 1,
         "wikidata_api": 1
       },
       "scheduled_candidates": [
@@ -130,22 +131,22 @@
         {
           "scan_key": "id:Q102205",
           "title": "流体",
+          "next_source": "wikidata",
+          "source_progress": 2,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q104541",
+          "title": "气溶胶",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:wikipedia:zh:Category:傳說生物",
-          "title": "傳說生物",
-          "next_source": "wikidata",
-          "source_progress": 1,
-          "priority": 107.0,
-          "depth": 3
-        },
-        {
-          "scan_key": "id:Q104541",
-          "title": "气溶胶",
+          "scan_key": "id:Q1066261",
+          "title": "階級意識",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -165,15 +166,15 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 52,
+    "added_nodes": 61,
     "requests": 40,
-    "added_per_request": 1.3,
+    "added_per_request": 1.525,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-08-27T06:19:38Z",
+    "last_productive_run_at": "2026-08-28T08:13:13Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikipedia": 16,
-      "wikidata": 8,
+      "wikipedia": 15,
+      "wikidata": 9,
       "wikidata_api": 8
     },
     "source_outcome_counts": {
@@ -183,17 +184,17 @@
       "wikipedia": {
         "no_children_requests": 9,
         "unchanged_requests": 9,
-        "children_returned_requests": 7,
-        "productive_requests": 7,
-        "added_nodes": 50
+        "children_returned_requests": 6,
+        "productive_requests": 6,
+        "added_nodes": 39
       },
       "wikidata": {
-        "rate_limited_requests": 3,
-        "no_children_requests": 4,
-        "unchanged_requests": 4,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 2
+        "no_children_requests": 5,
+        "unchanged_requests": 5,
+        "rate_limited_requests": 2,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 22
       },
       "wikidata_api": {
         "no_children_requests": 8,
@@ -204,7 +205,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 129,
+  "history_entries": 130,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

@@ -325,44 +325,47 @@
       "quality_score": 97,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-27T06:19:34Z",
-      "last_checked_at": "2026-08-27T06:19:34Z",
-      "last_fetch_source": "wikidata_api",
-      "last_fetch_sources": [
-        "wikidata_api"
-      ],
-      "source_no_children": {
-        "wikidata_api": "2026-08-27T06:19:34Z"
-      },
-      "source_checked": {
-        "wikidata_api": "2026-08-27T06:19:34Z"
-      }
-    },
-    {
-      "title": "流体",
-      "data_source": "nodes/Q102205.json",
-      "children_status": "pending",
-      "is_leaf": false,
-      "id": "Q102205",
-      "source_provider": "wikidata",
-      "source_relation": "subclass",
-      "source_url": "https://www.wikidata.org/wiki/Q102205",
-      "quality_score": 97,
-      "quality_version": 3,
-      "review_status": "approved",
-      "updated_at": "2026-08-27T06:19:33Z",
-      "last_checked_at": "2026-08-27T06:19:33Z",
+      "updated_at": "2026-08-28T08:12:07Z",
+      "last_checked_at": "2026-08-28T08:12:07Z",
       "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
         "wikipedia"
       ],
       "source_no_children": {
+        "wikidata_api": "2026-08-27T06:19:34Z",
+        "wikipedia": "2026-08-28T08:12:07Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-08-27T06:19:34Z",
+        "wikipedia": "2026-08-28T08:12:07Z"
+      }
+    },
+    {
+      "title": "流体",
+      "data_source": "nodes/Q102205.json",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "id": "Q102205",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q102205",
+      "quality_score": 100,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-08-28T08:12:07Z",
+      "last_checked_at": "2026-08-28T08:12:07Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ],
+      "source_no_children": {
         "wikidata_api": "2026-08-26T00:48:12Z",
         "wikipedia": "2026-08-27T06:19:33Z"
       },
       "source_checked": {
         "wikidata_api": "2026-08-26T00:48:12Z",
-        "wikipedia": "2026-08-27T06:19:33Z"
+        "wikipedia": "2026-08-27T06:19:33Z",
+        "wikidata": "2026-08-28T08:12:07Z"
       }
     },
     {
