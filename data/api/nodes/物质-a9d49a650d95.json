@@ -319,20 +319,20 @@
       {
         "title": "气溶胶",
         "data_source": "nodes/Q104541.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q104541",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q104541",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-08-28T08:12:07Z",
-        "last_checked_at": "2026-08-28T08:12:07Z",
-        "last_fetch_source": "wikipedia",
+        "updated_at": "2026-08-29T04:57:10Z",
+        "last_checked_at": "2026-08-29T04:57:10Z",
+        "last_fetch_source": "wikidata",
         "last_fetch_sources": [
-          "wikipedia"
+          "wikidata"
         ],
         "source_no_children": {
           "wikidata_api": "2026-08-27T06:19:34Z",
@@ -340,7 +340,8 @@
         },
         "source_checked": {
           "wikidata_api": "2026-08-27T06:19:34Z",
-          "wikipedia": "2026-08-28T08:12:07Z"
+          "wikipedia": "2026-08-28T08:12:07Z",
+          "wikidata": "2026-08-29T04:57:10Z"
         }
       },
       {

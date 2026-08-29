@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-08-28T08:13:15Z",
+  "generated_at": "2026-08-29T04:58:18Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 137,
+  "total_candidates": 138,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 137,
+  "total_items": 138,
   "reason_distribution": {
-    "total_items": 137,
+    "total_items": 138,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 76,
+        "count": 77,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
+          "location:nodes/L1370098-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
-          "id:Q22294683",
-          "id:Q55621538"
+          "id:Q22294683"
         ]
       },
       {
@@ -48,9 +48,10 @@
       {
         "key": "low_quality",
         "label": "低质量分",
-        "count": 4,
+        "count": 5,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
+          "location:nodes/L1370098-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
           "id:Q22294683"
@@ -59,9 +60,10 @@
       {
         "key": "needs_review",
         "label": "待人工复核",
-        "count": 4,
+        "count": 5,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
+          "location:nodes/L1370098-S1.json",
           "location:nodes/L1370170-S1.json",
           "id:Q8001388",
           "id:Q22294683"
@@ -70,9 +72,10 @@
       {
         "key": "missing_id",
         "label": "缺少 Wikidata QID",
-        "count": 2,
+        "count": 3,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
+          "location:nodes/L1370098-S1.json",
           "location:nodes/L1370170-S1.json"
         ]
       },
@@ -88,7 +91,7 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 135
+        "count": 136
       },
       {
         "reason": "qid",
@@ -100,7 +103,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 76
+        "count": 77
       },
       {
         "reason": "zh_label",
@@ -128,7 +131,7 @@
       },
       {
         "reason": "relation:instance",
-        "count": 5
+        "count": 6
       },
       {
         "reason": "allowed_duplicate_id:2",
@@ -136,7 +139,7 @@
       },
       {
         "reason": "missing_id",
-        "count": 2
+        "count": 3
       },
       {
         "reason": "disambiguation",
@@ -167,7 +170,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 78
+        "count": 79
       },
       {
         "status": "error",
@@ -200,6 +203,27 @@
       "priority": 135.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "location:nodes/L1331482-S1.json",
+      "primary_reason": "missing_id",
+      "primary_reason_label": "缺少 Wikidata QID"
+    },
+    {
+      "title": "L1370098-S1",
+      "children_status": "pending",
+      "quality_score": 23,
+      "review_status": "needs_review",
+      "quality_reasons": [
+        "missing_id",
+        "non_zh_label",
+        "good_title_length",
+        "relation:instance"
+      ],
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "path": "万物 / 宇宙 / 物质 / 气溶胶 / L1370098-S1",
+      "location": "nodes/L1370098-S1.json",
+      "priority": 135.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "location:nodes/L1370098-S1.json",
       "primary_reason": "missing_id",
       "primary_reason_label": "缺少 Wikidata QID"
     },

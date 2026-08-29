@@ -1,0 +1,18 @@
+{
+  "id": "Q130768",
+  "title": "煙",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "subclass",
+  "source_url": "https://www.wikidata.org/wiki/Q130768",
+  "quality_score": 83,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "short_title",
+    "relation:subclass"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

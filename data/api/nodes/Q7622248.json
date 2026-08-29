@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q7622248.json",
+  "node": {
+    "id": "Q7622248",
+    "title": "硫酸盐气溶胶",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q7622248",
+    "quality_score": 81,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

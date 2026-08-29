@@ -4,29 +4,174 @@
   "node": {
     "id": "Q104541",
     "title": "气溶胶",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "L1370098-S1",
+        "data_source": "nodes/L1370098-S1.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "quality_score": 23,
+        "quality_version": 3,
+        "review_status": "needs_review"
+      },
+      {
+        "title": "硫酸盐气溶胶",
+        "data_source": "nodes/Q7622248.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q7622248",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q7622248",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "隱形噴劑",
+        "data_source": "nodes/Q5659201.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5659201",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q5659201",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "懸浮粒子",
+        "data_source": "nodes/Q498957.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q498957",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q498957",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "二次有機氣溶膠",
+        "data_source": "nodes/Q23582986.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q23582986",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q23582986",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "火藥味",
+        "data_source": "nodes/Q2245907.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q2245907",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q2245907",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "灰塵",
+        "data_source": "nodes/Q165632.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q165632",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q165632",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "烹飪噴霧",
+        "data_source": "nodes/Q5167151.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5167151",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q5167151",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "煙",
+        "data_source": "nodes/Q130768.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q130768",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q130768",
+        "quality_score": 83,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物氣溶膠",
+        "data_source": "nodes/Q401952.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q401952",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q401952",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "霧",
+        "data_source": "nodes/Q37477.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q37477",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q37477",
+        "quality_score": 83,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q104541",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-28T08:12:07Z",
-    "last_checked_at": "2026-08-28T08:12:07Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-08-29T04:57:10Z",
+    "last_checked_at": "2026-08-29T04:57:10Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-08-27T06:19:34Z",
-      "wikipedia": "2026-08-28T08:12:07Z"
+      "wikipedia": "2026-08-28T08:12:07Z",
+      "wikidata": "2026-08-29T04:57:10Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-08-27T06:19:34Z",

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q498957.json",
+  "node": {
+    "title": "懸浮粒子",
+    "children_count": 0,
+    "id": "Q498957",
+    "source_provider": "wikidata",
+    "source_relation": "part_of",
+    "source_url": "https://www.wikidata.org/wiki/Q498957",
+    "children_status": "pending",
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

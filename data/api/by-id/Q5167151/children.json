@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q5167151.json",
+  "node": {
+    "title": "烹飪噴霧",
+    "children_count": 0,
+    "id": "Q5167151",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q5167151",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

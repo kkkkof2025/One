@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q37477.json",
+  "node": {
+    "title": "霧",
+    "children_count": 0,
+    "id": "Q37477",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q37477",
+    "children_status": "pending",
+    "quality_score": 83,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

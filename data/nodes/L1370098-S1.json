@@ -1,0 +1,17 @@
+{
+  "id": null,
+  "title": "L1370098-S1",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "instance",
+  "quality_score": 23,
+  "quality_reasons": [
+    "missing_id",
+    "non_zh_label",
+    "good_title_length",
+    "relation:instance"
+  ],
+  "quality_version": 3,
+  "review_status": "needs_review"
+}
