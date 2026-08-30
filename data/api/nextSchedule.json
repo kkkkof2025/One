@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-29T04:58:15Z",
+  "generated_at": "2026-08-30T02:44:00Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q104541",
-      "title": "气溶胶",
+      "scan_key": "id:Q1066261",
+      "title": "階級意識",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1066261",
-      "title": "階級意識",
+      "scan_key": "id:Q10853884",
+      "title": "八維",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q10853884",
-      "title": "八維",
+      "scan_key": "id:Q1142276",
+      "title": "五維",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
