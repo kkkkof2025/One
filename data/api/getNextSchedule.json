@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-08-30T02:44:00Z",
+  "generated_at": "2026-08-31T02:37:15Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q10853884",
-      "title": "八維",
+      "scan_key": "id:Q1142276",
+      "title": "五維",
       "next_source": "wikipedia",
       "source_progress": 1,
-      "priority": 135.0,
+      "priority": 130.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1142276",
-      "title": "五維",
+      "scan_key": "id:Q1154996",
+      "title": "纤维丛",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
