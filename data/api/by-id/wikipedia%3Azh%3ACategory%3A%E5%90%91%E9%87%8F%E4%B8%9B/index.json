@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:向量丛",
+  "source": "nodes/向量丛-433353f00165.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/向量丛-433353f00165.json",
+  "legacy_children": "../../children/nodes/向量丛-433353f00165.json"
+}

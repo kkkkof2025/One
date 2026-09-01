@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-31T02:37:18Z",
+  "generated_at": "2026-09-01T02:51:39Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 139,
+  "total_candidates": 140,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 139,
+  "total_items": 140,
   "reason_distribution": {
-    "total_items": 139,
+    "total_items": 140,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 17,
+        "count": 18,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -91,11 +91,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 137
+        "count": 138
       },
       {
         "reason": "qid",
-        "count": 135
+        "count": 136
       },
       {
         "reason": "missing_relation",
@@ -107,7 +107,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 62
+        "count": 63
       },
       {
         "reason": "fetch_error",
@@ -119,7 +119,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 17
+        "count": 18
       },
       {
         "reason": "has_children",
@@ -143,7 +143,7 @@
       },
       {
         "reason": "relation:subclass",
-        "count": 2
+        "count": 3
       },
       {
         "reason": "disambiguation",
@@ -170,7 +170,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 80
+        "count": 81
       },
       {
         "status": "error",
@@ -3240,6 +3240,30 @@
       "priority": 39.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q7162",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "七維",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q2070474",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q2070474",
+      "path": "万物 / 宇宙 / 空间 / 七維",
+      "location": "nodes/Q2070474.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q2070474",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

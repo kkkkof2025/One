@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/K-理论-e7529569ef62.json",
+  "node": {
+    "id": "wikipedia:zh:Category:K-理论",
+    "title": "K-理论",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:K-%E7%90%86%E8%AE%BA",
+    "source_page_id": 941536,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

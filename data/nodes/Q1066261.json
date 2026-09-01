@@ -1,29 +1,46 @@
 {
   "id": "Q1066261",
   "title": "階級意識",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "學生排名",
+      "data_source": "nodes/Q11311549.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q11311549",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q11311549",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q1066261",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-08-29T04:57:10Z",
-  "last_checked_at": "2026-08-29T04:57:10Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-09-01T02:51:36Z",
+  "last_checked_at": "2026-09-01T02:51:36Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-08-28T08:12:07Z",
-    "wikipedia": "2026-08-29T04:57:10Z"
+    "wikipedia": "2026-08-29T04:57:10Z",
+    "wikidata": "2026-09-01T02:51:36Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-08-28T08:12:07Z",

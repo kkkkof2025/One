@@ -4,28 +4,58 @@
   "node": {
     "id": "Q1154996",
     "title": "纤维丛",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "K-理论",
+        "data_source": "nodes/K-理论-e7529569ef62.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:K-理论",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:K-%E7%90%86%E8%AE%BA",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "向量丛",
+        "data_source": "nodes/向量丛-433353f00165.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:向量丛",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%91%E9%87%8F%E4%B8%9B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1154996",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-31T02:37:15Z",
-    "last_checked_at": "2026-08-31T02:37:15Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-09-01T02:50:32Z",
+    "last_checked_at": "2026-09-01T02:50:32Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-08-31T02:37:15Z"
+      "wikidata_api": "2026-08-31T02:37:15Z",
+      "wikipedia": "2026-09-01T02:50:32Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-08-31T02:37:15Z"

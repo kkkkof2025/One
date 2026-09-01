@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:K-理论",
+  "source": "nodes/K-理论-e7529569ef62.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/K-理论-e7529569ef62.json",
+  "legacy_children": "../../children/nodes/K-理论-e7529569ef62.json"
+}
