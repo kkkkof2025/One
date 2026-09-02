@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:歐洲委員會",
+  "title": "歐洲委員會",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%90%E6%B4%B2%E5%A7%94%E5%93%A1%E6%9C%83",
+  "source_page_id": 2937994,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

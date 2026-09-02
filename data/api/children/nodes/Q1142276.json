@@ -3,7 +3,7 @@
   "source": "nodes/Q1142276.json",
   "node": {
     "title": "五維",
-    "children_count": 1,
+    "children_count": 3,
     "id": "Q1142276",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-31T02:37:15Z",
-    "last_checked_at": "2026-08-31T02:37:15Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-02T02:10:31Z",
+    "last_checked_at": "2026-09-02T02:10:31Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-08-31T02:37:15Z"
     },
     "source_checked": {
       "wikidata_api": "2026-08-30T02:44:00Z",
-      "wikipedia": "2026-08-31T02:37:15Z"
+      "wikipedia": "2026-08-31T02:37:15Z",
+      "wikidata": "2026-09-02T02:10:31Z"
     }
   },
   "children": [
@@ -41,7 +42,35 @@
       "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "五維多胞體",
+      "children_count": 0,
+      "id": "Q4639678",
+      "data_source": "nodes/Q4639678.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q4639678",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "五維流形",
+      "children_count": 0,
+      "id": "Q4639668",
+      "data_source": "nodes/Q4639668.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4639668",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 3
 }

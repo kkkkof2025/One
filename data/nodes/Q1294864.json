@@ -1,28 +1,71 @@
 {
   "id": "Q1294864",
   "title": "泛歐主義",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "欧洲广播联盟",
+      "data_source": "nodes/欧洲广播联盟-80418f518b33.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:欧洲广播联盟",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AC%A7%E6%B4%B2%E5%B9%BF%E6%92%AD%E8%81%94%E7%9B%9F",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "欧洲国际体育竞赛",
+      "data_source": "nodes/欧洲国际体育竞赛-d8999cdbb795.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:欧洲国际体育竞赛",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AC%A7%E6%B4%B2%E5%9B%BD%E9%99%85%E4%BD%93%E8%82%B2%E7%AB%9E%E8%B5%9B",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "歐洲委員會",
+      "data_source": "nodes/歐洲委員會-c0a7f1b77a50.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:歐洲委員會",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%AD%90%E6%B4%B2%E5%A7%94%E5%93%A1%E6%9C%83",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q1294864",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-09-01T02:50:32Z",
-  "last_checked_at": "2026-09-01T02:50:32Z",
-  "last_fetch_source": "wikidata_api",
+  "updated_at": "2026-09-02T02:10:31Z",
+  "last_checked_at": "2026-09-02T02:10:31Z",
+  "last_fetch_source": "wikipedia",
   "last_fetch_sources": [
-    "wikidata_api"
+    "wikipedia"
   ],
   "source_checked": {
-    "wikidata_api": "2026-09-01T02:50:32Z"
+    "wikidata_api": "2026-09-01T02:50:32Z",
+    "wikipedia": "2026-09-02T02:10:31Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-09-01T02:50:32Z"

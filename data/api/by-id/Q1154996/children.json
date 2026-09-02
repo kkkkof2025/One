@@ -3,7 +3,7 @@
   "source": "nodes/Q1154996.json",
   "node": {
     "title": "纤维丛",
-    "children_count": 2,
+    "children_count": 7,
     "id": "Q1154996",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-01T02:50:32Z",
-    "last_checked_at": "2026-09-01T02:50:32Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-02T02:11:36Z",
+    "last_checked_at": "2026-09-02T02:11:36Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-08-31T02:37:15Z"
     },
     "source_checked": {
       "wikidata_api": "2026-08-31T02:37:15Z",
-      "wikipedia": "2026-09-01T02:50:32Z"
+      "wikipedia": "2026-09-01T02:50:32Z",
+      "wikidata": "2026-09-02T02:11:36Z"
     }
   },
   "children": [
@@ -55,7 +56,77 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "拉回丛",
+      "children_count": 0,
+      "id": "Q4200951",
+      "data_source": "nodes/Q4200951.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q4200951",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "向量丛",
+      "children_count": 0,
+      "id": "Q658429",
+      "data_source": "nodes/Q658429.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q658429",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "平凡丛",
+      "children_count": 0,
+      "id": "Q123472440",
+      "data_source": "nodes/Q123472440.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q123472440",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "覆疊空間",
+      "children_count": 0,
+      "id": "Q332648",
+      "data_source": "nodes/Q332648.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q332648",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "配丛",
+      "children_count": 0,
+      "id": "Q427018",
+      "data_source": "nodes/Q427018.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q427018",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 2
+  "child_count": 7
 }

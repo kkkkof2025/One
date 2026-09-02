@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:歐洲委員會",
+  "source": "nodes/歐洲委員會-c0a7f1b77a50.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/歐洲委員會-c0a7f1b77a50.json",
+  "legacy_children": "../../children/nodes/歐洲委員會-c0a7f1b77a50.json"
+}

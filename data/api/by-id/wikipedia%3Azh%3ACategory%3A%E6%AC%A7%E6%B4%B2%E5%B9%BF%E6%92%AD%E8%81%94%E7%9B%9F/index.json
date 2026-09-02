@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:欧洲广播联盟",
+  "source": "nodes/欧洲广播联盟-80418f518b33.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/欧洲广播联盟-80418f518b33.json",
+  "legacy_children": "../../children/nodes/欧洲广播联盟-80418f518b33.json"
+}

@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-01T02:51:37Z",
+  "updated_at": "2026-09-02T02:11:36Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q1066261",
-  "last_scan_title": "階級意識",
-  "candidate_count": 972,
+  "last_scan_key": "id:Q1154996",
+  "last_scan_title": "纤维丛",
+  "candidate_count": 975,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -36,12 +36,12 @@
     "wikidata": {
       "children_returned_requests": 2,
       "productive_requests": 2,
-      "added_nodes": 2
+      "added_nodes": 7
     },
     "wikipedia": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 2
+      "added_nodes": 3
     },
     "wikidata_api": {
       "no_children_requests": 1,
@@ -52,31 +52,31 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-01T02:50:31Z",
+      "occurred_at": "2026-09-02T02:10:31Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-01T03:00:31Z",
+      "cooldown_until": "2026-09-02T02:20:31Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 972,
+    "candidate_count": 975,
     "source_progress_counts": {
-      "4": 12,
-      "3": 107,
+      "4": 13,
+      "2": 45,
       "1": 18,
-      "0": 790,
-      "2": 45
+      "0": 792,
+      "3": 107
     },
     "next_source_counts": {
-      "conceptnet": 160,
-      "wikidata": 21,
-      "wikipedia": 453,
+      "conceptnet": 162,
+      "wikidata": 20,
+      "wikipedia": 455,
       "wikidata_api": 338
     },
     "available_next_source_counts": {
-      "conceptnet": 160,
-      "wikidata": 21,
-      "wikipedia": 453,
+      "conceptnet": 162,
+      "wikidata": 20,
+      "wikipedia": 455,
       "wikidata_api": 338
     },
     "blocked_by_cooldown": 0,
@@ -100,24 +100,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q10853884",
-        "title": "八維",
+        "scan_key": "id:Q1142276",
+        "title": "五維",
         "next_source": "wikidata",
-        "source_progress": 3,
-        "priority": 135.0,
+        "source_progress": 2,
+        "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1154996",
-        "title": "纤维丛",
+        "scan_key": "id:Q1294864",
+        "title": "泛歐主義",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1294864",
-        "title": "泛歐主義",
+        "scan_key": "id:Q1318447",
+        "title": "森林更新",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -153,24 +153,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q10853884",
-          "title": "八維",
+          "scan_key": "id:Q1142276",
+          "title": "五維",
           "next_source": "wikidata",
-          "source_progress": 3,
-          "priority": 135.0,
+          "source_progress": 2,
+          "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1154996",
-          "title": "纤维丛",
+          "scan_key": "id:Q1294864",
+          "title": "泛歐主義",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1294864",
-          "title": "泛歐主義",
+          "scan_key": "id:Q1318447",
+          "title": "森林更新",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,

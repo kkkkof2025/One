@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q4200951.json",
+  "node": {
+    "id": "Q4200951",
+    "title": "拉回丛",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q4200951",
+    "quality_score": 81,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

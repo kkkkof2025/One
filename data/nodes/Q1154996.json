@@ -28,6 +28,71 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "拉回丛",
+      "data_source": "nodes/Q4200951.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4200951",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q4200951",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "向量丛",
+      "data_source": "nodes/Q658429.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q658429",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q658429",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "平凡丛",
+      "data_source": "nodes/Q123472440.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q123472440",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q123472440",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "覆疊空間",
+      "data_source": "nodes/Q332648.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q332648",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q332648",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "配丛",
+      "data_source": "nodes/Q427018.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q427018",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q427018",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -44,15 +109,16 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-09-01T02:50:32Z",
-  "last_checked_at": "2026-09-01T02:50:32Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-09-02T02:11:36Z",
+  "last_checked_at": "2026-09-02T02:11:36Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-08-31T02:37:15Z",
-    "wikipedia": "2026-09-01T02:50:32Z"
+    "wikipedia": "2026-09-01T02:50:32Z",
+    "wikidata": "2026-09-02T02:11:36Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-08-31T02:37:15Z"
