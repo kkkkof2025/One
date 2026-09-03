@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-02T02:11:36Z",
+  "generated_at": "2026-09-03T02:18:26Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1142276",
-      "title": "五維",
+      "scan_key": "id:Q1294864",
+      "title": "泛歐主義",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 130.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1294864",
-      "title": "泛歐主義",
+      "scan_key": "id:Q1318447",
+      "title": "森林更新",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1318447",
-      "title": "森林更新",
+      "scan_key": "id:Q135741",
+      "title": "影子生物圈",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

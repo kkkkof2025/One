@@ -71,18 +71,20 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-08-30T02:44:00Z",
-  "last_checked_at": "2026-08-30T02:44:00Z",
-  "last_fetch_source": "dbpedia",
+  "updated_at": "2026-09-03T02:18:26Z",
+  "last_checked_at": "2026-09-03T02:18:26Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "dbpedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikipedia": "2026-08-27T06:19:38Z",
-    "dbpedia": "2026-08-30T02:44:00Z"
+    "dbpedia": "2026-08-30T02:44:00Z",
+    "wikidata": "2026-09-03T02:18:26Z"
   },
   "is_leaf": false,
   "source_no_children": {
-    "dbpedia": "2026-08-30T02:44:00Z"
+    "dbpedia": "2026-08-30T02:44:00Z",
+    "wikidata": "2026-09-03T02:18:26Z"
   }
 }

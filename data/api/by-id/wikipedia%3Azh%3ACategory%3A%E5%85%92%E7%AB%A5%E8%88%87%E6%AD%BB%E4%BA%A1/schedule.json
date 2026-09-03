@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-09-02T02:11:36Z",
+  "generated_at": "2026-09-03T02:18:26Z",
   "id": "wikipedia:zh:Category:兒童與死亡",
   "source": "nodes/兒童與死亡-061f8b3b360c.json",
   "node": {
@@ -15,18 +15,20 @@
     "quality_score": 88,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-08-30T02:44:00Z",
-    "last_checked_at": "2026-08-30T02:44:00Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-09-03T02:18:26Z",
+    "last_checked_at": "2026-09-03T02:18:26Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
-      "dbpedia": "2026-08-30T02:44:00Z"
+      "dbpedia": "2026-08-30T02:44:00Z",
+      "wikidata": "2026-09-03T02:18:26Z"
     },
     "source_checked": {
       "wikipedia": "2026-08-27T06:19:38Z",
-      "dbpedia": "2026-08-30T02:44:00Z"
+      "dbpedia": "2026-08-30T02:44:00Z",
+      "wikidata": "2026-09-03T02:18:26Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -45,42 +47,44 @@
   ],
   "checked_sources": [
     "dbpedia",
+    "wikidata",
     "wikipedia"
   ],
   "no_children_sources": [
-    "dbpedia"
+    "dbpedia",
+    "wikidata"
   ],
   "done_sources": [
     "dbpedia",
+    "wikidata",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata",
     "conceptnet"
   ],
-  "next_source": "wikidata",
-  "next_source_without_cooldown": "wikidata",
-  "can_fetch": true,
+  "next_source": "",
+  "next_source_without_cooldown": "conceptnet",
+  "can_fetch": false,
   "eligible": true,
   "exhausted": false,
   "terminal": false,
   "source_exhausted": false,
-  "blocked_by_cooldown": false,
-  "block_reason": "ready",
+  "blocked_by_cooldown": true,
+  "block_reason": "source_cooldown",
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-02T02:10:31Z",
+      "occurred_at": "2026-09-03T02:17:21Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-02T02:20:31Z",
+      "cooldown_until": "2026-09-03T02:27:21Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 4,
-    "done": 2,
-    "remaining": 2
+    "done": 3,
+    "remaining": 1
   }
 }
