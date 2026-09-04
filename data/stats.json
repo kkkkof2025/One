@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-03T02:18:26Z",
+  "generated_at": "2026-09-04T02:13:05Z",
   "total_nodes": 991,
   "last_added_nodes": 0,
   "last_request_count": 5,
   "last_scanned_nodes": 1051,
   "last_candidate_nodes": 985,
-  "last_unchanged_requests": 4,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
+    "wikidata": 1,
     "wikipedia": 1,
-    "wikidata_api": 1
+    "wikidata_api": 1,
+    "dbpedia": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "rate_limited_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -29,28 +29,32 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
+    },
+    "dbpedia": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 985,
     "source_progress_counts": {
       "4": 13,
-      "2": 44,
+      "2": 43,
       "1": 18,
-      "0": 801,
-      "3": 109
+      "0": 800,
+      "3": 111
     },
     "next_source_counts": {
-      "conceptnet": 164,
-      "wikidata": 19,
+      "conceptnet": 166,
+      "wikidata": 18,
       "wikipedia": 458,
-      "wikidata_api": 344
+      "wikidata_api": 343
     },
     "available_next_source_counts": {
-      "conceptnet": 164,
-      "wikidata": 19,
+      "conceptnet": 166,
+      "wikidata": 18,
       "wikipedia": 458,
-      "wikidata_api": 344
+      "wikidata_api": 343
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -73,24 +77,24 @@
         "depth": 2
       },
       {
-        "scan_key": "id:Q1294864",
-        "title": "泛歐主義",
-        "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 130.0,
-        "depth": 3
-      },
-      {
         "scan_key": "id:Q1318447",
         "title": "森林更新",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q135741",
         "title": "影子生物圈",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q1434580",
+        "title": "原質 (哲學)",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -126,24 +130,24 @@
           "depth": 2
         },
         {
-          "scan_key": "id:Q1294864",
-          "title": "泛歐主義",
-          "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 130.0,
-          "depth": 3
-        },
-        {
           "scan_key": "id:Q1318447",
           "title": "森林更新",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q135741",
           "title": "影子生物圈",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q1434580",
+          "title": "原質 (哲學)",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -163,36 +167,36 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 50,
+    "added_nodes": 46,
     "requests": 40,
-    "added_per_request": 1.25,
-    "zero_growth_streak": 1,
+    "added_per_request": 1.15,
+    "zero_growth_streak": 2,
     "last_productive_run_at": "2026-09-02T02:11:36Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikipedia": 9,
       "wikidata": 13,
+      "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 2
+      "dbpedia": 3
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
-      "wikipedia": {
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 9
-      },
       "wikidata": {
-        "rate_limited_requests": 3,
         "children_returned_requests": 6,
         "productive_requests": 6,
         "added_nodes": 40,
         "no_children_requests": 4,
-        "unchanged_requests": 4
+        "unchanged_requests": 4,
+        "rate_limited_requests": 3
+      },
+      "wikipedia": {
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 5
       },
       "wikidata_api": {
         "no_children_requests": 7,
@@ -202,15 +206,15 @@
         "added_nodes": 1
       },
       "dbpedia": {
-        "no_children_requests": 2,
-        "unchanged_requests": 2
+        "no_children_requests": 3,
+        "unchanged_requests": 3
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 136,
+  "history_entries": 137,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
