@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-04T02:13:05Z",
+  "generated_at": "2026-09-05T02:13:21Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q135741",
-      "title": "影子生物圈",
+      "scan_key": "id:Q1434580",
+      "title": "原質 (哲學)",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1434580",
-      "title": "原質 (哲學)",
+      "scan_key": "id:Q161",
+      "title": "纤维",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

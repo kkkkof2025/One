@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T02:13:05Z",
+  "generated_at": "2026-09-05T02:13:21Z",
   "total_nodes": 991,
   "last_added_nodes": 0,
   "last_request_count": 5,
@@ -39,22 +39,22 @@
     "candidate_count": 985,
     "source_progress_counts": {
       "4": 13,
-      "2": 43,
-      "1": 18,
-      "0": 800,
+      "2": 45,
+      "1": 17,
+      "0": 799,
       "3": 111
     },
     "next_source_counts": {
       "conceptnet": 166,
-      "wikidata": 18,
+      "wikidata": 19,
       "wikipedia": 458,
-      "wikidata_api": 343
+      "wikidata_api": 342
     },
     "available_next_source_counts": {
       "conceptnet": 166,
-      "wikidata": 18,
+      "wikidata": 19,
       "wikipedia": 458,
-      "wikidata_api": 343
+      "wikidata_api": 342
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -85,16 +85,16 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q135741",
-        "title": "影子生物圈",
+        "scan_key": "id:Q1434580",
+        "title": "原質 (哲學)",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1434580",
-        "title": "原質 (哲學)",
+        "scan_key": "id:Q161",
+        "title": "纤维",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -138,16 +138,16 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q135741",
-          "title": "影子生物圈",
+          "scan_key": "id:Q1434580",
+          "title": "原質 (哲學)",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1434580",
-          "title": "原質 (哲學)",
+          "scan_key": "id:Q161",
+          "title": "纤维",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -167,29 +167,29 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 46,
+    "added_nodes": 26,
     "requests": 40,
-    "added_per_request": 1.15,
-    "zero_growth_streak": 2,
+    "added_per_request": 0.65,
+    "zero_growth_streak": 3,
     "last_productive_run_at": "2026-09-02T02:11:36Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 13,
+      "wikidata": 12,
       "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 3
+      "dbpedia": 4
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 6,
-        "productive_requests": 6,
-        "added_nodes": 40,
-        "no_children_requests": 4,
-        "unchanged_requests": 4,
-        "rate_limited_requests": 3
+        "children_returned_requests": 5,
+        "productive_requests": 5,
+        "added_nodes": 20,
+        "no_children_requests": 3,
+        "unchanged_requests": 3,
+        "rate_limited_requests": 4
       },
       "wikipedia": {
         "no_children_requests": 6,
@@ -206,15 +206,15 @@
         "added_nodes": 1
       },
       "dbpedia": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3
+        "no_children_requests": 4,
+        "unchanged_requests": 4
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 137,
+  "history_entries": 138,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
