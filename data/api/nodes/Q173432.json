@@ -17,6 +17,19 @@
       "relation:subclass"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-09-06T02:09:02Z",
+    "last_checked_at": "2026-09-06T02:09:02Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-09-06T02:09:02Z"
+    },
+    "source_no_children": {
+      "wikidata_api": "2026-09-06T02:09:02Z"
+    },
+    "is_leaf": false
   }
 }

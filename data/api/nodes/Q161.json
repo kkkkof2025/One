@@ -4,28 +4,136 @@
   "node": {
     "id": "Q161",
     "title": "纤维",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "動物毛髮產品",
+        "data_source": "nodes/動物毛髮產品-03a75f6c4119.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:動物毛髮產品",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E7%89%A9%E6%AF%9B%E9%AB%AE%E7%94%A2%E5%93%81",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "丝绸",
+        "data_source": "nodes/丝绸-adb19f3fc658.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:丝绸",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%9D%E7%BB%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "合成纤维",
+        "data_source": "nodes/合成纤维-a6763616d354.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:合成纤维",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%88%E6%88%90%E7%BA%A4%E7%BB%B4",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "天然纤维",
+        "data_source": "nodes/天然纤维-78be57aed1c2.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:天然纤维",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%A9%E7%84%B6%E7%BA%A4%E7%BB%B4",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "石綿",
+        "data_source": "nodes/石綿-60e3f6963b24.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:石綿",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%9F%B3%E7%B6%BF",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "纤维植物",
+        "data_source": "nodes/纤维植物-b2f0d7d68a91.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:纤维植物",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BA%A4%E7%BB%B4%E6%A4%8D%E7%89%A9",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "网",
+        "data_source": "nodes/网-896305da1371.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:网",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BD%91",
+        "quality_score": 61,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "造纸原料",
+        "data_source": "nodes/造纸原料-dd5297cec730.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:造纸原料",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%80%A0%E7%BA%B8%E5%8E%9F%E6%96%99",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q161",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-05T02:13:19Z",
-    "last_checked_at": "2026-09-05T02:13:19Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-09-06T02:09:02Z",
+    "last_checked_at": "2026-09-06T02:09:02Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-09-05T02:13:19Z"
+      "wikidata_api": "2026-09-05T02:13:19Z",
+      "wikipedia": "2026-09-06T02:09:02Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-09-05T02:13:19Z"

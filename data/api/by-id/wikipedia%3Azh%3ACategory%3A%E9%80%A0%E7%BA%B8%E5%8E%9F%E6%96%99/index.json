@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:造纸原料",
+  "source": "nodes/造纸原料-dd5297cec730.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/造纸原料-dd5297cec730.json",
+  "legacy_children": "../../children/nodes/造纸原料-dd5297cec730.json"
+}

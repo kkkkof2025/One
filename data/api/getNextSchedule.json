@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-05T02:13:21Z",
+  "generated_at": "2026-09-06T02:10:07Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 2
     },
     {
-      "scan_key": "id:Q1318447",
-      "title": "森林更新",
+      "scan_key": "id:Q135741",
+      "title": "影子生物圈",
       "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 135.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q1434580",
-      "title": "原質 (哲學)",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "source_progress": 3,
       "priority": 135.0,
       "depth": 3
     },
     {
       "scan_key": "id:Q161",
       "title": "纤维",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 135.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q173432",
+      "title": "无性生殖",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

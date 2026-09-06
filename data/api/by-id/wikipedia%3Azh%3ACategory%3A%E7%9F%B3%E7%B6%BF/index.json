@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:石綿",
+  "source": "nodes/石綿-60e3f6963b24.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/石綿-60e3f6963b24.json",
+  "legacy_children": "../../children/nodes/石綿-60e3f6963b24.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:合成纤维",
+  "source": "nodes/合成纤维-a6763616d354.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/合成纤维-a6763616d354.json",
+  "legacy_children": "../../children/nodes/合成纤维-a6763616d354.json"
+}

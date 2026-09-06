@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:動物毛髮產品",
+  "source": "nodes/動物毛髮產品-03a75f6c4119.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/動物毛髮產品-03a75f6c4119.json",
+  "legacy_children": "../../children/nodes/動物毛髮產品-03a75f6c4119.json"
+}

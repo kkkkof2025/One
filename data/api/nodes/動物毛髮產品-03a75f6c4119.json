@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/動物毛髮產品-03a75f6c4119.json",
+  "node": {
+    "id": "wikipedia:zh:Category:動物毛髮產品",
+    "title": "動物毛髮產品",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8B%95%E7%89%A9%E6%AF%9B%E9%AB%AE%E7%94%A2%E5%93%81",
+    "source_page_id": 7605755,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
