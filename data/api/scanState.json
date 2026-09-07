@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-06T02:10:07Z",
+  "updated_at": "2026-09-07T02:07:25Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q1318447",
-  "last_scan_title": "森林更新",
-  "candidate_count": 985,
+  "last_scan_key": "id:Q161",
+  "last_scan_title": "纤维",
+  "candidate_count": 993,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -38,45 +38,45 @@
       "unchanged_requests": 2
     },
     "wikipedia": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 8
-    },
-    "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
+    },
+    "wikidata_api": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-06T02:09:01Z",
+      "occurred_at": "2026-09-07T02:06:20Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-06T02:19:01Z",
+      "cooldown_until": "2026-09-07T02:16:20Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 985,
+    "candidate_count": 993,
     "source_progress_counts": {
-      "4": 13,
-      "3": 112,
+      "4": 14,
+      "2": 45,
       "1": 17,
-      "0": 798,
-      "2": 45
+      "0": 805,
+      "3": 112
     },
     "next_source_counts": {
-      "conceptnet": 166,
-      "wikidata": 20,
-      "wikipedia": 458,
-      "wikidata_api": 341
+      "conceptnet": 168,
+      "wikidata": 19,
+      "wikipedia": 466,
+      "wikidata_api": 340
     },
     "available_next_source_counts": {
-      "conceptnet": 166,
-      "wikidata": 20,
-      "wikipedia": 458,
-      "wikidata_api": 341
+      "conceptnet": 168,
+      "wikidata": 19,
+      "wikipedia": 466,
+      "wikidata_api": 340
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -91,40 +91,40 @@
     },
     "scheduled_candidates": [
       {
-        "scan_key": "id:Q1057",
-        "title": "代謝",
-        "next_source": "conceptnet",
-        "source_progress": 4,
-        "priority": 130.0,
-        "depth": 2
-      },
-      {
         "scan_key": "id:Q135741",
         "title": "影子生物圈",
-        "next_source": "wikidata",
-        "source_progress": 3,
+        "next_source": "conceptnet",
+        "source_progress": 4,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q161",
-        "title": "纤维",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "scan_key": "id:Q1434580",
+        "title": "原質 (哲學)",
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q173432",
         "title": "无性生殖",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q1783121",
+        "title": "有機物質",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q2996394",
-        "title": "生物過程",
+        "scan_key": "id:Q1057",
+        "title": "代謝",
         "next_source": "conceptnet",
         "source_progress": 4,
         "priority": 130.0,
@@ -144,40 +144,40 @@
       },
       "scheduled_candidates": [
         {
-          "scan_key": "id:Q1057",
-          "title": "代謝",
-          "next_source": "conceptnet",
-          "source_progress": 4,
-          "priority": 130.0,
-          "depth": 2
-        },
-        {
           "scan_key": "id:Q135741",
           "title": "影子生物圈",
-          "next_source": "wikidata",
-          "source_progress": 3,
+          "next_source": "conceptnet",
+          "source_progress": 4,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q161",
-          "title": "纤维",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "scan_key": "id:Q1434580",
+          "title": "原質 (哲學)",
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q173432",
           "title": "无性生殖",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q1783121",
+          "title": "有機物質",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q2996394",
-          "title": "生物過程",
+          "scan_key": "id:Q1057",
+          "title": "代謝",
           "next_source": "conceptnet",
           "source_progress": 4,
           "priority": 130.0,

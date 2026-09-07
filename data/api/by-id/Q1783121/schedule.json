@@ -1,19 +1,29 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-09-06T02:10:07Z",
+  "generated_at": "2026-09-07T02:07:25Z",
   "id": "Q1783121",
   "source": "nodes/Q1783121.json",
   "node": {
     "title": "有機物質",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q1783121",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1783121",
-    "children_status": "pending",
-    "quality_score": 97,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 100,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-09-07T02:06:21Z",
+    "last_checked_at": "2026-09-07T02:06:21Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-09-07T02:06:21Z"
+    }
   },
   "fetch_strategy_version": 8,
   "source_order": [
@@ -30,19 +40,22 @@
     "conceptnet",
     "dbpedia"
   ],
-  "checked_sources": [],
+  "checked_sources": [
+    "wikidata_api"
+  ],
   "no_children_sources": [],
-  "done_sources": [],
+  "done_sources": [
+    "wikidata_api"
+  ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata_api",
     "wikipedia",
     "wikidata",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata_api",
-  "next_source_without_cooldown": "wikidata_api",
+  "next_source": "wikipedia",
+  "next_source_without_cooldown": "wikipedia",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -54,15 +67,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-06T02:09:01Z",
+      "occurred_at": "2026-09-07T02:06:20Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-06T02:19:01Z",
+      "cooldown_until": "2026-09-07T02:16:20Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 0,
-    "remaining": 5
+    "done": 1,
+    "remaining": 4
   }
 }

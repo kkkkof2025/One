@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-06T02:10:07Z",
+  "generated_at": "2026-09-07T02:07:25Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -14,40 +14,40 @@
   },
   "scheduled_candidates": [
     {
-      "scan_key": "id:Q1057",
-      "title": "代謝",
-      "next_source": "conceptnet",
-      "source_progress": 4,
-      "priority": 130.0,
-      "depth": 2
-    },
-    {
       "scan_key": "id:Q135741",
       "title": "影子生物圈",
-      "next_source": "wikidata",
-      "source_progress": 3,
+      "next_source": "conceptnet",
+      "source_progress": 4,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q161",
-      "title": "纤维",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "scan_key": "id:Q1434580",
+      "title": "原質 (哲學)",
+      "next_source": "wikidata",
+      "source_progress": 2,
       "priority": 135.0,
       "depth": 3
     },
     {
       "scan_key": "id:Q173432",
       "title": "无性生殖",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 135.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q1783121",
+      "title": "有機物質",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q2996394",
-      "title": "生物過程",
+      "scan_key": "id:Q1057",
+      "title": "代謝",
       "next_source": "conceptnet",
       "source_progress": 4,
       "priority": 130.0,
