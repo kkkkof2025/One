@@ -301,22 +301,22 @@
     },
     {
       "title": "无性生殖",
-      "children_count": 0,
+      "children_count": 9,
       "id": "Q173432",
       "data_source": "nodes/Q173432.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q173432",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-07T02:06:20Z",
-      "last_checked_at": "2026-09-07T02:06:20Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-08T02:18:13Z",
+      "last_checked_at": "2026-09-08T02:18:13Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-09-06T02:09:02Z",
@@ -324,22 +324,32 @@
       },
       "source_checked": {
         "wikidata_api": "2026-09-06T02:09:02Z",
-        "wikipedia": "2026-09-07T02:06:20Z"
+        "wikipedia": "2026-09-07T02:06:20Z",
+        "wikidata": "2026-09-08T02:18:13Z"
       }
     },
     {
       "title": "有性生殖",
-      "children_count": 0,
+      "children_count": 5,
       "id": "Q182353",
       "data_source": "nodes/Q182353.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q182353",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-08T02:18:14Z",
+      "last_checked_at": "2026-09-08T02:18:14Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-09-08T02:18:14Z"
+      }
     },
     {
       "title": "森林更新",

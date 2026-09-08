@@ -1,29 +1,150 @@
 {
   "id": "Q173432",
   "title": "无性生殖",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "克隆",
+      "data_source": "nodes/Q120877.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q120877",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q120877",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "出芽生殖",
+      "data_source": "nodes/Q845312.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q845312",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q845312",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "单性生殖",
+      "data_source": "nodes/Q183236.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q183236",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q183236",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "多胚",
+      "data_source": "nodes/Q928363.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q928363",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q928363",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "无融合生殖",
+      "data_source": "nodes/Q528033.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q528033",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q528033",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "營養繁殖",
+      "data_source": "nodes/Q464666.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q464666",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q464666",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "节片生殖",
+      "data_source": "nodes/Q1411746.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1411746",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1411746",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雄核发育",
+      "data_source": "nodes/Q4065998.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q4065998",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4065998",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雌核发育",
+      "data_source": "nodes/Q1047531.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1047531",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1047531",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q173432",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-09-07T02:06:20Z",
-  "last_checked_at": "2026-09-07T02:06:20Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-09-08T02:18:13Z",
+  "last_checked_at": "2026-09-08T02:18:13Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-09-06T02:09:02Z",
-    "wikipedia": "2026-09-07T02:06:20Z"
+    "wikipedia": "2026-09-07T02:06:20Z",
+    "wikidata": "2026-09-08T02:18:13Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-09-06T02:09:02Z",

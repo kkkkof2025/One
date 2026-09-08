@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-07T02:07:27Z",
+  "generated_at": "2026-09-08T02:19:19Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 140,
+  "total_candidates": 143,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 140,
+  "total_items": 143,
   "reason_distribution": {
-    "total_items": 140,
+    "total_items": 143,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 77,
+        "count": 80,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -48,7 +48,7 @@
       {
         "key": "low_quality",
         "label": "低质量分",
-        "count": 5,
+        "count": 6,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -60,7 +60,7 @@
       {
         "key": "needs_review",
         "label": "待人工复核",
-        "count": 5,
+        "count": 6,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -91,11 +91,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 138
+        "count": 140
       },
       {
         "reason": "qid",
-        "count": 136
+        "count": 139
       },
       {
         "reason": "missing_relation",
@@ -103,7 +103,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 77
+        "count": 80
       },
       {
         "reason": "zh_label",
@@ -115,7 +115,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 31
+        "count": 34
       },
       {
         "reason": "duplicate_id:2",
@@ -146,15 +146,15 @@
         "count": 3
       },
       {
+        "reason": "long_title",
+        "count": 2
+      },
+      {
         "reason": "disambiguation",
         "count": 1
       },
       {
         "reason": "external_id",
-        "count": 1
-      },
-      {
-        "reason": "long_title",
         "count": 1
       },
       {
@@ -170,7 +170,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 81
+        "count": 84
       },
       {
         "status": "error",
@@ -291,6 +291,29 @@
       "priority": 99.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q22294683",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "sporocarp development involved in sexual reproduction",
+      "children_status": "pending",
+      "quality_score": 41,
+      "review_status": "needs_review",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "long_title",
+        "relation:has_part"
+      ],
+      "id": "Q22294168",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22294168",
+      "path": "万物 / 生命 / 繁殖 / 有性生殖 / sporocarp development involved in sexual reproduction",
+      "location": "nodes/Q22294168.json",
+      "priority": 99.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q22294168",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },
@@ -3096,6 +3119,52 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1080238",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "gamete generation",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q14903781",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q14903781",
+      "path": "万物 / 生命 / 繁殖 / 有性生殖 / gamete generation",
+      "location": "nodes/Q14903781.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q14903781",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "sexual sporulation",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q22294442",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22294442",
+      "path": "万物 / 生命 / 繁殖 / 有性生殖 / sexual sporulation",
+      "location": "nodes/Q22294442.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q22294442",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

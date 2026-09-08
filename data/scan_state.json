@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-07T02:07:25Z",
+  "updated_at": "2026-09-08T02:19:17Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q161",
-  "last_scan_title": "纤维",
-  "candidate_count": 993,
+  "last_scan_key": "id:wikipedia:zh:Category:主觀體驗",
+  "last_scan_title": "主觀體驗",
+  "candidate_count": 994,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -34,8 +34,11 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 9,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -44,37 +47,37 @@
     "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 5
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-07T02:06:20Z",
+      "occurred_at": "2026-09-08T02:18:12Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-07T02:16:20Z",
+      "cooldown_until": "2026-09-08T02:28:12Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 993,
+    "candidate_count": 994,
     "source_progress_counts": {
       "4": 14,
-      "2": 45,
+      "2": 44,
       "1": 17,
       "0": 805,
-      "3": 112
+      "3": 114
     },
     "next_source_counts": {
-      "conceptnet": 168,
-      "wikidata": 19,
+      "conceptnet": 170,
+      "wikidata": 18,
       "wikipedia": 466,
       "wikidata_api": 340
     },
     "available_next_source_counts": {
-      "conceptnet": 168,
-      "wikidata": 19,
+      "conceptnet": 170,
+      "wikidata": 18,
       "wikipedia": 466,
       "wikidata_api": 340
     },
@@ -99,24 +102,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1434580",
-        "title": "原質 (哲學)",
+        "scan_key": "id:Q173432",
+        "title": "无性生殖",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q173432",
-        "title": "无性生殖",
+        "scan_key": "id:Q1783121",
+        "title": "有機物質",
         "next_source": "wikipedia",
         "source_progress": 1,
-        "priority": 135.0,
+        "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1783121",
-        "title": "有機物質",
+        "scan_key": "id:Q182353",
+        "title": "有性生殖",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -152,24 +155,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1434580",
-          "title": "原質 (哲學)",
+          "scan_key": "id:Q173432",
+          "title": "无性生殖",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q173432",
-          "title": "无性生殖",
+          "scan_key": "id:Q1783121",
+          "title": "有機物質",
           "next_source": "wikipedia",
           "source_progress": 1,
-          "priority": 135.0,
+          "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1783121",
-          "title": "有機物質",
+          "scan_key": "id:Q182353",
+          "title": "有性生殖",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,

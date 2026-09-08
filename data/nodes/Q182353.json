@@ -1,18 +1,96 @@
 {
   "id": "Q182353",
   "title": "有性生殖",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "sporocarp development involved in sexual reproduction",
+      "data_source": "nodes/Q22294168.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q22294168",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22294168",
+      "quality_score": 41,
+      "quality_version": 3,
+      "review_status": "needs_review"
+    },
+    {
+      "title": "sexual sporulation",
+      "data_source": "nodes/Q22294442.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q22294442",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q22294442",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "受精",
+      "data_source": "nodes/Q14890574.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14890574",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q14890574",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "gamete generation",
+      "data_source": "nodes/Q14903781.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q14903781",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q14903781",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "交配",
+      "data_source": "nodes/Q228395.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q228395",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q228395",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q182353",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-09-08T02:18:14Z",
+  "last_checked_at": "2026-09-08T02:18:14Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ],
+  "source_checked": {
+    "wikidata_api": "2026-09-08T02:18:14Z"
+  },
+  "is_leaf": false
 }

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-07T02:07:25Z",
+  "generated_at": "2026-09-08T02:19:18Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1434580",
-      "title": "原質 (哲學)",
+      "scan_key": "id:Q173432",
+      "title": "无性生殖",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q173432",
-      "title": "无性生殖",
+      "scan_key": "id:Q1783121",
+      "title": "有機物質",
       "next_source": "wikipedia",
       "source_progress": 1,
-      "priority": 135.0,
+      "priority": 130.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q1783121",
-      "title": "有機物質",
+      "scan_key": "id:Q182353",
+      "title": "有性生殖",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

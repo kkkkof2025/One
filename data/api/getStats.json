@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-07T02:07:25Z",
-  "total_nodes": 1000,
-  "last_added_nodes": 1,
+  "generated_at": "2026-09-08T02:19:17Z",
+  "total_nodes": 1014,
+  "last_added_nodes": 14,
   "last_request_count": 5,
-  "last_scanned_nodes": 1059,
-  "last_candidate_nodes": 993,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 1060,
+  "last_candidate_nodes": 994,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -19,8 +19,11 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 9,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -29,27 +32,27 @@
     "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 5
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 993,
+    "candidate_count": 994,
     "source_progress_counts": {
       "4": 14,
-      "2": 45,
+      "2": 44,
       "1": 17,
       "0": 805,
-      "3": 112
+      "3": 114
     },
     "next_source_counts": {
-      "conceptnet": 168,
-      "wikidata": 19,
+      "conceptnet": 170,
+      "wikidata": 18,
       "wikipedia": 466,
       "wikidata_api": 340
     },
     "available_next_source_counts": {
-      "conceptnet": 168,
-      "wikidata": 19,
+      "conceptnet": 170,
+      "wikidata": 18,
       "wikipedia": 466,
       "wikidata_api": 340
     },
@@ -74,24 +77,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1434580",
-        "title": "原質 (哲學)",
+        "scan_key": "id:Q173432",
+        "title": "无性生殖",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q173432",
-        "title": "无性生殖",
+        "scan_key": "id:Q1783121",
+        "title": "有機物質",
         "next_source": "wikipedia",
         "source_progress": 1,
-        "priority": 135.0,
+        "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q1783121",
-        "title": "有機物質",
+        "scan_key": "id:Q182353",
+        "title": "有性生殖",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -127,24 +130,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1434580",
-          "title": "原質 (哲學)",
+          "scan_key": "id:Q173432",
+          "title": "无性生殖",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q173432",
-          "title": "无性生殖",
+          "scan_key": "id:Q1783121",
+          "title": "有機物質",
           "next_source": "wikipedia",
           "source_progress": 1,
-          "priority": 135.0,
+          "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q1783121",
-          "title": "有機物質",
+          "scan_key": "id:Q182353",
+          "title": "有性生殖",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -164,54 +167,54 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 23,
+    "added_nodes": 37,
     "requests": 40,
-    "added_per_request": 0.575,
+    "added_per_request": 0.925,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-09-07T02:07:25Z",
+    "last_productive_run_at": "2026-09-08T02:19:17Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 13,
+      "wikidata": 14,
       "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 3
+      "dbpedia": 2
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 3,
-        "children_returned_requests": 4,
-        "productive_requests": 4,
-        "added_nodes": 9,
-        "no_children_requests": 6,
-        "unchanged_requests": 6
-      },
-      "wikipedia": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 13
-      },
-      "wikidata_api": {
+        "children_returned_requests": 5,
+        "productive_requests": 5,
+        "added_nodes": 18,
         "no_children_requests": 7,
         "unchanged_requests": 7,
-        "children_returned_requests": 1,
-        "productive_requests": 1,
-        "added_nodes": 1
+        "rate_limited_requests": 2
+      },
+      "wikipedia": {
+        "children_returned_requests": 3,
+        "productive_requests": 3,
+        "added_nodes": 13,
+        "no_children_requests": 5,
+        "unchanged_requests": 5
+      },
+      "wikidata_api": {
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 6
       },
       "dbpedia": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 140,
+  "history_entries": 141,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
