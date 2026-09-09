@@ -349,7 +349,7 @@
     },
     {
       "title": "有機物質",
-      "children_count": 1,
+      "children_count": 22,
       "id": "Q1783121",
       "data_source": "nodes/Q1783121.json",
       "source_provider": "wikidata",
@@ -360,18 +360,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-08T02:18:13Z",
-      "last_checked_at": "2026-09-08T02:18:13Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-09T02:21:20Z",
+      "last_checked_at": "2026-09-09T02:21:20Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-09-08T02:18:13Z"
       },
       "source_checked": {
         "wikidata_api": "2026-09-07T02:06:21Z",
-        "wikipedia": "2026-09-08T02:18:13Z"
+        "wikipedia": "2026-09-08T02:18:13Z",
+        "wikidata": "2026-09-09T02:21:20Z"
       }
     },
     {

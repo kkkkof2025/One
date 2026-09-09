@@ -295,15 +295,24 @@
       {
         "title": "神經科學",
         "data_source": "nodes/Q207011.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q207011",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q207011",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-09-09T02:21:20Z",
+        "last_checked_at": "2026-09-09T02:21:20Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-09-09T02:21:20Z"
+        }
       },
       {
         "title": "系统生物学",

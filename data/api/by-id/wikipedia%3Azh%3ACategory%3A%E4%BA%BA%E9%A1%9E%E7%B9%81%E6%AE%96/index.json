@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人類繁殖",
+  "source": "nodes/人類繁殖-9fd07e173c77.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人類繁殖-9fd07e173c77.json",
+  "legacy_children": "../../children/nodes/人類繁殖-9fd07e173c77.json"
+}

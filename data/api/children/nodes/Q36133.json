@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q36133.json",
+  "node": {
+    "title": "土壤",
+    "children_count": 0,
+    "id": "Q36133",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q36133",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

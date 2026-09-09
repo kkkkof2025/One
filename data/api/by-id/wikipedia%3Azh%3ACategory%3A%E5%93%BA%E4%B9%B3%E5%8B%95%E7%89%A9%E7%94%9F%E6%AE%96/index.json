@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:哺乳動物生殖",
+  "source": "nodes/哺乳動物生殖-54349b87e609.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/哺乳動物生殖-54349b87e609.json",
+  "legacy_children": "../../children/nodes/哺乳動物生殖-54349b87e609.json"
+}

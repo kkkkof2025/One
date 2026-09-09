@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-08T02:19:17Z",
-  "total_nodes": 1014,
-  "last_added_nodes": 14,
+  "generated_at": "2026-09-09T02:22:25Z",
+  "total_nodes": 1041,
+  "last_added_nodes": 30,
   "last_request_count": 5,
-  "last_scanned_nodes": 1060,
-  "last_candidate_nodes": 994,
-  "last_unchanged_requests": 2,
+  "last_scanned_nodes": 1074,
+  "last_candidate_nodes": 1007,
+  "last_unchanged_requests": 1,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -21,40 +21,41 @@
     "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 9,
+      "added_nodes": 21,
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikipedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 6
     },
     "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 5
+      "added_nodes": 3
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 994,
+    "candidate_count": 1007,
     "source_progress_counts": {
       "4": 14,
-      "2": 44,
+      "2": 43,
       "1": 17,
-      "0": 805,
-      "3": 114
+      "0": 817,
+      "3": 116
     },
     "next_source_counts": {
-      "conceptnet": 170,
-      "wikidata": 18,
+      "conceptnet": 172,
+      "wikidata": 17,
       "wikipedia": 466,
-      "wikidata_api": 340
+      "wikidata_api": 352
     },
     "available_next_source_counts": {
-      "conceptnet": 170,
-      "wikidata": 18,
+      "conceptnet": 172,
+      "wikidata": 17,
       "wikipedia": 466,
-      "wikidata_api": 340
+      "wikidata_api": 352
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +78,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q173432",
-        "title": "无性生殖",
-        "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 135.0,
-        "depth": 3
-      },
-      {
         "scan_key": "id:Q1783121",
         "title": "有機物質",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 130.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q182353",
         "title": "有性生殖",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 130.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q207011",
+        "title": "神經科學",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -130,24 +131,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q173432",
-          "title": "无性生殖",
-          "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 135.0,
-          "depth": 3
-        },
-        {
           "scan_key": "id:Q1783121",
           "title": "有機物質",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 130.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q182353",
           "title": "有性生殖",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 130.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q207011",
+          "title": "神經科學",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -167,11 +168,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 37,
+    "added_nodes": 63,
     "requests": 40,
-    "added_per_request": 0.925,
+    "added_per_request": 1.575,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-09-08T02:19:17Z",
+    "last_productive_run_at": "2026-09-09T02:22:25Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 14,
@@ -184,26 +185,26 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 5,
-        "productive_requests": 5,
-        "added_nodes": 18,
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 37,
+        "no_children_requests": 8,
+        "unchanged_requests": 8,
         "rate_limited_requests": 2
       },
       "wikipedia": {
         "children_returned_requests": 3,
         "productive_requests": 3,
-        "added_nodes": 13,
+        "added_nodes": 17,
         "no_children_requests": 5,
         "unchanged_requests": 5
       },
       "wikidata_api": {
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 6
+        "no_children_requests": 5,
+        "unchanged_requests": 5,
+        "children_returned_requests": 3,
+        "productive_requests": 3,
+        "added_nodes": 9
       },
       "dbpedia": {
         "no_children_requests": 2,
@@ -214,7 +215,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 141,
+  "history_entries": 142,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

@@ -3,7 +3,7 @@
   "source": "nodes/Q182353.json",
   "node": {
     "title": "有性生殖",
-    "children_count": 5,
+    "children_count": 11,
     "id": "Q182353",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,14 +13,15 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-08T02:18:14Z",
-    "last_checked_at": "2026-09-08T02:18:14Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-09-09T02:21:20Z",
+    "last_checked_at": "2026-09-09T02:21:20Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-09-08T02:18:14Z"
+      "wikidata_api": "2026-09-08T02:18:14Z",
+      "wikipedia": "2026-09-09T02:21:20Z"
     }
   },
   "children": [
@@ -93,7 +94,101 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "哺乳動物生殖",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:哺乳動物生殖",
+      "data_source": "nodes/哺乳動物生殖-54349b87e609.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%93%BA%E4%B9%B3%E5%8B%95%E7%89%A9%E7%94%9F%E6%AE%96",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "性",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:性",
+      "data_source": "nodes/性-b591ed830e9d.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 61,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "性选择",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:性选择",
+      "data_source": "nodes/性选择-7de3571a8688.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7%E9%80%89%E6%8B%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "交配",
+      "children_count": 8,
+      "id": "wikipedia:zh:Category:交配",
+      "data_source": "nodes/交配-d8cd55b920c5.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%A4%E9%85%8D",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-08-14T01:13:27Z",
+      "last_checked_at": "2026-08-14T01:13:27Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-07-30T01:43:49Z",
+        "wikidata": "2026-08-14T01:13:27Z"
+      }
+    },
+    {
+      "title": "人類繁殖",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:人類繁殖",
+      "data_source": "nodes/人類繁殖-9fd07e173c77.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E9%A1%9E%E7%B9%81%E6%AE%96",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "性別決定系統",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:性別決定系統",
+      "data_source": "nodes/性別決定系統-3dede869da84.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%80%A7%E5%88%A5%E6%B1%BA%E5%AE%9A%E7%B3%BB%E7%B5%B1",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 5
+  "child_count": 11
 }
