@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神经工程",
+  "source": "nodes/神经工程-e236c33ca7f3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神经工程-e236c33ca7f3.json",
+  "legacy_children": "../../children/nodes/神经工程-e236c33ca7f3.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神經科學小作品",
+  "source": "nodes/神經科學小作品-095b96c8fa2d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神經科學小作品-095b96c8fa2d.json",
+  "legacy_children": "../../children/nodes/神經科學小作品-095b96c8fa2d.json"
+}

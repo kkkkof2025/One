@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:心理學分支",
+  "source": "nodes/心理學分支-dcb6a8f78369.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/心理學分支-dcb6a8f78369.json",
+  "legacy_children": "../../children/nodes/心理學分支-dcb6a8f78369.json"
+}

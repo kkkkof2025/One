@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:聽覺系統",
+  "source": "nodes/聽覺系統-8e3bf625748b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/聽覺系統-8e3bf625748b.json",
+  "legacy_children": "../../children/nodes/聽覺系統-8e3bf625748b.json"
+}

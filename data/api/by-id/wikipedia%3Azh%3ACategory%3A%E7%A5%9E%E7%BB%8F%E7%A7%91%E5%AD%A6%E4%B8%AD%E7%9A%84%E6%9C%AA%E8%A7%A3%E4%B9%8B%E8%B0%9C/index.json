@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神经科学中的未解之谜",
+  "source": "nodes/神经科学中的未解之谜-d86421b4f081.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神经科学中的未解之谜-d86421b4f081.json",
+  "legacy_children": "../../children/nodes/神经科学中的未解之谜-d86421b4f081.json"
+}

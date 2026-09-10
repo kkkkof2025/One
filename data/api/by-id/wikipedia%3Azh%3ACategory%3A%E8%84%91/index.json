@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:脑",
+  "source": "nodes/脑-c0a12454ffd6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/脑-c0a12454ffd6.json",
+  "legacy_children": "../../children/nodes/脑-c0a12454ffd6.json"
+}

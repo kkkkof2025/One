@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:细胞神经科学",
+  "source": "nodes/细胞神经科学-00b0819f5de0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/细胞神经科学-00b0819f5de0.json",
+  "legacy_children": "../../children/nodes/细胞神经科学-00b0819f5de0.json"
+}

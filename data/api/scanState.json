@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-09T02:22:25Z",
+  "updated_at": "2026-09-10T02:20:27Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:健康行动主义",
-  "last_scan_title": "健康行动主义",
-  "candidate_count": 1007,
+  "last_scan_key": "id:wikipedia:zh:Category:健康领域",
+  "last_scan_title": "健康领域",
+  "candidate_count": 1034,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -20,67 +20,75 @@
   "available_sources": [
     "wikidata_api",
     "wikipedia",
-    "wikidata",
     "dbpedia"
   ],
   "source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
+    "wikidata": 1,
     "wikipedia": 1,
-    "wikidata_api": 1
+    "wikidata_api": 1,
+    "dbpedia": 1
   },
   "source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 21,
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "rate_limited_requests": 1
     },
     "wikipedia": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 6
+      "added_nodes": 33
     },
     "wikidata_api": {
       "children_returned_requests": 1,
       "productive_requests": 1,
       "added_nodes": 3
+    },
+    "dbpedia": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-09T02:21:20Z",
+      "occurred_at": "2026-09-10T02:20:20Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-09T02:31:20Z",
+      "cooldown_until": "2026-09-10T02:30:20Z",
       "last_error": "HTTP Error 502: Bad Gateway"
+    },
+    "wikidata": {
+      "source": "wikidata",
+      "reason": "rate_limited",
+      "occurred_at": "2026-09-10T02:20:20Z",
+      "retry_after_seconds": 1000,
+      "cooldown_until": "2026-09-10T02:37:00Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 1007,
+    "candidate_count": 1034,
     "source_progress_counts": {
       "4": 14,
-      "2": 43,
-      "1": 17,
-      "0": 817,
-      "3": 116
+      "2": 44,
+      "1": 16,
+      "0": 843,
+      "3": 117
     },
     "next_source_counts": {
-      "conceptnet": 172,
-      "wikidata": 17,
-      "wikipedia": 466,
-      "wikidata_api": 352
+      "conceptnet": 174,
+      "wikidata": 16,
+      "wikipedia": 469,
+      "wikidata_api": 375
     },
     "available_next_source_counts": {
-      "conceptnet": 172,
-      "wikidata": 17,
-      "wikipedia": 466,
-      "wikidata_api": 352
+      "conceptnet": 174,
+      "wikidata": 16,
+      "wikipedia": 469,
+      "wikidata_api": 375
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -103,24 +111,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1783121",
-        "title": "有機物質",
+        "scan_key": "id:Q182353",
+        "title": "有性生殖",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q182353",
-        "title": "有性生殖",
+        "scan_key": "id:Q207011",
+        "title": "神經科學",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q207011",
-        "title": "神經科學",
+        "scan_key": "id:Q208920",
+        "title": "一维空间",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -156,24 +164,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1783121",
-          "title": "有機物質",
+          "scan_key": "id:Q182353",
+          "title": "有性生殖",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q182353",
-          "title": "有性生殖",
+          "scan_key": "id:Q207011",
+          "title": "神經科學",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q207011",
-          "title": "神經科學",
+          "scan_key": "id:Q208920",
+          "title": "一维空间",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-09T02:22:28Z",
+  "generated_at": "2026-09-10T02:20:30Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 143,
+  "total_candidates": 144,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 143,
+  "total_items": 144,
   "reason_distribution": {
-    "total_items": 143,
+    "total_items": 144,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 80,
+        "count": 81,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -91,11 +91,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 140
+        "count": 141
       },
       {
         "reason": "qid",
-        "count": 139
+        "count": 140
       },
       {
         "reason": "missing_relation",
@@ -103,7 +103,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 80
+        "count": 81
       },
       {
         "reason": "zh_label",
@@ -115,7 +115,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 34
+        "count": 35
       },
       {
         "reason": "duplicate_id:2",
@@ -170,7 +170,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 84
+        "count": 85
       },
       {
         "status": "error",
@@ -3119,6 +3119,29 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q1080238",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "coordinate axis",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q1783819",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q1783819",
+      "path": "万物 / 宇宙 / 空间 / 一维空间 / coordinate axis",
+      "location": "nodes/Q1783819.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q1783819",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

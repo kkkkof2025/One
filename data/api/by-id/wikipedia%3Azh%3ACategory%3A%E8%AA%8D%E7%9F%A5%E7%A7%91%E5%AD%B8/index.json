@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:認知科學",
+  "source": "nodes/認知科學-7f9a97e1014b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/認知科學-7f9a97e1014b.json",
+  "legacy_children": "../../children/nodes/認知科學-7f9a97e1014b.json"
+}

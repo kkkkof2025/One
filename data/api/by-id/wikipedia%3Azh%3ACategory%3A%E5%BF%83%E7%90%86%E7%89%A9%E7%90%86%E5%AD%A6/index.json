@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:心理物理学",
+  "source": "nodes/心理物理学-89f09212512b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/心理物理学-89f09212512b.json",
+  "legacy_children": "../../children/nodes/心理物理学-89f09212512b.json"
+}

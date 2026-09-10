@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/夢-be16e57421d4.json",
+  "node": {
+    "id": "wikipedia:zh:Category:夢",
+    "title": "夢",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%A2",
+    "source_page_id": 493416,
+    "quality_score": 61,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "short_title",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

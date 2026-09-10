@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:人工智能",
+  "source": "nodes/人工智能-e274e3090c5e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/人工智能-e274e3090c5e.json",
+  "legacy_children": "../../children/nodes/人工智能-e274e3090c5e.json"
+}

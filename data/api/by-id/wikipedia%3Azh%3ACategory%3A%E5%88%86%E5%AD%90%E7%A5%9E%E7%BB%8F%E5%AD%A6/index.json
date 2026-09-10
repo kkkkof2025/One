@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:分子神经学",
+  "source": "nodes/分子神经学-2ea013d7a1d9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/分子神经学-2ea013d7a1d9.json",
+  "legacy_children": "../../children/nodes/分子神经学-2ea013d7a1d9.json"
+}

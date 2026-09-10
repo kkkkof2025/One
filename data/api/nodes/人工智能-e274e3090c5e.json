@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/人工智能-e274e3090c5e.json",
+  "node": {
+    "id": "wikipedia:zh:Category:人工智能",
+    "title": "人工智能",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD",
+    "source_page_id": 43170,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:神經科學家",
+  "title": "神經科學家",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E7%B6%93%E7%A7%91%E5%AD%B8%E5%AE%B6",
+  "source_page_id": 648396,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

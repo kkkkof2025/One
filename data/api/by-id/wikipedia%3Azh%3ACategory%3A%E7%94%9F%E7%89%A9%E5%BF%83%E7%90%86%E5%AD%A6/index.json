@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物心理学",
+  "source": "nodes/生物心理学-42a0a1234d0a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物心理学-42a0a1234d0a.json",
+  "legacy_children": "../../children/nodes/生物心理学-42a0a1234d0a.json"
+}

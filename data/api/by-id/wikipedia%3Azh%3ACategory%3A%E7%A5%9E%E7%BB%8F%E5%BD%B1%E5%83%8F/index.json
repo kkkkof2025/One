@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神经影像",
+  "source": "nodes/神经影像-c1abc0e31dec.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神经影像-c1abc0e31dec.json",
+  "legacy_children": "../../children/nodes/神经影像-c1abc0e31dec.json"
+}

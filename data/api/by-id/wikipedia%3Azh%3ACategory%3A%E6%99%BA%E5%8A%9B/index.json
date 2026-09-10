@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:智力",
+  "source": "nodes/智力-7e142c33c544.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/智力-7e142c33c544.json",
+  "legacy_children": "../../children/nodes/智力-7e142c33c544.json"
+}

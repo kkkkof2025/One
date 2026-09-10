@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:味覺",
+  "source": "nodes/味覺-f465204dbcf4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/味覺-f465204dbcf4.json",
+  "legacy_children": "../../children/nodes/味覺-f465204dbcf4.json"
+}

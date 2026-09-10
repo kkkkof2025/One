@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:神经科学史",
+  "source": "nodes/神经科学史-99c688cf8e5e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/神经科学史-99c688cf8e5e.json",
+  "legacy_children": "../../children/nodes/神经科学史-99c688cf8e5e.json"
+}

@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/神经解剖学-fbed7daf9f57.json",
+  "node": {
+    "id": "wikipedia:zh:Category:神经解剖学",
+    "title": "神经解剖学",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E7%BB%8F%E8%A7%A3%E5%89%96%E5%AD%A6",
+    "source_page_id": 431071,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

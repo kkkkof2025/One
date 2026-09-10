@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:认知心理学",
+  "source": "nodes/认知心理学-e0c07a8d2bf6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/认知心理学-e0c07a8d2bf6.json",
+  "legacy_children": "../../children/nodes/认知心理学-e0c07a8d2bf6.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:行为神经科学",
+  "source": "nodes/行为神经科学-0336bc008286.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/行为神经科学-0336bc008286.json",
+  "legacy_children": "../../children/nodes/行为神经科学-0336bc008286.json"
+}

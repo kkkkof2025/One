@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/神經生理學-c7fe140a2c96.json",
+  "node": {
+    "id": "wikipedia:zh:Category:神經生理學",
+    "title": "神經生理學",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A5%9E%E7%B6%93%E7%94%9F%E7%90%86%E5%AD%B8",
+    "source_page_id": 1275409,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

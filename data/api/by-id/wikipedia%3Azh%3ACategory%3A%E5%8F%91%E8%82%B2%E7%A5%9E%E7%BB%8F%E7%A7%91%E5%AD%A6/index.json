@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:发育神经科学",
+  "source": "nodes/发育神经科学-fc3f5022daa9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/发育神经科学-fc3f5022daa9.json",
+  "legacy_children": "../../children/nodes/发育神经科学-fc3f5022daa9.json"
+}

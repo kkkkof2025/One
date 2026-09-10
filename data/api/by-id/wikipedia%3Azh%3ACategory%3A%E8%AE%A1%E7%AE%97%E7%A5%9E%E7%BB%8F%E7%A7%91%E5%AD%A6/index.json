@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:计算神经科学",
+  "source": "nodes/计算神经科学-784776d62c7f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/计算神经科学-784776d62c7f.json",
+  "legacy_children": "../../children/nodes/计算神经科学-784776d62c7f.json"
+}
