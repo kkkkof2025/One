@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-10T02:20:27Z",
+  "generated_at": "2026-09-11T02:15:42Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q207011",
-      "title": "神經科學",
+      "scan_key": "id:Q208920",
+      "title": "一维空间",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 130.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q208920",
-      "title": "一维空间",
+      "scan_key": "id:Q2098469",
+      "title": "電漿醫學",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-10T02:20:27Z",
+  "generated_at": "2026-09-11T02:15:42Z",
   "total_nodes": 1076,
-  "last_added_nodes": 36,
+  "last_added_nodes": 0,
   "last_request_count": 5,
-  "last_scanned_nodes": 1104,
-  "last_candidate_nodes": 1034,
-  "last_unchanged_requests": 1,
+  "last_scanned_nodes": 1140,
+  "last_candidate_nodes": 1069,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -23,14 +23,12 @@
       "rate_limited_requests": 1
     },
     "wikipedia": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 33
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikidata_api": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 3
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "dbpedia": {
       "no_children_requests": 1,
@@ -38,25 +36,25 @@
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1034,
+    "candidate_count": 1069,
     "source_progress_counts": {
       "4": 14,
-      "2": 44,
-      "1": 16,
-      "0": 843,
+      "2": 46,
+      "1": 15,
+      "0": 877,
       "3": 117
     },
     "next_source_counts": {
       "conceptnet": 174,
-      "wikidata": 16,
-      "wikipedia": 469,
-      "wikidata_api": 375
+      "wikidata": 17,
+      "wikipedia": 501,
+      "wikidata_api": 377
     },
     "available_next_source_counts": {
       "conceptnet": 174,
-      "wikidata": 16,
-      "wikipedia": 469,
-      "wikidata_api": 375
+      "wikidata": 17,
+      "wikipedia": 501,
+      "wikidata_api": 377
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -87,16 +85,16 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q207011",
-        "title": "神經科學",
+        "scan_key": "id:Q208920",
+        "title": "一维空间",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q208920",
-        "title": "一维空间",
+        "scan_key": "id:Q2098469",
+        "title": "電漿醫學",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -140,16 +138,16 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q207011",
-          "title": "神經科學",
+          "scan_key": "id:Q208920",
+          "title": "一维空间",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q208920",
-          "title": "一维空间",
+          "scan_key": "id:Q2098469",
+          "title": "電漿醫學",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -172,23 +170,23 @@
     "added_nodes": 89,
     "requests": 40,
     "added_per_request": 2.225,
-    "zero_growth_streak": 0,
+    "zero_growth_streak": 1,
     "last_productive_run_at": "2026-09-10T02:20:27Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 13,
+      "wikidata": 12,
       "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 3
+      "dbpedia": 4
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "no_children_requests": 8,
-        "unchanged_requests": 8,
-        "rate_limited_requests": 3,
+        "rate_limited_requests": 4,
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
         "children_returned_requests": 2,
         "productive_requests": 2,
         "added_nodes": 30
@@ -208,15 +206,15 @@
         "added_nodes": 12
       },
       "dbpedia": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3
+        "no_children_requests": 4,
+        "unchanged_requests": 4
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 143,
+  "history_entries": 144,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
