@@ -158,6 +158,110 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "雄性",
+        "data_source": "nodes/Q44148.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q44148",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q44148",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "雌性",
+        "data_source": "nodes/Q43445.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q43445",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q43445",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "交配制度",
+        "data_source": "nodes/Q4584563.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4584563",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4584563",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "人類生殖",
+        "data_source": "nodes/Q3427336.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3427336",
+        "source_provider": "wikidata",
+        "source_relation": "has_parts_of_class",
+        "source_url": "https://www.wikidata.org/wiki/Q3427336",
+        "quality_score": 87,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "哺乳动物的繁殖",
+        "data_source": "nodes/Q6105961.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q6105961",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q6105961",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "植物性別",
+        "data_source": "nodes/Q1608538.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1608538",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1608538",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "雌全异株",
+        "data_source": "nodes/Q1558451.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1558451",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1558451",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "雌雄同体",
+        "data_source": "nodes/Q16674976.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q16674976",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q16674976",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata",
@@ -174,15 +278,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-09T02:21:20Z",
-    "last_checked_at": "2026-09-09T02:21:20Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-12T02:23:48Z",
+    "last_checked_at": "2026-09-12T02:23:48Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-09-08T02:18:14Z",
-      "wikipedia": "2026-09-09T02:21:20Z"
+      "wikipedia": "2026-09-09T02:21:20Z",
+      "wikidata": "2026-09-12T02:23:48Z"
     },
     "is_leaf": false
   }

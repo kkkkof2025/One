@@ -3,7 +3,7 @@
   "source": "nodes/Q182353.json",
   "node": {
     "title": "有性生殖",
-    "children_count": 11,
+    "children_count": 19,
     "id": "Q182353",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,15 +13,16 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-09T02:21:20Z",
-    "last_checked_at": "2026-09-09T02:21:20Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-12T02:23:48Z",
+    "last_checked_at": "2026-09-12T02:23:48Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-09-08T02:18:14Z",
-      "wikipedia": "2026-09-09T02:21:20Z"
+      "wikipedia": "2026-09-09T02:21:20Z",
+      "wikidata": "2026-09-12T02:23:48Z"
     }
   },
   "children": [
@@ -188,7 +189,119 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "雄性",
+      "children_count": 0,
+      "id": "Q44148",
+      "data_source": "nodes/Q44148.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q44148",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雌性",
+      "children_count": 0,
+      "id": "Q43445",
+      "data_source": "nodes/Q43445.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q43445",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "交配制度",
+      "children_count": 0,
+      "id": "Q4584563",
+      "data_source": "nodes/Q4584563.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4584563",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "人類生殖",
+      "children_count": 0,
+      "id": "Q3427336",
+      "data_source": "nodes/Q3427336.json",
+      "source_provider": "wikidata",
+      "source_relation": "has_parts_of_class",
+      "source_url": "https://www.wikidata.org/wiki/Q3427336",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 87,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "哺乳动物的繁殖",
+      "children_count": 0,
+      "id": "Q6105961",
+      "data_source": "nodes/Q6105961.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q6105961",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "植物性別",
+      "children_count": 0,
+      "id": "Q1608538",
+      "data_source": "nodes/Q1608538.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1608538",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雌全异株",
+      "children_count": 0,
+      "id": "Q1558451",
+      "data_source": "nodes/Q1558451.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1558451",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雌雄同体",
+      "children_count": 0,
+      "id": "Q16674976",
+      "data_source": "nodes/Q16674976.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q16674976",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 11
+  "child_count": 19
 }

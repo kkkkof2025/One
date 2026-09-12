@@ -1,26 +1,27 @@
 {
-  "generated_at": "2026-09-11T02:15:42Z",
-  "total_nodes": 1076,
-  "last_added_nodes": 0,
+  "generated_at": "2026-09-12T02:23:48Z",
+  "total_nodes": 1099,
+  "last_added_nodes": 24,
   "last_request_count": 5,
   "last_scanned_nodes": 1140,
   "last_candidate_nodes": 1069,
-  "last_unchanged_requests": 3,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "children_returned_requests": 2,
+      "productive_requests": 2,
+      "added_nodes": 24
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -29,32 +30,28 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 1069,
     "source_progress_counts": {
       "4": 14,
-      "2": 46,
+      "3": 118,
       "1": 15,
-      "0": 877,
-      "3": 117
+      "0": 876,
+      "2": 46
     },
     "next_source_counts": {
       "conceptnet": 174,
-      "wikidata": 17,
+      "wikidata": 18,
       "wikipedia": 501,
-      "wikidata_api": 377
+      "wikidata_api": 376
     },
     "available_next_source_counts": {
       "conceptnet": 174,
-      "wikidata": 17,
+      "wikidata": 18,
       "wikipedia": 501,
-      "wikidata_api": 377
+      "wikidata_api": 376
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +74,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q182353",
-        "title": "有性生殖",
+        "scan_key": "id:Q207011",
+        "title": "神經科學",
         "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 130.0,
-        "depth": 3
-      },
-      {
-        "scan_key": "id:Q208920",
-        "title": "一维空间",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "source_progress": 3,
         "priority": 130.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q2098469",
         "title": "電漿醫學",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q214609",
+        "title": "材料",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -130,24 +127,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q182353",
-          "title": "有性生殖",
+          "scan_key": "id:Q207011",
+          "title": "神經科學",
           "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 130.0,
-          "depth": 3
-        },
-        {
-          "scan_key": "id:Q208920",
-          "title": "一维空间",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "source_progress": 3,
           "priority": 130.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q2098469",
           "title": "電漿醫學",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q214609",
+          "title": "材料",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -167,29 +164,29 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 89,
+    "added_nodes": 113,
     "requests": 40,
-    "added_per_request": 2.225,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-09-10T02:20:27Z",
+    "added_per_request": 2.825,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-09-12T02:23:48Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 12,
+      "wikidata": 13,
       "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 4
+      "dbpedia": 3
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 4,
+        "rate_limited_requests": 3,
         "no_children_requests": 6,
         "unchanged_requests": 6,
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 30
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 54
       },
       "wikipedia": {
         "no_children_requests": 5,
@@ -206,15 +203,15 @@
         "added_nodes": 12
       },
       "dbpedia": {
-        "no_children_requests": 4,
-        "unchanged_requests": 4
+        "no_children_requests": 3,
+        "unchanged_requests": 3
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 144,
+  "history_entries": 145,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

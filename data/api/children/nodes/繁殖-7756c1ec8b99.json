@@ -330,7 +330,7 @@
     },
     {
       "title": "有性生殖",
-      "children_count": 11,
+      "children_count": 19,
       "id": "Q182353",
       "data_source": "nodes/Q182353.json",
       "source_provider": "wikidata",
@@ -341,15 +341,16 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-09T02:21:20Z",
-      "last_checked_at": "2026-09-09T02:21:20Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-12T02:23:48Z",
+      "last_checked_at": "2026-09-12T02:23:48Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
         "wikidata_api": "2026-09-08T02:18:14Z",
-        "wikipedia": "2026-09-09T02:21:20Z"
+        "wikipedia": "2026-09-09T02:21:20Z",
+        "wikidata": "2026-09-12T02:23:48Z"
       }
     },
     {

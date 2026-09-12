@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q841276.json",
+  "node": {
+    "title": "戴尔原则",
+    "children_count": 0,
+    "id": "Q841276",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q841276",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
