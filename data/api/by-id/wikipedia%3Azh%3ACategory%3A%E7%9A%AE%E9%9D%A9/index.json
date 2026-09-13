@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮革",
+  "source": "nodes/皮革-96283bd9bf99.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮革-96283bd9bf99.json",
+  "legacy_children": "../../children/nodes/皮革-96283bd9bf99.json"
+}

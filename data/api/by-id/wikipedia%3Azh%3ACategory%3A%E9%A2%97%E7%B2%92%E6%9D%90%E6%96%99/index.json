@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:颗粒材料",
+  "source": "nodes/颗粒材料-f602d2e55114.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/颗粒材料-f602d2e55114.json",
+  "legacy_children": "../../children/nodes/颗粒材料-f602d2e55114.json"
+}

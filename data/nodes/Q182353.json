@@ -204,7 +204,7 @@
       "source_provider": "wikidata",
       "source_relation": "has_parts_of_class",
       "source_url": "https://www.wikidata.org/wiki/Q3427336",
-      "quality_score": 87,
+      "quality_score": 79,
       "quality_version": 3,
       "review_status": "approved"
     },

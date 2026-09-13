@@ -190,7 +190,7 @@
     },
     {
       "title": "一维空间",
-      "children_count": 3,
+      "children_count": 7,
       "id": "Q208920",
       "data_source": "nodes/Q208920.json",
       "source_provider": "wikidata",
@@ -201,18 +201,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-11T02:15:41Z",
-      "last_checked_at": "2026-09-11T02:15:41Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-13T02:22:27Z",
+      "last_checked_at": "2026-09-13T02:22:27Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-09-11T02:15:41Z"
       },
       "source_checked": {
         "wikidata_api": "2026-09-10T02:20:21Z",
-        "wikipedia": "2026-09-11T02:15:41Z"
+        "wikipedia": "2026-09-11T02:15:41Z",
+        "wikidata": "2026-09-13T02:22:27Z"
       }
     },
     {
@@ -245,17 +246,26 @@
     },
     {
       "title": "二维空间",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q222032",
       "data_source": "nodes/Q222032.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q222032",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-13T02:21:22Z",
+      "last_checked_at": "2026-09-13T02:21:22Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-09-13T02:21:22Z"
+      }
     },
     {
       "title": "五維",

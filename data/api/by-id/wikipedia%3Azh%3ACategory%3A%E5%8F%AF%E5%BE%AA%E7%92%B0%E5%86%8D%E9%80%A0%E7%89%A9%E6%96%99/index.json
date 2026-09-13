@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:可循環再造物料",
+  "source": "nodes/可循環再造物料-42a2ba53ea9f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/可循環再造物料-42a2ba53ea9f.json",
+  "legacy_children": "../../children/nodes/可循環再造物料-42a2ba53ea9f.json"
+}

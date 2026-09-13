@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:材料力學",
+  "source": "nodes/材料力學-55c78e35c853.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/材料力學-55c78e35c853.json",
+  "legacy_children": "../../children/nodes/材料力學-55c78e35c853.json"
+}

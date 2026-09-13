@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:半導體材料",
+  "source": "nodes/半導體材料-9ba2221c045d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/半導體材料-9ba2221c045d.json",
+  "legacy_children": "../../children/nodes/半導體材料-9ba2221c045d.json"
+}

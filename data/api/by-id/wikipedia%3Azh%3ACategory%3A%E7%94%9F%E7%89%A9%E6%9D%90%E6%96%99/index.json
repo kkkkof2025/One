@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:生物材料",
+  "source": "nodes/生物材料-0dad7f0ccd3d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/生物材料-0dad7f0ccd3d.json",
+  "legacy_children": "../../children/nodes/生物材料-0dad7f0ccd3d.json"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:材料保护",
+  "source": "nodes/材料保护-617510d9b52a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/材料保护-617510d9b52a.json",
+  "legacy_children": "../../children/nodes/材料保护-617510d9b52a.json"
+}

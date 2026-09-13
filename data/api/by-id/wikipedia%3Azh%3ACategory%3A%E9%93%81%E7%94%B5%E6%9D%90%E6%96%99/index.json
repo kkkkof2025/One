@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:铁电材料",
+  "source": "nodes/铁电材料-9b4981514a57.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/铁电材料-9b4981514a57.json",
+  "legacy_children": "../../children/nodes/铁电材料-9b4981514a57.json"
+}

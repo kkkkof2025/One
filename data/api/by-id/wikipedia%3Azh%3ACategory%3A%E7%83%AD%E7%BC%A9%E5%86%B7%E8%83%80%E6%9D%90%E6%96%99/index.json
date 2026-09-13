@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:热缩冷胀材料",
+  "source": "nodes/热缩冷胀材料-bb596f041206.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/热缩冷胀材料-bb596f041206.json",
+  "legacy_children": "../../children/nodes/热缩冷胀材料-bb596f041206.json"
+}

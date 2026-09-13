@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:天然材料",
+  "source": "nodes/天然材料-e4873d8e6462.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/天然材料-e4873d8e6462.json",
+  "legacy_children": "../../children/nodes/天然材料-e4873d8e6462.json"
+}

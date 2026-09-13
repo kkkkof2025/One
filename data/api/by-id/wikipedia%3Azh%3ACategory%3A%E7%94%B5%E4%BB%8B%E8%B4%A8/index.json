@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:电介质",
+  "source": "nodes/电介质-16d1791f1dce.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/电介质-16d1791f1dce.json",
+  "legacy_children": "../../children/nodes/电介质-16d1791f1dce.json"
+}

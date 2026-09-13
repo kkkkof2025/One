@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/可循環再造物料-42a2ba53ea9f.json",
+  "node": {
+    "id": "wikipedia:zh:Category:可循環再造物料",
+    "title": "可循環再造物料",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8F%AF%E5%BE%AA%E7%92%B0%E5%86%8D%E9%80%A0%E7%89%A9%E6%96%99",
+    "source_page_id": 895254,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

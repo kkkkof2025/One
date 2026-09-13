@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-12T02:23:51Z",
+  "generated_at": "2026-09-13T02:22:30Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 145,
+  "total_candidates": 146,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 145,
+  "total_items": 146,
   "reason_distribution": {
-    "total_items": 145,
+    "total_items": 146,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 19,
+        "count": 20,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -91,11 +91,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 142
+        "count": 143
       },
       {
         "reason": "qid",
-        "count": 141
+        "count": 142
       },
       {
         "reason": "missing_relation",
@@ -107,7 +107,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 64
+        "count": 65
       },
       {
         "reason": "fetch_error",
@@ -119,15 +119,15 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 19
+        "count": 20
       },
       {
         "reason": "has_children",
-        "count": 10
+        "count": 11
       },
       {
         "reason": "loaded",
-        "count": 7
+        "count": 8
       },
       {
         "reason": "relation:instance",
@@ -138,11 +138,11 @@
         "count": 4
       },
       {
-        "reason": "missing_id",
-        "count": 3
+        "reason": "relation:subclass",
+        "count": 4
       },
       {
-        "reason": "relation:subclass",
+        "reason": "missing_id",
         "count": 3
       },
       {
@@ -184,7 +184,7 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 7
+        "count": 8
       }
     ]
   },
@@ -3512,6 +3512,33 @@
       "priority": 25.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q170430",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "一维空间",
+      "children_status": "loaded",
+      "quality_score": 100,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "loaded",
+        "duplicate_id:2",
+        "has_children"
+      ],
+      "id": "Q208920",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q208920",
+      "updated_at": "2026-09-13T02:22:27Z",
+      "path": "万物 / 宇宙 / 空间 / 一维空间",
+      "location": "nodes/Q208920.json",
+      "priority": 24.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q208920",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     }

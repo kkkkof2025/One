@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:紡織材料",
+  "source": "nodes/紡織材料-0184f6387619.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/紡織材料-0184f6387619.json",
+  "legacy_children": "../../children/nodes/紡織材料-0184f6387619.json"
+}

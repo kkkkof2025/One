@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:金属材料",
+  "source": "nodes/金属材料-fa572d4fc3e9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/金属材料-fa572d4fc3e9.json",
+  "legacy_children": "../../children/nodes/金属材料-fa572d4fc3e9.json"
+}

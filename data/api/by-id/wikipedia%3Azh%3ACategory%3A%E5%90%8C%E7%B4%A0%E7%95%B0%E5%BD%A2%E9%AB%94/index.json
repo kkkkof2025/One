@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:同素異形體",
+  "source": "nodes/同素異形體-5a3b3eaf7196.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/同素異形體-5a3b3eaf7196.json",
+  "legacy_children": "../../children/nodes/同素異形體-5a3b3eaf7196.json"
+}

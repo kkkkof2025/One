@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/黏合剂-32fadf14cefa.json",
+  "node": {
+    "id": "wikipedia:zh:Category:黏合剂",
+    "title": "黏合剂",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%BB%8F%E5%90%88%E5%89%82",
+    "source_page_id": 1643179,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

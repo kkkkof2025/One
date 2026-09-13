@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:核材料",
+  "source": "nodes/核材料-da8ee6478096.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/核材料-da8ee6478096.json",
+  "legacy_children": "../../children/nodes/核材料-da8ee6478096.json"
+}

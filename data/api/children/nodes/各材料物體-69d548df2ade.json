@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/各材料物體-69d548df2ade.json",
+  "node": {
+    "title": "各材料物體",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:各材料物體",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E6%9D%90%E6%96%99%E7%89%A9%E9%AB%94",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/电子材料-54c54b99e1c1.json",
+  "node": {
+    "title": "电子材料",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:电子材料",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%B5%E5%AD%90%E6%9D%90%E6%96%99",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

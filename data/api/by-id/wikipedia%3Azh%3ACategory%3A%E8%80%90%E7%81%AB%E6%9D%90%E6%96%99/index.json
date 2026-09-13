@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:耐火材料",
+  "source": "nodes/耐火材料-c3df702e2027.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/耐火材料-c3df702e2027.json",
+  "legacy_children": "../../children/nodes/耐火材料-c3df702e2027.json"
+}

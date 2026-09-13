@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:塗料",
+  "source": "nodes/塗料-07d5ff5c864b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/塗料-07d5ff5c864b.json",
+  "legacy_children": "../../children/nodes/塗料-07d5ff5c864b.json"
+}

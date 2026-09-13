@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:电子材料",
+  "source": "nodes/电子材料-54c54b99e1c1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/电子材料-54c54b99e1c1.json",
+  "legacy_children": "../../children/nodes/电子材料-54c54b99e1c1.json"
+}

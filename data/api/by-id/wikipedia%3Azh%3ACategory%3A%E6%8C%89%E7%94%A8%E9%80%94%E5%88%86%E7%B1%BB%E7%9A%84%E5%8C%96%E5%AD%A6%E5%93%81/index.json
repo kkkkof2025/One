@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:按用途分类的化学品",
+  "source": "nodes/按用途分类的化学品-9eb132194236.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/按用途分类的化学品-9eb132194236.json",
+  "legacy_children": "../../children/nodes/按用途分类的化学品-9eb132194236.json"
+}

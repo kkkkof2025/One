@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:毒剂",
+  "source": "nodes/毒剂-1bad7a2b55b4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/毒剂-1bad7a2b55b4.json",
+  "legacy_children": "../../children/nodes/毒剂-1bad7a2b55b4.json"
+}

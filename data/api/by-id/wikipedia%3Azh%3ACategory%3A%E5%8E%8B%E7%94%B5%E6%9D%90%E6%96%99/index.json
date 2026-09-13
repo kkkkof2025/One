@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:压电材料",
+  "source": "nodes/压电材料-f0d0f41d337a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/压电材料-f0d0f41d337a.json",
+  "legacy_children": "../../children/nodes/压电材料-f0d0f41d337a.json"
+}

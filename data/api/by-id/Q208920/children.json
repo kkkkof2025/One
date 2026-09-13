@@ -3,7 +3,7 @@
   "source": "nodes/Q208920.json",
   "node": {
     "title": "一维空间",
-    "children_count": 3,
+    "children_count": 7,
     "id": "Q208920",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-11T02:15:41Z",
-    "last_checked_at": "2026-09-11T02:15:41Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-13T02:22:27Z",
+    "last_checked_at": "2026-09-13T02:22:27Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-09-11T02:15:41Z"
     },
     "source_checked": {
       "wikidata_api": "2026-09-10T02:20:21Z",
-      "wikipedia": "2026-09-11T02:15:41Z"
+      "wikipedia": "2026-09-11T02:15:41Z",
+      "wikidata": "2026-09-13T02:22:27Z"
     }
   },
   "children": [
@@ -69,7 +70,63 @@
       "quality_score": 79,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "实直线",
+      "children_count": 0,
+      "id": "Q29654355",
+      "data_source": "nodes/Q29654355.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q29654355",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "實射影線",
+      "children_count": 0,
+      "id": "Q23937546",
+      "data_source": "nodes/Q23937546.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q23937546",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "数轴",
+      "children_count": 0,
+      "id": "Q35689",
+      "data_source": "nodes/Q35689.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q35689",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "曲线",
+      "children_count": 0,
+      "id": "Q161973",
+      "data_source": "nodes/Q161973.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q161973",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 3
+  "child_count": 7
 }

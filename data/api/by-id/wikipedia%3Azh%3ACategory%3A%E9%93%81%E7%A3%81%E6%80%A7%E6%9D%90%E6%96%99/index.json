@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:铁磁性材料",
+  "source": "nodes/铁磁性材料-6c7af271dd9b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/铁磁性材料-6c7af271dd9b.json",
+  "legacy_children": "../../children/nodes/铁磁性材料-6c7af271dd9b.json"
+}

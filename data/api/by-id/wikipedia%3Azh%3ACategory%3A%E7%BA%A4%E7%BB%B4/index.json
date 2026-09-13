@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:纤维",
+  "source": "nodes/纤维-e2546316b42c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/纤维-e2546316b42c.json",
+  "legacy_children": "../../children/nodes/纤维-e2546316b42c.json"
+}

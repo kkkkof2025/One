@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:超硬材料",
+  "source": "nodes/超硬材料-09bdb144554f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/超硬材料-09bdb144554f.json",
+  "legacy_children": "../../children/nodes/超硬材料-09bdb144554f.json"
+}

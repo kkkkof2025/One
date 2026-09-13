@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:污染物",
+  "source": "nodes/污染物-78f83eeb8354.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/污染物-78f83eeb8354.json",
+  "legacy_children": "../../children/nodes/污染物-78f83eeb8354.json"
+}

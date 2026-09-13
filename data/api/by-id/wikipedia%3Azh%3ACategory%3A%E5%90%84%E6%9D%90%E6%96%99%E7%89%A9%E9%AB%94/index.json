@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:各材料物體",
+  "source": "nodes/各材料物體-69d548df2ade.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/各材料物體-69d548df2ade.json",
+  "legacy_children": "../../children/nodes/各材料物體-69d548df2ade.json"
+}
