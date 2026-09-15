@@ -444,17 +444,26 @@
     },
     {
       "title": "狀態空間 (計算機科學)",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q230930",
       "data_source": "nodes/Q230930.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q230930",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-15T02:41:32Z",
+      "last_checked_at": "2026-09-15T02:41:32Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-09-15T02:41:32Z"
+      }
     },
     {
       "title": "纤维丛",
