@@ -257,18 +257,20 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-14T02:37:51Z",
-      "last_checked_at": "2026-09-14T02:37:51Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-16T02:35:58Z",
+      "last_checked_at": "2026-09-16T02:35:58Z",
+      "last_fetch_source": "dbpedia",
       "last_fetch_sources": [
-        "wikipedia"
+        "dbpedia"
       ],
       "source_no_children": {
-        "wikipedia": "2026-09-14T02:37:51Z"
+        "wikipedia": "2026-09-14T02:37:51Z",
+        "dbpedia": "2026-09-16T02:35:58Z"
       },
       "source_checked": {
         "wikidata_api": "2026-09-13T02:21:22Z",
-        "wikipedia": "2026-09-14T02:37:51Z"
+        "wikipedia": "2026-09-14T02:37:51Z",
+        "dbpedia": "2026-09-16T02:35:58Z"
       }
     },
     {
@@ -455,14 +457,18 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-15T02:41:32Z",
-      "last_checked_at": "2026-09-15T02:41:32Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-09-16T02:35:57Z",
+      "last_checked_at": "2026-09-16T02:35:57Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
+      "source_no_children": {
+        "wikipedia": "2026-09-16T02:35:57Z"
+      },
       "source_checked": {
-        "wikidata_api": "2026-09-15T02:41:32Z"
+        "wikidata_api": "2026-09-15T02:41:32Z",
+        "wikipedia": "2026-09-16T02:35:57Z"
       }
     },
     {
@@ -505,7 +511,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-16T02:35:57Z",
+      "last_checked_at": "2026-09-16T02:35:57Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-16T02:35:57Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-16T02:35:57Z"
+      }
     }
   ],
   "child_count": 28
