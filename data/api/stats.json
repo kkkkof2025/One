@@ -1,25 +1,27 @@
 {
-  "generated_at": "2026-09-16T02:35:58Z",
-  "total_nodes": 1140,
-  "last_added_nodes": 0,
+  "generated_at": "2026-09-17T02:41:10Z",
+  "total_nodes": 1146,
+  "last_added_nodes": 6,
   "last_request_count": 5,
   "last_scanned_nodes": 1206,
   "last_candidate_nodes": 1133,
-  "last_unchanged_requests": 3,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 6,
       "rate_limited_requests": 1
     },
     "wikipedia": {
@@ -29,32 +31,28 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 1133,
     "source_progress_counts": {
       "4": 15,
-      "2": 46,
+      "3": 123,
       "1": 14,
-      "0": 936,
-      "3": 122
+      "0": 935,
+      "2": 46
     },
     "next_source_counts": {
       "conceptnet": 180,
-      "wikidata": 16,
+      "wikidata": 17,
       "wikipedia": 537,
-      "wikidata_api": 400
+      "wikidata_api": 399
     },
     "available_next_source_counts": {
       "conceptnet": 180,
-      "wikidata": 16,
+      "wikidata": 17,
       "wikipedia": 537,
-      "wikidata_api": 400
+      "wikidata_api": 399
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +75,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q222958",
-        "title": "嫁接",
+        "scan_key": "id:Q222032",
+        "title": "二维空间",
         "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 135.0,
-        "depth": 3
-      },
-      {
-        "scan_key": "id:Q230930",
-        "title": "狀態空間 (計算機科學)",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "source_progress": 3,
         "priority": 130.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q24157361",
         "title": "負維空間",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q2581738",
+        "title": "虛假意識",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -130,24 +128,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q222958",
-          "title": "嫁接",
+          "scan_key": "id:Q222032",
+          "title": "二维空间",
           "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 135.0,
-          "depth": 3
-        },
-        {
-          "scan_key": "id:Q230930",
-          "title": "狀態空間 (計算機科學)",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "source_progress": 3,
           "priority": 130.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q24157361",
           "title": "負維空間",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q2581738",
+          "title": "虛假意識",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -167,11 +165,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 132,
+    "added_nodes": 108,
     "requests": 40,
-    "added_per_request": 3.3,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-09-15T02:41:33Z",
+    "added_per_request": 2.7,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-09-17T02:41:10Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 12,
@@ -184,26 +182,26 @@
         "transient_error_requests": 8
       },
       "wikidata": {
+        "rate_limited_requests": 5,
         "children_returned_requests": 4,
         "productive_requests": 4,
-        "added_nodes": 49,
-        "no_children_requests": 4,
-        "unchanged_requests": 4,
-        "rate_limited_requests": 4
+        "added_nodes": 34,
+        "no_children_requests": 3,
+        "unchanged_requests": 3
       },
       "wikipedia": {
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 75,
-        "no_children_requests": 5,
-        "unchanged_requests": 5
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 69,
+        "no_children_requests": 6,
+        "unchanged_requests": 6
       },
       "wikidata_api": {
-        "children_returned_requests": 4,
-        "productive_requests": 4,
-        "added_nodes": 8,
-        "no_children_requests": 4,
-        "unchanged_requests": 4
+        "children_returned_requests": 3,
+        "productive_requests": 3,
+        "added_nodes": 5,
+        "no_children_requests": 5,
+        "unchanged_requests": 5
       },
       "dbpedia": {
         "no_children_requests": 4,
@@ -214,7 +212,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 149,
+  "history_entries": 150,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

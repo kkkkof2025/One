@@ -32,6 +32,84 @@
           "wikipedia": "2026-09-11T02:15:41Z",
           "wikidata": "2026-09-13T02:22:27Z"
         }
+      },
+      {
+        "title": "二维客体",
+        "data_source": "nodes/Q118870638.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q118870638",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q118870638",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "代數曲面",
+        "data_source": "nodes/Q1434805.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1434805",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1434805",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "实射影平面",
+        "data_source": "nodes/Q633815.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q633815",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q633815",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "射影平面",
+        "data_source": "nodes/Q1475760.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1475760",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1475760",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "平面",
+        "data_source": "nodes/Q17285.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q17285",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q17285",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "曲面",
+        "data_source": "nodes/Q484298.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q484298",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q484298",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata",
@@ -48,16 +126,17 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-16T02:35:58Z",
-    "last_checked_at": "2026-09-16T02:35:58Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-09-17T02:40:05Z",
+    "last_checked_at": "2026-09-17T02:40:05Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-09-13T02:21:22Z",
       "wikipedia": "2026-09-14T02:37:51Z",
-      "dbpedia": "2026-09-16T02:35:58Z"
+      "dbpedia": "2026-09-16T02:35:58Z",
+      "wikidata": "2026-09-17T02:40:05Z"
     },
     "is_leaf": false,
     "source_no_children": {

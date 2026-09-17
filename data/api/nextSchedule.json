@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-16T02:35:58Z",
+  "generated_at": "2026-09-17T02:41:11Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q222958",
-      "title": "嫁接",
+      "scan_key": "id:Q222032",
+      "title": "二维空间",
       "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 135.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q230930",
-      "title": "狀態空間 (計算機科學)",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "source_progress": 3,
       "priority": 130.0,
       "depth": 3
     },
     {
       "scan_key": "id:Q24157361",
       "title": "負維空間",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 135.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q2581738",
+      "title": "虛假意識",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
