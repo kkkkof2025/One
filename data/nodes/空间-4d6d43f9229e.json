@@ -344,7 +344,19 @@
       "source_url": "https://www.wikidata.org/wiki/Q2600211",
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-18T02:27:30Z",
+      "last_checked_at": "2026-09-18T02:27:30Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-18T02:27:30Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-18T02:27:30Z"
+      }
     },
     {
       "title": "叠形",
@@ -463,19 +475,21 @@
       "quality_score": 97,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-17T02:40:05Z",
-      "last_checked_at": "2026-09-17T02:40:05Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-18T02:28:34Z",
+      "last_checked_at": "2026-09-18T02:28:34Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-09-16T02:35:57Z",
-        "wikipedia": "2026-09-17T02:40:05Z"
+        "wikipedia": "2026-09-17T02:40:05Z",
+        "wikidata": "2026-09-18T02:28:34Z"
       },
       "source_checked": {
         "wikidata_api": "2026-09-16T02:35:57Z",
-        "wikipedia": "2026-09-17T02:40:05Z"
+        "wikipedia": "2026-09-17T02:40:05Z",
+        "wikidata": "2026-09-18T02:28:34Z"
       }
     }
   ],
