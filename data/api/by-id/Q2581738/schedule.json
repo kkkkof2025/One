@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-09-18T02:28:35Z",
+  "generated_at": "2026-09-19T02:28:10Z",
   "id": "Q2581738",
   "source": "nodes/Q2581738.json",
   "node": {
@@ -15,19 +15,21 @@
     "quality_score": 97,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-18T02:27:30Z",
-    "last_checked_at": "2026-09-18T02:27:30Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-19T02:27:05Z",
+    "last_checked_at": "2026-09-19T02:27:05Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-09-17T02:40:06Z",
-      "wikipedia": "2026-09-18T02:27:30Z"
+      "wikipedia": "2026-09-18T02:27:30Z",
+      "wikidata": "2026-09-19T02:27:05Z"
     },
     "source_checked": {
       "wikidata_api": "2026-09-17T02:40:06Z",
-      "wikipedia": "2026-09-18T02:27:30Z"
+      "wikipedia": "2026-09-18T02:27:30Z",
+      "wikidata": "2026-09-19T02:27:05Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -46,25 +48,27 @@
     "dbpedia"
   ],
   "checked_sources": [
+    "wikidata",
     "wikidata_api",
     "wikipedia"
   ],
   "no_children_sources": [
+    "wikidata",
     "wikidata_api",
     "wikipedia"
   ],
   "done_sources": [
+    "wikidata",
     "wikidata_api",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata",
-  "next_source_without_cooldown": "wikidata",
+  "next_source": "dbpedia",
+  "next_source_without_cooldown": "conceptnet",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -76,15 +80,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-18T02:27:29Z",
+      "occurred_at": "2026-09-19T02:27:04Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-18T02:37:29Z",
+      "cooldown_until": "2026-09-19T02:37:04Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 2,
-    "remaining": 3
+    "done": 3,
+    "remaining": 2
   }
 }

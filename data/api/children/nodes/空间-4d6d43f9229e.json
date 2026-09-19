@@ -242,7 +242,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-19T02:27:05Z",
+      "last_checked_at": "2026-09-19T02:27:05Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-19T02:27:05Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-19T02:27:05Z"
+      }
     },
     {
       "title": "二维空间",
@@ -388,17 +400,19 @@
       "quality_score": 97,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-18T02:27:30Z",
-      "last_checked_at": "2026-09-18T02:27:30Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-09-19T02:27:05Z",
+      "last_checked_at": "2026-09-19T02:27:05Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_no_children": {
-        "wikidata_api": "2026-09-18T02:27:30Z"
+        "wikidata_api": "2026-09-18T02:27:30Z",
+        "wikipedia": "2026-09-19T02:27:05Z"
       },
       "source_checked": {
-        "wikidata_api": "2026-09-18T02:27:30Z"
+        "wikidata_api": "2026-09-18T02:27:30Z",
+        "wikipedia": "2026-09-19T02:27:05Z"
       }
     },
     {
@@ -470,18 +484,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-16T02:35:57Z",
-      "last_checked_at": "2026-09-16T02:35:57Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-19T02:28:09Z",
+      "last_checked_at": "2026-09-19T02:28:09Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-09-16T02:35:57Z"
       },
       "source_checked": {
         "wikidata_api": "2026-09-15T02:41:32Z",
-        "wikipedia": "2026-09-16T02:35:57Z"
+        "wikipedia": "2026-09-16T02:35:57Z",
+        "wikidata": "2026-09-19T02:28:09Z"
       }
     },
     {
