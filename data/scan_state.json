@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-19T02:28:10Z",
+  "updated_at": "2026-09-20T02:39:21Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q230930",
-  "last_scan_title": "狀態空間 (計算機科學)",
+  "last_scan_key": "id:wikipedia:zh:Category:主知主义",
+  "last_scan_title": "主知主义",
   "candidate_count": 1139,
   "selected_count": 6,
   "request_count": 5,
@@ -34,10 +34,11 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 1,
-      "unchanged_requests": 2,
       "children_returned_requests": 1,
-      "duplicate_requests": 1
+      "productive_requests": 1,
+      "added_nodes": 2,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -52,9 +53,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-19T02:27:04Z",
+      "occurred_at": "2026-09-20T02:38:15Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-19T02:37:04Z",
+      "cooldown_until": "2026-09-20T02:48:15Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
@@ -62,22 +63,22 @@
     "candidate_count": 1139,
     "source_progress_counts": {
       "4": 16,
-      "2": 46,
+      "2": 45,
       "1": 14,
-      "0": 939,
-      "3": 124
+      "0": 938,
+      "3": 126
     },
     "next_source_counts": {
-      "conceptnet": 183,
-      "wikidata": 16,
+      "conceptnet": 185,
+      "wikidata": 15,
       "wikipedia": 537,
-      "wikidata_api": 403
+      "wikidata_api": 402
     },
     "available_next_source_counts": {
-      "conceptnet": 183,
-      "wikidata": 16,
+      "conceptnet": 185,
+      "wikidata": 15,
       "wikipedia": 537,
-      "wikidata_api": 403
+      "wikidata_api": 402
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -100,24 +101,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q2581738",
-        "title": "虛假意識",
+        "scan_key": "id:Q2600211",
+        "title": "参量空间",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q2600211",
-        "title": "参量空间",
+        "scan_key": "id:Q27996114",
+        "title": "九维空间",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q27996114",
-        "title": "九维空间",
+        "scan_key": "id:Q2912794",
+        "title": "生命印記",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -153,24 +154,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q2581738",
-          "title": "虛假意識",
+          "scan_key": "id:Q2600211",
+          "title": "参量空间",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q2600211",
-          "title": "参量空间",
+          "scan_key": "id:Q27996114",
+          "title": "九维空间",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q27996114",
-          "title": "九维空间",
+          "scan_key": "id:Q2912794",
+          "title": "生命印記",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,

@@ -3,21 +3,21 @@
   "source": "nodes/Q2600211.json",
   "node": {
     "title": "参量空间",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q2600211",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q2600211",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-19T02:27:05Z",
-    "last_checked_at": "2026-09-19T02:27:05Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-20T02:38:15Z",
+    "last_checked_at": "2026-09-20T02:38:15Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-09-18T02:27:30Z",
@@ -25,9 +25,39 @@
     },
     "source_checked": {
       "wikidata_api": "2026-09-18T02:27:30Z",
-      "wikipedia": "2026-09-19T02:27:05Z"
+      "wikipedia": "2026-09-19T02:27:05Z",
+      "wikidata": "2026-09-20T02:38:15Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "邊緣案例",
+      "children_count": 0,
+      "id": "Q5337691",
+      "data_source": "nodes/Q5337691.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q5337691",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "飞行包线",
+      "children_count": 0,
+      "id": "Q458038",
+      "data_source": "nodes/Q458038.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q458038",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }
