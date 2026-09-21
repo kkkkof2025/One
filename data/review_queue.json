@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-20T02:39:24Z",
+  "generated_at": "2026-09-21T02:36:21Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 146,
+  "total_candidates": 147,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 146,
+  "total_items": 147,
   "reason_distribution": {
-    "total_items": 146,
+    "total_items": 147,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 20,
+        "count": 21,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -91,11 +91,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 143
+        "count": 144
       },
       {
         "reason": "qid",
-        "count": 142
+        "count": 143
       },
       {
         "reason": "missing_relation",
@@ -107,7 +107,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 65
+        "count": 66
       },
       {
         "reason": "fetch_error",
@@ -119,26 +119,26 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 20
+        "count": 21
       },
       {
         "reason": "has_children",
-        "count": 11
+        "count": 12
       },
       {
         "reason": "loaded",
-        "count": 8
+        "count": 9
       },
       {
         "reason": "relation:instance",
         "count": 6
       },
       {
-        "reason": "allowed_duplicate_id:2",
-        "count": 4
+        "reason": "relation:subclass",
+        "count": 5
       },
       {
-        "reason": "relation:subclass",
+        "reason": "allowed_duplicate_id:2",
         "count": 4
       },
       {
@@ -184,7 +184,7 @@
       {
         "status": "loaded",
         "label": "已加载",
-        "count": 8
+        "count": 9
       }
     ]
   },
@@ -3460,6 +3460,33 @@
       "review_key": "id:Q22299142",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "八維",
+      "children_status": "loaded",
+      "quality_score": 97,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "loaded",
+        "duplicate_id:2",
+        "has_children"
+      ],
+      "id": "Q10853884",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q10853884",
+      "updated_at": "2026-09-01T02:50:32Z",
+      "path": "万物 / 宇宙 / 空间 / 九维空间 / 八維",
+      "location": "nodes/Q10853884.json",
+      "priority": 27.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q10853884",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
     },
     {
       "title": "共生",
