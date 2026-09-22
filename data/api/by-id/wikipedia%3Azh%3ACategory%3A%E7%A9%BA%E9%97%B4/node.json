@@ -304,7 +304,7 @@
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q10853884",
-        "quality_score": 100,
+        "quality_score": 97,
         "quality_version": 3,
         "review_status": "approved",
         "updated_at": "2026-09-01T02:50:32Z",
@@ -395,15 +395,24 @@
       {
         "title": "可测空间",
         "data_source": "nodes/Q3058218.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q3058218",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q3058218",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-09-22T02:37:01Z",
+        "last_checked_at": "2026-09-22T02:37:01Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-09-22T02:37:01Z"
+        }
       },
       {
         "title": "四维",

@@ -23,13 +23,14 @@
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q10853884",
-    "quality_score": 100,
+    "quality_score": 97,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
       "relation:subclass",
       "loaded",
+      "duplicate_id:2",
       "has_children"
     ],
     "quality_version": 3,

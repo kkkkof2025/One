@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q36161.json",
+  "node": {
+    "id": "Q36161",
+    "title": "集合",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q36161",
+    "quality_score": 83,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "broad_title",
+      "relation:has_part"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
