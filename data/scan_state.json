@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-22T02:38:06Z",
+  "updated_at": "2026-09-23T02:37:41Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:人类起源",
-  "last_scan_title": "人类起源",
-  "candidate_count": 1141,
+  "last_scan_key": "id:wikipedia:zh:Category:侏羅紀公園",
+  "last_scan_title": "侏羅紀公園",
+  "candidate_count": 1143,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -19,64 +19,80 @@
   ],
   "available_sources": [
     "wikidata_api",
-    "wikipedia",
-    "wikidata",
-    "dbpedia"
+    "wikipedia"
   ],
   "source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
+    "wikidata": 1,
     "wikipedia": 1,
-    "wikidata_api": 1
+    "wikidata_api": 1,
+    "dbpedia": 1
   },
   "source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "rate_limited_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 2
+      "no_children_requests": 1,
+      "unchanged_requests": 1
+    },
+    "dbpedia": {
+      "transient_error_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-09-22T02:37:01Z",
+      "occurred_at": "2026-09-23T02:37:25Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-09-22T02:47:01Z",
+      "cooldown_until": "2026-09-23T02:47:25Z",
+      "last_error": "HTTP Error 502: Bad Gateway"
+    },
+    "wikidata": {
+      "source": "wikidata",
+      "reason": "rate_limited",
+      "occurred_at": "2026-09-23T02:37:26Z",
+      "retry_after_seconds": 1000,
+      "cooldown_until": "2026-09-23T02:54:06Z",
+      "last_error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+    },
+    "dbpedia": {
+      "source": "dbpedia",
+      "reason": "transient_error",
+      "occurred_at": "2026-09-23T02:37:41Z",
+      "retry_after_seconds": 900,
+      "cooldown_until": "2026-09-23T02:52:41Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 1141,
+    "candidate_count": 1143,
     "source_progress_counts": {
       "4": 16,
-      "2": 45,
-      "1": 13,
-      "0": 938,
-      "3": 129
+      "2": 46,
+      "1": 12,
+      "0": 939,
+      "3": 130
     },
     "next_source_counts": {
-      "conceptnet": 189,
-      "wikidata": 13,
+      "conceptnet": 191,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 402
+      "wikidata_api": 403
     },
     "available_next_source_counts": {
-      "conceptnet": 189,
-      "wikidata": 13,
+      "conceptnet": 191,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 402
+      "wikidata_api": 403
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -99,24 +115,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q2912794",
-        "title": "生命印記",
+        "scan_key": "id:Q2993663",
+        "title": "人工意識",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q2993663",
-        "title": "人工意識",
+        "scan_key": "id:Q3058218",
+        "title": "可测空间",
         "next_source": "wikipedia",
         "source_progress": 1,
-        "priority": 135.0,
+        "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q3058218",
-        "title": "可测空间",
+        "scan_key": "id:Q350176",
+        "title": "添加剂",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -152,24 +168,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q2912794",
-          "title": "生命印記",
+          "scan_key": "id:Q2993663",
+          "title": "人工意識",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q2993663",
-          "title": "人工意識",
+          "scan_key": "id:Q3058218",
+          "title": "可测空间",
           "next_source": "wikipedia",
           "source_progress": 1,
-          "priority": 135.0,
+          "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q3058218",
-          "title": "可测空间",
+          "scan_key": "id:Q350176",
+          "title": "添加剂",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,

@@ -1,57 +1,59 @@
 {
-  "generated_at": "2026-09-22T02:38:06Z",
+  "generated_at": "2026-09-23T02:37:41Z",
   "total_nodes": 1150,
-  "last_added_nodes": 2,
+  "last_added_nodes": 0,
   "last_request_count": 5,
-  "last_scanned_nodes": 1215,
-  "last_candidate_nodes": 1141,
-  "last_unchanged_requests": 3,
+  "last_scanned_nodes": 1217,
+  "last_candidate_nodes": 1143,
+  "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
+    "wikidata": 1,
     "wikipedia": 1,
-    "wikidata_api": 1
+    "wikidata_api": 1,
+    "dbpedia": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "rate_limited_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 2
+      "no_children_requests": 1,
+      "unchanged_requests": 1
+    },
+    "dbpedia": {
+      "transient_error_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1141,
+    "candidate_count": 1143,
     "source_progress_counts": {
       "4": 16,
-      "2": 45,
-      "1": 13,
-      "0": 938,
-      "3": 129
+      "2": 46,
+      "1": 12,
+      "0": 939,
+      "3": 130
     },
     "next_source_counts": {
-      "conceptnet": 189,
-      "wikidata": 13,
+      "conceptnet": 191,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 402
+      "wikidata_api": 403
     },
     "available_next_source_counts": {
-      "conceptnet": 189,
-      "wikidata": 13,
+      "conceptnet": 191,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 402
+      "wikidata_api": 403
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -74,24 +76,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q2912794",
-        "title": "生命印記",
+        "scan_key": "id:Q2993663",
+        "title": "人工意識",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q2993663",
-        "title": "人工意識",
+        "scan_key": "id:Q3058218",
+        "title": "可测空间",
         "next_source": "wikipedia",
         "source_progress": 1,
-        "priority": 135.0,
+        "priority": 130.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q3058218",
-        "title": "可测空间",
+        "scan_key": "id:Q350176",
+        "title": "添加剂",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -127,24 +129,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q2912794",
-          "title": "生命印記",
+          "scan_key": "id:Q2993663",
+          "title": "人工意識",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q2993663",
-          "title": "人工意識",
+          "scan_key": "id:Q3058218",
+          "title": "可测空间",
           "next_source": "wikipedia",
           "source_progress": 1,
-          "priority": 135.0,
+          "priority": 130.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q3058218",
-          "title": "可测空间",
+          "scan_key": "id:Q350176",
+          "title": "添加剂",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -164,10 +166,10 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 12,
+    "added_nodes": 11,
     "requests": 40,
-    "added_per_request": 0.3,
-    "zero_growth_streak": 0,
+    "added_per_request": 0.275,
+    "zero_growth_streak": 1,
     "last_productive_run_at": "2026-09-22T02:38:06Z",
     "source_request_counts": {
       "conceptnet": 8,
@@ -194,22 +196,23 @@
         "unchanged_requests": 8
       },
       "wikidata_api": {
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 3,
-        "no_children_requests": 6,
-        "unchanged_requests": 6
+        "no_children_requests": 7,
+        "unchanged_requests": 7,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 2
       },
       "dbpedia": {
-        "no_children_requests": 2,
-        "unchanged_requests": 2
+        "no_children_requests": 1,
+        "unchanged_requests": 1,
+        "transient_error_requests": 1
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 155,
+  "history_entries": 156,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
