@@ -411,7 +411,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-24T02:26:40Z",
+      "last_checked_at": "2026-09-24T02:26:40Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-24T02:26:40Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-24T02:26:40Z"
+      }
     },
     {
       "title": "第三方生殖",

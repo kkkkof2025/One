@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-23T02:37:41Z",
+  "generated_at": "2026-09-24T02:26:41Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q3058218",
-      "title": "可测空间",
+      "scan_key": "id:Q350176",
+      "title": "添加剂",
       "next_source": "wikipedia",
       "source_progress": 1,
-      "priority": 130.0,
+      "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q350176",
-      "title": "添加剂",
+      "scan_key": "id:Q351870",
+      "title": "生殖醫學科",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
