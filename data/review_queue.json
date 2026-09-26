@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-25T02:43:31Z",
+  "generated_at": "2026-09-26T02:47:19Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 148,
+  "total_candidates": 159,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 148,
+  "total_items": 159,
   "reason_distribution": {
-    "total_items": 148,
+    "total_items": 159,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 81,
+        "count": 83,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 21,
+        "count": 30,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -99,11 +99,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 145
+        "count": 156
       },
       {
         "reason": "qid",
-        "count": 144
+        "count": 155
       },
       {
         "reason": "missing_relation",
@@ -111,11 +111,11 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 81
+        "count": 83
       },
       {
         "reason": "zh_label",
-        "count": 67
+        "count": 76
       },
       {
         "reason": "fetch_error",
@@ -123,11 +123,11 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 36
+        "count": 47
       },
       {
         "reason": "duplicate_id:2",
-        "count": 21
+        "count": 24
       },
       {
         "reason": "has_children",
@@ -136,6 +136,10 @@
       {
         "reason": "loaded",
         "count": 9
+      },
+      {
+        "reason": "duplicate_id:3",
+        "count": 6
       },
       {
         "reason": "relation:instance",
@@ -186,7 +190,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 87
+        "count": 98
       },
       {
         "status": "error",
@@ -3186,6 +3190,52 @@
       "primary_reason_label": "缺少中文标签"
     },
     {
+      "title": "archaeobiology",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q4785356",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q4785356",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / archaeobiology",
+      "location": "nodes/Q4785356.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q4785356",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "biology of colour",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q105582462",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q105582462",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / biology of colour",
+      "location": "nodes/Q105582462.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q105582462",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
       "title": "gamete generation",
       "children_status": "pending",
       "quality_score": 67,
@@ -3234,14 +3284,14 @@
     {
       "title": "動物學",
       "children_status": "pending",
-      "quality_score": 85,
+      "quality_score": 81,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
         "good_title_length",
         "relation:has_part",
-        "duplicate_id:2"
+        "duplicate_id:3"
       ],
       "id": "Q431",
       "source_provider": "wikidata",
@@ -3249,7 +3299,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q431",
       "path": "万物 / 生命 / 生命科學 / 動物學",
       "location": "nodes/Q431.json",
-      "priority": 39.0,
+      "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q431",
       "primary_reason": "duplicate_id",
@@ -3258,14 +3308,14 @@
     {
       "title": "微生物学",
       "children_status": "pending",
-      "quality_score": 85,
+      "quality_score": 81,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
         "good_title_length",
         "relation:has_part",
-        "duplicate_id:2"
+        "duplicate_id:3"
       ],
       "id": "Q7193",
       "source_provider": "wikidata",
@@ -3273,7 +3323,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q7193",
       "path": "万物 / 生命 / 生命科學 / 微生物学",
       "location": "nodes/Q7193.json",
-      "priority": 39.0,
+      "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q7193",
       "primary_reason": "duplicate_id",
@@ -3282,14 +3332,14 @@
     {
       "title": "植物学",
       "children_status": "pending",
-      "quality_score": 85,
+      "quality_score": 81,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
         "good_title_length",
         "relation:has_part",
-        "duplicate_id:2"
+        "duplicate_id:3"
       ],
       "id": "Q441",
       "source_provider": "wikidata",
@@ -3297,7 +3347,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q441",
       "path": "万物 / 生命 / 生命科學 / 植物学",
       "location": "nodes/Q441.json",
-      "priority": 39.0,
+      "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q441",
       "primary_reason": "duplicate_id",
@@ -3306,14 +3356,14 @@
     {
       "title": "生态学",
       "children_status": "pending",
-      "quality_score": 85,
+      "quality_score": 81,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
         "good_title_length",
         "relation:has_part",
-        "duplicate_id:2"
+        "duplicate_id:3"
       ],
       "id": "Q7150",
       "source_provider": "wikidata",
@@ -3321,7 +3371,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q7150",
       "path": "万物 / 生命 / 生命科學 / 生态学",
       "location": "nodes/Q7150.json",
-      "priority": 39.0,
+      "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q7150",
       "primary_reason": "duplicate_id",
@@ -3330,14 +3380,14 @@
     {
       "title": "解剖学",
       "children_status": "pending",
-      "quality_score": 85,
+      "quality_score": 81,
       "review_status": "approved",
       "quality_reasons": [
         "qid",
         "zh_label",
         "good_title_length",
         "relation:has_part",
-        "duplicate_id:2"
+        "duplicate_id:3"
       ],
       "id": "Q514",
       "source_provider": "wikidata",
@@ -3345,7 +3395,7 @@
       "source_url": "https://www.wikidata.org/wiki/Q514",
       "path": "万物 / 生命 / 生命科學 / 解剖学",
       "location": "nodes/Q514.json",
-      "priority": 39.0,
+      "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q514",
       "primary_reason": "duplicate_id",
@@ -3353,6 +3403,30 @@
     },
     {
       "title": "遗传学",
+      "children_status": "pending",
+      "quality_score": 81,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:3"
+      ],
+      "id": "Q7162",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7162",
+      "path": "万物 / 生命 / 生命科學 / 遗传学",
+      "location": "nodes/Q7162.json",
+      "priority": 43.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7162",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "形態學",
       "children_status": "pending",
       "quality_score": 85,
       "review_status": "approved",
@@ -3363,15 +3437,207 @@
         "relation:has_part",
         "duplicate_id:2"
       ],
-      "id": "Q7162",
+      "id": "Q183252",
       "source_provider": "wikidata",
       "source_relation": "has_part",
-      "source_url": "https://www.wikidata.org/wiki/Q7162",
-      "path": "万物 / 生命 / 生命科學 / 遗传学",
-      "location": "nodes/Q7162.json",
+      "source_url": "https://www.wikidata.org/wiki/Q183252",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 形態學",
+      "location": "nodes/Q183252.json",
       "priority": 39.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
-      "review_key": "id:Q7162",
+      "review_key": "id:Q183252",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "演化生物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q840400",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q840400",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 演化生物学",
+      "location": "nodes/Q840400.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q840400",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "生物化學",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7094",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7094",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 生物化學",
+      "location": "nodes/Q7094.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7094",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "生物技术",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7108",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7108",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 生物技术",
+      "location": "nodes/Q7108.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7108",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "生物物理学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7100",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7100",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 生物物理学",
+      "location": "nodes/Q7100.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7100",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "真菌學",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7175",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7175",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 真菌學",
+      "location": "nodes/Q7175.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7175",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "神经生物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q2728012",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q2728012",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 神经生物学",
+      "location": "nodes/Q2728012.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q2728012",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "细胞生物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q7141",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q7141",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 细胞生物学",
+      "location": "nodes/Q7141.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7141",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "计算生物学",
+      "children_status": "pending",
+      "quality_score": 85,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:has_part",
+        "duplicate_id:2"
+      ],
+      "id": "Q177005",
+      "source_provider": "wikidata",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q177005",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 计算生物学",
+      "location": "nodes/Q177005.json",
+      "priority": 39.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q177005",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

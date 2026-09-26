@@ -28,6 +28,32 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "可测集合",
+      "data_source": "nodes/Q3054889.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3054889",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q3054889",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "测度空间",
+      "data_source": "nodes/Q3058212.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3058212",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q3058212",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -44,16 +70,17 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-09-24T02:26:41Z",
-  "last_checked_at": "2026-09-24T02:26:41Z",
-  "last_fetch_source": "dbpedia",
+  "updated_at": "2026-09-26T02:47:15Z",
+  "last_checked_at": "2026-09-26T02:47:15Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "dbpedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-09-22T02:37:01Z",
     "wikipedia": "2026-09-23T02:37:26Z",
-    "dbpedia": "2026-09-24T02:26:41Z"
+    "dbpedia": "2026-09-24T02:26:41Z",
+    "wikidata": "2026-09-26T02:47:15Z"
   },
   "is_leaf": false,
   "source_no_children": {

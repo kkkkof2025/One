@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q105582462.json",
+  "node": {
+    "title": "biology of colour",
+    "children_count": 0,
+    "id": "Q105582462",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q105582462",
+    "children_status": "pending",
+    "quality_score": 67,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
