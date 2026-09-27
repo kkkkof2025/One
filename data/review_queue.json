@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T02:47:19Z",
+  "generated_at": "2026-09-27T02:47:10Z",
   "threshold": 45,
   "limit": 200,
   "total_candidates": 159,
@@ -545,7 +545,7 @@
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%AD%A6%E6%B6%88%E6%AD%A7%E4%B9%89",
-      "path": "万物 / 生命 / 生物学 / 生物学消歧义",
+      "path": "万物 / 生命 / 生命科學 / 生物学 / 生物学消歧义",
       "location": "nodes/生物学消歧义-b66276f0e1c3.json",
       "priority": 67.0,
       "suggested_action": "确认标题是否过泛或消歧义页，必要时替换为更具体的 Wikidata QID。",
