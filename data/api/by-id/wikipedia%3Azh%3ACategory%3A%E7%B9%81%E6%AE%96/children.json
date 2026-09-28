@@ -283,7 +283,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-28T02:48:19Z",
+      "last_checked_at": "2026-09-28T02:48:19Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-28T02:48:19Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-28T02:48:19Z"
+      }
     },
     {
       "title": "嫁接",
@@ -401,22 +413,22 @@
     },
     {
       "title": "生殖醫學科",
-      "children_count": 0,
+      "children_count": 3,
       "id": "Q351870",
       "data_source": "nodes/Q351870.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q351870",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-27T02:47:06Z",
-      "last_checked_at": "2026-09-27T02:47:06Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-09-28T02:48:19Z",
+      "last_checked_at": "2026-09-28T02:48:19Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-09-24T02:26:40Z",
@@ -426,7 +438,8 @@
       "source_checked": {
         "wikidata_api": "2026-09-24T02:26:40Z",
         "wikipedia": "2026-09-25T02:43:25Z",
-        "dbpedia": "2026-09-27T02:47:06Z"
+        "dbpedia": "2026-09-27T02:47:06Z",
+        "wikidata": "2026-09-28T02:48:19Z"
       }
     },
     {

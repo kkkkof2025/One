@@ -3,21 +3,21 @@
   "source": "nodes/Q351870.json",
   "node": {
     "title": "生殖醫學科",
-    "children_count": 0,
+    "children_count": 3,
     "id": "Q351870",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q351870",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-27T02:47:06Z",
-    "last_checked_at": "2026-09-27T02:47:06Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-09-28T02:48:19Z",
+    "last_checked_at": "2026-09-28T02:48:19Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-09-24T02:26:40Z",
@@ -27,9 +27,53 @@
     "source_checked": {
       "wikidata_api": "2026-09-24T02:26:40Z",
       "wikipedia": "2026-09-25T02:43:25Z",
-      "dbpedia": "2026-09-27T02:47:06Z"
+      "dbpedia": "2026-09-27T02:47:06Z",
+      "wikidata": "2026-09-28T02:48:19Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "性健康",
+      "children_count": 0,
+      "id": "Q1981388",
+      "data_source": "nodes/Q1981388.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1981388",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "生殖生理學",
+      "children_count": 0,
+      "id": "Q17145564",
+      "data_source": "nodes/Q17145564.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q17145564",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "体细胞核移植克隆技术",
+      "children_count": 0,
+      "id": "Q1939923",
+      "data_source": "nodes/Q1939923.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1939923",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 3
 }

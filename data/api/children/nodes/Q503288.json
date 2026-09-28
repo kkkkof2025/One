@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q503288.json",
+  "node": {
+    "title": "防凍劑",
+    "children_count": 0,
+    "id": "Q503288",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q503288",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

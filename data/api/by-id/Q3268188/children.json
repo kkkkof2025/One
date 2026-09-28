@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q3268188.json",
+  "node": {
+    "title": "稀釋劑",
+    "children_count": 0,
+    "id": "Q3268188",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q3268188",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

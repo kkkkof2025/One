@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-27T02:47:10Z",
+  "generated_at": "2026-09-28T02:49:28Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 159,
+  "total_candidates": 160,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 159,
+  "total_items": 160,
   "reason_distribution": {
-    "total_items": 159,
+    "total_items": 160,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 30,
+        "count": 31,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -99,11 +99,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 156
+        "count": 157
       },
       {
         "reason": "qid",
-        "count": 155
+        "count": 156
       },
       {
         "reason": "missing_relation",
@@ -115,7 +115,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 76
+        "count": 77
       },
       {
         "reason": "fetch_error",
@@ -127,7 +127,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 24
+        "count": 25
       },
       {
         "reason": "has_children",
@@ -147,7 +147,7 @@
       },
       {
         "reason": "relation:subclass",
-        "count": 5
+        "count": 6
       },
       {
         "reason": "allowed_duplicate_id:2",
@@ -190,7 +190,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 98
+        "count": 99
       },
       {
         "status": "error",
@@ -3638,6 +3638,30 @@
       "priority": 39.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q177005",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "漂白土",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q910799",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q910799",
+      "path": "万物 / 宇宙 / 物质 / 添加剂 / 漂白土",
+      "location": "nodes/Q910799.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q910799",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

@@ -417,20 +417,20 @@
     {
       "title": "添加剂",
       "data_source": "nodes/Q350176.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q350176",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q350176",
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-24T02:26:40Z",
-      "last_checked_at": "2026-09-24T02:26:40Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-28T02:49:24Z",
+      "last_checked_at": "2026-09-28T02:49:24Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-09-23T02:37:26Z",
@@ -438,7 +438,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-09-23T02:37:26Z",
-        "wikipedia": "2026-09-24T02:26:40Z"
+        "wikipedia": "2026-09-24T02:26:40Z",
+        "wikidata": "2026-09-28T02:49:24Z"
       }
     },
     {

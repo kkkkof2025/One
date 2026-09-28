@@ -1,0 +1,18 @@
+{
+  "id": "Q1750381",
+  "title": "食品加工助劑",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "subclass",
+  "source_url": "https://www.wikidata.org/wiki/Q1750381",
+  "quality_score": 97,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "good_title_length",
+    "relation:subclass"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}
