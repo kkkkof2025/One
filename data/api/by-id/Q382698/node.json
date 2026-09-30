@@ -4,29 +4,72 @@
   "node": {
     "id": "Q382698",
     "title": "仿射空间",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "复数集",
+        "data_source": "nodes/Q26851286.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q26851286",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q26851286",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "凸集",
+        "data_source": "nodes/Q193657.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q193657",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q193657",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "原點",
+        "data_source": "nodes/Q40735.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q40735",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q40735",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q382698",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-26T02:46:11Z",
-    "last_checked_at": "2026-09-26T02:46:11Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-30T03:15:08Z",
+    "last_checked_at": "2026-09-30T03:15:08Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-09-25T02:43:25Z",
-      "wikipedia": "2026-09-26T02:46:11Z"
+      "wikipedia": "2026-09-26T02:46:11Z",
+      "wikidata": "2026-09-30T03:15:08Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-09-25T02:43:25Z",

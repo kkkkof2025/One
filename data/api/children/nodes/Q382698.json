@@ -3,21 +3,21 @@
   "source": "nodes/Q382698.json",
   "node": {
     "title": "仿射空间",
-    "children_count": 0,
+    "children_count": 3,
     "id": "Q382698",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q382698",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-09-26T02:46:11Z",
-    "last_checked_at": "2026-09-26T02:46:11Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-09-30T03:15:08Z",
+    "last_checked_at": "2026-09-30T03:15:08Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-09-25T02:43:25Z",
@@ -25,9 +25,53 @@
     },
     "source_checked": {
       "wikidata_api": "2026-09-25T02:43:25Z",
-      "wikipedia": "2026-09-26T02:46:11Z"
+      "wikipedia": "2026-09-26T02:46:11Z",
+      "wikidata": "2026-09-30T03:15:08Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "复数集",
+      "children_count": 0,
+      "id": "Q26851286",
+      "data_source": "nodes/Q26851286.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q26851286",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "凸集",
+      "children_count": 0,
+      "id": "Q193657",
+      "data_source": "nodes/Q193657.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q193657",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "原點",
+      "children_count": 0,
+      "id": "Q40735",
+      "data_source": "nodes/Q40735.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q40735",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 3
 }

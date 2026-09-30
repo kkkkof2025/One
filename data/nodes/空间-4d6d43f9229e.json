@@ -282,20 +282,20 @@
     {
       "title": "仿射空间",
       "data_source": "nodes/Q382698.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q382698",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q382698",
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-09-26T02:46:11Z",
-      "last_checked_at": "2026-09-26T02:46:11Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-09-30T03:15:08Z",
+      "last_checked_at": "2026-09-30T03:15:08Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-09-25T02:43:25Z",
@@ -303,7 +303,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-09-25T02:43:25Z",
-        "wikipedia": "2026-09-26T02:46:11Z"
+        "wikipedia": "2026-09-26T02:46:11Z",
+        "wikidata": "2026-09-30T03:15:08Z"
       }
     },
     {
@@ -347,7 +348,19 @@
       "source_url": "https://www.wikidata.org/wiki/Q7532595",
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-09-30T03:14:03Z",
+      "last_checked_at": "2026-09-30T03:14:03Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-09-30T03:14:03Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-09-30T03:14:03Z"
+      }
     },
     {
       "title": "函数空间",

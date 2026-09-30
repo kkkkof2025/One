@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T03:29:50Z",
-  "total_nodes": 1178,
-  "last_added_nodes": 0,
+  "generated_at": "2026-09-30T03:15:08Z",
+  "total_nodes": 1181,
+  "last_added_nodes": 3,
   "last_request_count": 5,
   "last_scanned_nodes": 1307,
   "last_candidate_nodes": 1171,
@@ -10,17 +10,20 @@
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "no_children_requests": 1,
+      "unchanged_requests": 1,
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 3
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -29,32 +32,28 @@
     "wikidata_api": {
       "no_children_requests": 1,
       "unchanged_requests": 1
-    },
-    "dbpedia": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
     "candidate_count": 1171,
     "source_progress_counts": {
       "4": 19,
-      "2": 48,
+      "3": 132,
       "1": 12,
-      "0": 961,
-      "3": 131
+      "0": 960,
+      "2": 48
     },
     "next_source_counts": {
       "conceptnet": 195,
-      "wikidata": 14,
+      "wikidata": 15,
       "wikipedia": 537,
-      "wikidata_api": 425
+      "wikidata_api": 424
     },
     "available_next_source_counts": {
       "conceptnet": 195,
-      "wikidata": 14,
+      "wikidata": 15,
       "wikipedia": 537,
-      "wikidata_api": 425
+      "wikidata_api": 424
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +76,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q382698",
-        "title": "仿射空间",
+        "scan_key": "id:Q4764931",
+        "title": "動物意識",
         "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 135.0,
-        "depth": 3
-      },
-      {
-        "scan_key": "id:Q725951",
-        "title": "世代交替",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "source_progress": 3,
         "priority": 135.0,
         "depth": 3
       },
       {
         "scan_key": "id:Q729672",
         "title": "智力圈",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 135.0,
+        "depth": 3
+      },
+      {
+        "scan_key": "id:Q7532595",
+        "title": "六維",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -130,24 +129,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q382698",
-          "title": "仿射空间",
+          "scan_key": "id:Q4764931",
+          "title": "動物意識",
           "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 135.0,
-          "depth": 3
-        },
-        {
-          "scan_key": "id:Q725951",
-          "title": "世代交替",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "source_progress": 3,
           "priority": 135.0,
           "depth": 3
         },
         {
           "scan_key": "id:Q729672",
           "title": "智力圈",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q7532595",
+          "title": "六維",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -167,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 92,
+    "added_nodes": 93,
     "requests": 40,
-    "added_per_request": 2.3,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-09-28T02:49:24Z",
+    "added_per_request": 2.325,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-09-30T03:15:08Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 11,
@@ -184,12 +183,12 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "no_children_requests": 3,
-        "unchanged_requests": 3,
         "rate_limited_requests": 5,
-        "children_returned_requests": 3,
-        "productive_requests": 3,
-        "added_nodes": 27
+        "no_children_requests": 2,
+        "unchanged_requests": 2,
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 30
       },
       "wikipedia": {
         "no_children_requests": 7,
@@ -199,11 +198,11 @@
         "added_nodes": 46
       },
       "wikidata_api": {
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 19,
-        "no_children_requests": 6,
-        "unchanged_requests": 6
+        "no_children_requests": 7,
+        "unchanged_requests": 7,
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 17
       },
       "dbpedia": {
         "transient_error_requests": 1,
@@ -215,7 +214,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 162,
+  "history_entries": 163,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
