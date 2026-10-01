@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-09-30T03:15:08Z",
+  "generated_at": "2026-10-01T03:21:55Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q4764931",
-      "title": "動物意識",
+      "scan_key": "id:Q725951",
+      "title": "世代交替",
       "next_source": "wikidata",
-      "source_progress": 3,
-      "priority": 135.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q729672",
-      "title": "智力圈",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "source_progress": 2,
       "priority": 135.0,
       "depth": 3
     },
     {
       "scan_key": "id:Q7532595",
       "title": "六維",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 135.0,
+      "depth": 3
+    },
+    {
+      "scan_key": "id:Q7595945",
+      "title": "叠形",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,
