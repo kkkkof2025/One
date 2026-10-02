@@ -3,21 +3,21 @@
   "source": "nodes/Q7532595.json",
   "node": {
     "title": "六維",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q7532595",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q7532595",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-01T03:20:50Z",
-    "last_checked_at": "2026-10-01T03:20:50Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-02T03:22:29Z",
+    "last_checked_at": "2026-10-02T03:22:29Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-09-30T03:14:03Z",
@@ -25,9 +25,53 @@
     },
     "source_checked": {
       "wikidata_api": "2026-09-30T03:14:03Z",
-      "wikipedia": "2026-10-01T03:20:50Z"
+      "wikipedia": "2026-10-01T03:20:50Z",
+      "wikidata": "2026-10-02T03:22:29Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "五維",
+      "children_count": 3,
+      "id": "Q1142276",
+      "data_source": "nodes/Q1142276.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1142276",
+      "children_status": "loaded",
+      "is_leaf": false,
+      "quality_score": 100,
+      "quality_version": 3,
+      "review_status": "approved",
+      "updated_at": "2026-09-02T02:10:31Z",
+      "last_checked_at": "2026-09-02T02:10:31Z",
+      "last_fetch_source": "wikidata",
+      "last_fetch_sources": [
+        "wikidata"
+      ],
+      "source_no_children": {
+        "wikipedia": "2026-08-31T02:37:15Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-08-30T02:44:00Z",
+        "wikipedia": "2026-08-31T02:37:15Z",
+        "wikidata": "2026-09-02T02:10:31Z"
+      }
+    },
+    {
+      "title": "六維多胞體",
+      "children_count": 0,
+      "id": "Q4641578",
+      "data_source": "nodes/Q4641578.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q4641578",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }
