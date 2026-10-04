@@ -4,29 +4,72 @@
   "node": {
     "id": "Q7784739",
     "title": "第三方生殖",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "代孕",
+        "data_source": "nodes/Q334645.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q334645",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q334645",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "捐卵",
+        "data_source": "nodes/Q1115376.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1115376",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1115376",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "捐精",
+        "data_source": "nodes/Q857158.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q857158",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q857158",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q7784739",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-03T03:06:36Z",
-    "last_checked_at": "2026-10-03T03:06:36Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-04T03:35:06Z",
+    "last_checked_at": "2026-10-04T03:35:06Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-02T03:21:24Z",
-      "wikipedia": "2026-10-03T03:06:36Z"
+      "wikipedia": "2026-10-03T03:06:36Z",
+      "wikidata": "2026-10-04T03:35:06Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-02T03:21:24Z",

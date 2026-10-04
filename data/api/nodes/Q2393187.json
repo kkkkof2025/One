@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q2393187.json",
+  "node": {
+    "id": "Q2393187",
+    "title": "分子实体",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata_api",
+    "source_relation": "has_parts_of_class",
+    "source_url": "https://www.wikidata.org/wiki/Q2393187",
+    "quality_score": 87,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:has_parts_of_class"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

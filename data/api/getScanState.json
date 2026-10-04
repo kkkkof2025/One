@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-10-03T03:07:41Z",
+  "updated_at": "2026-10-04T03:36:11Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q420",
-  "last_scan_title": "生物学",
-  "candidate_count": 1176,
+  "last_scan_key": "id:wikipedia:zh:Category:侏羅紀公園",
+  "last_scan_title": "侏羅紀公園",
+  "candidate_count": 1180,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -34,49 +34,52 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 2,
-      "productive_requests": 2,
-      "added_nodes": 5
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 3,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-10-03T03:06:35Z",
+      "occurred_at": "2026-10-04T03:35:05Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-10-03T03:16:35Z",
+      "cooldown_until": "2026-10-04T03:45:05Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 1176,
+    "candidate_count": 1180,
     "source_progress_counts": {
       "4": 20,
-      "2": 47,
+      "2": 46,
       "1": 12,
-      "0": 962,
-      "3": 135
+      "0": 965,
+      "3": 137
     },
     "next_source_counts": {
-      "conceptnet": 200,
-      "wikidata": 13,
+      "conceptnet": 202,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 426
+      "wikidata_api": 429
     },
     "available_next_source_counts": {
-      "conceptnet": 200,
-      "wikidata": 13,
+      "conceptnet": 202,
+      "wikidata": 12,
       "wikipedia": 537,
-      "wikidata_api": 426
+      "wikidata_api": 429
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -99,24 +102,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q7595945",
-        "title": "叠形",
+        "scan_key": "id:Q7784739",
+        "title": "第三方生殖",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q7784739",
-        "title": "第三方生殖",
+        "scan_key": "id:Q7946",
+        "title": "礦物",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q7946",
-        "title": "礦物",
+        "scan_key": "id:Q79529",
+        "title": "化学物质",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -152,24 +155,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q7595945",
-          "title": "叠形",
+          "scan_key": "id:Q7784739",
+          "title": "第三方生殖",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q7784739",
-          "title": "第三方生殖",
+          "scan_key": "id:Q7946",
+          "title": "礦物",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q7946",
-          "title": "礦物",
+          "scan_key": "id:Q79529",
+          "title": "化学物质",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
