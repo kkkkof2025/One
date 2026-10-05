@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-10-04T03:36:11Z",
+  "generated_at": "2026-10-05T03:17:58Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q7784739",
-      "title": "第三方生殖",
+      "scan_key": "id:Q7946",
+      "title": "礦物",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 135.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q7946",
-      "title": "礦物",
+      "scan_key": "id:Q79529",
+      "title": "化学物质",
       "next_source": "wikipedia",
       "source_progress": 1,
-      "priority": 135.0,
+      "priority": 130.0,
       "depth": 3
     },
     {
-      "scan_key": "id:Q79529",
-      "title": "化学物质",
+      "scan_key": "id:Q815297",
+      "title": "系统生物学",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 135.0,

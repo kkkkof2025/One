@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:混合物",
+  "source": "nodes/混合物-8a699535599e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/混合物-8a699535599e.json",
+  "legacy_children": "../../children/nodes/混合物-8a699535599e.json"
+}

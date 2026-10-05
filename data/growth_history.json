@@ -22429,5 +22429,174 @@
     },
     "max_sources_per_node": 1,
     "stop_reason": ""
+  },
+  {
+    "run_at": "2026-10-05T03:17:57Z",
+    "added_nodes": 4,
+    "total_nodes": 1195,
+    "requests": 5,
+    "scanned_nodes": 1322,
+    "candidate_nodes": 1184,
+    "unchanged_requests": 1,
+    "failed_requests": 0,
+    "end_nodes_marked": 0,
+    "end_node_count": 0,
+    "source_request_counts": {
+      "conceptnet": 1,
+      "wikidata": 2,
+      "wikipedia": 1,
+      "wikidata_api": 1
+    },
+    "source_outcome_counts": {
+      "conceptnet": {
+        "transient_error_requests": 1
+      },
+      "wikidata": {
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 1,
+        "rate_limited_requests": 1
+      },
+      "wikipedia": {
+        "children_returned_requests": 1,
+        "productive_requests": 1,
+        "added_nodes": 3
+      },
+      "wikidata_api": {
+        "no_children_requests": 1,
+        "unchanged_requests": 1
+      }
+    },
+    "candidate_source_summary": {
+      "candidate_count": 1184,
+      "source_progress_counts": {
+        "4": 20,
+        "2": 47,
+        "1": 11,
+        "0": 968,
+        "3": 138
+      },
+      "next_source_counts": {
+        "conceptnet": 204,
+        "wikidata": 11,
+        "wikipedia": 537,
+        "wikidata_api": 432
+      },
+      "available_next_source_counts": {
+        "conceptnet": 204,
+        "wikidata": 11,
+        "wikipedia": 537,
+        "wikidata_api": 432
+      },
+      "blocked_by_cooldown": 0,
+      "scheduler": "priority-source-round-robin-v1",
+      "source_diversity_enabled": true,
+      "request_limit": 5,
+      "selection_limit": 5,
+      "scheduled_source_counts": {
+        "conceptnet": 2,
+        "wikidata": 1,
+        "wikipedia": 1,
+        "wikidata_api": 1
+      },
+      "scheduled_candidates": [
+        {
+          "scan_key": "id:Q135741",
+          "title": "影子生物圈",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q7946",
+          "title": "礦物",
+          "next_source": "wikidata",
+          "source_progress": 2,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q79529",
+          "title": "化学物质",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 130.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q815297",
+          "title": "系统生物学",
+          "next_source": "wikidata_api",
+          "source_progress": 0,
+          "priority": 135.0,
+          "depth": 3
+        },
+        {
+          "scan_key": "id:Q2993663",
+          "title": "人工意識",
+          "next_source": "conceptnet",
+          "source_progress": 4,
+          "priority": 135.0,
+          "depth": 3
+        }
+      ],
+      "next_run_preview": {
+        "scheduler": "priority-source-round-robin-v1",
+        "source_diversity_enabled": true,
+        "request_limit": 5,
+        "selection_limit": 5,
+        "scheduled_source_counts": {
+          "conceptnet": 2,
+          "wikidata": 1,
+          "wikipedia": 1,
+          "wikidata_api": 1
+        },
+        "scheduled_candidates": [
+          {
+            "scan_key": "id:Q135741",
+            "title": "影子生物圈",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 135.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q7946",
+            "title": "礦物",
+            "next_source": "wikidata",
+            "source_progress": 2,
+            "priority": 135.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q79529",
+            "title": "化学物质",
+            "next_source": "wikipedia",
+            "source_progress": 1,
+            "priority": 130.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q815297",
+            "title": "系统生物学",
+            "next_source": "wikidata_api",
+            "source_progress": 0,
+            "priority": 135.0,
+            "depth": 3
+          },
+          {
+            "scan_key": "id:Q2993663",
+            "title": "人工意識",
+            "next_source": "conceptnet",
+            "source_progress": 4,
+            "priority": 135.0,
+            "depth": 3
+          }
+        ]
+      }
+    },
+    "max_sources_per_node": 1,
+    "stop_reason": ""
   }
 ]

@@ -291,7 +291,7 @@
     },
     {
       "title": "化学物质",
-      "children_count": 1,
+      "children_count": 4,
       "id": "Q79529",
       "data_source": "nodes/Q79529.json",
       "source_provider": "wikidata",
@@ -302,14 +302,15 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-04T03:35:06Z",
-      "last_checked_at": "2026-10-04T03:35:06Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-10-05T03:16:53Z",
+      "last_checked_at": "2026-10-05T03:16:53Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_checked": {
-        "wikidata_api": "2026-10-04T03:35:06Z"
+        "wikidata_api": "2026-10-04T03:35:06Z",
+        "wikipedia": "2026-10-05T03:16:53Z"
       }
     },
     {
@@ -546,22 +547,22 @@
     },
     {
       "title": "礦物",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q7946",
       "data_source": "nodes/Q7946.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q7946",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-04T03:35:06Z",
-      "last_checked_at": "2026-10-04T03:35:06Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-05T03:16:53Z",
+      "last_checked_at": "2026-10-05T03:16:53Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-03T03:06:36Z",
@@ -569,7 +570,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-10-03T03:06:36Z",
-        "wikipedia": "2026-10-04T03:35:06Z"
+        "wikipedia": "2026-10-04T03:35:06Z",
+        "wikidata": "2026-10-05T03:16:53Z"
       }
     },
     {

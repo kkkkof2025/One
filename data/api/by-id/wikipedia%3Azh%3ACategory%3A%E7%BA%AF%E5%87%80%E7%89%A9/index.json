@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:纯净物",
+  "source": "nodes/纯净物-5db31ce1b69a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/纯净物-5db31ce1b69a.json",
+  "legacy_children": "../../children/nodes/纯净物-5db31ce1b69a.json"
+}

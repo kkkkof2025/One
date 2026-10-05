@@ -3,7 +3,7 @@
   "source": "nodes/Q79529.json",
   "node": {
     "title": "化学物质",
-    "children_count": 1,
+    "children_count": 4,
     "id": "Q79529",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,14 +13,15 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-04T03:35:06Z",
-    "last_checked_at": "2026-10-04T03:35:06Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-10-05T03:16:53Z",
+    "last_checked_at": "2026-10-05T03:16:53Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-10-04T03:35:06Z"
+      "wikidata_api": "2026-10-04T03:35:06Z",
+      "wikipedia": "2026-10-05T03:16:53Z"
     }
   },
   "children": [
@@ -37,7 +38,49 @@
       "quality_score": 87,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "混合物",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:混合物",
+      "data_source": "nodes/混合物-8a699535599e.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B7%B7%E5%90%88%E7%89%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "纯净物",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:纯净物",
+      "data_source": "nodes/纯净物-5db31ce1b69a.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BA%AF%E5%87%80%E7%89%A9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "细菌物质",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:细菌物质",
+      "data_source": "nodes/细菌物质-16cb280424ff.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BB%86%E8%8F%8C%E7%89%A9%E8%B4%A8",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 4
 }
