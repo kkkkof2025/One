@@ -4,28 +4,97 @@
   "node": {
     "id": "Q815297",
     "title": "系统生物学",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "生物圈組成層次",
+        "data_source": "nodes/生物圈組成層次-06111589ab35.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物圈組成層次",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E5%9C%88%E7%B5%84%E6%88%90%E5%B1%A4%E6%AC%A1",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物數學",
+        "data_source": "nodes/生物數學-1d1c17b7217d.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物數學",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E6%95%B8%E5%AD%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "生物过程",
+        "data_source": "nodes/生物过程-9a78b771a467.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:生物过程",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%94%9F%E7%89%A9%E8%BF%87%E7%A8%8B",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "系統生態學",
+        "data_source": "nodes/系統生態學-4f6b2689d504.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:系統生態學",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B3%BB%E7%B5%B1%E7%94%9F%E6%85%8B%E5%AD%B8",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "系统生物学家",
+        "data_source": "nodes/系统生物学家-f205ff2df0d8.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:系统生物学家",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B3%BB%E7%BB%9F%E7%94%9F%E7%89%A9%E5%AD%A6%E5%AE%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q815297",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-05T03:16:54Z",
-    "last_checked_at": "2026-10-05T03:16:54Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-10-06T04:03:59Z",
+    "last_checked_at": "2026-10-06T04:03:59Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-10-05T03:16:54Z"
+      "wikidata_api": "2026-10-05T03:16:54Z",
+      "wikipedia": "2026-10-06T04:03:59Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-05T03:16:54Z"

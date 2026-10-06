@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:系統生態學",
+  "source": "nodes/系統生態學-4f6b2689d504.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/系統生態學-4f6b2689d504.json",
+  "legacy_children": "../../children/nodes/系統生態學-4f6b2689d504.json"
+}
