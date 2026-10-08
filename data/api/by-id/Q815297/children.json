@@ -3,7 +3,7 @@
   "source": "nodes/Q815297.json",
   "node": {
     "title": "系统生物学",
-    "children_count": 5,
+    "children_count": 8,
     "id": "Q815297",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-06T04:03:59Z",
-    "last_checked_at": "2026-10-06T04:03:59Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-08T03:47:24Z",
+    "last_checked_at": "2026-10-08T03:47:24Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-05T03:16:54Z"
     },
     "source_checked": {
       "wikidata_api": "2026-10-05T03:16:54Z",
-      "wikipedia": "2026-10-06T04:03:59Z"
+      "wikipedia": "2026-10-06T04:03:59Z",
+      "wikidata": "2026-10-08T03:47:24Z"
     }
   },
   "children": [
@@ -97,7 +98,49 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "合成生物学",
+      "children_count": 0,
+      "id": "Q862838",
+      "data_source": "nodes/Q862838.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q862838",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "多组学",
+      "children_count": 0,
+      "id": "Q25110691",
+      "data_source": "nodes/Q25110691.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q25110691",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "系統藥理學",
+      "children_count": 0,
+      "id": "Q7663877",
+      "data_source": "nodes/Q7663877.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7663877",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 5
+  "child_count": 8
 }

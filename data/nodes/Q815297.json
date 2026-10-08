@@ -67,6 +67,45 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "合成生物学",
+      "data_source": "nodes/Q862838.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q862838",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q862838",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "多组学",
+      "data_source": "nodes/Q25110691.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q25110691",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q25110691",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "系統藥理學",
+      "data_source": "nodes/Q7663877.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7663877",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7663877",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -83,15 +122,16 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-10-06T04:03:59Z",
-  "last_checked_at": "2026-10-06T04:03:59Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-10-08T03:47:24Z",
+  "last_checked_at": "2026-10-08T03:47:24Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-10-05T03:16:54Z",
-    "wikipedia": "2026-10-06T04:03:59Z"
+    "wikipedia": "2026-10-06T04:03:59Z",
+    "wikidata": "2026-10-08T03:47:24Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-10-05T03:16:54Z"

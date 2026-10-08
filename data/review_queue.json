@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-07T03:32:00Z",
+  "generated_at": "2026-10-08T03:47:28Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 162,
+  "total_candidates": 163,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 162,
+  "total_items": 163,
   "reason_distribution": {
-    "total_items": 162,
+    "total_items": 163,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 33,
+        "count": 34,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -99,11 +99,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 159
+        "count": 160
       },
       {
         "reason": "qid",
-        "count": 158
+        "count": 159
       },
       {
         "reason": "missing_relation",
@@ -115,7 +115,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 79
+        "count": 80
       },
       {
         "reason": "fetch_error",
@@ -127,7 +127,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 27
+        "count": 28
       },
       {
         "reason": "has_children",
@@ -178,6 +178,10 @@
         "count": 1
       },
       {
+        "reason": "relation:part_of",
+        "count": 1
+      },
+      {
         "reason": "relation:wikipedia_category",
         "count": 1
       },
@@ -190,7 +194,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 100
+        "count": 101
       },
       {
         "status": "error",
@@ -3326,6 +3330,30 @@
       "priority": 43.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q431",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "医学",
+      "children_status": "pending",
+      "quality_score": 81,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:part_of",
+        "duplicate_id:2"
+      ],
+      "id": "Q11190",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q11190",
+      "path": "万物 / 生命 / 生命科學 / 医学",
+      "location": "nodes/Q11190.json",
+      "priority": 43.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q11190",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

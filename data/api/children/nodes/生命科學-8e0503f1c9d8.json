@@ -317,7 +317,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-10-08T03:46:20Z",
+      "last_checked_at": "2026-10-08T03:46:20Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-10-08T03:46:20Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-10-08T03:46:20Z"
+      }
     },
     {
       "title": "生物学",
@@ -375,7 +387,7 @@
     },
     {
       "title": "系统生物学",
-      "children_count": 5,
+      "children_count": 8,
       "id": "Q815297",
       "data_source": "nodes/Q815297.json",
       "source_provider": "wikidata",
@@ -386,38 +398,39 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-06T04:03:59Z",
-      "last_checked_at": "2026-10-06T04:03:59Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-08T03:47:24Z",
+      "last_checked_at": "2026-10-08T03:47:24Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-05T03:16:54Z"
       },
       "source_checked": {
         "wikidata_api": "2026-10-05T03:16:54Z",
-        "wikipedia": "2026-10-06T04:03:59Z"
+        "wikipedia": "2026-10-06T04:03:59Z",
+        "wikidata": "2026-10-08T03:47:24Z"
       }
     },
     {
       "title": "醫療衛生科學",
-      "children_count": 0,
+      "children_count": 16,
       "id": "Q843601",
       "data_source": "nodes/Q843601.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q843601",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-07T03:31:56Z",
-      "last_checked_at": "2026-10-07T03:31:56Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-08T03:46:19Z",
+      "last_checked_at": "2026-10-08T03:46:19Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-06T04:03:59Z",
@@ -425,7 +438,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-10-06T04:03:59Z",
-        "wikipedia": "2026-10-07T03:31:56Z"
+        "wikipedia": "2026-10-07T03:31:56Z",
+        "wikidata": "2026-10-08T03:46:19Z"
       }
     },
     {
