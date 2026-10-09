@@ -1,25 +1,25 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-10-08T03:47:25Z",
+  "generated_at": "2026-10-09T03:52:55Z",
   "id": "Q904216",
   "source": "nodes/Q904216.json",
   "node": {
     "title": "粘贴",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q904216",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q904216",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-08T03:46:20Z",
-    "last_checked_at": "2026-10-08T03:46:20Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-09T03:51:50Z",
+    "last_checked_at": "2026-10-09T03:51:50Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-07T03:31:56Z",
@@ -27,7 +27,8 @@
     },
     "source_checked": {
       "wikidata_api": "2026-10-07T03:31:56Z",
-      "wikipedia": "2026-10-08T03:46:20Z"
+      "wikipedia": "2026-10-08T03:46:20Z",
+      "wikidata": "2026-10-09T03:51:50Z"
     }
   },
   "fetch_strategy_version": 8,
@@ -46,6 +47,7 @@
     "dbpedia"
   ],
   "checked_sources": [
+    "wikidata",
     "wikidata_api",
     "wikipedia"
   ],
@@ -54,17 +56,17 @@
     "wikipedia"
   ],
   "done_sources": [
+    "wikidata",
     "wikidata_api",
     "wikipedia"
   ],
   "implicit_done_sources": [],
   "remaining_sources": [
-    "wikidata",
     "conceptnet",
     "dbpedia"
   ],
-  "next_source": "wikidata",
-  "next_source_without_cooldown": "wikidata",
+  "next_source": "dbpedia",
+  "next_source_without_cooldown": "conceptnet",
   "can_fetch": true,
   "eligible": true,
   "exhausted": false,
@@ -76,15 +78,15 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-10-08T03:46:19Z",
+      "occurred_at": "2026-10-09T03:51:50Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-10-08T03:56:19Z",
+      "cooldown_until": "2026-10-09T04:01:50Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "progress": {
     "supported": 5,
-    "done": 2,
-    "remaining": 3
+    "done": 3,
+    "remaining": 2
   }
 }
