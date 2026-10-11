@@ -3,21 +3,21 @@
   "source": "nodes/Q910355.json",
   "node": {
     "title": "堆芯熔融物",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q910355",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q910355",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-10T03:35:22Z",
-    "last_checked_at": "2026-10-10T03:35:22Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-11T03:08:22Z",
+    "last_checked_at": "2026-10-11T03:08:22Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-09T03:51:51Z",
@@ -25,9 +25,25 @@
     },
     "source_checked": {
       "wikidata_api": "2026-10-09T03:51:51Z",
-      "wikipedia": "2026-10-10T03:35:22Z"
+      "wikipedia": "2026-10-10T03:35:22Z",
+      "wikidata": "2026-10-11T03:08:22Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "車諾比石",
+      "children_count": 0,
+      "id": "Q3503794",
+      "data_source": "nodes/Q3503794.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q3503794",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 1
 }

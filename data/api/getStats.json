@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-10T03:36:27Z",
-  "total_nodes": 1219,
-  "last_added_nodes": 0,
+  "generated_at": "2026-10-11T03:09:27Z",
+  "total_nodes": 1220,
+  "last_added_nodes": 1,
   "last_request_count": 5,
   "last_scanned_nodes": 1352,
   "last_candidate_nodes": 1212,
-  "last_unchanged_requests": 4,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -19,8 +19,11 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -35,22 +38,22 @@
     "candidate_count": 1212,
     "source_progress_counts": {
       "4": 20,
-      "2": 49,
+      "2": 48,
       "1": 9,
-      "0": 991,
-      "3": 143
+      "0": 990,
+      "3": 145
     },
     "next_source_counts": {
-      "conceptnet": 210,
-      "wikidata": 10,
+      "conceptnet": 212,
+      "wikidata": 9,
       "wikipedia": 544,
-      "wikidata_api": 448
+      "wikidata_api": 447
     },
     "available_next_source_counts": {
-      "conceptnet": 210,
-      "wikidata": 10,
+      "conceptnet": 212,
+      "wikidata": 9,
       "wikipedia": 544,
-      "wikidata_api": 448
+      "wikidata_api": 447
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -73,24 +76,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q904564",
-        "title": "族群動態",
+        "scan_key": "id:Q910355",
+        "title": "堆芯熔融物",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q910355",
-        "title": "堆芯熔融物",
+        "scan_key": "id:Q91328142",
+        "title": "子空间",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 135.0,
         "depth": 3
       },
       {
-        "scan_key": "id:Q91328142",
-        "title": "子空间",
+        "scan_key": "id:Q934367",
+        "title": "函数空间",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 135.0,
@@ -126,24 +129,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q904564",
-          "title": "族群動態",
+          "scan_key": "id:Q910355",
+          "title": "堆芯熔融物",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q910355",
-          "title": "堆芯熔融物",
+          "scan_key": "id:Q91328142",
+          "title": "子空间",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 135.0,
           "depth": 3
         },
         {
-          "scan_key": "id:Q91328142",
-          "title": "子空间",
+          "scan_key": "id:Q934367",
+          "title": "函数空间",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 135.0,
@@ -163,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 39,
+    "added_nodes": 35,
     "requests": 40,
-    "added_per_request": 0.975,
-    "zero_growth_streak": 1,
-    "last_productive_run_at": "2026-10-09T03:52:55Z",
+    "added_per_request": 0.875,
+    "zero_growth_streak": 0,
+    "last_productive_run_at": "2026-10-11T03:09:27Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 15,
@@ -180,11 +183,11 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 8,
-        "productive_requests": 7,
-        "added_nodes": 30,
-        "no_children_requests": 4,
-        "unchanged_requests": 5,
+        "children_returned_requests": 7,
+        "productive_requests": 6,
+        "added_nodes": 26,
+        "no_children_requests": 5,
+        "unchanged_requests": 6,
         "rate_limited_requests": 3,
         "duplicate_requests": 1
       },
@@ -196,11 +199,11 @@
         "added_nodes": 8
       },
       "wikidata_api": {
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
         "children_returned_requests": 1,
         "productive_requests": 1,
-        "added_nodes": 1
+        "added_nodes": 1,
+        "no_children_requests": 7,
+        "unchanged_requests": 7
       },
       "dbpedia": {
         "no_children_requests": 1,
@@ -211,7 +214,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 173,
+  "history_entries": 174,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
