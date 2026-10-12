@@ -377,17 +377,19 @@
       "quality_score": 97,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-11T03:08:22Z",
-      "last_checked_at": "2026-10-11T03:08:22Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-10-12T03:31:39Z",
+      "last_checked_at": "2026-10-12T03:31:39Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_no_children": {
-        "wikidata_api": "2026-10-11T03:08:22Z"
+        "wikidata_api": "2026-10-11T03:08:22Z",
+        "wikipedia": "2026-10-12T03:31:39Z"
       },
       "source_checked": {
-        "wikidata_api": "2026-10-11T03:08:22Z"
+        "wikidata_api": "2026-10-11T03:08:22Z",
+        "wikipedia": "2026-10-12T03:31:39Z"
       }
     },
     {
@@ -491,20 +493,20 @@
     {
       "title": "子空间",
       "data_source": "nodes/Q91328142.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q91328142",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q91328142",
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-11T03:08:22Z",
-      "last_checked_at": "2026-10-11T03:08:22Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-12T03:31:39Z",
+      "last_checked_at": "2026-10-12T03:31:39Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-10T03:35:22Z",
@@ -512,7 +514,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-10-10T03:35:22Z",
-        "wikipedia": "2026-10-11T03:08:22Z"
+        "wikipedia": "2026-10-11T03:08:22Z",
+        "wikidata": "2026-10-12T03:31:39Z"
       }
     },
     {

@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-10-11T03:09:27Z",
+  "generated_at": "2026-10-12T03:32:44Z",
   "id": "wikipedia:zh:Category:应激",
   "source": "nodes/应激-f2361d80c151.json",
   "node": {
@@ -52,9 +52,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-10-11T03:08:22Z",
+      "occurred_at": "2026-10-12T03:31:38Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-10-11T03:18:22Z",
+      "cooldown_until": "2026-10-12T03:41:38Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
