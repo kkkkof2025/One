@@ -4,29 +4,85 @@
   "node": {
     "id": "Q934367",
     "title": "函数空间",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "Lp空间",
+        "data_source": "nodes/Q305936.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q305936",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q305936",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "再生核希尔伯特空间",
+        "data_source": "nodes/Q3345678.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3345678",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q3345678",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "哈代L-函數",
+        "data_source": "nodes/Q17021030.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q17021030",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q17021030",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "序列空間",
+        "data_source": "nodes/Q289411.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q289411",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q289411",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q934367",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-12T03:31:39Z",
-    "last_checked_at": "2026-10-12T03:31:39Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-13T04:45:48Z",
+    "last_checked_at": "2026-10-13T04:45:48Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-11T03:08:22Z",
-      "wikipedia": "2026-10-12T03:31:39Z"
+      "wikipedia": "2026-10-12T03:31:39Z",
+      "wikidata": "2026-10-13T04:45:48Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-11T03:08:22Z",

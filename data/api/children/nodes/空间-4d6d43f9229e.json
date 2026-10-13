@@ -38,14 +38,18 @@
       "quality_score": 83,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-06T01:49:32Z",
-      "last_checked_at": "2026-08-06T01:49:32Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-13T04:46:53Z",
+      "last_checked_at": "2026-10-13T04:46:53Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
+      "source_no_children": {
+        "wikidata": "2026-10-13T04:46:53Z"
+      },
       "source_checked": {
-        "wikipedia": "2026-08-06T01:49:32Z"
+        "wikipedia": "2026-08-06T01:49:32Z",
+        "wikidata": "2026-10-13T04:46:53Z"
       }
     },
     {
@@ -408,22 +412,22 @@
     },
     {
       "title": "函数空间",
-      "children_count": 0,
+      "children_count": 4,
       "id": "Q934367",
       "data_source": "nodes/Q934367.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q934367",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-10-12T03:31:39Z",
-      "last_checked_at": "2026-10-12T03:31:39Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-13T04:45:48Z",
+      "last_checked_at": "2026-10-13T04:45:48Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-11T03:08:22Z",
@@ -431,7 +435,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-10-11T03:08:22Z",
-        "wikipedia": "2026-10-12T03:31:39Z"
+        "wikipedia": "2026-10-12T03:31:39Z",
+        "wikidata": "2026-10-13T04:45:48Z"
       }
     },
     {
