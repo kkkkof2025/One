@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-14T02:55:06Z",
+  "generated_at": "2026-10-15T02:34:05Z",
   "total_nodes": 1226,
   "last_added_nodes": 0,
   "last_request_count": 5,
   "last_scanned_nodes": 1359,
   "last_candidate_nodes": 1219,
-  "last_unchanged_requests": 4,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
@@ -19,8 +19,9 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
+      "no_children_requests": 1,
+      "unchanged_requests": 1,
+      "rate_limited_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
@@ -35,22 +36,22 @@
     "candidate_count": 1219,
     "source_progress_counts": {
       "4": 20,
-      "2": 51,
-      "1": 6,
-      "0": 994,
-      "3": 148
+      "2": 52,
+      "1": 5,
+      "0": 993,
+      "3": 149
     },
     "next_source_counts": {
-      "conceptnet": 218,
-      "wikidata": 6,
+      "conceptnet": 220,
+      "wikidata": 5,
       "wikipedia": 544,
-      "wikidata_api": 451
+      "wikidata_api": 450
     },
     "available_next_source_counts": {
-      "conceptnet": 218,
-      "wikidata": 6,
+      "conceptnet": 220,
+      "wikidata": 5,
       "wikipedia": 544,
-      "wikidata_api": 451
+      "wikidata_api": 450
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -73,24 +74,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1045712",
-        "title": "神經經濟學",
+        "scan_key": "id:Q1047531",
+        "title": "雌核发育",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q1047531",
-        "title": "雌核发育",
+        "scan_key": "id:Q105658190",
+        "title": "类生物结构",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q105658190",
-        "title": "类生物结构",
+        "scan_key": "id:Q1059843",
+        "title": "石油产品",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -126,24 +127,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1045712",
-          "title": "神經經濟學",
+          "scan_key": "id:Q1047531",
+          "title": "雌核发育",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q1047531",
-          "title": "雌核发育",
+          "scan_key": "id:Q105658190",
+          "title": "类生物结构",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q105658190",
-          "title": "类生物结构",
+          "scan_key": "id:Q1059843",
+          "title": "石油产品",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -166,26 +167,25 @@
     "added_nodes": 28,
     "requests": 40,
     "added_per_request": 0.7,
-    "zero_growth_streak": 1,
+    "zero_growth_streak": 2,
     "last_productive_run_at": "2026-10-13T04:46:54Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 15,
+      "wikidata": 16,
       "wikipedia": 8,
-      "wikidata_api": 8,
-      "dbpedia": 1
+      "wikidata_api": 8
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 2,
         "children_returned_requests": 6,
         "productive_requests": 6,
         "added_nodes": 28,
-        "no_children_requests": 7,
-        "unchanged_requests": 7
+        "rate_limited_requests": 2,
+        "no_children_requests": 8,
+        "unchanged_requests": 8
       },
       "wikipedia": {
         "no_children_requests": 8,
@@ -194,17 +194,13 @@
       "wikidata_api": {
         "no_children_requests": 8,
         "unchanged_requests": 8
-      },
-      "dbpedia": {
-        "no_children_requests": 1,
-        "unchanged_requests": 1
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 177,
+  "history_entries": 178,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
