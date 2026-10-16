@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:汽车燃料零售商",
+  "source": "nodes/汽车燃料零售商-f31c6f76ac0f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/汽车燃料零售商-f31c6f76ac0f.json",
+  "legacy_children": "../../children/nodes/汽车燃料零售商-f31c6f76ac0f.json"
+}

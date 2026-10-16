@@ -3,29 +3,115 @@
   "source": "nodes/Q1059843.json",
   "node": {
     "title": "石油产品",
-    "children_count": 0,
+    "children_count": 6,
     "id": "Q1059843",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1059843",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-15T02:33:00Z",
-    "last_checked_at": "2026-10-15T02:33:00Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-10-16T02:28:05Z",
+    "last_checked_at": "2026-10-16T02:28:05Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-15T02:33:00Z"
     },
     "source_checked": {
-      "wikidata_api": "2026-10-15T02:33:00Z"
+      "wikidata_api": "2026-10-15T02:33:00Z",
+      "wikipedia": "2026-10-16T02:28:05Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "柏油",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:柏油",
+      "data_source": "nodes/柏油-e45be69ee38e.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9F%8F%E6%B2%B9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "柴油",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:柴油",
+      "data_source": "nodes/柴油-173b3f2b0408.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%9F%B4%E6%B2%B9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "機油",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:機油",
+      "data_source": "nodes/機油-b7bbc7f3d3de.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%A9%9F%E6%B2%B9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "汽车燃料零售商",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:汽车燃料零售商",
+      "data_source": "nodes/汽车燃料零售商-f31c6f76ac0f.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B1%BD%E8%BD%A6%E7%87%83%E6%96%99%E9%9B%B6%E5%94%AE%E5%95%86",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "烃类溶剂",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:烃类溶剂",
+      "data_source": "nodes/烃类溶剂-aa36207d18aa.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%83%83%E7%B1%BB%E6%BA%B6%E5%89%82",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "航空燃油",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:航空燃油",
+      "data_source": "nodes/航空燃油-bc13f0c83c44.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%88%AA%E7%A9%BA%E7%87%83%E6%B2%B9",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 6
 }

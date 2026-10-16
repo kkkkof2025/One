@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:航空燃油",
+  "source": "nodes/航空燃油-bc13f0c83c44.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/航空燃油-bc13f0c83c44.json",
+  "legacy_children": "../../children/nodes/航空燃油-bc13f0c83c44.json"
+}

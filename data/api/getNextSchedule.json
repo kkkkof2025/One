@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-10-15T02:34:05Z",
+  "generated_at": "2026-10-16T02:29:10Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1047531",
-      "title": "雌核发育",
+      "scan_key": "id:Q105658190",
+      "title": "类生物结构",
       "next_source": "wikidata",
       "source_progress": 2,
       "priority": 131.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q105658190",
-      "title": "类生物结构",
+      "scan_key": "id:Q1059843",
+      "title": "石油产品",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 131.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q1059843",
-      "title": "石油产品",
+      "scan_key": "id:Q1076537",
+      "title": "宗教神經科學",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:機油",
+  "source": "nodes/機油-b7bbc7f3d3de.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/機油-b7bbc7f3d3de.json",
+  "legacy_children": "../../children/nodes/機油-b7bbc7f3d3de.json"
+}

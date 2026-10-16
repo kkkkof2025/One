@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:汽车燃料零售商",
+  "title": "汽车燃料零售商",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B1%BD%E8%BD%A6%E7%87%83%E6%96%99%E9%9B%B6%E5%94%AE%E5%95%86",
+  "source_page_id": 7480295,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

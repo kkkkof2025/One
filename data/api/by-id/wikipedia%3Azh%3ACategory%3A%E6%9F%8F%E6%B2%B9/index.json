@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:柏油",
+  "source": "nodes/柏油-e45be69ee38e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/柏油-e45be69ee38e.json",
+  "legacy_children": "../../children/nodes/柏油-e45be69ee38e.json"
+}
