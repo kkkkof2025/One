@@ -3,7 +3,7 @@
   "source": "nodes/Q1059843.json",
   "node": {
     "title": "石油产品",
-    "children_count": 6,
+    "children_count": 16,
     "id": "Q1059843",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,11 +13,11 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-18T02:20:39Z",
-    "last_checked_at": "2026-10-18T02:20:39Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-10-19T02:35:18Z",
+    "last_checked_at": "2026-10-19T02:35:18Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-15T02:33:00Z",
@@ -26,7 +26,8 @@
     "source_checked": {
       "wikidata_api": "2026-10-15T02:33:00Z",
       "wikipedia": "2026-10-16T02:28:05Z",
-      "dbpedia": "2026-10-18T02:20:39Z"
+      "dbpedia": "2026-10-18T02:20:39Z",
+      "wikidata": "2026-10-19T02:35:18Z"
     }
   },
   "children": [
@@ -113,7 +114,147 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "基礎油",
+      "children_count": 0,
+      "id": "Q19903441",
+      "data_source": "nodes/Q19903441.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q19903441",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "柏油",
+      "children_count": 0,
+      "id": "Q202251",
+      "data_source": "nodes/Q202251.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q202251",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "汽油",
+      "children_count": 0,
+      "id": "Q39558",
+      "data_source": "nodes/Q39558.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q39558",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "液化天然气",
+      "children_count": 0,
+      "id": "Q358333",
+      "data_source": "nodes/Q358333.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q358333",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "瀝青",
+      "children_count": 0,
+      "id": "Q167510",
+      "data_source": "nodes/Q167510.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q167510",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "煤油",
+      "children_count": 0,
+      "id": "Q76904",
+      "data_source": "nodes/Q76904.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q76904",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "燈油",
+      "children_count": 0,
+      "id": "Q28692557",
+      "data_source": "nodes/Q28692557.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q28692557",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "石化產物",
+      "children_count": 0,
+      "id": "Q1364904",
+      "data_source": "nodes/Q1364904.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1364904",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "裂解汽油",
+      "children_count": 0,
+      "id": "Q1131946",
+      "data_source": "nodes/Q1131946.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1131946",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "重油",
+      "children_count": 0,
+      "id": "Q214199",
+      "data_source": "nodes/Q214199.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q214199",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 6
+  "child_count": 16
 }

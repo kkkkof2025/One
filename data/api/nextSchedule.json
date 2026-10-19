@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-10-18T02:20:39Z",
+  "generated_at": "2026-10-19T02:36:24Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1076537",
-      "title": "宗教神經科學",
+      "scan_key": "id:Q1059843",
+      "title": "石油产品",
       "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 131.0,
+      "source_progress": 3,
+      "priority": 126.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q110688445",
-      "title": "有机宝石",
+      "scan_key": "id:Q1115376",
+      "title": "捐卵",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 131.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q1115376",
-      "title": "捐卵",
+      "scan_key": "id:Q1139400",
+      "title": "滲出液",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,
