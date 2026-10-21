@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:稀有气体",
+  "title": "稀有气体",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A8%80%E6%9C%89%E6%B0%94%E4%BD%93",
+  "source_page_id": 713885,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

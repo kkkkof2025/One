@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:气体技术",
+  "source": "nodes/气体技术-77658abfdcbb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/气体技术-77658abfdcbb.json",
+  "legacy_children": "../../children/nodes/气体技术-77658abfdcbb.json"
+}

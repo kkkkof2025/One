@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:流体力学",
+  "source": "nodes/流体力学-9c7b9d90ce95.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/流体力学-9c7b9d90ce95.json",
+  "legacy_children": "../../children/nodes/流体力学-9c7b9d90ce95.json"
+}

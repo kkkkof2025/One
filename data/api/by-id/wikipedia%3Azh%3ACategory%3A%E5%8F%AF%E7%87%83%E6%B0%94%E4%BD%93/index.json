@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:可燃气体",
+  "source": "nodes/可燃气体-b94a3df9ad7d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/可燃气体-b94a3df9ad7d.json",
+  "legacy_children": "../../children/nodes/可燃气体-b94a3df9ad7d.json"
+}

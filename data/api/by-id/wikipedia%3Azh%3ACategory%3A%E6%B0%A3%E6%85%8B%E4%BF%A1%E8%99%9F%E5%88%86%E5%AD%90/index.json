@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:氣態信號分子",
+  "source": "nodes/氣態信號分子-1dc896ebb643.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/氣態信號分子-1dc896ebb643.json",
+  "legacy_children": "../../children/nodes/氣態信號分子-1dc896ebb643.json"
+}

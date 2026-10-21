@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:稀有气体",
+  "source": "nodes/稀有气体-4746f23be85e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/稀有气体-4746f23be85e.json",
+  "legacy_children": "../../children/nodes/稀有气体-4746f23be85e.json"
+}

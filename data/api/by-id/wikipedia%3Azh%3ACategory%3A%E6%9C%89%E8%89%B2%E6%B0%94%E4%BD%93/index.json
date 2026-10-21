@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:有色气体",
+  "source": "nodes/有色气体-b80aa366f848.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/有色气体-b80aa366f848.json",
+  "legacy_children": "../../children/nodes/有色气体-b80aa366f848.json"
+}

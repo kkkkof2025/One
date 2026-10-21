@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/氣態信號分子-1dc896ebb643.json",
+  "node": {
+    "title": "氣態信號分子",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:氣態信號分子",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B0%A3%E6%85%8B%E4%BF%A1%E8%99%9F%E5%88%86%E5%AD%90",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:嗅觉",
+  "source": "nodes/嗅觉-abb328bd276b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/嗅觉-abb328bd276b.json",
+  "legacy_children": "../../children/nodes/嗅觉-abb328bd276b.json"
+}

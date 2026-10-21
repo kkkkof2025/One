@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/吸入剂-34dcc8ef25e2.json",
+  "node": {
+    "id": "wikipedia:zh:Category:吸入剂",
+    "title": "吸入剂",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%B8%E5%85%A5%E5%89%82",
+    "source_page_id": 9065847,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

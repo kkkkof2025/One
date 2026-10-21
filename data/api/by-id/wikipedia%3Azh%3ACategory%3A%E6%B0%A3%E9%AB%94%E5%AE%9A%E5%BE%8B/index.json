@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:氣體定律",
+  "source": "nodes/氣體定律-62e33603283c.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/氣體定律-62e33603283c.json",
+  "legacy_children": "../../children/nodes/氣體定律-62e33603283c.json"
+}

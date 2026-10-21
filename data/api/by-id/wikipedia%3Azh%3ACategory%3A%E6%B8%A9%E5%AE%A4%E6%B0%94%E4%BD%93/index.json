@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:温室气体",
+  "source": "nodes/温室气体-9680f7633420.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/温室气体-9680f7633420.json",
+  "legacy_children": "../../children/nodes/温室气体-9680f7633420.json"
+}

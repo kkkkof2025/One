@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:工业气体",
+  "source": "nodes/工业气体-b8fe3d00431b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/工业气体-b8fe3d00431b.json",
+  "legacy_children": "../../children/nodes/工业气体-b8fe3d00431b.json"
+}
