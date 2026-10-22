@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:液体容器",
+  "source": "nodes/液体容器-0dcdd766b06a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/液体容器-0dcdd766b06a.json",
+  "legacy_children": "../../children/nodes/液体容器-0dcdd766b06a.json"
+}

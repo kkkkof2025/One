@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:液体炸药",
+  "source": "nodes/液体炸药-d757c1de58f1.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/液体炸药-d757c1de58f1.json",
+  "legacy_children": "../../children/nodes/液体炸药-d757c1de58f1.json"
+}

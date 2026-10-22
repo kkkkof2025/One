@@ -4,30 +4,60 @@
   "node": {
     "id": "Q110688445",
     "title": "有机宝石",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "煤精",
+        "data_source": "nodes/Q543694.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q543694",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q543694",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "珍珠",
+        "data_source": "nodes/Q43436.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q43436",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q43436",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q110688445",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-21T02:41:40Z",
-    "last_checked_at": "2026-10-21T02:41:40Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-10-22T02:39:42Z",
+    "last_checked_at": "2026-10-22T02:39:42Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-17T02:20:45Z",
       "wikipedia": "2026-10-18T02:20:36Z",
-      "dbpedia": "2026-10-21T02:41:40Z"
+      "dbpedia": "2026-10-21T02:41:40Z",
+      "wikidata": "2026-10-22T02:39:42Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-17T02:20:45Z",

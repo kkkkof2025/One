@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/液固分离-25251ab9b3a2.json",
+  "node": {
+    "title": "液固分离",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:液固分离",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B6%B2%E5%9B%BA%E5%88%86%E7%A6%BB",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:液体燃料",
+  "source": "nodes/液体燃料-d803f1599451.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/液体燃料-d803f1599451.json",
+  "legacy_children": "../../children/nodes/液体燃料-d803f1599451.json"
+}

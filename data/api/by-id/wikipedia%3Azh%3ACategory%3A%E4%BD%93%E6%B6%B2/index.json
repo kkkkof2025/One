@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:体液",
+  "source": "nodes/体液-0c89f6796ab9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/体液-0c89f6796ab9.json",
+  "legacy_children": "../../children/nodes/体液-0c89f6796ab9.json"
+}

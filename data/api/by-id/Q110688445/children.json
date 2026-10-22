@@ -3,21 +3,21 @@
   "source": "nodes/Q110688445.json",
   "node": {
     "title": "有机宝石",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q110688445",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q110688445",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-21T02:41:40Z",
-    "last_checked_at": "2026-10-21T02:41:40Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-10-22T02:39:42Z",
+    "last_checked_at": "2026-10-22T02:39:42Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-17T02:20:45Z",
@@ -27,9 +27,39 @@
     "source_checked": {
       "wikidata_api": "2026-10-17T02:20:45Z",
       "wikipedia": "2026-10-18T02:20:36Z",
-      "dbpedia": "2026-10-21T02:41:40Z"
+      "dbpedia": "2026-10-21T02:41:40Z",
+      "wikidata": "2026-10-22T02:39:42Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "煤精",
+      "children_count": 0,
+      "id": "Q543694",
+      "data_source": "nodes/Q543694.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q543694",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "珍珠",
+      "children_count": 0,
+      "id": "Q43436",
+      "data_source": "nodes/Q43436.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q43436",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }

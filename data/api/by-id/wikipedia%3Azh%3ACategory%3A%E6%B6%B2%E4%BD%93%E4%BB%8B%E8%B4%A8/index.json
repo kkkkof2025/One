@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:液体介质",
+  "source": "nodes/液体介质-8e5f989facbc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/液体介质-8e5f989facbc.json",
+  "legacy_children": "../../children/nodes/液体介质-8e5f989facbc.json"
+}

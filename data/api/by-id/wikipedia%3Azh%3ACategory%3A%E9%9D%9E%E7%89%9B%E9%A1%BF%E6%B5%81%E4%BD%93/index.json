@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:非牛顿流体",
+  "source": "nodes/非牛顿流体-5d9ee745c0f3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/非牛顿流体-5d9ee745c0f3.json",
+  "legacy_children": "../../children/nodes/非牛顿流体-5d9ee745c0f3.json"
+}
