@@ -15,21 +15,23 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-10-20T02:47:51Z",
-  "last_checked_at": "2026-10-20T02:47:51Z",
-  "last_fetch_source": "dbpedia",
+  "updated_at": "2026-10-23T02:44:20Z",
+  "last_checked_at": "2026-10-23T02:44:20Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "dbpedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-10-18T02:20:36Z",
     "wikipedia": "2026-10-19T02:35:18Z",
-    "dbpedia": "2026-10-20T02:47:51Z"
+    "dbpedia": "2026-10-20T02:47:51Z",
+    "wikidata": "2026-10-23T02:44:20Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-10-18T02:20:36Z",
     "wikipedia": "2026-10-19T02:35:18Z",
-    "dbpedia": "2026-10-20T02:47:51Z"
+    "dbpedia": "2026-10-20T02:47:51Z",
+    "wikidata": "2026-10-23T02:44:20Z"
   },
   "is_leaf": false
 }

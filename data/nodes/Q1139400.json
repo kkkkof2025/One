@@ -1,29 +1,46 @@
 {
   "id": "Q1139400",
   "title": "滲出液",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "膿",
+      "data_source": "nodes/Q105943.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q105943",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q105943",
+      "quality_score": 67,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q1139400",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-10-20T02:47:49Z",
-  "last_checked_at": "2026-10-20T02:47:49Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-10-23T02:45:25Z",
+  "last_checked_at": "2026-10-23T02:45:25Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-10-19T02:35:18Z",
-    "wikipedia": "2026-10-20T02:47:49Z"
+    "wikipedia": "2026-10-20T02:47:49Z",
+    "wikidata": "2026-10-23T02:45:25Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-10-19T02:35:18Z",
