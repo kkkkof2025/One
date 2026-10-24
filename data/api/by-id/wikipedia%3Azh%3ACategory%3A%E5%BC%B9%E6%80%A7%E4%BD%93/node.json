@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/弹性体-eeda842bfa2a.json",
+  "node": {
+    "id": "wikipedia:zh:Category:弹性体",
+    "title": "弹性体",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BC%B9%E6%80%A7%E4%BD%93",
+    "source_page_id": 1036520,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

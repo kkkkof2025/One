@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q3099761.json",
+  "node": {
+    "id": "Q3099761",
+    "title": "水煤氣",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q3099761",
+    "quality_score": 81,
+    "quality_reasons": [
+      "qid",
+      "zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

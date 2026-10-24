@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:塑料与环境",
+  "source": "nodes/塑料与环境-fea72f316ea8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/塑料与环境-fea72f316ea8.json",
+  "legacy_children": "../../children/nodes/塑料与环境-fea72f316ea8.json"
+}

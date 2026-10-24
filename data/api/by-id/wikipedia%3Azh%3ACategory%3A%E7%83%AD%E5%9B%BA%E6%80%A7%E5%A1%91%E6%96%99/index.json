@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:热固性塑料",
+  "source": "nodes/热固性塑料-202f2caa096e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/热固性塑料-202f2caa096e.json",
+  "legacy_children": "../../children/nodes/热固性塑料-202f2caa096e.json"
+}

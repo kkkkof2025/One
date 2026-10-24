@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:塑膠添加劑",
+  "source": "nodes/塑膠添加劑-2f1a6005f5fa.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/塑膠添加劑-2f1a6005f5fa.json",
+  "legacy_children": "../../children/nodes/塑膠添加劑-2f1a6005f5fa.json"
+}

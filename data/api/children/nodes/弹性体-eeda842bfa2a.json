@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/弹性体-eeda842bfa2a.json",
+  "node": {
+    "title": "弹性体",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:弹性体",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%BC%B9%E6%80%A7%E4%BD%93",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

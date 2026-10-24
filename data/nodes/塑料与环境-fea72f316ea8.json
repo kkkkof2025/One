@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:塑料与环境",
+  "title": "塑料与环境",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A1%91%E6%96%99%E4%B8%8E%E7%8E%AF%E5%A2%83",
+  "source_page_id": 1643196,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

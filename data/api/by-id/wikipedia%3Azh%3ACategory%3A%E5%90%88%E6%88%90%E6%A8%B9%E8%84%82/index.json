@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:合成樹脂",
+  "source": "nodes/合成樹脂-f507ba3dd2c4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/合成樹脂-f507ba3dd2c4.json",
+  "legacy_children": "../../children/nodes/合成樹脂-f507ba3dd2c4.json"
+}

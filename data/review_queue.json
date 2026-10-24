@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-23T02:45:29Z",
+  "generated_at": "2026-10-24T02:42:42Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 163,
+  "total_candidates": 164,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 163,
+  "total_items": 164,
   "reason_distribution": {
-    "total_items": 163,
+    "total_items": 164,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 34,
+        "count": 35,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -99,11 +99,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 160
+        "count": 161
       },
       {
         "reason": "qid",
-        "count": 159
+        "count": 160
       },
       {
         "reason": "missing_relation",
@@ -115,7 +115,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 80
+        "count": 81
       },
       {
         "reason": "fetch_error",
@@ -127,7 +127,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 28
+        "count": 29
       },
       {
         "reason": "has_children",
@@ -138,11 +138,11 @@
         "count": 10
       },
       {
-        "reason": "relation:instance",
-        "count": 7
+        "reason": "relation:subclass",
+        "count": 8
       },
       {
-        "reason": "relation:subclass",
+        "reason": "relation:instance",
         "count": 7
       },
       {
@@ -194,7 +194,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 101
+        "count": 102
       },
       {
         "status": "error",
@@ -3690,6 +3690,30 @@
       "priority": 39.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q177005",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "工作流體",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q217236",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q217236",
+      "path": "万物 / 宇宙 / 物质 / 流体 / 工作流體",
+      "location": "nodes/Q217236.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q217236",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:塑料工业",
+  "source": "nodes/塑料工业-b45d0a811cf4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/塑料工业-b45d0a811cf4.json",
+  "legacy_children": "../../children/nodes/塑料工业-b45d0a811cf4.json"
+}

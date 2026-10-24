@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:塑料应用",
+  "source": "nodes/塑料应用-5ffe872f2c76.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/塑料应用-5ffe872f2c76.json",
+  "legacy_children": "../../children/nodes/塑料应用-5ffe872f2c76.json"
+}

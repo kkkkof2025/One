@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:弹性体",
+  "source": "nodes/弹性体-eeda842bfa2a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/弹性体-eeda842bfa2a.json",
+  "legacy_children": "../../children/nodes/弹性体-eeda842bfa2a.json"
+}
