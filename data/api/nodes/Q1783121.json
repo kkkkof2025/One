@@ -74,20 +74,20 @@
       {
         "title": "土壤有機質",
         "data_source": "nodes/Q1154759.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q1154759",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q1154759",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-10-25T02:30:46Z",
-        "last_checked_at": "2026-10-25T02:30:46Z",
-        "last_fetch_source": "wikipedia",
+        "updated_at": "2026-10-26T02:31:15Z",
+        "last_checked_at": "2026-10-26T02:31:15Z",
+        "last_fetch_source": "wikidata",
         "last_fetch_sources": [
-          "wikipedia"
+          "wikidata"
         ],
         "source_no_children": {
           "wikidata_api": "2026-10-24T02:41:34Z",
@@ -95,7 +95,8 @@
         },
         "source_checked": {
           "wikidata_api": "2026-10-24T02:41:34Z",
-          "wikipedia": "2026-10-25T02:30:46Z"
+          "wikipedia": "2026-10-25T02:30:46Z",
+          "wikidata": "2026-10-26T02:31:15Z"
         }
       },
       {
@@ -123,11 +124,11 @@
         "quality_score": 100,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-10-25T02:31:21Z",
-        "last_checked_at": "2026-10-25T02:31:21Z",
-        "last_fetch_source": "dbpedia",
+        "updated_at": "2026-10-26T02:30:10Z",
+        "last_checked_at": "2026-10-26T02:30:10Z",
+        "last_fetch_source": "wikidata",
         "last_fetch_sources": [
-          "dbpedia"
+          "wikidata"
         ],
         "source_no_children": {
           "wikidata_api": "2026-10-23T02:44:20Z",
@@ -136,7 +137,8 @@
         "source_checked": {
           "wikidata_api": "2026-10-23T02:44:20Z",
           "wikipedia": "2026-10-24T02:41:34Z",
-          "dbpedia": "2026-10-25T02:31:21Z"
+          "dbpedia": "2026-10-25T02:31:21Z",
+          "wikidata": "2026-10-26T02:30:10Z"
         }
       },
       {

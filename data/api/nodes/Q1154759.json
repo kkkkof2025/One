@@ -4,29 +4,46 @@
   "node": {
     "id": "Q1154759",
     "title": "土壤有機質",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "腐植物质",
+        "data_source": "nodes/Q4152088.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4152088",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4152088",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1154759",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-25T02:30:46Z",
-    "last_checked_at": "2026-10-25T02:30:46Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-26T02:31:15Z",
+    "last_checked_at": "2026-10-26T02:31:15Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-24T02:41:34Z",
-      "wikipedia": "2026-10-25T02:30:46Z"
+      "wikipedia": "2026-10-25T02:30:46Z",
+      "wikidata": "2026-10-26T02:31:15Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-24T02:41:34Z",

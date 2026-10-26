@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q146578.json",
+  "node": {
+    "title": "酚醛树脂",
+    "children_count": 0,
+    "id": "Q146578",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q146578",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

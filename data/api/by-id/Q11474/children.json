@@ -3,7 +3,7 @@
   "source": "nodes/Q11474.json",
   "node": {
     "title": "塑料",
-    "children_count": 12,
+    "children_count": 23,
     "id": "Q11474",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,11 +13,11 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-25T02:31:21Z",
-    "last_checked_at": "2026-10-25T02:31:21Z",
-    "last_fetch_source": "dbpedia",
+    "updated_at": "2026-10-26T02:30:10Z",
+    "last_checked_at": "2026-10-26T02:30:10Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "dbpedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-23T02:44:20Z",
@@ -26,7 +26,8 @@
     "source_checked": {
       "wikidata_api": "2026-10-23T02:44:20Z",
       "wikipedia": "2026-10-24T02:41:34Z",
-      "dbpedia": "2026-10-25T02:31:21Z"
+      "dbpedia": "2026-10-25T02:31:21Z",
+      "wikidata": "2026-10-26T02:30:10Z"
     }
   },
   "children": [
@@ -197,7 +198,161 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "丙烯腈-苯乙烯-丙烯酸酯",
+      "children_count": 0,
+      "id": "Q143629",
+      "data_source": "nodes/Q143629.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q143629",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "全氟橡膠",
+      "children_count": 0,
+      "id": "Q55611346",
+      "data_source": "nodes/Q55611346.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q55611346",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "农业塑料",
+      "children_count": 0,
+      "id": "Q7202109",
+      "data_source": "nodes/Q7202109.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q7202109",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "星岩",
+      "children_count": 0,
+      "id": "Q668802",
+      "data_source": "nodes/Q668802.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q668802",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "氣泡布",
+      "children_count": 0,
+      "id": "Q19806",
+      "data_source": "nodes/Q19806.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q19806",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "聚乙烯咔唑",
+      "children_count": 0,
+      "id": "Q66421202",
+      "data_source": "nodes/Q66421202.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q66421202",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "酚醛树脂",
+      "children_count": 0,
+      "id": "Q146578",
+      "data_source": "nodes/Q146578.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q146578",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "高抗冲聚苯乙烯",
+      "children_count": 0,
+      "id": "Q1617766",
+      "data_source": "nodes/Q1617766.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1617766",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "合成树脂",
+      "children_count": 0,
+      "id": "Q1418040",
+      "data_source": "nodes/Q1418040.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1418040",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "塑料薄膜",
+      "children_count": 0,
+      "id": "Q1736298",
+      "data_source": "nodes/Q1736298.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1736298",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "塑膠炸彈",
+      "children_count": 0,
+      "id": "Q898359",
+      "data_source": "nodes/Q898359.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q898359",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 12
+  "child_count": 23
 }
