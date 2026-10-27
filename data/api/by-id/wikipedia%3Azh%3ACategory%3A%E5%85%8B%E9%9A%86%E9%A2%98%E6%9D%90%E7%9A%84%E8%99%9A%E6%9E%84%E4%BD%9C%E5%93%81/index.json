@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:克隆题材的虚构作品",
+  "source": "nodes/克隆题材的虚构作品-4a61758ab6c9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/克隆题材的虚构作品-4a61758ab6c9.json",
+  "legacy_children": "../../children/nodes/克隆题材的虚构作品-4a61758ab6c9.json"
+}

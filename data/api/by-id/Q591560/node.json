@@ -1,0 +1,22 @@
+{
+  "endpoint": "node",
+  "source": "nodes/Q591560.json",
+  "node": {
+    "id": "Q591560",
+    "title": "D3o",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q591560",
+    "quality_score": 55,
+    "quality_reasons": [
+      "qid",
+      "non_zh_label",
+      "good_title_length",
+      "relation:instance"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

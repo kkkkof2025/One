@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q633401.json",
+  "node": {
+    "title": "椰子水",
+    "children_count": 0,
+    "id": "Q633401",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q633401",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

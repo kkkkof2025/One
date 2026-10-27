@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q127418.json",
+  "node": {
+    "title": "墨水",
+    "children_count": 0,
+    "id": "Q127418",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q127418",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

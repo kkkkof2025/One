@@ -3,7 +3,7 @@
   "source": "nodes/Q11435.json",
   "node": {
     "title": "液体",
-    "children_count": 11,
+    "children_count": 20,
     "id": "Q11435",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-22T02:39:42Z",
-    "last_checked_at": "2026-10-22T02:39:42Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-27T03:06:10Z",
+    "last_checked_at": "2026-10-27T03:06:10Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-21T02:41:40Z"
     },
     "source_checked": {
       "wikidata_api": "2026-10-21T02:41:40Z",
-      "wikipedia": "2026-10-22T02:39:42Z"
+      "wikipedia": "2026-10-22T02:39:42Z",
+      "wikidata": "2026-10-27T03:06:10Z"
     }
   },
   "children": [
@@ -181,7 +182,131 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "L1493796",
+      "children_count": 0,
+      "data_source": "nodes/L1493796.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 23,
+      "quality_version": 3,
+      "review_status": "needs_review"
+    },
+    {
+      "title": "D3o",
+      "children_count": 0,
+      "id": "Q591560",
+      "data_source": "nodes/Q591560.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q591560",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 55,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "墨水",
+      "children_count": 0,
+      "id": "Q127418",
+      "data_source": "nodes/Q127418.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q127418",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "工作流體",
+      "children_count": 0,
+      "id": "Q217236",
+      "data_source": "nodes/Q217236.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q217236",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "椰子水",
+      "children_count": 0,
+      "id": "Q633401",
+      "data_source": "nodes/Q633401.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q633401",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "约束液体",
+      "children_count": 0,
+      "id": "Q25100138",
+      "data_source": "nodes/Q25100138.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q25100138",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "蜜露",
+      "children_count": 0,
+      "id": "Q751760",
+      "data_source": "nodes/Q751760.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q751760",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "麥芽汁",
+      "children_count": 0,
+      "id": "Q14404476",
+      "data_source": "nodes/Q14404476.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q14404476",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "表面层",
+      "children_count": 0,
+      "id": "Q1046363",
+      "data_source": "nodes/Q1046363.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1046363",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 11
+  "child_count": 20
 }

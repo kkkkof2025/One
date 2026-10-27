@@ -148,6 +148,121 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "L1493796",
+        "data_source": "nodes/L1493796.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "quality_score": 23,
+        "quality_version": 3,
+        "review_status": "needs_review"
+      },
+      {
+        "title": "D3o",
+        "data_source": "nodes/Q591560.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q591560",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q591560",
+        "quality_score": 55,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "墨水",
+        "data_source": "nodes/Q127418.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q127418",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q127418",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "工作流體",
+        "data_source": "nodes/Q217236.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q217236",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q217236",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "椰子水",
+        "data_source": "nodes/Q633401.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q633401",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q633401",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "约束液体",
+        "data_source": "nodes/Q25100138.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q25100138",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q25100138",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "蜜露",
+        "data_source": "nodes/Q751760.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q751760",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q751760",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "麥芽汁",
+        "data_source": "nodes/Q14404476.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q14404476",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q14404476",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "表面层",
+        "data_source": "nodes/Q1046363.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1046363",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q1046363",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata",
@@ -164,15 +279,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-22T02:39:42Z",
-    "last_checked_at": "2026-10-22T02:39:42Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-27T03:06:10Z",
+    "last_checked_at": "2026-10-27T03:06:10Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-21T02:41:40Z",
-      "wikipedia": "2026-10-22T02:39:42Z"
+      "wikipedia": "2026-10-22T02:39:42Z",
+      "wikidata": "2026-10-27T03:06:10Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-21T02:41:40Z"

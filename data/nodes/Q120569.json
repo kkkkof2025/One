@@ -1,29 +1,72 @@
 {
   "id": "Q120569",
   "title": "消化科",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "结肠直肠外科",
+      "data_source": "nodes/Q1413084.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1413084",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1413084",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "肝胆病学",
+      "data_source": "nodes/Q668064.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q668064",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q668064",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "小兒腸胃病學",
+      "data_source": "nodes/Q17155058.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q17155058",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q17155058",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q120569",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-10-26T02:30:11Z",
-  "last_checked_at": "2026-10-26T02:30:11Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-10-27T03:05:04Z",
+  "last_checked_at": "2026-10-27T03:05:04Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-10-25T02:30:46Z",
-    "wikipedia": "2026-10-26T02:30:11Z"
+    "wikipedia": "2026-10-26T02:30:11Z",
+    "wikidata": "2026-10-27T03:05:04Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-10-25T02:30:46Z",

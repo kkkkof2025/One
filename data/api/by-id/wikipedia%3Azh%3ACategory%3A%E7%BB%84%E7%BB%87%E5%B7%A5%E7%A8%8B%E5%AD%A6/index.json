@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:组织工程学",
+  "source": "nodes/组织工程学-c8183f94e9a8.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/组织工程学-c8183f94e9a8.json",
+  "legacy_children": "../../children/nodes/组织工程学-c8183f94e9a8.json"
+}

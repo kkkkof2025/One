@@ -3,21 +3,21 @@
   "source": "nodes/Q120569.json",
   "node": {
     "title": "消化科",
-    "children_count": 0,
+    "children_count": 3,
     "id": "Q120569",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q120569",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-26T02:30:11Z",
-    "last_checked_at": "2026-10-26T02:30:11Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-27T03:05:04Z",
+    "last_checked_at": "2026-10-27T03:05:04Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-10-25T02:30:46Z",
@@ -25,9 +25,53 @@
     },
     "source_checked": {
       "wikidata_api": "2026-10-25T02:30:46Z",
-      "wikipedia": "2026-10-26T02:30:11Z"
+      "wikipedia": "2026-10-26T02:30:11Z",
+      "wikidata": "2026-10-27T03:05:04Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "结肠直肠外科",
+      "children_count": 0,
+      "id": "Q1413084",
+      "data_source": "nodes/Q1413084.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1413084",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "肝胆病学",
+      "children_count": 0,
+      "id": "Q668064",
+      "data_source": "nodes/Q668064.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q668064",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "小兒腸胃病學",
+      "children_count": 0,
+      "id": "Q17155058",
+      "data_source": "nodes/Q17155058.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q17155058",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 3
 }

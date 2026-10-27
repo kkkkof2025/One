@@ -4,28 +4,84 @@
   "node": {
     "id": "Q120877",
     "title": "克隆",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "克隆题材的虚构作品",
+        "data_source": "nodes/克隆题材的虚构作品-4a61758ab6c9.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:克隆题材的虚构作品",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%8B%E9%9A%86%E9%A2%98%E6%9D%90%E7%9A%84%E8%99%9A%E6%9E%84%E4%BD%9C%E5%93%81",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "克隆动物",
+        "data_source": "nodes/克隆动物-cdc6cdc882da.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:克隆动物",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%8B%E9%9A%86%E5%8A%A8%E7%89%A9",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "组织工程学",
+        "data_source": "nodes/组织工程学-c8183f94e9a8.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:组织工程学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BB%84%E7%BB%87%E5%B7%A5%E7%A8%8B%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "虚构克隆",
+        "data_source": "nodes/虚构克隆-5ec0010c3208.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:虚构克隆",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%99%9A%E6%9E%84%E5%85%8B%E9%9A%86",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q120877",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-26T02:30:11Z",
-    "last_checked_at": "2026-10-26T02:30:11Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-10-27T03:05:04Z",
+    "last_checked_at": "2026-10-27T03:05:04Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-10-26T02:30:11Z"
+      "wikidata_api": "2026-10-26T02:30:11Z",
+      "wikipedia": "2026-10-27T03:05:04Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-26T02:30:11Z"

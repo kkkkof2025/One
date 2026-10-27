@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:克隆动物",
+  "source": "nodes/克隆动物-cdc6cdc882da.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/克隆动物-cdc6cdc882da.json",
+  "legacy_children": "../../children/nodes/克隆动物-cdc6cdc882da.json"
+}

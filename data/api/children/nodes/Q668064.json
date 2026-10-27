@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q668064.json",
+  "node": {
+    "title": "肝胆病学",
+    "children_count": 0,
+    "id": "Q668064",
+    "source_provider": "wikidata",
+    "source_relation": "part_of",
+    "source_url": "https://www.wikidata.org/wiki/Q668064",
+    "children_status": "pending",
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
