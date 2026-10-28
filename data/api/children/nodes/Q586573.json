@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q586573.json",
+  "node": {
+    "title": "克隆人",
+    "children_count": 0,
+    "id": "Q586573",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q586573",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

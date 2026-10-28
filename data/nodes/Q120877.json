@@ -54,6 +54,19 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "克隆人",
+      "data_source": "nodes/Q586573.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q586573",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q586573",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -70,15 +83,16 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-10-27T03:05:04Z",
-  "last_checked_at": "2026-10-27T03:05:04Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-10-28T03:17:22Z",
+  "last_checked_at": "2026-10-28T03:17:22Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-10-26T02:30:11Z",
-    "wikipedia": "2026-10-27T03:05:04Z"
+    "wikipedia": "2026-10-27T03:05:04Z",
+    "wikidata": "2026-10-28T03:17:22Z"
   },
   "source_no_children": {
     "wikidata_api": "2026-10-26T02:30:11Z"

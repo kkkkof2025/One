@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-27T03:06:10Z",
-  "total_nodes": 1326,
-  "last_added_nodes": 16,
+  "generated_at": "2026-10-28T03:18:27Z",
+  "total_nodes": 1327,
+  "last_added_nodes": 1,
   "last_request_count": 5,
-  "last_scanned_nodes": 1448,
-  "last_candidate_nodes": 1304,
+  "last_scanned_nodes": 1464,
+  "last_candidate_nodes": 1318,
   "last_unchanged_requests": 1,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -19,40 +19,39 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 2,
-      "productive_requests": 2,
-      "added_nodes": 12
-    },
-    "wikipedia": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 4
-    },
-    "wikidata_api": {
+      "added_nodes": 1,
       "no_children_requests": 1,
       "unchanged_requests": 1
+    },
+    "wikipedia": {
+      "transient_error_requests": 1
+    },
+    "wikidata_api": {
+      "transient_error_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1304,
+    "candidate_count": 1318,
     "source_progress_counts": {
       "4": 24,
-      "2": 55,
+      "2": 54,
       "1": 3,
-      "0": 1066,
-      "3": 156
+      "0": 1079,
+      "3": 158
     },
     "next_source_counts": {
-      "conceptnet": 232,
-      "wikidata": 5,
-      "wikipedia": 583,
-      "wikidata_api": 484
+      "conceptnet": 234,
+      "wikidata": 4,
+      "wikipedia": 587,
+      "wikidata_api": 493
     },
     "available_next_source_counts": {
-      "conceptnet": 232,
-      "wikidata": 5,
-      "wikipedia": 583,
-      "wikidata_api": 484
+      "conceptnet": 234,
+      "wikidata": 4,
+      "wikipedia": 587,
+      "wikidata_api": 493
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -75,24 +74,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q120569",
-        "title": "消化科",
+        "scan_key": "id:Q120877",
+        "title": "克隆",
         "next_source": "wikidata",
         "source_progress": 2,
-        "priority": 131.0,
+        "priority": 126.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q120877",
-        "title": "克隆",
+        "scan_key": "id:Q1221899",
+        "title": "婦科學",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q1221899",
-        "title": "婦科學",
+        "scan_key": "id:Q123472440",
+        "title": "平凡丛",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -128,24 +127,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q120569",
-          "title": "消化科",
+          "scan_key": "id:Q120877",
+          "title": "克隆",
           "next_source": "wikidata",
           "source_progress": 2,
-          "priority": 131.0,
+          "priority": 126.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q120877",
-          "title": "克隆",
+          "scan_key": "id:Q1221899",
+          "title": "婦科學",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q1221899",
-          "title": "婦科學",
+          "scan_key": "id:Q123472440",
+          "title": "平凡丛",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -165,51 +164,53 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 89,
+    "added_nodes": 90,
     "requests": 40,
-    "added_per_request": 2.225,
+    "added_per_request": 2.25,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-10-27T03:06:10Z",
+    "last_productive_run_at": "2026-10-28T03:18:27Z",
     "source_request_counts": {
       "conceptnet": 8,
-      "wikidata": 13,
+      "wikidata": 14,
       "wikipedia": 8,
       "wikidata_api": 8,
-      "dbpedia": 3
+      "dbpedia": 2
     },
     "source_outcome_counts": {
       "conceptnet": {
         "transient_error_requests": 8
       },
       "wikidata": {
-        "rate_limited_requests": 4,
-        "children_returned_requests": 7,
-        "productive_requests": 7,
-        "added_nodes": 49,
-        "no_children_requests": 2,
-        "unchanged_requests": 2
-      },
-      "wikipedia": {
-        "no_children_requests": 4,
-        "unchanged_requests": 4,
-        "children_returned_requests": 4,
-        "productive_requests": 4,
-        "added_nodes": 40
-      },
-      "wikidata_api": {
-        "no_children_requests": 8,
-        "unchanged_requests": 8
-      },
-      "dbpedia": {
+        "rate_limited_requests": 3,
+        "children_returned_requests": 8,
+        "productive_requests": 8,
+        "added_nodes": 50,
         "no_children_requests": 3,
         "unchanged_requests": 3
+      },
+      "wikipedia": {
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 40,
+        "no_children_requests": 3,
+        "unchanged_requests": 3,
+        "transient_error_requests": 1
+      },
+      "wikidata_api": {
+        "no_children_requests": 7,
+        "unchanged_requests": 7,
+        "transient_error_requests": 1
+      },
+      "dbpedia": {
+        "no_children_requests": 2,
+        "unchanged_requests": 2
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 190,
+  "history_entries": 191,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",
