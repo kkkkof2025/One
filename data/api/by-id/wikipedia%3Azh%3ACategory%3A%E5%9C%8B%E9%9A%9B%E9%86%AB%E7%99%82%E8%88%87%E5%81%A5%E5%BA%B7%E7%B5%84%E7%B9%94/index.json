@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:國際醫療與健康組織",
+  "source": "nodes/國際醫療與健康組織-9d47ff4892cc.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/國際醫療與健康組織-9d47ff4892cc.json",
+  "legacy_children": "../../children/nodes/國際醫療與健康組織-9d47ff4892cc.json"
+}

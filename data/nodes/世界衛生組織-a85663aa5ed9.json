@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:世界衛生組織",
+  "title": "世界衛生組織",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%96%E7%95%8C%E8%A1%9B%E7%94%9F%E7%B5%84%E7%B9%94",
+  "source_page_id": 735817,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q3433185.json",
+  "node": {
+    "title": "職業危害",
+    "children_count": 0,
+    "id": "Q3433185",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q3433185",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

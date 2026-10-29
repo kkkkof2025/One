@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:瘟疫",
+  "source": "nodes/瘟疫-169aea59900b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/瘟疫-169aea59900b.json",
+  "legacy_children": "../../children/nodes/瘟疫-169aea59900b.json"
+}

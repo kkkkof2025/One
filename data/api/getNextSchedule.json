@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-10-28T03:18:27Z",
+  "generated_at": "2026-10-29T03:42:39Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,8 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikidata": 1,
     "wikipedia": 1,
+    "wikidata": 1,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -22,20 +22,20 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q120877",
-      "title": "克隆",
-      "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 126.0,
-      "depth": 4
-    },
-    {
       "scan_key": "id:Q1221899",
       "title": "婦科學",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 131.0,
       "depth": 4
+    },
+    {
+      "scan_key": "id:wikipedia:zh:Category:健康风险",
+      "title": "健康风险",
+      "next_source": "wikidata",
+      "source_progress": 1,
+      "priority": 101.0,
+      "depth": 3
     },
     {
       "scan_key": "id:Q123472440",

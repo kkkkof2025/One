@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:更年期",
+  "source": "nodes/更年期-57de3d9680eb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/更年期-57de3d9680eb.json",
+  "legacy_children": "../../children/nodes/更年期-57de3d9680eb.json"
+}

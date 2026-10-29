@@ -437,40 +437,50 @@
     {
       "title": "健康风险",
       "data_source": "nodes/健康风险-4474888cf852.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:健康风险",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%81%A5%E5%BA%B7%E9%A3%8E%E9%99%A9",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-08-25T00:46:51Z",
-      "last_checked_at": "2026-08-25T00:46:51Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-10-29T03:42:34Z",
+      "last_checked_at": "2026-10-29T03:42:34Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-08-25T00:46:51Z"
       },
       "source_checked": {
-        "wikipedia": "2026-08-25T00:46:51Z"
+        "wikipedia": "2026-08-25T00:46:51Z",
+        "wikidata": "2026-10-29T03:42:34Z"
       }
     },
     {
       "title": "全球卫生",
       "data_source": "nodes/全球卫生-b0f5aa10c7fc.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "wikipedia:zh:Category:全球卫生",
       "source_provider": "wikipedia",
       "source_relation": "wikipedia_category",
       "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%A8%E7%90%83%E5%8D%AB%E7%94%9F",
-      "quality_score": 75,
+      "quality_score": 89,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-10-29T03:42:39Z",
+      "last_checked_at": "2026-10-29T03:42:39Z",
+      "last_fetch_source": "wikipedia",
+      "last_fetch_sources": [
+        "wikipedia"
+      ],
+      "source_checked": {
+        "wikipedia": "2026-10-29T03:42:39Z"
+      }
     },
     {
       "title": "卫生",

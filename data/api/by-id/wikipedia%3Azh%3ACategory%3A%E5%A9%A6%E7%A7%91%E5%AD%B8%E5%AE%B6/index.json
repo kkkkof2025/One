@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:婦科學家",
+  "source": "nodes/婦科學家-31bd2dbde507.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/婦科學家-31bd2dbde507.json",
+  "legacy_children": "../../children/nodes/婦科學家-31bd2dbde507.json"
+}

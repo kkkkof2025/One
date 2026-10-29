@@ -3,16 +3,97 @@
   "source": "nodes/全球卫生-b0f5aa10c7fc.json",
   "node": {
     "title": "全球卫生",
-    "children_count": 0,
+    "children_count": 5,
     "id": "wikipedia:zh:Category:全球卫生",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%85%A8%E7%90%83%E5%8D%AB%E7%94%9F",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-10-29T03:42:39Z",
+    "last_checked_at": "2026-10-29T03:42:39Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-10-29T03:42:39Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "世界衛生組織",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:世界衛生組織",
+      "data_source": "nodes/世界衛生組織-a85663aa5ed9.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E4%B8%96%E7%95%8C%E8%A1%9B%E7%94%9F%E7%B5%84%E7%B9%94",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "国际关注的公共卫生紧急事件",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:国际关注的公共卫生紧急事件",
+      "data_source": "nodes/国际关注的公共卫生紧急事件-972d104adca7.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9B%BD%E9%99%85%E5%85%B3%E6%B3%A8%E7%9A%84%E5%85%AC%E5%85%B1%E5%8D%AB%E7%94%9F%E7%B4%A7%E6%80%A5%E4%BA%8B%E4%BB%B6",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "國際醫療與健康組織",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:國際醫療與健康組織",
+      "data_source": "nodes/國際醫療與健康組織-9d47ff4892cc.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9C%8B%E9%9A%9B%E9%86%AB%E7%99%82%E8%88%87%E5%81%A5%E5%BA%B7%E7%B5%84%E7%B9%94",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "瘟疫",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:瘟疫",
+      "data_source": "nodes/瘟疫-169aea59900b.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%98%9F%E7%96%AB",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "糧食安全",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:糧食安全",
+      "data_source": "nodes/糧食安全-2f0738e2ea7d.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B3%A7%E9%A3%9F%E5%AE%89%E5%85%A8",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 5
 }

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:女性生殖系统",
+  "source": "nodes/女性生殖系统-5a7a1fc5fa5b.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/女性生殖系统-5a7a1fc5fa5b.json",
+  "legacy_children": "../../children/nodes/女性生殖系统-5a7a1fc5fa5b.json"
+}

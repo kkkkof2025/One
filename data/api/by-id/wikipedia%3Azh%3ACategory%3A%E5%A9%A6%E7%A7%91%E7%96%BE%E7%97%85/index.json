@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:婦科疾病",
+  "source": "nodes/婦科疾病-eeb702911f76.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/婦科疾病-eeb702911f76.json",
+  "legacy_children": "../../children/nodes/婦科疾病-eeb702911f76.json"
+}

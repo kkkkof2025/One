@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q3241045.json",
+  "node": {
+    "title": "疾病爆發",
+    "children_count": 0,
+    "id": "Q3241045",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q3241045",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:糧食安全",
+  "source": "nodes/糧食安全-2f0738e2ea7d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/糧食安全-2f0738e2ea7d.json",
+  "legacy_children": "../../children/nodes/糧食安全-2f0738e2ea7d.json"
+}

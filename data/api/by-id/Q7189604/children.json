@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q7189604.json",
+  "node": {
+    "title": "物理危害",
+    "children_count": 0,
+    "id": "Q7189604",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q7189604",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

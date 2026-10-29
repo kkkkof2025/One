@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q18205885.json",
+  "node": {
+    "title": "致癌起因",
+    "children_count": 0,
+    "id": "Q18205885",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q18205885",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
