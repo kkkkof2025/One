@@ -96,6 +96,58 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "妇科肿瘤学",
+        "data_source": "nodes/Q5625186.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5625186",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q5625186",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "子宮切除術",
+        "data_source": "nodes/Q550675.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q550675",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q550675",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "泌尿婦科",
+        "data_source": "nodes/Q7900864.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q7900864",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q7900864",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "阴道闭合术",
+        "data_source": "nodes/Q5149288.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5149288",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q5149288",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata",
@@ -112,15 +164,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-10-29T03:42:34Z",
-    "last_checked_at": "2026-10-29T03:42:34Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-10-30T03:44:53Z",
+    "last_checked_at": "2026-10-30T03:44:53Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-10-27T03:05:05Z",
-      "wikipedia": "2026-10-29T03:42:34Z"
+      "wikipedia": "2026-10-29T03:42:34Z",
+      "wikidata": "2026-10-30T03:44:53Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-10-27T03:05:05Z"

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-10-29T03:42:39Z",
+  "generated_at": "2026-10-30T03:45:57Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -8,8 +8,8 @@
   "source_diversity_enabled": true,
   "scheduled_source_counts": {
     "conceptnet": 2,
-    "wikipedia": 1,
     "wikidata": 1,
+    "wikipedia": 1,
     "wikidata_api": 1
   },
   "scheduled_candidates": [
@@ -24,22 +24,22 @@
     {
       "scan_key": "id:Q1221899",
       "title": "婦科學",
+      "next_source": "wikidata",
+      "source_progress": 2,
+      "priority": 126.0,
+      "depth": 4
+    },
+    {
+      "scan_key": "id:Q123472440",
+      "title": "平凡丛",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 131.0,
       "depth": 4
     },
     {
-      "scan_key": "id:wikipedia:zh:Category:健康风险",
-      "title": "健康风险",
-      "next_source": "wikidata",
-      "source_progress": 1,
-      "priority": 101.0,
-      "depth": 3
-    },
-    {
-      "scan_key": "id:Q123472440",
-      "title": "平凡丛",
+      "scan_key": "id:Q10353754",
+      "title": "初級預防",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,
