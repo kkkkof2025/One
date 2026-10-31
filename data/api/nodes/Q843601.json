@@ -228,7 +228,19 @@
         "source_url": "https://www.wikidata.org/wiki/Q128406",
         "quality_score": 97,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-10-31T03:28:30Z",
+        "last_checked_at": "2026-10-31T03:28:30Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_no_children": {
+          "wikidata_api": "2026-10-31T03:28:30Z"
+        },
+        "source_checked": {
+          "wikidata_api": "2026-10-31T03:28:30Z"
+        }
       },
       {
         "title": "视光学",
