@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:冒险旅行",
+  "title": "冒险旅行",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%86%92%E9%99%A9%E6%97%85%E8%A1%8C",
+  "source_page_id": 5668407,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}
