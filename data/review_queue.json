@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-01T03:32:25Z",
+  "generated_at": "2026-11-02T03:41:10Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 166,
+  "total_candidates": 168,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 166,
+  "total_items": 168,
   "reason_distribution": {
-    "total_items": 166,
+    "total_items": 168,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 35,
+        "count": 37,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,11 +100,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 163
+        "count": 165
       },
       {
         "reason": "qid",
-        "count": 161
+        "count": 163
       },
       {
         "reason": "missing_relation",
@@ -116,7 +116,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 81
+        "count": 83
       },
       {
         "reason": "fetch_error",
@@ -128,7 +128,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 28
+        "count": 30
       },
       {
         "reason": "has_children",
@@ -139,12 +139,12 @@
         "count": 10
       },
       {
-        "reason": "relation:instance",
-        "count": 9
+        "reason": "relation:subclass",
+        "count": 10
       },
       {
-        "reason": "relation:subclass",
-        "count": 8
+        "reason": "relation:instance",
+        "count": 9
       },
       {
         "reason": "duplicate_id:3",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 104
+        "count": 106
       },
       {
         "status": "error",
@@ -3831,6 +3831,54 @@
       "priority": 35.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q238125",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "神經藥理學",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q3026765",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q3026765",
+      "path": "万物 / 生命 / 生命科學 / 神經科學 / 神經藥理學",
+      "location": "nodes/Q3026765.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q3026765",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "系統藥理學",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q7663877",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7663877",
+      "path": "万物 / 生命 / 生命科學 / 系统生物学 / 系統藥理學",
+      "location": "nodes/Q7663877.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q7663877",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:疾病爆發",
+  "source": "nodes/疾病爆發-dd6b527be6a9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/疾病爆發-dd6b527be6a9.json",
+  "legacy_children": "../../children/nodes/疾病爆發-dd6b527be6a9.json"
+}

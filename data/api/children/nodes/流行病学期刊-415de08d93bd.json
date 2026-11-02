@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/流行病学期刊-415de08d93bd.json",
+  "node": {
+    "title": "流行病学期刊",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:流行病学期刊",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6%E6%9C%9F%E5%88%8A",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-11-01T03:32:21Z",
+  "generated_at": "2026-11-02T03:41:06Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -30,16 +30,16 @@
       "depth": 4
     },
     {
-      "scan_key": "id:Q128406",
-      "title": "药理学",
+      "scan_key": "id:Q133805",
+      "title": "流行病学",
       "next_source": "wikipedia",
       "source_progress": 1,
       "priority": 131.0,
       "depth": 4
     },
     {
-      "scan_key": "id:Q133805",
-      "title": "流行病学",
+      "scan_key": "id:Q1356726",
+      "title": "互養",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,

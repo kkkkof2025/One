@@ -4,28 +4,123 @@
   "node": {
     "id": "Q133805",
     "title": "流行病学",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "疾病爆發",
+        "data_source": "nodes/疾病爆發-dd6b527be6a9.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:疾病爆發",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%96%BE%E7%97%85%E7%88%86%E7%99%BC",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "精神障碍流行病学",
+        "data_source": "nodes/精神障碍流行病学-a0c46af49deb.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:精神障碍流行病学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B2%BE%E7%A5%9E%E9%9A%9C%E7%A2%8D%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "流行病",
+        "data_source": "nodes/流行病-dbf54102b0f9.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:流行病",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B5%81%E8%A1%8C%E7%97%85",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "流行病学家",
+        "data_source": "nodes/流行病学家-136446adcd29.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:流行病学家",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6%E5%AE%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "流行病学期刊",
+        "data_source": "nodes/流行病学期刊-415de08d93bd.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:流行病学期刊",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6%E6%9C%9F%E5%88%8A",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "遗传流行病学",
+        "data_source": "nodes/遗传流行病学-6e8d88e6a68f.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:遗传流行病学",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%81%97%E4%BC%A0%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "隊列研究",
+        "data_source": "nodes/隊列研究-84ec9267eda7.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:隊列研究",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%9A%8A%E5%88%97%E7%A0%94%E7%A9%B6",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q133805",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-01T03:32:16Z",
-    "last_checked_at": "2026-11-01T03:32:16Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-11-02T03:40:01Z",
+    "last_checked_at": "2026-11-02T03:40:01Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-11-01T03:32:16Z"
+      "wikidata_api": "2026-11-01T03:32:16Z",
+      "wikipedia": "2026-11-02T03:40:01Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-11-01T03:32:16Z"

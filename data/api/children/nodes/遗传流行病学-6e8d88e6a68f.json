@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/遗传流行病学-6e8d88e6a68f.json",
+  "node": {
+    "title": "遗传流行病学",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:遗传流行病学",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%81%97%E4%BC%A0%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:遗传流行病学",
+  "source": "nodes/遗传流行病学-6e8d88e6a68f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/遗传流行病学-6e8d88e6a68f.json",
+  "legacy_children": "../../children/nodes/遗传流行病学-6e8d88e6a68f.json"
+}

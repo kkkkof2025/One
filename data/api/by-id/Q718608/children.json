@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q718608.json",
+  "node": {
+    "title": "劑型",
+    "children_count": 0,
+    "id": "Q718608",
+    "source_provider": "wikidata",
+    "source_relation": "part_of",
+    "source_url": "https://www.wikidata.org/wiki/Q718608",
+    "children_status": "pending",
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

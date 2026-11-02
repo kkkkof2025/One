@@ -150,26 +150,27 @@
     {
       "title": "流行病学",
       "data_source": "nodes/Q133805.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q133805",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q133805",
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-01T03:32:16Z",
-      "last_checked_at": "2026-11-01T03:32:16Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-11-02T03:40:01Z",
+      "last_checked_at": "2026-11-02T03:40:01Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_no_children": {
         "wikidata_api": "2026-11-01T03:32:16Z"
       },
       "source_checked": {
-        "wikidata_api": "2026-11-01T03:32:16Z"
+        "wikidata_api": "2026-11-01T03:32:16Z",
+        "wikipedia": "2026-11-02T03:40:01Z"
       }
     },
     {
@@ -229,20 +230,20 @@
     {
       "title": "药理学",
       "data_source": "nodes/Q128406.json",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
       "id": "Q128406",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q128406",
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-01T03:32:16Z",
-      "last_checked_at": "2026-11-01T03:32:16Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-02T03:41:06Z",
+      "last_checked_at": "2026-11-02T03:41:06Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-10-31T03:28:30Z",
@@ -250,7 +251,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-10-31T03:28:30Z",
-        "wikipedia": "2026-11-01T03:32:16Z"
+        "wikipedia": "2026-11-01T03:32:16Z",
+        "wikidata": "2026-11-02T03:41:06Z"
       }
     },
     {

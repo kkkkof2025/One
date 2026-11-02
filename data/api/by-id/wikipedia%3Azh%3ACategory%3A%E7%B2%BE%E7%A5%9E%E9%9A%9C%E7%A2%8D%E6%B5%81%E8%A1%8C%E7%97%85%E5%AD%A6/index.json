@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:精神障碍流行病学",
+  "source": "nodes/精神障碍流行病学-a0c46af49deb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/精神障碍流行病学-a0c46af49deb.json",
+  "legacy_children": "../../children/nodes/精神障碍流行病学-a0c46af49deb.json"
+}

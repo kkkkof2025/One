@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:流行病学期刊",
+  "source": "nodes/流行病学期刊-415de08d93bd.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/流行病学期刊-415de08d93bd.json",
+  "legacy_children": "../../children/nodes/流行病学期刊-415de08d93bd.json"
+}

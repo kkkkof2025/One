@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:遗传流行病学",
+  "title": "遗传流行病学",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%81%97%E4%BC%A0%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6",
+  "source_page_id": 1744519,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:流行病学家",
+  "source": "nodes/流行病学家-136446adcd29.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/流行病学家-136446adcd29.json",
+  "legacy_children": "../../children/nodes/流行病学家-136446adcd29.json"
+}

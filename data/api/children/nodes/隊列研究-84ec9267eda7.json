@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/隊列研究-84ec9267eda7.json",
+  "node": {
+    "title": "隊列研究",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:隊列研究",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%9A%8A%E5%88%97%E7%A0%94%E7%A9%B6",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

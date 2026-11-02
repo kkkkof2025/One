@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/精神障碍流行病学-a0c46af49deb.json",
+  "node": {
+    "id": "wikipedia:zh:Category:精神障碍流行病学",
+    "title": "精神障碍流行病学",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%B2%BE%E7%A5%9E%E9%9A%9C%E7%A2%8D%E6%B5%81%E8%A1%8C%E7%97%85%E5%AD%A6",
+    "source_page_id": 6297660,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}
