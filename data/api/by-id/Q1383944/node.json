@@ -4,19 +4,71 @@
   "node": {
     "id": "Q1383944",
     "title": "代謝廢物",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "糞便",
+        "data_source": "nodes/Q496.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q496",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q496",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "尿",
+        "data_source": "nodes/Q40924.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q40924",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q40924",
+        "quality_score": 79,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "汗液",
+        "data_source": "nodes/Q3503092.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3503092",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q3503092",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1383944",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-11-03T04:44:33Z",
+    "last_checked_at": "2026-11-03T04:44:33Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-11-03T04:44:33Z"
+    },
+    "is_leaf": false
   }
 }

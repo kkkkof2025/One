@@ -48,15 +48,24 @@
       {
         "title": "代謝廢物",
         "data_source": "nodes/Q1383944.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q1383944",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q1383944",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-11-03T04:44:33Z",
+        "last_checked_at": "2026-11-03T04:44:33Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-11-03T04:44:33Z"
+        }
       },
       {
         "title": "土壤",

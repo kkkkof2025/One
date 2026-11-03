@@ -142,7 +142,7 @@
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q3026765",
-      "quality_score": 97,
+      "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved"
     },
@@ -155,7 +155,7 @@
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q7663877",
-      "quality_score": 97,
+      "quality_score": 89,
       "quality_version": 3,
       "review_status": "approved"
     },
