@@ -1,61 +1,59 @@
 {
-  "generated_at": "2026-11-03T04:44:36Z",
-  "total_nodes": 1398,
+  "generated_at": "2026-11-04T04:08:50Z",
+  "total_nodes": 1401,
   "last_added_nodes": 3,
   "last_request_count": 5,
-  "last_scanned_nodes": 1537,
-  "last_candidate_nodes": 1387,
-  "last_unchanged_requests": 2,
+  "last_scanned_nodes": 1540,
+  "last_candidate_nodes": 1390,
+  "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
   "last_source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 1,
+    "wikidata": 2,
     "wikipedia": 1,
-    "wikidata_api": 1,
-    "dbpedia": 1
+    "wikidata_api": 1
   },
   "last_source_outcome_counts": {
     "conceptnet": {
       "transient_error_requests": 1
     },
     "wikidata": {
-      "rate_limited_requests": 1
+      "no_children_requests": 1,
+      "unchanged_requests": 1,
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 3
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 3
-    },
-    "dbpedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1387,
+    "candidate_count": 1390,
     "source_progress_counts": {
       "4": 24,
-      "2": 56,
-      "1": 2,
-      "0": 1141,
+      "2": 58,
+      "1": 1,
+      "0": 1143,
       "3": 164
     },
     "next_source_counts": {
       "conceptnet": 243,
-      "wikidata": 2,
+      "wikidata": 3,
       "wikipedia": 604,
-      "wikidata_api": 538
+      "wikidata_api": 540
     },
     "available_next_source_counts": {
       "conceptnet": 243,
-      "wikidata": 2,
+      "wikidata": 3,
       "wikipedia": 604,
-      "wikidata_api": 538
+      "wikidata_api": 540
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -78,24 +76,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q133805",
-        "title": "流行病学",
-        "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 126.0,
-        "depth": 4
-      },
-      {
         "scan_key": "id:Q1356726",
         "title": "互養",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
         "scan_key": "id:Q1383944",
         "title": "代謝廢物",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 126.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q1411746",
+        "title": "节片生殖",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -131,24 +129,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q133805",
-          "title": "流行病学",
-          "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 126.0,
-          "depth": 4
-        },
-        {
           "scan_key": "id:Q1356726",
           "title": "互養",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
           "scan_key": "id:Q1383944",
           "title": "代謝廢物",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 126.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q1411746",
+          "title": "节片生殖",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -168,11 +166,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 92,
+    "added_nodes": 79,
     "requests": 40,
-    "added_per_request": 2.3,
+    "added_per_request": 1.975,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-11-03T04:44:36Z",
+    "last_productive_run_at": "2026-11-04T04:08:50Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 13,
@@ -185,25 +183,25 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 6,
-        "productive_requests": 6,
-        "added_nodes": 64,
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
+        "children_returned_requests": 5,
+        "productive_requests": 5,
+        "added_nodes": 55,
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
         "rate_limited_requests": 2
       },
       "wikipedia": {
-        "children_returned_requests": 5,
-        "productive_requests": 5,
-        "added_nodes": 25,
         "transient_error_requests": 1,
-        "no_children_requests": 4,
-        "unchanged_requests": 4
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 21,
+        "no_children_requests": 5,
+        "unchanged_requests": 5
       },
       "wikidata_api": {
+        "transient_error_requests": 1,
         "no_children_requests": 6,
         "unchanged_requests": 6,
-        "transient_error_requests": 1,
         "children_returned_requests": 1,
         "productive_requests": 1,
         "added_nodes": 3
@@ -217,7 +215,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 197,
+  "history_entries": 198,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

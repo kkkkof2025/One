@@ -186,7 +186,7 @@
     },
     {
       "title": "流行病学",
-      "children_count": 7,
+      "children_count": 10,
       "id": "Q133805",
       "data_source": "nodes/Q133805.json",
       "source_provider": "wikidata",
@@ -197,18 +197,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-02T03:40:01Z",
-      "last_checked_at": "2026-11-02T03:40:01Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-04T04:08:49Z",
+      "last_checked_at": "2026-11-04T04:08:49Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-11-01T03:32:16Z"
       },
       "source_checked": {
         "wikidata_api": "2026-11-01T03:32:16Z",
-        "wikipedia": "2026-11-02T03:40:01Z"
+        "wikipedia": "2026-11-02T03:40:01Z",
+        "wikidata": "2026-11-04T04:08:49Z"
       }
     },
     {

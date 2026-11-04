@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-11-03T04:44:36Z",
+  "generated_at": "2026-11-04T04:08:50Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q133805",
-      "title": "流行病学",
-      "next_source": "wikidata",
-      "source_progress": 2,
-      "priority": 126.0,
-      "depth": 4
-    },
-    {
       "scan_key": "id:Q1356726",
       "title": "互養",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "next_source": "wikidata",
+      "source_progress": 2,
       "priority": 131.0,
       "depth": 4
     },
     {
       "scan_key": "id:Q1383944",
       "title": "代謝廢物",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 126.0,
+      "depth": 4
+    },
+    {
+      "scan_key": "id:Q1411746",
+      "title": "节片生殖",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,

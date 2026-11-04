@@ -96,6 +96,45 @@
         "quality_score": 75,
         "quality_version": 3,
         "review_status": "approved"
+      },
+      {
+        "title": "暴飲的流行病學",
+        "data_source": "nodes/Q5382715.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q5382715",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q5382715",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "结核病的流行病学",
+        "data_source": "nodes/Q3589138.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q3589138",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q3589138",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "易流行疾病",
+        "data_source": "nodes/Q131345497.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q131345497",
+        "source_provider": "wikidata",
+        "source_relation": "part_of",
+        "source_url": "https://www.wikidata.org/wiki/Q131345497",
+        "quality_score": 89,
+        "quality_version": 3,
+        "review_status": "approved"
       }
     ],
     "source_provider": "wikidata",
@@ -112,15 +151,16 @@
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-02T03:40:01Z",
-    "last_checked_at": "2026-11-02T03:40:01Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-04T04:08:49Z",
+    "last_checked_at": "2026-11-04T04:08:49Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-11-01T03:32:16Z",
-      "wikipedia": "2026-11-02T03:40:01Z"
+      "wikipedia": "2026-11-02T03:40:01Z",
+      "wikidata": "2026-11-04T04:08:49Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-11-01T03:32:16Z"

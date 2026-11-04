@@ -109,7 +109,19 @@
         "source_url": "https://www.wikidata.org/wiki/Q1411746",
         "quality_score": 97,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-11-04T04:07:45Z",
+        "last_checked_at": "2026-11-04T04:07:45Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_no_children": {
+          "wikidata_api": "2026-11-04T04:07:45Z"
+        },
+        "source_checked": {
+          "wikidata_api": "2026-11-04T04:07:45Z"
+        }
       },
       {
         "title": "雄核发育",

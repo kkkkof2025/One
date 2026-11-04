@@ -3,7 +3,7 @@
   "source": "nodes/Q133805.json",
   "node": {
     "title": "流行病学",
-    "children_count": 7,
+    "children_count": 10,
     "id": "Q133805",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-02T03:40:01Z",
-    "last_checked_at": "2026-11-02T03:40:01Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-04T04:08:49Z",
+    "last_checked_at": "2026-11-04T04:08:49Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-01T03:32:16Z"
     },
     "source_checked": {
       "wikidata_api": "2026-11-01T03:32:16Z",
-      "wikipedia": "2026-11-02T03:40:01Z"
+      "wikipedia": "2026-11-02T03:40:01Z",
+      "wikidata": "2026-11-04T04:08:49Z"
     }
   },
   "children": [
@@ -125,7 +126,49 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "暴飲的流行病學",
+      "children_count": 0,
+      "id": "Q5382715",
+      "data_source": "nodes/Q5382715.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q5382715",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "结核病的流行病学",
+      "children_count": 0,
+      "id": "Q3589138",
+      "data_source": "nodes/Q3589138.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q3589138",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "易流行疾病",
+      "children_count": 0,
+      "id": "Q131345497",
+      "data_source": "nodes/Q131345497.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q131345497",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 7
+  "child_count": 10
 }
