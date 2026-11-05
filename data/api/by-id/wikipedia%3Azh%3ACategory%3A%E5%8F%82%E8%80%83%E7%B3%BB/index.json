@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:参考系",
+  "source": "nodes/参考系-dfda50ba6b89.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/参考系-dfda50ba6b89.json",
+  "legacy_children": "../../children/nodes/参考系-dfda50ba6b89.json"
+}

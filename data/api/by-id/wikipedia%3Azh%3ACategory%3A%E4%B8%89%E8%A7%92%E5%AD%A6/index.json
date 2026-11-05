@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:三角学",
+  "source": "nodes/三角学-6d73a42e5d4d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/三角学-6d73a42e5d4d.json",
+  "legacy_children": "../../children/nodes/三角学-6d73a42e5d4d.json"
+}

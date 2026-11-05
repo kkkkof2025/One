@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:度量几何",
+  "source": "nodes/度量几何-5068f934ebf3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/度量几何-5068f934ebf3.json",
+  "legacy_children": "../../children/nodes/度量几何-5068f934ebf3.json"
+}

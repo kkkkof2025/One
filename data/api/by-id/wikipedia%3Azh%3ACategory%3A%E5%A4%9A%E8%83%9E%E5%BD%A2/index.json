@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:多胞形",
+  "source": "nodes/多胞形-75d66da54061.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/多胞形-75d66da54061.json",
+  "legacy_children": "../../children/nodes/多胞形-75d66da54061.json"
+}

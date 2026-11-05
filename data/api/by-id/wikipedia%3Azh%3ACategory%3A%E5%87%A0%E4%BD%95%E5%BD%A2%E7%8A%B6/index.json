@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:几何形状",
+  "source": "nodes/几何形状-64e2de80a7c6.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/几何形状-64e2de80a7c6.json",
+  "legacy_children": "../../children/nodes/几何形状-64e2de80a7c6.json"
+}

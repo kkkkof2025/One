@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/几何形状-64e2de80a7c6.json",
+  "node": {
+    "id": "wikipedia:zh:Category:几何形状",
+    "title": "几何形状",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%87%A0%E4%BD%95%E5%BD%A2%E7%8A%B6",
+    "source_page_id": 705292,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

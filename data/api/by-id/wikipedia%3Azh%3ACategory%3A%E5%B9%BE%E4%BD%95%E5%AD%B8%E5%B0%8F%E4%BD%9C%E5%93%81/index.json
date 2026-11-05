@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:幾何學小作品",
+  "source": "nodes/幾何學小作品-088c3cc1c3df.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/幾何學小作品-088c3cc1c3df.json",
+  "legacy_children": "../../children/nodes/幾何學小作品-088c3cc1c3df.json"
+}

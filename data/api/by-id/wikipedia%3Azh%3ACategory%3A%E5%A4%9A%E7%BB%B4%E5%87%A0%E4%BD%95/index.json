@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:多维几何",
+  "source": "nodes/多维几何-ab2cac73c156.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/多维几何-ab2cac73c156.json",
+  "legacy_children": "../../children/nodes/多维几何-ab2cac73c156.json"
+}

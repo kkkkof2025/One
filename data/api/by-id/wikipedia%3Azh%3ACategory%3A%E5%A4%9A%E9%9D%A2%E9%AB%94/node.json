@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/多面體-a90c291eff3d.json",
+  "node": {
+    "id": "wikipedia:zh:Category:多面體",
+    "title": "多面體",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%A4%9A%E9%9D%A2%E9%AB%94",
+    "source_page_id": 53760,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

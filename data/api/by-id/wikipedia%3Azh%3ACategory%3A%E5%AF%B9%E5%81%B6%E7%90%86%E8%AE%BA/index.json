@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:对偶理论",
+  "source": "nodes/对偶理论-489a522e3954.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/对偶理论-489a522e3954.json",
+  "legacy_children": "../../children/nodes/对偶理论-489a522e3954.json"
+}

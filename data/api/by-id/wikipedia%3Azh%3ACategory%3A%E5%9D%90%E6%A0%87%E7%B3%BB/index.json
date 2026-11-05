@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:坐标系",
+  "source": "nodes/坐标系-1e4b86de85d0.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/坐标系-1e4b86de85d0.json",
+  "legacy_children": "../../children/nodes/坐标系-1e4b86de85d0.json"
+}

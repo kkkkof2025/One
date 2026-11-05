@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/初等几何-ecf2aaabacc5.json",
+  "node": {
+    "title": "初等几何",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:初等几何",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%9D%E7%AD%89%E5%87%A0%E4%BD%95",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

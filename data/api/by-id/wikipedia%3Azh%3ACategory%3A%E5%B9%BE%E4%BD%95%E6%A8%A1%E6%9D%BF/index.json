@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:幾何模板",
+  "source": "nodes/幾何模板-b510be8f3837.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/幾何模板-b510be8f3837.json",
+  "legacy_children": "../../children/nodes/幾何模板-b510be8f3837.json"
+}

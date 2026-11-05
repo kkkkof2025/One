@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:幾何模板",
+  "title": "幾何模板",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B9%BE%E4%BD%95%E6%A8%A1%E6%9D%BF",
+  "source_page_id": 3361176,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

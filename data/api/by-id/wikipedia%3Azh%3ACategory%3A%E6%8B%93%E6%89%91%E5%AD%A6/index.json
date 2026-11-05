@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:拓扑学",
+  "source": "nodes/拓扑学-ad8adb286a83.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/拓扑学-ad8adb286a83.json",
+  "legacy_children": "../../children/nodes/拓扑学-ad8adb286a83.json"
+}

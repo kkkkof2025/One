@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:解析几何",
+  "source": "nodes/解析几何-9a5dc728c9a5.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/解析几何-9a5dc728c9a5.json",
+  "legacy_children": "../../children/nodes/解析几何-9a5dc728c9a5.json"
+}

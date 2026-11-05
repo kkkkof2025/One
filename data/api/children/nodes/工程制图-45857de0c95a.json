@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/工程制图-45857de0c95a.json",
+  "node": {
+    "title": "工程制图",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:工程制图",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B7%A5%E7%A8%8B%E5%88%B6%E5%9B%BE",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

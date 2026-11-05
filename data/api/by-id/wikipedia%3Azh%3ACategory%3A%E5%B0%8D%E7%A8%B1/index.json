@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:對稱",
+  "source": "nodes/對稱-bed25df323ea.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/對稱-bed25df323ea.json",
+  "legacy_children": "../../children/nodes/對稱-bed25df323ea.json"
+}

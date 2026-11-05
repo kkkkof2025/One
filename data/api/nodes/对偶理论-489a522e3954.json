@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/对偶理论-489a522e3954.json",
+  "node": {
+    "id": "wikipedia:zh:Category:对偶理论",
+    "title": "对偶理论",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AF%B9%E5%81%B6%E7%90%86%E8%AE%BA",
+    "source_page_id": 926150,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

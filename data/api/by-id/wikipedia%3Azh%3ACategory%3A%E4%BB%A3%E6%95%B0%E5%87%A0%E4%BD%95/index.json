@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:代数几何",
+  "source": "nodes/代数几何-5679ef679a98.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/代数几何-5679ef679a98.json",
+  "legacy_children": "../../children/nodes/代数几何-5679ef679a98.json"
+}

@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/几何学主题-6d33061bbb78.json",
+  "node": {
+    "id": "wikipedia:zh:Category:几何学主题",
+    "title": "几何学主题",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%87%A0%E4%BD%95%E5%AD%A6%E4%B8%BB%E9%A2%98",
+    "source_page_id": 9268315,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

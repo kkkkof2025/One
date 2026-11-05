@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:多面體",
+  "source": "nodes/多面體-a90c291eff3d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/多面體-a90c291eff3d.json",
+  "legacy_children": "../../children/nodes/多面體-a90c291eff3d.json"
+}

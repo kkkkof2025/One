@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:几何量测量",
+  "source": "nodes/几何量测量-c6cea40a8fb3.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/几何量测量-c6cea40a8fb3.json",
+  "legacy_children": "../../children/nodes/几何量测量-c6cea40a8fb3.json"
+}

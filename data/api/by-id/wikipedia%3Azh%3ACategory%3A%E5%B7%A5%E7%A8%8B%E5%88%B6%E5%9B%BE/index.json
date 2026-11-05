@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:工程制图",
+  "source": "nodes/工程制图-45857de0c95a.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/工程制图-45857de0c95a.json",
+  "legacy_children": "../../children/nodes/工程制图-45857de0c95a.json"
+}
