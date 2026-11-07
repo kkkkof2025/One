@@ -73,7 +73,7 @@
     },
     {
       "title": "代謝廢物",
-      "children_count": 3,
+      "children_count": 4,
       "id": "Q1383944",
       "data_source": "nodes/Q1383944.json",
       "source_provider": "wikidata",
@@ -84,11 +84,11 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-06T04:26:56Z",
-      "last_checked_at": "2026-11-06T04:26:56Z",
-      "last_fetch_source": "dbpedia",
+      "updated_at": "2026-11-07T03:53:59Z",
+      "last_checked_at": "2026-11-07T03:53:59Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "dbpedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-11-04T04:07:44Z",
@@ -97,7 +97,8 @@
       "source_checked": {
         "wikidata_api": "2026-11-03T04:44:33Z",
         "wikipedia": "2026-11-04T04:07:44Z",
-        "dbpedia": "2026-11-06T04:26:56Z"
+        "dbpedia": "2026-11-06T04:26:56Z",
+        "wikidata": "2026-11-07T03:53:59Z"
       }
     },
     {
