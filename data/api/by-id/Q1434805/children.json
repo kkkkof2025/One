@@ -3,21 +3,21 @@
   "source": "nodes/Q1434805.json",
   "node": {
     "title": "代數曲面",
-    "children_count": 0,
+    "children_count": 5,
     "id": "Q1434805",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1434805",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-06T04:26:47Z",
-    "last_checked_at": "2026-11-06T04:26:47Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-08T03:38:43Z",
+    "last_checked_at": "2026-11-08T03:38:43Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-05T04:28:30Z",
@@ -25,9 +25,81 @@
     },
     "source_checked": {
       "wikidata_api": "2026-11-05T04:28:30Z",
-      "wikipedia": "2026-11-06T04:26:47Z"
+      "wikipedia": "2026-11-06T04:26:47Z",
+      "wikidata": "2026-11-08T03:38:43Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "博维尔表面",
+      "children_count": 0,
+      "id": "Q4877964",
+      "data_source": "nodes/Q4877964.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4877964",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "库默尔曲面",
+      "children_count": 0,
+      "id": "Q1494636",
+      "data_source": "nodes/Q1494636.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1494636",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "恩内佩尔曲面",
+      "children_count": 0,
+      "id": "Q615502",
+      "data_source": "nodes/Q615502.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q615502",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "扎里斯基曲面",
+      "children_count": 0,
+      "id": "Q8066801",
+      "data_source": "nodes/Q8066801.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q8066801",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "有理曲面",
+      "children_count": 0,
+      "id": "Q208756",
+      "data_source": "nodes/Q208756.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q208756",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 5
 }

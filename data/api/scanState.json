@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-07T03:55:04Z",
+  "updated_at": "2026-11-08T03:39:48Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:Q1411746",
-  "last_scan_title": "节片生殖",
-  "candidate_count": 1425,
+  "last_scan_key": "id:Q1454631",
+  "last_scan_title": "宗教人文主义",
+  "candidate_count": 1426,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -36,7 +36,7 @@
     "wikidata": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1,
+      "added_nodes": 5,
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
@@ -53,30 +53,30 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-11-07T03:53:59Z",
+      "occurred_at": "2026-11-08T03:38:43Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-11-07T04:03:59Z",
+      "cooldown_until": "2026-11-08T03:48:43Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 1425,
+    "candidate_count": 1426,
     "source_progress_counts": {
-      "4": 24,
-      "3": 167,
+      "4": 25,
+      "2": 58,
       "1": 2,
       "0": 1174,
-      "2": 58
+      "3": 167
     },
     "next_source_counts": {
-      "conceptnet": 245,
-      "wikidata": 5,
+      "conceptnet": 247,
+      "wikidata": 4,
       "wikipedia": 635,
       "wikidata_api": 540
     },
     "available_next_source_counts": {
-      "conceptnet": 245,
-      "wikidata": 5,
+      "conceptnet": 247,
+      "wikidata": 4,
       "wikipedia": 635,
       "wikidata_api": 540
     },
@@ -101,24 +101,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1383944",
-        "title": "代謝廢物",
+        "scan_key": "id:Q1434805",
+        "title": "代數曲面",
         "next_source": "wikidata",
-        "source_progress": 3,
-        "priority": 126.0,
-        "depth": 4
-      },
-      {
-        "scan_key": "id:Q1454631",
-        "title": "宗教人文主义",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
         "scan_key": "id:Q1475760",
         "title": "射影平面",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 131.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q1483951",
+        "title": "惡性",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -154,24 +154,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1383944",
-          "title": "代謝廢物",
+          "scan_key": "id:Q1434805",
+          "title": "代數曲面",
           "next_source": "wikidata",
-          "source_progress": 3,
-          "priority": 126.0,
-          "depth": 4
-        },
-        {
-          "scan_key": "id:Q1454631",
-          "title": "宗教人文主义",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
           "scan_key": "id:Q1475760",
           "title": "射影平面",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 131.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q1483951",
+          "title": "惡性",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,

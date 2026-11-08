@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q8066801.json",
+  "node": {
+    "title": "扎里斯基曲面",
+    "children_count": 0,
+    "id": "Q8066801",
+    "source_provider": "wikidata",
+    "source_relation": "subclass",
+    "source_url": "https://www.wikidata.org/wiki/Q8066801",
+    "children_status": "pending",
+    "quality_score": 97,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -4,29 +4,98 @@
   "node": {
     "id": "Q1434805",
     "title": "代數曲面",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "博维尔表面",
+        "data_source": "nodes/Q4877964.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4877964",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4877964",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "库默尔曲面",
+        "data_source": "nodes/Q1494636.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q1494636",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q1494636",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "恩内佩尔曲面",
+        "data_source": "nodes/Q615502.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q615502",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q615502",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "扎里斯基曲面",
+        "data_source": "nodes/Q8066801.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q8066801",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q8066801",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "有理曲面",
+        "data_source": "nodes/Q208756.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q208756",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q208756",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1434805",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-06T04:26:47Z",
-    "last_checked_at": "2026-11-06T04:26:47Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-08T03:38:43Z",
+    "last_checked_at": "2026-11-08T03:38:43Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-11-05T04:28:30Z",
-      "wikipedia": "2026-11-06T04:26:47Z"
+      "wikipedia": "2026-11-06T04:26:47Z",
+      "wikidata": "2026-11-08T03:38:43Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-11-05T04:28:30Z",

@@ -1,6 +1,6 @@
 {
   "endpoint": "nextSchedule",
-  "generated_at": "2026-11-07T03:55:04Z",
+  "generated_at": "2026-11-08T03:39:49Z",
   "source": "getScanState.json",
   "request_limit": 5,
   "selection_limit": 5,
@@ -22,24 +22,24 @@
       "depth": 3
     },
     {
-      "scan_key": "id:Q1383944",
-      "title": "代謝廢物",
+      "scan_key": "id:Q1434805",
+      "title": "代數曲面",
       "next_source": "wikidata",
-      "source_progress": 3,
-      "priority": 126.0,
-      "depth": 4
-    },
-    {
-      "scan_key": "id:Q1454631",
-      "title": "宗教人文主义",
-      "next_source": "wikipedia",
-      "source_progress": 1,
+      "source_progress": 2,
       "priority": 131.0,
       "depth": 4
     },
     {
       "scan_key": "id:Q1475760",
       "title": "射影平面",
+      "next_source": "wikipedia",
+      "source_progress": 1,
+      "priority": 131.0,
+      "depth": 4
+    },
+    {
+      "scan_key": "id:Q1483951",
+      "title": "惡性",
       "next_source": "wikidata_api",
       "source_progress": 0,
       "priority": 131.0,
