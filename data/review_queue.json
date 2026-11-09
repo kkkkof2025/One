@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-08T03:39:53Z",
+  "generated_at": "2026-11-09T03:52:51Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 168,
+  "total_candidates": 169,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 168,
+  "total_items": 169,
   "reason_distribution": {
-    "total_items": 168,
+    "total_items": 169,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 37,
+        "count": 38,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,11 +100,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 165
+        "count": 166
       },
       {
         "reason": "qid",
-        "count": 163
+        "count": 164
       },
       {
         "reason": "missing_relation",
@@ -116,7 +116,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 83
+        "count": 84
       },
       {
         "reason": "fetch_error",
@@ -128,18 +128,18 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 30
+        "count": 31
       },
       {
         "reason": "has_children",
         "count": 13
       },
       {
-        "reason": "loaded",
-        "count": 10
+        "reason": "relation:subclass",
+        "count": 11
       },
       {
-        "reason": "relation:subclass",
+        "reason": "loaded",
         "count": 10
       },
       {
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 106
+        "count": 107
       },
       {
         "status": "error",
@@ -3807,6 +3807,30 @@
       "priority": 35.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q2070474",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "实射影平面",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q633815",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q633815",
+      "path": "万物 / 宇宙 / 空间 / 二维空间 / 实射影平面",
+      "location": "nodes/Q633815.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q633815",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

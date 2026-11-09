@@ -4,29 +4,59 @@
   "node": {
     "id": "Q1475760",
     "title": "射影平面",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "复射影平面",
+        "data_source": "nodes/Q4426755.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q4426755",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q4426755",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "实射影平面",
+        "data_source": "nodes/Q633815.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q633815",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q633815",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1475760",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-08T03:38:43Z",
-    "last_checked_at": "2026-11-08T03:38:43Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-09T03:51:42Z",
+    "last_checked_at": "2026-11-09T03:51:42Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-11-07T03:53:59Z",
-      "wikipedia": "2026-11-08T03:38:43Z"
+      "wikipedia": "2026-11-08T03:38:43Z",
+      "wikidata": "2026-11-09T03:51:42Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-11-07T03:53:59Z",
