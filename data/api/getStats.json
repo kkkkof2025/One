@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-09T03:52:47Z",
-  "total_nodes": 1440,
+  "generated_at": "2026-11-10T05:27:03Z",
+  "total_nodes": 1442,
   "last_added_nodes": 2,
   "last_request_count": 5,
-  "last_scanned_nodes": 1582,
-  "last_candidate_nodes": 1431,
+  "last_scanned_nodes": 1584,
+  "last_candidate_nodes": 1432,
   "last_unchanged_requests": 3,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -19,39 +19,37 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 1,
-      "productive_requests": 1,
-      "added_nodes": 2,
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "no_children_requests": 2,
+      "unchanged_requests": 2
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 2
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1431,
+    "candidate_count": 1432,
     "source_progress_counts": {
       "4": 25,
-      "2": 57,
+      "2": 56,
       "1": 2,
       "0": 1178,
-      "3": 169
+      "3": 171
     },
     "next_source_counts": {
-      "conceptnet": 249,
-      "wikidata": 3,
+      "conceptnet": 251,
+      "wikidata": 2,
       "wikipedia": 635,
       "wikidata_api": 544
     },
     "available_next_source_counts": {
-      "conceptnet": 249,
-      "wikidata": 3,
+      "conceptnet": 251,
+      "wikidata": 2,
       "wikipedia": 635,
       "wikidata_api": 544
     },
@@ -76,24 +74,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1475760",
-        "title": "射影平面",
+        "scan_key": "id:Q1483951",
+        "title": "惡性",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q1483951",
-        "title": "惡性",
+        "scan_key": "id:Q15119237",
+        "title": "摻雜劑",
         "next_source": "wikipedia",
         "source_progress": 1,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q15119237",
-        "title": "摻雜劑",
+        "scan_key": "id:Q1519812",
+        "title": "卫生政策",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -129,24 +127,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1475760",
-          "title": "射影平面",
+          "scan_key": "id:Q1483951",
+          "title": "惡性",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q1483951",
-          "title": "惡性",
+          "scan_key": "id:Q15119237",
+          "title": "摻雜劑",
           "next_source": "wikipedia",
           "source_progress": 1,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q15119237",
-          "title": "摻雜劑",
+          "scan_key": "id:Q1519812",
+          "title": "卫生政策",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -166,11 +164,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 71,
+    "added_nodes": 49,
     "requests": 40,
-    "added_per_request": 1.775,
+    "added_per_request": 1.225,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-11-09T03:52:47Z",
+    "last_productive_run_at": "2026-11-10T05:27:03Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 13,
@@ -183,26 +181,26 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "no_children_requests": 5,
-        "unchanged_requests": 5,
-        "children_returned_requests": 5,
-        "productive_requests": 5,
-        "added_nodes": 28,
-        "rate_limited_requests": 3
+        "rate_limited_requests": 3,
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 4,
+        "productive_requests": 4,
+        "added_nodes": 11
       },
       "wikipedia": {
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 40,
-        "no_children_requests": 7,
-        "unchanged_requests": 7
-      },
-      "wikidata_api": {
-        "no_children_requests": 7,
-        "unchanged_requests": 7,
+        "no_children_requests": 8,
+        "unchanged_requests": 8,
         "children_returned_requests": 1,
         "productive_requests": 1,
-        "added_nodes": 3
+        "added_nodes": 33
+      },
+      "wikidata_api": {
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 5,
+        "no_children_requests": 6,
+        "unchanged_requests": 6
       },
       "dbpedia": {
         "no_children_requests": 2,
@@ -213,7 +211,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 203,
+  "history_entries": 204,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

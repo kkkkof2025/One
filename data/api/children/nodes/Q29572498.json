@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q29572498.json",
+  "node": {
+    "title": "公共衛生政策",
+    "children_count": 0,
+    "id": "Q29572498",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q29572498",
+    "children_status": "pending",
+    "quality_score": 93,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

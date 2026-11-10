@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-09T03:52:51Z",
+  "generated_at": "2026-11-10T05:27:06Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 169,
+  "total_candidates": 170,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 169,
+  "total_items": 170,
   "reason_distribution": {
-    "total_items": 169,
+    "total_items": 170,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 85,
+        "count": 86,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -100,11 +100,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 166
+        "count": 167
       },
       {
         "reason": "qid",
-        "count": 164
+        "count": 165
       },
       {
         "reason": "missing_relation",
@@ -112,7 +112,7 @@
       },
       {
         "reason": "non_zh_label",
-        "count": 85
+        "count": 86
       },
       {
         "reason": "zh_label",
@@ -124,7 +124,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 47
+        "count": 48
       },
       {
         "reason": "duplicate_id:2",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 107
+        "count": 108
       },
       {
         "status": "error",
@@ -3305,6 +3305,29 @@
       "priority": 43.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q105582462",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "disability policy",
+      "children_status": "pending",
+      "quality_score": 67,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "good_title_length",
+        "relation:has_part"
+      ],
+      "id": "Q11900327",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q11900327",
+      "path": "万物 / 生命 / 生命科學 / 醫療衛生科學 / 卫生政策 / disability policy",
+      "location": "nodes/Q11900327.json",
+      "priority": 43.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q11900327",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

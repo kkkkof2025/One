@@ -4,19 +4,58 @@
   "node": {
     "id": "Q1519812",
     "title": "卫生政策",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "disability policy",
+        "data_source": "nodes/Q11900327.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q11900327",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q11900327",
+        "quality_score": 67,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "公共衛生政策",
+        "data_source": "nodes/Q29572498.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q29572498",
+        "source_provider": "wikidata_api",
+        "source_relation": "has_part",
+        "source_url": "https://www.wikidata.org/wiki/Q29572498",
+        "quality_score": 93,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1519812",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-11-10T05:25:59Z",
+    "last_checked_at": "2026-11-10T05:25:59Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-11-10T05:25:59Z"
+    },
+    "is_leaf": false
   }
 }
