@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:创造论出版物",
+  "source": "nodes/创造论出版物-5ebdfe1fc2e9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/创造论出版物-5ebdfe1fc2e9.json",
+  "legacy_children": "../../children/nodes/创造论出版物-5ebdfe1fc2e9.json"
+}

@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-10T05:27:03Z",
+  "updated_at": "2026-11-11T03:56:11Z",
   "fetch_strategy_version": 8,
   "scan_order": "priority-depth-first-source-round-robin-v1",
-  "last_scan_key": "id:wikipedia:zh:Category:几何学",
-  "last_scan_title": "几何学",
-  "candidate_count": 1432,
+  "last_scan_key": "id:wikipedia:zh:Category:创造论",
+  "last_scan_title": "创造论",
+  "candidate_count": 1434,
   "selected_count": 6,
   "request_count": 5,
   "max_requests": 5,
@@ -25,8 +25,8 @@
   ],
   "source_request_counts": {
     "conceptnet": 1,
-    "wikidata": 2,
-    "wikipedia": 1,
+    "wikidata": 1,
+    "wikipedia": 2,
     "wikidata_api": 1
   },
   "source_outcome_counts": {
@@ -34,49 +34,51 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "no_children_requests": 2,
-      "unchanged_requests": 2
-    },
-    "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
-    "wikidata_api": {
+    "wikipedia": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1,
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 2
+      "added_nodes": 6
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "source_cooldowns": {
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-11-10T05:25:58Z",
+      "occurred_at": "2026-11-11T03:56:05Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-11-10T05:35:58Z",
+      "cooldown_until": "2026-11-11T04:06:05Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },
   "candidate_source_summary": {
-    "candidate_count": 1432,
+    "candidate_count": 1434,
     "source_progress_counts": {
       "4": 25,
-      "2": 56,
-      "1": 2,
-      "0": 1178,
-      "3": 171
+      "2": 57,
+      "1": 1,
+      "0": 1179,
+      "3": 172
     },
     "next_source_counts": {
-      "conceptnet": 251,
-      "wikidata": 2,
+      "conceptnet": 253,
+      "wikidata": 1,
       "wikipedia": 635,
-      "wikidata_api": 544
+      "wikidata_api": 545
     },
     "available_next_source_counts": {
-      "conceptnet": 251,
-      "wikidata": 2,
+      "conceptnet": 253,
+      "wikidata": 1,
       "wikipedia": 635,
-      "wikidata_api": 544
+      "wikidata_api": 545
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -99,24 +101,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q1483951",
-        "title": "惡性",
+        "scan_key": "id:Q15119237",
+        "title": "摻雜劑",
         "next_source": "wikidata",
         "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q15119237",
-        "title": "摻雜劑",
+        "scan_key": "id:Q1519812",
+        "title": "卫生政策",
         "next_source": "wikipedia",
         "source_progress": 1,
-        "priority": 131.0,
+        "priority": 126.0,
         "depth": 4
       },
       {
-        "scan_key": "id:Q1519812",
-        "title": "卫生政策",
+        "scan_key": "id:Q1558451",
+        "title": "雌全异株",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -152,24 +154,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q1483951",
-          "title": "惡性",
+          "scan_key": "id:Q15119237",
+          "title": "摻雜劑",
           "next_source": "wikidata",
           "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q15119237",
-          "title": "摻雜劑",
+          "scan_key": "id:Q1519812",
+          "title": "卫生政策",
           "next_source": "wikipedia",
           "source_progress": 1,
-          "priority": 131.0,
+          "priority": 126.0,
           "depth": 4
         },
         {
-          "scan_key": "id:Q1519812",
-          "title": "卫生政策",
+          "scan_key": "id:Q1558451",
+          "title": "雌全异株",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:对创造论的批判",
+  "source": "nodes/对创造论的批判-64f900b9f9da.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/对创造论的批判-64f900b9f9da.json",
+  "legacy_children": "../../children/nodes/对创造论的批判-64f900b9f9da.json"
+}

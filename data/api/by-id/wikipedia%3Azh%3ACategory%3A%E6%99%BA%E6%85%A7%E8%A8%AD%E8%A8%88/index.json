@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:智慧設計",
+  "source": "nodes/智慧設計-7edae6bc3b7f.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/智慧設計-7edae6bc3b7f.json",
+  "legacy_children": "../../children/nodes/智慧設計-7edae6bc3b7f.json"
+}
