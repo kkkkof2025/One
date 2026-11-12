@@ -3,7 +3,7 @@
   "source": "nodes/Q1519812.json",
   "node": {
     "title": "卫生政策",
-    "children_count": 2,
+    "children_count": 13,
     "id": "Q1519812",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-11T03:56:05Z",
-    "last_checked_at": "2026-11-11T03:56:05Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-12T05:05:15Z",
+    "last_checked_at": "2026-11-12T05:05:15Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-11-11T03:56:05Z"
     },
     "source_checked": {
       "wikidata_api": "2026-11-10T05:25:59Z",
-      "wikipedia": "2026-11-11T03:56:05Z"
+      "wikipedia": "2026-11-11T03:56:05Z",
+      "wikidata": "2026-11-12T05:05:15Z"
     }
   },
   "children": [
@@ -55,7 +56,161 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "口罩實名制",
+      "children_count": 0,
+      "id": "Q105587931",
+      "data_source": "nodes/Q105587931.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q105587931",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "家用快篩試劑實名制",
+      "children_count": 0,
+      "id": "Q112072186",
+      "data_source": "nodes/Q112072186.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q112072186",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "新十条",
+      "children_count": 0,
+      "id": "Q125914566",
+      "data_source": "nodes/Q125914566.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q125914566",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "醫療平等",
+      "children_count": 0,
+      "id": "Q1512929",
+      "data_source": "nodes/Q1512929.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1512929",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "保險授權",
+      "children_count": 0,
+      "id": "Q5691100",
+      "data_source": "nodes/Q5691100.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5691100",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "各種政策中的健康",
+      "children_count": 0,
+      "id": "Q17086405",
+      "data_source": "nodes/Q17086405.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q17086405",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "母乳代用品销售国际守则",
+      "children_count": 0,
+      "id": "Q1667595",
+      "data_source": "nodes/Q1667595.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1667595",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "疫苗接種政策",
+      "children_count": 0,
+      "id": "Q7907936",
+      "data_source": "nodes/Q7907936.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7907936",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "藥品政策",
+      "children_count": 0,
+      "id": "Q7180762",
+      "data_source": "nodes/Q7180762.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7180762",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "醫學指南",
+      "children_count": 0,
+      "id": "Q878041",
+      "data_source": "nodes/Q878041.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q878041",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "醫藥分家",
+      "children_count": 0,
+      "id": "Q30314209",
+      "data_source": "nodes/Q30314209.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q30314209",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 2
+  "child_count": 13
 }

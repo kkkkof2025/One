@@ -102,7 +102,7 @@
     },
     {
       "title": "卫生政策",
-      "children_count": 2,
+      "children_count": 13,
       "id": "Q1519812",
       "data_source": "nodes/Q1519812.json",
       "source_provider": "wikidata",
@@ -113,18 +113,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-11T03:56:05Z",
-      "last_checked_at": "2026-11-11T03:56:05Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-12T05:05:15Z",
+      "last_checked_at": "2026-11-12T05:05:15Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-11-11T03:56:05Z"
       },
       "source_checked": {
         "wikidata_api": "2026-11-10T05:25:59Z",
-        "wikipedia": "2026-11-11T03:56:05Z"
+        "wikipedia": "2026-11-11T03:56:05Z",
+        "wikidata": "2026-11-12T05:05:15Z"
       }
     },
     {
