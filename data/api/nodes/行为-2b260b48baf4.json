@@ -76,15 +76,24 @@
       {
         "title": "利他主义",
         "data_source": "nodes/利他主义-8f0c12335d3a.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "wikipedia:zh:Category:利他主义",
         "source_provider": "wikipedia",
         "source_relation": "wikipedia_category",
         "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%A9%E4%BB%96%E4%B8%BB%E4%B9%89",
-        "quality_score": 75,
+        "quality_score": 85,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-11-13T04:20:57Z",
+        "last_checked_at": "2026-11-13T04:20:57Z",
+        "last_fetch_source": "wikipedia",
+        "last_fetch_sources": [
+          "wikipedia"
+        ],
+        "source_checked": {
+          "wikipedia": "2026-11-13T04:20:57Z"
+        }
       },
       {
         "title": "动物行为学",

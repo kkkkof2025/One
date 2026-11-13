@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:私人援助项目",
+  "source": "nodes/私人援助项目-9220812c935e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/私人援助项目-9220812c935e.json",
+  "legacy_children": "../../children/nodes/私人援助项目-9220812c935e.json"
+}

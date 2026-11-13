@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:慈善",
+  "source": "nodes/慈善-4aff7d87e7e9.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/慈善-4aff7d87e7e9.json",
+  "legacy_children": "../../children/nodes/慈善-4aff7d87e7e9.json"
+}

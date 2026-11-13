@@ -4,20 +4,59 @@
   "node": {
     "id": "wikipedia:zh:Category:利他主义",
     "title": "利他主义",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "慈善",
+        "data_source": "nodes/慈善-4aff7d87e7e9.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:慈善",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%85%88%E5%96%84",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "私人援助项目",
+        "data_source": "nodes/私人援助项目-9220812c935e.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "wikipedia:zh:Category:私人援助项目",
+        "source_provider": "wikipedia",
+        "source_relation": "wikipedia_category",
+        "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%A7%81%E4%BA%BA%E6%8F%B4%E5%8A%A9%E9%A1%B9%E7%9B%AE",
+        "quality_score": 75,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%A9%E4%BB%96%E4%B8%BB%E4%B9%89",
     "source_page_id": 5228697,
-    "quality_score": 75,
+    "quality_score": 85,
     "quality_reasons": [
       "external_id",
       "zh_label",
       "good_title_length",
-      "relation:wikipedia_category"
+      "relation:wikipedia_category",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-11-13T04:20:57Z",
+    "last_checked_at": "2026-11-13T04:20:57Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-11-13T04:20:57Z"
+    },
+    "is_leaf": false
   }
 }

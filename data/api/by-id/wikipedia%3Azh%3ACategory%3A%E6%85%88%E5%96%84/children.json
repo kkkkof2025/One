@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/慈善-4aff7d87e7e9.json",
+  "node": {
+    "title": "慈善",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:慈善",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%85%88%E5%96%84",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

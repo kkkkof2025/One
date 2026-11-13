@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q44946.json",
+  "node": {
+    "title": "点",
+    "children_count": 0,
+    "id": "Q44946",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q44946",
+    "children_status": "pending",
+    "quality_score": 79,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

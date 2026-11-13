@@ -3,16 +3,41 @@
   "source": "nodes/Q161973.json",
   "node": {
     "title": "曲线",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q161973",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q161973",
-    "children_status": "pending",
-    "quality_score": 97,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 100,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-11-13T04:20:53Z",
+    "last_checked_at": "2026-11-13T04:20:53Z",
+    "last_fetch_source": "wikidata_api",
+    "last_fetch_sources": [
+      "wikidata_api"
+    ],
+    "source_checked": {
+      "wikidata_api": "2026-11-13T04:20:53Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "点",
+      "children_count": 0,
+      "id": "Q44946",
+      "data_source": "nodes/Q44946.json",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q44946",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 79,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 1
 }
