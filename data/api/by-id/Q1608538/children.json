@@ -3,21 +3,21 @@
   "source": "nodes/Q1608538.json",
   "node": {
     "title": "植物性別",
-    "children_count": 0,
+    "children_count": 2,
     "id": "Q1608538",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1608538",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-13T04:20:52Z",
-    "last_checked_at": "2026-11-13T04:20:52Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-14T04:17:19Z",
+    "last_checked_at": "2026-11-14T04:17:19Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-12T05:05:15Z",
@@ -25,9 +25,39 @@
     },
     "source_checked": {
       "wikidata_api": "2026-11-12T05:05:15Z",
-      "wikipedia": "2026-11-13T04:20:52Z"
+      "wikipedia": "2026-11-13T04:20:52Z",
+      "wikidata": "2026-11-14T04:17:19Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "雌全同株",
+      "children_count": 0,
+      "id": "Q108146859",
+      "data_source": "nodes/Q108146859.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q108146859",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "雄全同株",
+      "children_count": 0,
+      "id": "Q108131520",
+      "data_source": "nodes/Q108131520.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q108131520",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 2
 }

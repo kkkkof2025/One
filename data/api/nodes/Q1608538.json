@@ -4,29 +4,59 @@
   "node": {
     "id": "Q1608538",
     "title": "植物性別",
-    "children_status": "pending",
-    "children": [],
+    "children_status": "loaded",
+    "children": [
+      {
+        "title": "雌全同株",
+        "data_source": "nodes/Q108146859.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q108146859",
+        "source_provider": "wikidata",
+        "source_relation": "instance",
+        "source_url": "https://www.wikidata.org/wiki/Q108146859",
+        "quality_score": 81,
+        "quality_version": 3,
+        "review_status": "approved"
+      },
+      {
+        "title": "雄全同株",
+        "data_source": "nodes/Q108131520.json",
+        "children_status": "pending",
+        "is_leaf": false,
+        "id": "Q108131520",
+        "source_provider": "wikidata",
+        "source_relation": "subclass",
+        "source_url": "https://www.wikidata.org/wiki/Q108131520",
+        "quality_score": 97,
+        "quality_version": 3,
+        "review_status": "approved"
+      }
+    ],
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1608538",
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_reasons": [
       "qid",
       "zh_label",
       "good_title_length",
-      "relation:subclass"
+      "relation:subclass",
+      "loaded",
+      "has_children"
     ],
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-13T04:20:52Z",
-    "last_checked_at": "2026-11-13T04:20:52Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-14T04:17:19Z",
+    "last_checked_at": "2026-11-14T04:17:19Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_checked": {
       "wikidata_api": "2026-11-12T05:05:15Z",
-      "wikipedia": "2026-11-13T04:20:52Z"
+      "wikipedia": "2026-11-13T04:20:52Z",
+      "wikidata": "2026-11-14T04:17:19Z"
     },
     "source_no_children": {
       "wikidata_api": "2026-11-12T05:05:15Z",
