@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:药物发现",
+  "source": "nodes/药物发现-3c3c7e36f961.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/药物发现-3c3c7e36f961.json",
+  "legacy_children": "../../children/nodes/药物发现-3c3c7e36f961.json"
+}

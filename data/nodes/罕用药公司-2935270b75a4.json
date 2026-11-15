@@ -1,0 +1,19 @@
+{
+  "id": "wikipedia:zh:Category:罕用药公司",
+  "title": "罕用药公司",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikipedia",
+  "source_relation": "wikipedia_category",
+  "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BD%95%E7%94%A8%E8%8D%AF%E5%85%AC%E5%8F%B8",
+  "source_page_id": 6674014,
+  "quality_score": 75,
+  "quality_reasons": [
+    "external_id",
+    "zh_label",
+    "good_title_length",
+    "relation:wikipedia_category"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

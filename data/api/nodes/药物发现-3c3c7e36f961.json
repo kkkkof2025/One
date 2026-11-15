@@ -1,0 +1,23 @@
+{
+  "endpoint": "node",
+  "source": "nodes/药物发现-3c3c7e36f961.json",
+  "node": {
+    "id": "wikipedia:zh:Category:药物发现",
+    "title": "药物发现",
+    "children_status": "pending",
+    "children": [],
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%8D%AF%E7%89%A9%E5%8F%91%E7%8E%B0",
+    "source_page_id": 5739090,
+    "quality_score": 75,
+    "quality_reasons": [
+      "external_id",
+      "zh_label",
+      "good_title_length",
+      "relation:wikipedia_category"
+    ],
+    "quality_version": 3,
+    "review_status": "approved"
+  }
+}

@@ -3,29 +3,45 @@
   "source": "nodes/Q165632.json",
   "node": {
     "title": "灰塵",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q165632",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q165632",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-14T04:17:20Z",
-    "last_checked_at": "2026-11-14T04:17:20Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-11-15T04:01:02Z",
+    "last_checked_at": "2026-11-15T04:01:02Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-14T04:17:20Z"
     },
     "source_checked": {
-      "wikidata_api": "2026-11-14T04:17:20Z"
+      "wikidata_api": "2026-11-14T04:17:20Z",
+      "wikipedia": "2026-11-15T04:01:02Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "沙尘暴",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:沙尘暴",
+      "data_source": "nodes/沙尘暴-efe9f3ca43ff.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E6%B2%99%E5%B0%98%E6%9A%B4",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 1
 }

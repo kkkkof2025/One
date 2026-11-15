@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:沙尘暴",
+  "source": "nodes/沙尘暴-efe9f3ca43ff.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/沙尘暴-efe9f3ca43ff.json",
+  "legacy_children": "../../children/nodes/沙尘暴-efe9f3ca43ff.json"
+}

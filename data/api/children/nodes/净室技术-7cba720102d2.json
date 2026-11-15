@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/净室技术-7cba720102d2.json",
+  "node": {
+    "title": "净室技术",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:净室技术",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%87%80%E5%AE%A4%E6%8A%80%E6%9C%AF",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -3,16 +3,139 @@
   "source": "nodes/制药工业-2be6c3bc3687.json",
   "node": {
     "title": "制药工业",
-    "children_count": 0,
+    "children_count": 8,
     "id": "wikipedia:zh:Category:制药工业",
     "source_provider": "wikipedia",
     "source_relation": "wikipedia_category",
     "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%B7%A5%E4%B8%9A",
-    "children_status": "pending",
-    "quality_score": 75,
+    "children_status": "loaded",
+    "is_leaf": false,
+    "quality_score": 89,
     "quality_version": 3,
-    "review_status": "approved"
+    "review_status": "approved",
+    "updated_at": "2026-11-15T04:01:07Z",
+    "last_checked_at": "2026-11-15T04:01:07Z",
+    "last_fetch_source": "wikipedia",
+    "last_fetch_sources": [
+      "wikipedia"
+    ],
+    "source_checked": {
+      "wikipedia": "2026-11-15T04:01:07Z"
+    }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "净室技术",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:净室技术",
+      "data_source": "nodes/净室技术-7cba720102d2.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%87%80%E5%AE%A4%E6%8A%80%E6%9C%AF",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "制药公司",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:制药公司",
+      "data_source": "nodes/制药公司-2ee7596389e2.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%85%AC%E5%8F%B8",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "制药工业企业家",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:制药工业企业家",
+      "data_source": "nodes/制药工业企业家-1c72cf268dc6.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%B7%A5%E4%B8%9A%E4%BC%81%E4%B8%9A%E5%AE%B6",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "国家药品监管机构",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:国家药品监管机构",
+      "data_source": "nodes/国家药品监管机构-6217d26fc214.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9B%BD%E5%AE%B6%E8%8D%AF%E5%93%81%E7%9B%91%E7%AE%A1%E6%9C%BA%E6%9E%84",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "特殊药品",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:特殊药品",
+      "data_source": "nodes/特殊药品-df2588d06982.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%B9%E6%AE%8A%E8%8D%AF%E5%93%81",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "罕用药公司",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:罕用药公司",
+      "data_source": "nodes/罕用药公司-2935270b75a4.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BD%95%E7%94%A8%E8%8D%AF%E5%85%AC%E5%8F%B8",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "药物发现",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:药物发现",
+      "data_source": "nodes/药物发现-3c3c7e36f961.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%8D%AF%E7%89%A9%E5%8F%91%E7%8E%B0",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "药物研发",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:药物研发",
+      "data_source": "nodes/药物研发-18b222675f37.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%8D%AF%E7%89%A9%E7%A0%94%E5%8F%91",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 8
 }

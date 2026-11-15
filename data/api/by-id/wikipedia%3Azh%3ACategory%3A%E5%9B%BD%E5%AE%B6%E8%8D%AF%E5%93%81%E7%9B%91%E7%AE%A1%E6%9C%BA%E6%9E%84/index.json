@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:国家药品监管机构",
+  "source": "nodes/国家药品监管机构-6217d26fc214.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/国家药品监管机构-6217d26fc214.json",
+  "legacy_children": "../../children/nodes/国家药品监管机构-6217d26fc214.json"
+}

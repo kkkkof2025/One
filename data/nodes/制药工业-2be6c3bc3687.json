@@ -1,19 +1,136 @@
 {
   "id": "wikipedia:zh:Category:制药工业",
   "title": "制药工业",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "净室技术",
+      "data_source": "nodes/净室技术-7cba720102d2.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:净室技术",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%87%80%E5%AE%A4%E6%8A%80%E6%9C%AF",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "制药公司",
+      "data_source": "nodes/制药公司-2ee7596389e2.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:制药公司",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%85%AC%E5%8F%B8",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "制药工业企业家",
+      "data_source": "nodes/制药工业企业家-1c72cf268dc6.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:制药工业企业家",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%B7%A5%E4%B8%9A%E4%BC%81%E4%B8%9A%E5%AE%B6",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "国家药品监管机构",
+      "data_source": "nodes/国家药品监管机构-6217d26fc214.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:国家药品监管机构",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%9B%BD%E5%AE%B6%E8%8D%AF%E5%93%81%E7%9B%91%E7%AE%A1%E6%9C%BA%E6%9E%84",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "特殊药品",
+      "data_source": "nodes/特殊药品-df2588d06982.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:特殊药品",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%89%B9%E6%AE%8A%E8%8D%AF%E5%93%81",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "罕用药公司",
+      "data_source": "nodes/罕用药公司-2935270b75a4.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:罕用药公司",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%BD%95%E7%94%A8%E8%8D%AF%E5%85%AC%E5%8F%B8",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "药物发现",
+      "data_source": "nodes/药物发现-3c3c7e36f961.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:药物发现",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%8D%AF%E7%89%A9%E5%8F%91%E7%8E%B0",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "药物研发",
+      "data_source": "nodes/药物研发-18b222675f37.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:药物研发",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%8D%AF%E7%89%A9%E7%A0%94%E5%8F%91",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%88%B6%E8%8D%AF%E5%B7%A5%E4%B8%9A",
   "source_page_id": 1538958,
-  "quality_score": 75,
+  "quality_score": 89,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-11-15T04:01:07Z",
+  "last_checked_at": "2026-11-15T04:01:07Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-11-15T04:01:07Z"
+  },
+  "is_leaf": false
 }

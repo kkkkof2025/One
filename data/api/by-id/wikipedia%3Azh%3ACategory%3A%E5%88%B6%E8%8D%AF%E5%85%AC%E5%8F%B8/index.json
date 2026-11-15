@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:制药公司",
+  "source": "nodes/制药公司-2ee7596389e2.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/制药公司-2ee7596389e2.json",
+  "legacy_children": "../../children/nodes/制药公司-2ee7596389e2.json"
+}
