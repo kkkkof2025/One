@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-15T04:01:10Z",
+  "generated_at": "2026-11-16T04:01:44Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 170,
+  "total_candidates": 171,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 170,
+  "total_items": 171,
   "reason_distribution": {
-    "total_items": 170,
+    "total_items": 171,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 38,
+        "count": 39,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,11 +100,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 167
+        "count": 168
       },
       {
         "reason": "qid",
-        "count": 165
+        "count": 166
       },
       {
         "reason": "missing_relation",
@@ -116,7 +116,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 84
+        "count": 85
       },
       {
         "reason": "fetch_error",
@@ -128,7 +128,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 31
+        "count": 32
       },
       {
         "reason": "has_children",
@@ -144,7 +144,7 @@
       },
       {
         "reason": "relation:instance",
-        "count": 9
+        "count": 10
       },
       {
         "reason": "duplicate_id:3",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 108
+        "count": 109
       },
       {
         "status": "error",
@@ -2683,6 +2683,30 @@
       "review_key": "id:Q13978",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "彗核",
+      "children_status": "pending",
+      "quality_score": 73,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:instance",
+        "duplicate_id:2"
+      ],
+      "id": "Q1773534",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1773534",
+      "path": "万物 / 宇宙 / 物质 / 气溶胶 / 灰塵 / 彗核",
+      "location": "nodes/Q1773534.json",
+      "priority": 51.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q1773534",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
     },
     {
       "title": "生物合理性",

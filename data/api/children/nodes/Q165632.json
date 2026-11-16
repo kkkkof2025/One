@@ -3,7 +3,7 @@
   "source": "nodes/Q165632.json",
   "node": {
     "title": "灰塵",
-    "children_count": 1,
+    "children_count": 11,
     "id": "Q165632",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-15T04:01:02Z",
-    "last_checked_at": "2026-11-15T04:01:02Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-16T04:01:42Z",
+    "last_checked_at": "2026-11-16T04:01:42Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-14T04:17:20Z"
     },
     "source_checked": {
       "wikidata_api": "2026-11-14T04:17:20Z",
-      "wikipedia": "2026-11-15T04:01:02Z"
+      "wikipedia": "2026-11-15T04:01:02Z",
+      "wikidata": "2026-11-16T04:01:42Z"
     }
   },
   "children": [
@@ -41,7 +42,147 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "彗核",
+      "children_count": 0,
+      "id": "Q1773534",
+      "data_source": "nodes/Q1773534.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1773534",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "呼吸性粉尘",
+      "children_count": 0,
+      "id": "Q19829512",
+      "data_source": "nodes/Q19829512.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q19829512",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "噴發",
+      "children_count": 0,
+      "id": "Q1321876",
+      "data_source": "nodes/Q1321876.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1321876",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "大理石粉",
+      "children_count": 0,
+      "id": "Q130545143",
+      "data_source": "nodes/Q130545143.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q130545143",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "头垢皮屑",
+      "children_count": 0,
+      "id": "Q5215707",
+      "data_source": "nodes/Q5215707.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q5215707",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "宇宙塵",
+      "children_count": 0,
+      "id": "Q193384",
+      "data_source": "nodes/Q193384.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q193384",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "尘兔",
+      "children_count": 0,
+      "id": "Q946338",
+      "data_source": "nodes/Q946338.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q946338",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "撒哈拉的空氣層",
+      "children_count": 0,
+      "id": "Q16534744",
+      "data_source": "nodes/Q16534744.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q16534744",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "煤尘",
+      "children_count": 0,
+      "id": "Q1778575",
+      "data_source": "nodes/Q1778575.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1778575",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "飛散粉塵",
+      "children_count": 0,
+      "id": "Q48977138",
+      "data_source": "nodes/Q48977138.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q48977138",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 11
 }

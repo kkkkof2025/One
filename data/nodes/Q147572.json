@@ -1,0 +1,18 @@
+{
+  "id": "Q147572",
+  "title": "弧",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata",
+  "source_relation": "part_of",
+  "source_url": "https://www.wikidata.org/wiki/Q147572",
+  "quality_score": 75,
+  "quality_reasons": [
+    "qid",
+    "zh_label",
+    "short_title",
+    "relation:part_of"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

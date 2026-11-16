@@ -3,7 +3,7 @@
   "source": "nodes/Q161973.json",
   "node": {
     "title": "曲线",
-    "children_count": 1,
+    "children_count": 13,
     "id": "Q161973",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,18 +13,19 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-14T04:17:19Z",
-    "last_checked_at": "2026-11-14T04:17:19Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-16T04:00:37Z",
+    "last_checked_at": "2026-11-16T04:00:37Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikipedia": "2026-11-14T04:17:19Z"
     },
     "source_checked": {
       "wikidata_api": "2026-11-13T04:20:53Z",
-      "wikipedia": "2026-11-14T04:17:19Z"
+      "wikipedia": "2026-11-14T04:17:19Z",
+      "wikidata": "2026-11-16T04:00:37Z"
     }
   },
   "children": [
@@ -41,7 +42,175 @@
       "quality_score": 79,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "Kappa曲線",
+      "children_count": 0,
+      "id": "Q2252430",
+      "data_source": "nodes/Q2252430.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q2252430",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "ROC曲线",
+      "children_count": 0,
+      "id": "Q327120",
+      "data_source": "nodes/Q327120.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q327120",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "一般旋轮线",
+      "children_count": 0,
+      "id": "Q2810237",
+      "data_source": "nodes/Q2810237.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q2810237",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "三等分角线",
+      "children_count": 0,
+      "id": "Q2454131",
+      "data_source": "nodes/Q2454131.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q2454131",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "收入-消費曲線",
+      "children_count": 0,
+      "id": "Q359044",
+      "data_source": "nodes/Q359044.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q359044",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "曳物线",
+      "children_count": 0,
+      "id": "Q1365281",
+      "data_source": "nodes/Q1365281.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1365281",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "热赤道",
+      "children_count": 0,
+      "id": "Q545439",
+      "data_source": "nodes/Q545439.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q545439",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "皮匠刀",
+      "children_count": 0,
+      "id": "Q629520",
+      "data_source": "nodes/Q629520.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q629520",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "箕舌线",
+      "children_count": 0,
+      "id": "Q517269",
+      "data_source": "nodes/Q517269.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q517269",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "锯齿形",
+      "children_count": 0,
+      "id": "Q137970981",
+      "data_source": "nodes/Q137970981.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q137970981",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "弧",
+      "children_count": 0,
+      "id": "Q147572",
+      "data_source": "nodes/Q147572.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q147572",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "頂點",
+      "children_count": 0,
+      "id": "Q362765",
+      "data_source": "nodes/Q362765.json",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q362765",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 13
 }

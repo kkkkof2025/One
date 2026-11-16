@@ -115,7 +115,7 @@
     },
     {
       "title": "曲线",
-      "children_count": 1,
+      "children_count": 13,
       "id": "Q161973",
       "data_source": "nodes/Q161973.json",
       "source_provider": "wikidata",
@@ -126,18 +126,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-14T04:17:19Z",
-      "last_checked_at": "2026-11-14T04:17:19Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-16T04:00:37Z",
+      "last_checked_at": "2026-11-16T04:00:37Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikipedia": "2026-11-14T04:17:19Z"
       },
       "source_checked": {
         "wikidata_api": "2026-11-13T04:20:53Z",
-        "wikipedia": "2026-11-14T04:17:19Z"
+        "wikipedia": "2026-11-14T04:17:19Z",
+        "wikidata": "2026-11-16T04:00:37Z"
       }
     }
   ],
