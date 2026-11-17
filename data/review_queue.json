@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-16T04:01:44Z",
+  "generated_at": "2026-11-17T05:53:57Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 171,
+  "total_candidates": 172,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 171,
+  "total_items": 172,
   "reason_distribution": {
-    "total_items": 171,
+    "total_items": 172,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 39,
+        "count": 40,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,11 +100,11 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 168
+        "count": 169
       },
       {
         "reason": "qid",
-        "count": 166
+        "count": 167
       },
       {
         "reason": "missing_relation",
@@ -116,7 +116,7 @@
       },
       {
         "reason": "zh_label",
-        "count": 85
+        "count": 86
       },
       {
         "reason": "fetch_error",
@@ -128,7 +128,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 32
+        "count": 33
       },
       {
         "reason": "has_children",
@@ -136,7 +136,7 @@
       },
       {
         "reason": "relation:subclass",
-        "count": 11
+        "count": 12
       },
       {
         "reason": "loaded",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 109
+        "count": 110
       },
       {
         "status": "error",
@@ -3974,6 +3974,30 @@
       "priority": 35.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q190334",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "利他自殺",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q4737010",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4737010",
+      "path": "万物 / 生命 / 行为 / 利他主义 / 克己忘我 / 利他自殺",
+      "location": "nodes/Q4737010.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q4737010",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

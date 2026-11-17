@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T04:01:42Z",
-  "total_nodes": 1496,
-  "last_added_nodes": 22,
+  "generated_at": "2026-11-17T05:53:54Z",
+  "total_nodes": 1498,
+  "last_added_nodes": 3,
   "last_request_count": 5,
-  "last_scanned_nodes": 1619,
-  "last_candidate_nodes": 1467,
+  "last_scanned_nodes": 1641,
+  "last_candidate_nodes": 1488,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -19,39 +19,42 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 2,
-      "productive_requests": 2,
-      "added_nodes": 22
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 2,
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     },
     "wikipedia": {
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
     "wikidata_api": {
-      "no_children_requests": 1,
-      "unchanged_requests": 1
+      "children_returned_requests": 1,
+      "productive_requests": 1,
+      "added_nodes": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1467,
+    "candidate_count": 1488,
     "source_progress_counts": {
       "4": 25,
-      "2": 60,
+      "2": 59,
       "1": 2,
-      "0": 1204,
-      "3": 176
+      "0": 1224,
+      "3": 178
     },
     "next_source_counts": {
-      "conceptnet": 259,
-      "wikidata": 3,
+      "conceptnet": 261,
+      "wikidata": 2,
       "wikipedia": 649,
-      "wikidata_api": 556
+      "wikidata_api": 576
     },
     "available_next_source_counts": {
-      "conceptnet": 259,
-      "wikidata": 3,
+      "conceptnet": 261,
+      "wikidata": 2,
       "wikipedia": 649,
-      "wikidata_api": 556
+      "wikidata_api": 576
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -74,24 +77,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q161973",
-        "title": "曲线",
-        "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 126.0,
-        "depth": 4
-      },
-      {
         "scan_key": "id:Q115350041",
         "title": "克己忘我",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
         "scan_key": "id:Q1663717",
         "title": "不可壓縮流",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 131.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q16674976",
+        "title": "雌雄同体",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -127,24 +130,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q161973",
-          "title": "曲线",
-          "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 126.0,
-          "depth": 4
-        },
-        {
           "scan_key": "id:Q115350041",
           "title": "克己忘我",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
           "scan_key": "id:Q1663717",
           "title": "不可壓縮流",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 131.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q16674976",
+          "title": "雌雄同体",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -164,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 59,
+    "added_nodes": 60,
     "requests": 40,
-    "added_per_request": 1.475,
+    "added_per_request": 1.5,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-11-16T04:01:42Z",
+    "last_productive_run_at": "2026-11-17T05:53:54Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 13,
@@ -180,11 +183,11 @@
         "transient_error_requests": 8
       },
       "wikidata": {
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
         "children_returned_requests": 6,
         "productive_requests": 6,
         "added_nodes": 39,
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
         "rate_limited_requests": 1
       },
       "wikipedia": {
@@ -195,18 +198,18 @@
         "added_nodes": 17
       },
       "wikidata_api": {
-        "no_children_requests": 6,
-        "unchanged_requests": 6,
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 3
+        "children_returned_requests": 3,
+        "productive_requests": 3,
+        "added_nodes": 4,
+        "no_children_requests": 5,
+        "unchanged_requests": 5
       }
     }
   },
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 210,
+  "history_entries": 211,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

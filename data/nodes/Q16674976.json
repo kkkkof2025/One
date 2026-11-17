@@ -1,18 +1,44 @@
 {
   "id": "Q16674976",
   "title": "雌雄同体",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "两性畸形",
+      "data_source": "nodes/Q10855086.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q10855086",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q10855086",
+      "quality_score": 93,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikidata",
   "source_relation": "subclass",
   "source_url": "https://www.wikidata.org/wiki/Q16674976",
-  "quality_score": 97,
+  "quality_score": 100,
   "quality_reasons": [
     "qid",
     "zh_label",
     "good_title_length",
-    "relation:subclass"
+    "relation:subclass",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-11-17T05:52:50Z",
+  "last_checked_at": "2026-11-17T05:52:50Z",
+  "last_fetch_source": "wikidata_api",
+  "last_fetch_sources": [
+    "wikidata_api"
+  ],
+  "source_checked": {
+    "wikidata_api": "2026-11-17T05:52:50Z"
+  },
+  "is_leaf": false
 }

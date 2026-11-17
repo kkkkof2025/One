@@ -55,22 +55,22 @@
     },
     {
       "title": "克己忘我",
-      "children_count": 0,
+      "children_count": 2,
       "id": "Q115350041",
       "data_source": "nodes/Q115350041.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q115350041",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-16T04:00:37Z",
-      "last_checked_at": "2026-11-16T04:00:37Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-17T05:52:50Z",
+      "last_checked_at": "2026-11-17T05:52:50Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-11-15T04:01:03Z",
@@ -78,7 +78,8 @@
       },
       "source_checked": {
         "wikidata_api": "2026-11-15T04:01:03Z",
-        "wikipedia": "2026-11-16T04:00:37Z"
+        "wikipedia": "2026-11-16T04:00:37Z",
+        "wikidata": "2026-11-17T05:52:50Z"
       }
     },
     {
