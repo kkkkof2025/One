@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:埃迪卡拉生物群",
+  "source": "nodes/埃迪卡拉生物群-fce7fff91b6d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/埃迪卡拉生物群-fce7fff91b6d.json",
+  "legacy_children": "../../children/nodes/埃迪卡拉生物群-fce7fff91b6d.json"
+}
