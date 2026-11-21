@@ -15,6 +15,19 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "順序性雌雄同體",
+      "data_source": "nodes/Q1209454.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1209454",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1209454",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -31,16 +44,17 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-11-20T05:01:51Z",
-  "last_checked_at": "2026-11-20T05:01:51Z",
-  "last_fetch_source": "dbpedia",
+  "updated_at": "2026-11-21T04:57:30Z",
+  "last_checked_at": "2026-11-21T04:57:30Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "dbpedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-11-17T05:52:50Z",
     "wikipedia": "2026-11-18T05:19:34Z",
-    "dbpedia": "2026-11-20T05:01:51Z"
+    "dbpedia": "2026-11-20T05:01:51Z",
+    "wikidata": "2026-11-21T04:57:30Z"
   },
   "is_leaf": false,
   "source_no_children": {

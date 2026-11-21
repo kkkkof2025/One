@@ -60,17 +60,26 @@
     },
     {
       "title": "哈代L-函數",
-      "children_count": 0,
+      "children_count": 1,
       "id": "Q17021030",
       "data_source": "nodes/Q17021030.json",
       "source_provider": "wikidata",
       "source_relation": "subclass",
       "source_url": "https://www.wikidata.org/wiki/Q17021030",
-      "children_status": "pending",
+      "children_status": "loaded",
       "is_leaf": false,
-      "quality_score": 97,
+      "quality_score": 100,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-11-21T04:57:30Z",
+      "last_checked_at": "2026-11-21T04:57:30Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_checked": {
+        "wikidata_api": "2026-11-21T04:57:30Z"
+      }
     },
     {
       "title": "序列空間",
