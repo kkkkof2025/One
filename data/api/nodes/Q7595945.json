@@ -18,19 +18,21 @@
         "quality_score": 97,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-11-20T05:01:46Z",
-        "last_checked_at": "2026-11-20T05:01:46Z",
-        "last_fetch_source": "wikipedia",
+        "updated_at": "2026-11-22T04:18:48Z",
+        "last_checked_at": "2026-11-22T04:18:48Z",
+        "last_fetch_source": "wikidata",
         "last_fetch_sources": [
-          "wikipedia"
+          "wikidata"
         ],
         "source_no_children": {
           "wikidata_api": "2026-11-19T05:15:34Z",
-          "wikipedia": "2026-11-20T05:01:46Z"
+          "wikipedia": "2026-11-20T05:01:46Z",
+          "wikidata": "2026-11-22T04:18:48Z"
         },
         "source_checked": {
           "wikidata_api": "2026-11-19T05:15:34Z",
-          "wikipedia": "2026-11-20T05:01:46Z"
+          "wikipedia": "2026-11-20T05:01:46Z",
+          "wikidata": "2026-11-22T04:18:48Z"
         }
       },
       {
@@ -58,19 +60,21 @@
         "quality_score": 97,
         "quality_version": 3,
         "review_status": "approved",
-        "updated_at": "2026-11-21T04:57:30Z",
-        "last_checked_at": "2026-11-21T04:57:30Z",
-        "last_fetch_source": "wikipedia",
+        "updated_at": "2026-11-22T04:19:53Z",
+        "last_checked_at": "2026-11-22T04:19:53Z",
+        "last_fetch_source": "wikidata",
         "last_fetch_sources": [
-          "wikipedia"
+          "wikidata"
         ],
         "source_no_children": {
           "wikidata_api": "2026-11-20T05:01:46Z",
-          "wikipedia": "2026-11-21T04:57:30Z"
+          "wikipedia": "2026-11-21T04:57:30Z",
+          "wikidata": "2026-11-22T04:19:53Z"
         },
         "source_checked": {
           "wikidata_api": "2026-11-20T05:01:46Z",
-          "wikipedia": "2026-11-21T04:57:30Z"
+          "wikipedia": "2026-11-21T04:57:30Z",
+          "wikidata": "2026-11-22T04:19:53Z"
         }
       }
     ],
