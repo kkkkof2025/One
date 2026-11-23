@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤病医院",
+  "source": "nodes/皮肤病医院-cc74ecf4a447.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤病医院-cc74ecf4a447.json",
+  "legacy_children": "../../children/nodes/皮肤病医院-cc74ecf4a447.json"
+}

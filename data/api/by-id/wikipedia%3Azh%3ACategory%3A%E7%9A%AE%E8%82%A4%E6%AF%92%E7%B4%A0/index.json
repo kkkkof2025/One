@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤毒素",
+  "source": "nodes/皮肤毒素-72b83cfb0c4d.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤毒素-72b83cfb0c4d.json",
+  "legacy_children": "../../children/nodes/皮肤毒素-72b83cfb0c4d.json"
+}

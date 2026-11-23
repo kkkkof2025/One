@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/皮肤毒素-72b83cfb0c4d.json",
+  "node": {
+    "title": "皮肤毒素",
+    "children_count": 0,
+    "id": "wikipedia:zh:Category:皮肤毒素",
+    "source_provider": "wikipedia",
+    "source_relation": "wikipedia_category",
+    "source_url": "https://zh.wikipedia.org/wiki/Category:%E7%9A%AE%E8%82%A4%E6%AF%92%E7%B4%A0",
+    "children_status": "pending",
+    "quality_score": 75,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤和皮下组织疾病",
+  "source": "nodes/皮肤和皮下组织疾病-de3e8e769dcb.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤和皮下组织疾病-de3e8e769dcb.json",
+  "legacy_children": "../../children/nodes/皮肤和皮下组织疾病-de3e8e769dcb.json"
+}

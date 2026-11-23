@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤病学术语",
+  "source": "nodes/皮肤病学术语-93feb79c31ca.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤病学术语-93feb79c31ca.json",
+  "legacy_children": "../../children/nodes/皮肤病学术语-93feb79c31ca.json"
+}

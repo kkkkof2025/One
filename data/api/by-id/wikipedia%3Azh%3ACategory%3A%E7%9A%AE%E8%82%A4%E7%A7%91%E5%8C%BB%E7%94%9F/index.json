@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤科医生",
+  "source": "nodes/皮肤科医生-8385da448049.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤科医生-8385da448049.json",
+  "legacy_children": "../../children/nodes/皮肤科医生-8385da448049.json"
+}

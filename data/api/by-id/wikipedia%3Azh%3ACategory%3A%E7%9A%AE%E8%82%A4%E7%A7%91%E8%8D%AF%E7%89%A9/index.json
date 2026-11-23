@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:皮肤科药物",
+  "source": "nodes/皮肤科药物-5dfde4727b91.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/皮肤科药物-5dfde4727b91.json",
+  "legacy_children": "../../children/nodes/皮肤科药物-5dfde4727b91.json"
+}
