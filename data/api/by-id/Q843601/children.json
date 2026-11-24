@@ -271,7 +271,7 @@
     },
     {
       "title": "皮肤病学",
-      "children_count": 6,
+      "children_count": 8,
       "id": "Q171171",
       "data_source": "nodes/Q171171.json",
       "source_provider": "wikidata",
@@ -282,18 +282,19 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-23T04:56:59Z",
-      "last_checked_at": "2026-11-23T04:56:59Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-24T07:46:30Z",
+      "last_checked_at": "2026-11-24T07:46:30Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_no_children": {
         "wikidata_api": "2026-11-22T04:18:49Z"
       },
       "source_checked": {
         "wikidata_api": "2026-11-22T04:18:49Z",
-        "wikipedia": "2026-11-23T04:56:59Z"
+        "wikipedia": "2026-11-23T04:56:59Z",
+        "wikidata": "2026-11-24T07:46:30Z"
       }
     },
     {

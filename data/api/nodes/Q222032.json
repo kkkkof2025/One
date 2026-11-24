@@ -118,15 +118,24 @@
       {
         "title": "平面",
         "data_source": "nodes/Q17285.json",
-        "children_status": "pending",
+        "children_status": "loaded",
         "is_leaf": false,
         "id": "Q17285",
         "source_provider": "wikidata",
         "source_relation": "subclass",
         "source_url": "https://www.wikidata.org/wiki/Q17285",
-        "quality_score": 97,
+        "quality_score": 100,
         "quality_version": 3,
-        "review_status": "approved"
+        "review_status": "approved",
+        "updated_at": "2026-11-24T07:45:26Z",
+        "last_checked_at": "2026-11-24T07:45:26Z",
+        "last_fetch_source": "wikidata_api",
+        "last_fetch_sources": [
+          "wikidata_api"
+        ],
+        "source_checked": {
+          "wikidata_api": "2026-11-24T07:45:26Z"
+        }
       },
       {
         "title": "曲面",
