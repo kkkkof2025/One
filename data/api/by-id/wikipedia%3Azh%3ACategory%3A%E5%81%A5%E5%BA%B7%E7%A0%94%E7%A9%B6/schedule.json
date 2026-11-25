@@ -1,6 +1,6 @@
 {
   "endpoint": "schedule",
-  "generated_at": "2026-11-24T07:46:30Z",
+  "generated_at": "2026-11-25T06:18:01Z",
   "id": "wikipedia:zh:Category:健康研究",
   "source": "nodes/健康研究-fb70c4f14974.json",
   "node": {
@@ -72,9 +72,9 @@
     "conceptnet": {
       "source": "conceptnet",
       "reason": "transient_error",
-      "occurred_at": "2026-11-24T07:45:25Z",
+      "occurred_at": "2026-11-25T06:16:55Z",
       "retry_after_seconds": 600,
-      "cooldown_until": "2026-11-24T07:55:25Z",
+      "cooldown_until": "2026-11-25T06:26:55Z",
       "last_error": "HTTP Error 502: Bad Gateway"
     }
   },

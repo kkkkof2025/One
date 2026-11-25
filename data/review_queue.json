@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24T07:46:33Z",
+  "generated_at": "2026-11-25T06:18:04Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 172,
+  "total_candidates": 173,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 172,
+  "total_items": 173,
   "reason_distribution": {
-    "total_items": 172,
+    "total_items": 173,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 40,
+        "count": 41,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,22 +100,22 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 169
+        "count": 170
       },
       {
         "reason": "qid",
-        "count": 167
+        "count": 168
       },
       {
         "reason": "missing_relation",
         "count": 99
       },
       {
-        "reason": "non_zh_label",
-        "count": 86
+        "reason": "zh_label",
+        "count": 87
       },
       {
-        "reason": "zh_label",
+        "reason": "non_zh_label",
         "count": 86
       },
       {
@@ -128,7 +128,7 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 33
+        "count": 34
       },
       {
         "reason": "has_children",
@@ -136,7 +136,7 @@
       },
       {
         "reason": "relation:subclass",
-        "count": 12
+        "count": 13
       },
       {
         "reason": "loaded",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 110
+        "count": 111
       },
       {
         "status": "error",
@@ -3806,6 +3806,30 @@
       "priority": 39.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q177005",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "腐植物质",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q4152088",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4152088",
+      "path": "万物 / 宇宙 / 物质 / 有機物質 / 土壤有機質 / 腐植物质",
+      "location": "nodes/Q4152088.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q4152088",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

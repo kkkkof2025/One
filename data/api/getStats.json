@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-24T07:46:30Z",
-  "total_nodes": 1510,
-  "last_added_nodes": 3,
+  "generated_at": "2026-11-25T06:18:01Z",
+  "total_nodes": 1513,
+  "last_added_nodes": 4,
   "last_request_count": 5,
-  "last_scanned_nodes": 1653,
-  "last_candidate_nodes": 1499,
+  "last_scanned_nodes": 1656,
+  "last_candidate_nodes": 1502,
   "last_unchanged_requests": 2,
   "last_failed_requests": 0,
   "last_end_nodes_marked": 0,
@@ -19,42 +19,42 @@
       "transient_error_requests": 1
     },
     "wikidata": {
-      "children_returned_requests": 2,
-      "duplicate_requests": 1,
-      "unchanged_requests": 1,
+      "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 2
-    },
-    "wikipedia": {
+      "added_nodes": 1,
       "no_children_requests": 1,
       "unchanged_requests": 1
     },
-    "wikidata_api": {
+    "wikipedia": {
       "children_returned_requests": 1,
       "productive_requests": 1,
-      "added_nodes": 1
+      "added_nodes": 3
+    },
+    "wikidata_api": {
+      "no_children_requests": 1,
+      "unchanged_requests": 1
     }
   },
   "last_candidate_source_summary": {
-    "candidate_count": 1499,
+    "candidate_count": 1502,
     "source_progress_counts": {
       "4": 26,
-      "2": 62,
+      "2": 61,
       "1": 2,
-      "0": 1226,
-      "3": 183
+      "0": 1228,
+      "3": 185
     },
     "next_source_counts": {
-      "conceptnet": 268,
-      "wikidata": 4,
+      "conceptnet": 270,
+      "wikidata": 3,
       "wikipedia": 654,
-      "wikidata_api": 573
+      "wikidata_api": 575
     },
     "available_next_source_counts": {
-      "conceptnet": 268,
-      "wikidata": 4,
+      "conceptnet": 270,
+      "wikidata": 3,
       "wikipedia": 654,
-      "wikidata_api": 573
+      "wikidata_api": 575
     },
     "blocked_by_cooldown": 0,
     "scheduler": "priority-source-round-robin-v1",
@@ -77,24 +77,24 @@
         "depth": 3
       },
       {
-        "scan_key": "id:Q17021030",
-        "title": "哈代L-函數",
-        "next_source": "wikidata",
-        "source_progress": 2,
-        "priority": 126.0,
-        "depth": 4
-      },
-      {
         "scan_key": "id:Q172645",
         "title": "腐殖质",
-        "next_source": "wikipedia",
-        "source_progress": 1,
+        "next_source": "wikidata",
+        "source_progress": 2,
         "priority": 131.0,
         "depth": 4
       },
       {
         "scan_key": "id:Q17285",
         "title": "平面",
+        "next_source": "wikipedia",
+        "source_progress": 1,
+        "priority": 126.0,
+        "depth": 4
+      },
+      {
+        "scan_key": "id:Q1750381",
+        "title": "食品加工助劑",
         "next_source": "wikidata_api",
         "source_progress": 0,
         "priority": 131.0,
@@ -130,24 +130,24 @@
           "depth": 3
         },
         {
-          "scan_key": "id:Q17021030",
-          "title": "哈代L-函數",
-          "next_source": "wikidata",
-          "source_progress": 2,
-          "priority": 126.0,
-          "depth": 4
-        },
-        {
           "scan_key": "id:Q172645",
           "title": "腐殖质",
-          "next_source": "wikipedia",
-          "source_progress": 1,
+          "next_source": "wikidata",
+          "source_progress": 2,
           "priority": 131.0,
           "depth": 4
         },
         {
           "scan_key": "id:Q17285",
           "title": "平面",
+          "next_source": "wikipedia",
+          "source_progress": 1,
+          "priority": 126.0,
+          "depth": 4
+        },
+        {
+          "scan_key": "id:Q1750381",
+          "title": "食品加工助劑",
           "next_source": "wikidata_api",
           "source_progress": 0,
           "priority": 131.0,
@@ -167,11 +167,11 @@
   "growth_efficiency_summary": {
     "window_runs": 8,
     "window_limit": 8,
-    "added_nodes": 15,
+    "added_nodes": 16,
     "requests": 40,
-    "added_per_request": 0.375,
+    "added_per_request": 0.4,
     "zero_growth_streak": 0,
-    "last_productive_run_at": "2026-11-24T07:46:30Z",
+    "last_productive_run_at": "2026-11-25T06:18:01Z",
     "source_request_counts": {
       "conceptnet": 8,
       "wikidata": 12,
@@ -184,27 +184,27 @@
         "transient_error_requests": 8
       },
       "wikidata": {
-        "children_returned_requests": 4,
-        "productive_requests": 3,
-        "added_nodes": 5,
         "no_children_requests": 5,
         "unchanged_requests": 6,
         "rate_limited_requests": 3,
+        "children_returned_requests": 4,
+        "productive_requests": 3,
+        "added_nodes": 4,
         "duplicate_requests": 1
       },
       "wikipedia": {
-        "no_children_requests": 8,
-        "unchanged_requests": 8,
-        "children_returned_requests": 2,
-        "productive_requests": 2,
-        "added_nodes": 7
-      },
-      "wikidata_api": {
+        "no_children_requests": 7,
+        "unchanged_requests": 7,
         "children_returned_requests": 3,
         "productive_requests": 3,
-        "added_nodes": 3,
-        "no_children_requests": 5,
-        "unchanged_requests": 5
+        "added_nodes": 10
+      },
+      "wikidata_api": {
+        "no_children_requests": 6,
+        "unchanged_requests": 6,
+        "children_returned_requests": 2,
+        "productive_requests": 2,
+        "added_nodes": 2
       },
       "dbpedia": {
         "no_children_requests": 2,
@@ -215,7 +215,7 @@
   "max_sources_per_node": 1,
   "last_stop_reason": "",
   "end_node_count": 0,
-  "history_entries": 218,
+  "history_entries": 219,
   "history_file": "growth_history.json",
   "end_nodes_file": "end_nodes.json",
   "scan_state_file": "scan_state.json",

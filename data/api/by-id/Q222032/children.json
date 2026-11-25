@@ -147,7 +147,7 @@
     },
     {
       "title": "平面",
-      "children_count": 1,
+      "children_count": 4,
       "id": "Q17285",
       "data_source": "nodes/Q17285.json",
       "source_provider": "wikidata",
@@ -158,14 +158,15 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-24T07:45:26Z",
-      "last_checked_at": "2026-11-24T07:45:26Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-11-25T06:16:56Z",
+      "last_checked_at": "2026-11-25T06:16:56Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
       "source_checked": {
-        "wikidata_api": "2026-11-24T07:45:26Z"
+        "wikidata_api": "2026-11-24T07:45:26Z",
+        "wikipedia": "2026-11-25T06:16:56Z"
       }
     },
     {

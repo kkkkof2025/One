@@ -3,7 +3,7 @@
   "source": "nodes/Q17285.json",
   "node": {
     "title": "平面",
-    "children_count": 1,
+    "children_count": 4,
     "id": "Q17285",
     "source_provider": "wikidata",
     "source_relation": "subclass",
@@ -13,14 +13,15 @@
     "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-24T07:45:26Z",
-    "last_checked_at": "2026-11-24T07:45:26Z",
-    "last_fetch_source": "wikidata_api",
+    "updated_at": "2026-11-25T06:16:56Z",
+    "last_checked_at": "2026-11-25T06:16:56Z",
+    "last_fetch_source": "wikipedia",
     "last_fetch_sources": [
-      "wikidata_api"
+      "wikipedia"
     ],
     "source_checked": {
-      "wikidata_api": "2026-11-24T07:45:26Z"
+      "wikidata_api": "2026-11-24T07:45:26Z",
+      "wikipedia": "2026-11-25T06:16:56Z"
     }
   },
   "children": [
@@ -37,7 +38,49 @@
       "quality_score": 93,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "平面图",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:平面图",
+      "data_source": "nodes/平面图-e5b581ca02b9.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B9%B3%E9%9D%A2%E5%9B%BE",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "平面幾何",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:平面幾何",
+      "data_source": "nodes/平面幾何-338636d913b6.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B9%B3%E9%9D%A2%E5%B9%BE%E4%BD%95",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "薄膜",
+      "children_count": 0,
+      "id": "wikipedia:zh:Category:薄膜",
+      "data_source": "nodes/薄膜-e6b304f04b5e.json",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E8%96%84%E8%86%9C",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
-  "child_count": 1
+  "child_count": 4
 }

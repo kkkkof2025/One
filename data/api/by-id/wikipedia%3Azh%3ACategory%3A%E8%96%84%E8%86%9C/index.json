@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:薄膜",
+  "source": "nodes/薄膜-e6b304f04b5e.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/薄膜-e6b304f04b5e.json",
+  "legacy_children": "../../children/nodes/薄膜-e6b304f04b5e.json"
+}

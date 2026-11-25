@@ -3,21 +3,21 @@
   "source": "nodes/Q172645.json",
   "node": {
     "title": "腐殖质",
-    "children_count": 0,
+    "children_count": 1,
     "id": "Q172645",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q172645",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-24T07:45:26Z",
-    "last_checked_at": "2026-11-24T07:45:26Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-25T06:16:56Z",
+    "last_checked_at": "2026-11-25T06:16:56Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-23T04:56:59Z",
@@ -25,9 +25,25 @@
     },
     "source_checked": {
       "wikidata_api": "2026-11-23T04:56:59Z",
-      "wikipedia": "2026-11-24T07:45:26Z"
+      "wikipedia": "2026-11-24T07:45:26Z",
+      "wikidata": "2026-11-25T06:16:56Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "腐植物质",
+      "children_count": 0,
+      "id": "Q4152088",
+      "data_source": "nodes/Q4152088.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q4152088",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 1
 }
