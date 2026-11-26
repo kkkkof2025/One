@@ -124,15 +124,16 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-25T06:16:56Z",
-      "last_checked_at": "2026-11-25T06:16:56Z",
-      "last_fetch_source": "wikipedia",
+      "updated_at": "2026-11-26T06:09:38Z",
+      "last_checked_at": "2026-11-26T06:09:38Z",
+      "last_fetch_source": "wikidata",
       "last_fetch_sources": [
-        "wikipedia"
+        "wikidata"
       ],
       "source_checked": {
         "wikidata_api": "2026-11-24T07:45:26Z",
-        "wikipedia": "2026-11-25T06:16:56Z"
+        "wikipedia": "2026-11-25T06:16:56Z",
+        "wikidata": "2026-11-26T06:09:38Z"
       }
     },
     {

@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q1060874.json",
+  "node": {
+    "title": "平面曲线",
+    "children_count": 0,
+    "id": "Q1060874",
+    "source_provider": "wikidata",
+    "source_relation": "part_of",
+    "source_url": "https://www.wikidata.org/wiki/Q1060874",
+    "children_status": "pending",
+    "quality_score": 89,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

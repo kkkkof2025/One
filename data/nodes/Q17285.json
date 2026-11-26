@@ -54,6 +54,84 @@
       "quality_score": 75,
       "quality_version": 3,
       "review_status": "approved"
+    },
+    {
+      "title": "复平面",
+      "data_source": "nodes/Q328998.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q328998",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q328998",
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "平面曲线",
+      "data_source": "nodes/Q1060874.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1060874",
+      "source_provider": "wikidata",
+      "source_relation": "part_of",
+      "source_url": "https://www.wikidata.org/wiki/Q1060874",
+      "quality_score": 89,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "不變平面",
+      "data_source": "nodes/Q2556676.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q2556676",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q2556676",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "圖形平面",
+      "data_source": "nodes/Q7191202.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q7191202",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q7191202",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "密切平面",
+      "data_source": "nodes/Q3272489.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q3272489",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q3272489",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "拉普拉斯面",
+      "data_source": "nodes/Q1805783.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "Q1805783",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q1805783",
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
     }
   ],
   "source_provider": "wikidata",
@@ -70,15 +148,16 @@
   ],
   "quality_version": 3,
   "review_status": "approved",
-  "updated_at": "2026-11-25T06:16:56Z",
-  "last_checked_at": "2026-11-25T06:16:56Z",
-  "last_fetch_source": "wikipedia",
+  "updated_at": "2026-11-26T06:09:38Z",
+  "last_checked_at": "2026-11-26T06:09:38Z",
+  "last_fetch_source": "wikidata",
   "last_fetch_sources": [
-    "wikipedia"
+    "wikidata"
   ],
   "source_checked": {
     "wikidata_api": "2026-11-24T07:45:26Z",
-    "wikipedia": "2026-11-25T06:16:56Z"
+    "wikipedia": "2026-11-25T06:16:56Z",
+    "wikidata": "2026-11-26T06:09:38Z"
   },
   "is_leaf": false
 }
