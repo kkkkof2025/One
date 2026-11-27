@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-26T06:10:47Z",
+  "generated_at": "2026-11-27T05:59:29Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 173,
+  "total_candidates": 174,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 173,
+  "total_items": 174,
   "reason_distribution": {
-    "total_items": 173,
+    "total_items": 174,
     "categories": [
       {
         "key": "non_zh_label",
         "label": "缺少中文标签",
-        "count": 86,
+        "count": 87,
         "sample_review_keys": [
           "location:nodes/L1331482-S1.json",
           "location:nodes/L1370098-S1.json",
@@ -104,19 +104,19 @@
       },
       {
         "reason": "qid",
-        "count": 168
+        "count": 169
       },
       {
         "reason": "missing_relation",
         "count": 99
       },
       {
-        "reason": "zh_label",
+        "reason": "non_zh_label",
         "count": 87
       },
       {
-        "reason": "non_zh_label",
-        "count": 86
+        "reason": "zh_label",
+        "count": 87
       },
       {
         "reason": "fetch_error",
@@ -124,7 +124,7 @@
       },
       {
         "reason": "relation:has_part",
-        "count": 48
+        "count": 49
       },
       {
         "reason": "duplicate_id:2",
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 111
+        "count": 112
       },
       {
         "status": "error",
@@ -2681,6 +2681,28 @@
       "priority": 53.0,
       "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
       "review_key": "id:Q13978",
+      "primary_reason": "non_zh_label",
+      "primary_reason_label": "缺少中文标签"
+    },
+    {
+      "title": "infectious causes of cancer",
+      "children_status": "pending",
+      "quality_score": 59,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "non_zh_label",
+        "relation:has_part"
+      ],
+      "id": "Q6029220",
+      "source_provider": "wikidata_api",
+      "source_relation": "has_part",
+      "source_url": "https://www.wikidata.org/wiki/Q6029220",
+      "path": "万物 / 生命 / 健康 / 健康风险 / 致癌起因 / infectious causes of cancer",
+      "location": "nodes/Q6029220.json",
+      "priority": 51.0,
+      "suggested_action": "补齐中文标题，或暂时标记为人工维护。",
+      "review_key": "id:Q6029220",
       "primary_reason": "non_zh_label",
       "primary_reason_label": "缺少中文标签"
     },

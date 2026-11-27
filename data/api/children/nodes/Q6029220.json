@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q6029220.json",
+  "node": {
+    "title": "infectious causes of cancer",
+    "children_count": 0,
+    "id": "Q6029220",
+    "source_provider": "wikidata_api",
+    "source_relation": "has_part",
+    "source_url": "https://www.wikidata.org/wiki/Q6029220",
+    "children_status": "pending",
+    "quality_score": 59,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

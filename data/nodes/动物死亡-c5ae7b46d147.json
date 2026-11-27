@@ -1,19 +1,84 @@
 {
   "id": "wikipedia:zh:Category:动物死亡",
   "title": "动物死亡",
-  "children_status": "pending",
-  "children": [],
+  "children_status": "loaded",
+  "children": [
+    {
+      "title": "各年逝世的動物",
+      "data_source": "nodes/各年逝世的動物-72237e750cb8.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:各年逝世的動物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%90%84%E5%B9%B4%E9%80%9D%E4%B8%96%E7%9A%84%E5%8B%95%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "安樂死逝世動物",
+      "data_source": "nodes/安樂死逝世動物-f9dceb651843.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:安樂死逝世動物",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%AE%89%E6%A8%82%E6%AD%BB%E9%80%9D%E4%B8%96%E5%8B%95%E7%89%A9",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "屠宰",
+      "data_source": "nodes/屠宰-39018776ab79.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:屠宰",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%B1%A0%E5%AE%B0",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "鸟类死亡率",
+      "data_source": "nodes/鸟类死亡率-dd6f97f5eae4.json",
+      "children_status": "pending",
+      "is_leaf": false,
+      "id": "wikipedia:zh:Category:鸟类死亡率",
+      "source_provider": "wikipedia",
+      "source_relation": "wikipedia_category",
+      "source_url": "https://zh.wikipedia.org/wiki/Category:%E9%B8%9F%E7%B1%BB%E6%AD%BB%E4%BA%A1%E7%8E%87",
+      "quality_score": 75,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
   "source_provider": "wikipedia",
   "source_relation": "wikipedia_category",
   "source_url": "https://zh.wikipedia.org/wiki/Category:%E5%8A%A8%E7%89%A9%E6%AD%BB%E4%BA%A1",
   "source_page_id": 5607776,
-  "quality_score": 75,
+  "quality_score": 88,
   "quality_reasons": [
     "external_id",
     "zh_label",
     "good_title_length",
-    "relation:wikipedia_category"
+    "relation:wikipedia_category",
+    "loaded",
+    "has_children"
   ],
   "quality_version": 3,
-  "review_status": "approved"
+  "review_status": "approved",
+  "updated_at": "2026-11-27T05:59:27Z",
+  "last_checked_at": "2026-11-27T05:59:27Z",
+  "last_fetch_source": "wikipedia",
+  "last_fetch_sources": [
+    "wikipedia"
+  ],
+  "source_checked": {
+    "wikipedia": "2026-11-27T05:59:27Z"
+  },
+  "is_leaf": false
 }

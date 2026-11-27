@@ -1,0 +1,17 @@
+{
+  "id": "Q6029220",
+  "title": "infectious causes of cancer",
+  "children_status": "pending",
+  "children": [],
+  "source_provider": "wikidata_api",
+  "source_relation": "has_part",
+  "source_url": "https://www.wikidata.org/wiki/Q6029220",
+  "quality_score": 59,
+  "quality_reasons": [
+    "qid",
+    "non_zh_label",
+    "relation:has_part"
+  ],
+  "quality_version": 3,
+  "review_status": "approved"
+}

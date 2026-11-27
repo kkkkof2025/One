@@ -1,0 +1,10 @@
+{
+  "endpoint": "index",
+  "id": "wikipedia:zh:Category:鸟类死亡率",
+  "source": "nodes/鸟类死亡率-dd6f97f5eae4.json",
+  "node": "node.json",
+  "children": "children.json",
+  "schedule": "schedule.json",
+  "legacy_node": "../../nodes/鸟类死亡率-dd6f97f5eae4.json",
+  "legacy_children": "../../children/nodes/鸟类死亡率-dd6f97f5eae4.json"
+}
