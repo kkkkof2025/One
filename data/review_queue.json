@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T05:59:29Z",
+  "generated_at": "2026-11-28T05:42:20Z",
   "threshold": 45,
   "limit": 200,
-  "total_candidates": 174,
+  "total_candidates": 175,
   "suppressed_items": 0,
   "decision_file": "review_decisions.json",
-  "total_items": 174,
+  "total_items": 175,
   "reason_distribution": {
-    "total_items": 174,
+    "total_items": 175,
     "categories": [
       {
         "key": "non_zh_label",
@@ -24,7 +24,7 @@
       {
         "key": "duplicate_id",
         "label": "重复 ID 风险",
-        "count": 41,
+        "count": 42,
         "sample_review_keys": [
           "id:Q1349305",
           "id:Q2591050",
@@ -100,22 +100,22 @@
     "raw_reasons": [
       {
         "reason": "good_title_length",
-        "count": 170
+        "count": 171
       },
       {
         "reason": "qid",
-        "count": 169
+        "count": 170
       },
       {
         "reason": "missing_relation",
         "count": 99
       },
       {
-        "reason": "non_zh_label",
-        "count": 87
+        "reason": "zh_label",
+        "count": 88
       },
       {
-        "reason": "zh_label",
+        "reason": "non_zh_label",
         "count": 87
       },
       {
@@ -128,14 +128,14 @@
       },
       {
         "reason": "duplicate_id:2",
-        "count": 34
-      },
-      {
-        "reason": "has_children",
-        "count": 13
+        "count": 35
       },
       {
         "reason": "relation:subclass",
+        "count": 14
+      },
+      {
+        "reason": "has_children",
         "count": 13
       },
       {
@@ -195,7 +195,7 @@
       {
         "status": "pending",
         "label": "待扩展",
-        "count": 112
+        "count": 113
       },
       {
         "status": "error",
@@ -3996,6 +3996,30 @@
       "priority": 35.0,
       "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
       "review_key": "id:Q7663877",
+      "primary_reason": "duplicate_id",
+      "primary_reason_label": "重复 ID 风险"
+    },
+    {
+      "title": "发育阶段",
+      "children_status": "pending",
+      "quality_score": 89,
+      "review_status": "approved",
+      "quality_reasons": [
+        "qid",
+        "zh_label",
+        "good_title_length",
+        "relation:subclass",
+        "duplicate_id:2"
+      ],
+      "id": "Q48834911",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q48834911",
+      "path": "万物 / 生命 / 生物過程 / biological phase / 发育阶段",
+      "location": "nodes/Q48834911.json",
+      "priority": 35.0,
+      "suggested_action": "确认是否为合法多路径；合法则加入 validation_allowlist.json，否则合并或移除重复节点。",
+      "review_key": "id:Q48834911",
       "primary_reason": "duplicate_id",
       "primary_reason_label": "重复 ID 风险"
     },

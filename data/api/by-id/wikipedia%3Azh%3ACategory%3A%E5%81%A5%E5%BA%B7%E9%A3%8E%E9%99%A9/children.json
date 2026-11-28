@@ -196,7 +196,19 @@
       "is_leaf": false,
       "quality_score": 97,
       "quality_version": 3,
-      "review_status": "approved"
+      "review_status": "approved",
+      "updated_at": "2026-11-28T05:41:12Z",
+      "last_checked_at": "2026-11-28T05:41:12Z",
+      "last_fetch_source": "wikidata_api",
+      "last_fetch_sources": [
+        "wikidata_api"
+      ],
+      "source_no_children": {
+        "wikidata_api": "2026-11-28T05:41:12Z"
+      },
+      "source_checked": {
+        "wikidata_api": "2026-11-28T05:41:12Z"
+      }
     },
     {
       "title": "嚴重不良事件",
@@ -423,14 +435,18 @@
       "quality_score": 100,
       "quality_version": 3,
       "review_status": "approved",
-      "updated_at": "2026-11-27T05:59:22Z",
-      "last_checked_at": "2026-11-27T05:59:22Z",
-      "last_fetch_source": "wikidata_api",
+      "updated_at": "2026-11-28T05:41:12Z",
+      "last_checked_at": "2026-11-28T05:41:12Z",
+      "last_fetch_source": "wikipedia",
       "last_fetch_sources": [
-        "wikidata_api"
+        "wikipedia"
       ],
+      "source_no_children": {
+        "wikipedia": "2026-11-28T05:41:12Z"
+      },
       "source_checked": {
-        "wikidata_api": "2026-11-27T05:59:22Z"
+        "wikidata_api": "2026-11-27T05:59:22Z",
+        "wikipedia": "2026-11-28T05:41:12Z"
       }
     },
     {

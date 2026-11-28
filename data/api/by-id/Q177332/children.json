@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q177332.json",
+  "node": {
+    "title": "孢子",
+    "children_count": 0,
+    "id": "Q177332",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q177332",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}

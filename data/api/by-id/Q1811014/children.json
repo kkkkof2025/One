@@ -3,21 +3,21 @@
   "source": "nodes/Q1811014.json",
   "node": {
     "title": "生活阶段",
-    "children_count": 0,
+    "children_count": 8,
     "id": "Q1811014",
     "source_provider": "wikidata",
     "source_relation": "subclass",
     "source_url": "https://www.wikidata.org/wiki/Q1811014",
-    "children_status": "pending",
+    "children_status": "loaded",
     "is_leaf": false,
-    "quality_score": 97,
+    "quality_score": 100,
     "quality_version": 3,
     "review_status": "approved",
-    "updated_at": "2026-11-27T05:59:22Z",
-    "last_checked_at": "2026-11-27T05:59:22Z",
-    "last_fetch_source": "wikipedia",
+    "updated_at": "2026-11-28T05:41:11Z",
+    "last_checked_at": "2026-11-28T05:41:11Z",
+    "last_fetch_source": "wikidata",
     "last_fetch_sources": [
-      "wikipedia"
+      "wikidata"
     ],
     "source_no_children": {
       "wikidata_api": "2026-11-26T06:09:38Z",
@@ -25,9 +25,123 @@
     },
     "source_checked": {
       "wikidata_api": "2026-11-26T06:09:38Z",
-      "wikipedia": "2026-11-27T05:59:22Z"
+      "wikipedia": "2026-11-27T05:59:22Z",
+      "wikidata": "2026-11-28T05:41:11Z"
     }
   },
-  "children": [],
-  "child_count": 0
+  "children": [
+    {
+      "title": "亚成体",
+      "children_count": 0,
+      "id": "Q1516282",
+      "data_source": "nodes/Q1516282.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1516282",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "動孢子",
+      "children_count": 0,
+      "id": "Q220341",
+      "data_source": "nodes/Q220341.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q220341",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "孢子",
+      "children_count": 0,
+      "id": "Q177332",
+      "data_source": "nodes/Q177332.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q177332",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "接合孢子",
+      "children_count": 0,
+      "id": "Q1938070",
+      "data_source": "nodes/Q1938070.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q1938070",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "无性型",
+      "children_count": 0,
+      "id": "Q485518",
+      "data_source": "nodes/Q485518.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q485518",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "有性型",
+      "children_count": 0,
+      "id": "Q21936857",
+      "data_source": "nodes/Q21936857.json",
+      "source_provider": "wikidata",
+      "source_relation": "instance",
+      "source_url": "https://www.wikidata.org/wiki/Q21936857",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 81,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "动物的发育阶段",
+      "children_count": 0,
+      "id": "Q20056177",
+      "data_source": "nodes/Q20056177.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q20056177",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    },
+    {
+      "title": "发育阶段",
+      "children_count": 0,
+      "id": "Q48834911",
+      "data_source": "nodes/Q48834911.json",
+      "source_provider": "wikidata",
+      "source_relation": "subclass",
+      "source_url": "https://www.wikidata.org/wiki/Q48834911",
+      "children_status": "pending",
+      "is_leaf": false,
+      "quality_score": 97,
+      "quality_version": 3,
+      "review_status": "approved"
+    }
+  ],
+  "child_count": 8
 }

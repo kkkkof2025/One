@@ -1,0 +1,18 @@
+{
+  "endpoint": "children",
+  "source": "nodes/Q220341.json",
+  "node": {
+    "title": "動孢子",
+    "children_count": 0,
+    "id": "Q220341",
+    "source_provider": "wikidata",
+    "source_relation": "instance",
+    "source_url": "https://www.wikidata.org/wiki/Q220341",
+    "children_status": "pending",
+    "quality_score": 81,
+    "quality_version": 3,
+    "review_status": "approved"
+  },
+  "children": [],
+  "child_count": 0
+}
